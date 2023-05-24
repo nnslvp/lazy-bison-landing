@@ -1,24 +1,41 @@
 // variables.scss
 
 // Colors
-$color-primary: #515bf6;
+$color-primary-violet: #515bf6;
 $color-secondary: #72dfdd;
-$color-tertiary: #c4fc50;
-$color-quaternary: #4139be;
-$color-accent-1: #e5ffaf;
-$color-accent-2: #212121;
+$color-neon-green: #c4fc50;
+$color-dark-violet: #4139be;
+$color-light-green: #e5ffaf;
+$color-black: #212121;
 $color-accent-3: #212439;
 $color-accent-4: #4b4b4b;
 $color-accent-5: #6a6a6a;
 $color-accent-6: #b0b0b0;
 $color-accent-7: #dcdcdc;
-$color-accent-8: #e8eaf2;
+$color-disable-grey: #e8eaf2;
 $color-white: #ffffff;
+$color-light-grey: #dcdcdc;
 
 //gradients
-$secondary-gradient-pink: radial-gradient(87.15% 85.05% at 100% 92.52%, #EAEAEA 14.68%, #FFE6ED 30.98%, #F7C2DC 38.64%, #F2B0D0 47.71%, #E98ED1 64.37%, #6D73DD 78.96%, #3073C1 91.46%, #638B9F 100%)
+$secondary-gradient-pink: radial-gradient(
+	87.15% 85.05% at 100% 92.52%,
+	#eaeaea 14.68%,
+	#ffe6ed 30.98%,
+	#f7c2dc 38.64%,
+	#f2b0d0 47.71%,
+	#e98ed1 64.37%,
+	#6d73dd 78.96%,
+	#3073c1 91.46%,
+	#638b9f 100%
+);
 
-$secondary-gradient-pink-two: radial-gradient(72.45% 72.45% at 27.78% 24.07%, rgba(251, 181, 215, 0.37) 0%, #F8A4CD 60.46%, #E571C7 79.62%, #515BF6 100%)
+$secondary-gradient-pink-two: radial-gradient(
+	72.45% 72.45% at 27.78% 24.07%,
+	rgba(251, 181, 215, 0.37) 0%,
+	#f8a4cd 60.46%,
+	#e571c7 79.62%,
+	#515bf6 100%
+);
 
 $secondary-gradient-blue: radial-gradient(
 	87.15% 85.05% at 100% 92.52%,
@@ -41,18 +58,20 @@ $secondary-gradient-blue-two: radial-gradient(
 );
 
 // Typography
-$font-family: 'Outfit'
-$font-size-base: 16px;
-$line-height-base: 1.5;
-
+$font-family: 'Outfit';
+$root-font-size: 16px;
 // Spacing
-$spacing-unit: 8px;
 
 // Breakpoints
-$breakpoint-sm: 320px
+$breakpoint-sm: 320px;
 $breakpoint-md: 375px;
 $breakpoint-lg: 768px;
 $breakpoint-xl: 1440px;
+
+//transition
+$transition-duration: 0.3s;
+$transition-easing: ease;
+$transition-property: all;
 
 // mixins.scss
 

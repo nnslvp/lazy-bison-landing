@@ -1,0 +1,135 @@
+@import 'header';
+@import 'variables';
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: $root-font-size;
+}
+
+body {
+	font-family: $font-family;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.container {
+	max-width: 80.5rem;
+	padding: 0 0.625rem;
+	margin: 0 auto;
+}
+
+.heading--large {
+	font-weight: 500;
+	font-size: 5.5rem;
+	line-height: 6.625rem;
+	letter-spacing: 0.03em;
+}
+
+.heading--medium {
+	font-weight: 600;
+	font-size: 2.625rem;
+	line-height: 3.675rem;
+	letter-spacing: 0.03em;
+}
+
+.heading--small {
+	font-weight: 500;
+	font-size: 2.25rem;
+	line-height: 3.15rem;
+	letter-spacing: 0.03em;
+}
+
+.heading--smaller {
+	font-weight: 600;
+	font-size: 1.75rem;
+	line-height: 2.45rem;
+	letter-spacing: 0.03em;
+}
+
+.text--large {
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 2.125rem;
+	letter-spacing: 0.03em;
+}
+
+.text--medium {
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 1.75rem;
+	letter-spacing: 0em;
+}
+
+.text--small {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.375rem;
+	letter-spacing: 0.03em;
+}
+
+.button--large {
+	font-size: 1.25rem;
+	font-weight: 600;
+	line-height: 1.75rem;
+	letter-spacing: 0em;
+}
+
+.button--medium {
+	font-size: 1.125rem;
+	font-weight: 600;
+	line-height: 1.5625rem;
+	letter-spacing: 0em;
+}
+
+.button--secondary {
+	@include center;
+	color: $color-white;
+	border: 0.0625rem solid $color-light-grey;
+	transition: $transition-property $transition-duration $transition-easing;
+	&:hover {
+		color: $color-primary-violet;
+		border-color: $color-primary-violet;
+	}
+	&:active {
+		color: $color-black;
+		background-color: $color-disable-grey;
+		border-color: $color-disable-grey;
+	}
+}
+.button--primary {
+	@include center;
+	background-color: $color-primary-violet;
+	color: $color-white;
+	border: 0.125rem solid $color-black;
+	transition: $transition-property $transition-duration $transition-easing;
+	&:hover {
+		color: $color-primary-violet;
+		border-color: $color-primary-violet;
+	}
+	&:active {
+		color: $color-black;
+		background-color: $color-light-green;
+	}
+}
+@keyframes rotateBox {
+	to {
+		transform: rotate(45deg);
+	}
+}
+
+#Box {
+	transform: translateX(-10px);
+}

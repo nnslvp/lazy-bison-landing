@@ -1,0 +1,39 @@
+@import 'variables';
+
+.header {
+	background-color: $color-accent-3;
+}
+
+.header__inner {
+	display: flex;
+	padding: 1.5rem 0px 1.3125rem 0px;
+}
+
+.header__logo {
+	@include center;
+}
+
+.header__main-nav {
+	@include center;
+	margin: 0 103px;
+}
+.header__main-nav-list {
+	@include center;
+	gap: 7.5rem;
+}
+
+.header__main-nav-link {
+	color: $color-white;
+	transition: $transition-property $transition-duration $transition-easing;
+	&:hover {
+		color: $color-dark-violet;
+	}
+	&:active {
+		color: $color-neon-green;
+	}
+}
+
+.header__nav-button {
+	display: inline-block;
+	width: 188px;
+}
