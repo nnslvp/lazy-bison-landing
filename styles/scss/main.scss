@@ -1,4 +1,5 @@
 @import 'header';
+@import 'section-lazy-bison';
 @import 'variables';
 
 *,
@@ -23,6 +24,12 @@ a {
 
 li {
 	list-style: none;
+}
+
+.full-screen-container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
 }
 
 .container {
@@ -80,24 +87,28 @@ li {
 	letter-spacing: 0.03em;
 }
 
-.button--large {
+.button__text--large {
 	font-size: 1.25rem;
 	font-weight: 600;
 	line-height: 1.75rem;
 	letter-spacing: 0em;
 }
 
-.button--medium {
+.button__text--medium {
 	font-size: 1.125rem;
 	font-weight: 600;
 	line-height: 1.5625rem;
 	letter-spacing: 0em;
 }
 
+.button {
+	border: 0.0625rem solid;
+}
+
 .button--secondary {
 	@include center;
 	color: $color-white;
-	border: 0.0625rem solid $color-light-grey;
+	border-color: $color-light-grey;
 	transition: $transition-property $transition-duration $transition-easing;
 	&:hover {
 		color: $color-primary-violet;
@@ -109,14 +120,15 @@ li {
 		border-color: $color-disable-grey;
 	}
 }
+
 .button--primary {
 	@include center;
 	background-color: $color-primary-violet;
 	color: $color-white;
-	border: 0.125rem solid $color-black;
+	border-color: $color-black;
 	transition: $transition-property $transition-duration $transition-easing;
 	&:hover {
-		color: $color-primary-violet;
+		color: $color-white;
 		border-color: $color-primary-violet;
 	}
 	&:active {
@@ -124,12 +136,8 @@ li {
 		background-color: $color-light-green;
 	}
 }
-@keyframes rotateBox {
-	to {
-		transform: rotate(45deg);
-	}
-}
 
-#Box {
-	transform: translateX(-10px);
+.gray-line {
+	height: 2px;
+	background-color: $color-light-grey;
 }
