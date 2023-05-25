@@ -4,6 +4,7 @@
 
 .header__inner {
   display: flex;
+  justify-content: space-between;
   padding: 1.5rem 0px 1.3125rem 0px;
 }
 
@@ -14,17 +15,16 @@
 }
 
 .header__main-nav {
+  flex-basis: 41.5625rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 103px;
 }
 
 .header__main-nav-list {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 7.5rem;
+  justify-content: space-between;
 }
 
 .header__main-nav-link {
