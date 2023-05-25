@@ -1,5 +1,6 @@
 @import 'header';
 @import 'section-lazy-bison';
+@import 'section-services';
 @import 'variables';
 
 *,
@@ -24,6 +25,10 @@ a {
 
 li {
 	list-style: none;
+}
+
+main section {
+	margin-bottom: 120px;
 }
 
 .full-screen-container {
@@ -102,6 +107,7 @@ li {
 }
 
 .button {
+	cursor: pointer;
 	border: 0.0625rem solid;
 }
 
@@ -128,8 +134,8 @@ li {
 	border-color: $color-black;
 	transition: $transition-property $transition-duration $transition-easing;
 	&:hover {
-		color: $color-white;
-		border-color: $color-primary-violet;
+		background-color: $color-dark-violet;
+		border-color: $color-black;
 	}
 	&:active {
 		color: $color-black;
@@ -140,4 +146,12 @@ li {
 .gray-line {
 	height: 2px;
 	background-color: $color-light-grey;
+}
+
+.rectangle-arrow {
+	@include center;
+	width: 4.5rem;
+	height: 4.5rem;
+	background: $color-neon-green;
+	border: 1px solid $color-black;
 }
