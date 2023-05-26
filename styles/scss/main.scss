@@ -1,6 +1,7 @@
 @import 'header';
 @import 'section-lazy-bison';
 @import 'section-services';
+@import 'section-explore';
 @import 'variables';
 
 *,
@@ -146,6 +147,12 @@ main section {
 .gray-line {
 	height: 2px;
 	background-color: $color-light-grey;
+}
+
+.section-title__inner {
+	display: flex;
+	gap: 0.9375rem;
+	margin-bottom: 2.5rem;
 }
 
 .rectangle-arrow {
