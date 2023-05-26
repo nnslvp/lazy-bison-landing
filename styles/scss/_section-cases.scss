@@ -1,0 +1,54 @@
+.cases__inner {
+	@include background('/assets/images/casesbg.png', center, no-repeat, cover);
+	display: flex;
+	flex-direction: column;
+}
+.slider {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	padding-top: 128.8px;
+	padding-bottom: 120px;
+}
+.slider__item {
+	display: flex;
+	align-items: stretch;
+	z-index: 1;
+	gap: 28px;
+}
+
+.slider__item--active {
+}
+.slider__item-content {
+}
+
+.slider__link {
+	display: flex;
+	align-items: stretch;
+	overflow: hidden;
+	border: 1px solid $color-grey;
+}
+
+.slider__link--1 {
+	border-radius: 100px 0px 0px 0px;
+}
+
+.slider__link--2 {
+	margin-bottom: 22px;
+}
+
+.slider__link--3 {
+	border-radius: 100px 0px 100px 100px;
+}
+
+.slider__image {
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.cases__planet-img {
+	position: absolute;
+	top: 44px;
+	right: 27px;
+}
