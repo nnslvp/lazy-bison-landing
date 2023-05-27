@@ -126,6 +126,7 @@
 		font-size: 14px;
 		line-height: 1.5;
 	}
+
 	.card__content {
 		max-width: 360px;
 		display: flex;
@@ -133,4 +134,36 @@
 		align-items: center;
 		gap: 10px;
 	}
+}
+
+.consultation {
+	@include background('/assets/images/casesbg.png', center, no-repeat, cover);
+	padding: 251px 0 120px 0;
+}
+
+.consultation__inner {
+	@include background(
+		'/assets/images/consultation-bg.png',
+		center,
+		no-repeat,
+		cover
+	);
+	max-width: 1052px;
+	max-height: 261px;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	gap: 42px;
+	padding: 52px 0 39px 0;
+	margin: 0 auto;
+	color: $color-white;
+}
+
+.consultation__description {
+	max-width: 582px;
+	margin-right: 62px;
+}
+
+.consultation__inner .button {
+	margin-right: 212px;
 }

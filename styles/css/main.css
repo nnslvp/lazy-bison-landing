@@ -404,6 +404,41 @@
   gap: 10px;
 }
 
+.consultation {
+  background-image: url("/assets/images/casesbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  padding: 251px 0 120px 0;
+}
+
+.consultation__inner {
+  background-image: url("/assets/images/consultation-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  max-width: 1052px;
+  max-height: 261px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 42px;
+  padding: 52px 0 39px 0;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.consultation__description {
+  max-width: 582px;
+  margin-right: 62px;
+}
+
+.consultation__inner .button {
+  margin-right: 212px;
+}
+
 *,
 *::before,
 *::after {
@@ -538,6 +573,10 @@ main section:not(.cases) {
   color: #ffffff;
   border-color: #212121;
   transition: all 0.3s ease;
+}
+.button--primary-size-xl {
+  width: 18.5rem;
+  padding: 1rem 0;
 }
 .button--primary:hover {
   background-color: #4139be;
