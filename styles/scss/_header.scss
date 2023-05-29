@@ -30,14 +30,7 @@
 	}
 
 	.header__main-nav-link {
-		color: $color-white;
-		transition: $transition-property $transition-duration $transition-easing;
-		&:hover {
-			color: $color-dark-violet;
-		}
-		&:active {
-			color: $color-neon-green;
-		}
+		@include linkEffects;
 	}
 
 	.header__nav-button {

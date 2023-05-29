@@ -420,7 +420,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: transparent;
-  width: 65.75rem;
+  max-width: 65.75rem;
+  max-height: 261px;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -446,6 +447,71 @@
   margin-right: 13.25rem;
 }
 
+.footer {
+  background-color: #212439;
+  color: #ffffff;
+}
+.footer a {
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.footer a:hover {
+  color: #4139be;
+}
+.footer a:active {
+  color: #c4fc50;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 29px 54px 23px 0;
+}
+
+.footer__logo-rights {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rights {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #b0b0b0;
+}
+
+.footer__menu {
+  padding-bottom: 29px;
+}
+.footer__menu h4 {
+  margin-bottom: 16px;
+}
+
+.footer-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__contacts {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+}
+
+.social-media {
+  display: flex;
+  gap: 40px;
+}
+
 *,
 *::before,
 *::after {
@@ -464,6 +530,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #ffffff;
 }
 
 li {

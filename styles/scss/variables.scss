@@ -95,3 +95,14 @@ $transition-property: all;
 	background-size: $size;
 	background-color: $color;
 }
+
+@mixin linkEffects {
+	color: $color-white;
+	transition: $transition-property $transition-duration $transition-easing;
+	&:hover {
+		color: $color-dark-violet;
+	}
+	&:active {
+		color: $color-neon-green;
+	}
+}
