@@ -8,13 +8,13 @@
 	justify-content: center;
 	position: relative;
 	padding-top: 128.8px;
-	padding-bottom: 120px;
+	padding-bottom: 7.5rem;
 }
 .slider__item {
 	display: flex;
 	align-items: stretch;
 	z-index: 1;
-	gap: 28px;
+	gap: 1.75rem;
 }
 
 .slider__item--active {
@@ -30,15 +30,15 @@
 }
 
 .slider__link--1 {
-	border-radius: 100px 0px 0px 0px;
+	border-radius: 6.25rem 0px 0px 0px;
 }
 
 .slider__link--2 {
-	margin-bottom: 22px;
+	margin-bottom: 1.375rem;
 }
 
 .slider__link--3 {
-	border-radius: 100px 0px 100px 100px;
+	border-radius: 6.25rem 0rem 6.25rem 6.25rem;
 }
 
 .slider__image {
@@ -49,6 +49,6 @@
 }
 .cases__planet-img {
 	position: absolute;
-	top: 44px;
-	right: 27px;
+	top: 2.75rem;
+	right: 1.6875rem;
 }
