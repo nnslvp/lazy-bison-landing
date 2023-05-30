@@ -512,6 +512,15 @@
   gap: 40px;
 }
 
+svg {
+  width: 32px;
+  height: 32px;
+}
+
+#facebook path:nth-of-type(1) {
+  stroke: red;
+}
+
 *,
 *::before,
 *::after {
