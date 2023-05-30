@@ -244,15 +244,15 @@
 							<img class="cases__planet-img" src="./assets/images/casesplanet.svg" alt='planet'>
 							<div class="slider__item slider__item--active">
 								<div class="slider__item-content">
-									<a href="#" class="slider__link slider__link--1">
-										<img src="./assets/images/projet-img-one.png" alt='cases' class="slider__image">
-									</a>
+									<div class="slider__project slider__project--1 open-popup-button">
+										<img src="./assets/images/projet-img-one.png" alt='cases' class="slider__image ">
+									</div>
 								</div>
 								<div class="slider__item-content">
-									<a href="#" class="slider__link slider__link--2">
+									<a href="#" class="slider__project slider__project--2 ">
 										<img src="./assets/images/projet-img-two.png" alt='cases' class="slider__image">
 									</a>
-									<a href="#" class="slider__link slider__link--3">
+									<a href="#" class="slider__project slider__project--2">
 										<img src="./assets/images/projet-img-three.png" alt='cases' class="slider__image">
 									</a>
 								</div>
@@ -457,15 +457,76 @@
 								</svg>
 							</a>
 						</div>
-
 					</div>
 				</div>
-
 			</div>
+		</footer>
 	</div>
+	<div class="popup popup__get-consultation">
+		<div class="popup-content ">
+			<!-- <div class="project__inner">
+				<div class="project__description">
+					<h3 class=" project__title heading--small">Name of project</h3>
+					<p class="project__description-text  text--medium">We developed a custom crowdfunding platform
+						with a user-friendly interface that made it easy
+						for entrepreneurs to create campaigns and for investors to find projects to fund. We integrated a
+						secure payment system and an admin panel for managing campaigns
+						and funds. The platform allowed investors to select
+						a reward item offered by the entrepreneur,
+						and it displayed the progress towards the funding goal.</p>
+					<div class="name-app__inner">
+						<h4 class='name-app__title'>Crowdfunding web application</h4>
+						<img src="./assets/icons/arrow-right-square.svg" alt="arrow">
+					</div>
+				</div>
+				<div class="project__img">
+					<img class='project__img-img' src="./assets/images/popup-project.jpeg" alt="project-img">
+				</div>
+			</div> -->
+			<h2 class="get-consultation__title heading--medium">
+				Get free consultation
+			</h2>
+			<p class="get-consultation__subtitle text--medium">
+				Please, fill out the form
+			</p>
+			<form>
+				<div class="form-group">
 
-	</footer>
+					<label class='text--small' for="email">
+						E-mail
+						<input placeholder='exapmle@gmail.com' type="email" id="email" name="email" required>
+					</label>
+
+
+					<div class="textarea__container">
+						<label class='text--small' for="comments">
+							Your comments
+							<textarea placeholder='Write your comments (optional)' id="comments" name="comments" maxlength="360"
+								required></textarea>
+						</label>
+						<div class="character-count text--small">0/360</div>
+					</div>
+
+					<label class='checkbox-label text--small' for="agree">
+						<input type="checkbox" id="agree" name="agree" required>
+						Agree to process personal data
+					</label>
+				</div>
+
+
+				<div class="form-actions">
+					<button type="button" class="btn btn-cancel">Cancel</button>
+					<button type="submit" class="btn btn-submit">Submit</button>
+				</div>
+			</form>
+
+			<button class="close-popup-button">
+				<img src="./assets/icons/close-icon.svg" alt="close">
+			</button>
+		</div>
 	</div>
+	<div class="overlay"></div>
+	<script src='./js/main.js'></script>
 </body>
 
 </html>

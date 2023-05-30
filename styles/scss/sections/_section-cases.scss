@@ -7,7 +7,7 @@
 	display: flex;
 	justify-content: center;
 	position: relative;
-	padding-top: 128.8px;
+	padding-top: 8.05rem;
 	padding-bottom: 7.5rem;
 }
 .slider__item {
@@ -17,31 +17,31 @@
 	gap: 1.75rem;
 }
 
-.slider__link {
+.slider__project {
 	display: flex;
 	align-items: stretch;
 	overflow: hidden;
 	border: 1px solid $color-grey;
 }
 
-.slider__link--1 {
-	border-radius: 6.25rem 0px 0px 0px;
+.slider__project--1 {
+	border-radius: 6.25rem 0rem 0rem 0rem;
 }
 
-.slider__link--2 {
+.slider__project--2 {
 	margin-bottom: 1.375rem;
 }
 
-.slider__link--3 {
+.slider__project--3 {
 	border-radius: 6.25rem 0rem 6.25rem 6.25rem;
 }
 
 .slider__image {
-	max-width: 100%;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
+
 .cases__planet-img {
 	position: absolute;
 	top: 2.75rem;

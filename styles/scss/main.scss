@@ -1,10 +1,11 @@
 @import 'header';
-@import 'section-lazy-bison';
-@import 'section-services';
-@import 'section-explore';
-@import 'section-cases';
-@import 'section-testimonials';
+@import './sections/section-lazy-bison';
+@import './sections/section-services';
+@import './sections/section-explore';
+@import './sections/section-cases';
+@import './sections/section-testimonials';
 @import 'footer';
+@import './popups/popup';
 @import 'variables';
 
 *,
@@ -34,6 +35,10 @@ li {
 
 main section:not(.cases) {
 	margin-bottom: 120px;
+}
+
+button {
+	cursor: pointer;
 }
 
 .full-screen-container {

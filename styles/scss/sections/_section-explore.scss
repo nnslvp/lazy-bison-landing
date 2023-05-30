@@ -1,7 +1,7 @@
 .explore__list {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	border-top: 2px solid $color-light-grey;
+	border-top: 0.125rem solid $color-light-grey;
 }
 .explore-item__title {
 	margin-bottom: 1.5rem;
@@ -9,7 +9,7 @@
 
 .explore__item {
 	display: flex;
-	padding: 40px 0 47px 0;
+	padding: 2.5rem 0 2.9375rem 0;
 	flex-direction: column;
 }
 
