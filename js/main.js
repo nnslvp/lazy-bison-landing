@@ -23,6 +23,7 @@ function toggleMenu() {
 document
 	.querySelector('.open-popup-button')
 	.addEventListener('click', showPopup)
+
 document
 	.querySelector('.close-popup-button')
 	.addEventListener('click', hidePopup)
