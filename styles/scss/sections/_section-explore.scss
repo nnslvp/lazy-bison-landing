@@ -49,6 +49,8 @@
 }
 
 .background-svg {
+	width: 100%;
+	object-fit: cover;
 	position: absolute;
 	top: -6.9375rem;
 	left: 0;

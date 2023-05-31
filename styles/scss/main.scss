@@ -6,6 +6,7 @@
 @import './sections/section-testimonials';
 @import 'footer';
 @import './popups/popup';
+@import './burger-menu-btn';
 @import 'variables';
 
 *,
@@ -17,7 +18,7 @@
 }
 
 html {
-	font-size: $root-font-size;
+	font-size: 16px;
 }
 
 body {
@@ -34,7 +35,7 @@ li {
 }
 
 main section:not(.cases) {
-	margin-bottom: 120px;
+	margin-bottom: 7.5rem;
 }
 
 button {
@@ -48,9 +49,12 @@ button {
 }
 
 .container {
-	max-width: 80.5rem;
-	padding: 0 0.625rem;
+	max-width: calc($container-width + $container-padding * 2);
+	padding: 0 $container-padding;
 	margin: 0 auto;
+	@media (max-width: 768px) {
+		max-width: calc(716px + $container-padding * 2);
+	}
 }
 
 .heading--large {

@@ -3,7 +3,12 @@
 }
 
 .services-info {
-	@include background('/assets/images/services-info-bg.png', top, no-repeat);
+	@include background(
+		'/assets/images/services-info-bg.png',
+		top,
+		no-repeat,
+		contain
+	);
 	padding-top: 3.5rem;
 }
 
