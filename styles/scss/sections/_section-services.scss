@@ -1,5 +1,12 @@
 .services {
+	@include background(
+		'/assets/images/services-bg.png',
+		center,
+		no-repeat,
+		contain
+	);
 }
+
 .services__gray-line {
 	margin-bottom: 5rem;
 }
