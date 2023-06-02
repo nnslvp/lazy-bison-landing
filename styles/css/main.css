@@ -948,13 +948,74 @@ img {
 }
 
 @media (max-width: 768px) {
+  .workers-background {
+    background-image: url(/assets//images//workers-bg-768px.png);
+  }
+  .testimonials__gray-line {
+    margin-bottom: 20px;
+  }
+  .testimonials__title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 13px;
+  }
+  .testimonials__subtitle {
+    max-width: 346px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    letter-spacing: 0.03em;
+    margin-bottom: 11px;
+  }
+  .workers__list {
+    position: relative;
+    height: 427px;
+    display: flex;
+    align-items: stretch;
+    gap: 1.75rem;
+  }
+  .vertical-gray-line-1 {
+    left: 232px;
+  }
+  .vertical-gray-line-2 {
+    width: 246px;
+    left: auto;
+    right: -32px;
+    transform: rotate(90deg) translateY(0) translateX(124px);
+  }
+  .vertical-gray-line-3 {
+    left: 164px;
+    right: auto;
+  }
+  .vertical-gray-line-4 {
+    left: -183px;
+    right: auto;
+  }
+  .workers__item:nth-child(1) {
+    top: 41.19px;
+    left: 92px;
+  }
+  .workers__item:nth-child(2) {
+    top: auto;
+    left: auto;
+    right: 91px;
+    bottom: 34px;
+  }
+  .workers__item:nth-child(3) {
+    top: -38px;
+    right: 0;
+  }
+  .workers__item:nth-child(4) {
+    bottom: -46.84px;
+    left: 0;
+  }
   .card {
-    padding: 58.3px 13.4px 12.73px 13.4px;
+    padding: 58.3px 13.4px 12.13px 13.4px;
     width: 256px;
   }
   .avatar {
     position: absolute;
-    top: -3.875rem;
+    top: -46px;
     bottom: 0;
     width: 98.88px;
     height: 98.88px;
@@ -972,15 +1033,58 @@ img {
   .name {
     font-size: 16px;
     line-height: 22px;
-    line-height: 22.4px;
+    line-height: 22px;
   }
   .position {
     font-size: 12px;
-    line-height: 17px;
+    line-height: 16.8px;
   }
   .description {
+    margin-top: 0;
     font-size: 12px;
-    line-height: 17px;
+    line-height: 16.8px;
+    letter-spacing: 0.3px;
+  }
+  .consultation {
+    background-image: url(/assets/images/cases-bg-768.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    padding: 15.6875rem 0 7.5rem 0;
+  }
+  .consultation__inner {
+    background-image: url("/assets/images/consultation-bg-768.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    padding: 49px 0 29px 0;
+    gap: 1.5625rem;
+    max-width: 656px;
+    max-height: 198px;
+  }
+  .consultation__description {
+    max-width: 369.77px;
+    margin-right: 27.4px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    letter-spacing: 0.03em;
+  }
+  .consultation__inner .button {
+    padding: 14px 45.5px;
+    margin-right: 71.37px;
+    font-size: 17.2973px;
+    line-height: 24px;
+  }
+  .consultation__planet-img {
+    position: absolute;
+    width: 107.57px;
+    height: 107.55px;
+    z-index: -1;
+    top: -23px;
+    left: -32px;
   }
 }
 .footer {
