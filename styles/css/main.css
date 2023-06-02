@@ -759,71 +759,97 @@ img {
     right: -1.5rem;
   }
 }
-.testimonials__inner .testimonials__title {
+.testimonials__inner {
+  position: relative;
+}
+
+.testimonials__title {
   margin-bottom: 1.125rem;
 }
-.testimonials__inner .testimonials__gray-line {
+
+.testimonials__gray-line {
   margin-bottom: 3.125rem;
 }
-.testimonials__inner .testimonials__subtitle {
+
+.testimonials__subtitle {
   max-width: 32rem;
 }
-.testimonials__inner .vertical-gray-line-1,
-.testimonials__inner .vertical-gray-line-2,
-.testimonials__inner .vertical-gray-line-3,
-.testimonials__inner .vertical-gray-line-4,
-.testimonials__inner .vertical-gray-line-5 {
+
+.vertical-gray-line-1,
+.vertical-gray-line-2,
+.vertical-gray-line-3,
+.vertical-gray-line-4 {
+  top: 0;
+  position: absolute;
   height: 0.0625rem;
 }
-.testimonials__inner .vertical-gray-line-1 {
-  max-width: 28.4375rem;
-  transform: rotate(90deg) translateY(7.4375rem) translateX(10.875rem);
-}
-.testimonials__inner .vertical-gray-line-2 {
+
+.vertical-gray-line-1 {
+  left: 157px;
   width: 28.4375rem;
-  transform: rotate(90deg) translateY(-19.625rem) translateX(174px);
+  transform: rotate(90deg) translateY(0) translateX(226px);
 }
-.testimonials__inner .vertical-gray-line-3 {
+
+.vertical-gray-line-2 {
+  width: 388px;
+  left: 90px;
+  transform: rotate(90deg) translateY(-337px) translateX(192px);
+}
+
+.vertical-gray-line-3 {
   width: 275px;
-  transform: rotate(90deg) translateY(-51.625rem) translateX(5.1875rem);
+  right: 250px;
+  transform: rotate(90deg) translateY(0) translateX(137px);
 }
-.testimonials__inner .vertical-gray-line-4 {
+
+.vertical-gray-line-4 {
+  top: 0;
+  right: -92px;
   width: 34.8125rem;
-  transform: rotate(90deg) translateY(-55.9375rem) translateX(14rem);
+  transform: rotate(90deg) translateY(0) translateX(279px);
 }
-.testimonials__inner .workers-background {
+
+.workers-background {
   background-image: url("/assets/images/workers-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: transparent;
 }
-.testimonials__inner .workers__list {
+
+.workers__list {
+  position: relative;
   height: 35.3125rem;
   display: flex;
   align-items: stretch;
   gap: 1.75rem;
 }
-.testimonials__inner .workers__item:nth-child(1) {
-  align-self: flex-end;
+
+.workers__item:nth-child(1) {
+  bottom: 4px;
+  left: 0;
 }
-.testimonials__inner .workers__item:nth-child(2) {
-  align-self: center;
+
+.workers__item:nth-child(2) {
+  top: 98px;
+  left: 34%;
 }
-.testimonials__inner .workers__item:nth-child(3) {
-  position: relative;
+
+.workers__item:nth-child(3) {
+  top: -60px;
+  right: 0;
 }
-.testimonials__inner .worker-3,
-.testimonials__inner .worker-4 {
+
+.workers__item:nth-child(4) {
+  bottom: -82px;
+  right: 0;
+}
+
+.workers__item {
   position: absolute;
 }
-.testimonials__inner .worker-3 {
-  bottom: 3.2813rem;
-}
-.testimonials__inner .worker-4 {
-  top: 3.25rem;
-}
-.testimonials__inner .card {
+
+.card {
   position: relative;
   padding: 5.75rem 1.375rem 2.75rem 1.375rem;
   width: 25.25rem;
@@ -833,7 +859,8 @@ img {
   background-color: #ffffff;
   border: 1px solid #b0b0b0;
 }
-.testimonials__inner .avatar {
+
+.avatar {
   position: absolute;
   top: -4.875rem;
   bottom: 0;
@@ -843,28 +870,33 @@ img {
   border-radius: 50%;
   overflow: hidden;
 }
-.testimonials__inner .avatar img {
+
+.avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.testimonials__inner .name {
+
+.name {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.75rem;
   letter-spacing: 0em;
 }
-.testimonials__inner .position {
+
+.position {
   text-align: center;
   font-size: 1rem;
   color: #888888;
 }
-.testimonials__inner .description {
+
+.description {
   margin-top: 0.625rem;
   font-size: 0.875rem;
   line-height: 1.5;
 }
-.testimonials__inner .card__content {
+
+.card__content {
   max-width: 22.5rem;
   display: flex;
   flex-direction: column;
@@ -915,6 +947,42 @@ img {
   margin-right: 13.25rem;
 }
 
+@media (max-width: 768px) {
+  .card {
+    padding: 58.3px 13.4px 12.73px 13.4px;
+    width: 256px;
+  }
+  .avatar {
+    position: absolute;
+    top: -3.875rem;
+    bottom: 0;
+    width: 98.88px;
+    height: 98.88px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .card__content {
+    max-width: 228.12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6.34px;
+  }
+  .name {
+    font-size: 16px;
+    line-height: 22px;
+    line-height: 22.4px;
+  }
+  .position {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .description {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
 .footer {
   background-color: #212439;
   color: #ffffff;
