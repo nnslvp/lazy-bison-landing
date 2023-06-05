@@ -141,6 +141,7 @@
 	}
 
 	.lazy-bison__inner {
+		padding-bottom: 0;
 		background: none;
 	}
 
@@ -193,9 +194,9 @@
 	.lazy-bison-stats__inner {
 		@include background(
 			'/assets/images/stats-bg-375.png',
-			top,
+			center,
 			no-repeat,
-			contain
+			cover
 		);
 		max-width: 100%;
 		display: flex;

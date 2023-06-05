@@ -56,6 +56,9 @@ main section:not(.cases) {
 	@media (max-width: 768px) {
 		padding-bottom: 80px;
 	}
+	@media (max-width: 375px) {
+		padding-bottom: 0px;
+	}
 }
 
 button {
@@ -207,11 +210,18 @@ img {
 }
 
 .section-title__heading {
+	display: flex;
+	align-items: center;
 	@media (max-width: 768px) {
 		font-weight: 600;
 		font-size: 1.75rem;
 		line-height: 2.45rem;
 		letter-spacing: 0.03em;
+	}
+	@media (max-width: 375px) {
+		font-size: 26px;
+		line-height: 36px;
+		letter-spacing: 0.02em;
 	}
 }
 
