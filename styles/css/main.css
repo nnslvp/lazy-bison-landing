@@ -906,6 +906,56 @@ img {
     z-index: 1;
   }
 }
+@media (max-width: 375px) {
+  .explore__list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    border-left: 0.125rem solid #dcdcdc;
+  }
+  .explore__item:not(:last-child) {
+    border-bottom: 0.125rem solid #dcdcdc;
+    border-right: none;
+  }
+  .explore__item:nth-child(1) {
+    max-width: 100%;
+  }
+  .explore__item {
+    padding: 24px 0 24px 24px;
+  }
+  .explore-item__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2.91px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+  }
+  .explore__item:nth-child(2) .explore-item__text {
+    max-width: 100%;
+  }
+  .help {
+    background-image: url("/assets/images/wehelp-bg-375.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+  }
+  .help__inner {
+    padding: 35px 0 93px 0;
+  }
+  .help__title {
+    width: 250px;
+    margin: 0 0 34px 0;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+  }
+  .background-svg {
+    visibility: hidden;
+  }
+}
 .cases__inner {
   background-image: url("/assets/images/casesbg.png");
   background-position: center;
