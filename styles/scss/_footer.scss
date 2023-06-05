@@ -18,8 +18,12 @@
 	justify-content: space-between;
 }
 
-.footer__contacts h4,
-.footer__menu h4 {
+.footer__logo {
+	height: auto;
+}
+
+.footer__menu-title,
+.footer__contacts-title {
 	margin-bottom: 16px;
 }
 
@@ -65,9 +69,6 @@
 
 	.footer__logo-rights {
 		padding: 14px 0 13px 0;
-		img {
-			height: auto;
-		}
 	}
 
 	.rights {

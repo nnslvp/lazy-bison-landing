@@ -14,6 +14,34 @@ body {
   font-family: "Outfit";
 }
 
+h1 {
+  font-weight: 500;
+  font-size: 5.5rem;
+  line-height: 6.625rem;
+  letter-spacing: 0.03em;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.625rem;
+  line-height: 3.675rem;
+  letter-spacing: 0.03em;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 2.25rem;
+  line-height: 3.15rem;
+  letter-spacing: 0.03em;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 2.45rem;
+  letter-spacing: 0.03em;
+}
+
 a {
   text-decoration: none;
   color: #ffffff;
@@ -1116,8 +1144,12 @@ img {
   justify-content: space-between;
 }
 
-.footer__contacts h4,
-.footer__menu h4 {
+.footer__logo {
+  height: auto;
+}
+
+.footer__menu-title,
+.footer__contacts-title {
   margin-bottom: 16px;
 }
 
@@ -1161,9 +1193,6 @@ img {
   }
   .footer__logo-rights {
     padding: 14px 0 13px 0;
-  }
-  .footer__logo-rights img {
-    height: auto;
   }
   .rights {
     font-size: 8px;
