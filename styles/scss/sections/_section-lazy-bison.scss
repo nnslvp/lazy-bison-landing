@@ -1,118 +1,219 @@
 .lazy-bison {
 	flex: 1 1 auto;
+}
 
+.lazy-bison__inner {
+	padding-top: 2.875rem;
+	background-color: #ffffff;
+}
+
+.lazy-bison__title {
+	max-width: 1118px;
+	margin: 0 auto;
+}
+
+.lazy-bison__title span:nth-child(2) {
+	padding-left: 102px;
+}
+
+.lazy-bison-tittle__text {
+	display: flex;
+}
+
+.lazy-bison__text--highlight {
+	background-color: $color-neon-green;
+}
+
+.lazy-bison-description__inner {
+	display: flex;
+}
+
+.lazy-bison-description__info {
+	flex-basis: 32rem;
+	padding-top: 6.1875rem;
+	padding-bottom: 2.25rem;
+}
+
+.lazy-bison-description__text {
+	margin: 1.5rem 0 4rem 0;
+}
+
+.lazy-bison__stats {
+	display: flex;
+	justify-content: end;
+}
+
+.lazy-bison-stats__inner {
+	display: flex;
+	justify-content: end;
+	padding-right: 2.25rem;
+}
+
+.lazy-bison__stats {
+	flex-basis: 45.5rem;
+	justify-content: space-between;
+}
+
+.lazy-bison__stats-text {
+	display: flex;
+	flex-direction: column;
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 4.1875rem;
+	letter-spacing: 0.03em;
+}
+
+@media (max-width: 768px) {
 	.lazy-bison__inner {
-		padding-top: 2.875rem;
-		background-color: #ffffff;
+		padding-bottom: 5rem;
+		padding-top: 28px;
+		@include background(
+			'/assets/images/lazy-bizon-bg-768.svg',
+			center,
+			no-repeat,
+			contain
+		);
 	}
 
 	.lazy-bison__title {
-		max-width: 67.375rem;
-		margin: 0 auto;
-		display: flex;
-		flex-direction: column;
+		font-size: 58.4254px;
+		line-height: 70px;
+		margin: 0;
 	}
 
-	.lazy-bison-tittle__text {
-		display: flex;
+	.lazy-bison__title span:nth-child(2) {
+		padding-left: 70px;
 	}
 
-	.lazy-bison__text--highlight {
-		background-color: $color-neon-green;
+	.img-planets {
+		display: none;
 	}
 
-	.lazy-bison__text--flex-end {
-		justify-content: end;
-	}
-	.lazy-bison-description__inner {
-		display: flex;
+	.gray-line {
+		display: none;
 	}
 
 	.lazy-bison-description__info {
-		flex-basis: 32rem;
-		padding-top: 6.1875rem;
-		margin-bottom: 2.25rem;
+		flex-basis: 497px;
+		padding-top: 0;
+		padding-bottom: 41px;
 	}
 
 	.lazy-bison-description__text {
-		margin: 1.5rem 0 4rem 0;
-	}
-
-	.lazy-bison__stats {
-		display: flex;
-		justify-content: end;
+		padding-top: 209px;
+		margin: 0 0 50px 0;
+		font-size: 1.25rem;
+		font-weight: 400;
+		line-height: 1.75rem;
+		letter-spacing: 0em;
 	}
 
 	.lazy-bison-stats__inner {
+		max-width: 623px;
 		display: flex;
-		justify-content: end;
-		padding-right: 2.25rem;
-	}
-
-	.lazy-bison__stats {
-		flex-basis: 45.5rem;
 		justify-content: space-between;
+		gap: 69px;
+		padding-right: 0;
+		margin: 0 auto;
 	}
 
 	.lazy-bison__stats-text {
-		display: flex;
-		flex-direction: column;
-		font-size: 3rem;
-		font-weight: 700;
-		line-height: 4.1875rem;
+		font-size: 48px;
+		line-height: 67px;
+	}
+
+	.lazy-bison__stats-subtext {
+		font-size: 1rem;
+		line-height: 1.375rem;
+	}
+}
+
+@media (max-width: 375px) {
+	.lazy-bison {
+		@include background(
+			'/assets/images/lazy-bizon-bg-375.svg',
+			0 -37px,
+			no-repeat,
+			contain
+		);
+		padding-bottom: 74px;
+		padding-top: 54px;
+	}
+
+	.lazy-bison__inner {
+		padding-bottom: 0;
+		background: none;
+	}
+
+	.lazy-bison__title {
+		width: 335px;
+		font-size: 42px;
+		line-height: 50px;
 		letter-spacing: 0.03em;
 	}
 
-	@media (max-width: 768px) {
-		.lazy-bison__inner {
-			padding-bottom: 5rem;
-			padding-top: 28px;
-			@include background(
-				'/assets/images/lazy-bizon-bg-768.svg',
-				center,
-				no-repeat,
-				contain
-			);
-		}
+	.lazy-bison__title span:nth-child(2) {
+		padding-left: 40px;
+	}
 
-		.lazy-bison__title {
-			max-width: 500px;
-			font-size: 58.4254px;
-			line-height: 70px;
-			margin: 0;
-		}
+	.lazy-bison__title span:nth-child(3) {
+		padding-left: 110px;
+	}
 
-		.img-planets {
-			display: none;
-		}
+	.img-planets {
+		display: none;
+	}
 
-		.gray-line {
-			display: none;
-		}
+	.gray-line {
+		display: none;
+	}
 
-		.lazy-bison-description__info {
-			flex-basis: 497px;
-			padding-top: 0;
-			margin-bottom: 41px;
-		}
+	.lazy-bison-description__info {
+		flex-basis: 497px;
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 61px;
+	}
 
-		.lazy-bison-description__text {
-			padding-top: 209px;
-			margin-bottom: 50px;
-			font-size: 1.25rem;
-			font-weight: 400;
-			line-height: 1.75rem;
-			letter-spacing: 0em;
-		}
+	.lazy-bison-description__text {
+		padding-top: 117px;
+		margin: 0 0 50px 0;
+		font-size: 18px;
+		line-height: 25px;
+		letter-spacing: 0em;
+	}
 
-		.lazy-bison__stats-text {
-			font-size: 48px;
-			line-height: 67px;
-		}
+	.lazy-bison__stats {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		gap: 48px 40px;
+		flex-basis: 45.5rem;
+	}
 
-		.lazy-bison__stats-subtext {
-			font-size: 1rem;
-			line-height: 1.375rem;
-		}
+	.lazy-bison-stats__inner {
+		@include background(
+			'/assets/images/stats-bg-375.png',
+			center,
+			no-repeat,
+			cover
+		);
+		max-width: 100%;
+		display: flex;
+		padding: 60px 0 78px 0;
+		justify-content: space-between;
+		gap: 69px;
+		margin: 0 auto;
+	}
+
+	.lazy-bison__stats-text {
+		font-size: 42px;
+		line-height: 50px;
+	}
+
+	.lazy-bison__stats-subtext {
+		font-size: 16px;
+		line-height: 22px;
+		letter-spacing: 0.03em;
 	}
 }
