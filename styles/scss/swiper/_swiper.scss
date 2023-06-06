@@ -1,0 +1,24 @@
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+	display: flex;
+	justify-content: center;
+	gap: 7px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+	.swiper-pagination-bullet {
+	margin: 0;
+}
+
+.swiper-pagination-bullet {
+	width: 14px;
+	height: 14px;
+	background-color: $color-light-grey;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #9f9dbc;
+}
