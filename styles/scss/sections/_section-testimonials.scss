@@ -60,9 +60,6 @@
 .workers__list {
 	position: relative;
 	height: 35.3125rem;
-	display: flex;
-	align-items: stretch;
-	gap: 1.75rem;
 }
 
 .workers__item:nth-child(1) {
@@ -91,18 +88,17 @@
 
 .card {
 	position: relative;
-	padding: 5.75rem 1.375rem 2.75rem 1.375rem;
 	width: 25.25rem;
+	height: 365px;
 	display: flex;
+	justify-content: end;
 	flex-direction: column;
 	align-items: center;
-	background-color: $color-white;
-	border: 1px solid $color-grey;
 }
 
 .avatar {
 	position: absolute;
-	top: -4.875rem;
+	top: 0;
 	bottom: 0;
 	width: 9.0625rem;
 	height: 9.0625rem;
@@ -137,7 +133,9 @@
 }
 
 .card__content {
-	max-width: 22.5rem;
+	padding: 5.75rem 1.375rem 2.75rem 1.375rem;
+	background-color: $color-white;
+	border: 1px solid $color-grey;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -207,14 +205,6 @@
 		margin-bottom: 11px;
 	}
 
-	.workers__list {
-		position: relative;
-		height: 427px;
-		display: flex;
-		align-items: stretch;
-		gap: 1.75rem;
-	}
-
 	.vertical-gray-line-1 {
 		left: 232px;
 	}
@@ -259,32 +249,23 @@
 	}
 
 	.card {
-		padding: 58.3px 13.4px 12.13px 13.4px;
 		width: 256px;
+		height: 232px;
 	}
 
 	.avatar {
-		position: absolute;
-		top: -46px;
 		bottom: 0;
 		width: 98.88px;
 		height: 98.88px;
-		margin: 0 auto;
-		border-radius: 50%;
-		overflow: hidden;
 	}
 
 	.card__content {
-		max-width: 228.12px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		padding: 58.3px 13.4px 12.13px 13.4px;
 		gap: 6.34px;
 	}
 
 	.name {
 		font-size: 16px;
-		line-height: 22px;
 		line-height: 22px;
 	}
 
@@ -322,6 +303,10 @@
 		max-height: 198px;
 	}
 
+	.gray-line {
+		display: block;
+	}
+
 	.consultation__description {
 		max-width: 369.77px;
 		margin-right: 27.4px;
@@ -342,5 +327,96 @@
 		z-index: -1;
 		top: -23px;
 		left: -32px;
+	}
+}
+
+@media (max-width: 375px) {
+	.workers-background {
+		background-image: none;
+		background-color: $color-light-green;
+		position: relative;
+		height: 177px;
+	}
+
+	.workers__list {
+		width: 272px;
+		height: 276px;
+		position: relative;
+		top: -24px;
+		gap: 0;
+	}
+
+	.testimonials__gray-line {
+		display: block;
+		margin-bottom: 18px;
+	}
+
+	.vertical-gray-line-1,
+	.vertical-gray-line-2,
+	.vertical-gray-line-3,
+	.vertical-gray-line-4 {
+		display: none;
+	}
+
+	.testimonials__subtitle {
+		margin-bottom: 40px;
+	}
+
+	.avatar {
+		width: 92px;
+		height: 92px;
+	}
+
+	.card__content {
+		padding: 59px 16px 16px 16px;
+	}
+
+	.card {
+		width: 272px;
+		height: 248px;
+	}
+
+	.position,
+	.description {
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.4px;
+	}
+
+	.workers__item {
+		position: initial;
+	}
+
+	.consultation {
+		padding: 168px 0 60px 0;
+	}
+
+	.consultation__inner {
+		background-image: url(/assets/images/consultation-bg-375.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: transparent;
+		padding: 30px 0 156px 0;
+		gap: 24px;
+		width: auto;
+		max-height: 335px;
+	}
+
+	.consultation__description {
+		max-width: 297px;
+		margin: 0 auto;
+	}
+
+	.consultation__inner .button {
+		margin: 0 auto;
+	}
+
+	.consultation__planet-img {
+		width: 90px;
+		height: 90px;
+		top: -32px;
+		left: auto;
+		right: -18px;
 	}
 }

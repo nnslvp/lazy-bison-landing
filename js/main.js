@@ -2,6 +2,7 @@ const popup = document.querySelector('.popup')
 const overlay = document.querySelector('.overlay')
 const burgerButton = document.querySelector('.burger-menu-button')
 const menu = document.querySelector('.header__main-nav')
+const sliders = document.querySelectorAll('.swiper')
 
 function showPopup() {
 	popup.style.display = 'block'
@@ -20,6 +21,29 @@ function toggleMenu() {
 	menu.classList.toggle('open')
 }
 
+function mobileSlider(slider) {
+	let mySwiper
+	if (window.innerWidth <= 600 && slider.dataset.mobile == 'false') {
+		mySwiper = new Swiper(slider, {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			loop: true,
+			pagination: {
+				el: slider.querySelector('.swiper-pagination'),
+				clickable: true,
+			},
+		})
+		slider.dataset.mobile = 'true'
+	}
+
+	if (window.innerWidth > 375) {
+		slider.dataset.mobile = 'false'
+		if (slider.classList.contains('swiper-container-initialized')) {
+			mySwiper.destroy()
+		}
+	}
+}
+
 // document
 // 	.querySelector('.open-popup-button')
 // 	.addEventListener('click', showPopup)
@@ -29,49 +53,9 @@ function toggleMenu() {
 // 	.addEventListener('click', hidePopup)
 // burgerButton.addEventListener('click', toggleMenu)
 
-const slider = document.querySelector('.slider-container')
-
-// let mySwiper = new Swiper(slider, {
-// 	slidesPerView: 3,
-// 	spaceBetween: 10,
-// 	loop: true,
-// 	pagination: {
-// 		el: '.swiper-pagination',
-// 		clickable: true,
-// 	},
-// 	navigation: {
-// 		nextEl: '.swiper-button-next',
-// 		prevEl: '.swiper-button-prev',
-// 	},
-// })
-
-let mySwiper
-
-function mobileSlider() {
-	if (window.innerWidth <= 600 && slider.dataset.mobile == 'false') {
-		mySwiper = new Swiper(slider, {
-			slidesPerView: 1,
-			spaceBetween: 0,
-			loop: true,
-			slideClass: 'swiper-slide',
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
-		})
-		slider.dataset.mobile = 'true'
-	}
-
-	if (window.innerWidth > 600) {
-		slider.dataset.mobile = 'false'
-		if (slider.classList.contains('swiper-container-initialized')) {
-			mySwiper.destroy()
-		}
-	}
-}
-
-mobileSlider()
-
-window.addEventListener('resize', () => {
-	mobileSlider()
+sliders.forEach(slider => {
+	mobileSlider(slider)
+	window.addEventListener('resize', () => {
+		mobileSlider(slider)
+	})
 })
