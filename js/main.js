@@ -44,14 +44,14 @@ function mobileSlider(slider) {
 	}
 }
 
-// document
-// 	.querySelector('.open-popup-button')
-// 	.addEventListener('click', showPopup)
+document
+	.querySelector('.open-popup-button')
+	.addEventListener('click', showPopup)
 
-// document
-// 	.querySelector('.close-popup-button')
-// 	.addEventListener('click', hidePopup)
-// burgerButton.addEventListener('click', toggleMenu)
+document
+	.querySelector('.close-popup-button')
+	.addEventListener('click', hidePopup)
+burgerButton.addEventListener('click', toggleMenu)
 
 sliders.forEach(slider => {
 	mobileSlider(slider)

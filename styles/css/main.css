@@ -1694,6 +1694,62 @@ img {
   background-color: #515bf6;
   border: 0.0625rem solid #b0b0b0;
 }
+@media (max-width: 768px) {
+  .popup__get-consultation {
+    padding: 22.33px 38px 21.8px 38px;
+  }
+  .popup__get-consultation .get-consultation__title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 33.6px;
+    margin-bottom: 2.13px;
+  }
+  .popup__get-consultation .get-consultation__subtitle {
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 21.33px;
+  }
+  .popup__get-consultation input[type=email]::placeholder,
+  .popup__get-consultation textarea::placeholder,
+  .popup__get-consultation .character-count {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .popup__get-consultation .form-group {
+    padding: 0 8.5px;
+    gap: 12.8px;
+    margin-bottom: 21.27px;
+  }
+  .popup__get-consultation .form-group label {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .popup__get-consultation input[type=email] {
+    padding: 8.53px 5.87px 5.87px;
+    width: 100%;
+  }
+  .popup__get-consultation textarea {
+    padding: 8.53px 0 0 5.87px;
+    width: 100%;
+    height: 78.78px;
+    resize: none;
+  }
+  .popup__get-consultation .btn-cancel,
+  .popup__get-consultation .btn-submit {
+    padding: 8.53px 17.07px;
+    font-size: 12px;
+    line-height: 16.8px;
+  }
+  .popup__get-consultation .form-actions {
+    gap: 17.07px;
+  }
+  .popup__get-consultation .close-popup-button {
+    width: 16px;
+    height: 15px;
+    top: 12.52px;
+    right: 11.69px;
+  }
+}
 
 .project__inner {
   display: flex;
@@ -1750,7 +1806,12 @@ img {
   transform: translate(-50%, -50%);
   background-color: #fff;
   z-index: 9999;
-  display: none;
+  display: block;
+}
+@media (max-width: 768px) {
+  .popup {
+    border-radius: 0;
+  }
 }
 
 .overlay {
