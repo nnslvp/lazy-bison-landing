@@ -1462,6 +1462,7 @@ img {
 .footer {
   background-color: #212439;
   color: #ffffff;
+  padding: 29px 0 23px 0;
 }
 .footer a {
   color: #ffffff;
@@ -1477,10 +1478,9 @@ img {
 .footer__inner {
   display: flex;
   justify-content: space-between;
-  padding: 29px 54px 23px 0;
 }
 
-.footer__logo-rights {
+.footer__logo-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1493,10 +1493,6 @@ img {
 .footer__menu-title,
 .footer__contacts-title {
   margin-bottom: 16px;
-}
-
-.footer__menu {
-  padding-bottom: 29px;
 }
 
 .footer-menu__list {
@@ -1527,14 +1523,15 @@ img {
   height: 32px;
 }
 
+.rights {
+  font-size: 14px;
+  line-height: 20px;
+  color: #b0b0b0;
+}
+
 @media (max-width: 768px) {
-  .footer__inner {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 19px 0px 0;
-  }
-  .footer__logo-rights {
-    padding: 14px 0 13px 0;
+  .footer {
+    padding: 13px 0 13px 0;
   }
   .rights {
     font-size: 8px;
@@ -1546,12 +1543,8 @@ img {
     line-height: 20px;
     margin-bottom: 8.53px;
   }
-  .footer__menu {
-    padding: 13px 0 22px 0;
-  }
   .footer__contacts {
     max-width: 216px;
-    padding: 13px 10px 26px 0;
     flex-wrap: nowrap;
   }
   .contact-info {
@@ -1565,14 +1558,61 @@ img {
     font-size: 10px;
     line-height: 14px;
     letter-spacing: 0.02px;
+  }
+  .footer-menu__list {
     gap: 6.4px;
   }
   .social-media .icon {
-    width: 20px;
-    height: 20px;
+    width: 32px;
+    height: 32px;
   }
   .social-media {
     gap: 21.33px;
+  }
+}
+@media (max-width: 375px) {
+  .footer {
+    padding: 13px 0 21px 0;
+  }
+  .footer__inner {
+    flex-direction: column;
+  }
+  .footer__logo-container {
+    width: 210px;
+    margin-bottom: 24px;
+  }
+  .footer__menu {
+    display: none;
+  }
+  .footer__contacts h4 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 12px;
+  }
+  .footer__contacts {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+  }
+  .footer__contacts {
+    max-width: 100%;
+  }
+  .contact-info {
+    gap: 6.4px 54px;
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+  }
+  .social-media {
+    margin-bottom: 34px;
+  }
+  .social-media .icon {
+    width: 36px;
+    height: 36px;
   }
 }
 .popup__get-consultation {
