@@ -51,16 +51,16 @@ li {
   list-style: none;
 }
 
-main section:not(.cases) {
+main section:not(.cases, .testimonials) {
   padding-bottom: 120px;
 }
 @media (max-width: 768px) {
-  main section:not(.cases) {
+  main section:not(.cases, .testimonials) {
     padding-bottom: 80px;
   }
 }
 @media (max-width: 375px) {
-  main section:not(.cases) {
+  main section:not(.cases, .testimonials) {
     padding-bottom: 0px;
   }
 }
@@ -267,7 +267,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 0px 1.3125rem 0px;
+  padding: 22px 0px 1.3125rem 0px;
 }
 
 .header__logo {
@@ -395,7 +395,7 @@ img {
 
 .lazy-bison__title {
   max-width: 1118px;
-  margin: 0 auto;
+  margin: 0 0 0 108px;
 }
 
 .lazy-bison__title span:nth-child(2) {
@@ -426,23 +426,23 @@ img {
 
 .lazy-bison__stats {
   display: flex;
-  justify-content: end;
 }
 
 .lazy-bison-stats__inner {
   display: flex;
   justify-content: end;
-  padding-right: 2.25rem;
 }
 
 .lazy-bison__stats {
   flex-basis: 45.5rem;
-  justify-content: space-between;
+  text-align: start;
+  gap: 101.5px;
 }
 
 .lazy-bison__stats-text {
   display: flex;
   flex-direction: column;
+  gap: 4px;
   font-size: 3rem;
   font-weight: 700;
   line-height: 4.1875rem;
@@ -627,6 +627,10 @@ img {
   margin-bottom: 4.8125rem;
 }
 
+.services-info__item .services-info__description-text {
+  display: none;
+}
+
 .services-info__button {
   padding: 1rem 3.2813rem;
 }
@@ -738,7 +742,7 @@ img {
     flex-basis: 0px;
     padding-top: 0px;
   }
-  li .services-info__description-text {
+  .services-info__description-text {
     display: block;
     max-width: 100%;
     padding: 12px;
@@ -746,9 +750,6 @@ img {
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.03em;
-  }
-  .services-info__description-text {
-    display: none;
   }
   .services-info__types {
     width: 319px;
@@ -767,13 +768,12 @@ img {
     content: url("/assets/icons/shevronDown.svg");
     display: block;
   }
+  .services-info__type-button.active:after {
+    content: url("/assets/icons/shevronDown.svg");
+    display: block;
+    transform: rotate(180deg);
+  }
 }
-.services-info__type-button.active:after {
-  content: url("/assets/icons/shevronDown.svg");
-  display: block;
-  transform: rotate(180deg);
-}
-
 .explore__list {
   display: flex;
   border-top: 0.125rem solid #dcdcdc;
@@ -811,6 +811,9 @@ img {
 
 .explore-item__text {
   width: 21.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 .explore-item__text span {
   display: block;
@@ -1132,22 +1135,22 @@ img {
 }
 
 .workers__item:nth-child(1) {
-  bottom: 4px;
+  bottom: 0px;
   left: 0;
 }
 
 .workers__item:nth-child(2) {
-  top: 98px;
+  top: 34px;
   left: 34%;
 }
 
 .workers__item:nth-child(3) {
-  top: -60px;
+  top: -122px;
   right: 0;
 }
 
 .workers__item:nth-child(4) {
-  bottom: -82px;
+  bottom: -83px;
   right: 0;
 }
 
@@ -1197,7 +1200,7 @@ img {
 
 .description {
   margin-top: 0.625rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -1938,7 +1941,7 @@ img {
   transform: translate(-50%, -50%);
   background-color: #fff;
   z-index: 9999;
-  display: block;
+  display: none;
 }
 
 .overlay {
@@ -2005,6 +2008,10 @@ img {
     align-items: end;
   }
 }
+.swiper {
+  overflow: inherit;
+}
+
 #swiper-pagination {
   display: flex;
   justify-content: center;
@@ -2020,11 +2027,4 @@ img {
 
 .swiper-pagination-bullet-active {
   background-color: #9f9dbc;
-}
-
-.swiper-slide,
-swiper-slide {
-  flex-shrink: 0;
-  width: auto;
-  height: auto;
 }

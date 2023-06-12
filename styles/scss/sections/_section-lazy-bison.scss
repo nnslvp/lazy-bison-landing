@@ -9,7 +9,7 @@
 
 .lazy-bison__title {
 	max-width: 1118px;
-	margin: 0 auto;
+	margin: 0 0 0 108px;
 }
 
 .lazy-bison__title span:nth-child(2) {
@@ -40,23 +40,23 @@
 
 .lazy-bison__stats {
 	display: flex;
-	justify-content: end;
 }
 
 .lazy-bison-stats__inner {
 	display: flex;
 	justify-content: end;
-	padding-right: 2.25rem;
 }
 
 .lazy-bison__stats {
 	flex-basis: 45.5rem;
-	justify-content: space-between;
+	text-align: start;
+	gap: 101.5px;
 }
 
 .lazy-bison__stats-text {
 	display: flex;
 	flex-direction: column;
+	gap: 4px;
 	font-size: 3rem;
 	font-weight: 700;
 	line-height: 4.1875rem;

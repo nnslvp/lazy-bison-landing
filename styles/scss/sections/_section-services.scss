@@ -49,6 +49,10 @@
 	margin-bottom: 4.8125rem;
 }
 
+.services-info__item .services-info__description-text {
+	display: none;
+}
+
 .services-info__button {
 	padding: 1rem 3.2813rem;
 }
@@ -182,7 +186,7 @@
 		padding-top: 0px;
 	}
 
-	li .services-info__description-text {
+	.services-info__description-text {
 		display: block;
 		max-width: 100%;
 		padding: 12px;
@@ -190,10 +194,6 @@
 		font-size: 16px;
 		line-height: 22px;
 		letter-spacing: 0.03em;
-	}
-
-	.services-info__description-text {
-		display: none;
 	}
 
 	.services-info__types {
@@ -215,9 +215,9 @@
 		content: url('/assets/icons/shevronDown.svg');
 		display: block;
 	}
-}
-.services-info__type-button.active:after {
-	content: url('/assets/icons/shevronDown.svg');
-	display: block;
-	transform: rotate(180deg);
+	.services-info__type-button.active:after {
+		content: url('/assets/icons/shevronDown.svg');
+		display: block;
+		transform: rotate(180deg);
+	}
 }
