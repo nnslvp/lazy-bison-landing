@@ -2,6 +2,12 @@
 	overflow: inherit;
 }
 
+.swiper-slide {
+	flex-shrink: 0;
+	width: auto;
+	height: auto;
+}
+
 #swiper-pagination {
 	display: flex;
 	justify-content: center;

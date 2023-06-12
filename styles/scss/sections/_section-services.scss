@@ -53,6 +53,11 @@
 	display: none;
 }
 
+.services-info__gray-line {
+	width: 227px;
+	margin: 10px 0 12.73px 0;
+}
+
 .services-info__button {
 	padding: 1rem 3.2813rem;
 }
@@ -80,19 +85,20 @@
 
 @media (max-width: 768px) {
 	.services {
-		@include background(
-			'/assets/images/services-bg-768.png',
-			bottom,
-			no-repeat,
-			contain
-		);
+		background: none;
 
 		.section-title__inner {
 			margin-bottom: 58px;
 		}
 
 		.services__inner {
-			padding-bottom: 56px;
+			@include background(
+				'/assets/images/services-bg-768.png',
+				bottom,
+				no-repeat,
+				contain
+			);
+			padding-bottom: 30px;
 		}
 	}
 
@@ -105,7 +111,7 @@
 		);
 	}
 
-	.services__gray-line {
+	.services__gray-line.gray-line {
 		display: none;
 	}
 
@@ -132,8 +138,12 @@
 		margin-bottom: 55px;
 	}
 
+	.services-info__item .services-info__description-text {
+		display: none;
+	}
+
 	.services-info__types {
-		width: 264px;
+		width: 248px;
 		padding-top: 25px;
 	}
 

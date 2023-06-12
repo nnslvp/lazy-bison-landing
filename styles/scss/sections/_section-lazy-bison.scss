@@ -65,11 +65,10 @@
 
 @media (max-width: 768px) {
 	.lazy-bison__inner {
-		padding-bottom: 5rem;
 		padding-top: 28px;
 		@include background(
 			'/assets/images/lazy-bizon-bg-768.svg',
-			center,
+			bottom,
 			no-repeat,
 			contain
 		);
@@ -96,7 +95,7 @@
 	.lazy-bison-description__info {
 		flex-basis: 497px;
 		padding-top: 0;
-		padding-bottom: 41px;
+		padding-bottom: 64px;
 	}
 
 	.lazy-bison-description__text {
@@ -118,8 +117,9 @@
 	}
 
 	.lazy-bison__stats-text {
-		font-size: 48px;
-		line-height: 67px;
+		font-size: 44px;
+		line-height: 61.6px;
+		gap: 0;
 	}
 
 	.lazy-bison__stats-subtext {

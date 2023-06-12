@@ -202,6 +202,8 @@ img {
 }
 @media (max-width: 768px) {
   .button--primary {
+    font-size: 17.3px;
+    line-height: 24.22px;
     padding: 14px 45.5px;
   }
 }
@@ -451,10 +453,9 @@ img {
 
 @media (max-width: 768px) {
   .lazy-bison__inner {
-    padding-bottom: 5rem;
     padding-top: 28px;
     background-image: url("/assets/images/lazy-bizon-bg-768.svg");
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: transparent;
@@ -476,7 +477,7 @@ img {
   .lazy-bison-description__info {
     flex-basis: 497px;
     padding-top: 0;
-    padding-bottom: 41px;
+    padding-bottom: 64px;
   }
   .lazy-bison-description__text {
     padding-top: 209px;
@@ -495,8 +496,9 @@ img {
     margin: 0 auto;
   }
   .lazy-bison__stats-text {
-    font-size: 48px;
-    line-height: 67px;
+    font-size: 44px;
+    line-height: 61.6px;
+    gap: 0;
   }
   .lazy-bison__stats-subtext {
     font-size: 1rem;
@@ -631,6 +633,11 @@ img {
   display: none;
 }
 
+.services-info__gray-line {
+  width: 227px;
+  margin: 10px 0 12.73px 0;
+}
+
 .services-info__button {
   padding: 1rem 3.2813rem;
 }
@@ -658,17 +665,18 @@ img {
 
 @media (max-width: 768px) {
   .services {
-    background-image: url("/assets/images/services-bg-768.png");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: transparent;
+    background: none;
   }
   .services .section-title__inner {
     margin-bottom: 58px;
   }
   .services .services__inner {
-    padding-bottom: 56px;
+    background-image: url("/assets/images/services-bg-768.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    padding-bottom: 30px;
   }
   .services-info {
     background-image: url("/assets/images/services-info-bg-768.png");
@@ -677,7 +685,7 @@ img {
     background-size: contain;
     background-color: transparent;
   }
-  .services__gray-line {
+  .services__gray-line.gray-line {
     display: none;
   }
   .services-info__inner {
@@ -699,8 +707,11 @@ img {
     line-height: 20px;
     margin-bottom: 55px;
   }
+  .services-info__item .services-info__description-text {
+    display: none;
+  }
   .services-info__types {
-    width: 264px;
+    width: 248px;
     padding-top: 25px;
   }
   .services-info__type-button {
@@ -1020,6 +1031,7 @@ img {
     background-color: transparent;
     display: flex;
     flex-direction: column;
+    margin-bottom: 64px;
   }
   .projects-container {
     padding-top: 83px;
@@ -1296,8 +1308,11 @@ img {
     left: -183px;
     right: auto;
   }
+  .workers__list {
+    height: 427px;
+  }
   .workers__item:nth-child(1) {
-    top: 41.19px;
+    top: 0px;
     left: 92px;
   }
   .workers__item:nth-child(2) {
@@ -1307,11 +1322,11 @@ img {
     bottom: 34px;
   }
   .workers__item:nth-child(3) {
-    top: -38px;
+    top: -81px;
     right: 0;
   }
   .workers__item:nth-child(4) {
-    bottom: -46.84px;
+    bottom: -46px;
     left: 0;
   }
   .card {
@@ -1347,7 +1362,7 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
-    padding: 15.6875rem 0 7.5rem 0;
+    padding: 157px 0 80px 0;
   }
   .consultation__inner {
     background-image: url("/assets/images/consultation-bg-768.png");
@@ -1372,10 +1387,8 @@ img {
     letter-spacing: 0.03em;
   }
   .consultation__inner .button {
-    padding: 14px 45.5px;
-    margin-right: 71.37px;
-    font-size: 17.2973px;
-    line-height: 24px;
+    padding: 14px 70.4px;
+    margin-right: 71px;
   }
   .consultation__planet-img {
     position: absolute;
@@ -2010,6 +2023,12 @@ img {
 }
 .swiper {
   overflow: inherit;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: auto;
+  height: auto;
 }
 
 #swiper-pagination {
