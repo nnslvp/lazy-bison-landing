@@ -25,6 +25,7 @@
 	.name-app__inner {
 		display: flex;
 		justify-content: end;
+		align-items: center;
 		padding-right: 0.625rem;
 		gap: 0.625rem;
 	}
@@ -91,6 +92,53 @@
 		.close-popup-button {
 			width: 9.77px;
 			height: 9.77px;
+		}
+	}
+	@media (max-width: 375px) {
+		.project__inner {
+			flex-direction: column-reverse;
+			padding: 76px 0 50px 0;
+		}
+
+		.project__info {
+			padding: 0;
+			border-right: none;
+		}
+
+		.project__title {
+			position: absolute;
+			top: 20px;
+			left: 28px;
+			padding: 0;
+			margin: 0;
+		}
+
+		.project__description {
+			padding: 20px;
+		}
+
+		.project__description-text {
+			width: 334px;
+			font-size: 16px;
+			line-height: 22.4px;
+		}
+
+		.project__img {
+			padding: 0 20px 26px 20px;
+			margin: 0 auto;
+		}
+
+		.project__img-img {
+			margin: 0;
+			object-fit: cover;
+			border: none;
+			width: 336px;
+			height: 124px;
+		}
+
+		.arrow-img__container {
+			width: 45px;
+			height: 45px;
 		}
 	}
 }
