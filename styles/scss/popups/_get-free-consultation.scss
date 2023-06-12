@@ -1,4 +1,4 @@
-.popup__get-consultation {
+.popup.popup__get-consultation {
 	@include background(
 		'/assets/images/consulatation-popup-bg.png',
 		initial,
@@ -94,6 +94,7 @@
 	}
 
 	@media (max-width: 768px) {
+		border-radius: 0;
 		padding: 22.33px 38px 21.8px 38px;
 
 		.get-consultation__title {
