@@ -156,27 +156,29 @@
 
 @media (max-width: 375px) {
 	.services {
-		background: none;
+		@include background(
+			'/assets/images/services-info-bg-375.png',
+			0 79px,
+			no-repeat,
+			contain
+		);
 
 		.section-title__inner {
 			margin-bottom: 30px;
 		}
 
 		.services__inner {
-			padding-bottom: 56px;
+			background: none;
+			padding-bottom: 66px;
 		}
 	}
 
-	.services {
-		@include background(
-			'/assets/images/services-info-bg-375.png',
-			center,
-			no-repeat,
-			contain
-		);
+	.services-info {
+		background: none;
 	}
 
-	.services__gray-line {
+	.services__gray-line,
+	.services-info__description .services-info__gray-line {
 		display: none;
 	}
 
@@ -197,13 +199,17 @@
 	}
 
 	.services-info__description-text {
-		display: block;
+		display: none;
 		max-width: 100%;
 		padding: 12px;
 		margin-bottom: 0px;
 		font-size: 16px;
 		line-height: 22px;
 		letter-spacing: 0.03em;
+	}
+
+	.services-info__item .services-info__description-text {
+		display: block;
 	}
 
 	.services-info__types {
@@ -219,6 +225,10 @@
 		font-size: 16px;
 		line-height: 22px;
 		letter-spacing: 0.03em;
+	}
+
+	.services-primary__button {
+		padding: 14px 67.5px;
 	}
 
 	.services-info__type-button:after {

@@ -141,12 +141,15 @@
 	}
 
 	.lazy-bison__inner {
+		padding-top: 21px;
 		padding-bottom: 0;
 		background: none;
+		.gray-line {
+			display: none;
+		}
 	}
 
 	.lazy-bison__title {
-		width: 335px;
 		font-size: 42px;
 		line-height: 50px;
 		letter-spacing: 0.03em;
@@ -157,7 +160,7 @@
 	}
 
 	.lazy-bison__title span:nth-child(3) {
-		padding-left: 110px;
+		padding-left: 114px;
 	}
 
 	.img-planets {
@@ -176,11 +179,16 @@
 	}
 
 	.lazy-bison-description__text {
-		padding-top: 117px;
+		padding-top: 124px;
 		margin: 0 0 50px 0;
 		font-size: 18px;
 		line-height: 25px;
 		letter-spacing: 0em;
+	}
+
+	.lazy-bison-description__btn {
+		width: 256px;
+		margin: 0 auto;
 	}
 
 	.lazy-bison__stats {

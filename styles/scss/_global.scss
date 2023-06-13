@@ -193,6 +193,11 @@ img {
 		line-height: 24.22px;
 		padding: 14px 45.5px;
 	}
+	@media (max-width: 375px) {
+		font-size: 17px;
+		line-height: 24px;
+		padding: 14px 45.5px;
+	}
 }
 
 .gray-line {

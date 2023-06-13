@@ -207,6 +207,13 @@ img {
     padding: 14px 45.5px;
   }
 }
+@media (max-width: 375px) {
+  .button--primary {
+    font-size: 17px;
+    line-height: 24px;
+    padding: 14px 45.5px;
+  }
+}
 
 .gray-line {
   height: 2px;
@@ -516,11 +523,14 @@ img {
     padding-top: 54px;
   }
   .lazy-bison__inner {
+    padding-top: 21px;
     padding-bottom: 0;
     background: none;
   }
+  .lazy-bison__inner .gray-line {
+    display: none;
+  }
   .lazy-bison__title {
-    width: 335px;
     font-size: 42px;
     line-height: 50px;
     letter-spacing: 0.03em;
@@ -529,7 +539,7 @@ img {
     padding-left: 40px;
   }
   .lazy-bison__title span:nth-child(3) {
-    padding-left: 110px;
+    padding-left: 114px;
   }
   .img-planets {
     display: none;
@@ -544,11 +554,15 @@ img {
     padding-bottom: 61px;
   }
   .lazy-bison-description__text {
-    padding-top: 117px;
+    padding-top: 124px;
     margin: 0 0 50px 0;
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 0em;
+  }
+  .lazy-bison-description__btn {
+    width: 256px;
+    margin: 0 auto;
   }
   .lazy-bison__stats {
     display: flex;
@@ -722,22 +736,24 @@ img {
 }
 @media (max-width: 375px) {
   .services {
-    background: none;
+    background-image: url("/assets/images/services-info-bg-375.png");
+    background-position: 0 79px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
   }
   .services .section-title__inner {
     margin-bottom: 30px;
   }
   .services .services__inner {
-    padding-bottom: 56px;
+    background: none;
+    padding-bottom: 66px;
   }
-  .services {
-    background-image: url("/assets/images/services-info-bg-375.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: transparent;
+  .services-info {
+    background: none;
   }
-  .services__gray-line {
+  .services__gray-line,
+  .services-info__description .services-info__gray-line {
     display: none;
   }
   .services-info__inner {
@@ -754,13 +770,16 @@ img {
     padding-top: 0px;
   }
   .services-info__description-text {
-    display: block;
+    display: none;
     max-width: 100%;
     padding: 12px;
     margin-bottom: 0px;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.03em;
+  }
+  .services-info__item .services-info__description-text {
+    display: block;
   }
   .services-info__types {
     width: 319px;
@@ -774,6 +793,9 @@ img {
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.03em;
+  }
+  .services-primary__button {
+    padding: 14px 67.5px;
   }
   .services-info__type-button:after {
     content: url("/assets/icons/shevronDown.svg");
@@ -1465,6 +1487,7 @@ img {
     margin: 0 auto;
   }
   .consultation__inner .button {
+    padding: 14px 45.5px;
     margin: 0 auto;
   }
   .consultation__planet-img {
@@ -1980,7 +2003,7 @@ img {
 
 .burger-menu-button {
   display: none;
-  width: 40px;
+  width: 32px;
   height: 22px;
   background-color: transparent;
   border: none;
@@ -1989,7 +2012,7 @@ img {
 }
 
 .line {
-  width: 32px;
+  width: 26px;
   height: 2px;
   background-color: #ffffff;
   transition: transform 0.3s ease;
@@ -2023,6 +2046,11 @@ img {
 }
 .swiper {
   overflow: inherit;
+}
+@media (max-width: 375px) {
+  .swiper {
+    overflow: hidden;
+  }
 }
 
 .swiper-slide {
