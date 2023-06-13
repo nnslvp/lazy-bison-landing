@@ -49,6 +49,15 @@
 	margin-bottom: 4.8125rem;
 }
 
+.services-info__item .services-info__description-text {
+	display: none;
+}
+
+.services-info__gray-line {
+	width: 227px;
+	margin: 10px 0 12.73px 0;
+}
+
 .services-info__button {
 	padding: 1rem 3.2813rem;
 }
@@ -76,19 +85,20 @@
 
 @media (max-width: 768px) {
 	.services {
-		@include background(
-			'/assets/images/services-bg-768.png',
-			bottom,
-			no-repeat,
-			contain
-		);
+		background: none;
 
 		.section-title__inner {
 			margin-bottom: 58px;
 		}
 
 		.services__inner {
-			padding-bottom: 56px;
+			@include background(
+				'/assets/images/services-bg-768.png',
+				bottom,
+				no-repeat,
+				contain
+			);
+			padding-bottom: 30px;
 		}
 	}
 
@@ -101,7 +111,7 @@
 		);
 	}
 
-	.services__gray-line {
+	.services__gray-line.gray-line {
 		display: none;
 	}
 
@@ -128,8 +138,12 @@
 		margin-bottom: 55px;
 	}
 
+	.services-info__item .services-info__description-text {
+		display: none;
+	}
+
 	.services-info__types {
-		width: 264px;
+		width: 248px;
 		padding-top: 25px;
 	}
 
@@ -182,7 +196,7 @@
 		padding-top: 0px;
 	}
 
-	li .services-info__description-text {
+	.services-info__description-text {
 		display: block;
 		max-width: 100%;
 		padding: 12px;
@@ -190,10 +204,6 @@
 		font-size: 16px;
 		line-height: 22px;
 		letter-spacing: 0.03em;
-	}
-
-	.services-info__description-text {
-		display: none;
 	}
 
 	.services-info__types {
@@ -215,9 +225,9 @@
 		content: url('/assets/icons/shevronDown.svg');
 		display: block;
 	}
-}
-.services-info__type-button.active:after {
-	content: url('/assets/icons/shevronDown.svg');
-	display: block;
-	transform: rotate(180deg);
+	.services-info__type-button.active:after {
+		content: url('/assets/icons/shevronDown.svg');
+		display: block;
+		transform: rotate(180deg);
+	}
 }

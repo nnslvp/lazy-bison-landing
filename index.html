@@ -5,11 +5,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My Website</title>
-	<link rel="stylesheet" href="./styles/css/normalize.css">
-	<link rel="stylesheet" href="./styles/css/main.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./styles/css/normalize.css">
+	<link rel="stylesheet" href="./styles/css/main.css">
 </head>
 
 <body>
@@ -52,7 +53,9 @@
 					<div class="lazy-bison__inner">
 						<h1 class="lazy-bison__title">
 							<span class="lazy-bison-tittle__text">Get full-stack</span>
-							<span class="lazy-bison-title__text"><mark class="lazy-bison__text--highlight">{development}</mark></span>
+							<span class="lazy-bison-title__text">
+								{<mark class="lazy-bison__text--highlight">development</mark>}
+							</span>
 							services with
 							<span class="lazy-bison-title__text">Lazy Bison</span>
 						</h1>
@@ -61,7 +64,7 @@
 							<div class="lazy-bison-description__info">
 								<div class="gray-line"></div>
 								<p class="lazy-bison-description__text text--large">
-									Lazy Bison is an outsourcing company who specializes in
+									Lazy Bison is an outsourcing company<br> who specializes in
 									providing a full ecosystem for small and medium-sized
 									businesses with Ruby on Rails
 								</p>
@@ -136,7 +139,7 @@
 								<div class="services-info__types">
 									<ul class="services-info__list text--medium">
 										<li class="services-info__item">
-											<button class="services-info__type-button activef">
+											<button class="services-info__type-button active">
 												Web Development
 											</button>
 											<p class="services-info__description-text text--medium">
@@ -255,7 +258,7 @@
 				</div>
 			</section>
 
-			<!-- <section class="cases">
+			<section class="cases">
 				<div class="container">
 					<div class="section-title__inner">
 						<h2 class="section-title__heading">
@@ -273,28 +276,24 @@
 					</div>
 					<div class="cases__inner">
 						<div class="casess__gray-line gray-line"></div>
-						<div class="slider">
-							<img class="cases__planet-img" src="./assets/images/casesplanet.svg" alt='planet'>
-							<div class="slider__item slider__item--active">
-								<div class="slider__item-content">
-									<div class="slider__project slider__project--1 open-popup-button">
-										<img src="./assets/images/projet-img-one.png" alt='cases' class="slider__image ">
-									</div>
+						<div class="swiper projects-container" data-mobile="false">
+							<div class="swiper-wrapper projects-wrapper open-popup-button">
+								<div class="swiper-slide project-slide">
+									<img src="./assets/images/projet-img-one.png" alt='cases' class="slider__image ">
 								</div>
-								<div class="slider__item-content">
-									<a href="#" class="slider__project slider__project--2 ">
-										<img src="./assets/images/projet-img-two.png" alt='cases' class="slider__image">
-									</a>
-									<a href="#" class="slider__project slider__project--3">
-										<img src="./assets/images/projet-img-three.png" alt='cases' class="slider__image">
-									</a>
+								<div class="swiper-slide project-slide">
+									<img src="./assets/images/projet-img-two.png" alt='cases' class="slider__image">
+								</div>
+								<div class="swiper-slide project-slide">
+									<img src="./assets/images/projet-img-three.png" alt='cases' class="slider__image">
 								</div>
 							</div>
+							<div id='swiper-pagination' class="swiper-pagination"></div>
 						</div>
 					</div>
 				</div>
-			</section> -->
-			<!-- <section class="testimonials">
+			</section>
+			<section class="testimonials">
 				<div class="container">
 					<div class="section-title__inner">
 						<h2 class="section-title__heading">
@@ -332,74 +331,75 @@
 					</div>
 					<div class="workers-background">
 						<div class="container">
-							<ul class="workers__list">
-								<li class="workers__item">
-									<div class="card worker-1">
-										<div class="avatar">
-											<img src="./assets/images/Avatar.png" alt="avatar">
-										</div>
-										<div class="card__content">
-											<h2 class="name">George Smith</h2>
-											<p class="position text--medium">CEO Market.equties</p>
-											<p class="description">
-												"We had a great experience working with Lazy Bison's
-												development team. We highly recommend their services
-												to any business looking...
-											</p>
-										</div>
-									</div>
-								</li>
-
-								<li class="workers__item">
-									<div class="card worker-2">
-										<div class="avatar">
-											<img src="./assets/images/Avatar2.png" alt="avatar">
-										</div>
-										<div class="card__content">
-											<h2 class="name">Stive Hill</h2>
-											<p class="position text--medium">CEO Market.equties</p>
-											<p class="description">
-												"We had a great experience working with Lazy Bison's
-												development team. We highly recommend their services
-												to any business looking...
-											</p>
+							<div class="swiper workers__list" data-mobile="false">
+								<div class="swiper-wrapper ">
+									<div class="swiper-slide workers__item ">
+										<div class="card worker-1">
+											<div class="avatar">
+												<img src="./assets/images/Avatar.png" alt="avatar">
+											</div>
+											<div class="card__content">
+												<h2 class="name">George Smith</h2>
+												<p class="position text--medium">CEO Market.equties</p>
+												<p class="description">
+													"We had a great experience working with Lazy Bison's
+													development team. We highly recommend their services
+													to any business looking...
+												</p>
+											</div>
 										</div>
 									</div>
-								</li>
-
-								<li class="workers__item">
-									<div class="card worker-3">
-										<div class="avatar">
-											<img src="/assets/images/Avatar3.png" alt="avatar">
-										</div>
-										<div class="card__content">
-											<h2 class="name">Adam Space</h2>
-											<p class="position text--medium">CEO Market.equties</p>
-											<p class="description">
-												"We had a great experience working with Lazy Bison's
-												development team. We highly recommend their services
-												to any business looking...
-											</p>
-										</div>
-									</div>
-								</li>
-								<li class="workers__item">
-									<div class="card worker-4">
-										<div class="avatar">
-											<img src="./assets/images/Avatar4.png" alt="avatar">
-										</div>
-										<div class="card__content">
-											<h2 class="name">Helen Miller</h2>
-											<p class="position text--medium">CEO Market.equties</p>
-											<p class="description">
-												"We had a great experience working with Lazy Bison's
-												development team. We highly recommend their services
-												to any business looking...
-											</p>
+									<div class="swiper-slide workers__item">
+										<div class="card worker-2">
+											<div class="avatar">
+												<img src="./assets/images/Avatar2.png" alt="avatar">
+											</div>
+											<div class="card__content">
+												<h2 class="name">Stive Hill</h2>
+												<p class="position text--medium">CEO Market.equties</p>
+												<p class="description">
+													"We had a great experience working with Lazy Bison's
+													development team. We highly recommend their services
+													to any business looking...
+												</p>
+											</div>
 										</div>
 									</div>
-								</li>
-							</ul>
+									<div class="swiper-slide workers__item">
+										<div class="card worker-3">
+											<div class="avatar">
+												<img src="/assets/images/Avatar3.png" alt="avatar">
+											</div>
+											<div class="card__content">
+												<h2 class="name">Adam Space</h2>
+												<p class="position text--medium">CEO Market.equties</p>
+												<p class="description">
+													"We had a great experience working with Lazy Bison's
+													development team. We highly recommend their services
+													to any business looking...
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide workers__item">
+										<div class="card worker-4">
+											<div class="avatar">
+												<img src="./assets/images/Avatar4.png" alt="avatar">
+											</div>
+											<div class="card__content">
+												<h2 class="name">Helen Miller</h2>
+												<p class="position text--medium">CEO Market.equties</p>
+												<p class="description">
+													"We had a great experience working with Lazy Bison's
+													development team. We highly recommend their services
+													to any business looking...
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id='swiper-pagination' class="swiper-pagination"></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -417,16 +417,13 @@
 						</div>
 					</div>
 				</div>
-			</section> -->
+			</section>
 		</main>
-		<!-- <footer class='footer'>
+		<footer class='footer'>
 			<div class="container">
 				<div class="footer__inner">
-					<div class="footer__logo-rights">
+					<div class="footer__logo-container">
 						<img class='footer__logo logo' src="/assets//icons/logo.svg" alt="Lazy Bizon Logo" alt='logo'>
-						<p class="rights">
-							© 2023 Lazy Bizon. All Rights Reserved.
-						</p>
 					</div>
 					<div class="footer__menu">
 						<h4 class='footer__menu-title'>Menu</h4>
@@ -440,11 +437,6 @@
 								<li class="footer__menu-item">
 									<a href="#" class="footer__menu-link">
 										Explore
-									</a>
-								</li>
-								<li class="footer__menu-item">
-									<a href="#" class="footer__menu-link">
-										Cases
 									</a>
 								</li>
 								<li class="footer__menu-item">
@@ -496,66 +488,73 @@
 						</div>
 					</div>
 				</div>
+				<p class="rights">
+					© 2023 Lazy Bizon. All Rights Reserved.
+				</p>
 			</div>
-		</footer> -->
+		</footer>
 	</div>
-	<div class="popup popup__get-consultation">
+	<div class="popup popup-project">
 		<div class="popup-content ">
-			<!-- <div class="project__inner">
-				<div class="project__description">
+			<div class="project__inner">
+				<div class="project__info">
 					<h3 class=" project__title heading--small">Name of project</h3>
-					<p class="project__description-text  text--medium">We developed a custom crowdfunding platform
-						with a user-friendly interface that made it easy
-						for entrepreneurs to create campaigns and for investors to find projects to fund. We integrated a
-						secure payment system and an admin panel for managing campaigns
-						and funds. The platform allowed investors to select
-						a reward item offered by the entrepreneur,
-						and it displayed the progress towards the funding goal.</p>
+					<div class="project__description">
+						<p class="project__description-text  text--medium">We developed a custom crowdfunding platform
+							with a user-friendly interface that made it easy
+							for entrepreneurs to create campaigns and for investors to find projects to fund. We integrated a
+							secure payment system and an admin panel for managing campaigns
+							and funds. The platform allowed investors to select
+							a reward item offered by the entrepreneur,
+							and it displayed the progress towards the funding goal.</p>
+					</div>
 					<div class="name-app__inner">
 						<h4 class='name-app__title'>Crowdfunding web application</h4>
-						<img src="./assets/icons/arrow-right-square.svg" alt="arrow">
+						<div class="arrow-img__container">
+							<img src="./assets/icons/arrow-right-square.svg" alt="arrow">
+						</div>
 					</div>
 				</div>
 				<div class="project__img">
 					<img class='project__img-img' src="./assets/images/popup-project.jpeg" alt="project-img">
 				</div>
-			</div> -->
-			<h2 class="get-consultation__title ">
+			</div>
+			<!-- <h2 class="get-consultation__title "
 				Get free consultation
 			</h2>
 			<p class="get-consultation__subtitle text--medium">
 				Please, fill out the form
 			</p>
-			<form>
-				<div class="form-group">
+				<form>
+					<div class="form-group">
 
-					<label class='text--small' for="email">
-						E-mail
-						<input placeholder='exapmle@gmail.com' type="email" id="email" name="email" required>
-					</label>
-
-
-					<div class="textarea__container">
-						<label class='text--small' for="comments">
-							Your comments
-							<textarea placeholder='Write your comments (optional)' id="comments" name="comments" maxlength="360"
-								required></textarea>
+						<label class='text--small' for="email">
+							E-mail
+							<input placeholder='exapmle@gmail.com' type="email" id="email" name="email" required>
 						</label>
-						<div class="character-count text--small">0/360</div>
+
+
+						<div class="textarea__container">
+							<label class='text--small' for="comments">
+								Your comments
+								<textarea placeholder='Write your comments (optional)' id="comments" name="comments" maxlength="360"
+									required></textarea>
+							</label>
+							<div class="character-count text--small">0/360</div>
+						</div>
+
+						<label class='checkbox-label text--small' for="agree">
+							<input type="checkbox" id="agree" name="agree" required>
+							Agree to process personal data
+						</label>
 					</div>
 
-					<label class='checkbox-label text--small' for="agree">
-						<input type="checkbox" id="agree" name="agree" required>
-						Agree to process personal data
-					</label>
-				</div>
 
-
-				<div class="form-actions">
-					<button type="button" class="btn btn-cancel">Cancel</button>
-					<button type="submit" class="btn btn-submit">Submit</button>
-				</div>
-			</form>
+					<div class="form-actions">
+						<button type="button" class="btn btn-cancel">Cancel</button>
+						<button type="submit" class="btn btn-submit">Submit</button>
+					</div>
+				</form> -->
 
 			<button class="close-popup-button">
 				<img src="./assets/icons/close-icon.svg" alt="close">
@@ -564,6 +563,7 @@
 	</div>
 	<div class="overlay"></div>
 	<script type="module" src='./js/main.js'></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 
 </html>

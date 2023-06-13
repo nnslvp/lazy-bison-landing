@@ -1,0 +1,26 @@
+.swiper {
+	overflow: inherit;
+}
+
+.swiper-slide {
+	flex-shrink: 0;
+	width: auto;
+	height: auto;
+}
+
+#swiper-pagination {
+	display: flex;
+	justify-content: center;
+	gap: 7px;
+}
+
+#swiper-pagination .swiper-pagination-bullet {
+	width: 14px;
+	height: 14px;
+	background-color: $color-light-grey;
+	margin: 0;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #9f9dbc;
+}

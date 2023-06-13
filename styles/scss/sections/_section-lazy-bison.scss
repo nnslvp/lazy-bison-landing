@@ -9,7 +9,7 @@
 
 .lazy-bison__title {
 	max-width: 1118px;
-	margin: 0 auto;
+	margin: 0 0 0 108px;
 }
 
 .lazy-bison__title span:nth-child(2) {
@@ -40,23 +40,23 @@
 
 .lazy-bison__stats {
 	display: flex;
-	justify-content: end;
 }
 
 .lazy-bison-stats__inner {
 	display: flex;
 	justify-content: end;
-	padding-right: 2.25rem;
 }
 
 .lazy-bison__stats {
 	flex-basis: 45.5rem;
-	justify-content: space-between;
+	text-align: start;
+	gap: 101.5px;
 }
 
 .lazy-bison__stats-text {
 	display: flex;
 	flex-direction: column;
+	gap: 4px;
 	font-size: 3rem;
 	font-weight: 700;
 	line-height: 4.1875rem;
@@ -65,11 +65,10 @@
 
 @media (max-width: 768px) {
 	.lazy-bison__inner {
-		padding-bottom: 5rem;
 		padding-top: 28px;
 		@include background(
 			'/assets/images/lazy-bizon-bg-768.svg',
-			center,
+			bottom,
 			no-repeat,
 			contain
 		);
@@ -96,7 +95,7 @@
 	.lazy-bison-description__info {
 		flex-basis: 497px;
 		padding-top: 0;
-		padding-bottom: 41px;
+		padding-bottom: 64px;
 	}
 
 	.lazy-bison-description__text {
@@ -118,8 +117,9 @@
 	}
 
 	.lazy-bison__stats-text {
-		font-size: 48px;
-		line-height: 67px;
+		font-size: 44px;
+		line-height: 61.6px;
+		gap: 0;
 	}
 
 	.lazy-bison__stats-subtext {

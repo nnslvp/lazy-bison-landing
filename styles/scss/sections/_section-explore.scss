@@ -33,7 +33,9 @@
 
 .explore-item__text {
 	width: 21.875rem;
-
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
 	span {
 		display: block;
 	}
