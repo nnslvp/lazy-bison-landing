@@ -51,6 +51,10 @@ li {
 	list-style: none;
 }
 
+object {
+	width: 100%;
+}
+
 main section:not(.cases, .testimonials) {
 	padding-bottom: 120px;
 	@media (max-width: 768px) {
