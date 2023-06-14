@@ -1,3 +1,11 @@
+@keyframes circle-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 *,
 *::before,
 *::after {
@@ -237,6 +245,22 @@ img {
   }
 }
 
+.planet-blue {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  z-index: 1;
+  background: radial-gradient(72.45% 72.45% at 27.78% 24.07%, rgba(158, 236, 229, 0.48) 0%, #9eece5 60.46%, #72dfdd 79.62%, #51bbf6 100%);
+  border-radius: 50%;
+}
+
+.circle-ruby-on-rails {
+  width: 170.35px;
+  height: 170.28px;
+  position: absolute;
+  animation: circle-rotation 4s infinite linear;
+}
+
 .section-title__heading {
   display: flex;
   align-items: center;
@@ -426,15 +450,44 @@ img {
 
 .lazy-bison-description__inner {
   display: flex;
+  flex-direction: column;
 }
 
 .lazy-bison-description__info {
-  flex-basis: 32rem;
+  position: relative;
+  background-image: url("/assets/images/lazy-bizon-bg-1440.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: transparent;
   padding-top: 6.1875rem;
-  padding-bottom: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+.lazy-bison-description__info .gray-line {
+  max-width: 512px;
+}
+.lazy-bison-description__info .planet-blue {
+  position: absolute;
+  z-index: 1;
+  top: 122px;
+  right: 331px;
+  width: 145px;
+  height: 145px;
+  background: radial-gradient(circle at left, #eaeaea, #e6fffc, #c2f7f7, #b0eef2, #8ee9d8, #6ddddd, #3073c1, #638b9f);
+  transform: rotate(42deg);
+  border-radius: 50%;
+}
+.lazy-bison-description__info .circle-ruby-on-rails {
+  position: absolute;
+  top: 100px;
+  right: 405px;
+  width: 170.35px;
+  height: 170.28px;
+  animation: circle-rotation 4s infinite linear;
 }
 
 .lazy-bison-description__text {
+  max-width: 512px;
   margin: 1.5rem 0 4rem 0;
 }
 
@@ -1014,6 +1067,14 @@ img {
   overflow: hidden;
   width: 100%;
 }
+.projects-container .planet-blue {
+  top: 71px;
+  right: 54px;
+}
+.projects-container .circle-ruby-on-rails {
+  top: 46px;
+  right: 30px;
+}
 
 .projects-wrapper {
   display: grid;
@@ -1278,6 +1339,16 @@ img {
   padding: 3.25rem 0 2.4375rem 0;
   margin: 0 auto;
   color: #ffffff;
+}
+.consultation__inner .planet-blue {
+  z-index: -1;
+  top: -25px;
+  left: -12px;
+}
+.consultation__inner .circle-ruby-on-rails {
+  z-index: -1;
+  top: -49px;
+  left: -40px;
 }
 
 .consultation__planet-img {

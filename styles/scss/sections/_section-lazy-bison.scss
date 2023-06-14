@@ -26,15 +26,52 @@
 
 .lazy-bison-description__inner {
 	display: flex;
+	flex-direction: column;
 }
 
 .lazy-bison-description__info {
-	flex-basis: 32rem;
+	position: relative;
+	@include background('/assets/images/lazy-bizon-bg-1440.png', bottom right);
 	padding-top: 6.1875rem;
-	padding-bottom: 2.25rem;
+	margin-bottom: 2.25rem;
+	.gray-line {
+		max-width: 512px;
+	}
+
+	.planet-blue {
+		position: absolute;
+		z-index: 1;
+		top: 122px;
+		right: 331px;
+		width: 145px;
+		height: 145px;
+		background: radial-gradient(
+			circle at left,
+			#eaeaea,
+			#e6fffc,
+			#c2f7f7,
+			#b0eef2,
+			#8ee9d8,
+			#6ddddd,
+			#3073c1,
+			#638b9f
+		);
+		transform: rotate(42deg);
+		border-radius: 50%;
+	}
+
+	.circle-ruby-on-rails {
+		position: absolute;
+		top: 100px;
+		right: 405px;
+		width: 170.35px;
+		height: 170.28px;
+		animation: circle-rotation 4s infinite linear;
+	}
 }
 
 .lazy-bison-description__text {
+	max-width: 512px;
 	margin: 1.5rem 0 4rem 0;
 }
 
