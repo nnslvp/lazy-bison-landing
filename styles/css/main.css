@@ -595,7 +595,7 @@ img {
 }
 @media (max-width: 375px) {
   .lazy-bison {
-    background-image: url("/assets/images/lazy-bizon-bg-375.svg");
+    background-image: url("/assets/images/lazy-bizon-bg-375.png");
     background-position: 0 -37px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -610,6 +610,21 @@ img {
   }
   .lazy-bison__inner .gray-line {
     display: none;
+  }
+  .lazy-bison__inner .planet-blue {
+    width: 70px;
+    height: 70px;
+    top: 40px;
+    right: auto;
+    left: 50px;
+  }
+  .lazy-bison__inner .circle-ruby-on-rails {
+    width: 86px;
+    height: 94px;
+    top: 15px;
+    right: auto;
+    left: 9px;
+    animation: none;
   }
   .lazy-bison__title {
     font-size: 42px;
@@ -629,7 +644,7 @@ img {
     display: none;
   }
   .lazy-bison-description__info {
-    flex-basis: 497px;
+    flex-basis: auto;
     display: flex;
     flex-direction: column;
     padding-bottom: 61px;
@@ -649,8 +664,8 @@ img {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 48px 40px;
-    flex-basis: 45.5rem;
+    gap: 48px 24px;
+    flex-basis: auto;
   }
   .lazy-bison-stats__inner {
     background-image: url("/assets/images/stats-bg-375.png");
@@ -660,7 +675,7 @@ img {
     background-color: transparent;
     max-width: 100%;
     display: flex;
-    padding: 60px 0 78px 0;
+    padding: 26px 0 73px 0;
     justify-content: space-between;
     gap: 69px;
     margin: 0 auto;
@@ -1535,16 +1550,8 @@ img {
     padding: 14px 70.4px;
     margin-right: 71px;
   }
-  .consultation__planet-img {
-    position: absolute;
-    width: 107.57px;
-    height: 107.55px;
-    z-index: -1;
-    top: -23px;
-    left: -32px;
-  }
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) and (max-width: 375px) {
   .workers-background {
     background-image: none;
     background-color: #e5ffaf;
@@ -1604,6 +1611,21 @@ img {
     gap: 24px;
     width: auto;
     max-height: 335px;
+  }
+  .consultation__inner .planet-blue {
+    width: 68px;
+    height: 68px;
+    top: -21px;
+    left: auto;
+    right: -6px;
+  }
+  .consultation__inner .circle-ruby-on-rails {
+    width: 95px;
+    height: 97.08px;
+    top: -37px;
+    left: auto;
+    right: -20px;
+    animation: none;
   }
   .consultation__description {
     max-width: 297px;
