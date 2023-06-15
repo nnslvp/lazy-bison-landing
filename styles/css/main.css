@@ -258,7 +258,7 @@ img {
   width: 170.35px;
   height: 170.28px;
   position: absolute;
-  animation: circle-rotation 4s infinite linear;
+  animation: circle-rotation 5s infinite linear;
 }
 
 .section-title__heading {
@@ -517,13 +517,22 @@ img {
 }
 
 @media (max-width: 768px) {
-  .lazy-bison__inner {
-    padding-top: 28px;
-    background-image: url("/assets/images/lazy-bizon-bg-768.svg");
-    background-position: bottom;
+  .lazy-bison-description__info {
+    background: none;
+  }
+  .lazy-bison {
+    background-image: url("/assets/images/lazy-bizon-bg-768.png");
+    background-position: 0 32px;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: transparent;
+  }
+  .lazy-bison__inner {
+    background: inherit;
+    padding-top: 28px;
+  }
+  .lazy-bison__inner .gray-line {
+    display: none;
   }
   .lazy-bison__title {
     font-size: 58.4254px;
@@ -540,9 +549,23 @@ img {
     display: none;
   }
   .lazy-bison-description__info {
-    flex-basis: 497px;
+    flex-basis: 0;
     padding-top: 0;
-    padding-bottom: 64px;
+    padding-bottom: 31px;
+  }
+  .lazy-bison-description__info .planet-blue {
+    width: 122px;
+    height: 122px;
+    top: 38px;
+    right: auto;
+    left: 96px;
+  }
+  .lazy-bison-description__info .circle-ruby-on-rails {
+    width: 143.75px;
+    height: 143.84px;
+    top: 20px;
+    right: auto;
+    left: 12px;
   }
   .lazy-bison-description__text {
     padding-top: 209px;
@@ -1122,12 +1145,24 @@ img {
     margin-bottom: 64px;
   }
   .projects-container {
-    padding-top: 83px;
+    padding-top: 76px;
     padding-bottom: 80px;
+  }
+  .projects-container .planet-blue {
+    width: 76px;
+    height: 75.93px;
+    top: 37px;
+    right: 12px;
+  }
+  .projects-container .circle-ruby-on-rails {
+    width: 108.44px;
+    height: 107.42px;
+    top: 21px;
+    right: -3px;
   }
   .projects-wrapper {
     display: grid;
-    justify-content: center;
+    justify-content: start;
     grid-template-columns: 392px 255px;
     grid-column-gap: 17px;
     grid-row-gap: 14px;
@@ -1370,6 +1405,18 @@ img {
 }
 
 @media (max-width: 768px) {
+  .consultation__inner .planet-blue {
+    width: 75.78px;
+    height: 75.78px;
+    top: -2px;
+    left: -24px;
+  }
+  .consultation__inner .circle-ruby-on-rails {
+    width: 107.57px;
+    height: 107.55px;
+    top: -19px;
+    left: -41px;
+  }
   .workers-background {
     background-image: url(/assets//images//workers-bg-768px.png);
   }

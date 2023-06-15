@@ -101,14 +101,25 @@
 }
 
 @media (max-width: 768px) {
-	.lazy-bison__inner {
-		padding-top: 28px;
+	.lazy-bison-description__info {
+		background: none;
+	}
+
+	.lazy-bison {
 		@include background(
-			'/assets/images/lazy-bizon-bg-768.svg',
-			bottom,
+			'/assets/images/lazy-bizon-bg-768.png',
+			0 32px,
 			no-repeat,
 			contain
 		);
+	}
+
+	.lazy-bison__inner {
+		background: inherit;
+		padding-top: 28px;
+		.gray-line {
+			display: none;
+		}
 	}
 
 	.lazy-bison__title {
@@ -130,9 +141,25 @@
 	}
 
 	.lazy-bison-description__info {
-		flex-basis: 497px;
+		flex-basis: 0;
 		padding-top: 0;
-		padding-bottom: 64px;
+		padding-bottom: 31px;
+
+		.planet-blue {
+			width: 122px;
+			height: 122px;
+			top: 38px;
+			right: auto;
+			left: 96px;
+		}
+
+		.circle-ruby-on-rails {
+			width: 143.75px;
+			height: 143.84px;
+			top: 20px;
+			right: auto;
+			left: 12px;
+		}
 	}
 
 	.lazy-bison-description__text {

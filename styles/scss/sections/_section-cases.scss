@@ -63,13 +63,27 @@
 	}
 
 	.projects-container {
-		padding-top: 83px;
+		padding-top: 76px;
 		padding-bottom: 80px;
+
+		.planet-blue {
+			width: 76px;
+			height: 75.93px;
+			top: 37px;
+			right: 12px;
+		}
+
+		.circle-ruby-on-rails {
+			width: 108.44px;
+			height: 107.42px;
+			top: 21px;
+			right: -3px;
+		}
 	}
 
 	.projects-wrapper {
 		display: grid;
-		justify-content: center;
+		justify-content: start;
 		grid-template-columns: 392px 255px;
 		grid-column-gap: 17px;
 		grid-row-gap: 14px;
