@@ -20,8 +20,25 @@
 	display: flex;
 }
 
+.lazy-bison__title .lazy-bison-title__text:nth-child(2) {
+	position: relative;
+}
+
 .lazy-bison__text--highlight {
-	background-color: $color-neon-green;
+	background-color: inherit;
+	position: relative;
+	z-index: 1;
+
+	&::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 0;
+		bottom: 11px;
+		width: 100%;
+		height: 76px;
+		background-color: $color-neon-green;
+	}
 }
 
 .lazy-bison-description__inner {
@@ -126,6 +143,12 @@
 		font-size: 58.4254px;
 		line-height: 70px;
 		margin: 0;
+	}
+
+	.lazy-bison__text--highlight {
+		&::after {
+			height: 52px;
+		}
 	}
 
 	.lazy-bison__title span:nth-child(2) {
@@ -234,6 +257,13 @@
 		font-size: 42px;
 		line-height: 50px;
 		letter-spacing: 0.03em;
+	}
+
+	.lazy-bison__text--highlight {
+		&::after {
+			height: 35px;
+			bottom: 8px;
+		}
 	}
 
 	.lazy-bison__title span:nth-child(2) {
