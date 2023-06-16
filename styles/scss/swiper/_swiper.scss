@@ -1,5 +1,8 @@
 .swiper {
 	overflow: inherit;
+	@media (max-width: 375px) {
+		overflow: hidden;
+	}
 }
 
 .swiper-slide {

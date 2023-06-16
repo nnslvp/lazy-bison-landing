@@ -51,6 +51,10 @@ li {
 	list-style: none;
 }
 
+object {
+	width: 100%;
+}
+
 main section:not(.cases, .testimonials) {
 	padding-bottom: 120px;
 	@media (max-width: 768px) {
@@ -193,6 +197,11 @@ img {
 		line-height: 24.22px;
 		padding: 14px 45.5px;
 	}
+	@media (max-width: 375px) {
+		font-size: 17px;
+		line-height: 24px;
+		padding: 14px 45.5px;
+	}
 }
 
 .gray-line {
@@ -209,6 +218,28 @@ img {
 		gap: 15px;
 		margin-bottom: 12px;
 	}
+}
+
+.planet-blue {
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	z-index: 1;
+	background: radial-gradient(
+		72.45% 72.45% at 27.78% 24.07%,
+		rgba(158, 236, 229, 0.48) 0%,
+		#9eece5 60.46%,
+		#72dfdd 79.62%,
+		#51bbf6 100%
+	);
+	border-radius: 50%;
+}
+
+.circle-ruby-on-rails {
+	width: 170.35px;
+	height: 170.28px;
+	position: absolute;
+	animation: circle-rotation 5s infinite linear;
 }
 
 .section-title__heading {
@@ -236,6 +267,7 @@ img {
 		height: 50px;
 	}
 }
+
 @mixin heading--smaller {
 	font-weight: 600;
 	font-size: 1.75rem;

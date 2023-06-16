@@ -26,15 +26,52 @@
 
 .lazy-bison-description__inner {
 	display: flex;
+	flex-direction: column;
 }
 
 .lazy-bison-description__info {
-	flex-basis: 32rem;
+	position: relative;
+	@include background('/assets/images/lazy-bizon-bg-1440.png', bottom right);
 	padding-top: 6.1875rem;
-	padding-bottom: 2.25rem;
+	margin-bottom: 2.25rem;
+	.gray-line {
+		max-width: 512px;
+	}
+
+	.planet-blue {
+		position: absolute;
+		z-index: 1;
+		top: 122px;
+		right: 331px;
+		width: 145px;
+		height: 145px;
+		background: radial-gradient(
+			circle at left,
+			#eaeaea,
+			#e6fffc,
+			#c2f7f7,
+			#b0eef2,
+			#8ee9d8,
+			#6ddddd,
+			#3073c1,
+			#638b9f
+		);
+		transform: rotate(42deg);
+		border-radius: 50%;
+	}
+
+	.circle-ruby-on-rails {
+		position: absolute;
+		top: 100px;
+		right: 405px;
+		width: 170.35px;
+		height: 170.28px;
+		animation: circle-rotation 4s infinite linear;
+	}
 }
 
 .lazy-bison-description__text {
+	max-width: 512px;
 	margin: 1.5rem 0 4rem 0;
 }
 
@@ -64,14 +101,25 @@
 }
 
 @media (max-width: 768px) {
-	.lazy-bison__inner {
-		padding-top: 28px;
+	.lazy-bison-description__info {
+		background: none;
+	}
+
+	.lazy-bison {
 		@include background(
-			'/assets/images/lazy-bizon-bg-768.svg',
-			bottom,
+			'/assets/images/lazy-bizon-bg-768.png',
+			0 32px,
 			no-repeat,
 			contain
 		);
+	}
+
+	.lazy-bison__inner {
+		background: inherit;
+		padding-top: 28px;
+		.gray-line {
+			display: none;
+		}
 	}
 
 	.lazy-bison__title {
@@ -93,9 +141,25 @@
 	}
 
 	.lazy-bison-description__info {
-		flex-basis: 497px;
+		flex-basis: 0;
 		padding-top: 0;
-		padding-bottom: 64px;
+		padding-bottom: 31px;
+
+		.planet-blue {
+			width: 122px;
+			height: 122px;
+			top: 38px;
+			right: auto;
+			left: 96px;
+		}
+
+		.circle-ruby-on-rails {
+			width: 143.75px;
+			height: 143.84px;
+			top: 20px;
+			right: auto;
+			left: 12px;
+		}
 	}
 
 	.lazy-bison-description__text {
@@ -131,7 +195,7 @@
 @media (max-width: 375px) {
 	.lazy-bison {
 		@include background(
-			'/assets/images/lazy-bizon-bg-375.svg',
+			'/assets/images/lazy-bizon-bg-375.png',
 			0 -37px,
 			no-repeat,
 			contain
@@ -141,12 +205,32 @@
 	}
 
 	.lazy-bison__inner {
+		padding-top: 21px;
 		padding-bottom: 0;
 		background: none;
+		.gray-line {
+			display: none;
+		}
+
+		.planet-blue {
+			width: 70px;
+			height: 70px;
+			top: 40px;
+			right: auto;
+			left: 50px;
+		}
+
+		.circle-ruby-on-rails {
+			width: 86px;
+			height: 94px;
+			top: 15px;
+			right: auto;
+			left: 9px;
+			animation: none;
+		}
 	}
 
 	.lazy-bison__title {
-		width: 335px;
 		font-size: 42px;
 		line-height: 50px;
 		letter-spacing: 0.03em;
@@ -157,7 +241,7 @@
 	}
 
 	.lazy-bison__title span:nth-child(3) {
-		padding-left: 110px;
+		padding-left: 114px;
 	}
 
 	.img-planets {
@@ -169,26 +253,31 @@
 	}
 
 	.lazy-bison-description__info {
-		flex-basis: 497px;
+		flex-basis: auto;
 		display: flex;
 		flex-direction: column;
 		padding-bottom: 61px;
 	}
 
 	.lazy-bison-description__text {
-		padding-top: 117px;
+		padding-top: 124px;
 		margin: 0 0 50px 0;
 		font-size: 18px;
 		line-height: 25px;
 		letter-spacing: 0em;
 	}
 
+	.lazy-bison-description__btn {
+		width: 256px;
+		margin: 0 auto;
+	}
+
 	.lazy-bison__stats {
 		display: flex;
 		justify-content: flex-start;
 		flex-wrap: wrap;
-		gap: 48px 40px;
-		flex-basis: 45.5rem;
+		gap: 48px 24px;
+		flex-basis: auto;
 	}
 
 	.lazy-bison-stats__inner {
@@ -200,7 +289,7 @@
 		);
 		max-width: 100%;
 		display: flex;
-		padding: 60px 0 78px 0;
+		padding: 26px 0 73px 0;
 		justify-content: space-between;
 		gap: 69px;
 		margin: 0 auto;

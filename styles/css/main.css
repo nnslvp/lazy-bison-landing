@@ -1,3 +1,11 @@
+@keyframes circle-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 *,
 *::before,
 *::after {
@@ -49,6 +57,10 @@ a {
 
 li {
   list-style: none;
+}
+
+object {
+  width: 100%;
 }
 
 main section:not(.cases, .testimonials) {
@@ -207,6 +219,13 @@ img {
     padding: 14px 45.5px;
   }
 }
+@media (max-width: 375px) {
+  .button--primary {
+    font-size: 17px;
+    line-height: 24px;
+    padding: 14px 45.5px;
+  }
+}
 
 .gray-line {
   height: 2px;
@@ -224,6 +243,22 @@ img {
     gap: 15px;
     margin-bottom: 12px;
   }
+}
+
+.planet-blue {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  z-index: 1;
+  background: radial-gradient(72.45% 72.45% at 27.78% 24.07%, rgba(158, 236, 229, 0.48) 0%, #9eece5 60.46%, #72dfdd 79.62%, #51bbf6 100%);
+  border-radius: 50%;
+}
+
+.circle-ruby-on-rails {
+  width: 170.35px;
+  height: 170.28px;
+  position: absolute;
+  animation: circle-rotation 5s infinite linear;
 }
 
 .section-title__heading {
@@ -273,6 +308,7 @@ img {
 }
 
 .header__logo {
+  width: 210px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -414,15 +450,44 @@ img {
 
 .lazy-bison-description__inner {
   display: flex;
+  flex-direction: column;
 }
 
 .lazy-bison-description__info {
-  flex-basis: 32rem;
+  position: relative;
+  background-image: url("/assets/images/lazy-bizon-bg-1440.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: transparent;
   padding-top: 6.1875rem;
-  padding-bottom: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+.lazy-bison-description__info .gray-line {
+  max-width: 512px;
+}
+.lazy-bison-description__info .planet-blue {
+  position: absolute;
+  z-index: 1;
+  top: 122px;
+  right: 331px;
+  width: 145px;
+  height: 145px;
+  background: radial-gradient(circle at left, #eaeaea, #e6fffc, #c2f7f7, #b0eef2, #8ee9d8, #6ddddd, #3073c1, #638b9f);
+  transform: rotate(42deg);
+  border-radius: 50%;
+}
+.lazy-bison-description__info .circle-ruby-on-rails {
+  position: absolute;
+  top: 100px;
+  right: 405px;
+  width: 170.35px;
+  height: 170.28px;
+  animation: circle-rotation 4s infinite linear;
 }
 
 .lazy-bison-description__text {
+  max-width: 512px;
   margin: 1.5rem 0 4rem 0;
 }
 
@@ -452,13 +517,22 @@ img {
 }
 
 @media (max-width: 768px) {
-  .lazy-bison__inner {
-    padding-top: 28px;
-    background-image: url("/assets/images/lazy-bizon-bg-768.svg");
-    background-position: bottom;
+  .lazy-bison-description__info {
+    background: none;
+  }
+  .lazy-bison {
+    background-image: url("/assets/images/lazy-bizon-bg-768.png");
+    background-position: 0 32px;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: transparent;
+  }
+  .lazy-bison__inner {
+    background: inherit;
+    padding-top: 28px;
+  }
+  .lazy-bison__inner .gray-line {
+    display: none;
   }
   .lazy-bison__title {
     font-size: 58.4254px;
@@ -475,9 +549,23 @@ img {
     display: none;
   }
   .lazy-bison-description__info {
-    flex-basis: 497px;
+    flex-basis: 0;
     padding-top: 0;
-    padding-bottom: 64px;
+    padding-bottom: 31px;
+  }
+  .lazy-bison-description__info .planet-blue {
+    width: 122px;
+    height: 122px;
+    top: 38px;
+    right: auto;
+    left: 96px;
+  }
+  .lazy-bison-description__info .circle-ruby-on-rails {
+    width: 143.75px;
+    height: 143.84px;
+    top: 20px;
+    right: auto;
+    left: 12px;
   }
   .lazy-bison-description__text {
     padding-top: 209px;
@@ -507,7 +595,7 @@ img {
 }
 @media (max-width: 375px) {
   .lazy-bison {
-    background-image: url("/assets/images/lazy-bizon-bg-375.svg");
+    background-image: url("/assets/images/lazy-bizon-bg-375.png");
     background-position: 0 -37px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -516,11 +604,29 @@ img {
     padding-top: 54px;
   }
   .lazy-bison__inner {
+    padding-top: 21px;
     padding-bottom: 0;
     background: none;
   }
+  .lazy-bison__inner .gray-line {
+    display: none;
+  }
+  .lazy-bison__inner .planet-blue {
+    width: 70px;
+    height: 70px;
+    top: 40px;
+    right: auto;
+    left: 50px;
+  }
+  .lazy-bison__inner .circle-ruby-on-rails {
+    width: 86px;
+    height: 94px;
+    top: 15px;
+    right: auto;
+    left: 9px;
+    animation: none;
+  }
   .lazy-bison__title {
-    width: 335px;
     font-size: 42px;
     line-height: 50px;
     letter-spacing: 0.03em;
@@ -529,7 +635,7 @@ img {
     padding-left: 40px;
   }
   .lazy-bison__title span:nth-child(3) {
-    padding-left: 110px;
+    padding-left: 114px;
   }
   .img-planets {
     display: none;
@@ -538,24 +644,28 @@ img {
     display: none;
   }
   .lazy-bison-description__info {
-    flex-basis: 497px;
+    flex-basis: auto;
     display: flex;
     flex-direction: column;
     padding-bottom: 61px;
   }
   .lazy-bison-description__text {
-    padding-top: 117px;
+    padding-top: 124px;
     margin: 0 0 50px 0;
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 0em;
   }
+  .lazy-bison-description__btn {
+    width: 256px;
+    margin: 0 auto;
+  }
   .lazy-bison__stats {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 48px 40px;
-    flex-basis: 45.5rem;
+    gap: 48px 24px;
+    flex-basis: auto;
   }
   .lazy-bison-stats__inner {
     background-image: url("/assets/images/stats-bg-375.png");
@@ -565,7 +675,7 @@ img {
     background-color: transparent;
     max-width: 100%;
     display: flex;
-    padding: 60px 0 78px 0;
+    padding: 26px 0 73px 0;
     justify-content: space-between;
     gap: 69px;
     margin: 0 auto;
@@ -722,22 +832,24 @@ img {
 }
 @media (max-width: 375px) {
   .services {
-    background: none;
+    background-image: url("/assets/images/services-info-bg-375.png");
+    background-position: 0 79px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
   }
   .services .section-title__inner {
     margin-bottom: 30px;
   }
   .services .services__inner {
-    padding-bottom: 56px;
+    background: none;
+    padding-bottom: 66px;
   }
-  .services {
-    background-image: url("/assets/images/services-info-bg-375.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: transparent;
+  .services-info {
+    background: none;
   }
-  .services__gray-line {
+  .services__gray-line,
+  .services-info__description .services-info__gray-line {
     display: none;
   }
   .services-info__inner {
@@ -754,13 +866,16 @@ img {
     padding-top: 0px;
   }
   .services-info__description-text {
-    display: block;
+    display: none;
     max-width: 100%;
     padding: 12px;
     margin-bottom: 0px;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.03em;
+  }
+  .services-info__item .services-info__description-text {
+    display: block;
   }
   .services-info__types {
     width: 319px;
@@ -774,6 +889,9 @@ img {
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.03em;
+  }
+  .services-primary__button {
+    padding: 14px 67.5px;
   }
   .services-info__type-button:after {
     content: url("/assets/icons/shevronDown.svg");
@@ -987,6 +1105,14 @@ img {
   overflow: hidden;
   width: 100%;
 }
+.projects-container .planet-blue {
+  top: 71px;
+  right: 54px;
+}
+.projects-container .circle-ruby-on-rails {
+  top: 46px;
+  right: 30px;
+}
 
 .projects-wrapper {
   display: grid;
@@ -1034,12 +1160,24 @@ img {
     margin-bottom: 64px;
   }
   .projects-container {
-    padding-top: 83px;
+    padding-top: 76px;
     padding-bottom: 80px;
+  }
+  .projects-container .planet-blue {
+    width: 76px;
+    height: 75.93px;
+    top: 37px;
+    right: 12px;
+  }
+  .projects-container .circle-ruby-on-rails {
+    width: 108.44px;
+    height: 107.42px;
+    top: 21px;
+    right: -3px;
   }
   .projects-wrapper {
     display: grid;
-    justify-content: center;
+    justify-content: start;
     grid-template-columns: 392px 255px;
     grid-column-gap: 17px;
     grid-row-gap: 14px;
@@ -1252,6 +1390,16 @@ img {
   margin: 0 auto;
   color: #ffffff;
 }
+.consultation__inner .planet-blue {
+  z-index: -1;
+  top: -25px;
+  left: -12px;
+}
+.consultation__inner .circle-ruby-on-rails {
+  z-index: -1;
+  top: -49px;
+  left: -40px;
+}
 
 .consultation__planet-img {
   width: 145px;
@@ -1272,6 +1420,18 @@ img {
 }
 
 @media (max-width: 768px) {
+  .consultation__inner .planet-blue {
+    width: 75.78px;
+    height: 75.78px;
+    top: -2px;
+    left: -24px;
+  }
+  .consultation__inner .circle-ruby-on-rails {
+    width: 107.57px;
+    height: 107.55px;
+    top: -19px;
+    left: -41px;
+  }
   .workers-background {
     background-image: url(/assets//images//workers-bg-768px.png);
   }
@@ -1390,16 +1550,8 @@ img {
     padding: 14px 70.4px;
     margin-right: 71px;
   }
-  .consultation__planet-img {
-    position: absolute;
-    width: 107.57px;
-    height: 107.55px;
-    z-index: -1;
-    top: -23px;
-    left: -32px;
-  }
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) and (max-width: 375px) {
   .workers-background {
     background-image: none;
     background-color: #e5ffaf;
@@ -1460,11 +1612,27 @@ img {
     width: auto;
     max-height: 335px;
   }
+  .consultation__inner .planet-blue {
+    width: 68px;
+    height: 68px;
+    top: -21px;
+    left: auto;
+    right: -6px;
+  }
+  .consultation__inner .circle-ruby-on-rails {
+    width: 95px;
+    height: 97.08px;
+    top: -37px;
+    left: auto;
+    right: -20px;
+    animation: none;
+  }
   .consultation__description {
     max-width: 297px;
     margin: 0 auto;
   }
   .consultation__inner .button {
+    padding: 14px 45.5px;
     margin: 0 auto;
   }
   .consultation__planet-img {
@@ -1503,6 +1671,7 @@ img {
 }
 
 .footer__logo {
+  width: 210px;
   height: auto;
 }
 
@@ -1980,7 +2149,7 @@ img {
 
 .burger-menu-button {
   display: none;
-  width: 40px;
+  width: 32px;
   height: 22px;
   background-color: transparent;
   border: none;
@@ -1989,7 +2158,7 @@ img {
 }
 
 .line {
-  width: 32px;
+  width: 26px;
   height: 2px;
   background-color: #ffffff;
   transition: transform 0.3s ease;
@@ -2023,6 +2192,11 @@ img {
 }
 .swiper {
   overflow: inherit;
+}
+@media (max-width: 375px) {
+  .swiper {
+    overflow: hidden;
+  }
 }
 
 .swiper-slide {
