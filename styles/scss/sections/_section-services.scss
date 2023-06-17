@@ -7,8 +7,12 @@
 	);
 }
 
+.services__inner {
+	padding-top: 8px;
+}
+
 .services__gray-line {
-	margin-bottom: 5rem;
+	margin-bottom: 83px;
 }
 
 .services-info {
@@ -38,11 +42,6 @@
 	text-align: center;
 }
 
-.services-info__gray-line {
-	width: 17.625rem;
-	margin: 1.125rem 0 1.3125rem 0;
-}
-
 .services-info__description-text {
 	max-width: 512px;
 	min-height: 224px;
@@ -52,10 +51,13 @@
 .services-info__item .services-info__description-text {
 	display: none;
 }
+.services-gray-line__wrapper {
+	width: 404px;
+}
 
 .services-info__gray-line {
-	width: 227px;
-	margin: 10px 0 12.73px 0;
+	width: 100%;
+	margin: 14px 0 21.73px 0;
 }
 
 .services-info__button {

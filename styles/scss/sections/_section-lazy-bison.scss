@@ -35,9 +35,15 @@
 		z-index: -1;
 		left: 0;
 		bottom: 11px;
-		width: 100%;
+		width: 0;
 		height: 76px;
 		background-color: $color-neon-green;
+		animation: width 4s linear forwards;
+		@keyframes width {
+			100% {
+				width: 100%;
+			}
+		}
 	}
 }
 

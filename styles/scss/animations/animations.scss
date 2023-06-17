@@ -6,3 +6,21 @@
 		transform: rotate(360deg);
 	}
 }
+
+@mixin widthAnimation($duration, $height, $id) {
+	@keyframes widthAnimation-#{$id} {
+		100% {
+			width: $height;
+		}
+	}
+}
+
+@mixin heightAnimation($duration, $height, $id) {
+	animation: widthAnimation-#{$id} $duration linear forwards;
+
+	@keyframes widthAnimation-#{$id} {
+		100% {
+			height: $height;
+		}
+	}
+}
