@@ -7,6 +7,18 @@
 	}
 }
 
+@keyframes swapAnimation {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 @mixin widthAnimation($duration, $height, $id) {
 	@keyframes widthAnimation-#{$id} {
 		100% {
