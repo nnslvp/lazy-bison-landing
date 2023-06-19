@@ -3,6 +3,8 @@ const overlay = document.querySelector('.overlay')
 const burgerButton = document.querySelector('.burger-menu-button')
 const menu = document.querySelector('.header__main-nav')
 const sliders = document.querySelectorAll('.swiper')
+const widthScreen = document.documentElement.clientWidth
+const body = document.body
 
 function showPopup() {
 	popup.style.display = 'block'
@@ -17,8 +19,9 @@ function hidePopup() {
 }
 
 function toggleMenu() {
-	burgerButton.classList.toggle('open')
-	menu.classList.toggle('open')
+	burgerButton.classList.toggle('menu-open')
+	body.classList.toggle('menu-open')
+	menu.classList.toggle('menu-open')
 }
 
 function mobileSlider(slider) {
@@ -107,31 +110,35 @@ const animateTestimonialElements = currentWidth => {
 	const elements = document.querySelectorAll(
 		'.testimonials .vertical-gray-line'
 	)
+	let thresholds
+	if (widthScreen <= 768) {
+		thresholds = [109, 281, 442, 653]
+	} else {
+		thresholds = [109, 540, 974, 1170]
+	}
 
-	if (currentWidth >= 109) {
-		elements[0].classList.add('animate')
-	}
-	if (currentWidth >= 540) {
-		elements[1].classList.add('animate')
-	}
-	if (currentWidth >= 974) {
-		elements[2].classList.add('animate')
-	}
-	if (currentWidth >= 1170) {
-		elements[3].classList.add('animate')
-	}
+	thresholds.forEach((threshold, index) => {
+		if (currentWidth >= threshold) {
+			elements[index].classList.add('animate')
+		}
+	})
 }
 
 const animateExploreElements = currentWidth => {
 	const elements = document.querySelectorAll('.explore .vertical-gray-line')
 
-	if (currentWidth >= 392) {
-		elements[0].classList.add('animate')
+	let thresholds
+	if (widthScreen <= 768) {
+		thresholds = [219, 494]
+	} else {
+		thresholds = [392, 886]
 	}
 
-	if (currentWidth >= 886) {
-		elements[1].classList.add('animate')
-	}
+	thresholds.forEach((threshold, index) => {
+		if (currentWidth >= threshold) {
+			elements[index].classList.add('animate')
+		}
+	})
 }
 
 function elementInViewport(el) {
@@ -165,8 +172,6 @@ function handleScroll() {
 	})
 }
 
-window.addEventListener('scroll', handleScroll)
-
 const buttons = document.querySelectorAll('.services-info__type-button')
 const description = document.querySelector('.services-info__description-text')
 const title = document.querySelector('.services-info__title')
@@ -175,8 +180,21 @@ buttons.forEach(button => {
 	button.addEventListener('click', () => {
 		const buttonText = button.innerText
 
-		description.textContent = getDescriptionByButton(buttonText)
-		title.textContent = getTitleByButton(buttonText)
+		if (widthScreen > 375) {
+			description.textContent = getDescriptionByButton(buttonText)
+			title.textContent = getTitleByButton(buttonText)
+		} else {
+			buttons.forEach(btn => {
+				if (btn.classList.contains('active') && btn.nextElementSibling) {
+					btn.nextElementSibling.remove()
+				}
+			})
+
+			const descriptionText = document.createElement('p')
+			descriptionText.classList.add('services-info__description-text')
+			descriptionText.textContent = getDescriptionByButton(buttonText)
+			button.insertAdjacentElement('afterend', descriptionText)
+		}
 
 		buttons.forEach(btn => {
 			btn.classList.remove('active')
@@ -185,7 +203,6 @@ buttons.forEach(button => {
 		button.classList.add('active')
 	})
 })
-
 function getDescriptionByButton(buttonText) {
 	switch (buttonText) {
 		case 'Web Development':
@@ -231,22 +248,25 @@ function getTitleByButton(buttonText) {
 }
 
 const workers = document.querySelector('.workers')
+if (widthScreen > 375) {
+	window.addEventListener('scroll', handleScroll)
 
-setInterval(() => {
-	const items = Array.from(workers.children)
-	const shuffledItems = shuffleArray(items)
+	setInterval(() => {
+		const items = Array.from(workers.children)
+		const shuffledItems = shuffleArray(items)
 
-	workers.innerHTML = ''
+		workers.innerHTML = ''
 
-	shuffledItems.forEach(item => {
-		workers.appendChild(item)
-	})
-}, 3000)
+		shuffledItems.forEach(item => {
+			workers.appendChild(item)
+		})
+	}, 3000)
 
-function shuffleArray(array) {
-	for (let i = array.length - 1; i >= 0; i--) {
-		const j = Math.floor(Math.random() * (i + 1))
-		;[array[i], array[j]] = [array[j], array[i]]
+	function shuffleArray(array) {
+		for (let i = array.length - 1; i >= 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1))
+			;[array[i], array[j]] = [array[j], array[i]]
+		}
+		return array
 	}
-	return array
 }

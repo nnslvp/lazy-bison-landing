@@ -19,16 +19,16 @@
 	width: 100%;
 }
 
-.burger-menu-button.open .line:first-child {
+.burger-menu-button.menu-open .line:first-child {
 	width: 24px;
 	transform: translateY(14px) rotate(45deg);
 }
 
-.burger-menu-button.open .line:nth-child(2) {
+.burger-menu-button.menu-open .line:nth-child(2) {
 	opacity: 0;
 }
 
-.burger-menu-button.open .line:last-child {
+.burger-menu-button.menu-open .line:last-child {
 	width: 24px;
 	transform: translateY(-6px) rotate(-45deg);
 }
@@ -39,5 +39,6 @@
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: end;
+		z-index: 3;
 	}
 }

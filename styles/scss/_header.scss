@@ -22,6 +22,7 @@
 	flex-basis: 41.5625rem;
 	@include center;
 	display: block;
+	z-index: 3;
 }
 
 .header__main-nav-list {
@@ -65,20 +66,18 @@
 		padding-left: 46px;
 	}
 
-	.header__main-nav.open {
+	.header__main-nav.menu-open {
 		display: block;
 	}
 
 	.header__main-nav-list {
 		flex-direction: column;
 		gap: 40px;
+		@include heading--smaller;
 	}
 
 	.header__main-nav-item {
-		font-weight: 600;
-		font-size: 2.625rem;
-		line-height: 3.675rem;
-		letter-spacing: 0.03em;
+		@include heading--smaller;
 	}
 }
 
@@ -108,7 +107,7 @@
 		padding-left: 46px;
 	}
 
-	.header__main-nav.open {
+	.header__main-nav.menu-open {
 		display: block;
 	}
 
@@ -118,9 +117,8 @@
 	}
 
 	.header__main-nav-item {
-		font-weight: 600;
-		font-size: 2.625rem;
-		line-height: 3.675rem;
+		font-size: 24px;
+		line-height: 34px;
 		letter-spacing: 0.03em;
 	}
 }

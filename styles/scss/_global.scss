@@ -14,6 +14,10 @@ body {
 	font-family: $font-family;
 }
 
+body.menu-open {
+	overflow: hidden;
+}
+
 h1 {
 	font-weight: 500;
 	font-size: 5.5rem;
