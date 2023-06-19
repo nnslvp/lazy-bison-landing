@@ -209,6 +209,12 @@ img {
 	background-color: $color-light-grey;
 }
 
+.vertical-gray-line {
+	width: 2px;
+	height: 0;
+	background-color: $color-light-grey;
+}
+
 .section-title__inner {
 	display: flex;
 	gap: 0.9375rem;

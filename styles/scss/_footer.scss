@@ -13,6 +13,7 @@
 }
 
 .footer__logo-container {
+	width: 210px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -123,7 +124,6 @@
 	}
 
 	.footer__logo-container {
-		width: 210px;
 		margin-bottom: 24px;
 	}
 
