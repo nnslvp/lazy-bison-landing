@@ -104,12 +104,8 @@
 								Best features services
 							</h2>
 							<div class="section-title__arrow rectangle-arrow">
-								<svg width="73" height="72" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<rect x="1.5" y="0.5" width="71" height="71" fill="#C4FC50" stroke="#333F52" />
-									<path
-										d="M48.4405 23.5601L49.3203 47.5601L25.3203 48.4399L25.1275 44.2038L41.9275 43.5879L22.9955 25.9949L25.8855 22.8849L44.8175 40.4779L44.2016 23.6779L48.4405 23.5601Z"
-										fill="#333F52" />
-									<rect x="1.5" y="0.5" width="71" height="71" stroke="#333F52" />
+								<svg class="icon">
+									<use xlink:href="./assets/icons/sprite.svg#titleIcon"></use>
 								</svg>
 							</div>
 						</div>
@@ -184,12 +180,8 @@
 							Explore how it works
 						</h2>
 						<div class="section-title__arrow rectangle-arrow">
-							<svg width="73" height="72" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<rect x="1.5" y="0.5" width="71" height="71" fill="#C4FC50" stroke="#333F52" />
-								<path
-									d="M48.4405 23.5601L49.3203 47.5601L25.3203 48.4399L25.1275 44.2038L41.9275 43.5879L22.9955 25.9949L25.8855 22.8849L44.8175 40.4779L44.2016 23.6779L48.4405 23.5601Z"
-									fill="#333F52" />
-								<rect x="1.5" y="0.5" width="71" height="71" stroke="#333F52" />
+							<svg class="icon">
+								<use xlink:href="./assets/icons/sprite.svg#titleIcon"></use>
 							</svg>
 						</div>
 					</div>
@@ -260,12 +252,8 @@
 							Cases
 						</h2>
 						<div class="section-title__arrow rectangle-arrow">
-							<svg width="73" height="72" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<rect x="1.5" y="0.5" width="71" height="71" fill="#C4FC50" stroke="#333F52" />
-								<path
-									d="M48.4405 23.5601L49.3203 47.5601L25.3203 48.4399L25.1275 44.2038L41.9275 43.5879L22.9955 25.9949L25.8855 22.8849L44.8175 40.4779L44.2016 23.6779L48.4405 23.5601Z"
-									fill="#333F52" />
-								<rect x="1.5" y="0.5" width="71" height="71" stroke="#333F52" />
+							<svg class="icon">
+								<use xlink:href="./assets/icons/sprite.svg#titleIcon"></use>
 							</svg>
 						</div>
 					</div>
@@ -275,7 +263,7 @@
 							<object class='circle-ruby-on-rails' type="image/svg+xml" data="./assets/icons/circleRubyOnRails.svg">
 							</object>
 							<div class='planet-blue' alt="planet-blue"></div>
-							<div class="swiper-wrapper projects-wrapper open-popup-button">
+							<div class="swiper-wrapper projects-wrapper">
 								<div class="swiper-slide project-slide">
 									<img src="./assets/images/projet-img-one.png" alt='cases' class="slider__image ">
 								</div>
@@ -298,12 +286,8 @@
 							Testimonials
 						</h2>
 						<div class="section-title__arrow rectangle-arrow">
-							<svg width="73" height="72" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<rect x="1.5" y="0.5" width="71" height="71" fill="#C4FC50" stroke="#333F52" />
-								<path
-									d="M48.4405 23.5601L49.3203 47.5601L25.3203 48.4399L25.1275 44.2038L41.9275 43.5879L22.9955 25.9949L25.8855 22.8849L44.8175 40.4779L44.2016 23.6779L48.4405 23.5601Z"
-									fill="#333F52" />
-								<rect x="1.5" y="0.5" width="71" height="71" stroke="#333F52" />
+							<svg class="icon">
+								<use xlink:href="./assets/icons/sprite.svg#titleIcon"></use>
 							</svg>
 						</div>
 					</div>
@@ -497,29 +481,7 @@
 	</div>
 	<div class="popup popup-project">
 		<div class="popup-content ">
-			<div class="project__inner">
-				<div class="project__info">
-					<h3 class=" project__title heading--small">Name of project</h3>
-					<div class="project__description">
-						<p class="project__description-text  text--medium">We developed a custom crowdfunding platform
-							with a user-friendly interface that made it easy
-							for entrepreneurs to create campaigns and for investors to find projects to fund. We integrated a
-							secure payment system and an admin panel for managing campaigns
-							and funds. The platform allowed investors to select
-							a reward item offered by the entrepreneur,
-							and it displayed the progress towards the funding goal.</p>
-					</div>
-					<div class="name-app__inner">
-						<h4 class='name-app__title'>Crowdfunding web application</h4>
-						<div class="arrow-img__container">
-							<img src="./assets/icons/arrow-right-square.svg" alt="arrow">
-						</div>
-					</div>
-				</div>
-				<div class="project__img">
-					<img class='project__img-img' src="./assets/images/popup-project.jpeg" alt="project-img">
-				</div>
-			</div>
+
 			<!-- <h2 class="get-consultation__title "
 				Get free consultation
 			</h2>
@@ -557,10 +519,11 @@
 					</div>
 				</form> -->
 
-			<button class="close-popup-button">
-				<img src="./assets/icons/close-icon.svg" alt="close">
-			</button>
+
 		</div>
+		<button class="close-popup-button">
+			<img src="./assets/icons/close-icon.svg" alt="close">
+		</button>
 	</div>
 	<div class="overlay"></div>
 	<script type="module" src='./js/main.js'></script>

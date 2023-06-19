@@ -2116,6 +2116,8 @@ img {
   display: flex;
 }
 .popup.popup-project .project__info {
+  display: flex;
+  flex-direction: column;
   padding: 4.3125rem 0 2.4375rem 0;
   border-right: 2px solid #dcdcdc;
 }
@@ -2124,8 +2126,10 @@ img {
   margin-bottom: 2.0625rem;
 }
 .popup.popup-project .project__description {
+  flex-grow: 1;
   background-color: #e5ffaf;
   padding: 1.9375rem 1.875rem 2.8125rem 5.875rem;
+  margin-bottom: 90px;
 }
 .popup.popup-project .project__description-text {
   width: 32rem;

@@ -4,6 +4,8 @@
 	}
 
 	.project__info {
+		display: flex;
+		flex-direction: column;
 		padding: 4.3125rem 0 2.4375rem 0;
 		border-right: 2px solid $color-light-grey;
 	}
@@ -14,8 +16,10 @@
 	}
 
 	.project__description {
+		flex-grow: 1;
 		background-color: $color-light-green;
 		padding: 1.9375rem 1.875rem 2.8125rem 5.875rem;
+		margin-bottom: 90px;
 	}
 
 	.project__description-text {
