@@ -27,6 +27,26 @@
 		margin-bottom: 2.5rem;
 	}
 
+	.label-email {
+		.input-email__wrapper {
+			position: relative;
+		}
+		.error-text {
+			visibility: hidden;
+			display: block;
+			text-align: end;
+			color: $color-system-red;
+		}
+		.error-icon {
+			visibility: hidden;
+			width: 16px;
+			height: 16px;
+			position: absolute;
+			bottom: 16px;
+			right: 16px;
+		}
+	}
+
 	input[type='email'] {
 		padding: 0.6875rem 0 0.6875rem 1rem;
 		width: 100%;

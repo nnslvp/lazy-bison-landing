@@ -1,4 +1,7 @@
 const slides = document.querySelectorAll('.project-slide')
+const getConsultationButtons = document.querySelectorAll(
+	'.get-consultation-btn'
+)
 const popup = document.querySelector('.popup')
 const overlay = document.querySelector('.overlay')
 const popupContent = document.querySelector('.popup-content')
@@ -7,24 +10,36 @@ function showPopup() {
 	popup.style.display = 'block'
 	overlay.style.display = 'block'
 	document.body.style.overflow = 'hidden'
+	const popupOpenedEvent = new Event('popupOpened')
+	popup.dispatchEvent(popupOpenedEvent)
 }
 
 function hidePopup() {
 	popup.style.display = 'none'
 	overlay.style.display = 'none'
 	document.body.style.overflow = 'auto'
+	const popupClosedEvent = new Event('popupClosed')
+	popup.dispatchEvent(popupClosedEvent)
+
+	const classNames = Array.from(popup.classList)
+
+	classNames.forEach(className => {
+		if (className !== 'popup') {
+			popup.classList.remove(className)
+		}
+	})
+	popupContent.innerHTML = ''
 }
 
 slides.forEach((slide, index) => {
 	slide.addEventListener('click', () => {
 		showPopup()
+		popup.classList.add('popup-project')
 
 		const description = getDescriptionByIndex(index)
 		const title = getTitleByIndex(index)
 		const imagePath = getImagePathByIndex(index)
 		const typeApp = getTypeAppByIndex(index)
-
-		popup.classList.add('.popup-project')
 
 		popupContent.innerHTML = `	
 		<div class="project__inner">
@@ -44,6 +59,78 @@ slides.forEach((slide, index) => {
 					<img class='project__img-img' src="${imagePath}" alt="project-img">
 				</div>
 			</div>`
+	})
+})
+
+function handleSubmit(event) {
+	event.preventDefault()
+	const form = event.target
+	const errorIcon = form.querySelector('.error-icon')
+	const errorText = form.querySelector('.error-text')
+	const inputEmail = form.querySelector('.input-email')
+	if (form.checkValidity()) {
+		console.log('Форма прошла валидацию')
+
+		form.reset()
+	} else {
+		if (!inputEmail.validity.valid) {
+			errorIcon.style.visibility = 'visible'
+			errorText.style.visibility = 'visible'
+		} else {
+			errorIcon.style.visibility = 'hidden'
+			errorText.style.visibility = 'hidden'
+		}
+	}
+}
+
+getConsultationButtons.forEach(btn => {
+	btn.addEventListener('click', () => {
+		showPopup()
+		popup.classList.add('popup__get-consultation')
+		popupContent.innerHTML = `
+		<h2 class="get-consultation__title "> Get free consultation </h2>
+		<p class="get-consultation__subtitle text--medium">
+			Please, fill out the form
+		</p>
+		<form class="form" novalidate>
+			<div class="form-group">
+				<label class='text--small label-email' for="email">
+					E-mail
+					<div class="input-email__wrapper">
+					<input class="input-email" placeholder='exapmle@gmail.com' type="email" id="email" name="email" required>
+					<svg class="error-icon">
+									<use xlink:href="./assets/icons/sprite.svg#error-circle"></use>
+								</svg>			
+					</div>	
+					<span class='error-text'>Invalid e-mail</span>
+				</label>
+				<div class="textarea__container">
+					<label class='text--small' for="comments">
+						Your comments
+						<textarea class="textarea" placeholder='Write your comments (optional)' id="comments" name="comments" maxlength="360"
+							></textarea>
+					</label>
+					<div class="character-count text--small">0/360</div>
+				</div>
+				<label class='checkbox-label text--small' for="agree">
+					<input type="checkbox" id="agree" name="agree" required>
+					Agree to process personal data
+				</label>
+			</div>
+			<div class="form-actions">
+				<button type="button" class="btn btn-cancel">Cancel</button>
+				<button type="submit" class="btn btn-submit">Submit</button>
+			</div>
+		</form>`
+
+		const form = popup.querySelector('.form')
+		const textarea = popup.querySelector('.textarea')
+		form.addEventListener('submit', handleSubmit)
+		textarea.addEventListener('input', e => {
+			document.querySelector(
+				'.character-count'
+			).textContent = `${e.target.value.length}/360`
+		})
 	})
 })
 

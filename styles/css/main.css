@@ -1943,6 +1943,23 @@ img {
   gap: 1.5rem;
   margin-bottom: 2.5rem;
 }
+.popup.popup__get-consultation .label-email .input-email__wrapper {
+  position: relative;
+}
+.popup.popup__get-consultation .label-email .error-text {
+  visibility: hidden;
+  display: block;
+  text-align: end;
+  color: #ff6969;
+}
+.popup.popup__get-consultation .label-email .error-icon {
+  visibility: hidden;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
 .popup.popup__get-consultation input[type=email] {
   padding: 0.6875rem 0 0.6875rem 1rem;
   width: 100%;
@@ -2261,8 +2278,8 @@ img {
 }
 
 .close-popup-button {
-  width: 2rem;
-  height: 2rem;
+  height: 15.6px;
+  width: 15.6px;
   background-color: transparent;
   border: none;
   position: absolute;
