@@ -1526,7 +1526,7 @@ img {
     left: -2.5625rem;
   }
   .workers-background {
-    background-image: url(/assets//images//workers-bg-48rem.png);
+    background-image: url("/assets//images//workers-bg-768px.png");
   }
   .testimonials__gray-line {
     margin-bottom: 1.25rem;
