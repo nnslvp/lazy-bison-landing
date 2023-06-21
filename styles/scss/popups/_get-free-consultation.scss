@@ -27,7 +27,12 @@
 		display: none;
 		width: 54px;
 		height: 54px;
-		@include background('/assets/icons/two-ticks.svg');
+		@include background(
+			'/assets/icons/two-ticks.svg',
+			center,
+			no-repeat,
+			contain
+		);
 	}
 
 	.get-consultation__title {
@@ -166,6 +171,23 @@
 	@media (max-width: 48rem) {
 		padding: 1.3956rem 2.375rem 1.3625rem 2.375rem;
 
+		&.submit-success .popup-content {
+			width: 194px;
+			flex-direction: column;
+			@include center;
+		}
+
+		&.submit-success {
+			@include center;
+			width: 320px;
+			height: 363px;
+		}
+
+		.two-ticks {
+			width: 29px;
+			height: 29px;
+		}
+
 		.get-consultation__title {
 			text-align: center;
 			font-size: 1.5rem;
@@ -236,6 +258,23 @@
 
 	@media (max-width: 23.4375rem) {
 		padding: 1.4612rem 3.3988rem 1.4219rem 3.3988rem;
+
+		&.submit-success .popup-content {
+			width: 212px;
+			flex-direction: column;
+			@include center;
+		}
+
+		&.submit-success {
+			@include center;
+			width: 100%;
+			height: 426px;
+		}
+
+		.two-ticks {
+			width: 34px;
+			height: 34px;
+		}
 
 		.get-consultation__title {
 			text-align: center;

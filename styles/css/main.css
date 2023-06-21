@@ -1950,9 +1950,9 @@ img {
   width: 54px;
   height: 54px;
   background-image: url("/assets/icons/two-ticks.svg");
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
   background-color: transparent;
 }
 .popup.popup__get-consultation .get-consultation__title {
@@ -2075,6 +2075,24 @@ img {
   .popup.popup__get-consultation {
     padding: 1.3956rem 2.375rem 1.3625rem 2.375rem;
   }
+  .popup.popup__get-consultation.submit-success .popup-content {
+    width: 194px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .popup.popup__get-consultation.submit-success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 363px;
+  }
+  .popup.popup__get-consultation .two-ticks {
+    width: 29px;
+    height: 29px;
+  }
   .popup.popup__get-consultation .get-consultation__title {
     text-align: center;
     font-size: 1.5rem;
@@ -2135,6 +2153,24 @@ img {
 @media (max-width: 23.4375rem) {
   .popup.popup__get-consultation {
     padding: 1.4612rem 3.3988rem 1.4219rem 3.3988rem;
+  }
+  .popup.popup__get-consultation.submit-success .popup-content {
+    width: 212px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .popup.popup__get-consultation.submit-success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 426px;
+  }
+  .popup.popup__get-consultation .two-ticks {
+    width: 34px;
+    height: 34px;
   }
   .popup.popup__get-consultation .get-consultation__title {
     text-align: center;
