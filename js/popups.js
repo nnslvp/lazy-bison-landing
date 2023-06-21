@@ -7,16 +7,14 @@ const overlay = document.querySelector('.overlay')
 const popupContent = document.querySelector('.popup-content')
 
 function showPopup() {
-	popup.style.display = 'block'
-	overlay.style.display = 'block'
+	popup.classList.add('open')
 	document.body.style.overflow = 'hidden'
 	const popupOpenedEvent = new Event('popupOpened')
 	popup.dispatchEvent(popupOpenedEvent)
 }
 
 function hidePopup() {
-	popup.style.display = 'none'
-	overlay.style.display = 'none'
+	popup.classList.remove('open')
 	document.body.style.overflow = 'auto'
 	const popupClosedEvent = new Event('popupClosed')
 	popup.dispatchEvent(popupClosedEvent)

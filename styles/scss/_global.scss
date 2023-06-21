@@ -8,13 +8,14 @@
 
 html {
 	font-size: 1rem;
+	scroll-behavior: smooth;
 }
 
 body {
 	font-family: $font-family;
 }
 
-body.menu-open {
+body.hidden {
 	overflow: hidden;
 }
 
