@@ -27,24 +27,24 @@
 		margin-bottom: 2.5rem;
 	}
 
-	.label-email {
-		.input-email__wrapper {
-			position: relative;
-		}
-		.error-text {
-			visibility: hidden;
-			display: block;
-			text-align: end;
-			color: $color-system-red;
-		}
-		.error-icon {
-			visibility: hidden;
-			width: 16px;
-			height: 16px;
-			position: absolute;
-			bottom: 16px;
-			right: 16px;
-		}
+	.input-email__wrapper {
+		position: relative;
+	}
+
+	.error-text {
+		visibility: hidden;
+		display: block;
+		text-align: end;
+		color: $color-system-red;
+	}
+
+	.error-icon {
+		visibility: hidden;
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		bottom: 16px;
+		right: 16px;
 	}
 
 	input[type='email'] {
@@ -75,6 +75,37 @@
 	.checkbox-label {
 		display: flex;
 		align-items: center;
+	}
+
+	.checkbox-label input[type='checkbox'] {
+		display: none;
+	}
+
+	.checkbox-label .checkbox-custom {
+		position: relative;
+		width: 16px;
+		height: 16px;
+		border: 1.5px solid #333f52;
+		border-radius: 2px;
+		margin-right: 8px;
+	}
+
+	.checkbox-label .checkbox-custom:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 16px;
+		height: 16px;
+		opacity: 0;
+		border-radius: 2px;
+		@include background('/assets/icons/checked-icon.svg');
+		transition: opacity 0.2s ease;
+	}
+
+	.checkbox-label input[type='checkbox']:checked + .checkbox-custom:before {
+		opacity: 1;
 	}
 
 	input[type='checkbox'] {
@@ -211,6 +242,10 @@
 			line-height: 20px;
 		}
 
+		.error-icon {
+			bottom: 6px;
+		}
+
 		.form-group {
 			width: 266.65px;
 			gap: 15px;
@@ -235,13 +270,6 @@
 
 		.form-actions {
 			gap: 20px;
-		}
-
-		.close-popup-button {
-			width: 7.82px;
-			height: 7.82px;
-			top: 12.52px;
-			right: 11.69px;
 		}
 	}
 }

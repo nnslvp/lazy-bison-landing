@@ -1943,16 +1943,16 @@ img {
   gap: 1.5rem;
   margin-bottom: 2.5rem;
 }
-.popup.popup__get-consultation .label-email .input-email__wrapper {
+.popup.popup__get-consultation .input-email__wrapper {
   position: relative;
 }
-.popup.popup__get-consultation .label-email .error-text {
+.popup.popup__get-consultation .error-text {
   visibility: hidden;
   display: block;
   text-align: end;
   color: #ff6969;
 }
-.popup.popup__get-consultation .label-email .error-icon {
+.popup.popup__get-consultation .error-icon {
   visibility: hidden;
   width: 16px;
   height: 16px;
@@ -1984,6 +1984,37 @@ img {
 .popup.popup__get-consultation .checkbox-label {
   display: flex;
   align-items: center;
+}
+.popup.popup__get-consultation .checkbox-label input[type=checkbox] {
+  display: none;
+}
+.popup.popup__get-consultation .checkbox-label .checkbox-custom {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid #333f52;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+.popup.popup__get-consultation .checkbox-label .checkbox-custom:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+  border-radius: 2px;
+  background-image: url("/assets/icons/checked-icon.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: transparent;
+  transition: opacity 0.2s ease;
+}
+.popup.popup__get-consultation .checkbox-label input[type=checkbox]:checked + .checkbox-custom:before {
+  opacity: 1;
 }
 .popup.popup__get-consultation input[type=checkbox] {
   width: 1rem;
@@ -2100,6 +2131,9 @@ img {
     font-size: 14px;
     line-height: 20px;
   }
+  .popup.popup__get-consultation .error-icon {
+    bottom: 6px;
+  }
   .popup.popup__get-consultation .form-group {
     width: 266.65px;
     gap: 15px;
@@ -2120,12 +2154,6 @@ img {
   }
   .popup.popup__get-consultation .form-actions {
     gap: 20px;
-  }
-  .popup.popup__get-consultation .close-popup-button {
-    width: 7.82px;
-    height: 7.82px;
-    top: 12.52px;
-    right: 11.69px;
   }
 }
 

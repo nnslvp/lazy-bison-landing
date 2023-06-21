@@ -33,7 +33,6 @@ function hidePopup() {
 
 slides.forEach((slide, index) => {
 	slide.addEventListener('click', () => {
-		showPopup()
 		popup.classList.add('popup-project')
 
 		const description = getDescriptionByIndex(index)
@@ -59,6 +58,7 @@ slides.forEach((slide, index) => {
 					<img class='project__img-img' src="${imagePath}" alt="project-img">
 				</div>
 			</div>`
+		showPopup()
 	})
 })
 
@@ -85,7 +85,6 @@ function handleSubmit(event) {
 
 getConsultationButtons.forEach(btn => {
 	btn.addEventListener('click', () => {
-		showPopup()
 		popup.classList.add('popup__get-consultation')
 		popupContent.innerHTML = `
 		<h2 class="get-consultation__title "> Get free consultation </h2>
@@ -114,6 +113,7 @@ getConsultationButtons.forEach(btn => {
 				</div>
 				<label class='checkbox-label text--small' for="agree">
 					<input type="checkbox" id="agree" name="agree" required>
+					<span class='checkbox-custom'></span>
 					Agree to process personal data
 				</label>
 			</div>
@@ -122,15 +122,7 @@ getConsultationButtons.forEach(btn => {
 				<button type="submit" class="btn btn-submit">Submit</button>
 			</div>
 		</form>`
-
-		const form = popup.querySelector('.form')
-		const textarea = popup.querySelector('.textarea')
-		form.addEventListener('submit', handleSubmit)
-		textarea.addEventListener('input', e => {
-			document.querySelector(
-				'.character-count'
-			).textContent = `${e.target.value.length}/360`
-		})
+		showPopup()
 	})
 })
 
