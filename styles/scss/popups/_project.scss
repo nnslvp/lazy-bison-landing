@@ -1,6 +1,7 @@
 .popup.popup-project {
 	.project__inner {
 		display: flex;
+		height: 37.75rem;
 	}
 
 	.project__info {
@@ -44,15 +45,25 @@
 		color: $color-black;
 	}
 
+	.project__img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 	.project__img-img {
 		object-fit: cover;
 		margin: 4.3125rem 5.8125rem 4.375rem 6.6875rem;
 		border: 0.25rem solid #c4fc50;
 		width: 25.25rem;
-		height: 30ƒ.3125rem;
+		height: 30.3125rem;
 	}
 
 	@media (max-width: 48rem) {
+		.project__inner {
+			height: 20.125rem;
+		}
+
 		.project__info {
 			padding: 2.3125rem 0 0.8125rem 0;
 			border-right: 0.0625rem solid $color-light-grey;
@@ -100,6 +111,7 @@
 	}
 	@media (max-width: 23.4375rem) {
 		.project__inner {
+			height: 38.5rem;
 			flex-direction: column-reverse;
 			padding: 4.75rem 0 3.125rem 0;
 		}
