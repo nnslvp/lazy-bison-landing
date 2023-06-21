@@ -1,7 +1,7 @@
 .popup.popup-project {
 	.project__inner {
 		display: flex;
-		height: 37.75rem;
+		height: 604px;
 	}
 
 	.project__info {
@@ -60,9 +60,8 @@
 	}
 
 	@media (max-width: 48rem) {
-		.project__inner {
-			height: 20.125rem;
-		}
+   .project__inner{}
+	 
 
 		.project__info {
 			padding: 2.3125rem 0 0.8125rem 0;
@@ -111,7 +110,6 @@
 	}
 	@media (max-width: 23.4375rem) {
 		.project__inner {
-			height: 38.5rem;
 			flex-direction: column-reverse;
 			padding: 4.75rem 0 3.125rem 0;
 		}

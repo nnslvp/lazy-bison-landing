@@ -89,6 +89,7 @@ getConsultationButtons.forEach(btn => {
 		<p class="get-consultation__subtitle text--medium">
 			Please, fill out the form
 		</p>
+		<div class='two-ticks'></div>
 		<form class="form" novalidate>
 			<div class="form-group">
 				<label class='text--small label-email' for="email">

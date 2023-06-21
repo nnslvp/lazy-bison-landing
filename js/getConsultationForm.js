@@ -1,4 +1,5 @@
 const popup = document.querySelector('.popup')
+const popupContent = document.querySelector('.popup-content')
 
 function handleSubmit(event) {
 	event.preventDefault()
@@ -6,10 +7,16 @@ function handleSubmit(event) {
 	const errorIcon = form.querySelector('.error-icon')
 	const errorText = form.querySelector('.error-text')
 	const inputEmail = form.querySelector('.input-email')
+	const popupTittle = document.querySelector('.get-consultation__title')
+	const popupSubtitle = document.querySelector('.get-consultation__subtitle')
 	if (form.checkValidity()) {
 		console.log('Форма прошла валидацию')
-
-		form.reset()
+		popup.classList.add('submit-success')
+		form.remove()
+		popupTittle.textContent = 'Congratulations!'
+		popupSubtitle.textContent = `
+		Your request is sent successfully. 
+		Our manager will contact you shortly.`
 	} else {
 		if (!inputEmail.validity.valid) {
 			errorIcon.style.visibility = 'visible'

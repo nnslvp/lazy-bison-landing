@@ -1921,6 +1921,7 @@ img {
   }
 }
 .popup.popup__get-consultation {
+  border-radius: 0;
   background-image: url("/assets/images/consulatation-popup-bg.png");
   background-position: initial;
   background-repeat: no-repeat;
@@ -1928,8 +1929,31 @@ img {
   background-color: transparent;
   padding: 3.8125rem 5.4375rem 3.75rem 5.4375rem;
 }
-.popup.popup__get-consultation .popup__content {
-  max-width: 26.625rem;
+.popup.popup__get-consultation.submit-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 683px;
+}
+.popup.popup__get-consultation.submit-success .popup-content {
+  width: 339px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup.popup__get-consultation.submit-success .two-ticks {
+  display: block;
+}
+.popup.popup__get-consultation .two-ticks {
+  display: none;
+  width: 54px;
+  height: 54px;
+  background-image: url("/assets/icons/two-ticks.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: transparent;
 }
 .popup.popup__get-consultation .get-consultation__title {
   margin-bottom: 0.25rem;
@@ -2049,7 +2073,6 @@ img {
 }
 @media (max-width: 48rem) {
   .popup.popup__get-consultation {
-    border-radius: 0;
     padding: 1.3956rem 2.375rem 1.3625rem 2.375rem;
   }
   .popup.popup__get-consultation .get-consultation__title {
@@ -2161,7 +2184,7 @@ img {
 
 .popup.popup-project .project__inner {
   display: flex;
-  height: 37.75rem;
+  height: 604px;
 }
 .popup.popup-project .project__info {
   display: flex;
@@ -2211,9 +2234,6 @@ img {
   height: 30.3125rem;
 }
 @media (max-width: 48rem) {
-  .popup.popup-project .project__inner {
-    height: 20.125rem;
-  }
   .popup.popup-project .project__info {
     padding: 2.3125rem 0 0.8125rem 0;
     border-right: 0.0625rem solid #dcdcdc;
@@ -2254,7 +2274,6 @@ img {
 }
 @media (max-width: 23.4375rem) {
   .popup.popup-project .project__inner {
-    height: 38.5rem;
     flex-direction: column-reverse;
     padding: 4.75rem 0 3.125rem 0;
   }
