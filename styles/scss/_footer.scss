@@ -1,7 +1,7 @@
 .footer {
 	background-color: $color-night-blue;
 	color: $color-white;
-	padding: 29px 0 23px 0;
+	padding: 1.8125rem 0 1.4375rem 0;
 	a {
 		@include linkEffects;
 	}
@@ -13,30 +13,30 @@
 }
 
 .footer__logo-container {
-	width: 210px;
+	width: 13.125rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
 .footer__logo {
-	width: 210px;
+	width: 13.125rem;
 	height: auto;
 }
 
 .footer__menu-title,
 .footer__contacts-title {
-	margin-bottom: 16px;
+	margin-bottom: 1rem;
 }
 
 .footer-menu__list {
 	display: flex;
 	flex-direction: column;
-	gap: 12px;
+	gap: .75rem;
 }
 
 .footer__contacts {
-	max-width: 350px;
+	max-width: 21.875rem;
 	display: flex;
 	flex-direction: column;
 }
@@ -44,79 +44,79 @@
 .contact-info {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 12px 28px;
-	margin-bottom: 32px;
+	gap: .75rem 1.75rem;
+	margin-bottom: 2rem;
 }
 
 .social-media {
 	display: flex;
-	gap: 40px;
+	gap: 2.5rem;
 
 	.icon {
-		width: 32px;
-		height: 32px;
+		width: 2rem;
+		height: 2rem;
 	}
 }
 
 .rights {
-	font-size: 14px;
-	line-height: 20px;
+	font-size: .875rem;
+	line-height: 1.25rem;
 	color: $color-grey;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
 	.footer {
-		padding: 13px 0 13px 0;
+		padding: .8125rem 0 .8125rem 0;
 	}
 
 	.rights {
-		font-size: 8px;
-		line-height: 11px;
+		font-size: .5rem;
+		line-height: .6875rem;
 	}
 
 	.footer__contacts h4,
 	.footer__menu h4 {
-		font-size: 14px;
-		line-height: 20px;
-		margin-bottom: 8.53px;
+		font-size: .875rem;
+		line-height: 1.25rem;
+		margin-bottom: .5331rem;
 	}
 
 	.footer__contacts {
-		max-width: 216px;
+		max-width: 13.5rem;
 		flex-wrap: nowrap;
 	}
 
 	.contact-info {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 6.4px 14.93px;
-		margin-bottom: 17.7px;
+		gap: .4rem .9331rem;
+		margin-bottom: 1.1062rem;
 	}
 
 	.footer-menu__list,
 	.footer__contacts {
-		font-size: 10px;
-		line-height: 14px;
-		letter-spacing: 0.02px;
+		font-size: .625rem;
+		line-height: .875rem;
+		letter-spacing: .0013rem;
 	}
 
 	.footer-menu__list {
-		gap: 6.4px;
+		gap: .4rem;
 	}
 
 	.social-media .icon {
-		width: 32px;
-		height: 32px;
+		width: 2rem;
+		height: 2rem;
 	}
 
 	.social-media {
-		gap: 21.33px;
+		gap: 1.3331rem;
 	}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 23.4375rem) {
 	.footer {
-		padding: 13px 0 21px 0;
+		padding: .8125rem 0 1.3125rem 0;
 	}
 
 	.footer__inner {
@@ -124,7 +124,7 @@
 	}
 
 	.footer__logo-container {
-		margin-bottom: 24px;
+		margin-bottom: 1.5rem;
 	}
 
 	.footer__menu {
@@ -133,15 +133,15 @@
 
 	.footer__contacts h4 {
 		font-weight: 400;
-		font-size: 20px;
-		line-height: 28px;
-		margin-bottom: 12px;
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+		margin-bottom: .75rem;
 	}
 
 	.footer__contacts {
 		font-weight: 400;
-		font-size: 14px;
-		line-height: 20px;
+		font-size: .875rem;
+		line-height: 1.25rem;
 		letter-spacing: 0.03em;
 	}
 
@@ -150,20 +150,20 @@
 	}
 
 	.contact-info {
-		gap: 6.4px 54px;
-		margin-bottom: 24px;
+		gap: .4rem 3.375rem;
+		margin-bottom: 1.5rem;
 		font-weight: 400;
-		font-size: 14px;
-		line-height: 20px;
+		font-size: .875rem;
+		line-height: 1.25rem;
 		letter-spacing: 0.03em;
 	}
 
 	.social-media {
-		margin-bottom: 34px;
+		margin-bottom: 2.125rem;
 	}
 
 	.social-media .icon {
-		width: 36px;
-		height: 36px;
+		width: 2.25rem;
+		height: 2.25rem;
 	}
 }

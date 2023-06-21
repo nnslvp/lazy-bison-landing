@@ -11,27 +11,27 @@
 	overflow: hidden;
 	width: 100%;
 	.planet-blue {
-		top: 71px;
-		right: 54px;
+		top: 4.4375rem;
+		right: 3.375rem;
 	}
 	.circle-ruby-on-rails {
-		top: 46px;
-		right: 30px;
+		top: 2.875rem;
+		right: 1.875rem;
 	}
 }
 
 .projects-wrapper {
 	display: grid;
 	justify-content: center;
-	grid-template-columns: 620px 404px;
-	grid-column-gap: 28px;
-	grid-row-gap: 22px;
+	grid-template-columns: 38.75rem 25.25rem;
+	grid-column-gap: 1.75rem;
+	grid-row-gap: 1.375rem;
 }
 
 .project-slide:nth-child(1) {
 	grid-area: 1 / 1 / 3 / 2;
 	img {
-		border-radius: 100px 0px 0px 0px;
+		border-radius: 6.25rem 0rem 0rem 0rem;
 	}
 }
 
@@ -42,63 +42,63 @@
 .project-slide:nth-child(3) {
 	grid-area: 2 / 2 / 3 / 3;
 	img {
-		border-radius: 100px 0px 100px 100px;
+		border-radius: 6.25rem 0rem 6.25rem 6.25rem;
 	}
 }
 
 .cases__planet-img {
-	width: 170px;
-	height: 170px;
+	width: 10.625rem;
+	height: 10.625rem;
 	position: absolute;
 	top: 2.75rem;
 	right: 1.6875rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
 	.cases__inner {
 		@include background('/assets/images/casesbg.png', center, no-repeat, cover);
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 64px;
+		margin-bottom: 4rem;
 	}
 
 	.projects-container {
-		padding-top: 76px;
-		padding-bottom: 80px;
+		padding-top: 4.75rem;
+		padding-bottom: 5rem;
 
 		.planet-blue {
-			width: 76px;
-			height: 75.93px;
-			top: 37px;
-			right: 12px;
+			width: 4.75rem;
+			height: 4.7456rem;
+			top: 2.3125rem;
+			right: 0.75rem;
 		}
 
 		.circle-ruby-on-rails {
-			width: 108.44px;
-			height: 107.42px;
-			top: 21px;
-			right: -3px;
+			width: 6.7775rem;
+			height: 6.7138rem;
+			top: 1.3125rem;
+			right: -0.1875rem;
 		}
 	}
 
 	.projects-wrapper {
 		display: grid;
 		justify-content: start;
-		grid-template-columns: 392px 255px;
-		grid-column-gap: 17px;
-		grid-row-gap: 14px;
+		grid-template-columns: 24.5rem 15.9375rem;
+		grid-column-gap: 1.0625rem;
+		grid-row-gap: 0.875rem;
 	}
 
 	.cases__planet-img {
-		width: 108.44px;
-		height: 107.42px;
+		width: 6.7775rem;
+		height: 6.7138rem;
 		position: absolute;
 		top: 1.75rem;
 		right: -1.5rem;
 	}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 23.4375rem) {
 	.cases__inner {
 		@include background('/assets/images/casesbg.png', center, no-repeat, cover);
 		display: flex;
@@ -119,9 +119,9 @@
 	.projects-container {
 		position: relative;
 		flex-shrink: 0;
-		padding-top: 25px;
-		padding-bottom: 28px;
-		margin-bottom: 50.5px;
+		padding-top: 1.5625rem;
+		padding-bottom: 1.75rem;
+		margin-bottom: 3.1563rem;
 	}
 
 	.slider__image {

@@ -7,7 +7,7 @@
 }
 
 html {
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 body {
@@ -60,12 +60,12 @@ object {
 }
 
 main section:not(.cases, .testimonials) {
-	padding-bottom: 120px;
-	@media (max-width: 768px) {
-		padding-bottom: 80px;
+	padding-bottom: 7.5rem;
+	@media (max-width: 48rem) {
+		padding-bottom: 5rem;
 	}
-	@media (max-width: 375px) {
-		padding-bottom: 0px;
+	@media (max-width: 23.4375rem) {
+		padding-bottom: 0rem;
 	}
 }
 
@@ -88,11 +88,11 @@ img {
 	max-width: calc($container-width + $container-padding * 2);
 	padding: 0 $container-padding;
 	margin: 0 auto;
-	@media (max-width: 768px) {
-		max-width: calc(716px + $container-padding * 2);
+	@media (max-width: 48rem) {
+		max-width: calc(44.75rem + $container-padding * 2);
 	}
-	@media (max-width: 375px) {
-		max-width: calc(335px + $container-padding * 2);
+	@media (max-width: 23.4375rem) {
+		max-width: calc(20.9375rem + $container-padding * 2);
 	}
 }
 
@@ -196,25 +196,25 @@ img {
 		color: $color-black;
 		background-color: $color-light-green;
 	}
-	@media (max-width: 768px) {
-		font-size: 17.3px;
-		line-height: 24.22px;
-		padding: 14px 45.5px;
+	@media (max-width: 76.5rem) {
+		font-size: 1.0813rem;
+		line-height: 1.5137rem;
+		padding: 0.875rem 2.8438rem;
 	}
-	@media (max-width: 375px) {
-		font-size: 17px;
-		line-height: 24px;
-		padding: 14px 45.5px;
+	@media (max-width: 23.4375rem) {
+		font-size: 1.0625rem;
+		line-height: 1.5rem;
+		padding: 0.875rem 2.8438rem;
 	}
 }
 
 .gray-line {
-	height: 2px;
+	height: 0.125rem;
 	background-color: $color-light-grey;
 }
 
 .vertical-gray-line {
-	width: 2px;
+	width: 0.125rem;
 	height: 0;
 	background-color: $color-light-grey;
 }
@@ -223,16 +223,16 @@ img {
 	display: flex;
 	gap: 0.9375rem;
 	margin-bottom: 2.5rem;
-	@media (max-width: 768px) {
+	@media (max-width: 48rem) {
 		display: flex;
-		gap: 15px;
-		margin-bottom: 12px;
+		gap: 0.9375rem;
+		margin-bottom: 0.75rem;
 	}
 }
 
 .planet-blue {
-	width: 120px;
-	height: 120px;
+	width: 7.5rem;
+	height: 7.5rem;
 	position: absolute;
 	z-index: 1;
 	background: radial-gradient(
@@ -246,8 +246,8 @@ img {
 }
 
 .circle-ruby-on-rails {
-	width: 170.35px;
-	height: 170.28px;
+	width: 10.6469rem;
+	height: 10.6425rem;
 	position: absolute;
 	animation: circle-rotation 5s infinite linear;
 }
@@ -255,15 +255,15 @@ img {
 .section-title__heading {
 	display: flex;
 	align-items: center;
-	@media (max-width: 768px) {
+	@media (max-width: 48rem) {
 		font-weight: 600;
 		font-size: 1.75rem;
 		line-height: 2.45rem;
 		letter-spacing: 0.03em;
 	}
-	@media (max-width: 375px) {
-		font-size: 26px;
-		line-height: 36px;
+	@media (max-width: 23.4375rem) {
+		font-size: 1.625rem;
+		line-height: 2.25rem;
 		letter-spacing: 0.02em;
 	}
 }
@@ -272,9 +272,9 @@ img {
 	@include center;
 	width: 4.5rem;
 	height: 4.5rem;
-	@media (max-width: 768px) {
-		width: 50px;
-		height: 50px;
+	@media (max-width: 48rem) {
+		width: 3.125rem;
+		height: 3.125rem;
 	}
 }
 
