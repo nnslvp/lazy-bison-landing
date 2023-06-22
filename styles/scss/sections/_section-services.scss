@@ -8,11 +8,11 @@
 }
 
 .services__inner {
-	padding-top: 8px;
+	padding-top: 0.5rem;
 }
 
 .services__gray-line {
-	margin-bottom: 83px;
+	margin-bottom: 5.1875rem;
 }
 
 .services-info {
@@ -26,7 +26,7 @@
 
 .services-info__inner {
 	display: flex;
-	gap: 29px;
+	gap: 1.8125rem;
 	color: $color-white;
 }
 
@@ -34,8 +34,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	flex-basis: 728px;
-	padding-top: 56px;
+	flex-basis: 45.5rem;
+	padding-top: 3.5rem;
 }
 
 .services-info__title {
@@ -43,8 +43,8 @@
 }
 
 .services-info__description-text {
-	max-width: 512px;
-	min-height: 224px;
+	max-width: 32rem;
+	min-height: 14rem;
 	margin-bottom: 4.8125rem;
 }
 
@@ -52,12 +52,12 @@
 	display: none;
 }
 .services-gray-line__wrapper {
-	width: 404px;
+	width: 25.25rem;
 }
 
 .services-info__gray-line {
 	width: 100%;
-	margin: 14px 0 21.73px 0;
+	margin: 0.875rem 0 1.3581rem 0;
 }
 
 .services-info__button {
@@ -65,13 +65,13 @@
 }
 
 .services-info__types {
-	width: 404px;
-	padding-top: 44px;
+	width: 25.25rem;
+	padding-top: 2.75rem;
 }
 
 .services-info__type-button {
 	width: 100%;
-	height: 72px;
+	height: 4.5rem;
 	color: $color-black;
 	background: $color-light-green;
 	border: 0.0625rem dashed $color-grey;
@@ -85,12 +85,12 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
 	.services {
 		background: none;
 
 		.section-title__inner {
-			margin-bottom: 58px;
+			margin-bottom: 3.625rem;
 		}
 
 		.services__inner {
@@ -100,7 +100,7 @@
 				no-repeat,
 				contain
 			);
-			padding-bottom: 30px;
+			padding-bottom: 1.875rem;
 		}
 	}
 
@@ -118,7 +118,11 @@
 	}
 
 	.services-info__inner {
-		gap: 29px;
+		gap: 1.8125rem;
+	}
+
+	.services-gray-line__wrapper {
+		width: 14.1875rem;
 	}
 
 	.services-info__title {
@@ -128,16 +132,16 @@
 	}
 
 	.services-info__description {
-		flex-basis: 409px;
-		padding-top: 31px;
+		flex-basis: 25.5625rem;
+		padding-top: 1.9375rem;
 	}
 
 	.services-info__description-text {
-		max-width: 288px;
-		min-height: 180px;
-		font-size: 14px;
-		line-height: 20px;
-		margin-bottom: 55px;
+		max-width: 18rem;
+		min-height: 11.25rem;
+		font-size: 0.875rem;
+		line-height: 1.25rem;
+		margin-bottom: 3.4375rem;
 	}
 
 	.services-info__item .services-info__description-text {
@@ -145,38 +149,39 @@
 	}
 
 	.services-info__types {
-		width: 248px;
-		padding-top: 25px;
+		width: 15.5rem;
+		padding-top: 1.5625rem;
 	}
 
 	.services-info__type-button {
-		height: 44px;
-		font-size: 14px;
-		line-height: 20px;
+		height: 2.75rem;
+		font-size: 0.875rem;
+		line-height: 1.25rem;
 	}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 23.4375rem) {
 	.services {
 		@include background(
 			'/assets/images/services-info-bg-375.png',
-			0 79px,
+			0 4.9375rem,
 			no-repeat,
 			contain
 		);
 
 		.section-title__inner {
-			margin-bottom: 30px;
+			margin-bottom: 1.875rem;
 		}
 
 		.services__inner {
 			background: none;
-			padding-bottom: 66px;
+			padding-bottom: 4.125rem;
 		}
 	}
 
 	.services-info {
 		background: none;
+		height: 39.3125rem;
 	}
 
 	.services__gray-line,
@@ -187,7 +192,7 @@
 	.services-info__inner {
 		flex-direction: column-reverse;
 		align-items: center;
-		gap: 12px;
+		gap: 0.75rem;
 	}
 
 	.services-info__title {
@@ -196,17 +201,17 @@
 
 	.services-info__description {
 		color: $color-black;
-		flex-basis: 0px;
-		padding-top: 0px;
+		flex-basis: 0rem;
+		padding-top: 0rem;
 	}
 
 	.services-info__description-text {
 		display: none;
 		max-width: 100%;
-		padding: 12px;
-		margin-bottom: 0px;
-		font-size: 16px;
-		line-height: 22px;
+		padding: 0.75rem;
+		margin-bottom: 0rem;
+		font-size: 1rem;
+		line-height: 1.375rem;
 		letter-spacing: 0.03em;
 	}
 
@@ -215,22 +220,22 @@
 	}
 
 	.services-info__types {
-		width: 319px;
-		padding-top: 35px;
+		width: 19.9375rem;
+		padding-top: 2.1875rem;
 	}
 
 	.services-info__type-button {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0 14px 0 12px;
-		font-size: 16px;
-		line-height: 22px;
+		padding: 0 0.875rem 0 0.75rem;
+		font-size: 1rem;
+		line-height: 1.375rem;
 		letter-spacing: 0.03em;
 	}
 
 	.services-primary__button {
-		padding: 14px 67.5px;
+		padding: 0.875rem 4.2188rem;
 	}
 
 	.services-info__type-button:after {

@@ -1,4 +1,5 @@
 .popup.popup__get-consultation {
+	border-radius: 0;
 	@include background(
 		'/assets/images/consulatation-popup-bg.png',
 		initial,
@@ -7,8 +8,31 @@
 	);
 	padding: 3.8125rem 5.4375rem 3.75rem 5.4375rem;
 
-	.popup__content {
-		max-width: 26.625rem;
+	&.submit-success {
+		@include center;
+		height: 683px;
+	}
+
+	&.submit-success .popup-content {
+		width: 339px;
+		flex-direction: column;
+		@include center;
+	}
+
+	&.submit-success .two-ticks {
+		display: block;
+	}
+
+	.two-ticks {
+		display: none;
+		width: 54px;
+		height: 54px;
+		@include background(
+			'/assets/icons/two-ticks.svg',
+			center,
+			no-repeat,
+			contain
+		);
 	}
 
 	.get-consultation__title {
@@ -25,6 +49,26 @@
 		flex-direction: column;
 		gap: 1.5rem;
 		margin-bottom: 2.5rem;
+	}
+
+	.input-email__wrapper {
+		position: relative;
+	}
+
+	.error-text {
+		visibility: hidden;
+		display: block;
+		text-align: end;
+		color: $color-system-red;
+	}
+
+	.error-icon {
+		visibility: hidden;
+		width: 1rem;
+		height: 1rem;
+		position: absolute;
+		bottom: 1rem;
+		right: 1rem;
 	}
 
 	input[type='email'] {
@@ -55,6 +99,37 @@
 	.checkbox-label {
 		display: flex;
 		align-items: center;
+	}
+
+	.checkbox-label input[type='checkbox'] {
+		display: none;
+	}
+
+	.checkbox-label .checkbox-custom {
+		position: relative;
+		width: 1rem;
+		height: 1rem;
+		border: 0.0938rem solid #333f52;
+		border-radius: 0.125rem;
+		margin-right: 0.5rem;
+	}
+
+	.checkbox-label .checkbox-custom:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 1rem;
+		height: 1rem;
+		opacity: 0;
+		border-radius: 0.125rem;
+		@include background('/assets/icons/checked-icon.svg');
+		transition: opacity 0.2s ease;
+	}
+
+	.checkbox-label input[type='checkbox']:checked + .checkbox-custom:before {
+		opacity: 1;
 	}
 
 	input[type='checkbox'] {
@@ -93,135 +168,166 @@
 		border: 0.0625rem solid $color-grey;
 	}
 
-	@media (max-width: 768px) {
-		border-radius: 0;
-		padding: 22.33px 38px 21.8px 38px;
+	@media (max-width: 48rem) {
+		padding: 1.3956rem 2.375rem 1.3625rem 2.375rem;
+
+		&.submit-success .popup-content {
+			width: 194px;
+			flex-direction: column;
+			@include center;
+		}
+
+		&.submit-success {
+			@include center;
+			width: 320px;
+			height: 363px;
+		}
+
+		.two-ticks {
+			width: 29px;
+			height: 29px;
+		}
 
 		.get-consultation__title {
 			text-align: center;
-			font-size: 24px;
-			line-height: 33.6px;
-			margin-bottom: 2.13px;
+			font-size: 1.5rem;
+			line-height: 2.1rem;
+			margin-bottom: 0.1331rem;
 		}
 
 		.get-consultation__subtitle {
-			font-size: 12px;
-			line-height: 17px;
-			margin-bottom: 21.33px;
+			font-size: 0.75rem;
+			line-height: 1.0625rem;
+			margin-bottom: 1.3331rem;
 		}
 
 		input[type='email']::placeholder,
 		textarea::placeholder,
 		.character-count {
-			font-size: 10px;
-			line-height: 14px;
+			font-size: 0.625rem;
+			line-height: 0.875rem;
 		}
 
 		.form-group {
-			width: 227px;
+			width: 14.1875rem;
 			margin: 0 auto;
-			gap: 12.8px;
-			margin-bottom: 21.27px;
+			gap: 0.8rem;
+			margin-bottom: 1.3294rem;
 		}
 
 		.form-group label {
-			font-size: 10px;
-			line-height: 14px;
+			font-size: 0.625rem;
+			line-height: 0.875rem;
 		}
 
 		input[type='email'] {
-			padding: 8.53px 5.87px 5.87px;
+			padding: 0.5331rem 0.3669rem 0.3669rem;
 			width: 100%;
 		}
 
 		textarea {
-			padding: 8.53px 0 0 5.87px;
+			padding: 0.5331rem 0 0 0.3669rem;
 			width: 100%;
-			height: 78.78px;
+			height: 4.9238rem;
 		}
 
 		input[type='checkbox'] {
-			width: 12px;
-			height: 12px;
-			margin-right: 8px;
+			width: 0.75rem;
+			height: 0.75rem;
+			margin-right: 0.5rem;
 		}
 
 		.btn-cancel,
 		.btn-submit {
-			padding: 8.53px 17.07px;
-			font-size: 12px;
-			line-height: 16.8px;
+			padding: 0.5331rem 1.0669rem;
+			font-size: 0.75rem;
+			line-height: 1.05rem;
 		}
 
 		.form-actions {
-			gap: 17.07px;
+			gap: 1.0669rem;
 		}
 
 		.close-popup-button {
-			width: 16px;
-			height: 15px;
-			top: 12.52px;
-			right: 11.69px;
+			width: 1rem;
+			height: 0.9375rem;
+			top: 0.7825rem;
+			right: 0.7306rem;
 		}
 	}
 
-	@media (max-width: 375px) {
-		padding: 23.38px 54.38px 22.75px 54.38px;
+	@media (max-width: 23.4375rem) {
+		padding: 1.4612rem 3.3988rem 1.4219rem 3.3988rem;
+
+		&.submit-success .popup-content {
+			width: 212px;
+			flex-direction: column;
+			@include center;
+		}
+
+		&.submit-success {
+			@include center;
+			width: 100%;
+			height: 426px;
+		}
+
+		.two-ticks {
+			width: 34px;
+			height: 34px;
+		}
 
 		.get-consultation__title {
 			text-align: center;
-			font-size: 26px;
-			line-height: 36.4px;
-			margin-bottom: 2.5px;
+			font-size: 1.625rem;
+			line-height: 2.275rem;
+			margin-bottom: 0.1563rem;
 		}
 
 		.get-consultation__subtitle {
-			font-size: 14px;
-			line-height: 19.6px;
-			margin-bottom: 25px;
+			font-size: 0.875rem;
+			line-height: 1.225rem;
+			margin-bottom: 1.5625rem;
 		}
 
 		input[type='checkbox'] {
-			width: 16px;
-			height: 16px;
+			width: 1rem;
+			height: 1rem;
 		}
 
 		.form-group .checkbox-label {
-			font-size: 14px;
-			line-height: 20px;
+			font-size: 0.875rem;
+			line-height: 1.25rem;
+		}
+
+		.error-icon {
+			bottom: 0.625rem;
+			right: 1rem;
 		}
 
 		.form-group {
-			width: 266.65px;
-			gap: 15px;
-			margin-bottom: 25px;
+			width: 16.6656rem;
+			gap: 0.9375rem;
+			margin-bottom: 1.5625rem;
 		}
 
 		input[type='email'] {
-			padding: 6.88px 0 6.88px 10px;
+			padding: 0.43rem 0 0.43rem 0.625rem;
 		}
 
 		textarea {
-			padding: 6.88px 0 0 10px;
-			height: 78.78px;
+			padding: 0.43rem 0 0 0.625rem;
+			height: 4.9238rem;
 		}
 
 		.btn-cancel,
 		.btn-submit {
-			padding: 10px 20px;
-			font-size: 14px;
-			line-height: 19.6px;
+			padding: 0.625rem 1.25rem;
+			font-size: 0.875rem;
+			line-height: 1.225rem;
 		}
 
 		.form-actions {
-			gap: 20px;
-		}
-
-		.close-popup-button {
-			width: 7.82px;
-			height: 7.82px;
-			top: 12.52px;
-			right: 11.69px;
+			gap: 1.25rem;
 		}
 	}
 }

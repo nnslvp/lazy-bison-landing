@@ -2,31 +2,41 @@
 @import 'project';
 
 .popup {
+	visibility: hidden;
 	position: relative;
-	border-radius: 1.875rem;
 	position: fixed;
 	top: 50%;
 	left: 50%;
+	border-radius: 1.875rem;
 	transform: translate(-50%, -50%);
-	background-color: #fff;
+	background-color: $color-white;
 	z-index: 9999;
-	display: none;
+	transition: opacity 1s ease;
 }
 
 .overlay {
+	visibility: hidden;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
-	display: none;
 	z-index: 9998;
+	transition: opacity 1s ease;
+}
+
+.popup.open {
+	visibility: visible;
+}
+
+.popup.open ~ .overlay {
+	visibility: visible;
 }
 
 .close-popup-button {
-	width: 2rem;
-	height: 2rem;
+	height: 0.975rem;
+	width: 0.975rem;
 	background-color: transparent;
 	border: none;
 	position: absolute;

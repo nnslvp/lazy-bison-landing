@@ -4,7 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Website</title>
+	<title>Lazy Bison</title>
+	<link rel="icon" type="image/png" href="/assets/icons/favicon.svg">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
@@ -25,20 +26,20 @@
 					<nav class="header__main-nav">
 						<ul class="header__main-nav-list text--medium">
 							<li class="header__main-nav-item">
-								<a href="#" class="header__main-nav-link">Services</a>
+								<a href="#services" class="header__main-nav-link">Services</a>
 							</li>
 							<li class="header__main-nav-item">
-								<a href="#" class="header__main-nav-link">Explore</a>
+								<a href="#explore" class="header__main-nav-link">Explore</a>
 							</li>
 							<li class="header__main-nav-item">
-								<a href="#" class="header__main-nav-link">Cases</a>
+								<a href="#cases" class="header__main-nav-link">Cases</a>
 							</li>
 							<li class="header__main-nav-item">
-								<a href="#" class="header__main-nav-link">Testimonials</a>
+								<a href="#testimonials" class="header__main-nav-link">Testimonials</a>
 							</li>
 						</ul>
 					</nav>
-					<a href="#" class="button header__nav-button button__text--medium button--secondary">Contact us
+					<a href="#contacts" class="button header__nav-button button__text--medium button--secondary">Contact us
 					</a>
 					<button class="burger-menu-button" aria-label="Toggle menu">
 						<span class="line"></span>
@@ -69,7 +70,8 @@
 									providing a full ecosystem for small and medium-sized
 									businesses with Ruby on Rails
 								</p>
-								<button class="button lazy-bison-description__btn button__text--large button--primary">
+								<button
+									class="button lazy-bison-description__btn button__text--large button--primary get-consultation-btn">
 									Get free consultation
 								</button>
 								<object class='circle-ruby-on-rails' type="image/svg+xml" data="./assets/icons/circleRubyOnRails.svg">
@@ -96,7 +98,7 @@
 					</div>
 			</section>
 
-			<section class="services">
+			<section id='services' class="services">
 				<div class="container">
 					<div class="services__inner">
 						<div class="section-title__inner">
@@ -104,12 +106,8 @@
 								Best features services
 							</h2>
 							<div class="section-title__arrow rectangle-arrow">
-								<svg width="73" height="72" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<rect x="1.5" y="0.5" width="71" height="71" fill="#C4FC50" stroke="#333F52" />
-									<path
-										d="M48.4405 23.5601L49.3203 47.5601L25.3203 48.4399L25.1275 44.2038L41.9275 43.5879L22.9955 25.9949L25.8855 22.8849L44.8175 40.4779L44.2016 23.6779L48.4405 23.5601Z"
-										fill="#333F52" />
-									<rect x="1.5" y="0.5" width="71" height="71" stroke="#333F52" />
+								<svg class="icon">
+									<use xlink:href="./assets/icons/sprite.svg#titleIcon"></use>
 								</svg>
 							</div>
 						</div>
@@ -133,25 +131,18 @@
 										Technologies: Ruby on Rails, Hotwire, ReactJS, Angular,
 										GoLang.
 									</p>
-									<button class="button button--primary button__text--large  services-primary__button">
+									<button
+										class="button button--primary button__text--large  services-primary__button get-consultation-btn">
 										Get free consultation
 									</button>
 								</div>
 								<div class="services-info__types">
 									<ul class="services-info__list text--medium">
 										<li class="services-info__item">
-											<button class="services-info__type-button active">
+											<button class="services-info__type-button">
 												Web Development
 											</button>
-											<p class="services-info__description-text text--medium">
-												Building and maintaining websites and web applications.
-												Creating functional web experiences using HTML, CSS,
-												JavaScript, and various web frameworks. It includes
-												website design, front-end and back-end development,
-												database integration, and maintenance and support.
-												Technologies: Ruby on Rails, Hotwire, ReactJS, Angular,
-												GoLang.
-											</p>
+
 										</li>
 										<li class="services-info__item">
 											<button class="services-info__type-button">
@@ -185,19 +176,15 @@
 					</div>
 				</div>
 			</section>
-			<section class="explore">
+			<section id='explore' class="explore">
 				<div class="container">
 					<div class="section-title__inner">
 						<h2 class="section-title__heading">
 							Explore how it works
 						</h2>
 						<div class="section-title__arrow rectangle-arrow">
-							<svg width="73" height="72" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<rect x="1.5" y="0.5" width="71" height="71" fill="#C4FC50" stroke="#333F52" />
-								<path
-									d="M48.4405 23.5601L49.3203 47.5601L25.3203 48.4399L25.1275 44.2038L41.9275 43.5879L22.9955 25.9949L25.8855 22.8849L44.8175 40.4779L44.2016 23.6779L48.4405 23.5601Z"
-									fill="#333F52" />
-								<rect x="1.5" y="0.5" width="71" height="71" stroke="#333F52" />
+							<svg class="icon">
+								<use xlink:href="./assets/icons/sprite.svg#titleIcon"></use>
 							</svg>
 						</div>
 					</div>
@@ -261,19 +248,15 @@
 				</div>
 			</section>
 
-			<section class="cases">
+			<section id='cases' class="cases">
 				<div class="container">
 					<div class="section-title__inner">
 						<h2 class="section-title__heading">
 							Cases
 						</h2>
 						<div class="section-title__arrow rectangle-arrow">
-							<svg width="73" height="72" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<rect x="1.5" y="0.5" width="71" height="71" fill="#C4FC50" stroke="#333F52" />
-								<path
-									d="M48.4405 23.5601L49.3203 47.5601L25.3203 48.4399L25.1275 44.2038L41.9275 43.5879L22.9955 25.9949L25.8855 22.8849L44.8175 40.4779L44.2016 23.6779L48.4405 23.5601Z"
-									fill="#333F52" />
-								<rect x="1.5" y="0.5" width="71" height="71" stroke="#333F52" />
+							<svg class="icon">
+								<use xlink:href="./assets/icons/sprite.svg#titleIcon"></use>
 							</svg>
 						</div>
 					</div>
@@ -283,7 +266,7 @@
 							<object class='circle-ruby-on-rails' type="image/svg+xml" data="./assets/icons/circleRubyOnRails.svg">
 							</object>
 							<div class='planet-blue' alt="planet-blue"></div>
-							<div class="swiper-wrapper projects-wrapper open-popup-button">
+							<div class="swiper-wrapper projects-wrapper">
 								<div class="swiper-slide project-slide">
 									<img src="./assets/images/projet-img-one.png" alt='cases' class="slider__image ">
 								</div>
@@ -299,19 +282,15 @@
 					</div>
 				</div>
 			</section>
-			<section class="testimonials">
+			<section id='testimonials' class="testimonials">
 				<div class="container">
 					<div class="section-title__inner">
 						<h2 class="section-title__heading">
 							Testimonials
 						</h2>
 						<div class="section-title__arrow rectangle-arrow">
-							<svg width="73" height="72" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<rect x="1.5" y="0.5" width="71" height="71" fill="#C4FC50" stroke="#333F52" />
-								<path
-									d="M48.4405 23.5601L49.3203 47.5601L25.3203 48.4399L25.1275 44.2038L41.9275 43.5879L22.9955 25.9949L25.8855 22.8849L44.8175 40.4779L44.2016 23.6779L48.4405 23.5601Z"
-									fill="#333F52" />
-								<rect x="1.5" y="0.5" width="71" height="71" stroke="#333F52" />
+							<svg class="icon">
+								<use xlink:href="./assets/icons/sprite.svg#titleIcon"></use>
 							</svg>
 						</div>
 					</div>
@@ -419,7 +398,7 @@
 								Want to transform your product vision into reality with our
 								data-driven approach?
 							</p>
-							<button class="button button--primary button__text--large button ">
+							<button class="button button--primary button__text--large button get-consultation-btn ">
 								Get free consultation
 							</button>
 						</div>
@@ -427,7 +406,7 @@
 				</div>
 			</section>
 		</main>
-		<footer class='footer'>
+		<footer id='contacts' class='footer'>
 			<div class="container">
 				<div class="footer__inner">
 					<div class="footer__logo-container">
@@ -439,22 +418,22 @@
 						<nav>
 							<ul class="footer-menu__list text--small">
 								<li class="footer__menu-item">
-									<a href="#" class="footer__menu-link">
+									<a href="#services" class="footer__menu-link">
 										Services
 									</a>
 								</li>
 								<li class="footer__menu-item">
-									<a href="#" class="footer__menu-link">
+									<a href="#explore" class="footer__menu-link">
 										Explore
 									</a>
 								</li>
 								<li class="footer__menu-item">
-									<a href="#" class="footer__menu-link">
+									<a href="#cases" class="footer__menu-link">
 										Cases
 									</a>
 								</li>
 								<li class="footer__menu-item">
-									<a href="#" class="footer__menu-link">
+									<a href="#testimonials" class="footer__menu-link">
 										Testimonials
 									</a>
 								</li>
@@ -505,70 +484,11 @@
 	</div>
 	<div class="popup popup-project">
 		<div class="popup-content ">
-			<div class="project__inner">
-				<div class="project__info">
-					<h3 class=" project__title heading--small">Name of project</h3>
-					<div class="project__description">
-						<p class="project__description-text  text--medium">We developed a custom crowdfunding platform
-							with a user-friendly interface that made it easy
-							for entrepreneurs to create campaigns and for investors to find projects to fund. We integrated a
-							secure payment system and an admin panel for managing campaigns
-							and funds. The platform allowed investors to select
-							a reward item offered by the entrepreneur,
-							and it displayed the progress towards the funding goal.</p>
-					</div>
-					<div class="name-app__inner">
-						<h4 class='name-app__title'>Crowdfunding web application</h4>
-						<div class="arrow-img__container">
-							<img src="./assets/icons/arrow-right-square.svg" alt="arrow">
-						</div>
-					</div>
-				</div>
-				<div class="project__img">
-					<img class='project__img-img' src="./assets/images/popup-project.jpeg" alt="project-img">
-				</div>
-			</div>
-			<!-- <h2 class="get-consultation__title "
-				Get free consultation
-			</h2>
-			<p class="get-consultation__subtitle text--medium">
-				Please, fill out the form
-			</p>
-				<form>
-					<div class="form-group">
 
-						<label class='text--small' for="email">
-							E-mail
-							<input placeholder='exapmle@gmail.com' type="email" id="email" name="email" required>
-						</label>
-
-
-						<div class="textarea__container">
-							<label class='text--small' for="comments">
-								Your comments
-								<textarea placeholder='Write your comments (optional)' id="comments" name="comments" maxlength="360"
-									required></textarea>
-							</label>
-							<div class="character-count text--small">0/360</div>
-						</div>
-
-						<label class='checkbox-label text--small' for="agree">
-							<input type="checkbox" id="agree" name="agree" required>
-							Agree to process personal data
-						</label>
-					</div>
-
-
-					<div class="form-actions">
-						<button type="button" class="btn btn-cancel">Cancel</button>
-						<button type="submit" class="btn btn-submit">Submit</button>
-					</div>
-				</form> -->
-
-			<button class="close-popup-button">
-				<img src="./assets/icons/close-icon.svg" alt="close">
-			</button>
 		</div>
+		<button class="close-popup-button">
+			<img src="./assets/icons/close-icon.svg" alt="close">
+		</button>
 	</div>
 	<div class="overlay"></div>
 	<script type="module" src='./js/main.js'></script>

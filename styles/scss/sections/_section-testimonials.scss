@@ -11,7 +11,7 @@
 }
 
 .testimonials__subtitle {
-	max-width: 32rem;
+	max-width: 51.125rem;
 }
 
 .vertical-gray-line-1,
@@ -27,10 +27,10 @@
 }
 
 .vertical-gray-line-2.animate {
-	@include heightAnimation(4s, 388px, 2);
+	@include heightAnimation(4s, 24.25rem, 2);
 }
 .vertical-gray-line-3.animate {
-	@include heightAnimation(4s, 275px, 3);
+	@include heightAnimation(4s, 17.1875rem, 3);
 }
 
 .vertical-gray-line-4.animate {
@@ -38,20 +38,20 @@
 }
 
 .vertical-gray-line-1 {
-	left: 117px;
+	left: 7.3125rem;
 }
 
 .vertical-gray-line-2 {
-	left: 547px;
+	left: 34.1875rem;
 }
 
 .vertical-gray-line-3 {
-	right: 308px;
+	right: 19.25rem;
 }
 
 .vertical-gray-line-4 {
 	top: 0;
-	right: 120px;
+	right: 7.5rem;
 }
 
 .workers-background {
@@ -70,22 +70,22 @@
 
 .workers__item {
 	&:nth-child(1) {
-		bottom: 0px;
+		bottom: 0rem;
 		left: 0;
 	}
 
 	&:nth-child(2) {
-		top: 34px;
+		top: 2.125rem;
 		left: 34%;
 	}
 
 	&:nth-child(3) {
-		top: -122px;
+		top: -7.625rem;
 		right: 0;
 	}
 
 	&:nth-child(4) {
-		bottom: -83px;
+		bottom: -5.1875rem;
 		right: 0;
 	}
 }
@@ -97,7 +97,7 @@
 .card {
 	position: relative;
 	width: 25.25rem;
-	height: 365px;
+	height: 22.8125rem;
 	display: flex;
 	justify-content: end;
 	flex-direction: column;
@@ -143,7 +143,7 @@
 .card__content {
 	padding: 5.75rem 1.375rem 2.75rem 1.375rem;
 	background-color: $color-white;
-	border: 1px solid $color-grey;
+	border: 0.0625rem solid $color-grey;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -175,23 +175,23 @@
 
 	.planet-blue {
 		z-index: -1;
-		top: -25px;
-		left: -12px;
+		top: -1.5625rem;
+		left: -0.75rem;
 	}
 	.circle-ruby-on-rails {
 		z-index: -1;
-		top: -49px;
-		left: -40px;
+		top: -3.0625rem;
+		left: -2.5rem;
 	}
 }
 
 .consultation__planet-img {
-	width: 145px;
-	height: 145px;
+	width: 9.0625rem;
+	height: 9.0625rem;
 	position: absolute;
 	z-index: -1;
-	top: -41px;
-	left: -36px;
+	top: -2.5625rem;
+	left: -2.25rem;
 }
 
 .consultation__description {
@@ -203,120 +203,130 @@
 	margin-right: 13.25rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
 	.consultation__inner {
 		.planet-blue {
-			width: 75.78px;
-			height: 75.78px;
-			top: -2px;
-			left: -24px;
+			width: 4.7363rem;
+			height: 4.7363rem;
+			top: -0.125rem;
+			left: -1.5rem;
 		}
 		.circle-ruby-on-rails {
-			width: 107.57px;
-			height: 107.55px;
-			top: -19px;
-			left: -41px;
+			width: 6.7231rem;
+			height: 6.7219rem;
+			top: -1.1875rem;
+			left: -2.5625rem;
 		}
 	}
 
 	.workers-background {
-		background-image: url(/assets//images//workers-bg-768px.png);
+		background-image: url('/assets//images//workers-bg-768px.png');
 	}
 
 	.testimonials__gray-line {
-		margin-bottom: 20px;
+		margin-bottom: 1.25rem;
 	}
 
 	.testimonials__title {
-		font-size: 20px;
-		line-height: 28px;
-		margin-bottom: 13px;
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+		margin-bottom: 0.8125rem;
 	}
 
 	.testimonials__subtitle {
-		max-width: 346px;
+		max-width: 21.625rem;
 		@include text--small;
-		margin-bottom: 11px;
+		margin-bottom: 0.6875rem;
 	}
 
 	.vertical-gray-line-1 {
-		left: 232px;
+		left: 5.125rem;
 	}
 
 	.vertical-gray-line-2 {
-		width: 246px;
-		left: auto;
-		right: -32px;
-		transform: rotate(90deg) translateY(0) translateX(124px);
+		left: 18rem;
 	}
 
 	.vertical-gray-line-3 {
-		left: 164px;
-		right: auto;
+		right: 17.6875rem;
 	}
 
 	.vertical-gray-line-4 {
-		left: -183px;
-		right: auto;
+		right: 4.5rem;
+	}
+
+	.vertical-gray-line-1.animate {
+		@include heightAnimation(4s, 28.4375rem, 1);
+	}
+
+	.vertical-gray-line-2.animate {
+		@include heightAnimation(4s, 18rem, 2);
+	}
+	.vertical-gray-line-3.animate {
+		@include heightAnimation(4s, 21.875rem, 3);
+	}
+
+	.vertical-gray-line-4.animate {
+		@include heightAnimation(4s, 12.5rem, 4);
 	}
 
 	.workers__list {
-		height: 427px;
+		height: 26.6875rem;
 	}
 
 	.workers__item:nth-child(1) {
-		top: 0px;
-		left: 92px;
+		top: 0rem;
+		left: 5.75rem;
 	}
 
 	.workers__item:nth-child(2) {
 		top: auto;
 		left: auto;
-		right: 91px;
-		bottom: 34px;
+		right: 5.6875rem;
+		bottom: 2.125rem;
 	}
 
 	.workers__item:nth-child(3) {
-		top: -81px;
+		top: -5.0625rem;
 		right: 0;
 	}
 
 	.workers__item:nth-child(4) {
-		bottom: -46px;
+		bottom: -2.875rem;
 		left: 0;
 	}
 
 	.card {
-		width: 256px;
-		height: 232px;
+		width: 16rem;
+		height: 14.5rem;
 	}
 
 	.avatar {
 		bottom: 0;
-		width: 98.88px;
-		height: 98.88px;
+		width: 6.18rem;
+		height: 6.18rem;
 	}
 
 	.card__content {
-		padding: 58.3px 13.4px 12.13px 13.4px;
-		gap: 6.34px;
+		padding: 3.6437rem 0.8375rem 0.7581rem 0.8375rem;
+		gap: 0.3962rem;
 	}
 
 	.name {
-		font-size: 16px;
-		line-height: 22px;
+		font-size: 1rem;
+		line-height: 1.375rem;
 	}
 
 	.position {
-		font-size: 12px;
-		line-height: 16.8px;
+		font-size: 0.75rem;
+		line-height: 1.05rem;
 	}
 
 	.description {
 		margin-top: 0;
-		font-size: 12px;
-		line-height: 16.8px;
-		letter-spacing: 0.3px;
+		font-size: 0.75rem;
+		line-height: 1.05rem;
+		letter-spacing: 0.0187rem;
 	}
 
 	.consultation {
@@ -325,7 +335,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-color: transparent;
-		padding: 157px 0 80px 0;
+		padding: 9.8125rem 0 5rem 0;
 	}
 
 	.consultation__inner {
@@ -335,10 +345,10 @@
 			no-repeat,
 			cover
 		);
-		padding: 49px 0 29px 0;
+		padding: 3.0625rem 0 1.8125rem 0;
 		gap: 1.5625rem;
-		max-width: 656px;
-		max-height: 198px;
+		max-width: 41rem;
+		max-height: 12.375rem;
 	}
 
 	.gray-line {
@@ -346,36 +356,36 @@
 	}
 
 	.consultation__description {
-		max-width: 369.77px;
-		margin-right: 27.4px;
+		max-width: 23.1106rem;
+		margin-right: 1.7125rem;
 		@include text--small;
 	}
 
 	.consultation__inner .button {
-		padding: 14px 70.4px;
-		margin-right: 71px;
+		padding: 0.875rem 4.4rem;
+		margin-right: 4.4375rem;
 	}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 23.4375rem) {
 	.workers-background {
 		background-image: none;
 		background-color: $color-light-green;
 		position: relative;
-		height: 177px;
+		height: 11.0625rem;
 	}
 
 	.workers__list {
-		width: 272px;
-		height: 276px;
+		width: 17rem;
+		height: 17.25rem;
 		position: relative;
-		top: -24px;
+		top: -1.5rem;
 		gap: 0;
 	}
 
 	.testimonials__gray-line {
 		display: block;
-		margin-bottom: 18px;
+		margin-bottom: 1.125rem;
 	}
 
 	.vertical-gray-line-1,
@@ -386,28 +396,28 @@
 	}
 
 	.testimonials__subtitle {
-		margin-bottom: 40px;
+		margin-bottom: 2.5rem;
 	}
 
 	.avatar {
-		width: 92px;
-		height: 92px;
+		width: 5.75rem;
+		height: 5.75rem;
 	}
 
 	.card__content {
-		padding: 59px 16px 16px 16px;
+		padding: 3.6875rem 1rem 1rem 1rem;
 	}
 
 	.card {
-		width: 272px;
-		height: 248px;
+		width: 17rem;
+		height: 15.5rem;
 	}
 
 	.position,
 	.description {
-		font-size: 14px;
-		line-height: 20px;
-		letter-spacing: 0.4px;
+		font-size: 0.875rem;
+		line-height: 1.25rem;
+		letter-spacing: 0.025rem;
 	}
 
 	.workers__item {
@@ -415,7 +425,7 @@
 	}
 
 	.consultation {
-		padding: 168px 0 60px 0;
+		padding: 10.5rem 0 3.75rem 0;
 	}
 
 	.consultation__inner {
@@ -424,44 +434,44 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-color: transparent;
-		padding: 30px 0 156px 0;
-		gap: 24px;
+		padding: 1.875rem 0 9.75rem 0;
+		gap: 1.5rem;
 		width: auto;
-		max-height: 335px;
+		max-height: 20.9375rem;
 
 		.planet-blue {
-			width: 68px;
-			height: 68px;
-			top: -21px;
+			width: 4.25rem;
+			height: 4.25rem;
+			top: -1.3125rem;
 			left: auto;
-			right: -6px;
+			right: -0.375rem;
 		}
 
 		.circle-ruby-on-rails {
-			width: 95px;
-			height: 97.08px;
-			top: -37px;
+			width: 5.9375rem;
+			height: 6.0675rem;
+			top: -2.3125rem;
 			left: auto;
-			right: -20px;
+			right: -1.25rem;
 			animation: none;
 		}
 	}
 
 	.consultation__description {
-		max-width: 297px;
+		max-width: 18.5625rem;
 		margin: 0 auto;
 	}
 
 	.consultation__inner .button {
-		padding: 14px 45.5px;
+		padding: 0.875rem 2.8438rem;
 		margin: 0 auto;
 	}
 
 	.consultation__planet-img {
-		width: 90px;
-		height: 90px;
-		top: -32px;
+		width: 5.625rem;
+		height: 5.625rem;
+		top: -2rem;
 		left: auto;
-		right: -18px;
+		right: -1.125rem;
 	}
 }

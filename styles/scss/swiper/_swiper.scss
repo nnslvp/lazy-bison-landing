@@ -1,6 +1,6 @@
 .swiper {
 	overflow: inherit;
-	@media (max-width: 375px) {
+	@media (max-width: 23.4375rem) {
 		overflow: hidden;
 	}
 }
@@ -14,12 +14,12 @@
 #swiper-pagination {
 	display: flex;
 	justify-content: center;
-	gap: 7px;
+	gap: 0.4375rem;
 }
 
 #swiper-pagination .swiper-pagination-bullet {
-	width: 14px;
-	height: 14px;
+	width: 0.875rem;
+	height: 0.875rem;
 	background-color: $color-light-grey;
 	margin: 0;
 }

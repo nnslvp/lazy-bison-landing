@@ -18,6 +18,7 @@ $color-accent-7: #dcdcdc;
 $color-disable-grey: #e8eaf2;
 $color-white: #ffffff;
 $color-light-grey: #dcdcdc;
+$color-system-red: #ff6969;
 
 //gradients
 $secondary-gradient-pink: radial-gradient(
@@ -62,14 +63,14 @@ $secondary-gradient-blue-two: radial-gradient(
 
 // Typography
 $font-family: 'Outfit';
-$root-font-size: 16px;
+$root-font-size: 1rem;
 // Spacing
 
 // Breakpoints
-$breakpoint-sm: 320px;
-$breakpoint-md: 375px;
-$breakpoint-lg: 768px;
-$breakpoint-xl: 1440px;
+$breakpoint-sm: 20rem;
+$breakpoint-md: 23.4375rem;
+$breakpoint-lg: 48rem;
+$breakpoint-xl: 90rem;
 
 //transition
 $transition-duration: 0.3s;
