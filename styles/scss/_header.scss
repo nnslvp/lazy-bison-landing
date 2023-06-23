@@ -21,12 +21,12 @@
 .header__main-nav {
 	flex-basis: 41.5625rem;
 	@include center;
-	display: block;
 	z-index: 3;
 }
 
 .header__main-nav-list {
 	width: 100%;
+	margin: 0 0.625rem;
 	display: flex;
 	justify-content: space-between;
 }
@@ -36,8 +36,8 @@
 }
 
 .header__nav-button {
-	@include center;
-	padding: 0.9063rem 3.1563rem;
+	flex-basis: 11.75rem;
+	padding: 0.9063rem 0;
 }
 
 @media (max-width: 48rem) {
@@ -48,7 +48,8 @@
 
 	.header__nav-button {
 		@include center;
-		padding: 0.4063rem 1.5313rem;
+		flex-basis: 6.25rem;
+		padding: 0.4063rem 0;
 		margin: 0 1.75rem 0 auto;
 		font-size: 0.6649rem;
 		line-height: 0.9375rem;

@@ -102,7 +102,7 @@ img {
   object-fit: cover;
 }
 
-.full-screen-container {
+.wrapper {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -342,12 +342,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: block;
   z-index: 3;
 }
 
 .header__main-nav-list {
   width: 100%;
+  margin: 0 0.625rem;
   display: flex;
   justify-content: space-between;
 }
@@ -364,10 +364,8 @@ img {
 }
 
 .header__nav-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.9063rem 3.1563rem;
+  flex-basis: 11.75rem;
+  padding: 0.9063rem 0;
 }
 
 @media (max-width: 48rem) {
@@ -379,7 +377,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.4063rem 1.5313rem;
+    flex-basis: 6.25rem;
+    padding: 0.4063rem 0;
     margin: 0 1.75rem 0 auto;
     font-size: 0.6649rem;
     line-height: 0.9375rem;

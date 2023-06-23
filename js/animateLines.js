@@ -48,6 +48,11 @@ const animateExploreElements = currentWidth => {
 	})
 }
 
+const getInitialWidth = line => {
+	const computedStyle = getComputedStyle(line)
+	return computedStyle.width
+}
+
 const animateLine = line => {
 	const width = getInitialWidth(line)
 	const targetWidth = parseInt(width)
@@ -70,11 +75,6 @@ const animateLine = line => {
 	}
 
 	animateWidth()
-}
-
-const getInitialWidth = line => {
-	const computedStyle = getComputedStyle(line)
-	return computedStyle.width
 }
 
 function elementInViewport(el) {
