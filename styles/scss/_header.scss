@@ -1,5 +1,6 @@
 @import 'variables';
 
+/* Общие стили */
 .header {
 	background-color: $color-night-blue;
 	flex: 0 0 auto;
@@ -40,6 +41,7 @@
 	padding: 0.9063rem 0;
 }
 
+/* Медиа-запросы */
 @media (max-width: 48rem) {
 	.header__inner {
 		padding: 0.4375rem 0 0.5rem 0rem;

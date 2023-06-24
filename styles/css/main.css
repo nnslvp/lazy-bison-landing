@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes circle-rotation {
   0% {
     transform: rotate(0deg);
@@ -317,6 +318,7 @@ img {
   }
 }
 
+/* Общие стили */
 .header {
   background-color: #212439;
   flex: 0 0 auto;
@@ -368,6 +370,7 @@ img {
   padding: 0.9063rem 0;
 }
 
+/* Медиа-запросы */
 @media (max-width: 48rem) {
   .header__inner {
     padding: 0.4375rem 0 0.5rem 0rem;
@@ -626,12 +629,12 @@ img {
     letter-spacing: 0em;
   }
   .lazy-bison-stats__inner {
-    max-width: 38.9375rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 4.3125rem;
+    justify-content: center;
     padding-right: 0;
     margin: 0 auto;
+  }
+  .lazy-bison__stats {
+    justify-content: center;
   }
   .lazy-bison__stats-text {
     font-size: 2.75rem;
@@ -830,7 +833,7 @@ img {
   font-weight: 600;
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 850px) {
   .services {
     background: none;
   }
@@ -966,6 +969,7 @@ img {
 }
 .explore__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .explore-item__title {
