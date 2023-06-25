@@ -7,14 +7,11 @@
     transform: rotate(360deg);
   }
 }
-@keyframes swapAnimation {
-  0% {
-    opacity: 1;
-  }
-  50% {
+@keyframes fadeIn {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
@@ -205,7 +202,7 @@ img {
   color: #515bf6;
   border-color: #515bf6;
 }
-.button--secondary:active {
+.button--secondary.active {
   color: #212121;
   background-color: #e8eaf2;
   border-color: #e8eaf2;
@@ -225,7 +222,7 @@ img {
   background-color: #4139be;
   border-color: #212121;
 }
-.button--primary:active {
+.button--primary.active {
   color: #212121;
   background-color: #e5ffaf;
 }
@@ -282,6 +279,10 @@ img {
   height: 10.6425rem;
   position: absolute;
   animation: circle-rotation 5s infinite linear;
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 .section-title__heading {
@@ -361,7 +362,7 @@ img {
 .header__main-nav-link:hover {
   color: #4139be;
 }
-.header__main-nav-link:active {
+.header__main-nav-link.active {
   color: #c4fc50;
 }
 
@@ -791,7 +792,7 @@ img {
 
 .services-info__description-text {
   max-width: 32rem;
-  min-height: 14rem;
+  height: 14rem;
   margin-bottom: 4.8125rem;
 }
 
@@ -828,7 +829,7 @@ img {
 .services-info__type-button:hover {
   background-color: #ffffff;
 }
-.services-info__type-button:active {
+.services-info__type-button.active {
   background: #e5ffaf;
   font-weight: 600;
 }
@@ -875,13 +876,10 @@ img {
   }
   .services-info__description-text {
     max-width: 18rem;
-    min-height: 11.25rem;
     font-size: 0.875rem;
     line-height: 1.25rem;
     margin-bottom: 3.4375rem;
-  }
-  .services-info__item .services-info__description-text {
-    display: none;
+    overflow: hidden;
   }
   .services-info__types {
     width: 15.5rem;
@@ -931,15 +929,22 @@ img {
   }
   .services-info__description-text {
     display: none;
-    max-width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 0rem;
-    font-size: 1rem;
-    line-height: 1.375rem;
-    letter-spacing: 0.03em;
   }
   .services-info__item .services-info__description-text {
     display: block;
+    overflow: hidden;
+    max-height: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    letter-spacing: 0.03em;
+    margin-bottom: 0;
+    margin: 0px;
+  }
+  .services-info__item .services-info__description-text.slide-in-height {
+    margin: 12px;
+    max-height: 500px;
+    transition: max-height 0.3s linear;
   }
   .services-info__types {
     width: 19.9375rem;
@@ -962,9 +967,8 @@ img {
     display: block;
   }
   .services-info__type-button.active:after {
-    content: url("/assets/icons/shevronDown.svg");
-    display: block;
     transform: rotate(180deg);
+    transition: all 0.1s linear;
   }
 }
 .explore__list {
@@ -1778,7 +1782,7 @@ img {
 .footer a:hover {
   color: #4139be;
 }
-.footer a:active {
+.footer a.active {
   color: #c4fc50;
 }
 

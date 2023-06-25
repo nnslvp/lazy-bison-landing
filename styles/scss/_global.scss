@@ -174,7 +174,7 @@ img {
 		color: $color-primary-violet;
 		border-color: $color-primary-violet;
 	}
-	&:active {
+	&.active {
 		color: $color-black;
 		background-color: $color-disable-grey;
 		border-color: $color-disable-grey;
@@ -193,7 +193,7 @@ img {
 		background-color: $color-dark-violet;
 		border-color: $color-black;
 	}
-	&:active {
+	&.active {
 		color: $color-black;
 		background-color: $color-light-green;
 	}
@@ -251,6 +251,10 @@ img {
 	height: 10.6425rem;
 	position: absolute;
 	animation: circle-rotation 5s infinite linear;
+}
+
+.fade-in {
+	animation: fadeIn 0.3s ease-in-out;
 }
 
 .section-title__heading {
