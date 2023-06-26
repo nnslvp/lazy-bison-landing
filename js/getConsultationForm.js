@@ -7,6 +7,7 @@ const errorText = form.querySelector('.error-text')
 const inputEmail = form.querySelector('.input-email')
 const popupTittle = document.querySelector('.get-consultation__title')
 const popupSubtitle = document.querySelector('.get-consultation__subtitle')
+const status = document.getElementById("my-form-status");
 
 function changeCountCharacterTextarea(e) {
 	const characterCount = document.querySelector('.character-count')
@@ -27,7 +28,30 @@ function handleSubmit(event) {
 	const form = event.target
 	showSuccessSubmit()
 	if (form.checkValidity()) {
-		console.log('Форма прошла валидацию')
+		const data = new FormData(event.target);
+		fetch(event.target.action, {
+			method: form.method,
+			body: data,
+			headers: {
+				'Accept': 'application/json'
+			}
+		}).then(response => {
+			if (response.ok) {
+				status.innerHTML = "Thanks for your submission!";
+				form.reset()
+			} else {
+				response.json().then(data => {
+					if (Object.hasOwn(data, 'errors')) {
+						status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+					} else {
+						status.innerHTML = "Oops! There was a problem submitting your form"
+					}
+				})
+			}
+		}).catch(error => {
+			console.log("Form error:", error)
+			status.innerHTML = "Oops! There was a problem submitting your form"
+		});
 	} else {
 		if (!inputEmail.validity.valid) {
 			errorIcon.style.visibility = 'visible'

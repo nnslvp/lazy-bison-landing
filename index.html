@@ -549,7 +549,7 @@
 				Please, fill out the form
 			</p>
 			<div class='two-ticks'></div>
-			<form class="form" novalidate>
+			<form class="form" action="https://formspree.io/f/xaygwovq" method="POST">
 				<div class="form-group">
 					<label class='text--small label-email' for="email">
 						E-mail
@@ -564,7 +564,7 @@
 					<div class="textarea__container">
 						<label class='text--small' for="comments">
 							Your comments
-							<textarea class="textarea" placeholder='Write your comments (optional)' id="comments" name="comments"
+							<textarea class="textarea" placeholder='Write your comments (optional)' id="comments" name="message"
 								maxlength="360"></textarea>
 						</label>
 						<div class="character-count text--small">0/360</div>
@@ -575,6 +575,7 @@
 						Agree to process personal data
 					</label>
 				</div>
+				<p id="my-form-status"></p>
 				<div class="form-actions">
 					<button type="button" class="btn btn-cancel">Cancel</button>
 					<button type="submit" class="btn btn-submit">Submit</button>
