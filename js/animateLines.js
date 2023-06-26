@@ -48,21 +48,26 @@ const animateExploreElements = currentWidth => {
 	})
 }
 
+const getInitialWidth = line => {
+	const computedStyle = getComputedStyle(line)
+	return computedStyle.width
+}
+
 const animateLine = line => {
 	const width = getInitialWidth(line)
 	const targetWidth = parseInt(width)
-	const animationDuration = 4000
+	const animationDuration = 2500
 	const animationStep = (targetWidth / animationDuration) * 10
 	let currentWidth = 0
 
 	const animateWidth = () => {
 		if (currentWidth >= targetWidth) {
-			line.style.width = width
+			line.style.maxWidth = width
 			return
 		}
 
 		currentWidth += animationStep
-		line.style.width = currentWidth + 'px'
+		line.style.maxWidth = currentWidth + 'px'
 
 		animateElements(line, currentWidth)
 
@@ -70,11 +75,6 @@ const animateLine = line => {
 	}
 
 	animateWidth()
-}
-
-const getInitialWidth = line => {
-	const computedStyle = getComputedStyle(line)
-	return computedStyle.width
 }
 
 function elementInViewport(el) {

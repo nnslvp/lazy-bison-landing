@@ -2,6 +2,7 @@
 @import 'project';
 
 .popup {
+	opacity: 0;
 	visibility: hidden;
 	position: relative;
 	position: fixed;
@@ -11,10 +12,11 @@
 	transform: translate(-50%, -50%);
 	background-color: $color-white;
 	z-index: 9999;
-	transition: opacity 1s ease;
+	transition: opacity 300ms ease-in-out;
 }
 
 .overlay {
+	opacity: 0;
 	visibility: hidden;
 	position: fixed;
 	top: 0;
@@ -23,15 +25,25 @@
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 9998;
-	transition: opacity 1s ease;
+	transition: opacity 300ms ease-in-out;
 }
 
 .popup.open {
+	opacity: 1;
 	visibility: visible;
 }
 
 .popup.open ~ .overlay {
+	opacity: 1;
 	visibility: visible;
+}
+
+.popup.close {
+	opacity: 0;
+}
+
+.popup.close ~ .overlay {
+	opacity: 0;
 }
 
 .close-popup-button {

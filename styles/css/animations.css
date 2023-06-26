@@ -6,14 +6,11 @@
     transform: rotate(360deg);
   }
 }
-@keyframes swapAnimation {
-  0% {
-    opacity: 1;
-  }
-  50% {
+@keyframes fadeIn {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }

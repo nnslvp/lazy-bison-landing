@@ -201,12 +201,13 @@
 	}
 
 	.lazy-bison-stats__inner {
-		max-width: 38.9375rem;
-		display: flex;
-		justify-content: space-between;
-		gap: 4.3125rem;
+		justify-content: center;
 		padding-right: 0;
 		margin: 0 auto;
+	}
+
+	.lazy-bison__stats {
+		justify-content: center;
 	}
 
 	.lazy-bison__stats-text {

@@ -3,31 +3,40 @@ const description = document.querySelector('.services-info__description-text')
 const title = document.querySelector('.services-info__title')
 const widthScreen = document.documentElement.clientWidth
 
-buttons.forEach(button => {
-	button.addEventListener('click', () => {
-		const buttonText = button.innerText
+const handleAnimationEnd = () => {
+	description.classList.remove('fade-in')
+	title.classList.remove('fade-in')
 
-		if (widthScreen > 375) {
-			description.textContent = getDescriptionByButton(buttonText)
-			title.textContent = getTitleByButton(buttonText)
-		} else {
-			buttons.forEach(btn => {
-				if (btn.classList.contains('active') && btn.nextElementSibling) {
-					btn.nextElementSibling.remove()
-				}
-			})
+	description.removeEventListener('animationend', handleAnimationEnd)
+	title.removeEventListener('animationend', handleAnimationEnd)
+}
 
-			const descriptionText = document.createElement('p')
-			descriptionText.classList.add('services-info__description-text')
-			descriptionText.textContent = getDescriptionByButton(buttonText)
-			button.insertAdjacentElement('afterend', descriptionText)
-		}
+buttons.forEach(currentButton => {
+	currentButton.addEventListener('click', e => {
+		const buttonText = currentButton.innerText
 
 		buttons.forEach(btn => {
 			btn.classList.remove('active')
 		})
 
-		button.classList.add('active')
+		if (widthScreen > 375) {
+			description.textContent = getDescriptionByButton(buttonText)
+			title.textContent = getTitleByButton(buttonText)
+			description.classList.add('fade-in')
+			title.classList.add('fade-in')
+
+			description.addEventListener('animationend', handleAnimationEnd)
+			title.addEventListener('animationend', handleAnimationEnd)
+		} else {
+			buttons.forEach(btn => {
+				if (btn != currentButton) {
+					btn.nextElementSibling.classList.remove('slide-in-height')
+				}
+			})
+			currentButton.nextElementSibling.classList.toggle('slide-in-height')
+		}
+
+		currentButton.classList.toggle('active')
 	})
 })
 
