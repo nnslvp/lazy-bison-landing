@@ -268,7 +268,7 @@ img {
 .planet-blue {
   width: 7.5rem;
   height: 7.5rem;
-  position: absolute;
+  position: relative;
   z-index: 1;
   background: radial-gradient(72.45% 72.45% at 27.78% 24.07%, rgba(158, 236, 229, 0.48) 0%, #9eece5 60.46%, #72dfdd 79.62%, #51bbf6 100%);
   border-radius: 50%;
@@ -466,7 +466,8 @@ img {
 }
 
 .lazy-bison__title span:nth-child(2) {
-  padding-left: 6.375rem;
+  display: inline-block;
+  padding-left: 9%;
 }
 
 .lazy-bison-tittle__text {
@@ -505,8 +506,8 @@ img {
 }
 
 .lazy-bison-description__info {
-  position: relative;
-  background-image: url("/assets/images/lazy-bizon-bg-1440.png");
+  display: flex;
+  background-image: url("/assets/images/lazy-bison-bg-1440.png");
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: auto;
@@ -517,11 +518,16 @@ img {
 .lazy-bison-description__info .gray-line {
   max-width: 32rem;
 }
+.lazy-bison-description__info .planet-text__inner {
+  padding-top: 23px;
+  flex-basis: 426px;
+  display: flex;
+  justify-content: end;
+}
+.lazy-bison-description__info .planet-text {
+  position: relative;
+}
 .lazy-bison-description__info .planet-blue {
-  position: absolute;
-  z-index: 1;
-  top: 7.625rem;
-  right: 20.6875rem;
   width: 9.0625rem;
   height: 9.0625rem;
   background: radial-gradient(circle at left, #eaeaea, #e6fffc, #c2f7f7, #b0eef2, #8ee9d8, #6ddddd, #3073c1, #638b9f);
@@ -530,8 +536,8 @@ img {
 }
 .lazy-bison-description__info .circle-ruby-on-rails {
   position: absolute;
-  top: 6.25rem;
-  right: 25.3125rem;
+  top: -18px;
+  right: 71px;
   width: 10.6469rem;
   height: 10.6425rem;
   animation: circle-rotation 4s infinite linear;
@@ -544,16 +550,10 @@ img {
 
 .lazy-bison__stats {
   display: flex;
-}
-
-.lazy-bison-stats__inner {
-  display: flex;
   justify-content: end;
 }
 
 .lazy-bison__stats {
-  flex-basis: 45.5rem;
-  text-align: start;
   gap: 6.3438rem;
 }
 
@@ -593,9 +593,6 @@ img {
   .lazy-bison__text--highlight::after {
     height: 3.25rem;
   }
-  .lazy-bison__title span:nth-child(2) {
-    padding-left: 4.375rem;
-  }
   .img-planets {
     display: none;
   }
@@ -603,39 +600,40 @@ img {
     display: none;
   }
   .lazy-bison-description__info {
+    flex-direction: column-reverse;
     flex-basis: 0;
     padding-top: 0;
     padding-bottom: 1.9375rem;
   }
+  .lazy-bison-description__info .lazy-bison-description__text {
+    max-width: 497px;
+  }
+  .lazy-bison-description__info .planet-text__inner {
+    flex-basis: 0;
+    justify-content: flex-start;
+    padding: 39px 0 0 94px;
+    margin-bottom: 50px;
+  }
   .lazy-bison-description__info .planet-blue {
     width: 7.625rem;
     height: 7.625rem;
-    top: 2.375rem;
-    right: auto;
-    left: 6rem;
   }
   .lazy-bison-description__info .circle-ruby-on-rails {
+    right: 60px;
     width: 8.9844rem;
     height: 8.99rem;
-    top: 1.25rem;
-    right: auto;
-    left: 0.75rem;
   }
   .lazy-bison-description__text {
-    padding-top: 13.0625rem;
     margin: 0 0 3.125rem 0;
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.75rem;
     letter-spacing: 0em;
   }
-  .lazy-bison-stats__inner {
-    justify-content: center;
-    padding-right: 0;
-    margin: 0 auto;
-  }
   .lazy-bison__stats {
-    justify-content: center;
+    justify-content: space-around;
+    gap: 0;
+    flex-wrap: wrap;
   }
   .lazy-bison__stats-text {
     font-size: 2.75rem;
@@ -702,13 +700,14 @@ img {
     display: none;
   }
   .lazy-bison-description__info {
-    flex-basis: auto;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 3.8125rem;
+    padding-bottom: 50px;
+  }
+  .lazy-bison-description__info .planet-text__inner {
+    padding: 0;
+    margin-bottom: 56px;
   }
   .lazy-bison-description__text {
-    padding-top: 7.75rem;
+    padding-top: 0;
     margin: 0 0 3.125rem 0;
     font-size: 1.125rem;
     line-height: 1.5625rem;
@@ -719,24 +718,16 @@ img {
     margin: 0 auto;
   }
   .lazy-bison__stats {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 3rem 1.5rem;
-    flex-basis: auto;
-  }
-  .lazy-bison-stats__inner {
     background-image: url("/assets/images/stats-bg-375.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
-    max-width: 100%;
     display: flex;
-    padding: 1.625rem 0 4.5625rem 0;
-    justify-content: space-between;
-    gap: 4.3125rem;
-    margin: 0 auto;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem 1.5rem;
+    flex-basis: auto;
   }
   .lazy-bison__stats-text {
     font-size: 2.625rem;
