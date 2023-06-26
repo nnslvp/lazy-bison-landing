@@ -132,7 +132,7 @@
 
 	.lazy-bison {
 		@include background(
-			'/assets/images/lazy-bizon-bg-768.png',
+			'/assets/images/lazy-bison-bg-768.png',
 			0 2rem,
 			no-repeat,
 			contain
@@ -157,9 +157,6 @@
 		&::after {
 			height: 3.25rem;
 		}
-	}
-
-	.lazy-bison__title span:nth-child(2) {
 	}
 
 	.img-planets {
@@ -228,7 +225,7 @@
 @media (max-width: 23.4375rem) {
 	.lazy-bison {
 		@include background(
-			'/assets/images/lazy-bizon-bg-375.png',
+			'/assets/images/lazy-bison-bg-375.png',
 			0 -2.3125rem,
 			no-repeat,
 			contain
