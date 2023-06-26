@@ -1,31 +1,29 @@
 const sliders = document.querySelectorAll('.swiper')
+let mySwipers = []
 
 function mobileSlider(slider) {
-	let mySwiper
-	if (window.innerWidth <= 600 && slider.dataset.mobile == 'false') {
-		mySwiper = new Swiper(slider, {
+	if (window.innerWidth <= 375 && slider.dataset.mobile === 'false') {
+		const newSwiper = new Swiper(slider, {
 			slidesPerView: 1,
 			spaceBetween: 0,
 			loop: true,
+			init: true,
 			pagination: {
 				el: slider.querySelector('.swiper-pagination'),
 				clickable: true,
 			},
 		})
+		mySwipers.push(newSwiper)
 		slider.dataset.mobile = 'true'
-	}
-
-	if (window.innerWidth > 375) {
+	} else {
 		slider.dataset.mobile = 'false'
-		if (slider.classList.contains('swiper-container-initialized')) {
-			mySwiper.destroy()
-		}
+		mySwipers.forEach(swiper => swiper.destroy())
 	}
 }
 
 sliders.forEach(slider => {
-	mobileSlider(slider)
 	window.addEventListener('resize', () => {
 		mobileSlider(slider)
 	})
+	mobileSlider(slider)
 })
