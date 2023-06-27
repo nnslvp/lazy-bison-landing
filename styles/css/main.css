@@ -652,7 +652,7 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     background-color: transparent;
-    padding-bottom: 4.625rem;
+    margin-bottom: 74px;
     padding-top: 3.375rem;
   }
   .lazy-bison__inner {
@@ -700,7 +700,7 @@ img {
     display: none;
   }
   .lazy-bison-description__info {
-    padding-bottom: 50px;
+    padding-bottom: 86px;
   }
   .lazy-bison-description__info .planet-text__inner {
     padding: 0;
@@ -895,7 +895,7 @@ img {
   }
   .services .services__inner {
     background: none;
-    padding-bottom: 4.125rem;
+    padding-bottom: 3.125rem;
   }
   .services-info {
     background: none;
@@ -1306,7 +1306,7 @@ img {
 }
 
 .testimonials__subtitle {
-  max-width: 51.125rem;
+  max-width: 512px;
 }
 
 .vertical-gray-line-1,
@@ -1474,7 +1474,7 @@ img {
   background-image: url("/assets/images/consultation-bg.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-color: transparent;
   max-width: 65.75rem;
   max-height: 16.3125rem;
@@ -1485,6 +1485,11 @@ img {
   padding: 3.25rem 0 2.4375rem 0;
   margin: 0 auto;
   color: #ffffff;
+}
+.consultation__inner .planet-text {
+  position: absolute;
+  top: -5px;
+  left: 0;
 }
 .consultation__inner .planet-blue {
   z-index: -1;
@@ -1515,7 +1520,25 @@ img {
   margin-right: 13.25rem;
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 1250px) {
+  .testimonials__subtitle {
+    max-width: 500px;
+  }
+  .card {
+    width: 20.25rem;
+    height: 23.8125rem;
+  }
+}
+@media (max-width: 1010px) {
+  .card {
+    width: 15.25rem;
+  }
+  .avatar {
+    width: 6.0625rem;
+    height: 6.0625rem;
+  }
+}
+@media (max-width: 768px) {
   .consultation__inner .planet-blue {
     width: 4.7363rem;
     height: 4.7363rem;
@@ -1595,22 +1618,19 @@ img {
     height: 26.6875rem;
   }
   .workers__item:nth-child(1) {
-    top: 0rem;
-    left: 5.75rem;
+    bottom: -46px;
   }
   .workers__item:nth-child(2) {
     top: auto;
-    left: auto;
-    right: 5.6875rem;
-    bottom: 2.125rem;
+    left: 92px;
   }
   .workers__item:nth-child(3) {
     top: -5.0625rem;
     right: 0;
   }
   .workers__item:nth-child(4) {
-    bottom: -2.875rem;
-    left: 0;
+    bottom: 2.125rem;
+    right: 91px;
   }
   .card {
     width: 16rem;
@@ -1651,7 +1671,7 @@ img {
     background-image: url("/assets/images/consultation-bg-768.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-color: transparent;
     padding: 3.0625rem 0 1.8125rem 0;
     gap: 1.5625rem;
@@ -1674,7 +1694,27 @@ img {
     margin-right: 4.4375rem;
   }
 }
-@media (max-width: 23.4375rem) {
+@media (max-width: 765px) {
+  .card {
+    width: 13rem;
+    height: 14.5rem;
+  }
+  .avatar {
+    width: 4.18rem;
+    height: 4.18rem;
+  }
+}
+@media (max-width: 630px) {
+  .workers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .workers__item {
+    position: static;
+  }
+}
+@media (max-width: 376px) {
   .workers-background {
     background-image: none;
     background-color: #e5ffaf;
@@ -1700,6 +1740,9 @@ img {
   }
   .testimonials__subtitle {
     margin-bottom: 2.5rem;
+  }
+  .workers {
+    display: flex;
   }
   .avatar {
     width: 5.75rem;
@@ -1734,6 +1777,9 @@ img {
     gap: 1.5rem;
     width: auto;
     max-height: 20.9375rem;
+  }
+  .consultation__inner .planet-text {
+    left: auto;
   }
   .consultation__inner .planet-blue {
     width: 4.25rem;
