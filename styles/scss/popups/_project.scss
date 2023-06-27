@@ -1,4 +1,5 @@
 .popup.popup-project {
+	display: none;
 	.project__inner {
 		display: flex;
 		height: 604px;
@@ -60,8 +61,8 @@
 	}
 
 	@media (max-width: 48rem) {
-   .project__inner{}
-	 
+		.project__inner {
+		}
 
 		.project__info {
 			padding: 2.3125rem 0 0.8125rem 0;

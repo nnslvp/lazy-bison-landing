@@ -1994,6 +1994,10 @@ img {
 .popup.popup__get-consultation.submit-success .two-ticks {
   display: block;
 }
+.popup.popup__get-consultation.submit-success .form {
+  overflow: hidden;
+  height: 0;
+}
 .popup.popup__get-consultation .two-ticks {
   display: none;
   width: 54px;
@@ -2021,18 +2025,26 @@ img {
   position: relative;
 }
 .popup.popup__get-consultation .error-text {
-  visibility: hidden;
+  opacity: 0;
   display: block;
   text-align: end;
   color: #ff6969;
+  transition: opacity 0.3s linear;
+}
+.popup.popup__get-consultation .error-text.error {
+  opacity: 1;
 }
 .popup.popup__get-consultation .error-icon {
-  visibility: hidden;
+  opacity: 0;
   width: 1rem;
   height: 1rem;
   position: absolute;
   bottom: 1rem;
   right: 1rem;
+  transition: opacity 0.3s linear;
+}
+.popup.popup__get-consultation .error-icon.error {
+  opacity: 1;
 }
 .popup.popup__get-consultation input[type=email] {
   padding: 0.6875rem 0 0.6875rem 1rem;
@@ -2059,7 +2071,7 @@ img {
   display: flex;
   align-items: center;
 }
-.popup.popup__get-consultation .checkbox-label input[type=checkbox] {
+.popup.popup__get-consultation input[type=checkbox] {
   display: none;
 }
 .popup.popup__get-consultation .checkbox-label .checkbox-custom {
@@ -2070,7 +2082,10 @@ img {
   border-radius: 0.125rem;
   margin-right: 0.5rem;
 }
-.popup.popup__get-consultation .checkbox-label .checkbox-custom:before {
+.popup.popup__get-consultation .checkbox-label .checkbox-custom.error {
+  border: 0.0938rem solid #e41010;
+}
+.popup.popup__get-consultation .checkbox-label .checkbox-custom::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -2087,7 +2102,7 @@ img {
   background-color: transparent;
   transition: opacity 0.2s ease;
 }
-.popup.popup__get-consultation .checkbox-label input[type=checkbox]:checked + .checkbox-custom:before {
+.popup.popup__get-consultation input[type=checkbox]:checked + .checkbox-custom:before {
   opacity: 1;
 }
 .popup.popup__get-consultation input[type=checkbox] {
@@ -2267,6 +2282,9 @@ img {
   }
 }
 
+.popup.popup-project {
+  display: none;
+}
 .popup.popup-project .project__inner {
   display: flex;
   height: 604px;
