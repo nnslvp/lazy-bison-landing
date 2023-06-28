@@ -59,7 +59,6 @@ function handleFormSubmit(event) {
 	event.preventDefault()
 
 	const isValid = validateForm()
-	submitButton.disabled = isValid
 
 	if (isValid) {
 		form.reset()

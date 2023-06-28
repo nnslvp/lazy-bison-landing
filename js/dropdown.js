@@ -74,14 +74,14 @@ function buttonClickHandler(event) {
 		title.addEventListener('animationend', handleAnimationEnd)
 	} else {
 		buttons.forEach(btn => {
-			if (btn != buttonClick) {
-				descriptionByButton.classList.remove('slide-in-height')
+			if (btn !== buttonClick) {
+				btn.nextElementSibling.classList.remove('slide-in-height')
 			}
 		})
-		descriptionByButton.classList.toggle('slide-in-height')
 	}
 
 	buttonClick.classList.toggle('active')
+	descriptionByButton.classList.toggle('slide-in-height')
 }
 
 buttons.forEach(currentButton => {

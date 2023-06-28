@@ -1,5 +1,5 @@
 .cases__inner {
-	@include background('/assets/images/casesbg.png', center, no-repeat, cover);
+	@include background('/assets/images/cases-bg.png', center, no-repeat, cover);
 	display: flex;
 	flex-direction: column;
 }
@@ -63,7 +63,12 @@
 
 @media (max-width: 48rem) {
 	.cases__inner {
-		@include background('/assets/images/casesbg.png', center, no-repeat, cover);
+		@include background(
+			'/assets/images/cases-bg-768.png',
+			center,
+			no-repeat,
+			cover
+		);
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 4rem;
@@ -107,7 +112,12 @@
 
 @media (max-width: 23.4375rem) {
 	.cases__inner {
-		@include background('/assets/images/casesbg.png', center, no-repeat, cover);
+		@include background(
+			'/assets/images/cases-bg-375.png',
+			center,
+			no-repeat,
+			cover
+		);
 		display: flex;
 		flex-direction: column;
 		.gray-line {

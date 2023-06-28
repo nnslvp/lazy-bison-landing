@@ -83,8 +83,8 @@ function getTitleByIndex(index) {
 function getImagePathByIndex(index) {
 	const imagePaths = [
 		'./assets/images/popup-project.jpeg',
-		'./assets/images/projet-img-two.png',
-		'./assets/images/projet-img-three.png',
+		'./assets/images/project-img-two.png',
+		'./assets/images/project-img-three.png',
 	]
 
 	return imagePaths[index]

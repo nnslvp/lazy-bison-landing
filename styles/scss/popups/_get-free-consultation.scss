@@ -43,13 +43,13 @@
 		}
 
 		.get-consultation__subtitle {
-			text-align: center;
-			margin-bottom: 50px;
+			max-width: 330px;
+			margin-bottom: 70px;
 		}
 
 		.two-ticks {
-			width: 54px;
-			height: 54px;
+			width: 52px;
+			height: 30px;
 			@include background(
 				'/assets/icons/two-ticks.svg',
 				center,
@@ -223,9 +223,16 @@
 			height: 363px;
 		}
 
-		.two-ticks {
-			width: 29px;
-			height: 29px;
+		.success-submit-block {
+			.get-consultation__subtitle {
+				max-width: 176px;
+				margin-bottom: 30px;
+			}
+
+			.two-ticks {
+				width: 28px;
+				height: 16px;
+			}
 		}
 
 		.get-consultation__title {
@@ -288,6 +295,10 @@
 			gap: 1.0669rem;
 		}
 
+		.error-icon {
+			bottom: 7px;
+		}
+
 		.close-popup-button {
 			width: 1rem;
 			height: 0.9375rem;
@@ -311,9 +322,20 @@
 			height: 426px;
 		}
 
-		.two-ticks {
-			width: 34px;
-			height: 34px;
+		.success-submit-block {
+			.get-consultation__title {
+				margin-bottom: 7px;
+			}
+
+			.get-consultation__subtitle {
+				max-width: 206px;
+				margin-bottom: 43px;
+			}
+
+			.two-ticks {
+				width: 33px;
+				height: 19px;
+			}
 		}
 
 		.get-consultation__title {
@@ -337,11 +359,6 @@
 		.form-group .checkbox-label {
 			font-size: 0.875rem;
 			line-height: 1.25rem;
-		}
-
-		.error-icon {
-			bottom: 0.625rem;
-			right: 1rem;
 		}
 
 		.form-group {
