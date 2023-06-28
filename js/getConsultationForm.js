@@ -3,7 +3,8 @@ const textarea = form.querySelector('.textarea')
 const errorIcon = form.querySelector('.error-icon')
 const errorText = form.querySelector('.error-text')
 const inputEmail = form.querySelector('.input-email')
-const checkbox = form.querySelector('.checkbox-custom')
+const checkboxCustom = form.querySelector('.checkbox-custom')
+const checkbox = form.querySelector('.checkbox')
 const submitButton = document.querySelector('.btn-submit')
 const popup = document.querySelector('.popup')
 
@@ -19,11 +20,6 @@ function validateEmail(email) {
 
 function showSuccessSubmit() {
 	popup.classList.add('submit-success')
-	const popupTitle = document.querySelector('.get-consultation__title')
-	const popupSubtitle = document.querySelector('.get-consultation__subtitle')
-	popupTitle.textContent = 'Congratulations!'
-	popupSubtitle.textContent =
-		'Your request is sent successfully. Our manager will contact you shortly.'
 }
 
 function serializeForm(formNode) {
@@ -35,6 +31,16 @@ function serializeForm(formNode) {
 	return data
 }
 
+function removeInputsEventListeners() {
+	inputEmail.removeEventListener('input', validateForm)
+	checkbox.removeEventListener('input', validateForm)
+}
+
+function addInputsEventListeners() {
+	inputEmail.addEventListener('input', validateForm)
+	checkbox.addEventListener('input', validateForm)
+}
+
 function validateForm() {
 	const data = serializeForm(form)
 	const { email, agree } = data
@@ -44,7 +50,7 @@ function validateForm() {
 
 	errorIcon.classList.toggle('error', !isEmailValid)
 	errorText.classList.toggle('error', !isEmailValid)
-	checkbox.classList.toggle('error', !isCheckboxValid)
+	checkboxCustom.classList.toggle('error', !isCheckboxValid)
 
 	return isEmailValid && !!isCheckboxValid
 }
@@ -53,14 +59,16 @@ function handleFormSubmit(event) {
 	event.preventDefault()
 
 	const isValid = validateForm()
+	submitButton.disabled = isValid
 
 	if (isValid) {
 		form.reset()
 		showSuccessSubmit()
+		removeInputsEventListeners()
+		return
 	}
 
-	inputEmail.addEventListener('input', validateForm)
-	form.querySelector('.checkbox').addEventListener('input', validateForm)
+	addInputsEventListeners()
 }
 
 form.addEventListener('submit', handleFormSubmit)

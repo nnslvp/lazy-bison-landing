@@ -10,34 +10,53 @@
 
 	&.submit-success {
 		@include center;
-		height: 683px;
+		max-height: 683px;
 	}
 
 	&.submit-success .popup-content {
-		width: 339px;
+		visibility: hidden;
+	}
+
+	&.submit-success .success-submit-block {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.success-submit-block {
+		max-width: 339px;
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		display: flex;
 		flex-direction: column;
-		@include center;
-	}
+		justify-content: center;
+		align-items: center;
+		transition: opacity 0.3s linear;
 
-	&.submit-success .two-ticks {
-		display: block;
-	}
+		.get-consultation__title {
+			margin-bottom: 10px;
+		}
 
-	&.submit-success .form {
-		overflow: hidden;
-		height: 0;
-	}
+		.get-consultation__subtitle {
+			text-align: center;
+			margin-bottom: 50px;
+		}
 
-	.two-ticks {
-		display: none;
-		width: 54px;
-		height: 54px;
-		@include background(
-			'/assets/icons/two-ticks.svg',
-			center,
-			no-repeat,
-			contain
-		);
+		.two-ticks {
+			width: 54px;
+			height: 54px;
+			@include background(
+				'/assets/icons/two-ticks.svg',
+				center,
+				no-repeat,
+				contain
+			);
+		}
 	}
 
 	.get-consultation__title {
