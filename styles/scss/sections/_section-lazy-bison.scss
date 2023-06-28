@@ -63,8 +63,8 @@
 	}
 
 	.planet-text__inner {
-		padding-top: 23px;
-		flex-basis: 426px;
+		padding-top: 1.4375rem;
+		flex-basis: 26.625rem;
 		display: flex;
 		justify-content: end;
 	}
@@ -93,8 +93,8 @@
 
 	.circle-ruby-on-rails {
 		position: absolute;
-		top: -18px;
-		right: 71px;
+		top: -1.125rem;
+		right: 4.4375rem;
 		width: 10.6469rem;
 		height: 10.6425rem;
 		animation: circle-rotation 4s infinite linear;
@@ -174,14 +174,14 @@
 		padding-bottom: 1.9375rem;
 
 		.lazy-bison-description__text {
-			max-width: 497px;
+			max-width: 31.0625rem;
 		}
 
 		.planet-text__inner {
 			flex-basis: 0;
 			justify-content: flex-start;
-			padding: 39px 0 0 94px;
-			margin-bottom: 50px;
+			padding: 2.4375rem 0 0 5.875rem;
+			margin-bottom: 3.125rem;
 		}
 
 		.planet-blue {
@@ -190,7 +190,7 @@
 		}
 
 		.circle-ruby-on-rails {
-			right: 60px;
+			right: 3.75rem;
 			width: 8.9844rem;
 			height: 8.99rem;
 		}
@@ -230,7 +230,7 @@
 			no-repeat,
 			contain
 		);
-		margin-bottom: 74px;
+		margin-bottom: 4.625rem;
 		padding-top: 3.375rem;
 	}
 
@@ -290,10 +290,10 @@
 	}
 
 	.lazy-bison-description__info {
-		padding-bottom: 86px;
+		padding-bottom: 5.375rem;
 		.planet-text__inner {
 			padding: 0;
-			margin-bottom: 56px;
+			margin-bottom: 3.5rem;
 		}
 	}
 

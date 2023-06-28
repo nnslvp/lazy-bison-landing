@@ -11,7 +11,7 @@
 }
 
 .testimonials__subtitle {
-	max-width: 512px;
+	max-width: 32rem;
 }
 
 .vertical-gray-line-1,
@@ -175,7 +175,7 @@
 
 	.planet-text {
 		position: absolute;
-		top: -5px;
+		top: -0.3125rem;
 		left: 0;
 	}
 
@@ -209,9 +209,9 @@
 	margin-right: 13.25rem;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 78.125rem) {
 	.testimonials__subtitle {
-		max-width: 500px;
+		max-width: 31.25rem;
 	}
 
 	.card {
@@ -220,7 +220,7 @@
 	}
 }
 
-@media (max-width: 1010px) {
+@media (max-width: 63.125rem) {
 	.card {
 		width: 15.25rem;
 	}
@@ -231,7 +231,7 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
 	.consultation__inner {
 		.planet-blue {
 			width: 4.7363rem;
@@ -303,12 +303,12 @@
 	}
 
 	.workers__item:nth-child(1) {
-		bottom: -46px;
+		bottom: -2.875rem;
 	}
 
 	.workers__item:nth-child(2) {
 		top: auto;
-		left: 92px;
+		left: 5.75rem;
 	}
 
 	.workers__item:nth-child(3) {
@@ -318,7 +318,7 @@
 
 	.workers__item:nth-child(4) {
 		bottom: 2.125rem;
-		right: 91px;
+		right: 5.6875rem;
 	}
 
 	.card {
@@ -392,7 +392,7 @@
 	}
 }
 
-@media (max-width: 765px) {
+@media (max-width: 47.8125rem) {
 	.card {
 		width: 13rem;
 		height: 14.5rem;
@@ -404,7 +404,7 @@
 	}
 }
 
-@media (max-width: 630px) {
+@media (max-width: 39.375rem) {
 	.workers {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -415,7 +415,7 @@
 	}
 }
 
-@media (max-width: 376px) {
+@media (max-width: 23.5rem) {
 	.workers-background {
 		background-image: none;
 		background-color: $color-light-green;

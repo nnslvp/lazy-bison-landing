@@ -517,8 +517,8 @@ img {
   max-width: 32rem;
 }
 .lazy-bison-description__info .planet-text__inner {
-  padding-top: 23px;
-  flex-basis: 426px;
+  padding-top: 1.4375rem;
+  flex-basis: 26.625rem;
   display: flex;
   justify-content: end;
 }
@@ -534,8 +534,8 @@ img {
 }
 .lazy-bison-description__info .circle-ruby-on-rails {
   position: absolute;
-  top: -18px;
-  right: 71px;
+  top: -1.125rem;
+  right: 4.4375rem;
   width: 10.6469rem;
   height: 10.6425rem;
   animation: circle-rotation 4s infinite linear;
@@ -604,20 +604,20 @@ img {
     padding-bottom: 1.9375rem;
   }
   .lazy-bison-description__info .lazy-bison-description__text {
-    max-width: 497px;
+    max-width: 31.0625rem;
   }
   .lazy-bison-description__info .planet-text__inner {
     flex-basis: 0;
     justify-content: flex-start;
-    padding: 39px 0 0 94px;
-    margin-bottom: 50px;
+    padding: 2.4375rem 0 0 5.875rem;
+    margin-bottom: 3.125rem;
   }
   .lazy-bison-description__info .planet-blue {
     width: 7.625rem;
     height: 7.625rem;
   }
   .lazy-bison-description__info .circle-ruby-on-rails {
-    right: 60px;
+    right: 3.75rem;
     width: 8.9844rem;
     height: 8.99rem;
   }
@@ -650,7 +650,7 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     background-color: transparent;
-    margin-bottom: 74px;
+    margin-bottom: 4.625rem;
     padding-top: 3.375rem;
   }
   .lazy-bison__inner {
@@ -698,11 +698,11 @@ img {
     display: none;
   }
   .lazy-bison-description__info {
-    padding-bottom: 86px;
+    padding-bottom: 5.375rem;
   }
   .lazy-bison-description__info .planet-text__inner {
     padding: 0;
-    margin-bottom: 56px;
+    margin-bottom: 3.5rem;
   }
   .lazy-bison-description__text {
     padding-top: 0;
@@ -823,7 +823,7 @@ img {
   font-weight: 600;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 53.125rem) {
   .services {
     background: none;
   }
@@ -928,11 +928,11 @@ img {
     line-height: 1.375rem;
     letter-spacing: 0.03em;
     margin-bottom: 0;
-    margin: 0px;
+    margin: 0rem;
   }
   .services-info__item .services-info__description-text.slide-in-height {
-    margin: 12px;
-    max-height: 500px;
+    margin: 0.75rem;
+    max-height: 31.25rem;
     transition: max-height 0.3s linear;
   }
   .services-info__types {
@@ -1187,7 +1187,7 @@ img {
 .projects-wrapper {
   display: grid;
   justify-content: center;
-  grid-template-columns: minmax(300px, 38.75rem) minmax(100px, 25.25rem);
+  grid-template-columns: minmax(18.75rem, 38.75rem) minmax(6.25rem, 25.25rem);
   grid-column-gap: 1.75rem;
   grid-row-gap: 1.375rem;
 }
@@ -1248,7 +1248,7 @@ img {
   .projects-wrapper {
     display: grid;
     justify-content: start;
-    grid-template-columns: minmax(200px, 24.5rem) minmax(100px, 15.9375rem);
+    grid-template-columns: minmax(12.5rem, 24.5rem) minmax(6.25rem, 15.9375rem);
     grid-column-gap: 1.0625rem;
     grid-row-gap: 0.875rem;
   }
@@ -1304,7 +1304,7 @@ img {
 }
 
 .testimonials__subtitle {
-  max-width: 512px;
+  max-width: 32rem;
 }
 
 .vertical-gray-line-1,
@@ -1486,7 +1486,7 @@ img {
 }
 .consultation__inner .planet-text {
   position: absolute;
-  top: -5px;
+  top: -0.3125rem;
   left: 0;
 }
 .consultation__inner .planet-blue {
@@ -1518,16 +1518,16 @@ img {
   margin-right: 13.25rem;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 78.125rem) {
   .testimonials__subtitle {
-    max-width: 500px;
+    max-width: 31.25rem;
   }
   .card {
     width: 20.25rem;
     height: 23.8125rem;
   }
 }
-@media (max-width: 1010px) {
+@media (max-width: 63.125rem) {
   .card {
     width: 15.25rem;
   }
@@ -1536,7 +1536,7 @@ img {
     height: 6.0625rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .consultation__inner .planet-blue {
     width: 4.7363rem;
     height: 4.7363rem;
@@ -1616,11 +1616,11 @@ img {
     height: 26.6875rem;
   }
   .workers__item:nth-child(1) {
-    bottom: -46px;
+    bottom: -2.875rem;
   }
   .workers__item:nth-child(2) {
     top: auto;
-    left: 92px;
+    left: 5.75rem;
   }
   .workers__item:nth-child(3) {
     top: -5.0625rem;
@@ -1628,7 +1628,7 @@ img {
   }
   .workers__item:nth-child(4) {
     bottom: 2.125rem;
-    right: 91px;
+    right: 5.6875rem;
   }
   .card {
     width: 16rem;
@@ -1692,7 +1692,7 @@ img {
     margin-right: 4.4375rem;
   }
 }
-@media (max-width: 765px) {
+@media (max-width: 47.8125rem) {
   .card {
     width: 13rem;
     height: 14.5rem;
@@ -1702,7 +1702,7 @@ img {
     height: 4.18rem;
   }
 }
-@media (max-width: 630px) {
+@media (max-width: 39.375rem) {
   .workers {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1712,7 +1712,7 @@ img {
     position: static;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 23.5rem) {
   .workers-background {
     background-image: none;
     background-color: #e5ffaf;
@@ -1969,7 +1969,7 @@ img {
 }
 .popup.popup__get-consultation {
   border-radius: 0;
-  background-image: url("/assets/images/consulatation-popup-bg.png");
+  background-image: url("/assets/images/consultation-popup-bg.png");
   background-position: initial;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1980,7 +1980,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 683px;
+  max-height: 42.6875rem;
 }
 .popup.popup__get-consultation.submit-success .popup-content {
   visibility: hidden;
@@ -1990,7 +1990,7 @@ img {
   visibility: visible;
 }
 .popup.popup__get-consultation .success-submit-block {
-  max-width: 339px;
+  max-width: 21.1875rem;
   opacity: 0;
   visibility: hidden;
   position: absolute;
@@ -2006,15 +2006,15 @@ img {
   transition: opacity 0.3s linear;
 }
 .popup.popup__get-consultation .success-submit-block .get-consultation__title {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 .popup.popup__get-consultation .success-submit-block .get-consultation__subtitle {
-  max-width: 330px;
-  margin-bottom: 70px;
+  max-width: 20.625rem;
+  margin-bottom: 4.375rem;
 }
 .popup.popup__get-consultation .success-submit-block .two-ticks {
-  width: 52px;
-  height: 30px;
+  width: 3.25rem;
+  height: 1.875rem;
   background-image: url("/assets/icons/two-ticks.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -2153,7 +2153,7 @@ img {
     padding: 1.3956rem 2.375rem 1.3625rem 2.375rem;
   }
   .popup.popup__get-consultation.submit-success .popup-content {
-    width: 194px;
+    width: 12.125rem;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -2163,16 +2163,16 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 320px;
-    height: 363px;
+    width: 20rem;
+    height: 22.6875rem;
   }
   .popup.popup__get-consultation .success-submit-block .get-consultation__subtitle {
-    max-width: 176px;
-    margin-bottom: 30px;
+    max-width: 11rem;
+    margin-bottom: 1.875rem;
   }
   .popup.popup__get-consultation .success-submit-block .two-ticks {
-    width: 28px;
-    height: 16px;
+    width: 1.75rem;
+    height: 1rem;
   }
   .popup.popup__get-consultation .get-consultation__title {
     text-align: center;
@@ -2225,7 +2225,7 @@ img {
     gap: 1.0669rem;
   }
   .popup.popup__get-consultation .error-icon {
-    bottom: 7px;
+    bottom: 0.4375rem;
   }
   .popup.popup__get-consultation .close-popup-button {
     width: 1rem;
@@ -2239,7 +2239,7 @@ img {
     padding: 1.4612rem 3.3988rem 1.4219rem 3.3988rem;
   }
   .popup.popup__get-consultation.submit-success .popup-content {
-    width: 212px;
+    width: 13.25rem;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -2250,18 +2250,18 @@ img {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 426px;
+    height: 26.625rem;
   }
   .popup.popup__get-consultation .success-submit-block .get-consultation__title {
-    margin-bottom: 7px;
+    margin-bottom: 0.4375rem;
   }
   .popup.popup__get-consultation .success-submit-block .get-consultation__subtitle {
-    max-width: 206px;
-    margin-bottom: 43px;
+    max-width: 12.875rem;
+    margin-bottom: 2.6875rem;
   }
   .popup.popup__get-consultation .success-submit-block .two-ticks {
-    width: 33px;
-    height: 19px;
+    width: 2.0625rem;
+    height: 1.1875rem;
   }
   .popup.popup__get-consultation .get-consultation__title {
     text-align: center;
@@ -2389,10 +2389,6 @@ img {
     width: 13.4375rem;
     height: 15.5rem;
   }
-  .popup.popup-project .close-popup-button {
-    width: 0.6106rem;
-    height: 0.6106rem;
-  }
 }
 @media (max-width: 23.4375rem) {
   .popup.popup-project .project__inner {
@@ -2480,13 +2476,37 @@ img {
 }
 
 .close-popup-button {
-  height: 0.975rem;
-  width: 0.975rem;
-  background-color: transparent;
-  border: none;
+  width: 1.5rem;
+  height: 1.5rem;
   position: absolute;
   top: 1.5rem;
   right: 1.3125rem;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.close-popup-button::before, .close-popup-button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.125rem;
+  background-color: black;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.close-popup-button::before {
+  transform: rotate(45deg);
+}
+.close-popup-button::after {
+  transform: rotate(-45deg);
+}
+@media (max-width: 48rem) {
+  .close-popup-button {
+    width: 1rem;
+    height: 1rem;
+  }
 }
 
 .burger-menu-button {
