@@ -39,8 +39,8 @@
 							</li>
 						</ul>
 					</nav>
-					<a href="#contacts" class="button header__nav-button button__text--medium button--secondary">Contact us
-					</a>
+					<button class="button header__nav-button button__text--medium button--secondary">Contact us
+					</button>
 					<button class="burger-menu-button" aria-label="Toggle menu">
 						<span class="line"></span>
 						<span class="line"></span>
@@ -328,13 +328,13 @@
 							</div>
 							<div class="swiper-wrapper projects-wrapper">
 								<div class="swiper-slide project-slide">
-									<img src="./assets/images/projet-img-one.png" alt='cases' class="slider__image ">
+									<img src="./assets/images/project-img-one.png" alt='cases' class="slider__image ">
 								</div>
 								<div class="swiper-slide project-slide">
-									<img src="./assets/images/projet-img-two.png" alt='cases' class="slider__image">
+									<img src="./assets/images/project-img-two.png" alt='cases' class="slider__image">
 								</div>
 								<div class="swiper-slide project-slide">
-									<img src="./assets/images/projet-img-three.png" alt='cases' class="slider__image">
+									<img src="./assets/images/project-img-three.png" alt='cases' class="slider__image">
 								</div>
 							</div>
 							<div id='swiper-pagination' class="swiper-pagination"></div>
@@ -342,7 +342,7 @@
 					</div>
 				</div>
 			</section>
-			<!--		<section id='testimonials' class="testimonials">
+			<section id='testimonials' class="testimonials">
 				<div class="container">
 					<div class="section-title__inner">
 						<h2 class="section-title__heading">
@@ -451,9 +451,11 @@
 				<div class="consultation">
 					<div class="container">
 						<div class="consultation__inner">
-							<object class='circle-ruby-on-rails' type="image/svg+xml" data="./assets/icons/circleRubyOnRails.svg">
-							</object>
-							<div class='planet-blue' alt="planet-blue"></div>
+							<div class="planet-text">
+								<object class='circle-ruby-on-rails' type="image/svg+xml" data="./assets/icons/circleRubyOnRails.svg">
+								</object>
+								<div class='planet-blue' alt="planet-blue"></div>
+							</div>
 							<p class="consultation__description text--large">
 								Want to transform your product vision into reality with our
 								data-driven approach?
@@ -466,7 +468,7 @@
 				</div>
 			</section>
 		</main>
-		<footer id='contacts' class='footer'>
+		<footer class='footer'>
 			<div class="container">
 				<div class="footer__inner">
 					<div class="footer__logo-container">
@@ -540,7 +542,7 @@
 					© 2023 Lazy Bizon. All Rights Reserved.
 				</p>
 			</div>
-		</footer> -->
+		</footer>
 	</div>
 	<div id='get-consultation' class="popup popup__get-consultation">
 		<div class="popup-content ">
@@ -548,7 +550,6 @@
 			<p class="get-consultation__subtitle text--medium">
 				Please, fill out the form
 			</p>
-			<div class='two-ticks'></div>
 			<form class="form" novalidate>
 				<div class="form-group">
 					<label class='text--small label-email' for="email">
@@ -570,7 +571,7 @@
 						<div class="character-count text--small">0/360</div>
 					</div>
 					<label class='checkbox-label text--small' for="agree">
-						<input type="checkbox" id="agree" name="agree" required>
+						<input class='checkbox' type="checkbox" id="agree" name="agree" required>
 						<span class='checkbox-custom'></span>
 						Agree to process personal data
 					</label>
@@ -581,8 +582,15 @@
 				</div>
 			</form>
 		</div>
+		<div class="success-submit-block">
+			<h2 class="get-consultation__title ">Congratulations!</h2>
+			<p class="get-consultation__subtitle text--medium">
+				Your request is sent successfully. Our manager will contact you shortly.
+			</p>
+			<div class='two-ticks'></div>
+		</div>
 		<button class="close-popup-button">
-			<img src="./assets/icons/close-icon.svg" alt="close">
+
 		</button>
 	</div>
 	<div id='popup-project' class="popup popup-project">
@@ -606,7 +614,7 @@
 			</div>
 		</div>
 		<button class="close-popup-button">
-			<img src="./assets/icons/close-icon.svg" alt="close">
+
 		</button>
 	</div>
 	<div class="overlay"></div>

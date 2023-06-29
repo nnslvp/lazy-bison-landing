@@ -2,18 +2,16 @@ const slides = document.querySelectorAll('.project-slide')
 const getConsultationButtons = document.querySelectorAll(
 	'.get-consultation-btn'
 )
-const btnsPopupClose = document.querySelectorAll('.close-popup-button')
+const buttonsPopupClose = document.querySelectorAll('.close-popup-button')
 const popups = document.querySelectorAll('.popup')
 const popup = document.querySelector('.popup')
 const projectTitle = document.querySelector('.project__title')
 const projectType = document.querySelector('.name-app__title')
 const projectImg = document.querySelector('.project__img-img')
 const projectDescription = document.querySelector('.project__description-text')
-const form = document.querySelector('.form')
-const errorIcon = form.querySelector('.error-icon')
-const errorText = form.querySelector('.error-text')
-const inputEmail = form.querySelector('.input-email')
 const overlay = document.querySelector('.overlay')
+const cancelBtnForm = document.querySelector('#get-consultation .btn-cancel')
+const headerNavBtn = document.querySelector('.header__nav-button')
 
 const openPopup = popupId => {
 	const popup = document.getElementById(popupId)
@@ -28,7 +26,7 @@ function hidePopup() {
 			document.body.style.overflow = 'auto'
 			p.classList.add('close')
 			setTimeout(() => {
-				p.classList.remove('open')
+				p.className = p.className.split(' ').splice(0, 2).join(' ')
 			}, 300)
 		}
 	})
@@ -85,8 +83,8 @@ function getTitleByIndex(index) {
 function getImagePathByIndex(index) {
 	const imagePaths = [
 		'./assets/images/popup-project.jpeg',
-		'./assets/images/projet-img-two.png',
-		'./assets/images/projet-img-three.png',
+		'./assets/images/project-img-two.png',
+		'./assets/images/project-img-three.png',
 	]
 
 	return imagePaths[index]
@@ -104,8 +102,10 @@ getConsultationButtons.forEach(btn => {
 	})
 })
 
-btnsPopupClose.forEach(btn => {
+buttonsPopupClose.forEach(btn => {
 	btn.addEventListener('click', hidePopup)
 })
 
 overlay.addEventListener('click', hidePopup)
+cancelBtnForm.addEventListener('click', hidePopup)
+headerNavBtn.addEventListener('click', () => openPopup('get-consultation'))

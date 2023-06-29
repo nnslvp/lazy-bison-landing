@@ -85,7 +85,7 @@
 	}
 }
 
-@media (max-width: 850px) {
+@media (max-width: 53.125rem) {
 	.services {
 		background: none;
 
@@ -171,7 +171,7 @@
 
 		.services__inner {
 			background: none;
-			padding-bottom: 4.125rem;
+			padding-bottom: 3.125rem;
 		}
 	}
 
@@ -211,10 +211,10 @@
 		max-height: 0;
 		@include text--small;
 		margin-bottom: 0;
-		margin: 0px;
+		margin: 0rem;
 		&.slide-in-height {
-			margin: 12px;
-			max-height: 500px;
+			margin: 0.75rem;
+			max-height: 31.25rem;
 			transition: max-height 0.3s linear;
 		}
 	}
