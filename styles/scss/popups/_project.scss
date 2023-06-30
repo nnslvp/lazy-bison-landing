@@ -1,7 +1,6 @@
 .popup.popup-project {
 	.project__inner {
 		display: flex;
-		height: 604px;
 	}
 
 	.project__info {
@@ -60,9 +59,6 @@
 	}
 
 	@media (max-width: 48rem) {
-   .project__inner{}
-	 
-
 		.project__info {
 			padding: 2.3125rem 0 0.8125rem 0;
 			border-right: 0.0625rem solid $color-light-grey;
@@ -102,12 +98,8 @@
 			width: 13.4375rem;
 			height: 15.5rem;
 		}
-
-		.close-popup-button {
-			width: 0.6106rem;
-			height: 0.6106rem;
-		}
 	}
+
 	@media (max-width: 23.4375rem) {
 		.project__inner {
 			flex-direction: column-reverse;

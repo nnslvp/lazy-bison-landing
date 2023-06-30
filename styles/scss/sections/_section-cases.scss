@@ -1,5 +1,5 @@
 .cases__inner {
-	@include background('/assets/images/casesbg.png', center, no-repeat, cover);
+	@include background('/assets/images/cases-bg.png', center, no-repeat, cover);
 	display: flex;
 	flex-direction: column;
 }
@@ -30,7 +30,7 @@
 .projects-wrapper {
 	display: grid;
 	justify-content: center;
-	grid-template-columns: minmax(300px, 38.75rem) minmax(100px, 25.25rem);
+	grid-template-columns: minmax(18.75rem, 38.75rem) minmax(6.25rem, 25.25rem);
 	grid-column-gap: 1.75rem;
 	grid-row-gap: 1.375rem;
 }
@@ -63,7 +63,12 @@
 
 @media (max-width: 48rem) {
 	.cases__inner {
-		@include background('/assets/images/casesbg.png', center, no-repeat, cover);
+		@include background(
+			'/assets/images/cases-bg-768.png',
+			center,
+			no-repeat,
+			cover
+		);
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 4rem;
@@ -91,7 +96,7 @@
 	.projects-wrapper {
 		display: grid;
 		justify-content: start;
-		grid-template-columns: minmax(200px, 24.5rem) minmax(100px, 15.9375rem);
+		grid-template-columns: minmax(12.5rem, 24.5rem) minmax(6.25rem, 15.9375rem);
 		grid-column-gap: 1.0625rem;
 		grid-row-gap: 0.875rem;
 	}
@@ -107,7 +112,12 @@
 
 @media (max-width: 23.4375rem) {
 	.cases__inner {
-		@include background('/assets/images/casesbg.png', center, no-repeat, cover);
+		@include background(
+			'/assets/images/cases-bg-375.png',
+			center,
+			no-repeat,
+			cover
+		);
 		display: flex;
 		flex-direction: column;
 		.gray-line {

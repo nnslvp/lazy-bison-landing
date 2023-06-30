@@ -3,43 +3,6 @@ const description = document.querySelector('.services-info__description-text')
 const title = document.querySelector('.services-info__title')
 const widthScreen = document.documentElement.clientWidth
 
-const handleAnimationEnd = () => {
-	description.classList.remove('fade-in')
-	title.classList.remove('fade-in')
-
-	description.removeEventListener('animationend', handleAnimationEnd)
-	title.removeEventListener('animationend', handleAnimationEnd)
-}
-
-buttons.forEach(currentButton => {
-	currentButton.addEventListener('click', e => {
-		const buttonText = currentButton.innerText
-
-		buttons.forEach(btn => {
-			btn.classList.remove('active')
-		})
-
-		if (widthScreen > 375) {
-			description.textContent = getDescriptionByButton(buttonText)
-			title.textContent = getTitleByButton(buttonText)
-			description.classList.add('fade-in')
-			title.classList.add('fade-in')
-
-			description.addEventListener('animationend', handleAnimationEnd)
-			title.addEventListener('animationend', handleAnimationEnd)
-		} else {
-			buttons.forEach(btn => {
-				if (btn != currentButton) {
-					btn.nextElementSibling.classList.remove('slide-in-height')
-				}
-			})
-			currentButton.nextElementSibling.classList.toggle('slide-in-height')
-		}
-
-		currentButton.classList.toggle('active')
-	})
-})
-
 function getDescriptionByButton(buttonText) {
 	switch (buttonText) {
 		case 'Web Development':
@@ -83,3 +46,44 @@ function getTitleByButton(buttonText) {
 			return 'Default Title'
 	}
 }
+
+const handleAnimationEnd = () => {
+	description.classList.remove('fade-in')
+	title.classList.remove('fade-in')
+
+	description.removeEventListener('animationend', handleAnimationEnd)
+	title.removeEventListener('animationend', handleAnimationEnd)
+}
+
+function buttonClickHandler(event) {
+	const buttonText = event.currentTarget.innerText
+	const buttonClick = event.currentTarget
+	const descriptionByButton = buttonClick.nextElementSibling
+
+	buttons.forEach(btn => {
+		btn.classList.remove('active')
+	})
+
+	if (widthScreen > 375) {
+		description.textContent = getDescriptionByButton(buttonText)
+		title.textContent = getTitleByButton(buttonText)
+		description.classList.add('fade-in')
+		title.classList.add('fade-in')
+
+		description.addEventListener('animationend', handleAnimationEnd)
+		title.addEventListener('animationend', handleAnimationEnd)
+	} else {
+		buttons.forEach(btn => {
+			if (btn !== buttonClick) {
+				btn.nextElementSibling.classList.remove('slide-in-height')
+			}
+		})
+	}
+
+	buttonClick.classList.toggle('active')
+	descriptionByButton.classList.toggle('slide-in-height')
+}
+
+buttons.forEach(currentButton => {
+	currentButton.addEventListener('click', buttonClickHandler)
+})

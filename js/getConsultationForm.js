@@ -1,67 +1,102 @@
-const popup = document.querySelector('.popup')
-const popupContent = document.querySelector('.popup-content')
-const form = popup.querySelector('.form')
-const textarea = popup.querySelector('.textarea')
+const form = document.querySelector('.form')
+const textarea = form.querySelector('.textarea')
 const errorIcon = form.querySelector('.error-icon')
 const errorText = form.querySelector('.error-text')
 const inputEmail = form.querySelector('.input-email')
+const checkboxCustom = form.querySelector('.checkbox-custom')
+const checkbox = form.querySelector('.checkbox')
+const submitButton = document.querySelector('.btn-submit')
+const popup = document.querySelector('.popup')
 const popupTittle = document.querySelector('.get-consultation__title')
 const popupSubtitle = document.querySelector('.get-consultation__subtitle')
-const status = document.getElementById("my-form-status");
 
-function changeCountCharacterTextarea(e) {
-	const characterCount = document.querySelector('.character-count')
-	characterCount.textContent = `${e.target.value.length}/360`
+function changeCountCharacterTextarea() {
+	const characterCount = form.querySelector('.character-count')
+	characterCount.textContent = `${textarea.value.length}/360`
+}
+
+function validateEmail(email) {
+	const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+	return emailPattern.test(email)
 }
 
 function showSuccessSubmit() {
 	popup.classList.add('submit-success')
-	form.remove()
-	popupTittle.textContent = 'Congratulations!'
-	popupSubtitle.textContent = `
-		Your request is sent successfully. 
-		Our manager will contact you shortly.`
 }
 
-function handleSubmit(event) {
+function serializeForm(formNode) {
+	const formData = new FormData(formNode)
+	const data = {}
+	for (let [name, value] of formData) {
+		data[name] = value
+	}
+	return data
+}
+
+function removeInputsEventListeners() {
+	inputEmail.removeEventListener('input', validateForm)
+	checkbox.removeEventListener('input', validateForm)
+}
+
+function addInputsEventListeners() {
+	inputEmail.addEventListener('input', validateForm)
+	checkbox.addEventListener('input', validateForm)
+}
+
+function validateForm() {
+	const data = serializeForm(form)
+	const { email, agree } = data
+
+	const isEmailValid = validateEmail(email)
+	const isCheckboxValid = agree
+
+	errorIcon.classList.toggle('error', !isEmailValid)
+	errorText.classList.toggle('error', !isEmailValid)
+	checkboxCustom.classList.toggle('error', !isCheckboxValid)
+
+	return isEmailValid && !!isCheckboxValid
+}
+
+function handleFormSubmit(event) {
 	event.preventDefault()
-	const form = event.target
-	showSuccessSubmit()
-	if (form.checkValidity()) {
-		const data = new FormData(event.target);
+	const data = new FormData(event.target)
+	const isValid = validateForm()
+
+	if (isValid) {
 		fetch(event.target.action, {
 			method: form.method,
 			body: data,
 			headers: {
-				'Accept': 'application/json'
-			}
-		}).then(response => {
-			if (response.ok) {
-				status.innerHTML = "Thanks for your submission!";
-				form.reset()
-			} else {
-				response.json().then(data => {
-					if (Object.hasOwn(data, 'errors')) {
-						status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-					} else {
-						status.innerHTML = "Oops! There was a problem submitting your form"
-					}
-				})
-			}
-		}).catch(error => {
-			console.log("Form error:", error)
-			status.innerHTML = "Oops! There was a problem submitting your form"
-		});
-	} else {
-		if (!inputEmail.validity.valid) {
-			errorIcon.style.visibility = 'visible'
-			errorText.style.visibility = 'visible'
-		} else {
-			errorIcon.style.visibility = 'hidden'
-			errorText.style.visibility = 'hidden'
-		}
+				Accept: 'application/json',
+			},
+		})
+			.then(response => {
+				if (response.ok) {
+					form.reset()
+					showSuccessSubmit()
+					removeInputsEventListeners()
+				} else {
+					response.json().then(data => {
+						if (Object.hasOwn(data, 'errors')) {
+							const errorMessages = data['errors']
+								.map(error => error['message'])
+								.join(', ')
+							console.log(errorMessages)
+						} else {
+							console.log('Oops! There was a problem submitting your form')
+						}
+					})
+				}
+			})
+			.catch(error => {
+				console.log('Form error:', error)
+				console.log('Oops! There was a problem submitting your form')
+			})
+		return
 	}
+
+	addInputsEventListeners()
 }
 
-form.addEventListener('submit', handleSubmit)
+form.addEventListener('submit', handleFormSubmit)
 textarea.addEventListener('input', changeCountCharacterTextarea)
