@@ -105,6 +105,16 @@
 		opacity: 1;
 	}
 
+	.error-icon.error ~ .input-email {
+		border-color: $color-system-red;
+	}
+
+	input[type='email'],
+	textarea {
+		border: 0.0625rem solid $color-black;
+		transition: border-color 0.3s linear;
+	}
+
 	input[type='email'] {
 		padding: 0.6875rem 0 0.6875rem 1rem;
 		width: 100%;
@@ -125,11 +135,6 @@
 		letter-spacing: 0.03em;
 	}
 
-	input[type='email'],
-	textarea {
-		border: 0.0625rem solid $color-black;
-	}
-
 	.checkbox-label {
 		display: flex;
 		align-items: center;
@@ -147,9 +152,10 @@
 			border: 0.0938rem solid #333f52;
 			border-radius: 0.125rem;
 			margin-right: 0.5rem;
+			transition: border-color 0.3s linear;
 
 			&.error {
-				border: 0.0938rem solid #e41010;
+				border: 0.0938rem solid $color-system-red;
 			}
 
 			&::before {
