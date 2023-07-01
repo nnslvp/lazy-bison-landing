@@ -39,7 +39,7 @@
 		width: 0;
 		height: 4.75rem;
 		background-color: $color-neon-green;
-		animation: width 4s linear forwards;
+		animation: width 1s linear forwards;
 		@keyframes width {
 			100% {
 				width: 100%;
