@@ -2,50 +2,27 @@ const grayLines = document.querySelectorAll('.gray-line')
 const grayLine = document.querySelector('.testimonials__gray-line')
 const grayVerticalLine = document.querySelector('.vertical-gray-line-1')
 const widthScreen = document.documentElement.clientWidth
+const testimonialsSectionVerticalLines = document.querySelectorAll(
+	'.testimonials .vertical-gray-line'
+)
+const exploreSectionVerticalLines = document.querySelectorAll(
+	'.explore .vertical-gray-line'
+)
 
-const animateElements = (line, currentWidth) => {
+const animateLines = lines => {
+	lines.forEach(line => {
+		line.classList.add('animate')
+	})
+}
+
+const animateVerticalLines = line => {
 	if (line.classList.contains('testimonials__gray-line')) {
-		animateTestimonialElements(currentWidth)
+		animateLines(testimonialsSectionVerticalLines)
 	}
 
 	if (line.classList.contains('explore__gray-line')) {
-		animateExploreElements(currentWidth)
+		animateLines(exploreSectionVerticalLines)
 	}
-}
-
-const animateTestimonialElements = currentWidth => {
-	const elements = document.querySelectorAll(
-		'.testimonials .vertical-gray-line'
-	)
-	let thresholds
-	if (widthScreen <= 768) {
-		thresholds = [109, 281, 442, 653]
-	} else {
-		thresholds = [109, 540, 974, 1170]
-	}
-
-	thresholds.forEach((threshold, index) => {
-		if (currentWidth >= threshold) {
-			elements[index].classList.add('animate')
-		}
-	})
-}
-
-const animateExploreElements = currentWidth => {
-	const elements = document.querySelectorAll('.explore .vertical-gray-line')
-
-	let thresholds
-	if (widthScreen <= 768) {
-		thresholds = [219, 494]
-	} else {
-		thresholds = [392, 886]
-	}
-
-	thresholds.forEach((threshold, index) => {
-		if (currentWidth >= threshold) {
-			elements[index].classList.add('animate')
-		}
-	})
 }
 
 const getInitialWidth = line => {
@@ -56,20 +33,19 @@ const getInitialWidth = line => {
 const animateLine = line => {
 	const width = getInitialWidth(line)
 	const targetWidth = parseInt(width)
-	const animationDuration = 2500
+	const animationDuration = 1000
 	const animationStep = (targetWidth / animationDuration) * 10
 	let currentWidth = 0
 
 	const animateWidth = () => {
 		if (currentWidth >= targetWidth) {
 			line.style.maxWidth = width
+			animateVerticalLines(line)
 			return
 		}
 
 		currentWidth += animationStep
 		line.style.maxWidth = currentWidth + 'px'
-
-		animateElements(line, currentWidth)
 
 		requestAnimationFrame(animateWidth)
 	}
@@ -86,7 +62,7 @@ function elementInViewport(el) {
 	)
 }
 
-let sections = document.querySelectorAll(
+const sections = document.querySelectorAll(
 	'.explore, .services, .testimonials, .cases'
 )
 

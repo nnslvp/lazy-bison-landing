@@ -23,18 +23,18 @@
 }
 
 .vertical-gray-line-1.animate {
-	@include heightAnimation(4s, 28.4375rem, 1);
+	@include heightAnimation(1s, 28.4375rem, 1);
 }
 
 .vertical-gray-line-2.animate {
-	@include heightAnimation(4s, 24.25rem, 2);
+	@include heightAnimation(1s, 24.25rem, 2);
 }
 .vertical-gray-line-3.animate {
-	@include heightAnimation(4s, 17.1875rem, 3);
+	@include heightAnimation(1s, 17.1875rem, 3);
 }
 
 .vertical-gray-line-4.animate {
-	@include heightAnimation(4s, 34.8125rem, 4);
+	@include heightAnimation(1s, 34.8125rem, 4);
 }
 
 .vertical-gray-line-1 {
@@ -292,18 +292,18 @@
 	}
 
 	.vertical-gray-line-1.animate {
-		@include heightAnimation(4s, 28.4375rem, 1);
+		@include heightAnimation(1s, 28.4375rem, 1);
 	}
 
 	.vertical-gray-line-2.animate {
-		@include heightAnimation(4s, 18rem, 2);
+		@include heightAnimation(1s, 18rem, 2);
 	}
 	.vertical-gray-line-3.animate {
-		@include heightAnimation(4s, 21.875rem, 3);
+		@include heightAnimation(1s, 21.875rem, 3);
 	}
 
 	.vertical-gray-line-4.animate {
-		@include heightAnimation(4s, 12.5rem, 4);
+		@include heightAnimation(1s, 12.5rem, 4);
 	}
 
 	.workers__list {
