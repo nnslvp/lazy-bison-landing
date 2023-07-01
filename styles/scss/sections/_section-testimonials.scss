@@ -63,6 +63,14 @@
 	);
 }
 
+.workers {
+	transition: opacity 0.5s ease-in-out;
+}
+
+.workers.fade-out {
+	opacity: 0;
+}
+
 .workers__list {
 	position: relative;
 	height: 35.3125rem;
