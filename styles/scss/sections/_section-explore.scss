@@ -30,13 +30,10 @@
 	}
 
 	.vertical-gray-line {
+		height: 100%;
 		position: absolute;
 		top: 0;
 		right: 0;
-	}
-
-	.vertical-gray-line.animate {
-		@include heightAnimation(1s, 100%, 5);
 	}
 }
 

@@ -209,15 +209,18 @@ img {
 	}
 }
 
+.gray-line,
+.vertical-gray-line {
+	background-color: $color-light-grey;
+	opacity: 0;
+}
+
 .gray-line {
 	height: 0.125rem;
-	background-color: $color-light-grey;
 }
 
 .vertical-gray-line {
 	width: 0.125rem;
-	height: 0;
-	background-color: $color-light-grey;
 }
 
 .section-title__inner {

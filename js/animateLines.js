@@ -11,7 +11,7 @@ const exploreSectionVerticalLines = document.querySelectorAll(
 
 const animateLines = lines => {
 	lines.forEach(line => {
-		line.classList.add('animate')
+		animateLineHeight(line)
 	})
 }
 
@@ -30,13 +30,18 @@ const getInitialWidth = line => {
 	return computedStyle.width
 }
 
-const animateLine = line => {
+const getInitialHeight = line => {
+	const computedStyle = getComputedStyle(line)
+	return computedStyle.height
+}
+
+const animateLineWith = line => {
 	const width = getInitialWidth(line)
 	const targetWidth = parseInt(width)
 	const animationDuration = 1000
 	const animationStep = (targetWidth / animationDuration) * 10
 	let currentWidth = 0
-
+	line.style.opacity = 1
 	const animateWidth = () => {
 		if (currentWidth >= targetWidth) {
 			line.style.maxWidth = width
@@ -51,6 +56,33 @@ const animateLine = line => {
 	}
 
 	animateWidth()
+}
+
+const animateLineHeight = line => {
+	const height = getInitialHeight(line)
+	const targetHeight = parseInt(height)
+	const animationDuration = 1000
+	const animationStep = (targetHeight / animationDuration) * 10
+
+	let currentHeight = 0
+	line.style.opacity = 1
+
+	const animateHeight = () => {
+		if (currentHeight >= targetHeight) {
+			line.style.maxHeight = height
+			animateVerticalLines(line)
+			return
+		}
+
+		currentHeight += animationStep
+		line.style.maxHeight = currentHeight + 'px'
+
+		if (currentHeight < targetHeight) {
+			requestAnimationFrame(animateHeight)
+		}
+	}
+
+	animateHeight()
 }
 
 function elementInViewport(el) {
@@ -74,7 +106,7 @@ function handleScroll() {
 				`.${block.className.split(' ')[0]} .gray-line`
 			)
 			lines.forEach(line => {
-				animateLine(line)
+				animateLineWith(line)
 			})
 		}
 	})
@@ -82,7 +114,7 @@ function handleScroll() {
 
 const line = document.querySelector('.lazy-bison .gray-line')
 
-animateLine(line)
+animateLineWith(line)
 
 if (widthScreen > 375) {
 	window.addEventListener('scroll', handleScroll)

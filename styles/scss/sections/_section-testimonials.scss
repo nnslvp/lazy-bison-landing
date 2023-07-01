@@ -22,34 +22,27 @@
 	position: absolute;
 }
 
-.vertical-gray-line-1.animate {
-	@include heightAnimation(1s, 28.4375rem, 1);
-}
-
-.vertical-gray-line-2.animate {
-	@include heightAnimation(1s, 24.25rem, 2);
-}
-.vertical-gray-line-3.animate {
-	@include heightAnimation(1s, 17.1875rem, 3);
-}
-
-.vertical-gray-line-4.animate {
-	@include heightAnimation(1s, 34.8125rem, 4);
-}
-
 .vertical-gray-line-1 {
+	
+	height: 28.4375rem;
 	left: 7.3125rem;
 }
 
 .vertical-gray-line-2 {
+	
+	height: 24.25rem;
 	left: 34.1875rem;
 }
 
 .vertical-gray-line-3 {
+	
+	height: 17.1875rem;
 	right: 19.25rem;
 }
 
 .vertical-gray-line-4 {
+	
+	height: 34.8125rem;
 	top: 0;
 	right: 7.5rem;
 }
@@ -277,33 +270,22 @@
 
 	.vertical-gray-line-1 {
 		left: 5.125rem;
+		height: 28.4375rem;
 	}
 
 	.vertical-gray-line-2 {
 		left: 18rem;
+		height: 18rem;
 	}
 
 	.vertical-gray-line-3 {
 		right: 17.6875rem;
+		height: 21.875rem;
 	}
 
 	.vertical-gray-line-4 {
 		right: 4.5rem;
-	}
-
-	.vertical-gray-line-1.animate {
-		@include heightAnimation(1s, 28.4375rem, 1);
-	}
-
-	.vertical-gray-line-2.animate {
-		@include heightAnimation(1s, 18rem, 2);
-	}
-	.vertical-gray-line-3.animate {
-		@include heightAnimation(1s, 21.875rem, 3);
-	}
-
-	.vertical-gray-line-4.animate {
-		@include heightAnimation(1s, 12.5rem, 4);
+		height: 12.5rem;
 	}
 
 	.workers__list {
