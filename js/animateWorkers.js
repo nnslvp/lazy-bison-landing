@@ -14,10 +14,16 @@ if (widthScreen > 375) {
 		const items = Array.from(workers.children)
 		const shuffledItems = shuffleArray(items)
 
-		workers.innerHTML = ''
+		workers.classList.add('fade-out')
 
-		shuffledItems.forEach(item => {
-			workers.appendChild(item)
-		})
+		setTimeout(() => {
+			workers.innerHTML = ''
+
+			shuffledItems.forEach(item => {
+				workers.appendChild(item)
+			})
+
+			workers.classList.remove('fade-out')
+		}, 250)
 	}, 3000)
 }

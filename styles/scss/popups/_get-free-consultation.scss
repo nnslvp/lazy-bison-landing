@@ -105,6 +105,16 @@
 		opacity: 1;
 	}
 
+	.error-icon.error ~ .input-email {
+		border-color: $color-system-red;
+	}
+
+	input[type='email'],
+	textarea {
+		border: 0.0625rem solid $color-black;
+		transition: border-color 0.3s linear;
+	}
+
 	input[type='email'] {
 		padding: 0.6875rem 0 0.6875rem 1rem;
 		width: 100%;
@@ -119,15 +129,10 @@
 
 	input[type='email']::placeholder,
 	textarea::placeholder {
-		font-weight: 400;
+		font-weight: 425;
 		font-size: 1rem;
 		line-height: 1.375rem;
 		letter-spacing: 0.03em;
-	}
-
-	input[type='email'],
-	textarea {
-		border: 0.0625rem solid $color-black;
 	}
 
 	.checkbox-label {
@@ -147,9 +152,10 @@
 			border: 0.0938rem solid #333f52;
 			border-radius: 0.125rem;
 			margin-right: 0.5rem;
+			transition: border-color 0.3s linear;
 
 			&.error {
-				border: 0.0938rem solid #e41010;
+				border: 0.0938rem solid $color-system-red;
 			}
 
 			&::before {
@@ -208,7 +214,7 @@
 		border: 0.0625rem solid $color-grey;
 	}
 
-	@media (max-width: 48rem) {
+	@media (max-width: 768px) {
 		padding: 1.3956rem 2.375rem 1.3625rem 2.375rem;
 
 		&.submit-success .popup-content {
@@ -307,7 +313,7 @@
 		}
 	}
 
-	@media (max-width: 23.4375rem) {
+	@media (max-width: 425px) {
 		padding: 1.4612rem 3.3988rem 1.4219rem 3.3988rem;
 
 		&.submit-success .popup-content {

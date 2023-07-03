@@ -2,7 +2,7 @@ const sliders = document.querySelectorAll('.swiper')
 let mySwipers = []
 
 function mobileSlider(slider) {
-	if (window.innerWidth <= 375 && slider.dataset.mobile === 'false') {
+	if (window.innerWidth <= 425 && slider.dataset.mobile === 'false') {
 		const newSwiper = new Swiper(slider, {
 			slidesPerView: 1,
 			spaceBetween: 0,

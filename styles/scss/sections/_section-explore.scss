@@ -30,13 +30,10 @@
 	}
 
 	.vertical-gray-line {
+		height: 100%;
 		position: absolute;
 		top: 0;
 		right: 0;
-	}
-
-	.vertical-gray-line.animate {
-		@include heightAnimation(4s, 100%, 5);
 	}
 }
 
@@ -79,7 +76,7 @@
 	z-index: 1;
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
 	.explore-item__title {
 		font-size: 1.25rem;
 		line-height: 1.75rem;
@@ -147,7 +144,7 @@
 	}
 }
 
-@media (max-width: 23.4375rem) {
+@media (max-width: 425px) {
 	.explore__list {
 		display: flex;
 		flex-direction: column;

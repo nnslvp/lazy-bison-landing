@@ -150,11 +150,7 @@
 											<p class="services-info__description-text text--medium">
 												Building and maintaining websites and web applications.
 												Creating functional web experiences using HTML, CSS,
-												JavaScript, and various web frameworks. It includes
-												website design, front-end and back-end development,
-												database integration, and maintenance and support.
-												Technologies: Ruby on Rails, Hotwire, ReactJS, Angular,
-												GoLang.
+
 											</p>
 										</li>
 										<li class="services-info__item">
@@ -164,11 +160,7 @@
 											<p class="services-info__description-text text--medium">
 												Building and maintaining websites and web applications.
 												Creating functional web experiences using HTML, CSS,
-												JavaScript, and various web frameworks. It includes
-												website design, front-end and back-end development,
-												database integration, and maintenance and support.
-												Technologies: Ruby on Rails, Hotwire, ReactJS, Angular,
-												GoLang.
+
 											</p>
 										</li>
 										<li class="services-info__item">
@@ -178,11 +170,7 @@
 											<p class="services-info__description-text text--medium">
 												Building and maintaining websites and web applications.
 												Creating functional web experiences using HTML, CSS,
-												JavaScript, and various web frameworks. It includes
-												website design, front-end and back-end development,
-												database integration, and maintenance and support.
-												Technologies: Ruby on Rails, Hotwire, ReactJS, Angular,
-												GoLang.
+
 											</p>
 										</li>
 										<li class="services-info__item">
@@ -192,11 +180,7 @@
 											<p class="services-info__description-text text--medium">
 												Building and maintaining websites and web applications.
 												Creating functional web experiences using HTML, CSS,
-												JavaScript, and various web frameworks. It includes
-												website design, front-end and back-end development,
-												database integration, and maintenance and support.
-												Technologies: Ruby on Rails, Hotwire, ReactJS, Angular,
-												GoLang.
+
 											</p>
 										</li>
 										<li class="services-info__item">
@@ -206,11 +190,7 @@
 											<p class="services-info__description-text text--medium">
 												Building and maintaining websites and web applications.
 												Creating functional web experiences using HTML, CSS,
-												JavaScript, and various web frameworks. It includes
-												website design, front-end and back-end development,
-												database integration, and maintenance and support.
-												Technologies: Ruby on Rails, Hotwire, ReactJS, Angular,
-												GoLang.
+
 											</p>
 										</li>
 										<li class="services-info__item">
@@ -220,11 +200,6 @@
 											<p class="services-info__description-text text--medium">
 												Building and maintaining websites and web applications.
 												Creating functional web experiences using HTML, CSS,
-												JavaScript, and various web frameworks. It includes
-												website design, front-end and back-end development,
-												database integration, and maintenance and support.
-												Technologies: Ruby on Rails, Hotwire, ReactJS, Angular,
-												GoLang.
 											</p>
 										</li>
 									</ul>
@@ -358,13 +333,13 @@
 				<div class="testimonials__inner">
 					<div class="container testimonials__container">
 						<div class="testimonials__gray-line gray-line"></div>
-						<div class="gray-line vertical-gray-line vertical-gray-line-1">
+						<div class="vertical-gray-line vertical-gray-line-1">
 						</div>
-						<div class="gray-line vertical-gray-line vertical-gray-line-2">
+						<div class="vertical-gray-line vertical-gray-line-2">
 						</div>
-						<div class="gray-line vertical-gray-line vertical-gray-line-3">
+						<div class="vertical-gray-line vertical-gray-line-3">
 						</div>
-						<div class="gray-line vertical-gray-line vertical-gray-line-4">
+						<div class="vertical-gray-line vertical-gray-line-4">
 						</div>
 						<h4 class="testimonials__title">
 							What people say?
@@ -550,22 +525,22 @@
 			<p class="get-consultation__subtitle text--medium">
 				Please, fill out the form
 			</p>
-			<form class="form" novalidate>
+			<form class="form" novalidate action="https://formspree.io/f/xvojpdzj" method="POST">
 				<div class="form-group">
 					<label class='text--small label-email' for="email">
 						E-mail
 						<div class="input-email__wrapper">
-							<input class="input-email" placeholder='exapmle@gmail.com' type="email" id="email" name="email" required>
 							<svg class="error-icon">
 								<use xlink:href="./assets/icons/sprite.svg#error-circle"></use>
 							</svg>
+							<input class="input-email" placeholder='exapmle@gmail.com' type="email" id="email" name="email" required>
 						</div>
 						<span class='error-text'>Invalid e-mail</span>
 					</label>
 					<div class="textarea__container">
 						<label class='text--small' for="comments">
 							Your comments
-							<textarea class="textarea" placeholder='Write your comments (optional)' id="comments" name="comments"
+							<textarea class="textarea" placeholder='Write your comments (optional)' id="comments" name="message"
 								maxlength="360"></textarea>
 						</label>
 						<div class="character-count text--small">0/360</div>
@@ -576,6 +551,7 @@
 						Agree to process personal data
 					</label>
 				</div>
+				<p id="my-form-status"></p>
 				<div class="form-actions">
 					<button type="button" class="btn btn-cancel">Cancel</button>
 					<button type="submit" class="btn btn-submit">Submit</button>

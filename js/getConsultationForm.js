@@ -7,6 +7,8 @@ const checkboxCustom = form.querySelector('.checkbox-custom')
 const checkbox = form.querySelector('.checkbox')
 const submitButton = document.querySelector('.btn-submit')
 const popup = document.querySelector('.popup')
+const popupTittle = document.querySelector('.get-consultation__title')
+const popupSubtitle = document.querySelector('.get-consultation__subtitle')
 
 function changeCountCharacterTextarea() {
 	const characterCount = form.querySelector('.character-count')
@@ -57,13 +59,39 @@ function validateForm() {
 
 function handleFormSubmit(event) {
 	event.preventDefault()
-
+	const data = new FormData(event.target)
 	const isValid = validateForm()
 
 	if (isValid) {
-		form.reset()
-		showSuccessSubmit()
-		removeInputsEventListeners()
+		fetch(event.target.action, {
+			method: form.method,
+			body: data,
+			headers: {
+				Accept: 'application/json',
+			},
+		})
+			.then(response => {
+				if (response.ok) {
+					form.reset()
+					showSuccessSubmit()
+					removeInputsEventListeners()
+				} else {
+					response.json().then(data => {
+						if (Object.hasOwn(data, 'errors')) {
+							const errorMessages = data['errors']
+								.map(error => error['message'])
+								.join(', ')
+							console.log(errorMessages)
+						} else {
+							console.log('Oops! There was a problem submitting your form')
+						}
+					})
+				}
+			})
+			.catch(error => {
+				console.log('Form error:', error)
+				console.log('Oops! There was a problem submitting your form')
+			})
 		return
 	}
 
