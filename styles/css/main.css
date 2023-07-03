@@ -23,8 +23,28 @@
 }
 
 html {
-  font-size: 1rem;
+  font-size: 0.833vw;
   scroll-behavior: smooth;
+}
+@media (max-width: 1440px) {
+  html {
+    font-size: 1.111vw;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 2.083vw;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 4.267vw;
+  }
 }
 
 body {
@@ -84,7 +104,7 @@ main section:not(.cases, .testimonials) {
     padding-bottom: 5rem;
   }
 }
-@media (max-width: 23.4375rem) {
+@media (max-width: 425px) {
   main section:not(.cases, .testimonials) {
     padding-bottom: 0rem;
   }
@@ -115,7 +135,7 @@ img {
     max-width: 46rem;
   }
 }
-@media (max-width: 23.4375rem) {
+@media (max-width: 425px) {
   .container {
     max-width: 22.1875rem;
   }
@@ -232,7 +252,7 @@ img {
     padding: 0.875rem 2.8438rem;
   }
 }
-@media (max-width: 23.4375rem) {
+@media (max-width: 425px) {
   .button--primary {
     font-size: 1.0625rem;
     line-height: 1.5rem;
@@ -299,7 +319,7 @@ img {
     letter-spacing: 0.03em;
   }
 }
-@media (max-width: 23.4375rem) {
+@media (max-width: 425px) {
   .section-title__heading {
     font-size: 1.625rem;
     line-height: 2.25rem;
@@ -417,7 +437,7 @@ img {
     letter-spacing: 0.03em;
   }
 }
-@media (max-width: 23.4375rem) {
+@media (max-width: 425px) {
   .header__inner {
     padding: 0.3406rem 0 0.3944rem 0rem;
     justify-content: space-between;
@@ -511,7 +531,7 @@ img {
   background-image: url("/assets/images/lazy-bison-bg-1440.png");
   background-position: bottom right;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
   background-color: transparent;
   padding-top: 6.1875rem;
   margin-bottom: 2.25rem;
@@ -627,7 +647,7 @@ img {
   .lazy-bison-description__text {
     margin: 0 0 3.125rem 0;
     font-size: 1.25rem;
-    font-weight: 400;
+    font-weight: 425;
     line-height: 1.75rem;
     letter-spacing: 0em;
   }
@@ -646,7 +666,7 @@ img {
     line-height: 1.375rem;
   }
 }
-@media (max-width: 23.4375rem) {
+@media (max-width: 425px) {
   .lazy-bison {
     background-image: url("/assets/images/lazy-bison-bg-375.png");
     background-position: 0 -2.3125rem;
@@ -688,12 +708,6 @@ img {
     height: 2.1875rem;
     bottom: 0.5rem;
   }
-  .lazy-bison__title span:nth-child(2) {
-    padding-left: 2.5rem;
-  }
-  .lazy-bison__title span:nth-child(3) {
-    padding-left: 7.125rem;
-  }
   .img-planets {
     display: none;
   }
@@ -715,7 +729,6 @@ img {
     letter-spacing: 0em;
   }
   .lazy-bison-description__btn {
-    width: 16rem;
     margin: 0 auto;
   }
   .lazy-bison__stats {
@@ -766,6 +779,7 @@ img {
 
 .services-info__inner {
   display: flex;
+  justify-content: center;
   gap: 1.8125rem;
   color: #ffffff;
 }
@@ -859,7 +873,7 @@ img {
   }
   .services-info__title {
     font-size: 1.25rem;
-    font-weight: 400;
+    font-weight: 425;
     line-height: 1.75rem;
   }
   .services-info__description {
@@ -883,7 +897,7 @@ img {
     line-height: 1.25rem;
   }
 }
-@media (max-width: 23.4375rem) {
+@media (max-width: 425px) {
   .services {
     background-image: url("/assets/images/services-info-bg-375.png");
     background-position: 0 4.9375rem;
@@ -1099,7 +1113,7 @@ img {
     z-index: 1;
   }
 }
-@media (max-width: 23.4375rem) {
+@media (max-width: 425px) {
   .explore__list {
     display: flex;
     flex-direction: column;
@@ -1256,7 +1270,7 @@ img {
     right: -1.5rem;
   }
 }
-@media (max-width: 23.4375rem) {
+@media (max-width: 425px) {
   .cases__inner {
     background-image: url("/assets/images/cases-bg-375.png");
     background-position: center;
@@ -1336,7 +1350,7 @@ img {
   background-image: url("/assets/images/workers-bg.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-color: transparent;
 }
 
@@ -1499,15 +1513,6 @@ img {
     height: 23.8125rem;
   }
 }
-@media (max-width: 63.125rem) {
-  .card {
-    width: 15.25rem;
-  }
-  .avatar {
-    width: 6.0625rem;
-    height: 6.0625rem;
-  }
-}
 @media (max-width: 48rem) {
   .consultation__inner .planet-blue {
     width: 4.7363rem;
@@ -1636,27 +1641,7 @@ img {
     margin-right: 4.4375rem;
   }
 }
-@media (max-width: 47.8125rem) {
-  .card {
-    width: 13rem;
-    height: 14.5rem;
-  }
-  .avatar {
-    width: 4.18rem;
-    height: 4.18rem;
-  }
-}
-@media (max-width: 39.375rem) {
-  .workers {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-  }
-  .workers__item {
-    position: static;
-  }
-}
-@media (max-width: 23.5rem) {
+@media (max-width: 425px) {
   .workers-background {
     background-image: none;
     background-color: #e5ffaf;
@@ -1867,7 +1852,7 @@ img {
     gap: 1.3331rem;
   }
 }
-@media (max-width: 23.4375rem) {
+@media (max-width: 425px) {
   .footer {
     padding: 0.8125rem 0 1.3125rem 0;
   }
@@ -2023,7 +2008,7 @@ img {
 }
 .popup.popup__get-consultation input[type=email]::placeholder,
 .popup.popup__get-consultation textarea::placeholder {
-  font-weight: 400;
+  font-weight: 425;
   font-size: 1rem;
   line-height: 1.375rem;
   letter-spacing: 0.03em;
@@ -2183,7 +2168,7 @@ img {
     right: 0.7306rem;
   }
 }
-@media (max-width: 23.4375rem) {
+@media (max-width: 425px) {
   .popup.popup__get-consultation {
     padding: 1.4612rem 3.3988rem 1.4219rem 3.3988rem;
   }
@@ -2285,7 +2270,7 @@ img {
 }
 .popup.popup-project .name-app__title {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 425;
   font-size: 1rem;
   line-height: 1.375rem;
   text-decoration-line: underline;
@@ -2339,7 +2324,7 @@ img {
     height: 15.5rem;
   }
 }
-@media (max-width: 23.4375rem) {
+@media (max-width: 425px) {
   .popup.popup-project .project__inner {
     flex-direction: column-reverse;
     padding: 4.75rem 0 3.125rem 0;
@@ -2505,7 +2490,7 @@ img {
 .swiper {
   overflow: inherit;
 }
-@media (max-width: 23.4375rem) {
+@media (max-width: 425px) {
   .swiper {
     overflow: hidden;
   }

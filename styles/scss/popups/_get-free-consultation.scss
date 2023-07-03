@@ -129,7 +129,7 @@
 
 	input[type='email']::placeholder,
 	textarea::placeholder {
-		font-weight: 400;
+		font-weight: 425;
 		font-size: 1rem;
 		line-height: 1.375rem;
 		letter-spacing: 0.03em;
@@ -313,7 +313,7 @@
 		}
 	}
 
-	@media (max-width: 23.4375rem) {
+	@media (max-width: 425px) {
 		padding: 1.4612rem 3.3988rem 1.4219rem 3.3988rem;
 
 		&.submit-success .popup-content {

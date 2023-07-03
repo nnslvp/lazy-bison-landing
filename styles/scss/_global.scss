@@ -7,8 +7,20 @@
 }
 
 html {
-	font-size: 1rem;
+	font-size: 0.833vw;
 	scroll-behavior: smooth;
+	@media (max-width: 1440px) {
+		font-size: 1.111vw;
+	}
+	@media (max-width: 768px) {
+		font-size: 2.083vw;
+	}
+	@media (max-width: 425px) {
+		font-size: 16px;
+	}
+	@media (max-width: 375px) {
+		font-size: 4.267vw;
+	}
 }
 
 body {
@@ -65,7 +77,7 @@ main section:not(.cases, .testimonials) {
 	@media (max-width: 48rem) {
 		padding-bottom: 5rem;
 	}
-	@media (max-width: 23.4375rem) {
+	@media (max-width: 425px) {
 		padding-bottom: 0rem;
 	}
 }
@@ -92,7 +104,7 @@ img {
 	@media (max-width: 48rem) {
 		max-width: calc(44.75rem + $container-padding * 2);
 	}
-	@media (max-width: 23.4375rem) {
+	@media (max-width: 425px) {
 		max-width: calc(20.9375rem + $container-padding * 2);
 	}
 }
@@ -202,7 +214,7 @@ img {
 		line-height: 1.5137rem;
 		padding: 0.875rem 2.8438rem;
 	}
-	@media (max-width: 23.4375rem) {
+	@media (max-width: 425px) {
 		font-size: 1.0625rem;
 		line-height: 1.5rem;
 		padding: 0.875rem 2.8438rem;
@@ -269,7 +281,7 @@ img {
 		line-height: 2.45rem;
 		letter-spacing: 0.03em;
 	}
-	@media (max-width: 23.4375rem) {
+	@media (max-width: 425px) {
 		font-size: 1.625rem;
 		line-height: 2.25rem;
 		letter-spacing: 0.02em;

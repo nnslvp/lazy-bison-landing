@@ -116,6 +116,6 @@ const line = document.querySelector('.lazy-bison .gray-line')
 
 animateLineWith(line)
 
-if (widthScreen > 375) {
+if (widthScreen > 425) {
 	window.addEventListener('scroll', handleScroll)
 }

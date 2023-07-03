@@ -26,6 +26,7 @@
 
 .services-info__inner {
 	display: flex;
+	justify-content: center;
 	gap: 1.8125rem;
 	color: $color-white;
 }
@@ -127,7 +128,7 @@
 
 	.services-info__title {
 		font-size: 1.25rem;
-		font-weight: 400;
+		font-weight: 425;
 		line-height: 1.75rem;
 	}
 
@@ -156,7 +157,7 @@
 	}
 }
 
-@media (max-width: 23.4375rem) {
+@media (max-width: 425px) {
 	.services {
 		@include background(
 			'/assets/images/services-info-bg-375.png',

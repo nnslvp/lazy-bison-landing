@@ -23,25 +23,21 @@
 }
 
 .vertical-gray-line-1 {
-	
 	height: 28.4375rem;
 	left: 7.3125rem;
 }
 
 .vertical-gray-line-2 {
-	
 	height: 24.25rem;
 	left: 34.1875rem;
 }
 
 .vertical-gray-line-3 {
-	
 	height: 17.1875rem;
 	right: 19.25rem;
 }
 
 .vertical-gray-line-4 {
-	
 	height: 34.8125rem;
 	top: 0;
 	right: 7.5rem;
@@ -52,7 +48,7 @@
 		'/assets/images/workers-bg.png',
 		center,
 		no-repeat,
-		cover
+		contain
 	);
 }
 
@@ -222,14 +218,14 @@
 }
 
 @media (max-width: 63.125rem) {
-	.card {
-		width: 15.25rem;
-	}
+	// .card {
+	// 	width: 15.25rem;
+	// }
 
-	.avatar {
-		width: 6.0625rem;
-		height: 6.0625rem;
-	}
+	// .avatar {
+	// 	width: 6.0625rem;
+	// 	height: 6.0625rem;
+	// }
 }
 
 @media (max-width: 48rem) {
@@ -382,30 +378,30 @@
 	}
 }
 
-@media (max-width: 47.8125rem) {
-	.card {
-		width: 13rem;
-		height: 14.5rem;
-	}
+// @media (max-width: 47.8125rem) {
+// 	.card {
+// 		width: 13rem;
+// 		height: 14.5rem;
+// 	}
 
-	.avatar {
-		width: 4.18rem;
-		height: 4.18rem;
-	}
-}
+// 	.avatar {
+// 		width: 4.18rem;
+// 		height: 4.18rem;
+// 	}
+// }
 
-@media (max-width: 39.375rem) {
-	.workers {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		justify-items: center;
-	}
-	.workers__item {
-		position: static;
-	}
-}
+// @media (max-width: 39.375rem) {
+// 	.workers {
+// 		display: grid;
+// 		grid-template-columns: 1fr 1fr;
+// 		justify-items: center;
+// 	}
+// 	.workers__item {
+// 		position: static;
+// 	}
+// }
 
-@media (max-width: 23.5rem) {
+@media (max-width: 425px) {
 	.workers-background {
 		background-image: none;
 		background-color: $color-light-green;

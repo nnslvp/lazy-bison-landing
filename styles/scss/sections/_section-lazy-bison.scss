@@ -55,7 +55,12 @@
 
 .lazy-bison-description__info {
 	display: flex;
-	@include background('/assets/images/lazy-bison-bg-1440.png', bottom right);
+	@include background(
+		'/assets/images/lazy-bison-bg-1440.png',
+		bottom right,
+		no-repeat,
+		contain
+	);
 	padding-top: 6.1875rem;
 	margin-bottom: 2.25rem;
 	.gray-line {
@@ -199,7 +204,7 @@
 	.lazy-bison-description__text {
 		margin: 0 0 3.125rem 0;
 		font-size: 1.25rem;
-		font-weight: 400;
+		font-weight: 425;
 		line-height: 1.75rem;
 		letter-spacing: 0em;
 	}
@@ -222,7 +227,7 @@
 	}
 }
 
-@media (max-width: 23.4375rem) {
+@media (max-width: 425px) {
 	.lazy-bison {
 		@include background(
 			'/assets/images/lazy-bison-bg-375.png',
@@ -273,14 +278,6 @@
 		}
 	}
 
-	.lazy-bison__title span:nth-child(2) {
-		padding-left: 2.5rem;
-	}
-
-	.lazy-bison__title span:nth-child(3) {
-		padding-left: 7.125rem;
-	}
-
 	.img-planets {
 		display: none;
 	}
@@ -306,7 +303,6 @@
 	}
 
 	.lazy-bison-description__btn {
-		width: 16rem;
 		margin: 0 auto;
 	}
 
