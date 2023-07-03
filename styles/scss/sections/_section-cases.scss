@@ -61,7 +61,7 @@
 	right: 1.6875rem;
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
 	.cases__inner {
 		@include background(
 			'/assets/images/cases-bg-768.png',

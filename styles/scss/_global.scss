@@ -74,7 +74,7 @@ object {
 
 main section:not(.cases, .testimonials) {
 	padding-bottom: 7.5rem;
-	@media (max-width: 48rem) {
+	@media (max-width: 768px) {
 		padding-bottom: 5rem;
 	}
 	@media (max-width: 425px) {
@@ -101,7 +101,7 @@ img {
 	max-width: calc($container-width + $container-padding * 2);
 	padding: 0 $container-padding;
 	margin: 0 auto;
-	@media (max-width: 48rem) {
+	@media (max-width: 768px) {
 		max-width: calc(44.75rem + $container-padding * 2);
 	}
 	@media (max-width: 425px) {
@@ -239,7 +239,7 @@ img {
 	display: flex;
 	gap: 0.9375rem;
 	margin-bottom: 2.5rem;
-	@media (max-width: 48rem) {
+	@media (max-width: 768px) {
 		display: flex;
 		gap: 0.9375rem;
 		margin-bottom: 0.75rem;
@@ -275,7 +275,7 @@ img {
 .section-title__heading {
 	display: flex;
 	align-items: center;
-	@media (max-width: 48rem) {
+	@media (max-width: 768px) {
 		font-weight: 600;
 		font-size: 1.75rem;
 		line-height: 2.45rem;
@@ -292,7 +292,7 @@ img {
 	@include center;
 	width: 4.5rem;
 	height: 4.5rem;
-	@media (max-width: 48rem) {
+	@media (max-width: 768px) {
 		width: 3.125rem;
 		height: 3.125rem;
 	}
