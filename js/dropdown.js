@@ -64,7 +64,7 @@ function buttonClickHandler(event) {
 		btn.classList.remove('active')
 	})
 
-	if (widthScreen > 375) {
+	if (widthScreen > 425) {
 		description.textContent = getDescriptionByButton(buttonText)
 		title.textContent = getTitleByButton(buttonText)
 		description.classList.add('fade-in')
@@ -87,3 +87,5 @@ function buttonClickHandler(event) {
 buttons.forEach(currentButton => {
 	currentButton.addEventListener('click', buttonClickHandler)
 })
+
+window.addEventListener('resize', e => {})
