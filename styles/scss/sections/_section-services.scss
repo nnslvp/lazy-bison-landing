@@ -172,13 +172,12 @@
 
 		.services__inner {
 			background: none;
-			padding-bottom: 3.125rem;
 		}
 	}
 
 	.services-info {
 		background: none;
-		height: 45.3125rem;
+		height: 45.625rem;
 	}
 
 	.services__gray-line,
@@ -190,8 +189,9 @@
 		flex-direction: column-reverse;
 		align-items: center;
 		gap: 0.75rem;
+		padding-bottom: 2.5625rem;
+		padding-top: 2.1875rem;
 	}
-
 	.services-info__title {
 		display: none;
 	}
@@ -210,6 +210,7 @@
 		display: block;
 		overflow: hidden;
 		max-height: 0;
+		background-color: $color-night-blue;
 		@include text--small;
 		margin-bottom: 0;
 		margin: 0rem;
@@ -222,7 +223,7 @@
 
 	.services-info__types {
 		width: 19.9375rem;
-		padding-top: 2.1875rem;
+		padding-top: 0;
 	}
 
 	.services-info__type-button {
