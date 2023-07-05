@@ -36,7 +36,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		transition: opacity 0.3s linear;
+		transition: opacity $transition-duration $transition-easing;
 
 		.get-consultation__title {
 			margin-bottom: 0.625rem;
@@ -84,7 +84,7 @@
 		display: block;
 		text-align: end;
 		color: $color-system-red;
-		transition: opacity 0.3s linear;
+		transition: opacity $transition-duration $transition-easing;
 	}
 
 	.error-text.error {
@@ -98,7 +98,7 @@
 		position: absolute;
 		bottom: 1rem;
 		right: 1rem;
-		transition: opacity 0.3s linear;
+		transition: opacity $transition-duration $transition-easing;
 	}
 
 	.error-icon.error {
@@ -112,7 +112,7 @@
 	input[type='email'],
 	textarea {
 		border: 0.0625rem solid $color-black;
-		transition: border-color 0.3s linear;
+		transition: border-color $transition-duration $transition-easing;
 	}
 
 	input[type='email'] {
@@ -152,7 +152,7 @@
 			border: 0.0938rem solid #333f52;
 			border-radius: 0.125rem;
 			margin-right: 0.5rem;
-			transition: border-color 0.3s linear;
+			transition: border-color $transition-duration $transition-easing;
 
 			&.error {
 				border: 0.0938rem solid $color-system-red;
@@ -214,7 +214,7 @@
 		border: 0.0625rem solid $color-grey;
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: $breakpoint-lg) {
 		padding: 1.3956rem 2.375rem 1.3625rem 2.375rem;
 
 		&.submit-success .popup-content {
@@ -313,7 +313,7 @@
 		}
 	}
 
-	@media (max-width: 425px) {
+	@media (max-width: $breakpoint-md) {
 		padding: 1.4612rem 3.3988rem 1.4219rem 3.3988rem;
 
 		&.submit-success .popup-content {

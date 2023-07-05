@@ -58,7 +58,7 @@
 		height: 30.3125rem;
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: $breakpoint-lg) {
 		.project__info {
 			padding: 2.3125rem 0 0.8125rem 0;
 			border-right: 0.0625rem solid $color-light-grey;
@@ -100,7 +100,7 @@
 		}
 	}
 
-	@media (max-width: 425px) {
+	@media (max-width: $breakpoint-md) {
 		.project__inner {
 			flex-direction: column-reverse;
 			padding: 4.75rem 0 3.125rem 0;

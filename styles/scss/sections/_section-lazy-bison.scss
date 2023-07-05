@@ -39,7 +39,7 @@
 		width: 0;
 		height: 4.75rem;
 		background-color: $color-neon-green;
-		animation: width 1s linear forwards;
+		animation: width $duration-text--highlight $transition-easing forwards;
 		@keyframes width {
 			100% {
 				width: 100%;
@@ -102,7 +102,7 @@
 		right: 4.4375rem;
 		width: 10.6469rem;
 		height: 10.6425rem;
-		animation: circle-rotation 4s infinite linear;
+		animation: circle-rotation 4s infinite $transition-easing;
 	}
 }
 
@@ -130,7 +130,7 @@
 	letter-spacing: 0.03em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-lg) {
 	.lazy-bison-description__info {
 		background: none;
 	}
@@ -227,7 +227,7 @@
 	}
 }
 
-@media (max-width: 425px) {
+@media (max-width: $breakpoint-md) {
 	.lazy-bison {
 		@include background(
 			'/assets/images/lazy-bison-bg-375.png',

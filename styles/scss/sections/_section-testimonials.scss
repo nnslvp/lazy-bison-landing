@@ -47,13 +47,13 @@
 	@include background(
 		'/assets/images/workers-bg.png',
 		center,
-		no-repeat,
+		inherit,
 		contain
 	);
 }
 
 .workers {
-	transition: opacity 0.5s ease-in-out;
+	transition: opacity $duration-workers-opacity $transition-easing;
 }
 
 .workers.fade-out {
@@ -228,7 +228,7 @@
 	// }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-lg) {
 	.consultation__inner {
 		.planet-blue {
 			width: 4.7363rem;
@@ -401,7 +401,7 @@
 // 	}
 // }
 
-@media (max-width: 425px) {
+@media (max-width: $breakpoint-md) {
 	.workers-background {
 		background-image: none;
 		background-color: $color-light-green;

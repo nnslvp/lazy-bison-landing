@@ -64,7 +64,7 @@
 	color: $color-grey;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-lg) {
 	.footer {
 		padding: 0.8125rem 0 0.8125rem 0;
 	}
@@ -114,7 +114,7 @@
 	}
 }
 
-@media (max-width: 425px) {
+@media (max-width: $breakpoint-md) {
 	.footer {
 		padding: 0.8125rem 0 1.3125rem 0;
 	}

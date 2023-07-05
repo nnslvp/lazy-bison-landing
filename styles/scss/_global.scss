@@ -7,18 +7,18 @@
 }
 
 html {
-	font-size: 0.833vw;
+	font-size: $root-font-size;
 	scroll-behavior: smooth;
-	@media (max-width: 1440px) {
+	@media (max-width: $breakpoint-xl) {
 		font-size: 1.111vw;
 	}
-	@media (max-width: 768px) {
+	@media (max-width: $breakpoint-lg) {
 		font-size: 2.083vw;
 	}
-	@media (max-width: 425px) {
+	@media (max-width: $breakpoint-md) {
 		font-size: 16px;
 	}
-	@media (max-width: 375px) {
+	@media (max-width: $breakpoint-sm) {
 		font-size: 4.267vw;
 	}
 }
@@ -74,10 +74,10 @@ object {
 
 main section:not(.cases, .testimonials) {
 	padding-bottom: 7.5rem;
-	@media (max-width: 768px) {
+	@media (max-width: $breakpoint-lg) {
 		padding-bottom: 5rem;
 	}
-	@media (max-width: 425px) {
+	@media (max-width: $breakpoint-md) {
 		padding-bottom: 0rem;
 	}
 }
@@ -101,10 +101,10 @@ img {
 	max-width: calc($container-width + $container-padding * 2);
 	padding: 0 $container-padding;
 	margin: 0 auto;
-	@media (max-width: 768px) {
+	@media (max-width: $breakpoint-lg) {
 		max-width: calc(44.75rem + $container-padding * 2);
 	}
-	@media (max-width: 425px) {
+	@media (max-width: $breakpoint-md) {
 		max-width: calc(20.9375rem + $container-padding * 2);
 	}
 }
@@ -214,7 +214,7 @@ img {
 		line-height: 1.5137rem;
 		padding: 0.875rem 2.8438rem;
 	}
-	@media (max-width: 425px) {
+	@media (max-width: $breakpoint-md) {
 		font-size: 1.0625rem;
 		line-height: 1.5rem;
 		padding: 0.875rem 2.8438rem;
@@ -239,7 +239,7 @@ img {
 	display: flex;
 	gap: 0.9375rem;
 	margin-bottom: 2.5rem;
-	@media (max-width: 768px) {
+	@media (max-width: $breakpoint-lg) {
 		display: flex;
 		gap: 0.9375rem;
 		margin-bottom: 0.75rem;
@@ -265,23 +265,24 @@ img {
 	width: 10.6469rem;
 	height: 10.6425rem;
 	position: absolute;
-	animation: circle-rotation 5s infinite linear;
+	animation: circle-rotation $duration-circle-ruby-on-rails infinite
+		$transition-easing;
 }
 
 .fade-in {
-	animation: fadeIn 0.3s ease-in-out;
+	animation: fadeIn $transition-duration $transition-easing;
 }
 
 .section-title__heading {
 	display: flex;
 	align-items: center;
-	@media (max-width: 768px) {
+	@media (max-width: $breakpoint-lg) {
 		font-weight: 600;
 		font-size: 1.75rem;
 		line-height: 2.45rem;
 		letter-spacing: 0.03em;
 	}
-	@media (max-width: 425px) {
+	@media (max-width: $breakpoint-md) {
 		font-size: 1.625rem;
 		line-height: 2.25rem;
 		letter-spacing: 0.02em;
@@ -292,7 +293,7 @@ img {
 	@include center;
 	width: 4.5rem;
 	height: 4.5rem;
-	@media (max-width: 768px) {
+	@media (max-width: $breakpoint-lg) {
 		width: 3.125rem;
 		height: 3.125rem;
 	}

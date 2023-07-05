@@ -76,7 +76,7 @@
 	z-index: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-lg) {
 	.explore-item__title {
 		font-size: 1.25rem;
 		line-height: 1.75rem;
@@ -144,7 +144,7 @@
 	}
 }
 
-@media (max-width: 425px) {
+@media (max-width: $breakpoint-md) {
 	.explore__list {
 		display: flex;
 		flex-direction: column;
