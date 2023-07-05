@@ -265,8 +265,7 @@ img {
 	width: 10.6469rem;
 	height: 10.6425rem;
 	position: absolute;
-	animation: circle-rotation $duration-circle-ruby-on-rails infinite
-		$transition-easing;
+	animation: circle-rotation $duration-circle-ruby-on-rails infinite linear;
 }
 
 .fade-in {

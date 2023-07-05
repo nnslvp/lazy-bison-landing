@@ -102,7 +102,7 @@
 		right: 4.4375rem;
 		width: 10.6469rem;
 		height: 10.6425rem;
-		animation: circle-rotation 4s infinite $transition-easing;
+		animation: circle-rotation $duration-circle-ruby-on-rails infinite linear;
 	}
 }
 
