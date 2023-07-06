@@ -114,6 +114,9 @@
 .lazy-bison__stats {
 	display: flex;
 	justify-content: end;
+	.planet-text {
+		display: none;
+	}
 }
 
 .lazy-bison__stats {
@@ -213,9 +216,6 @@
 		justify-content: space-around;
 		gap: 0;
 		flex-wrap: wrap;
-		.planet-text {
-			display: none;
-		}
 	}
 
 	.lazy-bison__stats-text {
