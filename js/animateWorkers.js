@@ -9,7 +9,7 @@ function shuffleArray(array) {
 	return array
 }
 
-if (widthScreen > 375) {
+if (widthScreen > 425) {
 	setInterval(() => {
 		const items = Array.from(workers.children)
 		const shuffledItems = shuffleArray(items)
