@@ -65,6 +65,10 @@
 	height: 35.3125rem;
 }
 
+.swiper.workers__list {
+	overflow: visible;
+}
+
 .workers__item {
 	&:nth-child(1) {
 		bottom: 0rem;
@@ -217,17 +221,6 @@
 	}
 }
 
-@media (max-width: 63.125rem) {
-	// .card {
-	// 	width: 15.25rem;
-	// }
-
-	// .avatar {
-	// 	width: 6.0625rem;
-	// 	height: 6.0625rem;
-	// }
-}
-
 @media (max-width: $breakpoint-lg) {
 	.consultation__inner {
 		.planet-blue {
@@ -378,29 +371,6 @@
 	}
 }
 
-// @media (max-width: 47.8125rem) {
-// 	.card {
-// 		width: 13rem;
-// 		height: 14.5rem;
-// 	}
-
-// 	.avatar {
-// 		width: 4.18rem;
-// 		height: 4.18rem;
-// 	}
-// }
-
-// @media (max-width: 39.375rem) {
-// 	.workers {
-// 		display: grid;
-// 		grid-template-columns: 1fr 1fr;
-// 		justify-items: center;
-// 	}
-// 	.workers__item {
-// 		position: static;
-// 	}
-// }
-
 @media (max-width: $breakpoint-md) {
 	.workers-background {
 		background-image: none;
@@ -415,6 +385,10 @@
 		position: relative;
 		top: -1.5rem;
 		gap: 0;
+	}
+
+	.swiper.workers__list {
+		overflow: hidden;
 	}
 
 	.testimonials__gray-line {

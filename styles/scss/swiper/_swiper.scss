@@ -1,9 +1,5 @@
 .swiper {
 	overflow: hidden;
-
-	@media (max-width: $breakpoint-md) {
-		overflow: hidden;
-	}
 }
 
 .swiper-slide {

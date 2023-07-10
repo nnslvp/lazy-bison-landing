@@ -1,11 +1,13 @@
 const sliders = document.querySelectorAll('.swiper')
 const [projectSlider, workersSlider] = sliders
+
 const projectSwiperWrapper = projectSlider.querySelector('.swiper-wrapper')
 const projectSwiperWrapperContent = projectSwiperWrapper.innerHTML
 
-console.log(projectSwiperWrapperContent)
+let newWorkersSwiper
+let newProjectSwiper
 
-const projectSliderSwiper = new Swiper(projectSlider, {
+newProjectSwiper = new Swiper(projectSlider, {
 	slidesPerView: 1,
 	spaceBetween: 0,
 	loop: true,
@@ -17,7 +19,7 @@ const projectSliderSwiper = new Swiper(projectSlider, {
 })
 
 function initializeWorkersSlider() {
-	const workersSwiper = new Swiper(workersSlider, {
+	newWorkersSwiper = new Swiper(workersSlider, {
 		slidesPerView: 1,
 		spaceBetween: 0,
 		loop: true,
@@ -30,7 +32,9 @@ function initializeWorkersSlider() {
 }
 
 function mobileSlider() {
-	if (window.innerWidth <= 425 && projectSlider.dataset.mobile === 'true') {
+	const isMobile = window.innerWidth <= 425
+
+	if (isMobile && projectSlider.dataset.mobile === 'false') {
 		const slides = projectSlider.querySelectorAll('.project-slide__item')
 
 		slides.forEach(el => {
@@ -39,38 +43,20 @@ function mobileSlider() {
 		})
 
 		projectSwiperWrapper.innerHTML = ''
-
-		projectSliderSwiper.appendSlide(slides)
-	} else if (
-		window.innerWidth > 425 &&
-		projectSlider.dataset.mobile === 'false'
-	) {
-		projectSwiperWrapper.insertAdjacentHTML(
-			'beforeend',
-			projectSwiperWrapperContent
-		)
+		newProjectSwiper.appendSlide(slides)
+		projectSlider.dataset.mobile = 'true'
+	} else if (!isMobile && projectSlider.dataset.mobile === 'true') {
+		projectSwiperWrapper.innerHTML = projectSwiperWrapperContent
+		projectSlider.dataset.mobile = 'false'
 	}
-	// if (window.innerWidth <= 425 && workersSlider.dataset.mobile === 'false') {
-	// 	const newWorkersSwiper = new Swiper(workersSlider, {
-	// 		slidesPerView: 1,
-	// 		spaceBetween: 0,
-	// 		loop: true,
-	// 		init: true,
-	// 		pagination: {
-	// 			el: workersSlider.querySelector('.swiper-pagination'),
-	// 			clickable: true,
-	// 		},
-	// 	})
 
-	// 	projectSlider.dataset.mobile = 'true'
-	// 	workersSlider.dataset.mobile = 'true'
-	// } else {
-	// 	projectSlider.dataset.mobile = 'false'
-	// 	workersSlider.dataset.mobile = 'false'
-	// 	if (window.innerWidth >= 425 && workersSlider.dataset.mobile === 'true') {
-	// 		workersSlider.destroy()
-	// 	}
-	// }
+	if (isMobile && workersSlider.dataset.mobile === 'false') {
+		initializeWorkersSlider()
+		workersSlider.dataset.mobile = 'true'
+	} else if (!isMobile && workersSlider.dataset.mobile === 'true') {
+		newWorkersSwiper.destroy()
+		workersSlider.dataset.mobile = 'false'
+	}
 }
 
 window.addEventListener('resize', mobileSlider)

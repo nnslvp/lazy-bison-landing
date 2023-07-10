@@ -11,29 +11,3 @@
 @import './popups/popup';
 @import './burger-menu-btn';
 @import './swiper/swiper';
-
-.projects-slide {
-	display: grid;
-	justify-content: center;
-	grid-template-columns: minmax(18.75rem, 38.75rem) minmax(6.25rem, 25.25rem);
-	grid-column-gap: 1.75rem;
-	grid-row-gap: 1.375rem;
-}
-
-.project-slide__item:nth-child(1) {
-	grid-area: 1 / 1 / 3 / 2;
-	img {
-		border-radius: 6.25rem 0rem 0rem 0rem;
-	}
-}
-
-.project-slide__item:nth-child(2) {
-	grid-area: 1 / 2 / 2 / 3;
-}
-
-.project-slide__item:nth-child(3) {
-	grid-area: 2 / 2 / 3 / 3;
-	img {
-		border-radius: 6.25rem 0rem 6.25rem 6.25rem;
-	}
-}
