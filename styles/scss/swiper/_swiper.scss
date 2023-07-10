@@ -1,5 +1,6 @@
 .swiper {
-	overflow: inherit;
+	overflow: hidden;
+
 	@media (max-width: $breakpoint-md) {
 		overflow: hidden;
 	}
