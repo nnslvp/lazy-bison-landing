@@ -1654,16 +1654,6 @@ img {
     position: relative;
     height: 11.0625rem;
   }
-  .workers__list {
-    width: 17rem;
-    height: 17.25rem;
-    position: relative;
-    top: -1.5rem;
-    gap: 0;
-  }
-  .swiper.workers__list {
-    overflow: hidden;
-  }
   .testimonials__gray-line {
     display: block;
     margin-bottom: 1.125rem;
@@ -1677,8 +1667,17 @@ img {
   .testimonials__subtitle {
     margin-bottom: 2.5rem;
   }
-  .workers {
+  .swiper.workers-swiper {
     display: flex;
+    width: 17rem;
+    height: 17.25rem;
+    gap: 0;
+    overflow: hidden;
+    position: relative;
+    top: -1.5rem;
+  }
+  .workers__item {
+    position: initial;
   }
   .avatar {
     width: 5.75rem;
@@ -1696,9 +1695,6 @@ img {
     font-size: 0.875rem;
     line-height: 1.25rem;
     letter-spacing: 0.025rem;
-  }
-  .workers__item {
-    position: initial;
   }
   .consultation {
     padding: 10.5rem 0 3.75rem 0;
@@ -1973,6 +1969,7 @@ img {
   margin-bottom: 2.5rem;
 }
 .popup.popup__get-consultation .input-email__wrapper {
+  display: block;
   position: relative;
 }
 .popup.popup__get-consultation .error-text {
@@ -2270,14 +2267,14 @@ img {
 .popup.popup-project .project__description-text {
   width: 32rem;
 }
-.popup.popup-project .name-app__inner {
+.popup.popup-project .type-app__inner {
   display: flex;
   justify-content: end;
   align-items: center;
   padding-right: 0.625rem;
   gap: 0.625rem;
 }
-.popup.popup-project .name-app__title {
+.popup.popup-project .type-app__title {
   font-style: normal;
   font-weight: 425;
   font-size: 1rem;
@@ -2318,7 +2315,7 @@ img {
     font-size: 0.75rem;
     line-height: 1.05rem;
   }
-  .popup.popup-project .name-app__title {
+  .popup.popup-project .type-app__title {
     font-size: 0.75rem;
     line-height: 1.0625rem;
   }
@@ -2506,13 +2503,15 @@ img {
   height: auto;
 }
 
-#swiper-pagination {
+#slider-projects-pagination,
+#slider-workers-pagination {
   display: flex;
   justify-content: center;
   gap: 0.4375rem;
 }
 
-#swiper-pagination .swiper-pagination-bullet {
+#slider-projects-pagination .swiper-pagination-bullet,
+#slider-workers-pagination .swiper-pagination-bullet {
   width: 0.875rem;
   height: 0.875rem;
   background-color: #dcdcdc;

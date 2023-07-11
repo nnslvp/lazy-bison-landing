@@ -376,18 +376,6 @@
 		height: 11.0625rem;
 	}
 
-	.workers__list {
-		width: 17rem;
-		height: 17.25rem;
-		position: relative;
-		top: -1.5rem;
-		gap: 0;
-	}
-
-	.swiper.workers__list {
-		overflow: hidden;
-	}
-
 	.testimonials__gray-line {
 		display: block;
 		margin-bottom: 1.125rem;
@@ -404,8 +392,18 @@
 		margin-bottom: 2.5rem;
 	}
 
-	.workers {
+	.swiper.workers-swiper {
 		display: flex;
+		width: 17rem;
+		height: 17.25rem;
+		gap: 0;
+		overflow: hidden;
+		position: relative;
+		top: -1.5rem;
+	}
+
+	.workers__item {
+		position: initial;
 	}
 
 	.avatar {
@@ -427,10 +425,6 @@
 		font-size: 0.875rem;
 		line-height: 1.25rem;
 		letter-spacing: 0.025rem;
-	}
-
-	.workers__item {
-		position: initial;
 	}
 
 	.consultation {

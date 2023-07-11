@@ -3,13 +3,13 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lazy Bison</title>
 	<link rel="icon" type="image/png" href="/assets/icons/favicon.svg">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./styles/css/normalize.css">
 	<link rel="stylesheet" href="./styles/css/main.css">
 </head>
@@ -106,6 +106,7 @@
 							</div>
 						</div>
 					</div>
+				</div>
 			</section>
 
 			<section id='services' class="services">
@@ -317,29 +318,29 @@
 							</div>
 							<div class="swiper-wrapper ">
 								<div class="swiper-slide projects-slide ">
-									<div class="projects-slide__item ">
+									<div class="projects-slide__item">
 										<img src="./assets/images/project-img-one.png" alt='cases' class="slider__image ">
 									</div>
-									<div class="projects-slide__item ">
+									<div class="projects-slide__item">
 										<img src="./assets/images/project-img-two.png" alt='cases' class="slider__image">
 									</div>
-									<div class="projects-slide__item ">
+									<div class="projects-slide__item">
 										<img src="./assets/images/project-img-three.png" alt='cases' class="slider__image">
 									</div>
 								</div>
-								<div class="swiper-slide projects-slide ">
-									<div class="projects-slide__item ">
+								<div class="swiper-slide projects-slide">
+									<div class="projects-slide__item">
 										<img src="./assets/images/project-img-one.png" alt='cases' class="slider__image ">
 									</div>
-									<div class="projects-slide__item ">
+									<div class="projects-slide__item">
 										<img src="./assets/images/project-img-two.png" alt='cases' class="slider__image">
 									</div>
-									<div class="projects-slide__item ">
+									<div class="projects-slide__item">
 										<img src="./assets/images/project-img-three.png" alt='cases' class="slider__image">
 									</div>
 								</div>
 							</div>
-							<div id='swiper-pagination' class="swiper-pagination"></div>
+							<div id='slider-projects-pagination' class="swiper-pagination"></div>
 						</div>
 					</div>
 				</div>
@@ -379,7 +380,7 @@
 					<div class="workers-background">
 						<div class="container">
 							<div class="swiper workers-swiper" data-mobile="false">
-								<div class="swiper-wrapper  workers__list">
+								<ul class="swiper-wrapper  workers__list">
 									<li class="swiper-slide workers__item ">
 										<div class="card worker-1">
 											<div class="avatar">
@@ -444,8 +445,8 @@
 											</div>
 										</div>
 									</li>
-								</div>
-								<div id='swiper-pagination' class="swiper-pagination"></div>
+								</ul>
+								<div id='slider-workers-pagination' class="swiper-pagination"></div>
 							</div>
 						</div>
 					</div>
@@ -556,12 +557,12 @@
 				<div class="form-group">
 					<label class='text--small label-email' for="email">
 						E-mail
-						<div class="input-email__wrapper">
+						<span class="input-email__wrapper">
 							<svg class="error-icon">
 								<use xlink:href="./assets/icons/sprite.svg#error-circle"></use>
 							</svg>
 							<input class="input-email" placeholder='exapmle@gmail.com' type="email" id="email" name="email" required>
-						</div>
+						</span>
 						<span class='error-text'>Invalid e-mail</span>
 					</label>
 					<div class="textarea__container">
@@ -600,19 +601,19 @@
 		<div class="popup-content">
 			<div class="project__inner">
 				<div class="project__info">
-					<h3 class=" project__title heading--small"></h3>
+					<h3 class=" project__title heading--small">Name of project</h3>
 					<div class="project__description">
 						<p class="project__description-text  text--medium"></p>
 					</div>
-					<div class="name-app__inner">
-						<h4 class='name-app__title'></h4>
+					<div class="type-app__inner">
+						<h4 class='type-app__title'>Crowdfunding web application</h4>
 						<div class="arrow-img__container">
 							<img src="./assets/icons/arrow-right-square.svg" alt="arrow">
 						</div>
 					</div>
 				</div>
 				<div class="project__img">
-					<img class='project__img-img' src="" alt="project-img">
+					<img class='project__img-img' src="./assets/images/project-img-one.png" alt="project-img">
 				</div>
 			</div>
 		</div>

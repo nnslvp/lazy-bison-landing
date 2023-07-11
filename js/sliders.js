@@ -1,9 +1,8 @@
 const sliders = document.querySelectorAll('.swiper')
 const [projectSlider, workersSlider] = sliders
-
 const projectSwiperWrapper = projectSlider.querySelector('.swiper-wrapper')
 const projectSwiperWrapperContent = projectSwiperWrapper.innerHTML
-
+const projectsSlides = projectSlider.querySelectorAll('.projects-slide__item')
 let newWorkersSwiper
 let newProjectSwiper
 
@@ -35,17 +34,16 @@ function mobileSlider() {
 	const isMobile = window.innerWidth <= 425
 
 	if (isMobile && projectSlider.dataset.mobile === 'false') {
-		const slides = projectSlider.querySelectorAll('.project-slide__item')
-
-		slides.forEach(el => {
+		projectsSlides.forEach(el => {
 			el.classList.remove(...el.classList)
 			el.classList.add('swiper-slide')
 		})
-
 		projectSwiperWrapper.innerHTML = ''
-		newProjectSwiper.appendSlide(slides)
+		newProjectSwiper.appendSlide(projectsSlides)
 		projectSlider.dataset.mobile = 'true'
-	} else if (!isMobile && projectSlider.dataset.mobile === 'true') {
+	}
+
+	if (!isMobile && projectSlider.dataset.mobile === 'true') {
 		projectSwiperWrapper.innerHTML = projectSwiperWrapperContent
 		projectSlider.dataset.mobile = 'false'
 	}
@@ -53,7 +51,9 @@ function mobileSlider() {
 	if (isMobile && workersSlider.dataset.mobile === 'false') {
 		initializeWorkersSlider()
 		workersSlider.dataset.mobile = 'true'
-	} else if (!isMobile && workersSlider.dataset.mobile === 'true') {
+	}
+
+	if (!isMobile && workersSlider.dataset.mobile === 'true') {
 		newWorkersSwiper.destroy()
 		workersSlider.dataset.mobile = 'false'
 	}
