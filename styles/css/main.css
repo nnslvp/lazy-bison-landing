@@ -1302,6 +1302,9 @@ img {
     padding-bottom: 1.75rem;
     margin-bottom: 3.1563rem;
   }
+  .projects-slide {
+    display: initial;
+  }
   .slider__image {
     border-radius: 0;
   }

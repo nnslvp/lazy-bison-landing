@@ -36,7 +36,7 @@ function mobileSlider() {
 	if (isMobile && projectSlider.dataset.mobile === 'false') {
 		projectsSlides.forEach(el => {
 			el.classList.remove(...el.classList)
-			el.classList.add('swiper-slide')
+			el.classList.add('swiper-slide', 'projects-slide')
 		})
 		projectSwiperWrapper.innerHTML = ''
 		newProjectSwiper.appendSlide(projectsSlides)

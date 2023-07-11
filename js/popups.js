@@ -1,4 +1,4 @@
-const slides = document.querySelectorAll('.projects-slide')
+const projectsSlides = document.querySelectorAll('.slider__image')
 const getConsultationButtons = document.querySelectorAll(
 	'.get-consultation-btn'
 )
@@ -90,8 +90,9 @@ function getImagePathByIndex(index) {
 	return imagePaths[index]
 }
 
-slides.forEach((slide, index) => {
+projectsSlides.forEach((slide, index) => {
 	slide.addEventListener('click', () => {
+		console.log('popup-project')
 		handleClickSlideProject(index)
 	})
 })
