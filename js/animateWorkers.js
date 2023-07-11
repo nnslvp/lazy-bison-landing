@@ -1,4 +1,4 @@
-const workers = document.querySelector('.workers')
+const workers = document.querySelector('.workers__list')
 const widthScreen = document.documentElement.clientWidth
 
 function shuffleArray(array) {

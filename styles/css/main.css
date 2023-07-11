@@ -1215,21 +1215,21 @@ img {
   grid-row-gap: 1.375rem;
 }
 
-.project-slide__item:nth-child(1) {
+.projects-slide__item:nth-child(1) {
   grid-area: 1/1/3/2;
 }
-.project-slide__item:nth-child(1) img {
+.projects-slide__item:nth-child(1) img {
   border-radius: 6.25rem 0rem 0rem 0rem;
 }
 
-.project-slide__item:nth-child(2) {
+.projects-slides__item:nth-child(2) {
   grid-area: 1/2/2/3;
 }
 
-.project-slide__item:nth-child(3) {
+.projects-slide__item:nth-child(3) {
   grid-area: 2/2/3/3;
 }
-.project-slide__item:nth-child(3) img {
+.projects-slide__item:nth-child(3) img {
   border-radius: 6.25rem 0rem 6.25rem 6.25rem;
 }
 
@@ -1359,21 +1359,18 @@ img {
   background-color: transparent;
 }
 
-.workers {
-  transition: opacity 0.5s ease-in-out;
-}
-
-.workers.fade-out {
-  opacity: 0;
-}
-
-.workers__list {
+.swiper.workers-swiper {
+  overflow: visible;
   position: relative;
   height: 35.3125rem;
 }
 
-.swiper.workers__list {
-  overflow: visible;
+.workers__list {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.workers__list.fade-out {
+  opacity: 0;
 }
 
 .workers__item:nth-child(1) {

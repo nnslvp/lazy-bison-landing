@@ -1,4 +1,4 @@
-const slides = document.querySelectorAll('.project-slide')
+const slides = document.querySelectorAll('.projects-slide')
 const getConsultationButtons = document.querySelectorAll(
 	'.get-consultation-btn'
 )

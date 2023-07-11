@@ -52,21 +52,18 @@
 	);
 }
 
-.workers {
-	transition: opacity $duration-workers-opacity $transition-easing;
-}
-
-.workers.fade-out {
-	opacity: 0;
-}
-
-.workers__list {
+.swiper.workers-swiper {
+	overflow: visible;
 	position: relative;
 	height: 35.3125rem;
 }
 
-.swiper.workers__list {
-	overflow: visible;
+.workers__list {
+	transition: opacity $duration-workers-opacity $transition-easing;
+}
+
+.workers__list.fade-out {
+	opacity: 0;
 }
 
 .workers__item {
