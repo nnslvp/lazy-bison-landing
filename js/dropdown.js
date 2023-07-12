@@ -81,7 +81,7 @@ function buttonClickHandler(event) {
 	}
 
 	buttonClick.classList.toggle('active')
-	descriptionByButton.classList.toggle('slide-in-height')
+	descriptionByButton.classList.add('slide-in-height')
 }
 
 buttons.forEach(currentButton => {

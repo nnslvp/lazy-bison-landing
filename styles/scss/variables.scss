@@ -1,6 +1,8 @@
 // variables.scss
 
 $container-width: 79.25rem;
+$container-width-768: 716px;
+$container-width-375: 335px;
 $container-padding: 0.625rem;
 
 // Colors
@@ -63,22 +65,25 @@ $secondary-gradient-blue-two: radial-gradient(
 
 // Typography
 $font-family: 'Outfit';
-$root-font-size: 1rem;
+$root-font-size: 0.833vw;
 // Spacing
 
 // Breakpoints
-$breakpoint-sm: 20rem;
+$breakpoint-sm: 375px;
 $breakpoint-md: 425px;
 $breakpoint-lg: 768px;
-$breakpoint-xl: 90rem;
+$breakpoint-xl: 1440px;
 
 //transition
 $transition-duration: 0.3s;
-$transition-easing: ease;
+$transition-easing: ease-in-out;
 $transition-property: all;
 
+//animation
+$duration-circle-ruby-on-rails: 5s;
+$duration-workers-opacity: 0.5s;
+$duration-text--highlight: 1s;
 // mixins.scss
-
 // Center element horizontally and vertically
 @mixin center {
 	display: flex;

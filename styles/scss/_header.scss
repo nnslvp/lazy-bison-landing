@@ -41,7 +41,7 @@
 	padding: 0.9063rem 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-lg) {
 	.header__inner {
 		padding: 0.4375rem 0 0.5rem 0rem;
 		justify-content: flex-start;
@@ -66,7 +66,7 @@
 		background-color: $color-night-blue;
 		padding-top: 8.4375rem;
 		padding-left: 2.875rem;
-		transition: left 0.3s ease-in-out;
+		transition: left $transition-duration $transition-easing;
 	}
 
 	.header__main-nav.menu-open {
@@ -84,7 +84,7 @@
 	}
 }
 
-@media (max-width: 425px) {
+@media (max-width: $breakpoint-md) {
 	.header__inner {
 		padding: 0.3406rem 0 0.3944rem 0rem;
 		justify-content: space-between;

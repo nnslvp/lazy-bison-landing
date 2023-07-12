@@ -9,6 +9,8 @@ const exploreSectionVerticalLines = document.querySelectorAll(
 	'.explore .vertical-gray-line'
 )
 
+const animationDuration = 1000
+
 const animateLines = lines => {
 	lines.forEach(line => {
 		animateLineHeight(line)
@@ -38,7 +40,6 @@ const getInitialHeight = line => {
 const animateLineWith = line => {
 	const width = getInitialWidth(line)
 	const targetWidth = parseInt(width)
-	const animationDuration = 1000
 	const animationStep = (targetWidth / animationDuration) * 10
 	let currentWidth = 0
 	line.style.opacity = 1
@@ -61,7 +62,6 @@ const animateLineWith = line => {
 const animateLineHeight = line => {
 	const height = getInitialHeight(line)
 	const targetHeight = parseInt(height)
-	const animationDuration = 1000
 	const animationStep = (targetHeight / animationDuration) * 10
 
 	let currentHeight = 0

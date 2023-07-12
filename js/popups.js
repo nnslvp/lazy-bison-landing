@@ -1,4 +1,4 @@
-const slides = document.querySelectorAll('.project-slide')
+const projectsSlides = document.querySelectorAll('.slider__image')
 const getConsultationButtons = document.querySelectorAll(
 	'.get-consultation-btn'
 )
@@ -6,7 +6,7 @@ const buttonsPopupClose = document.querySelectorAll('.close-popup-button')
 const popups = document.querySelectorAll('.popup')
 const popup = document.querySelector('.popup')
 const projectTitle = document.querySelector('.project__title')
-const projectType = document.querySelector('.name-app__title')
+const projectType = document.querySelector('.type-app__title')
 const projectImg = document.querySelector('.project__img-img')
 const projectDescription = document.querySelector('.project__description-text')
 const overlay = document.querySelector('.overlay')
@@ -90,8 +90,9 @@ function getImagePathByIndex(index) {
 	return imagePaths[index]
 }
 
-slides.forEach((slide, index) => {
+projectsSlides.forEach((slide, index) => {
 	slide.addEventListener('click', () => {
+		console.log('popup-project')
 		handleClickSlideProject(index)
 	})
 })

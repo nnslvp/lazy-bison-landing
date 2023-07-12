@@ -1,8 +1,5 @@
 .swiper {
-	overflow: inherit;
-	@media (max-width: 425px) {
-		overflow: hidden;
-	}
+	overflow: hidden;
 }
 
 .swiper-slide {
@@ -11,13 +8,15 @@
 	height: auto;
 }
 
-#swiper-pagination {
+#slider-projects-pagination,
+#slider-workers-pagination {
 	display: flex;
 	justify-content: center;
 	gap: 0.4375rem;
 }
 
-#swiper-pagination .swiper-pagination-bullet {
+#slider-projects-pagination .swiper-pagination-bullet,
+#slider-workers-pagination .swiper-pagination-bullet {
 	width: 0.875rem;
 	height: 0.875rem;
 	background-color: $color-light-grey;

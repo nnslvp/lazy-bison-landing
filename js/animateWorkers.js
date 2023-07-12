@@ -1,4 +1,4 @@
-const workers = document.querySelector('.workers')
+const workers = document.querySelector('.workers__list')
 const widthScreen = document.documentElement.clientWidth
 
 function shuffleArray(array) {
@@ -9,7 +9,7 @@ function shuffleArray(array) {
 	return array
 }
 
-if (widthScreen > 375) {
+if (widthScreen > 425) {
 	setInterval(() => {
 		const items = Array.from(workers.children)
 		const shuffledItems = shuffleArray(items)
