@@ -293,7 +293,7 @@ img {
   width: 10.6469rem;
   height: 10.6425rem;
   position: absolute;
-  animation: circle-rotation 5s infinite linear;
+  animation: circle-rotation 0s infinite linear;
 }
 
 .fade-in {
@@ -541,7 +541,6 @@ img {
   right: 4.4375rem;
   width: 10.6469rem;
   height: 10.6425rem;
-  animation: circle-rotation 5s infinite linear;
 }
 
 .lazy-bison-description__text {
@@ -1481,8 +1480,8 @@ img {
 }
 .consultation__inner .planet-text {
   position: absolute;
-  top: -0.3125rem;
-  left: 0;
+  top: 0.0625rem;
+  left: -0.1875rem;
 }
 .consultation__inner .planet-blue {
   z-index: -1;
@@ -1492,7 +1491,7 @@ img {
 .consultation__inner .circle-ruby-on-rails {
   z-index: -1;
   top: -3.0625rem;
-  left: -2.5rem;
+  left: -2.375rem;
 }
 
 .consultation__planet-img {
