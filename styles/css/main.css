@@ -1022,7 +1022,7 @@ img {
 }
 
 .explore-item__text {
-  width: 21.875rem;
+  max-width: 21.875rem;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
