@@ -26,8 +26,7 @@
 
 .services-info__inner {
 	display: flex;
-	justify-content: center;
-	gap: 1.8125rem;
+	gap: 1.25rem;
 	color: $color-white;
 }
 
@@ -35,7 +34,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	flex-basis: 45.5rem;
+	flex-basis: 46.625rem;
 	padding-top: 3.5rem;
 }
 
@@ -84,6 +83,7 @@
 		background: $color-light-green;
 		font-weight: 600;
 	}
+	@include text--medium;
 }
 
 @media (max-width: 53.125rem) {

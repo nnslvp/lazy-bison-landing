@@ -20,9 +20,11 @@
 	position: relative;
 	&:nth-child(1) {
 		position: relative;
-		width: 24.5rem;
+		flex-basis: 402px;
+		padding-left: 9px;
 	}
 	&:nth-child(2) {
+		padding-left: 39px;
 		flex-grow: 1;
 	}
 	&:nth-child(3) {
@@ -49,6 +51,7 @@
 
 .help {
 	color: $color-white;
+	@include background('/assets/images/helpbg.png', 0px -17px, no-repeat, cover);
 	background-color: $color-night-blue;
 }
 
@@ -71,8 +74,8 @@
 	width: 100%;
 	object-fit: cover;
 	position: absolute;
-	top: -6.9375rem;
-	left: 0;
+	top: -104px;
+	left: -16px;
 	z-index: 1;
 }
 

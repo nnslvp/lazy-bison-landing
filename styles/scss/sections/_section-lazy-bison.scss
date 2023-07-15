@@ -69,7 +69,7 @@
 
 	.planet-text__inner {
 		padding-top: 1.4375rem;
-		flex-basis: 26.625rem;
+		flex-basis: 448px;
 		display: flex;
 		justify-content: end;
 	}
@@ -113,6 +113,7 @@
 .lazy-bison__stats {
 	display: flex;
 	justify-content: end;
+	padding-right: 47px;
 	.planet-text {
 		display: none;
 	}
