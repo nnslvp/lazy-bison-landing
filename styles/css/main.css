@@ -513,7 +513,7 @@ img {
 
 .lazy-bison-description__info {
   display: flex;
-  background-image: url("/assets/images/lazy-bison-bg-1440.png");
+  background-image: url("/assets/images/sections/section-lazy-bison/lazy-bison-bg-1440.png");
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -581,7 +581,7 @@ img {
     background: none;
   }
   .lazy-bison {
-    background-image: url("/assets/images/lazy-bison-bg-768.png");
+    background-image: url("/assets/images/sections/section-lazy-bison/lazy-bison-bg-768.png");
     background-position: 0 2rem;
     background-repeat: no-repeat;
     background-size: contain;
@@ -655,7 +655,7 @@ img {
 }
 @media (max-width: 425px) {
   .lazy-bison {
-    background-image: url("/assets/images/lazy-bison-bg-375.png");
+    background-image: url("/assets/images/sections/section-lazy-bison/lazy-bison-bg-375.png");
     background-position: 0 -2.3125rem;
     background-repeat: no-repeat;
     background-size: contain;
@@ -723,7 +723,7 @@ img {
     margin: 0 auto;
   }
   .lazy-bison__stats {
-    background-image: url("/assets/images/stats-bg-375.png");
+    background-image: url("/assets/images/sections/section-lazy-bison/stats-bg-375.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -766,7 +766,7 @@ img {
   }
 }
 .services {
-  background-image: url("/assets/images/services-bg.png");
+  background-image: url("/assets/images/sections/section-services/services-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -782,7 +782,7 @@ img {
 }
 
 .services-info {
-  background-image: url("/assets/images/services-info-bg.png");
+  background-image: url("/assets/images/sections/section-services/services-info-bg.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -863,7 +863,7 @@ img {
     margin-bottom: 3.625rem;
   }
   .services .services__inner {
-    background-image: url("/assets/images/services-bg-768.png");
+    background-image: url("/assets/images/sections/section-services/services-bg-768.png");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -871,7 +871,7 @@ img {
     padding: 0;
   }
   .services-info {
-    background-image: url("/assets/images/services-info-bg-768.png");
+    background-image: url("/assets/images/sections/section-services/services-info-bg-768.png");
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
@@ -919,7 +919,7 @@ img {
 }
 @media (max-width: 425px) {
   .services {
-    background-image: url("/assets/images/services-info-bg-375.png");
+    background-image: url("/assets/images/sections/section-services/services-info-bg-375.png");
     background-position: 0 4.9375rem;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1051,7 +1051,7 @@ img {
 
 .help {
   color: #ffffff;
-  background-image: url("/assets/images/helpbg.png");
+  background-image: url("/assets/images/sections/section-explore/help-bg.png");
   background-position: 0rem -1.0625rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1121,7 +1121,7 @@ img {
     line-height: 1.25rem;
   }
   .help {
-    background-image: url("/assets/images/help-bg-768.svg");
+    background-image: url("/assets/images/sections/section-explore/help-bg-768.svg");
     background-position: 0rem 0rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1190,7 +1190,7 @@ img {
     max-width: 100%;
   }
   .help {
-    background-image: url("/assets/images/wehelp-bg-375.png");
+    background-image: url("/assets/images/sections/section-explore/help-bg-375.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1406,7 +1406,7 @@ img {
 }
 
 .workers-background {
-  background-image: url("/assets/images/workers-bg.png");
+  background-image: url("/assets/images/sections/section-testimonials/workers-bg.png");
   background-position: center;
   background-repeat: inherit;
   background-size: contain;
@@ -1469,12 +1469,6 @@ img {
   overflow: hidden;
 }
 
-.avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .name {
   font-size: 1.25rem;
   font-weight: 600;
@@ -1505,7 +1499,7 @@ img {
 }
 
 .consultation {
-  background-image: url("/assets/images/casesbg.png");
+  background-image: url("/assets/images/sections/section-cases/cases-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1515,7 +1509,7 @@ img {
 
 .consultation__inner {
   position: relative;
-  background-image: url("/assets/images/consultation-bg.png");
+  background-image: url("/assets/images/sections/section-testimonials/consultation-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1587,7 +1581,7 @@ img {
     left: -2.5625rem;
   }
   .workers-background {
-    background-image: url("/assets//images//workers-bg-768px.png");
+    background-image: url("/assets//images/sections/section-testimonials/workers-bg-768px.png");
   }
   .swiper.workers-swiper {
     height: 27rem;
@@ -1670,7 +1664,7 @@ img {
     letter-spacing: 0.0187rem;
   }
   .consultation {
-    background-image: url(/assets/images/cases-bg-768.png);
+    background-image: url("/assets/images/sections/section-cases/cases-bg-768.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1678,7 +1672,7 @@ img {
     padding: 9.8125rem 0 5rem 0;
   }
   .consultation__inner {
-    background-image: url("/assets/images/consultation-bg-768.png");
+    background-image: url("/assets/images/sections/section-testimonials/consultation-bg-768.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1757,7 +1751,7 @@ img {
     padding: 10.5rem 0 3.75rem 0;
   }
   .consultation__inner {
-    background-image: url(/assets/images/consultation-bg-375.png);
+    background-image: url("/assets/images/sections/section-testimonials/consultation-bg-375.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
