@@ -20,11 +20,11 @@
 	position: relative;
 	&:nth-child(1) {
 		position: relative;
-		flex-basis: 402px;
-		padding-left: 9px;
+		flex-basis: 25.125rem;
+		padding-left: 0.5625rem;
 	}
 	&:nth-child(2) {
-		padding-left: 39px;
+		padding-left: 2.4375rem;
 		flex-grow: 1;
 	}
 	&:nth-child(3) {
@@ -51,7 +51,12 @@
 
 .help {
 	color: $color-white;
-	@include background('/assets/images/helpbg.png', 0px -17px, no-repeat, cover);
+	@include background(
+		'/assets/images/helpbg.png',
+		0rem -1.0625rem,
+		no-repeat,
+		cover
+	);
 	background-color: $color-night-blue;
 }
 
@@ -74,24 +79,24 @@
 	width: 100%;
 	object-fit: cover;
 	position: absolute;
-	top: -104px;
-	left: -16px;
+	top: -6.5rem;
+	left: -1rem;
 	z-index: 1;
 }
 
 @media (max-width: $breakpoint-lg) {
 	.explore {
-		padding-top: 24px;
+		padding-top: 1.5rem;
 	}
 
 	.explore-item__title {
 		font-size: 1.25rem;
 		line-height: 1.75rem;
-		margin-bottom: 15px;
+		margin-bottom: 0.9375rem;
 	}
 
 	.explore-item__text {
-		gap: 3px;
+		gap: 0.1875rem;
 	}
 
 	.explore__item {
@@ -99,17 +104,17 @@
 	}
 
 	.explore__item:not(:first-child) {
-		padding-left: 8px;
+		padding-left: 0.5rem;
 	}
 
 	.explore__item:nth-child(1) {
 		max-width: 13.7287rem;
-		padding-left: 10px;
+		padding-left: 0.625rem;
 	}
 
 	.explore__item:nth-child(2) {
 		flex-grow: 1;
-		padding-left: 28px;
+		padding-left: 1.75rem;
 
 		.explore-item__text {
 			max-width: 13.75rem;
@@ -129,7 +134,7 @@
 	.help {
 		@include background(
 			'/assets/images/help-bg-768.svg',
-			0px 0px,
+			0rem 0rem,
 			no-repeat,
 			cover
 		);
@@ -159,6 +164,10 @@
 }
 
 @media (max-width: $breakpoint-md) {
+	.explore {
+		margin-bottom: 3.4375rem;
+	}
+
 	.explore__list {
 		display: flex;
 		flex-direction: column;
@@ -172,6 +181,14 @@
 	}
 	.explore__item:nth-child(1) {
 		max-width: 100%;
+		flex-basis: auto;
+		padding-left: 2rem;
+	}
+	.explore__item:nth-child(2) {
+		padding-left: 2rem;
+	}
+	.explore__item:nth-child(3) {
+		padding-left: 2rem;
 	}
 
 	.explore__item {
@@ -195,22 +212,26 @@
 	.help {
 		@include background(
 			'/assets/images/wehelp-bg-375.png',
-			center,
+			center center,
 			no-repeat,
-			contain
+			cover
 		);
 	}
 
 	.help__inner {
-		padding: 2.1875rem 0 5.8125rem 0;
+		padding: 3.0625rem 0 2.0625rem 0;
 	}
 
 	.help__title {
-		width: 15.625rem;
+		width: 15.9375rem;
 		margin: 0 0 2.125rem 0;
 		font-size: 1.625rem;
 		line-height: 2.25rem;
 		letter-spacing: 0.03em;
+	}
+
+	.help__text {
+		max-width: 19.875rem;
 	}
 
 	.background-svg {
