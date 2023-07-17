@@ -89,7 +89,6 @@
 @media (max-width: 53.125rem) {
 	.services {
 		background: none;
-
 		.section-title__inner {
 			margin-bottom: 3.625rem;
 		}
@@ -119,7 +118,7 @@
 	}
 
 	.services-info__inner {
-		gap: 1.8125rem;
+		gap: 0.8125rem;
 	}
 
 	.services-gray-line__wrapper {
@@ -131,17 +130,21 @@
 		font-weight: 425;
 		line-height: 1.75rem;
 	}
-
+	.services-info__gray-line {
+		margin: 0.875rem 0 0.3581rem 0;
+	}
 	.services-info__description {
-		flex-basis: 25.5625rem;
+		flex-basis: 27.5625rem;
 		padding-top: 1.9375rem;
 	}
 
 	.services-info__description-text {
-		max-width: 18rem;
-		font-size: 0.875rem;
-		line-height: 1.25rem;
-		margin-bottom: 0;
+		width: 288px;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 19.6px;
+		margin-bottom: 0.5625rem;
 		overflow: hidden;
 	}
 

@@ -72,7 +72,7 @@ object {
 	width: 100%;
 }
 
-main section:not(.cases, .testimonials) {
+section:not(.cases, .testimonials) {
 	padding-bottom: 7.5rem;
 	@media (max-width: $breakpoint-lg) {
 		padding-bottom: 5rem;
@@ -215,6 +215,11 @@ img {
 	&.active {
 		color: $color-black;
 		background-color: $color-light-green;
+	}
+	@media (max-width: 53.125rem) {
+		font-size: 17.297px;
+		font-weight: 600;
+		line-height: 24.216px;
 	}
 	@media (max-width: $breakpoint-md) {
 		font-size: 1.0625rem;

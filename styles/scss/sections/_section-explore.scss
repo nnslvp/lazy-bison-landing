@@ -80,10 +80,18 @@
 }
 
 @media (max-width: $breakpoint-lg) {
+	.explore {
+		padding-top: 24px;
+	}
+
 	.explore-item__title {
 		font-size: 1.25rem;
 		line-height: 1.75rem;
-		margin-bottom: 0.75rem;
+		margin-bottom: 15px;
+	}
+
+	.explore-item__text {
+		gap: 3px;
 	}
 
 	.explore__item {
@@ -91,15 +99,17 @@
 	}
 
 	.explore__item:not(:first-child) {
-		padding-left: 1rem;
+		padding-left: 8px;
 	}
 
 	.explore__item:nth-child(1) {
 		max-width: 13.7287rem;
+		padding-left: 10px;
 	}
 
 	.explore__item:nth-child(2) {
 		flex-grow: 1;
+		padding-left: 28px;
 
 		.explore-item__text {
 			max-width: 13.75rem;
@@ -117,6 +127,12 @@
 	}
 
 	.help {
+		@include background(
+			'/assets/images/help-bg-768.svg',
+			0px 0px,
+			no-repeat,
+			cover
+		);
 		color: $color-white;
 		background-color: $color-night-blue;
 	}
@@ -138,12 +154,7 @@
 	}
 
 	.background-svg {
-		width: 100%;
-		object-fit: cover;
-		position: absolute;
-		top: -0.0625rem;
-		left: 0;
-		z-index: 1;
+		display: none;
 	}
 }
 

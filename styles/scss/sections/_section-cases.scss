@@ -101,6 +101,13 @@
 		grid-row-gap: 0.875rem;
 	}
 
+	.projects-slide {
+		justify-content: start;
+		grid-template-columns: 25.0625rem 15.9375rem;
+		grid-column-gap: 1.125rem;
+		grid-row-gap: 0.75rem;
+	}
+
 	.cases__planet-img {
 		width: 6.7775rem;
 		height: 6.7138rem;
