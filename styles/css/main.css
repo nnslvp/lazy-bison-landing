@@ -1214,10 +1214,10 @@ img {
   }
 }
 .cases__inner {
-  background-image: url("/assets/images/cases-bg.png");
+  background-image: url("/assets/images/sections/section-cases/cases-bg.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -1282,10 +1282,10 @@ img {
 
 @media (max-width: 768px) {
   .cases__inner {
-    background-image: url("/assets/images/cases-bg-768.png");
+    background-image: url("/assets/images/sections/section-cases/cases-bg-768.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-color: transparent;
     display: flex;
     flex-direction: column;
@@ -1334,10 +1334,10 @@ img {
 }
 @media (max-width: 425px) {
   .cases__inner {
-    background-image: url("/assets/images/cases-bg-375.png");
+    background-image: url("/assets/images/sections/section-cases/cases-bg-375.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-color: transparent;
     display: flex;
     flex-direction: column;
