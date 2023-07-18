@@ -82,9 +82,9 @@ function getTitleByIndex(index) {
 
 function getImagePathByIndex(index) {
 	const imagePaths = [
-		'./assets/images/popup-project.jpeg',
-		'./assets/images/project-img-two.png',
-		'./assets/images/project-img-three.png',
+		'./assets/images/sections/section-cases/projeject-1.avif',
+		'./assets/images/sections/section-cases/project-img-two.png',
+		'./assets/images/sections/section-cases/projeject-1.avif',
 	]
 
 	return imagePaths[index]
@@ -92,7 +92,6 @@ function getImagePathByIndex(index) {
 
 projectsSlides.forEach((slide, index) => {
 	slide.addEventListener('click', () => {
-		console.log('popup-project')
 		handleClickSlideProject(index)
 	})
 })

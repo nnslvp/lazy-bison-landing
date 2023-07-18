@@ -88,7 +88,7 @@ button {
 
 img {
 	width: 100%;
-	height: auto;
+	height: 100%;
 	object-fit: cover;
 }
 
@@ -216,10 +216,10 @@ img {
 		color: $color-black;
 		background-color: $color-light-green;
 	}
-	@media (max-width: 53.125rem) {
-		font-size: 17.297px;
+	@media (max-width: $breakpoint-lg) {
+		font-size: 1.0811rem;
 		font-weight: 600;
-		line-height: 24.216px;
+		line-height: 1.5135rem;
 	}
 	@media (max-width: $breakpoint-md) {
 		font-size: 1.0625rem;

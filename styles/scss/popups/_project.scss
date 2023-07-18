@@ -101,6 +101,7 @@
 	}
 
 	@media (max-width: $breakpoint-md) {
+		border-radius: 0.5671rem;
 		.project__inner {
 			flex-direction: column-reverse;
 			padding: 4.75rem 0 3.125rem 0;

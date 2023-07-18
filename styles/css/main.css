@@ -116,7 +116,7 @@ button {
 
 img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -245,11 +245,11 @@ img {
   color: #212121;
   background-color: #e5ffaf;
 }
-@media (max-width: 53.125rem) {
+@media (max-width: 768px) {
   .button--primary {
-    font-size: 17.297px;
+    font-size: 1.0811rem;
     font-weight: 600;
-    line-height: 24.216px;
+    line-height: 1.5135rem;
   }
 }
 @media (max-width: 425px) {
@@ -1252,30 +1252,32 @@ img {
   right: 1.6875rem;
 }
 
-.projects-slide {
+.swiper-slide.projects-slide {
   display: grid;
   justify-content: center;
-  grid-template-columns: minmax(18.75rem, 38.75rem) minmax(6.25rem, 25.25rem);
+  grid-template-columns: 38.75rem 25.25rem;
   grid-column-gap: 1.75rem;
   grid-row-gap: 1.375rem;
+  height: 30.125rem;
+}
+
+.projects-slide__item {
+  overflow: hidden;
 }
 
 .projects-slide__item:nth-child(1) {
   grid-area: 1/1/3/2;
-}
-.projects-slide__item:nth-child(1) img {
   border-radius: 6.25rem 0rem 0rem 0rem;
 }
 
-.projects-slides__item:nth-child(2) {
+.projects-slide__item:nth-child(2) {
   grid-area: 1/2/2/3;
 }
 
 .projects-slide__item:nth-child(3) {
   grid-area: 2/2/3/3;
-}
-.projects-slide__item:nth-child(3) img {
   border-radius: 6.25rem 0rem 6.25rem 6.25rem;
+  height: 13.5625rem;
 }
 
 @media (max-width: 768px) {
@@ -1312,11 +1314,15 @@ img {
     grid-column-gap: 1.0625rem;
     grid-row-gap: 0.875rem;
   }
-  .projects-slide {
+  .swiper-slide.projects-slide {
+    height: 18.9375rem;
     justify-content: start;
     grid-template-columns: 25.0625rem 15.9375rem;
     grid-column-gap: 1.125rem;
     grid-row-gap: 0.75rem;
+  }
+  .projects-slide__item:nth-child(3) {
+    height: 8.5625rem;
   }
   .cases__planet-img {
     width: 6.7775rem;
@@ -1339,7 +1345,8 @@ img {
   .cases__inner .gray-line {
     display: block;
   }
-  .projects-wrapper {
+  .swiper-slide.projects-slide {
+    height: 21rem;
     display: flex;
     justify-content: initial;
     grid-template-columns: initial;
@@ -1581,7 +1588,7 @@ img {
     left: -2.5625rem;
   }
   .workers-background {
-    background-image: url("/assets//images/sections/section-testimonials/workers-bg-768px.png");
+    background-image: url("/assets/images/sections/section-testimonials/workers-bg-768px.png");
   }
   .swiper.workers-swiper {
     height: 27rem;
@@ -2228,7 +2235,6 @@ img {
 }
 @media (max-width: 425px) {
   .popup.popup__get-consultation {
-    width: 100%;
     padding: 1.625rem 1.5rem 1.4375rem 1.5rem;
   }
   .popup.popup__get-consultation.submit-success .popup-content {
@@ -2408,6 +2414,9 @@ img {
   }
 }
 @media (max-width: 425px) {
+  .popup.popup-project {
+    border-radius: 0.5671rem;
+  }
   .popup.popup-project .project__inner {
     flex-direction: column-reverse;
     padding: 4.75rem 0 3.125rem 0;
@@ -2459,6 +2468,11 @@ img {
   background-color: #ffffff;
   z-index: 9999;
   transition: opacity 0.3s ease-in-out;
+}
+@media (max-width: 425px) {
+  .popup {
+    width: 100%;
+  }
 }
 
 .overlay {
