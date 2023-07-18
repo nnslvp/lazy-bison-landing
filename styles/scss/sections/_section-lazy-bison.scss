@@ -14,7 +14,7 @@
 
 .lazy-bison__title span:nth-child(2) {
 	display: inline-block;
-	padding-left: 9%;
+	padding-left: 11%;
 }
 
 .lazy-bison-tittle__text {
@@ -56,7 +56,7 @@
 .lazy-bison-description__info {
 	display: flex;
 	@include background(
-		'/assets/images/lazy-bison-bg-1440.png',
+		'/assets/images/sections/section-lazy-bison/lazy-bison-bg-1440.png',
 		bottom right,
 		no-repeat,
 		contain
@@ -69,7 +69,7 @@
 
 	.planet-text__inner {
 		padding-top: 1.4375rem;
-		flex-basis: 26.625rem;
+		flex-basis: 28rem;
 		display: flex;
 		justify-content: end;
 	}
@@ -102,7 +102,6 @@
 		right: 4.4375rem;
 		width: 10.6469rem;
 		height: 10.6425rem;
-		animation: circle-rotation $duration-circle-ruby-on-rails infinite linear;
 	}
 }
 
@@ -114,6 +113,7 @@
 .lazy-bison__stats {
 	display: flex;
 	justify-content: end;
+	padding-right: 2.9375rem;
 	.planet-text {
 		display: none;
 	}
@@ -140,7 +140,7 @@
 
 	.lazy-bison {
 		@include background(
-			'/assets/images/lazy-bison-bg-768.png',
+			'/assets/images/sections/section-lazy-bison/lazy-bison-bg-768.png',
 			0 2rem,
 			no-repeat,
 			contain
@@ -181,14 +181,10 @@
 		padding-top: 0;
 		padding-bottom: 1.9375rem;
 
-		.lazy-bison-description__text {
-			max-width: 31.0625rem;
-		}
-
 		.planet-text__inner {
 			flex-basis: 0;
 			justify-content: flex-start;
-			padding: 2.4375rem 0 0 5.875rem;
+			padding: 2.4375rem 0 0 7.25rem;
 			margin-bottom: 3.125rem;
 		}
 
@@ -205,6 +201,7 @@
 	}
 
 	.lazy-bison-description__text {
+		max-width: 31.0625rem;
 		margin: 0 0 3.125rem 0;
 		font-size: 1.25rem;
 		font-weight: 425;
@@ -215,6 +212,7 @@
 	.lazy-bison__stats {
 		justify-content: space-around;
 		gap: 0;
+		padding: 0;
 		flex-wrap: wrap;
 	}
 
@@ -233,7 +231,7 @@
 @media (max-width: $breakpoint-md) {
 	.lazy-bison {
 		@include background(
-			'/assets/images/lazy-bison-bg-375.png',
+			'/assets/images/sections/section-lazy-bison/lazy-bison-bg-375.png',
 			0 -2.3125rem,
 			no-repeat,
 			contain
@@ -253,17 +251,16 @@
 		.planet-blue {
 			width: 4.375rem;
 			height: 4.375rem;
-			top: 2.5rem;
-			right: auto;
-			left: 3.125rem;
+			top: 2.1875rem;
+			left: 4.3125rem;
 		}
 
 		.circle-ruby-on-rails {
 			width: 5.375rem;
 			height: 5.875rem;
-			top: 0.9375rem;
+			top: 0.625rem;
 			right: auto;
-			left: 0.5625rem;
+			left: 1.875rem;
 			animation: none;
 		}
 	}
@@ -272,6 +269,11 @@
 		font-size: 2.625rem;
 		line-height: 3.125rem;
 		letter-spacing: 0.03em;
+
+		.lazy-bison-title__text:last-child {
+			display: block;
+			text-align: end;
+		}
 	}
 
 	.lazy-bison__text--highlight {
@@ -298,6 +300,7 @@
 	}
 
 	.lazy-bison-description__text {
+		max-width: 20.9375rem;
 		padding-top: 0;
 		margin: 0 0 3.125rem 0;
 		font-size: 1.125rem;
@@ -311,7 +314,7 @@
 
 	.lazy-bison__stats {
 		@include background(
-			'/assets/images/stats-bg-375.png',
+			'/assets/images/sections/section-lazy-bison/stats-bg-375.png',
 			center,
 			no-repeat,
 			cover
@@ -319,14 +322,14 @@
 		display: flex;
 		justify-content: flex-start;
 		flex-wrap: wrap;
-		gap: 3rem 1.5rem;
+		gap: 2.8125rem 3.25rem;
 		flex-basis: auto;
 
 		.planet-text {
 			display: block;
 			position: relative;
 			top: 1.6875rem;
-			left: 52px;
+			left: 3.25rem;
 		}
 
 		.planet-blue {
@@ -340,7 +343,7 @@
 		.circle-ruby-on-rails {
 			width: 5.9375rem;
 			height: 6.0675rem;
-			top: -35px;
+			top: -2.1875rem;
 			left: auto;
 			right: -1.25rem;
 			animation: none;

@@ -12,6 +12,10 @@
 	background-color: $color-white;
 	z-index: 9999;
 	transition: opacity $transition-duration $transition-easing;
+
+	@media (max-width: $breakpoint-md) {
+		width: 100%;
+	}
 }
 
 .overlay {

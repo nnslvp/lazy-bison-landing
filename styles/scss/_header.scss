@@ -26,7 +26,6 @@
 
 .header__main-nav-list {
 	width: 100%;
-	margin: 0 0.625rem;
 	display: flex;
 	justify-content: space-between;
 }
@@ -43,7 +42,7 @@
 
 @media (max-width: $breakpoint-lg) {
 	.header__inner {
-		padding: 0.4375rem 0 0.5rem 0rem;
+		padding: 0.4375rem 0.75rem 0.5rem 0.75rem;
 		justify-content: flex-start;
 	}
 
@@ -86,7 +85,6 @@
 
 @media (max-width: $breakpoint-md) {
 	.header__inner {
-		padding: 0.3406rem 0 0.3944rem 0rem;
 		justify-content: space-between;
 	}
 

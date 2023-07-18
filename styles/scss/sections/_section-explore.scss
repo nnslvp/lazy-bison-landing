@@ -20,9 +20,11 @@
 	position: relative;
 	&:nth-child(1) {
 		position: relative;
-		width: 24.5rem;
+		flex-basis: 25.125rem;
+		padding-left: 0.5625rem;
 	}
 	&:nth-child(2) {
+		padding-left: 2.4375rem;
 		flex-grow: 1;
 	}
 	&:nth-child(3) {
@@ -38,7 +40,7 @@
 }
 
 .explore-item__text {
-	width: 21.875rem;
+	max-width: 21.875rem;
 	display: flex;
 	flex-direction: column;
 	gap: 0.25rem;
@@ -49,6 +51,12 @@
 
 .help {
 	color: $color-white;
+	@include background(
+		'/assets/images/sections/section-explore/help-bg.png',
+		0rem -1.0625rem,
+		no-repeat,
+		cover
+	);
 	background-color: $color-night-blue;
 }
 
@@ -71,16 +79,24 @@
 	width: 100%;
 	object-fit: cover;
 	position: absolute;
-	top: -6.9375rem;
-	left: 0;
+	top: -6.5rem;
+	left: -1rem;
 	z-index: 1;
 }
 
 @media (max-width: $breakpoint-lg) {
+	.explore {
+		padding-top: 1.5rem;
+	}
+
 	.explore-item__title {
 		font-size: 1.25rem;
 		line-height: 1.75rem;
-		margin-bottom: 0.75rem;
+		margin-bottom: 0.9375rem;
+	}
+
+	.explore-item__text {
+		gap: 0.1875rem;
 	}
 
 	.explore__item {
@@ -88,15 +104,17 @@
 	}
 
 	.explore__item:not(:first-child) {
-		padding-left: 1rem;
+		padding-left: 0.5rem;
 	}
 
 	.explore__item:nth-child(1) {
 		max-width: 13.7287rem;
+		padding-left: 0.625rem;
 	}
 
 	.explore__item:nth-child(2) {
 		flex-grow: 1;
+		padding-left: 1.75rem;
 
 		.explore-item__text {
 			max-width: 13.75rem;
@@ -114,6 +132,12 @@
 	}
 
 	.help {
+		@include background(
+			'/assets/images/sections/section-explore/help-bg-768.svg',
+			0rem 0rem,
+			no-repeat,
+			cover
+		);
 		color: $color-white;
 		background-color: $color-night-blue;
 	}
@@ -135,16 +159,15 @@
 	}
 
 	.background-svg {
-		width: 100%;
-		object-fit: cover;
-		position: absolute;
-		top: -0.0625rem;
-		left: 0;
-		z-index: 1;
+		display: none;
 	}
 }
 
 @media (max-width: $breakpoint-md) {
+	.explore {
+		margin-bottom: 3.4375rem;
+	}
+
 	.explore__list {
 		display: flex;
 		flex-direction: column;
@@ -158,6 +181,14 @@
 	}
 	.explore__item:nth-child(1) {
 		max-width: 100%;
+		flex-basis: auto;
+		padding-left: 2rem;
+	}
+	.explore__item:nth-child(2) {
+		padding-left: 2rem;
+	}
+	.explore__item:nth-child(3) {
+		padding-left: 2rem;
 	}
 
 	.explore__item {
@@ -180,23 +211,27 @@
 
 	.help {
 		@include background(
-			'/assets/images/wehelp-bg-375.png',
-			center,
+			'/assets/images/sections/section-explore/help-bg-375.png',
+			center center,
 			no-repeat,
-			contain
+			cover
 		);
 	}
 
 	.help__inner {
-		padding: 2.1875rem 0 5.8125rem 0;
+		padding: 3.0625rem 0 2.0625rem 0;
 	}
 
 	.help__title {
-		width: 15.625rem;
+		width: 15.9375rem;
 		margin: 0 0 2.125rem 0;
 		font-size: 1.625rem;
 		line-height: 2.25rem;
 		letter-spacing: 0.03em;
+	}
+
+	.help__text {
+		max-width: 19.875rem;
 	}
 
 	.background-svg {
