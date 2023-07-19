@@ -1076,6 +1076,7 @@ img {
 
 .background-svg {
   width: 100%;
+  height: auto;
   object-fit: cover;
   position: absolute;
   top: -6.5rem;
@@ -1960,13 +1961,13 @@ img {
   }
 }
 .popup.popup__get-consultation {
-  border-radius: 0;
-  background-image: url("/assets/images/consultation-popup-bg.png");
-  background-position: initial;
+  background-image: url("/assets/images/popup-bg.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: transparent;
-  padding: 3.8125rem 5.4375rem 3.75rem 5.4375rem;
+  background-color: #ffffff;
+  border-radius: 0;
+  padding-top: 4.0625rem;
 }
 .popup.popup__get-consultation.submit-success {
   display: flex;
@@ -1974,7 +1975,13 @@ img {
   align-items: center;
   max-height: 42.6875rem;
 }
-.popup.popup__get-consultation.submit-success .popup-content {
+.popup.popup__get-consultation.submit-success .form {
+  visibility: hidden;
+}
+.popup.popup__get-consultation.submit-success .popup-content > .get-consultation__title {
+  visibility: hidden;
+}
+.popup.popup__get-consultation.submit-success .popup-content > .get-consultation__subtitle {
   visibility: hidden;
 }
 .popup.popup__get-consultation.submit-success .success-submit-block {
@@ -1982,13 +1989,12 @@ img {
   visibility: visible;
 }
 .popup.popup__get-consultation .success-submit-block {
-  max-width: 21.1875rem;
   opacity: 0;
   visibility: hidden;
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top: 9.6875rem;
   bottom: 0;
   margin: auto;
   display: flex;
@@ -2004,6 +2010,9 @@ img {
   max-width: 20.625rem;
   margin-bottom: 4.375rem;
 }
+.popup.popup__get-consultation .success-submit-block .get-consultation__subtitle span {
+  display: block;
+}
 .popup.popup__get-consultation .success-submit-block .two-ticks {
   width: 3.25rem;
   height: 1.875rem;
@@ -2014,13 +2023,19 @@ img {
   background-color: transparent;
 }
 .popup.popup__get-consultation .get-consultation__title {
+  text-align: center;
   margin-bottom: 0.25rem;
 }
 .popup.popup__get-consultation .get-consultation__subtitle {
   text-align: center;
   margin-bottom: 2.5rem;
 }
+.popup.popup__get-consultation .form-wrapper {
+  background-color: #e5ffaf;
+  padding: 1.25rem 5.4375rem 3.75rem 5.4375rem;
+}
 .popup.popup__get-consultation .form-group {
+  width: 26.625rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -2149,10 +2164,9 @@ img {
 }
 @media (max-width: 768px) {
   .popup.popup__get-consultation {
-    padding: 1.3956rem 2.375rem 1.3625rem 2.375rem;
+    padding-top: 1.375rem;
   }
   .popup.popup__get-consultation.submit-success .popup-content {
-    width: 12.125rem;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -2189,6 +2203,9 @@ img {
   .popup.popup__get-consultation .character-count {
     font-size: 0.625rem;
     line-height: 0.875rem;
+  }
+  .popup.popup__get-consultation .form-wrapper {
+    padding: 0.3125rem 2.9063rem 1.375rem 2.9063rem;
   }
   .popup.popup__get-consultation .form-group {
     width: 14.1875rem;
@@ -2235,10 +2252,10 @@ img {
 }
 @media (max-width: 425px) {
   .popup.popup__get-consultation {
-    padding: 1.625rem 1.5rem 1.4375rem 1.5rem;
+    padding-top: 1.5625rem;
   }
   .popup.popup__get-consultation.submit-success .popup-content {
-    width: 13.25rem;
+    width: 100%;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -2284,6 +2301,10 @@ img {
     line-height: 1.05rem;
     letter-spacing: 0.0225rem;
   }
+  .popup.popup__get-consultation .form-wrapper {
+    width: 100%;
+    padding: 0rem 1.5rem 1.4375rem 1.5rem;
+  }
   .popup.popup__get-consultation .form-group label {
     font-size: 0.75rem;
     line-height: 1.05rem;
@@ -2296,7 +2317,7 @@ img {
   }
   .popup.popup__get-consultation .form-group {
     width: 20.4375rem;
-    gap: 0.9375rem;
+    gap: 0;
     margin-bottom: 1.5625rem;
   }
   .popup.popup__get-consultation input[type=email] {
