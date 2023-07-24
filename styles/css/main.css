@@ -55,6 +55,11 @@ body.hidden {
   overflow: hidden;
 }
 
+address,
+cite {
+  font-style: inherit;
+}
+
 h1 {
   font-weight: 500;
   font-size: 5.5rem;
