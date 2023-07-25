@@ -55,6 +55,10 @@ body.hidden {
   overflow: hidden;
 }
 
+address {
+  font-style: inherit;
+}
+
 h1 {
   font-weight: 500;
   font-size: 5.5rem;
@@ -1853,9 +1857,9 @@ img {
   flex-direction: column;
 }
 
-.contact-info {
+.contacts-info {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 0.75rem 1.75rem;
   margin-bottom: 2rem;
 }
@@ -1893,9 +1897,8 @@ img {
     max-width: 13.5rem;
     flex-wrap: nowrap;
   }
-  .contact-info {
+  .contacts-info {
     display: flex;
-    flex-wrap: wrap;
     gap: 0.4rem 0.9331rem;
     margin-bottom: 1.1062rem;
   }
@@ -1944,7 +1947,7 @@ img {
   .footer__contacts {
     max-width: 100%;
   }
-  .contact-info {
+  .contacts-info {
     gap: 0.4rem 3.375rem;
     margin-bottom: 1.5rem;
     font-weight: 400;
