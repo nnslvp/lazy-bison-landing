@@ -1,8 +1,8 @@
 // variables.scss
 
 $container-width: 79.25rem;
-$container-width-768: 716px;
-$container-width-375: 335px;
+$container-width-768: 44.75rem;
+$container-width-375: 20.9375rem;
 $container-padding: 0.625rem;
 
 // Colors
@@ -22,49 +22,13 @@ $color-white: #ffffff;
 $color-light-grey: #dcdcdc;
 $color-system-red: #ff6969;
 
-//gradients
-$secondary-gradient-pink: radial-gradient(
-	87.15% 85.05% at 100% 92.52%,
-	#eaeaea 14.68%,
-	#ffe6ed 30.98%,
-	#f7c2dc 38.64%,
-	#f2b0d0 47.71%,
-	#e98ed1 64.37%,
-	#6d73dd 78.96%,
-	#3073c1 91.46%,
-	#638b9f 100%
-);
-
-$secondary-gradient-pink-two: radial-gradient(
-	72.45% 72.45% at 27.78% 24.07%,
-	rgba(251, 181, 215, 0.37) 0%,
-	#f8a4cd 60.46%,
-	#e571c7 79.62%,
-	#515bf6 100%
-);
-
-$secondary-gradient-blue: radial-gradient(
-	87.15% 85.05% at 100% 92.52%,
-	#eaeaea 14.68%,
-	#e6fffc 30.98%,
-	#c2f7f7 38.64%,
-	#b0eef2 47.71%,
-	#8ee9d8 64.37%,
-	#6ddddd 78.96%,
-	#3073c1 91.46%,
-	#638b9f 100%
-);
-
-$secondary-gradient-blue-two: radial-gradient(
-	72.45% 72.45% at 27.78% 24.07%,
-	rgba(158, 236, 229, 0.48) 0%,
-	#9eece5 60.46%,
-	#72dfdd 79.62%,
-	#51bbf6 100%
-);
 
 // Typography
-$font-family: 'Outfit';
+
+$font-family: "Outfit", sans-serif;
+$second-family: "SF Pro Text", sans-serif;
+$third-family: "Lato", sans-serif;
+
 $root-font-size: 0.833vw;
 // Spacing
 
@@ -80,7 +44,7 @@ $transition-easing: ease-in-out;
 $transition-property: all;
 
 //animation
-$duration-circle-ruby-on-rails: 5s;
+$duration-circle-ruby-on-rails: 4s;
 $duration-workers-opacity: 0.5s;
 $duration-text--highlight: 1s;
 // mixins.scss

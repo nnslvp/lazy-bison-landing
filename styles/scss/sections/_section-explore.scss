@@ -1,6 +1,9 @@
 .explore__list {
 	display: flex;
 	flex-wrap: wrap;
+	.vertical-gray-line{
+		width: .125rem;
+	}
 }
 
 .explore-item__title {

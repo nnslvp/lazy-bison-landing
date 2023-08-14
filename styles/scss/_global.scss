@@ -141,6 +141,13 @@ img {
 	letter-spacing: 0.03em;
 }
 
+@mixin heading--smaller {
+	font-weight: 600;
+	font-size: 1.75rem;
+	line-height: 2.45rem;
+	letter-spacing: 0.03em;
+}
+
 .text--large {
 	font-size: 1.5rem;
 	font-weight: 400;
