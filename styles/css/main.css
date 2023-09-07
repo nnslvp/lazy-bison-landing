@@ -1273,7 +1273,7 @@ img {
           align-items: center;
   -ms-flex-preferred-size: 46.625rem;
       flex-basis: 46.625rem;
-  padding-top: 3.5rem;
+  padding-top: 12px;
 }
 
 .descriptions__content {
@@ -1299,7 +1299,13 @@ img {
 }
 
 .services-info__description-text {
+  font-size: 1.1875rem;
   width: 32rem;
+}
+
+.services-info__description-text span {
+  display: block;
+  margin-bottom: 0.9375rem;
 }
 
 .services-info__item .services-info__description-text {
@@ -1313,7 +1319,7 @@ img {
 
 .services-info__gray-line {
   width: 100%;
-  margin: 0.875rem 0 1.3581rem 0;
+  margin: 0.75rem 0 0.75rem 0;
 }
 
 .services-info__button {
@@ -1367,7 +1373,7 @@ img {
   }
   .services-info__inner {
     background-image: url("/assets/images/sections/section-services/services-info-bg.png");
-    background-position: bottom;
+    background-position: inherit;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: transparent;
@@ -1387,21 +1393,25 @@ img {
     line-height: 1.75rem;
   }
   .services-info__gray-line {
-    margin: 0.875rem 0 0.3581rem 0;
+    margin: 0.625rem 0 0.3581rem 0;
   }
   .services-info__description {
     -ms-flex-preferred-size: 27.5625rem;
         flex-basis: 27.5625rem;
-    padding-top: 1.9375rem;
+    padding-top: 0.3125rem;
   }
   .services-info__description-text {
     width: 18rem;
-    font-size: 0.875rem;
+    font-size: 0.625rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.225rem;
     margin-bottom: 0.5625rem;
     overflow: hidden;
+  }
+  .services-info__description-text span {
+    display: block;
+    margin-bottom: 5px;
   }
   .services-info__types {
     width: 15.5rem;

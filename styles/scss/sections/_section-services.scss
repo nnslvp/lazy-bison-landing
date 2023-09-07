@@ -25,7 +25,7 @@
 	flex-direction: column;
 	align-items: center;
 	flex-basis: 46.625rem;
-	padding-top: 3.5rem;
+	padding-top: 12px;
 }
 
 .descriptions__content {
@@ -50,7 +50,12 @@
 }
 
 .services-info__description-text {
+	font-size: 1.1875rem;
 	width: 32rem;
+}
+.services-info__description-text span {
+	display: block;
+	margin-bottom: .9375rem;
 }
 
 .services-info__item .services-info__description-text {
@@ -64,7 +69,7 @@
 
 .services-info__gray-line {
 	width: 100%;
-	margin: 0.875rem 0 1.3581rem 0;
+	margin: .75rem 0 .75rem 0;
 }
 
 .services-info__button {
@@ -119,7 +124,7 @@
 	.services-info__inner {
 		@include background(
 			"/assets/images/sections/section-services/services-info-bg.png",
-			bottom,
+			inherit,
 			no-repeat,
 			contain
 		);
@@ -143,21 +148,27 @@
 		line-height: 1.75rem;
 	}
 	.services-info__gray-line {
-		margin: 0.875rem 0 0.3581rem 0;
+		margin: .625rem 0 0.3581rem 0;
 	}
+
 	.services-info__description {
 		flex-basis: 27.5625rem;
-		padding-top: 1.9375rem;
+		padding-top: .3125rem;
 	}
 
 	.services-info__description-text {
 		width: 18rem;
-		font-size: 0.875rem;
+		font-size: .625rem;
 		font-style: normal;
 		font-weight: 400;
 		line-height: 1.225rem;
 		margin-bottom: 0.5625rem;
 		overflow: hidden;
+	}
+
+	.services-info__description-text span {
+		display: block;
+		margin-bottom: 5px;
 	}
 
 	.services-info__types {
