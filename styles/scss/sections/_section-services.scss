@@ -1,10 +1,5 @@
 .services {
-	@include background(
-		'/assets/images/sections/section-services/services-bg.png',
-		center,
-		no-repeat,
-		contain
-	);
+	@include background("/assets/images/sections/section-services/services-bg.png", center, no-repeat, contain);
 }
 
 .services__inner {
@@ -16,15 +11,10 @@
 }
 
 .services-info {
-	@include background(
-		'/assets/images/sections/section-services/services-info-bg.png',
-		top,
-		no-repeat,
-		contain
-	);
 }
 
 .services-info__inner {
+	@include background("/assets/images/sections/section-services/services-info-bg.png", top, no-repeat, contain);
 	display: flex;
 	gap: 1.25rem;
 	color: $color-white;
@@ -38,21 +28,38 @@
 	padding-top: 3.5rem;
 }
 
+.descriptions__content {
+	visibility: hidden;
+	overflow: hidden;
+	height: 0;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+}
+
+.descriptions__content.show {
+	opacity: 1;
+	visibility: visible;
+	overflow: visible;
+	height: auto;
+	pointer-events: auto;
+}
+
 .services-info__title {
 	text-align: center;
 }
 
 .services-info__description-text {
-	max-width: 32rem;
-	height: 14rem;
-	margin-bottom: 4.8125rem;
+	width: 32rem;
 }
 
 .services-info__item .services-info__description-text {
 	display: none;
 }
+
 .services-gray-line__wrapper {
 	width: 25.25rem;
+	margin: 0 auto;
 }
 
 .services-info__gray-line {
@@ -86,6 +93,11 @@
 	@include text--medium;
 }
 
+.services-primary__button {
+	margin-top: 2rem;
+	margin-left: 14.3125rem;
+}
+
 @media (max-width: 53.125rem) {
 	.services {
 		background: none;
@@ -95,7 +107,7 @@
 
 		.services__inner {
 			@include background(
-				'/assets/images/sections/section-services/services-bg-768.png',
+				"/assets/images/sections/section-services/services-bg-768.png",
 				bottom,
 				no-repeat,
 				contain
@@ -104,10 +116,10 @@
 		}
 	}
 
-	.services-info {
+	.services-info__inner {
 		@include background(
-			'/assets/images/sections/section-services/services-info-bg-768.png',
-			top,
+			"/assets/images/sections/section-services/services-info-bg.png",
+			bottom,
 			no-repeat,
 			contain
 		);
@@ -158,12 +170,16 @@
 		font-size: 0.875rem;
 		line-height: 1.25rem;
 	}
+	.services-primary__button {
+		margin-top: 2rem;
+		margin-left: 5.75rem;
+	}
 }
 
 @media (max-width: $breakpoint-md) {
 	.services {
 		@include background(
-			'/assets/images/sections/section-services/services-info-bg-375.png',
+			"/assets/images/sections/section-services/services-info-bg-375.png",
 			0 4.9375rem,
 			no-repeat,
 			contain
@@ -182,6 +198,10 @@
 		background: none;
 	}
 
+	.services-info__inner {
+		background: none;
+	}
+
 	.services__gray-line,
 	.services-info__description .services-info__gray-line {
 		display: none;
@@ -194,6 +214,7 @@
 		padding-bottom: 2.625rem;
 		padding-top: 2.1875rem;
 	}
+
 	.services-info__title {
 		display: none;
 	}
@@ -243,11 +264,15 @@
 	}
 
 	.services-info__type-button:after {
-		content: url('/assets/icons/shevronDown.svg');
+		content: url("/assets/icons/shevronDown.svg");
 		display: block;
 	}
 	.services-info__type-button.active:after {
 		transform: rotate(180deg);
 		transition: all 0.1s $transition-easing;
+	}
+
+	.services-primary__button {
+		margin: 0 auto;
 	}
 }
