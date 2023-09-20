@@ -2023,6 +2023,10 @@ img {
   height: 35.3125rem;
 }
 
+.workers__list > *:nth-child(n+5) {
+  display: none;
+}
+
 .workers__list {
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;

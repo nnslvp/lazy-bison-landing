@@ -54,6 +54,10 @@
 	height: 35.3125rem;
 }
 
+.workers__list > *:nth-child(n+5) {
+    display: none;
+}
+
 .workers__list {
 	transition: opacity $duration-workers-opacity $transition-easing;
 }
