@@ -10,9 +10,6 @@
 	margin-bottom: 5.1875rem;
 }
 
-.services-info {
-}
-
 .services-info__inner {
 	@include background("/assets/images/sections/section-services/services-info-bg.svg", top, no-repeat, contain);
 	display: flex;
