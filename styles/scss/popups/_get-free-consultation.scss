@@ -58,16 +58,7 @@
 			}
 		}
 
-		.two-ticks {
-			width: 3.25rem;
-			height: 1.875rem;
-			@include background(
-				'/assets/icons/two-ticks.svg',
-				center,
-				no-repeat,
-				contain
-			);
-		}
+	
 	}
 
 	.get-consultation__title {

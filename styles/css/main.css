@@ -1598,11 +1598,6 @@ img {
 
 .help {
   color: #ffffff;
-  background-image: url("/assets/images/sections/section-explore/help-bg.svg");
-  background-position: 0rem -1.0625rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: transparent;
   background-color: #212439;
 }
 
@@ -2706,15 +2701,6 @@ img {
 }
 .popup.popup__get-consultation .success-submit-block .get-consultation__subtitle span {
   display: block;
-}
-.popup.popup__get-consultation .success-submit-block .two-ticks {
-  width: 3.25rem;
-  height: 1.875rem;
-  background-image: url("/assets/icons/two-ticks.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: transparent;
 }
 .popup.popup__get-consultation .get-consultation__title {
   text-align: center;
