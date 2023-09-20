@@ -1,0 +1,48 @@
+.planet-blue {
+  height: 9.0625rem;
+  width: 9.0625rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='145' height='145' fill='none'%3E%3Ccircle cx='72.5' cy='72.5' r='72.5' fill='url(%23a)' transform='rotate(-180 72.5 72.5)'/%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='0' r='1' gradientTransform='rotate(-135.7 99.806 37.567) scale(176.567 139.054)' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='.147' stop-color='%23EAEAEA'/%3E%3Cstop offset='.31' stop-color='%23E6FFFC'/%3E%3Cstop offset='.386' stop-color='%23C2F7F7'/%3E%3Cstop offset='.477' stop-color='%23B0EEF2'/%3E%3Cstop offset='.644' stop-color='%238EE9D8'/%3E%3Cstop offset='.79' stop-color='%236DDDDD'/%3E%3Cstop offset='.915' stop-color='%233073C1'/%3E%3Cstop offset='1' stop-color='%23638B9F'/%3E%3C/radialGradient%3E%3C/defs%3E%3C/svg%3E");
+}
+
+.arrow-right-down-angle-square {
+  height: 4.5625rem;
+  width: 4.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='73' height='72' fill='none'%3E%3Cpath fill='%23C4FC50' stroke='%23333F52' d='M1.5.5h71v71h-71z'/%3E%3Cpath fill='%23333F52' d='m48.44 23.56.88 24-24 .88-.192-4.236 16.8-.616-18.932-17.593 2.89-3.11 18.932 17.593-.616-16.8 4.239-.118Z'/%3E%3Cpath stroke='%23333F52' d='M1.5.5h71v71h-71z'/%3E%3C/svg%3E");
+}
+
+.two-ticks {
+  height: 3.375rem;
+  width: 1.9375rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='54' height='31' fill='none'%3E%3Cpath fill='%23515BF6' d='M.923 17.77 13.5 30.346l3.172-3.195L4.118 14.597.923 17.769ZM50.04.151 26.235 23.979l-9.36-9.382-3.217 3.172 12.577 12.578 27-27L50.04.152ZM40.5 3.347 37.328.152 23.04 14.439l3.195 3.173L40.5 3.347Z'/%3E%3C/svg%3E");
+}
+.arrow-right-top-angle-square {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' fill='none'%3E%3Cpath fill='%23C4FC50' stroke='%23333F52' d='M.5 23.5V.5h23v23z'/%3E%3Cpath fill='%23333F52' d='m7.853 8.187 8-.294.294 8-1.412.065-.206-5.6-5.864 6.31-1.037-.963 5.865-6.31-5.6.205-.04-1.413Z'/%3E%3Cpath stroke='%23333F52' d='M.5 23.5V.5h23v23z'/%3E%3C/svg%3E");
+}
+
+.error-icon {
+  height: 1rem;
+  width: 1rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none'%3E%3Cpath fill='%23FF6969' d='M7.635 1C3.977 1 1 3.99 1 7.667a6.674 6.674 0 0 0 6.667 6.666 6.674 6.674 0 0 0 6.666-6.666C14.333 3.99 11.33 1 7.635 1Zm.032 12a5.34 5.34 0 0 1-5.334-5.333c0-2.941 2.378-5.334 5.302-5.334C10.594 2.333 13 4.726 13 7.667A5.34 5.34 0 0 1 7.667 13Z'/%3E%3Cpath fill='%23FF6969' d='M7.333 4.667h1.334v4.666H7.333V4.667Zm0 5.333h1.334v1.333H7.333V10Z'/%3E%3C/svg%3E");
+}
+
+.icon-facebook {
+  height: 2rem;
+  width: 2rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M10 4h12.005A5.995 5.995 0 0 1 28 9.995v12.012A5.995 5.995 0 0 1 22.005 28H9.995A5.995 5.995 0 0 1 4 22.005V10a6 6 0 0 1 6-6v0Z' clip-rule='evenodd'/%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M14.8 17.2H22M22 11.2h-1.26a3.54 3.54 0 0 0-3.54 3.54V28'/%3E%3C/svg%3E");
+}
+.icon-linkedin {
+  height: 2rem;
+  width: 2rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M10 4h12.005A5.995 5.995 0 0 1 28 9.995v12.012A5.995 5.995 0 0 1 22.005 28H9.995A5.995 5.995 0 0 1 4 22.005V10a6 6 0 0 1 6-6v0Z' clip-rule='evenodd'/%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M10.827 14.8V22M15.625 22v-4.2a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3V22M10.824 10.45a.3.3 0 1 0 .301.3.3.3 0 0 0-.301-.3'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-twitter {
+  height: 2rem;
+  width: 2rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M10 4h12.005A5.995 5.995 0 0 1 28 9.995v12.012A5.995 5.995 0 0 1 22.005 28H9.995A5.995 5.995 0 0 1 4 22.005V10a6 6 0 0 1 6-6v0Z' clip-rule='evenodd'/%3E%3Cpath fill='%23fff' d='M23.483 14.067a.75.75 0 1 0-1.5 0h1.5ZM8.94 20.024a.75.75 0 1 0-1.211.885l1.21-.885Zm-.723-.298a.75.75 0 0 0 .234 1.482l-.234-1.482Zm2.517-.06.239.712a.75.75 0 0 0 .295-1.239l-.534.528Zm-.8-9.6.66-.354a.75.75 0 0 0-1.27-.082l.61.437Zm4.8 4-.177.73a.75.75 0 0 0 .927-.705l-.75-.024Zm7.2-2.4-.626.414a.75.75 0 0 0 .626.337v-.75Zm2.4 0 .624.417a.75.75 0 0 0-.624-1.166v.75Zm-2.224 1.985a.75.75 0 0 0 1.248.832l-1.248-.832Zm-.126.416c0 2.662-.76 4.87-2.112 6.403-1.342 1.522-3.328 2.447-5.938 2.447v1.5c2.991 0 5.405-1.075 7.063-2.954 1.647-1.867 2.487-4.458 2.487-7.396h-1.5Zm-8.05 8.85c-1.455 0-2.422-.376-3.147-.89-.749-.529-1.285-1.233-1.847-2.003l-1.211.885c.555.76 1.219 1.655 2.191 2.343.995.705 2.27 1.165 4.014 1.165v-1.5Zm-5.483-1.71a.762.762 0 0 0 .114-.027l.03-.01.084-.026.278-.092.825-.276.819-.274.27-.09.075-.025.02-.007a.215.215 0 0 1 .005-.002h.001l-.238-.711-.238-.712-.002.001-.005.002-.02.007-.075.025a372.598 372.598 0 0 1-1.088.364 504.995 504.995 0 0 1-1.17.39l-.015.004.007-.002.016-.005a.844.844 0 0 1 .073-.015l.234 1.482Zm2.817-2.068c-2.41-2.436-2.59-6.03-.724-8.636l-1.22-.873c-2.283 3.188-2.057 7.598.877 10.564l1.067-1.055Zm-1.994-8.717c1.057 1.967 3.047 3.83 5.283 4.373l.355-1.457c-1.722-.419-3.406-1.932-4.317-3.626l-1.321.71Zm6.21 3.67c.032-.992.382-1.806.931-2.367.546-.557 1.329-.908 2.32-.908v-1.5c-1.366 0-2.545.493-3.392 1.359-.842.86-1.315 2.046-1.358 3.366l1.499.05Zm3.25-3.275c.705 0 1.216.133 1.604.34.387.207.699.511.97.923l1.252-.826c-.38-.577-.866-1.073-1.516-1.42-.647-.345-1.41-.517-2.31-.517v1.5Zm3.2 1.6h2.4v-1.5h-2.4v1.5Zm1.776-1.166-1.6 2.4 1.248.832 1.6-2.4-1.248-.832Z'/%3E%3C/svg%3E");
+}

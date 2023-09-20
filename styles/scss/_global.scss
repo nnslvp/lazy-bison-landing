@@ -72,6 +72,13 @@ li {
 	list-style: none;
 }
 
+i{
+	display: inline-block;
+	background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 object {
 	width: 100%;
 }
