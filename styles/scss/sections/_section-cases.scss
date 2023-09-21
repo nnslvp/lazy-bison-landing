@@ -1,5 +1,8 @@
+.cases{
+	@include background("../../assets/images/sections/section-cases/cases-bg.svg", 0 2.6875rem, no-repeat, contain);
+}
+
 .cases__inner {
-	@include background("../../assets/images/sections/section-cases/cases-bg.svg", center, no-repeat, contain);
 	display: flex;
 	flex-direction: column;
 }

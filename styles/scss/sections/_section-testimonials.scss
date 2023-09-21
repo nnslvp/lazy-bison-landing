@@ -44,8 +44,17 @@
 }
 
 .workers-background {
+	position: relative;
 	@include background("../../assets/images/sections/section-testimonials/workers-bg.svg", center, no-repeat, contain);
 	background-color: $color-light-green;
+
+	.planet-blue{
+		width: 10rem;
+		height: 10rem;
+		position: absolute;
+		top: -133px;
+		right: 17px;
+	}
 }
 
 .swiper.workers-swiper {
@@ -210,6 +219,9 @@
 
 	.workers-background {
 		background-image: url("../../assets/images/sections/section-testimonials/workers-bg-768px.svg");
+		.planet-blue{
+			display: none;
+		}
 	}
 
 	.swiper.workers-swiper {
@@ -421,7 +433,7 @@
 	}
 
 	.consultation__inner {
-		background-image: url("./assets/images/sections/section-testimonials/consultation-bg-375.svg");
+		background-image: url("../../assets/images/sections/section-testimonials/consultation-bg-375.svg");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;

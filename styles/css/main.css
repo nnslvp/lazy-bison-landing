@@ -1770,12 +1770,15 @@ img {
     visibility: hidden;
   }
 }
-.cases__inner {
+.cases {
   background-image: url("../../assets/images/sections/section-cases/cases-bg.svg");
-  background-position: center;
+  background-position: 0 2.6875rem;
   background-repeat: no-repeat;
   background-size: contain;
   background-color: transparent;
+}
+
+.cases__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2001,12 +2004,20 @@ img {
 }
 
 .workers-background {
+  position: relative;
   background-image: url("../../assets/images/sections/section-testimonials/workers-bg.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   background-color: transparent;
   background-color: #e5ffaf;
+}
+.workers-background .planet-blue {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: -133px;
+  right: 17px;
 }
 
 .swiper.workers-swiper {
@@ -2201,6 +2212,9 @@ img {
   .workers-background {
     background-image: url("../../assets/images/sections/section-testimonials/workers-bg-768px.svg");
   }
+  .workers-background .planet-blue {
+    display: none;
+  }
   .swiper.workers-swiper {
     height: 38rem;
   }
@@ -2380,7 +2394,7 @@ img {
     padding: 10.5rem 0 3.75rem 0;
   }
   .consultation__inner {
-    background-image: url("./assets/images/sections/section-testimonials/consultation-bg-375.svg");
+    background-image: url("../../assets/images/sections/section-testimonials/consultation-bg-375.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
