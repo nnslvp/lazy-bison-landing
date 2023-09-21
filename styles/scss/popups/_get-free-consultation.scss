@@ -1,6 +1,6 @@
 .popup.popup__get-consultation {
 	@include background(
-		'/assets/images/popup-bg.svg',
+		'../../assets/images/popup-bg.svg',
 		center,
 		no-repeat,
 		cover,
@@ -179,7 +179,7 @@
 				height: 1rem;
 				opacity: 0;
 				border-radius: 0.125rem;
-				@include background('/assets/icons/checked-icon.svg');
+				@include background('../../assets/icons/checked-icon.svg');
 				transition: opacity 0.2s ease;
 			}
 		}

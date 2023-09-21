@@ -1,5 +1,5 @@
 .services {
-	@include background("/assets/images/sections/section-services/services-bg.svg", center, no-repeat, contain);
+	@include background("../../assets/images/sections/section-services/services-bg.svg", center, no-repeat, contain);
 }
 
 .services__inner {
@@ -11,7 +11,7 @@
 }
 
 .services-info__inner {
-	@include background("/assets/images/sections/section-services/services-info-bg.svg", top, no-repeat, contain);
+	@include background("../../assets/images/sections/section-services/services-info-bg.svg", top, no-repeat, contain);
 	display: flex;
 	gap: 1.25rem;
 	color: $color-white;
@@ -109,7 +109,7 @@
 
 		.services__inner {
 			@include background(
-				"/assets/images/sections/section-services/services-bg-768.svg",
+				"../../assets/images/sections/section-services/services-bg-768.svg",
 				bottom,
 				no-repeat,
 				contain
@@ -120,7 +120,7 @@
 
 	.services-info__inner {
 		@include background(
-			"/assets/images/sections/section-services/services-info-bg.svg",
+			"../../assets/images/sections/section-services/services-info-bg.svg",
 			inherit,
 			no-repeat,
 			contain
@@ -187,7 +187,7 @@
 @media (max-width: $breakpoint-md) {
 	.services {
 		@include background(
-			"/assets/images/sections/section-services/services-info-bg-375.svg",
+			"../../assets/images/sections/section-services/services-info-bg-375.svg",
 			0 4.9375rem,
 			no-repeat,
 			contain
@@ -272,7 +272,7 @@
 	}
 
 	.services-info__type-button:after {
-		content: url("/assets/icons/shevronDown.svg");
+		content: url("../../assets/icons/shevronDown.svg");
 		display: block;
 	}
 	.services-info__type-button.active:after {

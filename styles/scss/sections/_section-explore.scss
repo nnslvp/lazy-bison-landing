@@ -131,7 +131,7 @@
 
 	.help {
 		@include background(
-			'/assets/images/sections/section-explore/help-bg-768.svg',
+			'../../assets/images/sections/section-explore/help-bg-768.svg',
 			0rem 0rem,
 			no-repeat,
 			cover
@@ -209,7 +209,7 @@
 
 	.help {
 		@include background(
-			'/assets/images/sections/section-explore/help-bg-375.svg',
+			'../../assets/images/sections/section-explore/help-bg-375.svg',
 			center center,
 			no-repeat,
 			cover
