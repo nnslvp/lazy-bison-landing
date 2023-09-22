@@ -1,13 +1,19 @@
 .testimonials__container {
 	position: relative;
 
-	.planet-blue{
+	.planet-blue {
 		width: 10rem;
 		height: 10rem;
 		position: absolute;
 		top: -8.3125rem;
 		right: -4.0625rem;
 	}
+}
+
+.testimonials__title,
+.testimonials__subtitle {
+	position: relative;
+	z-index: 1;
 }
 
 .testimonials__title {
@@ -64,8 +70,8 @@
 	height: 35.3125rem;
 }
 
-.workers__list > *:nth-child(n+5) {
-    display: none;
+.workers__list > *:nth-child(n + 5) {
+	display: none;
 }
 
 .workers__list {
@@ -157,7 +163,12 @@
 
 .consultation__inner {
 	position: relative;
-	@include background("../../assets/images/sections/section-testimonials/consultation-bg.svg", center, no-repeat, contain);
+	@include background(
+		"../../assets/images/sections/section-testimonials/consultation-bg.svg",
+		center,
+		no-repeat,
+		contain
+	);
 	max-width: 65.75rem;
 	max-height: 16.3125rem;
 	display: flex;
@@ -181,7 +192,6 @@
 		width: 7.5rem;
 		height: 7.5rem;
 	}
-	
 }
 
 .consultation__planet-img {
@@ -220,7 +230,7 @@
 
 	.workers-background {
 		background-image: url("../../assets/images/sections/section-testimonials/workers-bg-768px.svg");
-		.planet-blue{
+		.planet-blue {
 			display: none;
 		}
 	}
@@ -344,9 +354,9 @@
 		max-width: 41rem;
 		max-height: 12.375rem;
 
-		.planet-text{
-			top:-0.0625rem;
-			left:.1875rem;
+		.planet-text {
+			top: -0.0625rem;
+			left: 0.1875rem;
 		}
 	}
 
@@ -446,7 +456,7 @@
 
 		.planet-text {
 			left: auto;
-			right: .5625rem;;
+			right: 0.5625rem;
 		}
 
 		.planet-blue {

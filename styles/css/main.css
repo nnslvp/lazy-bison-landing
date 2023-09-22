@@ -1959,6 +1959,12 @@ img {
   right: -4.0625rem;
 }
 
+.testimonials__title,
+.testimonials__subtitle {
+  position: relative;
+  z-index: 1;
+}
+
 .testimonials__title {
   margin-bottom: 1.125rem;
 }
