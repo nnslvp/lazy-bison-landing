@@ -1269,7 +1269,7 @@ img {
           align-items: center;
   -ms-flex-preferred-size: 46.625rem;
       flex-basis: 46.625rem;
-  padding-top: 29px;
+  padding-top: 1.8125rem;
 }
 
 .descriptions__content {
@@ -1951,6 +1951,13 @@ img {
 .testimonials__container {
   position: relative;
 }
+.testimonials__container .planet-blue {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: -8.3125rem;
+  right: -4.0625rem;
+}
 
 .testimonials__title {
   margin-bottom: 1.125rem;
@@ -1970,10 +1977,11 @@ img {
 .vertical-gray-line-4 {
   top: 0;
   position: absolute;
+  z-index: 1;
 }
 
 .vertical-gray-line-1 {
-  height: 29.6875rem;
+  height: 30.6875rem;
   left: 7.3125rem;
 }
 
@@ -2001,13 +2009,6 @@ img {
   background-size: contain;
   background-color: transparent;
   background-color: #e5ffaf;
-}
-.workers-background .planet-blue {
-  width: 10rem;
-  height: 10rem;
-  position: absolute;
-  top: -133px;
-  right: 17px;
 }
 
 .swiper.workers-swiper {

@@ -1,5 +1,13 @@
 .testimonials__container {
 	position: relative;
+
+	.planet-blue{
+		width: 10rem;
+		height: 10rem;
+		position: absolute;
+		top: -8.3125rem;
+		right: -4.0625rem;
+	}
 }
 
 .testimonials__title {
@@ -20,10 +28,11 @@
 .vertical-gray-line-4 {
 	top: 0;
 	position: absolute;
+	z-index: 1;
 }
 
 .vertical-gray-line-1 {
-	height: 29.6875rem;
+	height: 30.6875rem;
 	left: 7.3125rem;
 }
 
@@ -47,14 +56,6 @@
 	position: relative;
 	@include background("../../assets/images/sections/section-testimonials/workers-bg.svg", center, no-repeat, contain);
 	background-color: $color-light-green;
-
-	.planet-blue{
-		width: 10rem;
-		height: 10rem;
-		position: absolute;
-		top: -133px;
-		right: 17px;
-	}
 }
 
 .swiper.workers-swiper {
