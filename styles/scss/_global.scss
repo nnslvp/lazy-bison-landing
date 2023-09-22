@@ -72,6 +72,10 @@ li {
 	list-style: none;
 }
 
+i{
+	display: inline-block;
+}
+
 object {
 	width: 100%;
 }
@@ -231,11 +235,12 @@ img {
 		font-size: 1.0811rem;
 		font-weight: 600;
 		line-height: 1.5135rem;
+		padding: 0.875rem 2.8438rem;
 	}
 	@media (max-width: $breakpoint-md) {
 		font-size: 1.0625rem;
 		line-height: 1.5rem;
-		padding: 0.875rem 2.8438rem;
+		
 	}
 }
 

@@ -1,10 +1,8 @@
+.cases{
+	@include background("../../assets/images/sections/section-cases/cases-bg.svg", 0 2.6875rem, no-repeat, contain);
+}
+
 .cases__inner {
-	@include background(
-		'/assets/images/sections/section-cases/cases-bg.png',
-		center,
-		no-repeat,
-		contain
-	);
 	display: flex;
 	flex-direction: column;
 }
@@ -18,17 +16,16 @@
 
 	.planet-text {
 		position: absolute;
-		top: 0.3125rem;
-		right: 0.5625rem;
+		top: 4.5rem;
+		right: 4.1875rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.planet-blue {
-		top: 4.4375rem;
-		right: 3.375rem;
-	}
-	.circle-ruby-on-rails {
-		top: 2.875rem;
-		right: 1.875rem;
+		width: 7.5rem;
+		height: 7.5rem;
 	}
 }
 
@@ -70,12 +67,7 @@
 
 @media (max-width: $breakpoint-lg) {
 	.cases__inner {
-		@include background(
-			'/assets/images/sections/section-cases/cases-bg-768.png',
-			center,
-			no-repeat,
-			contain
-		);
+		@include background("../../assets/images/sections/section-cases/cases-bg-768.svg", center, no-repeat, contain);
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 4rem;
@@ -131,12 +123,7 @@
 
 @media (max-width: $breakpoint-md) {
 	.cases__inner {
-		@include background(
-			'/assets/images/sections/section-cases/cases-bg-375.png',
-			center,
-			no-repeat,
-			contain
-		);
+		@include background("../../assets/images/sections/section-cases/cases-bg-375.svg", center, no-repeat, contain);
 		display: flex;
 		flex-direction: column;
 		.gray-line {

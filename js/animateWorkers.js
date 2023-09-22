@@ -9,11 +9,10 @@ function shuffleArray(array) {
     return array;
 }
 
-if (widthScreen > 425) {
+if (widthScreen > 425) { 
     setInterval(() => {
         const items = Array.from(workers.children);
-        const shuffledItems = shuffleArray(items);
-
+        const shuffledItems = shuffleArray(items).slice(0, 4)
         workers.classList.add('fade-out');
 
         setTimeout(() => {
