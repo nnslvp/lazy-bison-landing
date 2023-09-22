@@ -1269,7 +1269,7 @@ img {
           align-items: center;
   -ms-flex-preferred-size: 46.625rem;
       flex-basis: 46.625rem;
-  padding-top: 0.75rem;
+  padding-top: 29px;
 }
 
 .descriptions__content {
@@ -1295,13 +1295,7 @@ img {
 }
 
 .services-info__description-text {
-  font-size: 1.1875rem;
   width: 32rem;
-}
-
-.services-info__description-text span {
-  display: block;
-  margin-bottom: 0.9375rem;
 }
 
 .services-info__item .services-info__description-text {
@@ -1404,10 +1398,6 @@ img {
     line-height: 1.225rem;
     margin-bottom: 0.5625rem;
     overflow: hidden;
-  }
-  .services-info__description-text span {
-    display: block;
-    margin-bottom: 0.3125rem;
   }
   .services-info__types {
     width: 15.5rem;
