@@ -1,3 +1,4 @@
+
 // variables.scss
 
 $container-width: 79.25rem;
@@ -47,6 +48,8 @@ $transition-property: all;
 $duration-circle-ruby-on-rails: 4s;
 $duration-workers-opacity: 0.5s;
 $duration-text--highlight: 1s;
+$enable-animation-circle-ruby-on-rails: true;
+
 // mixins.scss
 // Center element horizontally and vertically
 @mixin center {
