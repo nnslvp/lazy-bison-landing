@@ -71,7 +71,7 @@
 }
 
 .workers__list > *:nth-child(n + 5) {
-	display: none;
+  visibility: hidden;
 }
 
 .workers__list {
@@ -412,13 +412,16 @@
 	.workers__list {
 		height: auto;
 	}
+
+	.workers__list > *:nth-child(n + 5) {
+		visibility: visible;
+	  }
+	  
 	.workers__item {
 		position: initial;
 	}
 
 	.avatar {
-		// width: 5.75rem;
-		// height: 5.75rem;
 		top: -3.375rem;
 	}
 
@@ -473,7 +476,6 @@
 			top: -2.3125rem;
 			left: auto;
 			right: -1.25rem;
-			animation: none;
 		}
 	}
 

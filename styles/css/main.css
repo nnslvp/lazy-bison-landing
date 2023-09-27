@@ -1137,8 +1137,6 @@ img {
     top: 0.625rem;
     right: auto;
     left: 1.875rem;
-    -webkit-animation: none;
-            animation: none;
   }
   .lazy-bison__title {
     font-size: 2.625rem;
@@ -1214,8 +1212,6 @@ img {
     top: -2.1875rem;
     left: auto;
     right: -1.25rem;
-    -webkit-animation: none;
-            animation: none;
   }
   .lazy-bison__stats-text {
     font-size: 2.625rem;
@@ -1447,7 +1443,7 @@ img {
         -ms-flex-align: center;
             align-items: center;
     gap: 0.75rem;
-    padding-bottom: 4.625rem;
+    padding-bottom: 1.625rem;
     padding-top: 2.1875rem;
   }
   .services-info__title {
@@ -1482,7 +1478,7 @@ img {
   .services-info__types {
     width: 19.9375rem;
     padding-top: 0;
-    height: 31.75rem;
+    height: 36.75rem;
   }
   .services-info__type-button {
     display: -webkit-box;
@@ -2024,7 +2020,7 @@ img {
 }
 
 .workers__list > *:nth-child(n+5) {
-  display: none;
+  visibility: hidden;
 }
 
 .workers__list {
@@ -2367,6 +2363,9 @@ img {
   .workers__list {
     height: auto;
   }
+  .workers__list > *:nth-child(n+5) {
+    visibility: visible;
+  }
   .workers__item {
     position: initial;
   }
@@ -2418,8 +2417,6 @@ img {
     top: -2.3125rem;
     left: auto;
     right: -1.25rem;
-    -webkit-animation: none;
-            animation: none;
   }
   .consultation__description {
     max-width: 18.5625rem;
