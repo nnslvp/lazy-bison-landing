@@ -1913,6 +1913,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 0rem;
   }
   .cases__inner .gray-line {
     display: block;

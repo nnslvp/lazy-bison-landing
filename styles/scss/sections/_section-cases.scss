@@ -126,6 +126,7 @@
 		@include background("../../assets/images/sections/section-cases/cases-bg-375.svg", center, no-repeat, contain);
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 0rem;
 		.gray-line {
 			display: block;
 		}
