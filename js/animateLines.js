@@ -1,13 +1,20 @@
 const grayLines = document.querySelectorAll('.gray-line')
-const grayLine = document.querySelector('.testimonials__gray-line')
-const grayVerticalLine = document.querySelector('.vertical-gray-line-1')
-const widthScreen = document.documentElement.clientWidth
+const verticalGrayLines = document.querySelectorAll('.vertical-gray-line ')
+const widthScreen = window.innerWidth;
+
 const testimonialsSectionVerticalLines = document.querySelectorAll(
 	'.testimonials .vertical-gray-line'
 )
 const exploreSectionVerticalLines = document.querySelectorAll(
 	'.explore .vertical-gray-line'
 )
+const rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+
+function pxToRem(pxValue) {
+	const rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+	const remValue = pxValue / rootFontSize;
+	return remValue + 'rem';
+  }
 
 const animationDuration = 1000
 
@@ -39,20 +46,18 @@ const getInitialHeight = line => {
 
 const animateLineWith = line => {
 	const width = getInitialWidth(line)
-	const targetWidth = parseInt(width)
+	const targetWidth = parseFloat(width) / rootFontSize;
 	const animationStep = (targetWidth / animationDuration) * 10
 	let currentWidth = 0
 	line.style.opacity = 1
 	const animateWidth = () => {
 		if (currentWidth >= targetWidth) {
-			line.style.maxWidth = width
+			line.style.maxWidth = 100 + '%'
 			animateVerticalLines(line)
 			return
 		}
-
 		currentWidth += animationStep
-		line.style.maxWidth = currentWidth + 'px'
-
+		line.style.maxWidth = currentWidth + 'rem'
 		requestAnimationFrame(animateWidth)
 	}
 
@@ -61,7 +66,7 @@ const animateLineWith = line => {
 
 const animateLineHeight = line => {
 	const height = getInitialHeight(line)
-	const targetHeight = parseInt(height)
+	const targetHeight = parseFloat(height) / rootFontSize;
 	const animationStep = (targetHeight / animationDuration) * 10
 
 	let currentHeight = 0
@@ -75,7 +80,7 @@ const animateLineHeight = line => {
 		}
 
 		currentHeight += animationStep
-		line.style.maxHeight = currentHeight + 'px'
+		line.style.maxHeight = currentHeight + 'rem'
 
 		if (currentHeight < targetHeight) {
 			requestAnimationFrame(animateHeight)
@@ -119,3 +124,18 @@ animateLineWith(line)
 if (widthScreen > 425) {
 	window.addEventListener('scroll', handleScroll)
 }
+
+
+function handleResize() {
+	const widthScreen = window.innerWidth;
+	if (widthScreen <= 425) {
+		grayLines.forEach(line => line.style.opacity = 0) 
+		 verticalGrayLines.forEach(line => line.style.opacity = 0) 
+	}else{
+		grayLines.forEach(line => line.style.opacity = 1) 
+		 verticalGrayLines.forEach(line => line.style.opacity = 1) 
+	}
+ 
+  }
+
+window.addEventListener('resize', handleResize);

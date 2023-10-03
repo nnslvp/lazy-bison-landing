@@ -6,14 +6,15 @@ const descriptionsText = document.querySelectorAll(
 const title = document.querySelector(".services-info__title");
 const widthScreen = document.documentElement.clientWidth;
 
-
-
-if (widthScreen <= 425) {
+const addDescriptionsTextForSmallScreens = ()=>{
   buttons.forEach((button, index) => {
     const descriptionsTextElement = descriptionsText[index];
-    button.insertAdjacentElement("afterend", descriptionsTextElement);
-  });
+    const descriptionsTextClone = descriptionsTextElement.cloneNode(true);
+    button.insertAdjacentElement("afterend", descriptionsTextClone);
+ 
+  })
 }
+
 
 buttons.forEach(function (button, index) {
   button.addEventListener("click", (event) => {
@@ -45,4 +46,22 @@ buttons.forEach(function (button, index) {
 
 });
 
-window.addEventListener("resize", (e) => {});
+let hasExecuted = false;
+
+// Первоначальная проверка при загрузке страницы
+if (widthScreen <= 425) {
+  addDescriptionsTextForSmallScreens();
+  hasExecuted = true;
+}
+
+window.addEventListener("resize", (e) => {
+  const widthScreen = window.innerWidth;
+
+  if (widthScreen <= 425 && !hasExecuted) {
+    addDescriptionsTextForSmallScreens();
+    hasExecuted = true;
+  } 
+});
+
+
+
