@@ -1,5 +1,5 @@
-const workers = document.querySelector('.workers__list')
-const widthScreen = document.documentElement.clientWidth
+const workers = document.querySelector('.workers__list');
+const widthScreen = document.documentElement.clientWidth;
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i >= 0; i--) {
@@ -9,10 +9,12 @@ function shuffleArray(array) {
     return array;
 }
 
-if (widthScreen > 425) { 
+
+const cardArray = Array.from(workers.children);
+
+if (widthScreen > 425) {
     setInterval(() => {
-        const items = Array.from(workers.children);
-        const shuffledItems = shuffleArray(items).slice(0, 4)
+        const shuffledCardArray = shuffleArray(cardArray);
         workers.classList.add('fade-out');
 
         setTimeout(() => {
@@ -20,8 +22,8 @@ if (widthScreen > 425) {
                 workers.removeChild(workers.firstChild);
             }
 
-            shuffledItems.forEach(item => {
-                workers.appendChild(item);
+            shuffledCardArray.forEach(card => {
+                workers.appendChild(card);
             });
 
             workers.classList.remove('fade-out');
