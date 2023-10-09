@@ -53,7 +53,7 @@
 }
 
 .vertical-gray-line-4 {
-	height: 35.125rem;
+	height: 37.9375rem;
 	top: 0;
 	right: 7.5rem;
 }
@@ -67,7 +67,7 @@
 .swiper.workers-swiper {
 	overflow: visible;
 	position: relative;
-	height: 35.3125rem;
+	height: 40.3125rem;
 }
 
 .workers__list > *:nth-child(n + 5) {
@@ -84,7 +84,7 @@
 
 .workers__item {
 	&:nth-child(1) {
-		bottom: -2.875rem;
+		bottom: -2.375rem;
 		left: 0.6875rem;
 	}
 
@@ -99,7 +99,7 @@
 	}
 
 	&:nth-child(4) {
-		bottom: -15.0625rem;
+		bottom: -10.0625rem;
 		right: 0.625rem;
 	}
 }
@@ -160,7 +160,7 @@
 }
 .consultation {
 	@include background("../../assets/images/sections/section-cases/cases-bg.svg", center, no-repeat, cover);
-	padding: 15.6875rem 0 7.5rem 0;
+	padding: 20.6875rem 0 7.5rem 0;
 }
 
 .consultation__inner {
@@ -238,7 +238,7 @@
 	}
 
 	.swiper.workers-swiper {
-		height: 38rem;
+		height: 43rem;
 	}
 
 	.testimonials__gray-line {
@@ -258,8 +258,8 @@
 	}
 
 	.vertical-gray-line-1 {
-		left: 4.125rem;
-		height: 30.875rem;
+		left: 4.5625rem;
+		height: 33.5625rem;
 	}
 
 	.vertical-gray-line-2 {
@@ -269,11 +269,11 @@
 
 	.vertical-gray-line-3 {
 		right: 17.6875rem;
-		height: 25.3125rem;
+		height: 27.9375rem;
 	}
 
 	.vertical-gray-line-4 {
-		right: 4.5rem;
+		right: 3.5rem;
 		height: 12.5rem;
 	}
 
@@ -283,7 +283,7 @@
 
 	.workers__item:nth-child(1) {
 		bottom: -17.875rem;
-		left: -0.5rem;
+		left: .625rem;
 	}
 
 	.workers__item:nth-child(2) {
