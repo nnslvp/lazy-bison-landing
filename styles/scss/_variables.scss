@@ -1,4 +1,3 @@
-
 // variables.scss
 
 $container-width: 79.25rem;
@@ -26,9 +25,12 @@ $color-system-red: #ff6969;
 
 // Typography
 
-$font-family: "Outfit", sans-serif;
-$second-family: "SF Pro Text", sans-serif;
-$third-family: "Lato", sans-serif;
+$font-family: "Outfit",
+sans-serif;
+$second-family: "SF Pro Text",
+sans-serif;
+$third-family: "Lato",
+sans-serif;
 
 $root-font-size: 0.833vw;
 // Spacing
@@ -48,37 +50,37 @@ $transition-property: all;
 $duration-circle-ruby-on-rails: 4s;
 $duration-workers-opacity: 0.25s;
 $duration-text--highlight: 1s;
-$enable-animation-circle-ruby-on-rails: true;
+$enable-animation-circle-ruby-on-rails: false;
 
 // mixins.scss
 // Center element horizontally and vertically
 @mixin center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@mixin background(
-	$image,
-	$position: center center,
-	$repeat: no-repeat,
-	$size: auto,
-	$color: transparent
-) {
-	background-image: url($image);
-	background-position: $position;
-	background-repeat: $repeat;
-	background-size: $size;
-	background-color: $color;
+@mixin background($image,
+    $position: center center,
+    $repeat: no-repeat,
+    $size: auto,
+    $color: transparent) {
+    background-image: url($image);
+    background-position: $position;
+    background-repeat: $repeat;
+    background-size: $size;
+    background-color: $color;
 }
 
 @mixin linkEffects {
-	color: $color-white;
-	transition: $transition-property $transition-duration $transition-easing;
-	&:hover {
-		color: $color-dark-violet;
-	}
-	&.active {
-		color: $color-neon-green;
-	}
+    color: $color-white;
+    transition: $transition-property $transition-duration $transition-easing;
+
+    &:hover {
+        color: $color-dark-violet;
+    }
+
+    &.active {
+        color: $color-neon-green;
+    }
 }

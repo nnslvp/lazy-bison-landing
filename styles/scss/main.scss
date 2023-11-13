@@ -1,5 +1,7 @@
 @import './normalize.scss';
 @import 'variables';
+@import './icons';
+@import './swiper/swiper';
 @import './animations/animations.scss';
 @import 'global';
 @import 'header';
@@ -11,7 +13,3 @@
 @import 'footer';
 @import './popups/popup';
 @import './burger-menu-btn';
-@import './swiper/swiper';
-@import './icons';
-
-

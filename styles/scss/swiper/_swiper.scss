@@ -1,28 +1,28 @@
 .swiper {
-	overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 .swiper-slide {
-	flex-shrink: 0;
-	width: auto;
-	height: auto;
+    width: auto;
+    height: auto;
 }
 
 #slider-projects-pagination,
 #slider-workers-pagination {
-	display: flex;
-	justify-content: center;
-	gap: 0.4375rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.4375rem;
 }
 
 #slider-projects-pagination .swiper-pagination-bullet,
 #slider-workers-pagination .swiper-pagination-bullet {
-	width: 0.875rem;
-	height: 0.875rem;
-	background-color: $color-light-grey;
-	margin: 0;
+    width: 0.875rem;
+    height: 0.875rem;
+    background-color: #DCDCDC;
+    margin: 0;
 }
 
-.swiper-pagination-bullet-active {
-	background-color: #9f9dbc;
+#slider-projects-pagination .swiper-pagination-bullet-active {
+    background-color: $color-primary-violet;
 }
