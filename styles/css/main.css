@@ -1878,6 +1878,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
 .cases__inner .planet-text {
   position: absolute;
   top: 5.875rem;
@@ -1892,7 +1893,8 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.cases__inner .planet-blue {
+
+.cases-container .planet-blue {
   width: 7.5rem;
   height: 7.5rem;
 }
@@ -1911,14 +1913,6 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: transparent;
-}
-
-.cases__planet-img {
-  width: 10.625rem;
-  height: 10.625rem;
-  position: absolute;
-  top: 2.75rem;
-  right: 1.6875rem;
 }
 
 .case-card {

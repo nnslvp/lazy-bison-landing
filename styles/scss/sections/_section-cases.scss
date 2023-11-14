@@ -2,20 +2,21 @@
     position: relative;
     display: flex;
     flex-direction: column;
+}
 
-    .planet-text {
-        position: absolute;
-        top: 5.875rem;
-        right: -1.0625rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
-    .planet-blue {
-        width: 7.5rem;
-        height: 7.5rem;
-    }
+.cases__inner .planet-text {
+    position: absolute;
+    top: 5.875rem;
+    right: -1.0625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cases-container .planet-blue {
+    width: 7.5rem;
+    height: 7.5rem;
 }
 
 .cases-container {
@@ -33,13 +34,6 @@
         cover);
 }
 
-.cases__planet-img {
-    width: 10.625rem;
-    height: 10.625rem;
-    position: absolute;
-    top: 2.75rem;
-    right: 1.6875rem;
-}
 
 .case-card {
     display: flex;
@@ -96,28 +90,27 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 4rem;
-
-        .planet-text {
-            top: 1.375rem;
-            right: 0rem;
-        }
-
-        .planet-blue {
-            width: 4.75rem;
-            height: 4.7456rem;
-            top: 2.3125rem;
-            right: .75rem;
-        }
-
-        .circle-ruby-on-rails {
-            width: 6.7775rem;
-            height: 6.7138rem;
-            top: 1.3125rem;
-            right: -0.1875rem;
-        }
-
     }
 
+
+    .cases__inner .planet-text {
+        top: 1.375rem;
+        right: 0rem;
+    }
+
+    .cases__inner .planet-blue {
+        width: 4.75rem;
+        height: 4.7456rem;
+        top: 2.3125rem;
+        right: .75rem;
+    }
+
+    .cases__inner .circle-ruby-on-rails {
+        width: 6.7775rem;
+        height: 6.7138rem;
+        top: 1.3125rem;
+        right: -0.1875rem;
+    }
 
 
     .cases-container {
