@@ -14,12 +14,16 @@
     justify-content: center;
 }
 
-.cases-container .planet-blue {
+.cases-slider .planet-blue {
     width: 7.5rem;
     height: 7.5rem;
 }
 
-.cases-container {
+.cases-slider .swiper-wrapper {
+    margin-bottom: 3.75rem;
+}
+
+.cases-slider {
     position: relative;
     padding-top: 8.05rem;
     padding-bottom: 7.5rem;
@@ -27,7 +31,7 @@
     width: 100%;
 }
 
-.cases-container {
+.cases-slider {
     @include background("../../assets/images/sections/section-cases/cases-bg.svg",
         center center,
         no-repeat,
@@ -98,6 +102,10 @@
         right: 0rem;
     }
 
+    .cases-slider .swiper-wrapper {
+        margin-bottom: 1.25rem;
+    }
+
     .cases__inner .planet-blue {
         width: 4.75rem;
         height: 4.7456rem;
@@ -113,13 +121,9 @@
     }
 
 
-    .cases-container {
+    .cases-slider {
         padding-top: 4.75rem;
         padding-bottom: 5rem;
-    }
-
-    .cases__wrapper {
-        gap: .625rem;
     }
 
     .case-card {
@@ -174,7 +178,7 @@
             visibility: hidden;
         }
 
-        .cases-container {
+        .cases-slider {
             padding-top: 2.3125rem;
         }
     }

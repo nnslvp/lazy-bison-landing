@@ -1,19 +1,17 @@
 const sliders = document.querySelectorAll(".swiper");
-const [projectSlider, blogSlider, workersSlider] = sliders;
-const projectSwiperWrapper = projectSlider.querySelector(".swiper-wrapper");
-const projectSwiperWrapperContent = projectSwiperWrapper.innerHTML;
-const projectsSlides = projectSlider.querySelectorAll(".swiper-cases-slide");
+const [casesSlider, blogSlider, workersSlider] = sliders;
+
 let newWorkersSwiper;
 let newProjectSwiper;
 let newBlogSlider;
 
-newProjectSwiper = new Swiper(projectSlider, {
-  slidesPerView: 1,
-  spaceBetween: 8,
+newProjectSwiper = new Swiper(casesSlider, {
+  slidesPerView: "auto",
+  spaceBetween: 28,
   loop: true,
   init: true,
   pagination: {
-    el: projectSlider.querySelector(".swiper-pagination"),
+    el: casesSlider.querySelector(".swiper-pagination"),
     clickable: true,
   },
 
@@ -75,36 +73,3 @@ function initializeWorkersSlider() {
     },
   });
 }
-
-function mobileSlider() {
-  const isMobile = window.innerWidth <= 425;
-
-  if (isMobile && projectSlider.dataset.mobile === "false") {
-    projectsSlides.forEach((el) => {
-      el.classList.remove(...el.classList);
-      el.classList.add("swiper-slide", "case-slide");
-    });
-    projectSwiperWrapper.innerHTML = "";
-    newProjectSwiper.appendSlide(projectsSlides);
-    projectSlider.dataset.mobile = "true";
-  }
-
-  if (!isMobile && projectSlider.dataset.mobile === "true") {
-    projectSwiperWrapper.innerHTML = projectSwiperWrapperContent;
-    projectSlider.dataset.mobile = "false";
-  }
-
-  if (isMobile && workersSlider.dataset.mobile === "false") {
-    initializeWorkersSlider();
-    workersSlider.dataset.mobile = "true";
-  }
-
-  if (!isMobile && workersSlider.dataset.mobile === "true") {
-    newWorkersSwiper.destroy();
-    workersSlider.dataset.mobile = "false";
-  }
-}
-
-window.addEventListener("resize", mobileSlider);
-
-mobileSlider();
