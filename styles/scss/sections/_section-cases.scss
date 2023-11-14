@@ -2,22 +2,14 @@
     position: relative;
     display: flex;
     flex-direction: column;
+
+    .planet-text {
+        top: 5.875rem;
+        right: -1.0625rem;
+    }
+
 }
 
-
-.cases__inner .planet-text {
-    position: absolute;
-    top: 5.875rem;
-    right: -1.0625rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cases-slider .planet-blue {
-    width: 7.5rem;
-    height: 7.5rem;
-}
 
 .cases-slider .swiper-wrapper {
     margin-bottom: 3.75rem;

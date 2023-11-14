@@ -85,7 +85,15 @@ object {
 }
 
 section {
-    margin-bottom: 120px;
+    margin-bottom: 7.5rem;
+
+    @media (max-width: $breakpoint-lg) {
+        margin-bottom: 5rem;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        margin-bottom: 3.75rem;
+    }
 }
 
 button {
@@ -187,7 +195,6 @@ img {
     letter-spacing: 0.03em;
 }
 
-
 .button__text--large {
     font-size: 1.25rem;
     font-weight: 600;
@@ -230,7 +237,6 @@ img {
     color: $color-white;
 }
 
-
 .get-consultation-btn {
     @include center;
     border-color: $color-black;
@@ -257,7 +263,6 @@ img {
     @media (max-width: $breakpoint-md) {
         font-size: 1.0625rem;
         line-height: 1.5rem;
-
     }
 }
 
@@ -272,7 +277,7 @@ img {
 }
 
 .vertical-gray-line {
-    width: .0625rem;
+    width: 0.0625rem;
 }
 
 .section-title__inner {
@@ -287,17 +292,18 @@ img {
     }
 }
 
+.planet-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .planet-blue {
     width: 7.5rem;
     height: 7.5rem;
     position: relative;
     z-index: 1;
-    background: radial-gradient(72.45% 72.45% at 27.78% 24.07%,
-            rgba(158, 236, 229, 0.48) 0%,
-            #9eece5 60.46%,
-            #72dfdd 79.62%,
-            #51bbf6 100%);
-    border-radius: 50%;
 }
 
 .circle-ruby-on-rails {
@@ -308,7 +314,6 @@ img {
     @if $enable-animation-circle-ruby-on-rails {
         animation: circle-rotation $duration-circle-ruby-on-rails infinite linear;
     }
-
 }
 
 .fade-in {
