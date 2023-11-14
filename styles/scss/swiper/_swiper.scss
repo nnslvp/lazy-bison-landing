@@ -9,14 +9,16 @@
 }
 
 #slider-projects-pagination,
-#slider-workers-pagination {
+#slider-workers-pagination,
+#slider-blog-pagination {
+    position: initial;
     display: flex;
     justify-content: center;
     gap: 0.4375rem;
 }
 
 #slider-projects-pagination .swiper-pagination-bullet,
-#slider-workers-pagination .swiper-pagination-bullet {
+#slider-workers-pagination.swiper-pagination-bullet {
     width: 0.875rem;
     height: 0.875rem;
     background-color: #DCDCDC;
@@ -24,5 +26,18 @@
 }
 
 #slider-projects-pagination .swiper-pagination-bullet-active {
+    background-color: $color-primary-violet;
+}
+
+#slider-blog-pagination .swiper-pagination-bullet,
+#slider-blog-pagination .swiper-pagination-bullet {
+
+    width: 0.875rem;
+    height: 0.875rem;
+    background-color: #DCDCDC;
+    margin: 0;
+}
+
+#slider-blog-pagination .swiper-pagination-bullet-active {
     background-color: $color-primary-violet;
 }
