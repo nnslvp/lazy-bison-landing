@@ -550,18 +550,8 @@ object {
   width: 100%;
 }
 
-section:not(.cases, .testimonials) {
-  padding-bottom: 7.5rem;
-}
-@media (max-width: 768px) {
-  section:not(.cases, .testimonials) {
-    padding-bottom: 5rem;
-  }
-}
-@media (max-width: 425px) {
-  section:not(.cases, .testimonials) {
-    padding-bottom: 0rem;
-  }
+section {
+  margin-bottom: 120px;
 }
 
 button {

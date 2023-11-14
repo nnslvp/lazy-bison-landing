@@ -1,339 +1,347 @@
 *,
 *::before,
 *::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-	font-size: $root-font-size;
-	scroll-behavior: smooth;
-	@media (max-width: $breakpoint-xl) {
-		font-size: 1.111vw;
-	}
-	@media (max-width: $breakpoint-lg) {
-		font-size: 2.083vw;
-	}
-	@media (max-width: $breakpoint-md) {
-		font-size: 16px;
-	}
-	@media (max-width: $breakpoint-sm) {
-		font-size: 4.267vw;
-	}
+    font-size: $root-font-size;
+    scroll-behavior: smooth;
+
+    @media (max-width: $breakpoint-xl) {
+        font-size: 1.111vw;
+    }
+
+    @media (max-width: $breakpoint-lg) {
+        font-size: 2.083vw;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        font-size: 16px;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        font-size: 4.267vw;
+    }
 }
 
 body {
-	font-family: $font-family;
+    font-family: $font-family;
 }
 
 body.hidden {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 address {
-	font-style: inherit;
+    font-style: inherit;
 }
 
 h1 {
-	font-weight: 500;
-	font-size: 5.5rem;
-	line-height: 6.625rem;
-	letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 5.5rem;
+    line-height: 6.625rem;
+    letter-spacing: 0.03em;
 }
 
 h2 {
-	font-weight: 600;
-	font-size: 2.625rem;
-	line-height: 3.675rem;
-	letter-spacing: 0.03em;
+    font-weight: 600;
+    font-size: 2.625rem;
+    line-height: 3.675rem;
+    letter-spacing: 0.03em;
 }
 
 h3 {
-	font-weight: 500;
-	font-size: 2.25rem;
-	line-height: 3.15rem;
-	letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 3.15rem;
+    letter-spacing: 0.03em;
 }
 
 h4 {
-	font-weight: 600;
-	font-size: 1.75rem;
-	line-height: 2.45rem;
-	letter-spacing: 0.03em;
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 2.45rem;
+    letter-spacing: 0.03em;
 }
 
 a {
-	text-decoration: none;
-	color: $color-white;
+    text-decoration: none;
+    color: $color-white;
 }
 
 li {
-	list-style: none;
+    list-style: none;
 }
 
-i{
-	display: inline-block;
+i {
+    display: inline-block;
 }
 
 object {
-	width: 100%;
+    width: 100%;
 }
 
-section:not(.cases, .testimonials) {
-	padding-bottom: 7.5rem;
-	@media (max-width: $breakpoint-lg) {
-		padding-bottom: 5rem;
-	}
-	@media (max-width: $breakpoint-md) {
-		padding-bottom: 0rem;
-	}
+section {
+    margin-bottom: 120px;
 }
 
 button {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .container {
-	max-width: calc($container-width + $container-padding * 2);
-	margin: 0 auto;
-	@media (max-width: $breakpoint-lg) {
-		max-width: calc($container-width-768 + $container-padding * 2);
-	}
-	@media (max-width: $breakpoint-md) {
-		max-width: calc($container-width-375 + $container-padding * 2);
-	}
+    max-width: calc($container-width + $container-padding * 2);
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint-lg) {
+        max-width: calc($container-width-768 + $container-padding * 2);
+    }
+
+    @media (max-width: $breakpoint-md) {
+        max-width: calc($container-width-375 + $container-padding * 2);
+    }
 }
 
 .heading--large {
-	font-weight: 500;
-	font-size: 5.5rem;
-	line-height: 6.625rem;
-	letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 5.5rem;
+    line-height: 6.625rem;
+    letter-spacing: 0.03em;
 }
 
 .heading--medium {
-	font-weight: 600;
-	font-size: 2.625rem;
-	line-height: 3.675rem;
-	letter-spacing: 0.03em;
+    font-weight: 600;
+    font-size: 2.625rem;
+    line-height: 3.675rem;
+    letter-spacing: 0.03em;
 }
 
 .heading--small {
-	font-weight: 500;
-	font-size: 2.25rem;
-	line-height: 3.15rem;
-	letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 3.15rem;
+    letter-spacing: 0.03em;
 }
 
 .heading--smaller {
-	font-weight: 600;
-	font-size: 1.75rem;
-	line-height: 2.45rem;
-	letter-spacing: 0.03em;
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 2.45rem;
+    letter-spacing: 0.03em;
 }
 
 @mixin heading--smaller {
-	font-weight: 600;
-	font-size: 1.75rem;
-	line-height: 2.45rem;
-	letter-spacing: 0.03em;
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 2.45rem;
+    letter-spacing: 0.03em;
 }
 
 .text--large {
-	font-size: 1.5rem;
-	font-weight: 400;
-	line-height: 2.125rem;
-	letter-spacing: 0.03em;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.125rem;
+    letter-spacing: 0.03em;
 }
 
 .text--medium {
-	font-size: 1.25rem;
-	font-weight: 400;
-	line-height: 1.75rem;
-	letter-spacing: 0em;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 0em;
 }
 
 @mixin text--medium {
-	font-size: 1.25rem;
-	font-weight: 400;
-	line-height: 1.75rem;
-	letter-spacing: 0em;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 0em;
 }
 
 .text--small {
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.375rem;
-	letter-spacing: 0.03em;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    letter-spacing: 0.03em;
 }
 
 .button__text--large {
-	font-size: 1.25rem;
-	font-weight: 600;
-	line-height: 1.75rem;
-	letter-spacing: 0em;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    letter-spacing: 0em;
 }
 
 .button__text--medium {
-	font-size: 1.125rem;
-	font-weight: 600;
-	line-height: 1.5625rem;
-	letter-spacing: 0em;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5625rem;
+    letter-spacing: 0em;
 }
 
 .button {
-	cursor: pointer;
-	border: 0.0625rem solid;
+    cursor: pointer;
+    border: 0.0625rem solid;
 }
 
 .button--secondary {
-	@include center;
-	color: $color-white;
-	border-color: $color-light-grey;
-	transition: $transition-property $transition-duration $transition-easing;
-	&:hover {
-		color: $color-primary-violet;
-		border-color: $color-primary-violet;
-	}
-	&.active {
-		color: $color-black;
-		background-color: $color-disable-grey;
-		border-color: $color-disable-grey;
-	}
+    @include center;
+    color: $color-white;
+    border-color: $color-light-grey;
+    transition: $transition-property $transition-duration $transition-easing;
+
+    &:hover {
+        color: $color-primary-violet;
+        border-color: $color-primary-violet;
+    }
+
+    &.active {
+        color: $color-black;
+        background-color: $color-disable-grey;
+        border-color: $color-disable-grey;
+    }
 }
 
 .button--primary {
-	@include center;
-	background-color: $color-primary-violet;
-	color: $color-white;
-	border-color: $color-black;
-	transition: $transition-property $transition-duration $transition-easing;
-	padding: 1rem 3rem;
+    @include center;
+    background-color: $color-primary-violet;
+    color: $color-white;
+    border-color: $color-black;
+    transition: $transition-property $transition-duration $transition-easing;
+    padding: 1rem 3rem;
 
-	&:hover {
-		background-color: $color-dark-violet;
-		border-color: $color-black;
-	}
-	&.active {
-		color: $color-black;
-		background-color: $color-light-green;
-	}
-	@media (max-width: $breakpoint-lg) {
-		font-size: 1.0811rem;
-		font-weight: 600;
-		line-height: 1.5135rem;
-		padding: 0.875rem 2.8438rem;
-	}
-	@media (max-width: $breakpoint-md) {
-		font-size: 1.0625rem;
-		line-height: 1.5rem;
-		
-	}
+    &:hover {
+        background-color: $color-dark-violet;
+        border-color: $color-black;
+    }
+
+    &.active {
+        color: $color-black;
+        background-color: $color-light-green;
+    }
+
+    @media (max-width: $breakpoint-lg) {
+        font-size: 1.0811rem;
+        font-weight: 600;
+        line-height: 1.5135rem;
+        padding: 0.875rem 2.8438rem;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        font-size: 1.0625rem;
+        line-height: 1.5rem;
+
+    }
 }
 
 .gray-line,
 .vertical-gray-line {
-	background-color: $color-light-grey;
-	opacity: 0;
+    background-color: $color-light-grey;
+    opacity: 0;
 }
 
 .gray-line {
-	height: 0.125rem;
+    height: 0.125rem;
 }
 
 .vertical-gray-line {
-	width: .0625rem;
+    width: .0625rem;
 }
 
 .section-title__inner {
-	display: flex;
-	gap: 0.9375rem;
-	margin-bottom: 2.5rem;
-	@media (max-width: $breakpoint-lg) {
-		display: flex;
-		gap: 0.9375rem;
-		margin-bottom: 0.75rem;
-	}
+    display: flex;
+    gap: 0.9375rem;
+    margin-bottom: 2.5rem;
+
+    @media (max-width: $breakpoint-lg) {
+        display: flex;
+        gap: 0.9375rem;
+        margin-bottom: 0.75rem;
+    }
 }
 
 .planet-blue {
-	width: 7.5rem;
-	height: 7.5rem;
-	position: relative;
-	z-index: 1;
-	background: radial-gradient(
-		72.45% 72.45% at 27.78% 24.07%,
-		rgba(158, 236, 229, 0.48) 0%,
-		#9eece5 60.46%,
-		#72dfdd 79.62%,
-		#51bbf6 100%
-	);
-	border-radius: 50%;
+    width: 7.5rem;
+    height: 7.5rem;
+    position: relative;
+    z-index: 1;
+    background: radial-gradient(72.45% 72.45% at 27.78% 24.07%,
+            rgba(158, 236, 229, 0.48) 0%,
+            #9eece5 60.46%,
+            #72dfdd 79.62%,
+            #51bbf6 100%);
+    border-radius: 50%;
 }
 
 .circle-ruby-on-rails {
-	width: 10.6469rem;
-	height: 10.6425rem;
-	position: absolute;
-	@if $enable-animation-circle-ruby-on-rails {
-		animation: circle-rotation $duration-circle-ruby-on-rails infinite linear;
-	  }
-	
+    width: 10.6469rem;
+    height: 10.6425rem;
+    position: absolute;
+
+    @if $enable-animation-circle-ruby-on-rails {
+        animation: circle-rotation $duration-circle-ruby-on-rails infinite linear;
+    }
+
 }
 
 .fade-in {
-	animation: fadeIn $transition-duration $transition-easing;
+    animation: fadeIn $transition-duration $transition-easing;
 }
 
 .section-title__heading {
-	display: flex;
-	align-items: center;
-	@media (max-width: $breakpoint-lg) {
-		font-weight: 600;
-		font-size: 1.75rem;
-		line-height: 2.45rem;
-		letter-spacing: 0.03em;
-	}
-	@media (max-width: $breakpoint-md) {
-		font-size: 1.625rem;
-		line-height: 2.25rem;
-		letter-spacing: 0.02em;
-	}
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $breakpoint-lg) {
+        font-weight: 600;
+        font-size: 1.75rem;
+        line-height: 2.45rem;
+        letter-spacing: 0.03em;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        font-size: 1.625rem;
+        line-height: 2.25rem;
+        letter-spacing: 0.02em;
+    }
 }
 
 .rectangle-arrow {
-	@include center;
-	width: 4.5rem;
-	height: 4.5rem;
-	@media (max-width: $breakpoint-lg) {
-		width: 3.125rem;
-		height: 3.125rem;
-	}
+    @include center;
+    width: 4.5rem;
+    height: 4.5rem;
+
+    @media (max-width: $breakpoint-lg) {
+        width: 3.125rem;
+        height: 3.125rem;
+    }
 }
 
 @mixin heading--smaller {
-	font-weight: 600;
-	font-size: 1.75rem;
-	line-height: 2.45rem;
-	letter-spacing: 0.03em;
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 2.45rem;
+    letter-spacing: 0.03em;
 }
 
 @mixin text--small {
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.375rem;
-	letter-spacing: 0.03em;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    letter-spacing: 0.03em;
 }
