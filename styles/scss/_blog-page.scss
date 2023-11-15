@@ -1,0 +1,23 @@
+.navigation-path {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.navigation-path__link {
+    color: #555555;
+}
+
+.navigation-path__link--active {
+    color: $color-dark-violet;
+}
+
+.blog-page-navigation-path {
+    margin-top: 60px;
+    margin-bottom: 45px;
+}
