@@ -1,0 +1,168 @@
+.consultation {
+    @include background("../../assets/images/sections/section-cases/cases-bg.svg", center, no-repeat, cover);
+    padding: 20.6875rem 0 7.5rem 0;
+}
+
+.consultation__inner {
+    position: relative;
+    @include background("../../assets/images/sections/section-testimonials/consultation-bg.svg",
+        center,
+        no-repeat,
+        contain);
+    max-width: 65.75rem;
+    max-height: 16.3125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2.625rem;
+    padding: 3.25rem 0 2.4375rem 0;
+    margin: 0 auto;
+    color: $color-white;
+
+    .planet-text {
+        position: absolute;
+        z-index: -1;
+        top: -1.125rem;
+        left: -1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .planet-blue {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+}
+
+.consultation__planet-img {
+    width: 9.0625rem;
+    height: 9.0625rem;
+    position: absolute;
+    z-index: -1;
+    top: -2.5625rem;
+    left: -2.25rem;
+}
+
+.consultation__description {
+    max-width: 36.375rem;
+    margin-right: 3.875rem;
+}
+
+.consultation__inner .button {
+    margin-right: 13.25rem;
+}
+
+
+@media (max-width: $breakpoint-lg) {
+    .consultation {
+        background-image: url("../../assets/images/sections/section-cases/cases-bg-768.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        padding: 9.8125rem 0 5rem 0;
+    }
+
+    .consultation__inner {
+        @include background("../../assets/images/sections/section-testimonials/consultation-bg-768.svg",
+            center,
+            no-repeat,
+            contain);
+        padding: 3.0625rem 0 1.8125rem 0;
+        gap: 1.5625rem;
+        max-width: 41rem;
+        max-height: 12.375rem;
+
+        .planet-text {
+            top: -0.0625rem;
+            left: 0.1875rem;
+        }
+
+        .planet-blue {
+            width: 4.7363rem;
+            height: 4.7363rem;
+            top: -0.125rem;
+            left: -1.5rem;
+        }
+
+        .circle-ruby-on-rails {
+            width: 6.7231rem;
+            height: 6.7219rem;
+            top: -1.1875rem;
+            left: -2.5625rem;
+        }
+    }
+
+    .gray-line {
+        display: block;
+    }
+
+    .consultation__description {
+        max-width: 23.1106rem;
+        margin-right: 1.7125rem;
+        @include text--small;
+    }
+
+    .consultation__inner .button {
+        padding: 0.875rem 4.4rem;
+        margin-right: 4.4375rem;
+    }
+}
+
+@media (max-width: $breakpoint-md) {
+    .consultation {
+        padding: 0;
+    }
+
+    .consultation__inner {
+        background-image: url("../../assets/images/sections/section-testimonials/consultation-bg-375.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        padding: 1.875rem 0 9.75rem 0;
+        gap: 1.5rem;
+        width: auto;
+        max-height: 20.9375rem;
+
+        .planet-text {
+            left: auto;
+            right: 0.5625rem;
+        }
+
+        .planet-blue {
+            width: 4.25rem;
+            height: 4.25rem;
+            top: -1.3125rem;
+            left: auto;
+            right: -0.375rem;
+        }
+
+        .circle-ruby-on-rails {
+            width: 5.9375rem;
+            height: 6.0675rem;
+            top: -2.3125rem;
+            left: auto;
+            right: -1.25rem;
+        }
+    }
+
+    .consultation__description {
+        max-width: 18.5625rem;
+        margin: 0 auto;
+    }
+
+    .consultation__inner .button {
+        padding: 0.875rem 2.8438rem;
+        margin: 0 auto;
+    }
+
+    .consultation__planet-img {
+        width: 5.625rem;
+        height: 5.625rem;
+        top: -2rem;
+        left: auto;
+        right: -1.125rem;
+    }
+}
