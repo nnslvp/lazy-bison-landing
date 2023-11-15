@@ -63,31 +63,33 @@ newBlogSlider = new Swiper(blogSlider, {
   },
 });
 
-newWorkersSwiper = new Swiper(workersSlider, {
-  slidesPerView: 1,
-  spaceBetween: 0,
-  loop: true,
-  init: true,
-  pagination: {
-    el: workersSlider.querySelector(".swiper-pagination"),
-    clickable: true,
-  },
-});
+const initializeWorkersSlider = () => {
+  newWorkersSwiper = new Swiper(workersSlider, {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    init: true,
+    pagination: {
+      el: workersSlider.querySelector(".swiper-pagination"),
+      clickable: true,
+    },
+  });
+};
 
-// function mobileSlider() {
-//   const isMobile = window.innerWidth <= 425;
+function mobileSlider() {
+  const isMobile = window.innerWidth <= 425;
 
-//   if (isMobile && workersSlider.dataset.mobile === "false") {
-//     initializeWorkersSlider();
-//     workersSlider.dataset.mobile = "true";
-//   }
+  if (isMobile && workersSlider.dataset.mobile === "false") {
+    initializeWorkersSlider();
+    workersSlider.dataset.mobile = "true";
+  }
 
-//   if (!isMobile && workersSlider.dataset.mobile === "true") {
-//     newWorkersSwiper.destroy();
-//     workersSlider.dataset.mobile = "false";
-//   }
-// }
+  if (!isMobile && workersSlider.dataset.mobile === "true") {
+    newWorkersSwiper.destroy();
+    workersSlider.dataset.mobile = "false";
+  }
+}
 
-// window.addEventListener("resize", mobileSlider);
+window.addEventListener("resize", mobileSlider);
 
-// mobileSlider();
+mobileSlider();
