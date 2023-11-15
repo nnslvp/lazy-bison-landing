@@ -500,6 +500,12 @@ address {
   font-style: inherit;
 }
 
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 h1 {
   font-weight: 500;
   font-size: 5.5rem;
