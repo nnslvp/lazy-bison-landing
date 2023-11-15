@@ -284,17 +284,7 @@ img {
     width: 0.0625rem;
 }
 
-.section-title__inner {
-    display: flex;
-    gap: 0.9375rem;
-    margin-bottom: 2.5rem;
 
-    @media (max-width: $breakpoint-lg) {
-        display: flex;
-        gap: 0.9375rem;
-        margin-bottom: 0.75rem;
-    }
-}
 
 .planet-text {
     position: absolute;
@@ -315,8 +305,8 @@ img {
     height: 10.6425rem;
     position: absolute;
 
-    @if $enable-animation-circle-ruby-on-rails {
-        animation: circle-rotation $duration-circle-ruby-on-rails infinite linear;
+    @if $enable-animation-spin-text-circle {
+        animation: circle-rotation $duration-spin-text-circle__text infinite linear;
     }
 }
 
@@ -324,34 +314,8 @@ img {
     animation: fadeIn $transition-duration $transition-easing;
 }
 
-.section-title__heading {
-    display: flex;
-    align-items: center;
 
-    @media (max-width: $breakpoint-lg) {
-        font-weight: 600;
-        font-size: 1.75rem;
-        line-height: 2.45rem;
-        letter-spacing: 0.03em;
-    }
 
-    @media (max-width: $breakpoint-md) {
-        font-size: 1.625rem;
-        line-height: 2.25rem;
-        letter-spacing: 0.02em;
-    }
-}
-
-.rectangle-arrow {
-    @include center;
-    width: 4.5rem;
-    height: 4.5rem;
-
-    @media (max-width: $breakpoint-lg) {
-        width: 3.125rem;
-        height: 3.125rem;
-    }
-}
 
 @mixin heading--smaller {
     font-weight: 600;

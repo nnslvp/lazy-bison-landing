@@ -1,0 +1,51 @@
+.section-title__heading {
+    display: flex;
+    align-items: center;
+}
+
+.rectangle-arrow {
+    @include center;
+    width: 4.5rem;
+    height: 4.5rem;
+
+}
+
+.section-title__inner {
+    display: flex;
+    gap: 0.9375rem;
+    margin-bottom: 2.5rem;
+}
+
+
+@media (max-width: $breakpoint-lg) {
+    .section-title__heading {
+        font-weight: 600;
+        font-size: 1.75rem;
+        line-height: 2.45rem;
+        letter-spacing: 0.03em;
+    }
+
+    .rectangle-arrow {
+        width: 3.125rem;
+        height: 3.125rem;
+    }
+
+    .section-title__inner {
+        display: flex;
+        gap: 0.9375rem;
+        margin-bottom: 0.75rem;
+    }
+
+
+}
+
+@media (max-width: $breakpoint-md) {
+
+    .section-title__heading {
+        font-size: 1.625rem;
+        line-height: 2.25rem;
+        letter-spacing: 0.02em;
+
+    }
+
+}
