@@ -1,20 +1,19 @@
-.blog {
-    // width: 404px;
+.card-blog {
     padding: 24px;
     border: 2px solid #E8EAF2
 }
 
-.blog--bg-black {
+.card-blog--bg-black {
     background-color: $color-black;
     color: $color-white;
 }
 
-.blog__hashtag {
+.card-blog__hashtag {
     background-color: $color-disable-grey;
     color: $color-black;
 }
 
-.blog__hashtag {
+.card-blog__hashtag {
     align-self: flex-start;
     font-size: 14px;
     font-weight: 400;
@@ -25,30 +24,30 @@
     border-radius: 4px;
 }
 
-.blog__hashtag--bg-grey {
+.card-blog__hashtag--bg-grey {
     background-color: $color-disable-grey;
     color: $color-black;
 }
 
-.blog__hashtag--bg-light-green {
+.card-blog__hashtag--bg-light-green {
     background-color: $color-light-green;
 }
 
-.blog-content {
+.card-blog__content {
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin-bottom: 20px;
 }
 
-.blog__title {
+.card-blog__title {
     font-size: 24px;
     font-weight: 600;
     line-height: 29px;
     letter-spacing: 0.03em;
 }
 
-.blog__description {
+.card-blog__description {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -60,14 +59,14 @@
 }
 
 
-.blog__date {
+.card-blog__date {
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0em;
 }
 
-.blog__btn {
+.card-blog__btn {
     display: flex;
     align-items: center;
     gap: 24px;
@@ -78,23 +77,22 @@
 
 
 @media (max-width: $breakpoint-lg) {
-    .section-blog__inner {
+    .section-card-blog__inner {
         gap: 44px;
     }
 
-    .blog {
-        // width: 350px;
+    .card-blog {
         padding: 20px;
     }
 
-    .blog__title {
+    .card-blog__title {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
         overflow: hidden;
     }
 
-    .blog__description {
+    .card-blog__description {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
@@ -108,12 +106,11 @@
 }
 
 @media (max-width: $breakpoint-md) {
-    .blog__inner {
+    .card-blog__inner {
         gap: 38px;
     }
 
-    .blog {
-        // width: 320px;
+    .card-blog {
         padding: 16px;
     }
 

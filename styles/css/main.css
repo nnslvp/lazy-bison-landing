@@ -2488,7 +2488,7 @@ img {
   margin-bottom: 60px;
 }
 
-.blogs-slider .blog {
+.blogs-slider .card-blog {
   width: 404px;
 }
 
@@ -2496,7 +2496,7 @@ img {
   .section-blog__inner {
     gap: 44px;
   }
-  .blogs-slider .blog {
+  .blogs-slider .card-blog {
     width: 350px;
   }
 }
@@ -2504,7 +2504,7 @@ img {
   .section-blog__inner {
     gap: 38px;
   }
-  .blogs-slider .blog {
+  .blogs-slider .card-blog {
     width: 320px;
   }
 }
@@ -3599,22 +3599,22 @@ img {
     gap: 16px;
   }
 }
-.blog {
+.card-blog {
   padding: 24px;
   border: 2px solid #E8EAF2;
 }
 
-.blog--bg-black {
+.card-blog--bg-black {
   background-color: #212121;
   color: #ffffff;
 }
 
-.blog__hashtag {
+.card-blog__hashtag {
   background-color: #e8eaf2;
   color: #212121;
 }
 
-.blog__hashtag {
+.card-blog__hashtag {
   -ms-flex-item-align: start;
       align-self: flex-start;
   font-size: 14px;
@@ -3626,16 +3626,16 @@ img {
   border-radius: 4px;
 }
 
-.blog__hashtag--bg-grey {
+.card-blog__hashtag--bg-grey {
   background-color: #e8eaf2;
   color: #212121;
 }
 
-.blog__hashtag--bg-light-green {
+.card-blog__hashtag--bg-light-green {
   background-color: #e5ffaf;
 }
 
-.blog-content {
+.card-blog__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3647,14 +3647,14 @@ img {
   margin-bottom: 20px;
 }
 
-.blog__title {
+.card-blog__title {
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
   letter-spacing: 0.03em;
 }
 
-.blog__description {
+.card-blog__description {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
@@ -3665,14 +3665,14 @@ img {
   letter-spacing: 0.03em;
 }
 
-.blog__date {
+.card-blog__date {
   font-size: 12px;
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0em;
 }
 
-.blog__btn {
+.card-blog__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3688,19 +3688,19 @@ img {
 }
 
 @media (max-width: 768px) {
-  .section-blog__inner {
+  .section-card-blog__inner {
     gap: 44px;
   }
-  .blog {
+  .card-blog {
     padding: 20px;
   }
-  .blog__title {
+  .card-blog__title {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
   }
-  .blog__description {
+  .card-blog__description {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -3712,10 +3712,10 @@ img {
   }
 }
 @media (max-width: 425px) {
-  .blog__inner {
+  .card-blog__inner {
     gap: 38px;
   }
-  .blog {
+  .card-blog {
     padding: 16px;
   }
 }
