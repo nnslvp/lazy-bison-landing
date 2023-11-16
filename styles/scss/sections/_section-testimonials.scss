@@ -1,7 +1,7 @@
 .testimonials__container {
     position: relative;
 
-    .planet-blue {
+    .spin-text-circle__circle {
         width: 10rem;
         height: 10rem;
         position: absolute;
@@ -162,7 +162,7 @@
     .workers-background {
         background-image: url("../../assets/images/sections/section-testimonials/workers-bg-768px.svg");
 
-        .planet-blue {
+        .spin-text-circle__circle {
             display: none;
         }
     }
@@ -277,7 +277,7 @@
     }
 
 
-    .testimonials .planet-blue {
+    .testimonials .spin-text-circle__circle {
         display: none;
     }
 

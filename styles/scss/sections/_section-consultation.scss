@@ -19,7 +19,7 @@
     margin: 0 auto;
     color: $color-white;
 
-    .planet-text {
+    .spin-text-circle {
         position: absolute;
         z-index: -1;
         top: -1.125rem;
@@ -27,11 +27,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    .planet-blue {
-        width: 7.5rem;
-        height: 7.5rem;
     }
 }
 
@@ -74,19 +69,19 @@
         max-width: 41rem;
         max-height: 12.375rem;
 
-        .planet-text {
+        .spin-text-circle {
             top: -0.0625rem;
             left: 0.1875rem;
         }
 
-        .planet-blue {
+        .spin-text-circle__circle {
             width: 4.7363rem;
             height: 4.7363rem;
             top: -0.125rem;
             left: -1.5rem;
         }
 
-        .circle-ruby-on-rails {
+        .spin-text-circle__text {
             width: 6.7231rem;
             height: 6.7219rem;
             top: -1.1875rem;
@@ -126,12 +121,12 @@
         width: auto;
         max-height: 20.9375rem;
 
-        .planet-text {
+        .spin-text-circle {
             left: auto;
             right: 0.5625rem;
         }
 
-        .planet-blue {
+        .spin-text-circle__circle {
             width: 4.25rem;
             height: 4.25rem;
             top: -1.3125rem;
@@ -139,7 +134,7 @@
             right: -0.375rem;
         }
 
-        .circle-ruby-on-rails {
+        .spin-text-circle__text {
             width: 5.9375rem;
             height: 6.0675rem;
             top: -2.3125rem;

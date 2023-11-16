@@ -286,29 +286,6 @@ img {
 
 
 
-.planet-text {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.planet-blue {
-    width: 7.5rem;
-    height: 7.5rem;
-    position: relative;
-    z-index: 1;
-}
-
-.circle-ruby-on-rails {
-    width: 10.6469rem;
-    height: 10.6425rem;
-    position: absolute;
-
-    @if $enable-animation-spin-text-circle {
-        animation: circle-rotation $duration-spin-text-circle__text infinite linear;
-    }
-}
 
 .fade-in {
     animation: fadeIn $transition-duration $transition-easing;
