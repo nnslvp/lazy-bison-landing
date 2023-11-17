@@ -6,6 +6,7 @@
 }
 
 .full-info-blog__section-text {
+    font-weight: 300;
     font-size: 18px;
     line-height: 29px;
     letter-spacing: 0em;
@@ -89,12 +90,78 @@
     text-align: left;
 }
 
-.full-info-blog-list {
+.full-info-blog-list--disc li {
+    list-style-type: disc;
+    padding-left: 0px;
+}
+
+
+.full-info-blog-list--number {
+    list-style: none;
     padding-left: 30px;
+}
 
-    li {
-        list-style-type: disc;
-        padding-left: 0px;
 
-    }
+.full-info-blog-list--number p~li {
+    counter-increment: my-awesome-counter;
+    padding-left: 0px;
+}
+
+.full-info-blog-list--number p~li>p::before {
+    content: counter(my-awesome-counter) ". ";
+}
+
+.full-info-blog-list--number .full-info-blog-list-disc {
+    padding-left: 18px;
+}
+
+.full-info-blog-list--number .full-info-blog-list--disc li {
+    list-style-type: disc;
+}
+
+.full-info-blog-list li .code-wrapper {
+    margin: 20px 0;
+}
+
+.highlight-text {
+    font-weight: bold;
+    color: $color-dark-violet;
+}
+
+.code-wrapper {
+    position: relative;
+    border-radius: 8px;
+    padding: 40px;
+    background-color: $color-night-blue;
+}
+
+.code {
+    color: $color-light-green;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+}
+
+.code__command {
+    color: $color-white;
+}
+
+.copy-button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    background-color: transparent;
+    color: $color-grey;
+    border: none;
+}
+
+.code-wrapper .copy-button {
+    position: absolute;
+    top: 16px;
+    right: 24px;
 }

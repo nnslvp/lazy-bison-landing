@@ -49,7 +49,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;300&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -107,11 +107,11 @@
               <nav class="navigation-path blog-page__navigation-path">
                 <a class="navigation-path__link" href>Home</a>
                 <span>/</span>
-                <a class="navigation-path__link"
-                  href>Blog</a>
+                <a class="navigation-path__link" href>Blog</a>
                 <span>/</span>
                 <a class="navigation-path__link navigation-path__link--active"
-                  href>A set of the most necessary things on vacation</a>
+                  href>A set of the most necessary things on
+                  vacation</a>
               </nav>
               <article class="full-info-blog">
                 <header class="full-info__header">
@@ -119,7 +119,7 @@
                     Applications with Kamal</h1>
                   <div class="author-time-blog">
                     <div class="author">
-                      <img class="author__avatar"></img>
+                      <img src="./assets/images/author-blog.svg" class="author__avatar"></img>
                     <p class="author__name">Marie Caphlish</p>
                   </div>
                   <span>|</span>
@@ -137,7 +137,7 @@
                   </li>
                 </ul>
                 <div class="blog-post-image__wrapper">
-                  <img class="blog-post-image" src alt>
+                  <img class="blog-post-image" src="./assets/images/blog-img.png" alt>
                 </div>
               </header>
               <section class="full-info-blog__section">
@@ -154,7 +154,7 @@
                 <p class="full-info-blog__section-text">Kamal brings a host of
                   features to the table, making it a
                   go-to solution for web application deployment:</p>
-                <ul class="full-info-blog-list">
+                <ul class="full-info-blog-list full-info-blog-list--disc">
                   <li>
                     <p class="full-info-blog__section-text">Zero Downtime: Kamal
                       ensures uninterrupted service
@@ -187,37 +187,278 @@
               </section>
               <section class="full-info-blog__section">
                 <h2 class="section-blog-page__title-h2">Installation Guide</h2>
-                <ul class="full-info-blog-list">
+                <ol class="full-info-blog-list full-info-blog-list--number">
                   <p class="full-info-blog__section-text">Installing Kamal is
                     straightforward. Here are your options:</p>
                   <li>
-                    <p class="full-info-blog__section-text">Zero Downtime: Kamal
+                    <p class="full-info-blog__section-text">
                       To add the gem to your Ruby on Rails project, simply
-                      execute bundle add kamal. Note that compatibility issues
-                      may arise with older Ruby on Rails versions.</p>
+                      execute <span class="highlight-text">bundle add kamal</span>.
+                      Note that compatibility issues may arise with older Ruby
+                      on Rails versions.
+                    </p>
+                  </li>
+                  <li><p class="full-info-blog__section-text">
+                    For Docker users, you can create an alias in your console configuration to run Kamal as follows:
+                  </p>
+                  <div class="code-wrapper">
+                      <button class="button copy-button">
+                      <i class="icon icon-copy"></i>
+                      Copy
+                    </button>
+                    <pre>
+                      <code class="code">
+                        alias kamal="docker run -it --rm -v '${PWD}:/workdir' -v '/run/host-services/ssh-auth.sock:/run/host-services/ssh-auth.sock' -e SSH_AUTH_SOCK='/run/host-services/ssh-auth.sock' -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/basecamp/kamal:latest"
+                      </code>
+                    </pre>
+                  </div>
+                </li>
+                  <li>
+                    <p class="full-info-blog__section-text">To avoid version
+                      conflicts, you can set up a separate Gemfile as follows:
+                    </p>
+                    <ul class="full-info-blog-list full-info-blog-list--disc ">
+                      <li>
+                        <p class="full-info-blog__section-text">
+                          Create a file named <span class="highlight-text">gemfiles/kamal.Gemfile</span> and populate it with:
+                        </p>
+                        <div class="code-wrapper">
+                            <button class="button copy-button">
+                      <i class="icon icon-copy"></i>
+                      Copy
+                    </button>
+                          <pre>
+                            <code class="code">
+                              <span class="code__command">source</span>'https://rubygems.org'
+                        <span class="code__command">gem</span>'kamal', '~>1.0.0'
+                            </code>
+                          </pre>
+                        </div>
+                      </li>
+                      <li>
+                        <p class="full-info-blog__section-text">Run BUNDLE_GEMFILE=kamal/Gemfile bundle install to install the gem.</p>
+                      </li>
+                      <li>
+                        <p class="full-info-blog__section-text">Generate a runnable directory using BUNDLE_GEMFILE=kamal/Gemfile bundle binstub kamal --path ../bin. </p>
+                       </li>
+                    </ul>
                   </li>
                   <li>
-                    <p class="full-info-blog__section-text">ncremental Rollouts:
-                      Update your application seamlessly
-                      without affecting the end-user experience.</p>
+                    <p class="full-info-blog__section-text">After these steps, you can run bin/kamal from the console. This is particularly useful for GitHub Actions if adding the gem to your project isn't an option.</p>
                   </li>
-                  <li>
-                    <p class="full-info-blog__section-text">Flexible
-                      Configuration: Kamal provides extensive
-                      options
-                      for managing both environment variables and sensitive data
-                      securely.</p>
-                  </li>
-                </ul>
+                </ol>
               </section>
               <section class="full-info-blog__section">
                 <h2 class="section-blog-page__title-h2">Configuration Steps</h2>
+                <p class="full-info-blog__section-text">Configuring Kamal is a breeze. Simply run kamal init to generate the necessary directories and files. You can then proceed to configure your deployment settings using the deploy.yml and deploy.<env name>.yml files. Here's a sample deploy.yml file to get you started:</p>
+                  <div class="code-wrapper">
+                      <button class="button copy-button">
+                      <i class="icon icon-copy"></i>
+                      Copy
+                    </button>
+                    <pre>
+                      <code class="code">
+                        # Name of your application. Used to uniquely configure containers.
+                        service: <project_name>
+
+                        # Name of the container image.
+                        image: <docker_image_name>
+
+                        # Deploy to these servers.
+                        # servers:
+                        #  - 192.168.0.1
+
+                        # Credentials for your image host.
+                        # registry:
+                        # Specify the registry server, if you're not using Docker Hub
+                        # server: registry.digitalocean.com / ghcr.io / ...
+
+                        username:
+                          - DOCKER_REGISTRY_USERNAME # this is ENV variable
+
+                        # Always use an access token rather than real password when possible.
+                        password:
+                          - DOCKER_REGISTRY_PASSWORD # also ENV variable
+
+                        # Inject ENV variables into containers (secrets come from .env).
+                        # Remember to run `kamal env push` after making changes!
+                        env:
+                        #   clear:
+                        #     DB_HOST: 192.168.0.2
+                        secret:
+                          - RAILS_MASTER_KEY
+                          - MYSQL_ROOT_PASSWORD
+
+                        # Use a different ssh user than root
+                        # ssh:
+                        #   user: app
+
+                        # Configure builder setup.
+
+                        builder:
+                          multiarch: false
+                          cache:
+                            type: registry
+                            options: mode=max,image-manifest=true,oci-mediatypes=true
+
+                        # builder:
+                        #   args:
+                        #     RUBY_VERSION: 3.2.0
+                        #   secrets:
+                        #     - GITHUB_TOKEN
+                        #   remote:
+                        #     arch: amd64
+                        #     host: ssh://app@192.168.0.1
+
+                        # Use accessory services (secrets come from .env).
+                        # accessories:
+                        #   db:
+                        #     image: mysql:8.1.0
+                        #     host: 192.168.0.2
+                        #     port: 3306
+                        #     env:
+                        #       clear:
+                        #         MYSQL_ROOT_HOST: '%'
+                        #       secret:
+                        #         - MYSQL_ROOT_PASSWORD
+                        #     directories:
+                        #       - data:/var/lib/mysql
+                        #   redis:
+                        #     image: redis:7.2.1
+                        #     host: 192.168.0.3
+                        #     port: 6379
+                        #     directories:
+                        #       - data:/data
+
+                        # Configure custom arguments for Traefik
+                        # traefik:
+                        #   args:
+                        #     accesslog: true
+                        #     accesslog.format: json
+
+                        # Configure a custom healthcheck (default is /up on port 3000)
+                        healthcheck:
+                          max_attempts: 30
+
+                        # Bridge fingerprinted assets, like JS and CSS, between versions to avoid
+                        # hitting 404 on in-flight requests. Combines all files from new and old
+                        # version inside the asset_path.
+                        # asset_path: /rails/public/assets
+
+                        # Configure rolling deploys by setting a wait time between batches of restarts.
+                        # boot:
+                        #   limit: 10 # Can also specify as a percentage of total hosts, such as "25%"
+                        #   wait: 2
+                      </code>
+                    </pre>
+                  </div>
+                <p class="full-info-blog__section-text">And an example deploy.staging.yml for staging environments:</p>
+                  <div class="code-wrapper">
+                      <button class="button copy-button">
+                      <i class="icon icon-copy"></i>
+                      Copy
+                    </button>
+                    <pre>
+                      <code class="code">
+                        ervers:
+                        - <staging server ip>
+
+                      env:
+                        clear:
+                          RAILS_ENV: staging
+                          DB_HOST: <staging DB server ip>
+                          REDIS_HOST: <staging Redis server ip>
+
+                      accessories:
+                        db:
+                          image: mysql:8.1.0
+                          host: <staging DB server ip>
+                          port: 3306
+                          env:
+                            clear:
+                              MYSQL_ROOT_HOST: '%'
+                            secret:
+                              - MYSQL_ROOT_PASSWORD
+                          directories:
+                            - data:/var/lib/mysql
+                        redis:
+                          image: redis:7.2.1
+                          host: <staging Redis server ip>
+                          port: 6379
+                          directories:
+                            - data:/data
+                      </code>
+                    </pre>
+                  </div>
               </section>
               <section class="full-info-blog__section">
                 <h2 class="section-blog-page__title-h2">Usage Guide</h2>
+                <p class="full-info-blog__section-text">To set up your server, execute the command kamal setup. In our specific case, the command is:</p>
+                <div class="code-wrapper">
+                    <button class="button copy-button">
+                      <i class="icon icon-copy"></i>
+                      Copy
+                    </button>
+                  <pre>
+                    <code class="code">
+                      kamal setup -d staging
+                    </code>
+                  </pre>
+                </div>
+                <p class="full-info-blog__section-text">To create a .env file, execute the command kamal envify. In our specific case, the command is:</p>
+                <div class="code-wrapper">
+                    <button class="button copy-button">
+                      <i class="icon icon-copy"></i>
+                      Copy
+                    </button>
+                  <pre>
+                    <code class="code">
+                      kamal envify -d staging
+                    </code>
+                  </pre>
+                </div>
+                <p class="full-info-blog__section-text">To upload variables from .env files to the server, execute the command kamal env push. In our specific case, the command is:</p>
+                <div class="code-wrapper">
+                    <button class="button copy-button">
+                      <i class="icon icon-copy"></i>
+                      Copy
+                    </button>
+                  <pre>
+                    <code class="code">
+                      kamal env push -d staging
+                    </code>
+                  </pre>
+                </div>
+                <p class="full-info-blog__section-text">To deploy your application, use the command kamal deploy. For us, the command is:</p>
+                <div class="code-wrapper">
+                    <button class="button copy-button">
+                      <i class="icon icon-copy"></i>
+                      Copy
+                    </button>
+                  <pre>
+                    <code class="code">
+                      kamal deploy -d staging
+                    </code>
+                  </pre>
+                </div>
               </section>
               <section class="full-info-blog__section">
                 <h2 class="section-blog-page__title-h2">Conclusion</h2>
+                <p class="full-info-blog__section-text">Kamal stands out as a streamlined and efficient solution for web application deployment. Its zero-downtime, incremental rollouts, and flexible configuration options make it an essential tool for any development team.</p>
+                <p class="full-info-blog__section-text">SEO:</p>
+                <div class="code-wrapper">
+                    <button class="button copy-button">
+                      <i class="icon icon-copy"></i>
+                      Copy
+                    </button>
+                  <pre>
+                    <code class="code">
+                      &lt;meta name="description" content="Learn how Kamal simplifies web app deployment with features like zero downtime, incremental rollouts, and flexible configuration. Ideal for developers."&gt;
+                      &lt;meta name="keywords" content="Kamal, Web App Deployment, Zero Downtime, Incremental Rollouts, Flexible Configuration, Developers"&gt;
+                      &lt;meta name="author" content="Lazy Bison"&gt;
+                    </code>
+                  </pre>
+                </div>
               </section>
             </article>
           </div>
@@ -288,7 +529,7 @@
         </div>
       </footer>
     </div>
-    <script type="module" src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 
 </html>

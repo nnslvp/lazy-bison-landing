@@ -132,20 +132,20 @@ function handleResize() {
 	if (widthScreen <= 768) {
 		grayLines.forEach(line => {
 			line.style = null
-		}) 
-		verticalGrayLines.forEach(line => line.style = null) 
+		})
+		verticalGrayLines.forEach(line => line.style = null)
 	}
-	
+
 	if (widthScreen <= 425) {
 		grayLines.forEach(line => {
 			line.style.opacity = 1
-		}) 
-		 verticalGrayLines.forEach(line => line.style.opacity = 0) 
+		})
+		 verticalGrayLines.forEach(line => line.style.opacity = 0)
 	}else{
-		grayLines.forEach(line => line.style.opacity = 1) 
-		 verticalGrayLines.forEach(line => line.style.opacity = 1) 
+		grayLines.forEach(line => line.style.opacity = 1)
+		 verticalGrayLines.forEach(line => line.style.opacity = 1)
 	}
- 
+
   }
 
 window.addEventListener('resize', handleResize);
