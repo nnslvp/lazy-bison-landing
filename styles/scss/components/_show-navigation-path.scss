@@ -1,10 +1,10 @@
 .navigation-path {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 16px;
+    gap: .625rem;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.625rem;
     letter-spacing: 0em;
     text-align: left;
 }
@@ -14,16 +14,17 @@
 }
 
 .navigation-path__link--active {
+    font-weight: 500;
     color: $color-dark-violet;
 }
 
 
 @media (max-width: $breakpoint-lg) {
     .navigation-path {
-        font-size: 12px;
+        font-size: .75rem;
         font-weight: 400;
-        line-height: 19px;
-        gap: 4px;
+        line-height: 1.1875rem;
+        gap: .25rem;
 
     }
 
