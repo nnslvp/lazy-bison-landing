@@ -1,0 +1,113 @@
+
+.card {
+    padding: 3.875rem 1.375rem 1.75rem 1.375rem;
+    background-color: $color-white;
+    border: 0.0625rem solid $color-grey;
+    position: relative;
+    width: 25.25rem;
+    height: 23.5rem;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    position: absolute;
+    top: -5.6875rem;
+    bottom: 0;
+    width: 9.0625rem;
+    height: 9.0625rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    letter-spacing: 0em;
+    margin-bottom: 0.0625rem;
+}
+
+.position {
+    text-align: center;
+    color: #888888;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.03rem;
+}
+
+.card__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.375rem;
+}
+
+
+@media (max-width: $breakpoint-lg) {
+    .card {
+        padding: 3.6437rem 0.8375rem 0.7581rem 0.8375rem;
+        width: 16rem;
+        height: 18.5rem;
+    }
+
+    .avatar {
+        top: -2.75rem;
+        bottom: 0;
+        width: 6.18rem;
+        height: 6.18rem;
+    }
+
+    .card__content {
+        gap: 0.3962rem;
+    }
+
+    .name {
+        font-size: 1rem;
+        line-height: 1.375rem;
+    }
+
+    .position {
+        font-size: 0.75rem;
+        line-height: 1.05rem;
+    }
+
+    .description {
+        margin-top: 0;
+        font-size: .75rem;
+        line-height: 1.05rem;
+        letter-spacing: 0.0187rem;
+        text-align: justify;
+    }
+}
+
+@media (max-width: $breakpoint-md) {
+    .avatar {
+        top: -3.375rem;
+    }
+
+    .card {
+        padding: 3.125rem 1rem 1rem 1rem;
+    }
+
+    .card {
+        position: initial;
+        top: 14%;
+        width: 100%;
+    }
+
+    .position,
+    .description {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        letter-spacing: 0.025rem;
+    }
+
+}
