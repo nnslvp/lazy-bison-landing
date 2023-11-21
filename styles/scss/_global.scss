@@ -1,308 +1,327 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-  font-size: $root-font-size;
-  scroll-behavior: smooth;
+	font-size: $root-font-size;
+	scroll-behavior: smooth;
 
-  @media (max-width: $breakpoint-xl) {
-    font-size: 1.111vw;
-  }
+	@media (width: $breakpoint-xl) {
+		font-size: 16px;
+	}
+	@media (width < $breakpoint-xl) {
+		font-size: 1.111vw;
+	}
 
-  @media (max-width: $breakpoint-lg) {
-    font-size: 2.083vw;
-  }
+	@media (width: $breakpoint-lg) {
+		font-size: 16px;
+	}
 
-  @media (max-width: $breakpoint-md) {
-    font-size: 16px;
-  }
+	@media (width < $breakpoint-lg) {
+		font-size: 2.083vw;
+	}
 
-  @media (max-width: $breakpoint-sm) {
-    font-size: 4.267vw;
-  }
+	@media (max-width: $breakpoint-md) {
+		font-size: 16px;
+	}
+
+	@media (max-width: $breakpoint-md) {
+		font-size: 16px;
+	}
+
+	@media (width: $breakpoint-sm) {
+		font-size: 16px;
+	}
+
+	@media (width < $breakpoint-sm) {
+		font-size: 4.267vw;
+	}
 }
 
 body {
-  font-family: $font-family;
+	font-family: $font-family;
 }
 
 body.hidden {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 address {
-  font-style: inherit;
+	font-style: inherit;
 }
 
 pre,
 code {
-  white-space: pre-line;
+	white-space: pre-line;
+}
+
+hr {
+	border: none;
 }
 
 main {
-  flex: 1;
+	flex: 1;
 }
 
 h1 {
-  font-weight: 500;
-  font-size: 5.5rem;
-  line-height: 6.625rem;
-  letter-spacing: 0.03em;
+	font-weight: 500;
+	font-size: 5.5rem;
+	line-height: 6.625rem;
+	letter-spacing: 0.03em;
 }
 
 h2 {
-  font-weight: 600;
-  font-size: 2.625rem;
-  line-height: 3.675rem;
-  letter-spacing: 0.03em;
+	font-weight: 600;
+	font-size: 2.625rem;
+	line-height: 3.675rem;
+	letter-spacing: 0.03em;
 }
 
 h3 {
-  font-weight: 500;
-  font-size: 2.25rem;
-  line-height: 3.15rem;
-  letter-spacing: 0.03em;
+	font-weight: 500;
+	font-size: 2.25rem;
+	line-height: 3.15rem;
+	letter-spacing: 0.03em;
 }
 
 h4 {
-  font-weight: 600;
-  font-size: 1.75rem;
-  line-height: 2.45rem;
-  letter-spacing: 0.03em;
+	font-weight: 600;
+	font-size: 1.75rem;
+	line-height: 2.45rem;
+	letter-spacing: 0.03em;
 }
 
 a {
-  text-decoration: none;
-  color: $color-white;
+	text-decoration: none;
+	color: $color-white;
 }
 
 li {
-  list-style: none;
+	list-style: none;
 }
 
 i {
-  display: inline-block;
+	display: inline-block;
 }
 
 object {
-  width: 100%;
+	width: 100%;
 }
 
 section {
-  margin-bottom: 7.5rem;
+	margin-bottom: 7.5rem;
 
-  @media (max-width: $breakpoint-lg) {
-    margin-bottom: 5rem;
-  }
+	@media (max-width: $breakpoint-lg) {
+		margin-bottom: 5rem;
+	}
 
-  @media (max-width: $breakpoint-md) {
-    margin-bottom: 3.75rem;
-  }
+	@media (max-width: $breakpoint-md) {
+		margin-bottom: 3.75rem;
+	}
 }
 
 button {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
 }
 
 .container {
-  max-width: calc($container-width + $container-padding * 2);
-  margin: 0 auto;
+	max-width: calc($container-width + $container-padding * 2);
+	margin: 0 auto;
 
-  @media (max-width: $breakpoint-lg) {
-    max-width: calc($container-width-768 + $container-padding * 2);
-  }
+	@media (max-width: $breakpoint-lg) {
+		max-width: calc($container-width-768 + $container-padding * 2);
+	}
 
-  @media (max-width: $breakpoint-md) {
-    max-width: calc($container-width-375 + $container-padding * 2);
-  }
+	@media (max-width: $breakpoint-md) {
+		max-width: calc($container-width-375 + $container-padding * 2);
+	}
 }
 
 .heading--large {
-  font-weight: 500;
-  font-size: 5.5rem;
-  line-height: 6.625rem;
-  letter-spacing: 0.03em;
+	font-weight: 500;
+	font-size: 5.5rem;
+	line-height: 6.625rem;
+	letter-spacing: 0.03em;
 }
 
 .heading--medium {
-  font-weight: 600;
-  font-size: 2.625rem;
-  line-height: 3.675rem;
-  letter-spacing: 0.03em;
+	font-weight: 600;
+	font-size: 2.625rem;
+	line-height: 3.675rem;
+	letter-spacing: 0.03em;
 }
 
 .heading--small {
-  font-weight: 500;
-  font-size: 2.25rem;
-  line-height: 3.15rem;
-  letter-spacing: 0.03em;
+	font-weight: 500;
+	font-size: 2.25rem;
+	line-height: 3.15rem;
+	letter-spacing: 0.03em;
 }
 
 .heading--smaller {
-  font-weight: 600;
-  font-size: 1.75rem;
-  line-height: 2.45rem;
-  letter-spacing: 0.03em;
+	font-weight: 600;
+	font-size: 1.75rem;
+	line-height: 2.45rem;
+	letter-spacing: 0.03em;
 }
 
 @mixin heading--smaller {
-  font-weight: 600;
-  font-size: 1.75rem;
-  line-height: 2.45rem;
-  letter-spacing: 0.03em;
+	font-weight: 600;
+	font-size: 1.75rem;
+	line-height: 2.45rem;
+	letter-spacing: 0.03em;
 }
 
 .text--large {
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 2.125rem;
-  letter-spacing: 0.03em;
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 2.125rem;
+	letter-spacing: 0.03em;
 }
 
 .text--medium {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.75rem;
-  letter-spacing: 0em;
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 1.75rem;
+	letter-spacing: 0em;
 }
 
 @mixin text--medium {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.75rem;
-  letter-spacing: 0em;
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 1.75rem;
+	letter-spacing: 0em;
 }
 
 .text--small {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.375rem;
-  letter-spacing: 0.03em;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.375rem;
+	letter-spacing: 0.03em;
 }
 
 @mixin text--small {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.375rem;
-  letter-spacing: 0.03em;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.375rem;
+	letter-spacing: 0.03em;
 }
 
 .button__text--large {
-  font-size: 1.25rem;
-  font-weight: 600;
-  line-height: 1.75rem;
-  letter-spacing: 0em;
+	font-size: 1.25rem;
+	font-weight: 600;
+	line-height: 1.75rem;
+	letter-spacing: 0em;
 }
 
 .button__text--medium {
-  font-size: 1.125rem;
-  font-weight: 600;
-  line-height: 1.5625rem;
-  letter-spacing: 0em;
+	font-size: 1.125rem;
+	font-weight: 600;
+	line-height: 1.5625rem;
+	letter-spacing: 0em;
 }
 
 .button {
-  cursor: pointer;
-  border: 0.0625rem solid;
+	cursor: pointer;
+	border: 0.0625rem solid;
 }
 
 .button--secondary {
-  @include center;
-  color: $color-white;
-  border-color: $color-light-grey;
-  transition: $transition-property $transition-duration $transition-easing;
+	@include center;
+	color: $color-white;
+	border-color: $color-light-grey;
+	transition: $transition-property $transition-duration $transition-easing;
 
-  &:hover {
-    color: $color-primary-violet;
-    border-color: $color-primary-violet;
-  }
+	&:hover {
+		color: $color-primary-violet;
+		border-color: $color-primary-violet;
+	}
 
-  &.active {
-    color: $color-black;
-    background-color: $color-disable-grey;
-    border-color: $color-disable-grey;
-  }
+	&.active {
+		color: $color-black;
+		background-color: $color-disable-grey;
+		border-color: $color-disable-grey;
+	}
 }
 
 .button--primary {
-  background-color: $color-primary-violet;
-  color: $color-white;
+	background-color: $color-primary-violet;
+	color: $color-white;
 }
 
 .get-consultation-btn {
-  @include center;
-  border-color: $color-black;
-  transition: $transition-property $transition-duration $transition-easing;
-  padding: 1rem 3rem;
+	@include center;
+	border-color: $color-black;
+	transition: $transition-property $transition-duration $transition-easing;
+	padding: 1rem 3rem;
 
-  &:hover {
-    background-color: $color-dark-violet;
-    border-color: $color-black;
-  }
+	&:hover {
+		background-color: $color-dark-violet;
+		border-color: $color-black;
+	}
 
-  &.active {
-    color: $color-black;
-    background-color: $color-light-green;
-  }
+	&.active {
+		color: $color-black;
+		background-color: $color-light-green;
+	}
 
-  @media (max-width: $breakpoint-lg) {
-    font-size: 1.0811rem;
-    font-weight: 600;
-    line-height: 1.5135rem;
-    padding: 0.875rem 2.8438rem;
-  }
+	@media (max-width: $breakpoint-lg) {
+		font-size: 1.0811rem;
+		font-weight: 600;
+		line-height: 1.5135rem;
+		padding: 0.875rem 2.8438rem;
+	}
 
-  @media (max-width: $breakpoint-md) {
-    font-size: 1.0625rem;
-    line-height: 1.5rem;
-  }
+	@media (max-width: $breakpoint-md) {
+		font-size: 1.0625rem;
+		line-height: 1.5rem;
+	}
 }
 
 .gray-line,
 .vertical-gray-line {
-  background-color: $color-light-grey;
-  opacity: 0;
+	background-color: $color-light-grey;
+	opacity: 0;
 }
 
 .gray-line {
-  height: 0.125rem;
+	height: 0.125rem;
 }
 
 .vertical-gray-line {
-  width: 0.0625rem;
+	width: 0.0625rem;
 }
 
 .fade-in {
-  animation: fadeIn $transition-duration $transition-easing;
+	animation: fadeIn $transition-duration $transition-easing;
 }
 
 @mixin heading--smaller {
-  font-weight: 600;
-  font-size: 1.75rem;
-  line-height: 2.45rem;
-  letter-spacing: 0.03em;
+	font-weight: 600;
+	font-size: 1.75rem;
+	line-height: 2.45rem;
+	letter-spacing: 0.03em;
 }
 
 @mixin text--small {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.375rem;
-  letter-spacing: 0.03em;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.375rem;
+	letter-spacing: 0.03em;
 }
