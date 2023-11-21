@@ -1,0 +1,52 @@
+.case-page__navigation-path {
+	margin: 60px 0 40px 0;
+}
+
+.section-case__inner .section-blog__inner {
+	margin-bottom: 45px;
+}
+
+.case-page__title-h2 {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 28.8px;
+}
+
+.categories__title {
+	margin-bottom: 24px;
+}
+
+.case-page__wrapper .categories-list {
+	margin-bottom: 54px;
+}
+
+.case-page__wrapper .cases-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(619.5px, 1fr));
+	gap: 28px;
+}
+
+@media (max-width: $breakpoint-lg) {
+	.case-page__navigation-path {
+		margin: 24px 0 24px 0;
+	}
+
+	.case-page__wrapper .categories-list {
+		margin-bottom: 24px;
+	}
+
+	.case-page__wrapper .cases-list {
+		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+		gap: 16px;
+	}
+
+	.case-page__wrapper .case-card .case-card__title {
+		width: 235px;
+	}
+}
+
+@media (max-width: $breakpoint-md) {
+	.case-page__wrapper .cases-list {
+		grid-template-columns: repeat(auto-fill, minmax(343px, 1fr));
+	}
+}

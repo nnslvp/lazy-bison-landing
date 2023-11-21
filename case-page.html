@@ -47,7 +47,7 @@
   <link rel="icon" type="image/png" href="./assets/icons/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./styles/css/main.min.css" />
 </head>
@@ -58,7 +58,7 @@
       style="display: none; visibility: hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <div class="wrapper blogs-page__wrapper">
+  <div class="wrapper case-page__wrapper">
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -95,86 +95,102 @@
       </div>
     </header>
     <main>
-      <section class="section-blogs-page">
+      <div class="container">
+        <nav class="navigation-path case-page__navigation-path">
+          <a class="navigation-path__link" href>Home</a>
+          <span>/</span>
+          <a class="navigation-path__link navigation-path__link--active" href>Case</a>
+        </nav>
+      </div>
+      <div class="cases">
         <div class="container">
-          <div class="section-blogs-page__inner">
-            <nav class="navigation-path blogs-page-navigation-path">
-              <a class="navigation-path__link" href>Home</a>
-              <span>/</span>
-              <a class="navigation-path__link navigation-path__link--active" href>Blog</a>
-            </nav>
+          <div class="section-case__inner">
             <div class="section-title__inner">
-              <h1 class="section-title__heading">Blog</h1>
+              <h1 class="section-title__heading">Cases</h1>
               <div class="section-title__arrow rectangle-arrow">
                 <i class="icon arrow-right-down-angle-square"></i>
               </div>
             </div>
-            <section class="categories">
-              <h2 class="categories__title">Categories</h2>
-              <ul class="categories-list">
-                <li class="categories-item card-blog__hashtag card-blog__hashtag--bg-light-green">All</li>
-                <li class="categories-item card-blog__hashtag">#eCommerce</li>
-                <li class="categories-item card-blog__hashtag">#Healthcare</li>
-                <li class="categories-item card-blog__hashtag">#real estate</li>
-                <li class="categories-item card-blog__hashtag">#fintech</li>
-                <li class="categories-item card-blog__hashtag">#veterinary</li>
-                <li class="categories-item card-blog__hashtag">#crowdfunding
-                </li>
-                <li class="categories-item card-blog__hashtag">#Legal services
-                  focused on flight compensations</li>
-              </ul>
-            </section>
-            <ul class="blogs-list">
-              <li class="blogs-item">
-                <div class="card-blog card-blog--bg-black">
-                  <div class="card-blog__content">
-                    <h3 class="card-blog__title">
-                      Effortless Deployment of Web Applications with Kamal
-                    </h3>
-                    <p class="card-blog__description">
-                      Navigating the intricacies of web application
-                      deployment can be a daunting task. Enter Kamal—a
-                      deployment tool designed to alleviate these
-                      complexities. In this article, we'll delve into the
-                      key features of Kamal and share insights from our own
-                      hands-on experience.
-                    </p>
-                    <span class="card-blog__hashtag card-blog__hashtag--bg-light-green">#eCommerce</span>
-                    <spa class="card-blog__date">Jul 06, 2023</spa>
-                  </div>
-                  <a href="./blog-page.html" class="button button--primary card-blog__btn">
-                    Read More
-                    <i class="icon arrow-right-top-angle-square-transparent-bg"></i>
-                  </a>
-                </div>
+          </div>
+          <section class="categories">
+            <h2 class="case-page__title-h2 categories__title">Categories</h2>
+            <ul class="categories-list ">
+              <li class="categories-item card-blog__hashtag card-blog__hashtag--bg-light-green">All</li>
+              <li class="categories-item card-blog__hashtag">#eCommerce</li>
+              <li class="categories-item card-blog__hashtag">#Healthcare</li>
+              <li class="categories-item card-blog__hashtag">#real estate</li>
+              <li class="categories-item card-blog__hashtag">#fintech</li>
+              <li class="categories-item card-blog__hashtag">#veterinary</li>
+              <li class="categories-item card-blog__hashtag">#crowdfunding
               </li>
-              <li class="blogs-item">
-                <div class="card-blog">
-                  <div class="card-blog__content">
-                    <h3 class="card-blog__title">
+              <li class="categories-item card-blog__hashtag">#Legal services
+                focused on flight compensations</li>
+            </ul>
+            <ul class="cases-list">
+              <li class="cases-item">
+                <article class="case-card">
+                  <div class="case-card__img-wrapper">
+                    <img src="./assets/images/sections/section-cases/case-img-one.png" alt class="case-card-img" />
+                  </div>
+                  <footer class="case-card__footer">
+                    <h3 class="case-card__title">
                       Effortless Deployment of Web Applications with Kamal
                     </h3>
-                    <p class="card-blog__description">
-                      Navigating the intricacies of web application
-                      deployment can be a daunting task. Enter Kamal—a
-                      deployment tool designed to alleviate these
-                      complexities. In this article, we'll delve into the
-                      key features of Kamal and share insights from our own
-                      hands-on experience.
-                    </p>
-                    <span class="card-blog__hashtag">#eCommerce</span>
-                    <spa class="card-blog__date">Jul 06, 2023</spa>
+                    <div class="section-title__arrow rectangle-arrow">
+                      <i class="icon arrow-right-top-angle-square"></i>
+                    </div>
+                  </footer>
+                </article>
+              </li>
+              <li class="cases-item">
+                <article class="case-card">
+                  <div class="case-card__img-wrapper">
+                    <img src="./assets/images/sections/section-cases/case-img-two.png" alt class="case-card-img" />
                   </div>
-                  <a href="./blog-page.html" class="button button--primary card-blog__btn">
-                    Read More
-                    <i class="icon arrow-right-top-angle-square-transparent-bg"></i>
-                  </a>
-                </div>
+                  <footer class="case-card__footer">
+                    <h3 class="case-card__title">
+                      Effortless Deployment of Web Applications with Kamal
+                    </h3>
+                    <div class="section-title__arrow rectangle-arrow">
+                      <i class="icon arrow-right-top-angle-square"></i>
+                    </div>
+                  </footer>
+                </article>
+              </li>
+              <li class="cases-item">
+                <article class="case-card">
+                  <div class="case-card__img-wrapper">
+                    <img src="./assets/images/sections/section-cases/case-img-two.png" alt class="case-card-img" />
+                  </div>
+                  <footer class="case-card__footer">
+                    <h3 class="case-card__title">
+                      Effortless Deployment of Web Applications with Kamal
+                    </h3>
+                    <div class="section-title__arrow rectangle-arrow">
+                      <i class="icon arrow-right-top-angle-square"></i>
+                    </div>
+                  </footer>
+                </article>
+              </li>
+              <li class="cases-item">
+                <article class="case-card">
+                  <div class="case-card__img-wrapper">
+                    <img src="./assets/images/sections/section-cases/case-img-two.png" alt class="case-card-img" />
+                  </div>
+                  <footer class="case-card__footer">
+                    <h3 class="case-card__title">
+                      Effortless Deployment of Web Applications with Kamal
+                    </h3>
+                    <div class="section-title__arrow rectangle-arrow">
+                      <i class="icon arrow-right-top-angle-square"></i>
+                    </div>
+                  </footer>
+                </article>
               </li>
             </ul>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="container">
@@ -187,7 +203,8 @@
             <nav>
               <ul class="footer-menu__list text--small">
                 <li class="footer__menu-item">
-                  <a href="#services" class="footer__menu-link"> Services </a>
+                  <a href="#services" class="footer__menu-link"> Services
+                  </a>
                 </li>
                 <li class="footer__menu-item">
                   <a href="#explore" class="footer__menu-link"> Explore </a>
@@ -238,7 +255,7 @@
       </div>
     </footer>
   </div>
-  <script type="module" src="./js/main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
