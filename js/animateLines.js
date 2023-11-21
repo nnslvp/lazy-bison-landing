@@ -1,6 +1,6 @@
 const grayLines = document.querySelectorAll('.gray-line')
 const verticalGrayLines = document.querySelectorAll('.vertical-gray-line ')
-const widthScreen = window.innerWidth;
+const widthScreen = window.innerWidth
 
 const testimonialsSectionVerticalLines = document.querySelectorAll(
 	'.testimonials .vertical-gray-line'
@@ -8,13 +8,17 @@ const testimonialsSectionVerticalLines = document.querySelectorAll(
 const exploreSectionVerticalLines = document.querySelectorAll(
 	'.explore .vertical-gray-line'
 )
-const rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+const rootFontSize = parseFloat(
+	getComputedStyle(document.documentElement).fontSize
+)
 
 function pxToRem(pxValue) {
-	const rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
-	const remValue = pxValue / rootFontSize;
-	return remValue + 'rem';
-  }
+	const rootFontSize = parseFloat(
+		getComputedStyle(document.documentElement).fontSize
+	)
+	const remValue = pxValue / rootFontSize
+	return remValue + 'rem'
+}
 
 const animationDuration = 1000
 
@@ -46,7 +50,7 @@ const getInitialHeight = line => {
 
 const animateLineWith = line => {
 	const width = getInitialWidth(line)
-	const targetWidth = parseFloat(width) / rootFontSize;
+	const targetWidth = parseFloat(width) / rootFontSize
 	const animationStep = (targetWidth / animationDuration) * 10
 	let currentWidth = 0
 	line.style.opacity = 1
@@ -66,7 +70,7 @@ const animateLineWith = line => {
 
 const animateLineHeight = line => {
 	const height = getInitialHeight(line)
-	const targetHeight = parseFloat(height) / rootFontSize;
+	const targetHeight = parseFloat(height) / rootFontSize
 	const animationStep = (targetHeight / animationDuration) * 10
 
 	let currentHeight = 0
@@ -125,27 +129,25 @@ if (widthScreen > 425) {
 	window.addEventListener('scroll', handleScroll)
 }
 
-
 function handleResize() {
-	const widthScreen = window.innerWidth;
+	const widthScreen = window.innerWidth
 
 	if (widthScreen <= 768) {
 		grayLines.forEach(line => {
 			line.style = null
 		})
-		verticalGrayLines.forEach(line => line.style = null)
+		verticalGrayLines.forEach(line => (line.style = null))
 	}
 
 	if (widthScreen <= 425) {
 		grayLines.forEach(line => {
 			line.style.opacity = 1
 		})
-		 verticalGrayLines.forEach(line => line.style.opacity = 0)
-	}else{
-		grayLines.forEach(line => line.style.opacity = 1)
-		 verticalGrayLines.forEach(line => line.style.opacity = 1)
+		verticalGrayLines.forEach(line => (line.style.opacity = 0))
+	} else {
+		grayLines.forEach(line => (line.style.opacity = 1))
+		verticalGrayLines.forEach(line => (line.style.opacity = 1))
 	}
+}
 
-  }
-
-window.addEventListener('resize', handleResize);
+window.addEventListener('resize', handleResize)

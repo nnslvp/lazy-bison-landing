@@ -10,12 +10,12 @@
 		}
 
 		&:hover i {
-			filter: brightness(0) saturate(100%) invert(26%) sepia(63%) saturate(2048%) hue-rotate(228deg)
-				brightness(83%) contrast(106%);
+			filter: brightness(0) saturate(100%) invert(26%) sepia(63%)
+				saturate(2048%) hue-rotate(228deg) brightness(83%) contrast(106%);
 		}
 		&:active i {
-			filter: brightness(0) saturate(100%) invert(99%) sepia(39%) saturate(2043%) hue-rotate(24deg)
-				brightness(101%) contrast(99%);
+			filter: brightness(0) saturate(100%) invert(99%) sepia(39%)
+				saturate(2043%) hue-rotate(24deg) brightness(101%) contrast(99%);
 		}
 	}
 }

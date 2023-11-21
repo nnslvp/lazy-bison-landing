@@ -9,7 +9,6 @@
 //     return array;
 // }
 
-
 // const cardArray = Array.from(workers.children);
 
 // if (widthScreen > 425) {
