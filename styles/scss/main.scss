@@ -4,7 +4,14 @@
 @import './swiper/swiper';
 @import './animations/animations.scss';
 @import 'global';
+@import './components/blog-card';
+@import './components/show-navigation-path';
+@import './components/section-title-with-icon';
+@import './components/spin-text-circle';
+@import './components/case-card';
+@import './components/worker-card';
 @import 'header';
+@import './burger-menu-btn';
 @import './sections/section-lazy-bison';
 @import './sections/section-services';
 @import './sections/section-explore';
@@ -14,13 +21,48 @@
 @import './sections/section-blog';
 @import 'footer';
 @import './popups/popup';
-@import './burger-menu-btn';
 @import './blogs-page';
 @import './blog-page';
 @import './case-page';
-@import './components/blog-card';
-@import './components/show-navigation-path';
-@import './components/section-title-with-icon';
-@import './components/spin-text-circle';
-@import './components/case-card';
-@import './components/worker-card';
+
+.bg-wrapper {
+	background-color: $color-night-blue;
+}
+
+.case-study-page__navigation-path {
+	padding: 60px 0 32px 0;
+	color: $color-disable-grey;
+}
+
+.case-study-page__navigation-path .navigation-path__link {
+	color: inherit;
+}
+
+.case-study-page__navigation-path .navigation-path__link--active {
+	color: #4139be;
+}
+
+.top-section__inner {
+	display: flex;
+	gap: 20px;
+	padding-bottom: 36px;
+}
+
+.top-section__inner .categories-list {
+	margin: 0;
+	margin-bottom: 38px;
+}
+
+.case-study-page__title-h1 {
+	width: 870px;
+	color: $color-white;
+	font-size: 70px;
+	font-weight: 500;
+	line-height: 84px;
+	letter-spacing: 2.1px;
+}
+
+.case-img__container {
+	width: 315px;
+	height: 315px;
+}
