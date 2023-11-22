@@ -3805,7 +3805,7 @@ img {
 }
 
 .section-challenge {
-  background-color: #e5ffaf;
+  background: url("./../../assets/images/chellenge-bg.png");
 }
 
 .section-challenge__inner {
@@ -3850,4 +3850,75 @@ img {
   font-size: 20px;
   font-weight: 400;
   line-height: 29px;
+}
+
+.section-value-driven {
+  background-color: #f1f2f7;
+}
+
+.section-value-driven .case-study-page__title-h2 {
+  margin-bottom: 22px;
+}
+
+.section-value-driven .case-study-page__subtitle {
+  margin-bottom: 20px;
+}
+
+.section-value-driven__inner {
+  padding-top: 72px;
+}
+
+.value-driven-lists__wrapper {
+  display: flex;
+}
+
+.value-driven-lists__wrapper .value-driven-list:nth-child(1) .value-driven-item {
+  width: 565px;
+}
+
+.value-driven-lists__wrapper .value-driven-list:nth-child(2) .value-driven-item {
+  width: 492px;
+}
+
+.value-driven-lists__wrapper .value-driven-list:nth-child(2) {
+  background-color: #ffffff;
+  padding-left: 53px;
+}
+
+.value-driven-list {
+  width: 100%;
+  height: 451px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 49px;
+}
+
+.value-driven-item {
+  display: flex;
+  gap: 16px;
+}
+
+.value-driven-item__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.value-driven-item .icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.section-value-driven-footer {
+  background-color: #212439;
+  padding: 56px 0 96px 0;
+}
+
+.section-value-driven-footer .case-study-page__subtitle {
+  width: 1107px;
+  text-align: left;
+  color: #ffffff;
+  margin: 0;
 }
