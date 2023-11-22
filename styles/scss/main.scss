@@ -33,6 +33,10 @@
 	margin-bottom: 0;
 }
 
+.case-study-page__wrapper {
+	background-color: $color-disable-grey;
+}
+
 .case-study-page__navigation-path {
 	padding: 60px 0 32px 0;
 	color: $color-disable-grey;
@@ -186,7 +190,6 @@
 }
 
 .section-value-driven {
-	background-color: #f1f2f7;
 }
 
 .section-value-driven .case-study-page__title-h2 {
@@ -260,7 +263,6 @@
 }
 
 .section-solution {
-	background-color: $color-disable-grey;
 }
 
 .section-solution .case-study-page__title-h2 {
@@ -390,4 +392,64 @@ tbody tr:last-child td:nth-child(3) {
 .tools-technologies-item__text {
 	font-size: 20px;
 	line-height: 24px;
+}
+
+.section-roadmap {
+	background: url('../../assets//images/section-roadmap-bg.png');
+	background-position: -7px -59px;
+}
+
+.section-roadmap__inner {
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+	padding: 79px 0 47px 0;
+}
+
+.roadmap-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.roadmap-card {
+	width: 375px;
+	height: 288px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding: 45px 18px 45px 18px;
+	border-radius: 24px;
+	border: 1px solid #fff;
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0.16) 0%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	box-shadow: 4px 4px 11px 0px rgba(19, 21, 71, 0.17);
+	backdrop-filter: blur(38.5px);
+}
+
+.roadmap-card__date {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 25.6px;
+}
+
+.roadmap-card__list {
+	width: 279px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding-left: 18px;
+}
+
+.roadmap-card__list li {
+	list-style-type: disc;
+}
+
+.roadmap-card__item {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 24.3px;
 }
