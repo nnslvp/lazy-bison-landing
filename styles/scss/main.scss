@@ -157,11 +157,15 @@
 
 .challenge-list {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(411px, 1fr));
+	grid-template-columns: repeat(auto-fill, 411px);
 	gap: 16px;
 }
 
-.challenge-item {
+.challenge-list .challenge-item {
+	display: grid;
+}
+
+.challenge-card {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -176,14 +180,14 @@
 	box-shadow: 4px 4px 11px 0px rgba(19, 21, 71, 0.17);
 }
 
-.challenge-item__title {
+.challenge-card__title {
 	font-size: 24px;
 	font-style: normal;
 	font-weight: 600;
 	line-height: 31.92px;
 }
 
-.challenge-item__text {
+.challenge-card__text {
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 29px;
@@ -513,6 +517,11 @@ tbody tr:last-child td:nth-child(3) {
 		letter-spacing: 1.2px;
 	}
 
+	.case-study-page__subtitle {
+		font-size: 20px;
+		line-height: 26.5px;
+	}
+
 	.top-section-img__container {
 		width: 206px;
 		height: 206px;
@@ -544,6 +553,41 @@ tbody tr:last-child td:nth-child(3) {
 
 	.general-info__text {
 		font-size: 19px;
+	}
+
+	.section-challenge__inner {
+		padding: 40px 0;
+	}
+
+	.section-challenge .case-study-page__title-h2 {
+		margin-bottom: 20px;
+	}
+
+	.section-challenge .case-study-page__subtitle {
+		width: 469px;
+		margin-bottom: 24px;
+	}
+
+	.challenge-list {
+		grid-template-columns: repeat(3, 226.33px);
+	}
+
+	.challenge-list .challenge-item {
+		display: grid;
+	}
+
+	.challenge-card {
+		padding: 16px;
+	}
+
+	.challenge-card__title {
+		font-size: 20px;
+		line-height: 26.6px;
+	}
+
+	.challenge-card__text {
+		font-size: 16px;
+		line-height: 23.2px;
 	}
 }
 
@@ -594,7 +638,36 @@ tbody tr:last-child td:nth-child(3) {
 		gap: 20px 30px;
 	}
 
+	.case-study-page__subtitle {
+		font-size: 16px;
+		line-height: 21.2px;
+	}
+
 	.general-info-list .general-info-item:nth-child(2) {
 		grid-column: span 2;
+	}
+
+	.section-challenge .case-study-page__subtitle {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.challenge-list {
+		grid-template-columns: repeat(2, 167.5px);
+		gap: 8px;
+	}
+
+	.challenge-card {
+		padding: 12px;
+	}
+
+	.challenge-card__title {
+		font-size: 18px;
+		line-height: 23.94px;
+	}
+
+	.challenge-card__text {
+		font-size: 14px;
+		line-height: 20.3px;
 	}
 }
