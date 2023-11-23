@@ -453,3 +453,41 @@ tbody tr:last-child td:nth-child(3) {
 	font-weight: 500;
 	line-height: 24.3px;
 }
+
+.section-gallery__inner {
+	position: relative;
+	padding: 60px 0 91px 0;
+}
+
+.section-gallery .case-study-page__title-h2 {
+	text-align: center;
+	margin-bottom: 24.5px;
+}
+
+.gallery-slider {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	margin-bottom: 44px;
+}
+
+.gallery-slider .swiper-pagination {
+	position: initial;
+}
+
+.section-gallery .swiper-btn-next {
+	position: absolute;
+	top: 50%;
+	right: -88px;
+}
+
+.section-gallery .swiper-btn-prev {
+	position: absolute;
+	top: 50%;
+	left: -88px;
+}
+
+.section-gallery .get-consultation-btn {
+	width: 100%;
+	padding: 20px 0;
+}

@@ -329,19 +329,6 @@ template {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='73' height='72' fill='none'%3E%3Cpath fill='%23C4FC50' stroke='%23333F52' d='M1.5.5h71v71h-71z'/%3E%3Cpath fill='%23333F52' d='m48.44 23.56.88 24-24 .88-.192-4.236 16.8-.616-18.932-17.593 2.89-3.11 18.932 17.593-.616-16.8 4.239-.118Z'/%3E%3Cpath stroke='%23333F52' d='M1.5.5h71v71h-71z'/%3E%3C/svg%3E");
 }
 
-.icon-square-arrow-left {
-  height: 48px;
-  width: 49px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='49' fill='none'%3E%3Cg %3E%3Cpath stroke='%23333F52' d='M47.5 1H.5v47h47z'/%3E%3Cpath fill='%23C4FC50' stroke='%23333F52' d='M47.5 1H.5v47h47z'/%3E%3Cpath fill='%23333F52' d='M24.08 13.179 12.76 24.5 24.08 35.821l2.017-1.98-7.925-7.926h17.23v-2.83h-17.23l7.925-7.925-2.017-1.981Z'/%3E%3C/g%3E%3C/svg%3E");
-}
-
-.icon-square-arrow-right {
-  height: 48px;
-  width: 49px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='49' fill='none'%3E%3Cg %3E%3Cpath stroke='%23333F52' d='M47.5 1H.5v47h47z'/%3E%3Cpath fill='%23C4FC50' stroke='%23333F52' d='M47.5 1H.5v47h47z'/%3E%3Cpath fill='%23333F52' d='M24.08 13.179 12.76 24.5 24.08 35.821l2.017-1.98-7.925-7.926h17.23v-2.83h-17.23l7.925-7.925-2.017-1.981Z'/%3E%3C/g%3E%3C/svg%3E");
-  transform: rotate(-180deg);
-}
-
 .two-ticks {
   height: 3.375rem;
   width: 1.9375rem;
@@ -425,20 +412,6 @@ template {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #515bf6;
-}
-
-.case-study-page__wrapper .slider-pagination {
-  gap: 12px;
-}
-
-.case-study-page__wrapper .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #dcdcdc;
-}
-
-.case-study-page__wrapper .swiper-pagination-bullet-active {
   background-color: #515bf6;
 }
 
@@ -4140,7 +4113,6 @@ tbody tr:last-child td:nth-child(3) {
 }
 
 .section-gallery__inner {
-  position: relative;
   padding: 60px 0 91px 0;
 }
 
@@ -4149,30 +4121,6 @@ tbody tr:last-child td:nth-child(3) {
   margin-bottom: 24.5px;
 }
 
-.gallery-slider {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-bottom: 44px;
-}
-
-.gallery-slider .swiper-pagination {
+.gallery-slider.swiper-pagination {
   position: initial;
-}
-
-.section-gallery .swiper-btn-next {
-  position: absolute;
-  top: 50%;
-  right: -88px;
-}
-
-.section-gallery .swiper-btn-prev {
-  position: absolute;
-  top: 50%;
-  left: -88px;
-}
-
-.section-gallery .get-consultation-btn {
-  width: 100%;
-  padding: 20px 0;
-}
+}/*# sourceMappingURL=main.css.map */

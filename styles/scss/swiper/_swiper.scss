@@ -30,6 +30,20 @@
 	background-color: $color-primary-violet;
 }
 
+.case-study-page__wrapper .slider-pagination {
+	gap: 12px;
+}
+
+.case-study-page__wrapper .swiper-pagination-bullet {
+	width: 12px;
+	height: 12px;
+	background-color: #dcdcdc;
+}
+
+.case-study-page__wrapper .swiper-pagination-bullet-active {
+	background-color: $color-primary-violet;
+}
+
 @media (max-width: $breakpoint-lg) {
 	.swiper-pagination-bullet {
 		width: 0.75rem;
