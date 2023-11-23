@@ -28,4 +28,9 @@
 }
 
 @media (max-width: $breakpoint-md) {
+	.navigation-path__link:last-child {
+		text-wrap: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
 }
