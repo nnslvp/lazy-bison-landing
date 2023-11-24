@@ -280,6 +280,7 @@
 table {
 	display: grid;
 	border-collapse: collapse;
+	overflow: hidden;
 	border-radius: 12px;
 	min-width: 100%;
 	grid-template-columns:
@@ -299,7 +300,6 @@ th,
 td {
 	overflow: hidden;
 	text-overflow: ellipsis;
-	white-space: nowrap;
 }
 
 th {
@@ -643,6 +643,10 @@ tbody tr:last-child td:last-child {
 		width: 100%;
 	}
 
+	.section-solution {
+		background-color: #f1f2f7;
+	}
+
 	.section-solution .case-study-page__title-h2 {
 		margin-bottom: 20px;
 	}
@@ -652,15 +656,14 @@ tbody tr:last-child td:last-child {
 	}
 
 	.section-solution__inner {
-		padding: 72px 0 63px 0;
+		padding: 40px 0;
 	}
 
 	table {
 		grid-template-columns:
-			minmax(200px, 1fr)
-			minmax(280px, 1.67fr)
-			minmax(239px, 1.67fr);
-		font-size: 16px;
+			minmax(191px, 1fr)
+			minmax(292px, 1.67fr)
+			minmax(231px, 1.67fr);
 	}
 
 	th {
@@ -669,11 +672,21 @@ tbody tr:last-child td:last-child {
 		color: #212439;
 	}
 
+	td,
+	th {
+		font-size: 16px;
+	}
+
+	.table-th-tab-active {
+		background-color: $color-night-blue;
+		color: $color-white;
+	}
+
 	thead th:nth-child(1) {
 		font-weight: 300;
 		color: $color-dark-grey;
-		border-top-left-radius: 12px;
-		border: 1px solid red;
+		border-radius: 12px 0px 0px 0px;
+		border: 1px solid $color-disable-grey;
 	}
 
 	th:not(:first-of-type) {
@@ -820,5 +833,29 @@ tbody tr:last-child td:last-child {
 	.value-driven-item__text {
 		font-size: 14px;
 		line-height: 20.3px;
+	}
+
+	.section-solution .case-study-page__subtitle {
+		margin-bottom: 24px;
+	}
+
+	table {
+		grid-template-columns:
+			minmax(115px, 1fr)
+			minmax(110px, 1.67fr)
+			minmax(100px, 1.67fr);
+	}
+
+	td,
+	th {
+		font-size: 11px;
+	}
+
+	th {
+		padding: 6px;
+	}
+
+	td {
+		padding: 8px 16px;
 	}
 }

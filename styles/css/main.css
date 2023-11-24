@@ -3989,6 +3989,7 @@ img {
 table {
   display: grid;
   border-collapse: collapse;
+  overflow: hidden;
   border-radius: 12px;
   min-width: 100%;
   grid-template-columns: minmax(200px, 1fr) minmax(534px, 1.67fr) minmax(534px, 1.67fr);
@@ -4005,7 +4006,6 @@ th,
 td {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 th {
@@ -4318,6 +4318,9 @@ tbody tr:last-child td:last-child {
   .section-value-driven-footer .case-study-page__subtitle {
     width: 100%;
   }
+  .section-solution {
+    background-color: #f1f2f7;
+  }
   .section-solution .case-study-page__title-h2 {
     margin-bottom: 20px;
   }
@@ -4325,22 +4328,29 @@ tbody tr:last-child td:last-child {
     margin-bottom: 32px;
   }
   .section-solution__inner {
-    padding: 72px 0 63px 0;
+    padding: 40px 0;
   }
   table {
-    grid-template-columns: minmax(200px, 1fr) minmax(280px, 1.67fr) minmax(239px, 1.67fr);
-    font-size: 16px;
+    grid-template-columns: minmax(191px, 1fr) minmax(292px, 1.67fr) minmax(231px, 1.67fr);
   }
   th {
     background: initial;
     line-height: 19.2px;
     color: #212439;
   }
+  td,
+  th {
+    font-size: 16px;
+  }
+  .table-th-tab-active {
+    background-color: #212439;
+    color: #ffffff;
+  }
   thead th:nth-child(1) {
     font-weight: 300;
     color: #6a6a6a;
-    border-top-left-radius: 12px;
-    border: 1px solid red;
+    border-radius: 12px 0px 0px 0px;
+    border: 1px solid #e8eaf2;
   }
   th:not(:first-of-type) {
     border-radius: 12px 0px 0px 0px;
@@ -4459,5 +4469,21 @@ tbody tr:last-child td:last-child {
   .value-driven-item__text {
     font-size: 14px;
     line-height: 20.3px;
+  }
+  .section-solution .case-study-page__subtitle {
+    margin-bottom: 24px;
+  }
+  table {
+    grid-template-columns: minmax(115px, 1fr) minmax(110px, 1.67fr) minmax(100px, 1.67fr);
+  }
+  td,
+  th {
+    font-size: 11px;
+  }
+  th {
+    padding: 6px;
+  }
+  td {
+    padding: 8px 16px;
   }
 }
