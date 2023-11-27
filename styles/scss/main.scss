@@ -194,7 +194,18 @@
 }
 
 .section-value-driven {
-	@include background('../../assets/images/section-value-deiven-bg.png');
+	@include background(
+		'../../assets/images/section-value-driven-bg-1440.svg',
+		center center,
+		no-repeat,
+		cover
+	);
+	@media (min-width: 1441px) {
+		background-position: 0 -3.875rem;
+	}
+}
+
+.section-value-driven__inner {
 }
 
 .section-value-driven .case-study-page__title-h2 {
@@ -219,9 +230,6 @@
 }
 .value-driven-lists__wrapper .value-driven-list:nth-child(2) {
 	width: 30.75rem;
-}
-
-.value-driven-lists__wrapper .value-driven-list:nth-child(2) {
 	padding-left: 3.3125rem;
 }
 
@@ -256,6 +264,17 @@
 	padding: 3.5rem 0 6rem 0;
 }
 
+.section-value-driven-footer .container {
+	position: relative;
+}
+
+.section-value-driven-footer .icon-elipse-gradient-pink {
+	position: absolute;
+	top: -3.625rem;
+	right: 46%;
+	transform: translate(-50%, -50%);
+}
+
 .section-value-driven-footer .case-study-page__subtitle {
 	width: 69.1875rem;
 	text-align: left;
@@ -263,6 +282,12 @@
 }
 
 .section-solution {
+	@include background(
+		'../../assets//images/section-solution-bg-1440.svg',
+		center center,
+		no-repeat,
+		cover
+	);
 }
 
 .section-solution .case-study-page__title-h2 {
@@ -401,8 +426,12 @@ tbody tr:last-child td:last-child {
 }
 
 .section-roadmap {
-	background: url('../../assets//images/section-roadmap-bg.png');
-	background-position: -0.4375rem -3.6875rem;
+	@include background(
+		'../../assets//images/sections-roadmap-and-gallery-bg-1440.svg',
+		center 12%,
+		no-repeat,
+		cover
+	);
 }
 
 .section-roadmap__inner {
@@ -466,6 +495,15 @@ tbody tr:last-child td:last-child {
 	line-height: 1.5188rem;
 }
 
+.section-gallery {
+	@include background(
+		'../../assets//images/sections-roadmap-and-gallery-bg-1440.svg',
+		center -40rem,
+		no-repeat,
+		cover
+	);
+}
+
 .section-gallery__inner {
 	position: relative;
 	padding: 3.75rem 0 5.6875rem 0;
@@ -507,6 +545,9 @@ tbody tr:last-child td:last-child {
 	width: 100%;
 	padding: 1.25rem 0;
 	font-size: 1rem;
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
 }
 
 @media (max-width: $breakpoint-lg) {
@@ -604,7 +645,12 @@ tbody tr:last-child td:last-child {
 	}
 
 	.section-value-driven {
-		@include background('../../assets/images/section-value-driven-768-bg.png');
+		@include background(
+			'../../assets/images/section-value-deiven-bg-768.svg',
+			center center,
+			no-repeat,
+			cover
+		);
 	}
 
 	.section-value-driven__inner {
@@ -648,6 +694,11 @@ tbody tr:last-child td:last-child {
 
 	.section-value-driven-footer {
 		padding: 1.75rem 0 2.5rem 0;
+	}
+
+	.section-value-driven-footer .icon-elipse-gradient-pink {
+		top: -1.625rem;
+		right: 45%;
 	}
 
 	.section-value-driven-footer .case-study-page__subtitle {
@@ -749,6 +800,15 @@ tbody tr:last-child td:last-child {
 		gap: 2rem 1.25rem;
 	}
 
+	.section-roadmap {
+		@include background(
+			'../../assets//images/sections-roadmap-and-gallery-bg-768.svg',
+			center 1rem,
+			no-repeat,
+			cover
+		);
+	}
+
 	.section-roadmap__inner {
 		align-items: center;
 		gap: 1.375rem;
@@ -796,6 +856,15 @@ tbody tr:last-child td:last-child {
 	.roadmap-item:has(.icon-arrow-roadmap) {
 		height: 1.375rem;
 		align-self: flex-start;
+	}
+
+	.section-gallery {
+		@include background(
+			'../../assets//images/sections-roadmap-and-gallery-bg-768.svg',
+			center -37.875rem,
+			no-repeat,
+			cover
+		);
 	}
 
 	.section-gallery__inner {
@@ -895,8 +964,10 @@ tbody tr:last-child td:last-child {
 
 	.section-value-driven {
 		@include background(
-			'../../assets/images/section-value-driven-375.bg.png',
-			0 -0.4375rem
+			'../../assets/images/section-value-driven-bg-375.svg',
+			0 -0.4375rem,
+			no-repeat,
+			cover
 		);
 	}
 
@@ -938,6 +1009,11 @@ tbody tr:last-child td:last-child {
 		margin-bottom: 1.5rem;
 	}
 
+	.section-value-driven-footer .icon-elipse-gradient-pink {
+		top: -1.625rem;
+		right: -4rem;
+	}
+
 	table {
 		grid-template-columns:
 			minmax(7.1875rem, 1fr)
@@ -967,6 +1043,15 @@ tbody tr:last-child td:last-child {
 		gap: 2rem 1.25rem;
 	}
 
+	.section-roadmap {
+		@include background(
+			'../../assets//images/sections-roadmap-and-gallery-bg-375.svg',
+			center 0,
+			no-repeat,
+			cover
+		);
+	}
+
 	.section-roadmap__inner {
 		gap: 1.25rem;
 		padding: 2.5rem 0 1.875rem 0;
@@ -990,6 +1075,14 @@ tbody tr:last-child td:last-child {
 		height: 1.5rem;
 	}
 
+	.section-gallery {
+		@include background(
+			'../../assets//images/sections-roadmap-and-gallery-bg-375.svg',
+			center bottom,
+			no-repeat,
+			cover
+		);
+	}
 	.section-gallery__inner {
 		padding: 1.875rem 0 2.5rem 0;
 	}
