@@ -20,7 +20,7 @@
 	position: absolute;
 
 	@if $enable-animation-spin-text-circle {
-		animation: circle-rotation $duration-spin-text-circle__text infinite linear;
+		animation: circle-rotation $duration-spin-text-circle infinite linear;
 	}
 }
 
