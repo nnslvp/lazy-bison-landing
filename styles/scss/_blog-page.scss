@@ -187,7 +187,7 @@
 
 .section-recommendations__inner .blogs-list {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-columns: repeat(3, 300px);
 	gap: 20px;
 }
 
@@ -238,7 +238,7 @@
 	}
 
 	.section-recommendations__inner .blogs-list {
-		grid-template-columns: repeat(auto-fill, minmax(348px, 1fr));
+		grid-template-columns: repeat(2, 348px);
 	}
 
 	.section-recommendations__inner
