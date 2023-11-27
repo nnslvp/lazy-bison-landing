@@ -13,7 +13,7 @@
 .blog-page__wrapper main {
 	display: flex;
 	flex-direction: column;
-	gap: 40px;
+	gap: 2.5rem;
 }
 
 .full-info-blog {
@@ -182,13 +182,13 @@
 .section-recommendations__inner {
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 1.25rem;
 }
 
 .section-recommendations__inner .blogs-list {
 	display: grid;
-	grid-template-columns: repeat(3, 300px);
-	gap: 20px;
+	grid-template-columns: repeat(3, 18.75rem);
+	gap: 1.25rem;
 }
 
 @media (max-width: $breakpoint-lg) {
@@ -201,17 +201,17 @@
 	}
 
 	.full-info-blog {
-		gap: 12px;
+		gap: 0.75rem;
 	}
 
 	.full-info__header {
-		gap: 12px;
+		gap: 0.75rem;
 	}
 
 	.full-info-blog__text {
-		font-size: 16px;
+		font-size: 1rem;
 		font-weight: 300;
-		line-height: 26px;
+		line-height: 1.625rem;
 		letter-spacing: 0em;
 	}
 
@@ -220,25 +220,25 @@
 	}
 
 	.blog-page__title-h1 {
-		font-size: 26px;
-		line-height: 36px;
+		font-size: 1.625rem;
+		line-height: 2.25rem;
 	}
 
 	.blog-page__title-h2 {
-		font-size: 20px;
-		line-height: 24px;
+		font-size: 1.25rem;
+		line-height: 1.5rem;
 	}
 
 	.blog-post-image__wrapper {
-		height: 304px;
+		height: 19rem;
 	}
 
 	.code-wrapper {
-		padding: 40px 24px;
+		padding: 2.5rem 1.5rem;
 	}
 
 	.section-recommendations__inner .blogs-list {
-		grid-template-columns: repeat(2, 348px);
+		grid-template-columns: repeat(2, 21.75rem);
 	}
 
 	.section-recommendations__inner
@@ -250,7 +250,7 @@
 
 @media (max-width: $breakpoint-md) {
 	.blog-page__wrapper main .container {
-		width: 343px;
+		width: 21.4375rem;
 	}
 
 	.blog-page__wrapper .section-full-info-blog {
@@ -258,21 +258,21 @@
 	}
 
 	.full-info-blog__text {
-		font-size: 18px;
-		line-height: 29px;
+		font-size: 1.125rem;
+		line-height: 1.8125rem;
 	}
 
 	.blog-page__navigation-path {
-		margin: 22px 0 24px 0;
+		margin: 1.375rem 0 1.5rem 0;
 	}
 
 	.blog-post-image__wrapper {
-		height: 343px;
+		height: 21.4375rem;
 	}
 
 	.section-recommendations__inner .blogs-list {
-		grid-template-columns: repeat(auto-fill, minmax(343px, 1fr));
-		gap: 16px;
+		grid-template-columns: repeat(auto-fill, minmax(21.4375rem, 1fr));
+		gap: 1rem;
 	}
 
 	.section-recommendations__inner

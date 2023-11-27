@@ -83,8 +83,7 @@
 
 	.spin-text-circle__text {
 		position: absolute;
-		top: -1.125rem;
-		right: 4.4375rem;
+
 		width: 10.6469rem;
 		height: 10.6425rem;
 	}
@@ -238,16 +237,11 @@
 		.spin-text-circle__circle {
 			width: 4.375rem;
 			height: 4.375rem;
-			top: 2.1875rem;
-			left: 4.3125rem;
 		}
 
 		.spin-text-circle__text {
 			width: 5.375rem;
 			height: 5.875rem;
-			top: 0.625rem;
-			right: auto;
-			left: 1.875rem;
 		}
 	}
 
@@ -311,28 +305,22 @@
 		flex-wrap: wrap;
 		gap: 2.8125rem 3.25rem;
 		flex-basis: auto;
+		position: relative;
 
 		.spin-text-circle {
-			display: block;
-			position: relative;
-			top: 1.6875rem;
-			left: 3.25rem;
+			display: flex;
+			bottom: -12px;
+			right: 0;
 		}
 
 		.spin-text-circle__circle {
 			width: 4.25rem;
 			height: 4.25rem;
-			top: -1.3125rem;
-			left: auto;
-			right: -0.375rem;
 		}
 
 		.spin-text-circle__text {
 			width: 5.9375rem;
 			height: 6.0675rem;
-			top: -2.1875rem;
-			left: auto;
-			right: -1.25rem;
 		}
 	}
 

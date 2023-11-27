@@ -8,29 +8,12 @@
 	color: $color-white;
 }
 
-.card-blog__hashtag {
-	background-color: $color-disable-grey;
-	color: $color-black;
-}
-
-.card-blog__hashtag {
-	align-self: flex-start;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 18px;
-	letter-spacing: 0em;
-	padding: 4px 8px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	border-radius: 4px;
-}
-
-.card-blog__hashtag--bg-grey {
-	background-color: $color-disable-grey;
-	color: $color-black;
-}
-
-.card-blog__hashtag--bg-light-green {
+.card-blog.card-blog--bg-black .hashtag {
 	background-color: $color-light-green;
+}
+
+.card-blog.card-blog--bg-black .card-blog__date {
+	color: $color-light-grey;
 }
 
 .card-blog__content {
