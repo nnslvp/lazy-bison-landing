@@ -4193,12 +4193,14 @@ tbody tr:last-child td:last-child {
 }
 
 .section-gallery .swiper-btn-next {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   right: 0;
 }
 
 .section-gallery .swiper-btn-prev {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   left: 0rem;
@@ -4355,11 +4357,15 @@ tbody tr:last-child td:last-child {
     background-color: #212439;
     color: #ffffff;
   }
+  table {
+    border-top: 0.0625rem solid #e8eaf2;
+  }
   thead th:nth-child(1) {
     font-weight: 300;
     color: #6a6a6a;
     border-radius: 0.75rem 0rem 0rem 0rem;
-    border: 0.0625rem solid #e8eaf2;
+    border-left: 0.0625rem solid #e8eaf2;
+    border-bottom: 0.0625rem solid #e8eaf2;
   }
   th:not(:first-of-type) {
     border-radius: 0.75rem 0rem 0rem 0rem;
@@ -4374,11 +4380,19 @@ tbody tr:last-child td:last-child {
   }
   tbody tr td:nth-child(2) {
     grid-column: 2;
-    grid-column: span 2;
+    display: none;
   }
   tbody tr td:nth-child(3) {
     grid-column: 3;
     display: none;
+  }
+  thead:has(th.table-th-tab-active:nth-child(2)) ~ tbody tr td:nth-child(2) {
+    display: block;
+    grid-column: span 2;
+  }
+  thead:has(th.table-th-tab-active:nth-child(3)) ~ tbody tr td:nth-child(3) {
+    display: block;
+    grid-column: span 2;
   }
   .section-tools-technologies__inner {
     padding: 2.5rem 0;

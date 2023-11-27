@@ -7,8 +7,15 @@
 // import './sliders.js'
 
 const sliderGallery = document.querySelector('.swiper')
-console.log(sliderGallery)
-let newWorkersSwiper
+const tabsTable = document.querySelectorAll('.table-th-tab')
+
+tabsTable.forEach(tab =>
+	tab.addEventListener('click', e => {
+		tabsTable.forEach(tab => tab.classList.remove('table-th-tab-active'))
+		e.target.classList.toggle('table-th-tab-active')
+	})
+)
+
 let newProjectSwiper
 let newBlogSlider
 
