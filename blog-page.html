@@ -628,6 +628,57 @@
       </div>
     </footer>
   </div>
+  <div id="get-consultation" class="popup popup__get-consultation">
+    <div class="popup-content">
+      <h2 class="get-consultation__title">Get free consultation</h2>
+      <p class="get-consultation__subtitle text--medium">
+        Please, fill out the form
+      </p>
+      <div class="form-wrapper">
+        <form class="form invalid" novalidate action="https://formspree.io/f/xaygwovq" method="POST">
+          <div class="form-group">
+            <label class="text--small label-email" for="email">
+              E-mail
+              <span class="input-email__wrapper">
+                <i class="icon error-icon"></i>
+                <input class="input-email" placeholder="exapmle@gmail.com" type="email" id="email" name="email"
+                  required />
+              </span>
+              <span class="error-text">Invalid e-mail</span>
+            </label>
+            <div class="textarea__container">
+              <label class="text--small" for="comments">
+                Your comments
+                <textarea class="textarea" placeholder="Write your comments (optional)" id="comments" name="message"
+                  maxlength="360"></textarea>
+              </label>
+              <div class="character-count text--small">0/360</div>
+            </div>
+            <label class="checkbox-label text--small" for="agree">
+              <input class="checkbox" type="checkbox" id="agree" name="agree" required />
+              <span class="checkbox-custom"></span>
+              Agree to process personal data
+            </label>
+          </div>
+          <p id="my-form-status"></p>
+          <div class="form-actions">
+            <button type="button" class="btn btn-cancel">Cancel</button>
+            <button type="submit" class="btn btn-submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="success-submit-block">
+        <h2 class="get-consultation__title">Congratulations!</h2>
+        <p class="get-consultation__subtitle text--medium">
+          <span> Your request is sent successfully. </span>
+          <span> Our manager will contact you shortly. </span>
+        </p>
+        <i class="icon two-ticks"></i>
+      </div>
+    </div>
+    <button class="close-popup-button"></button>
+  </div>
+  <div class="overlay"></div>
   <script src="./js/main.js"></script>
 </body>
 

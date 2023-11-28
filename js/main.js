@@ -465,10 +465,8 @@ if (homePageWrapper) {
 	dropdown()
 }
 
-if (homePageWrapper || caseStudyPageWrapper) {
-	popup()
-	getConsultationForm()
-}
+popup()
+getConsultationForm()
 
 if (blogSlider && workersSlider && casesSlider) {
 	initSwiperSlider(casesSlider, {
