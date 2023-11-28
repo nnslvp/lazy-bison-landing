@@ -1,33 +1,33 @@
 .section-blog__inner {
 	display: flex;
 	flex-direction: column;
-	gap: 60px;
+	gap: 3.75rem;
 }
 
 .blogs-slider .swiper-wrapper {
-	margin-bottom: 60px;
+	margin-bottom: 3.75rem;
 }
 
 .blogs-slider .card-blog {
-	width: 404px;
+	width: 25.25rem;
 }
 
 @media (max-width: $breakpoint-lg) {
 	.section-blog__inner {
-		gap: 44px;
+		gap: 2.75rem;
 	}
 
 	.blogs-slider .card-blog {
-		width: 350px;
+		width: 21.875rem;
 	}
 }
 
 @media (max-width: $breakpoint-md) {
 	.section-blog__inner {
-		gap: 38px;
+		gap: 2.375rem;
 	}
 
 	.blogs-slider .card-blog {
-		width: 320px;
+		width: 20rem;
 	}
 }

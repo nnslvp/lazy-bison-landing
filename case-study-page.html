@@ -58,42 +58,44 @@
       style="display: none; visibility: hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <div class="case-study-page__wrapper">
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <div class="header__logo">
-            <object class="logo" title="Lazy Bison logo" type="image/svg+xml"
-              data="../../assets/icons/logo.svg"></object>
-          </div>
-          <nav class="header__main-nav">
-            <ul class="header__main-nav-list text--medium">
-              <li class="header__main-nav-item">
-                <a href="#services" class="header__main-nav-link">Services</a>
-              </li>
-              <li class="header__main-nav-item">
-                <a href="#explore" class="header__main-nav-link">Explore</a>
-              </li>
-              <li class="header__main-nav-item">
-                <a href="#cases" class="header__main-nav-link">Cases</a>
-              </li>
-              <li class="header__main-nav-item">
-                <a href="#testimonials" class="header__main-nav-link">Testimonials</a>
-              </li>
-            </ul>
-          </nav>
-          <button
-            class="button header__nav-button get-consultation__subtitle button__text--medium button--secondary get-consultation-btn">
-            Contact us
-          </button>
-          <button class="burger-menu-button" aria-label="Toggle menu">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </button>
-        </div>
-      </div>
-    </header>
+  <div class="wrapper case-study-page__wrapper">
+     <header class="header">
+       <div class="container">
+         <div class="header__inner">
+           <div class="header__logo">
+             <object class="logo" title="Lazy Bison logo" type="image/svg+xml" data="./assets/icons/logo.svg"></object>
+           </div>
+           <nav class="header__main-nav">
+             <ul class="header__main-nav-list text--medium">
+               <li class="header__main-nav-item">
+                 <a href="./index.html#services" class=" header__main-nav-link">Services</a>
+               </li>
+               <li class="header__main-nav-item">
+                 <a href="./index.html#explore" class="header__main-nav-link">Explore</a>
+               </li>
+               <li class="header__main-nav-item">
+                 <a href="./blogs-page.html" class="header__main-nav-link">Blog</a>
+               </li>
+               <li class="header__main-nav-item">
+                 <a href="./cases-page.html" class="header__main-nav-link">Cases</a>
+               </li>
+               <li class="header__main-nav-item">
+                 <a href="./index.html#testimonials" class="header__main-nav-link">Testimonials</a>
+               </li>
+             </ul>
+           </nav>
+           <button
+             class="button header__contact-us-button  button__text--medium button--secondary get-consultation-btn">
+             Contact us
+           </button>
+           <button class="burger-menu-button" aria-label="Toggle menu">
+             <span class="line"></span>
+             <span class="line"></span>
+             <span class="line"></span>
+           </button>
+         </div>
+       </div>
+     </header>
     <main>
       <div class="bg-wrapper">
         <div class="container">
@@ -581,6 +583,58 @@
       </div>
     </footer>
   </div>
+  <div id="get-consultation" class="popup popup__get-consultation">
+    <div class="popup-content">
+      <h2 class="get-consultation__title">Get free consultation</h2>
+      <p class="get-consultation__subtitle text--medium">
+        Please, fill out the form
+      </p>
+      <div class="form-wrapper">
+        <form class="form invalid" novalidate action="https://formspree.io/f/xaygwovq" method="POST">
+          <div class="form-group">
+            <label class="text--small label-email" for="email">
+              E-mail
+              <span class="input-email__wrapper">
+                <i class="icon error-icon"></i>
+                <input class="input-email" placeholder="exapmle@gmail.com" type="email" id="email" name="email"
+                  required />
+              </span>
+              <span class="error-text">Invalid e-mail</span>
+            </label>
+            <div class="textarea__container">
+              <label class="text--small" for="comments">
+                Your comments
+                <textarea class="textarea" placeholder="Write your comments (optional)" id="comments" name="message"
+                  maxlength="360"></textarea>
+              </label>
+              <div class="character-count text--small">0/360</div>
+            </div>
+            <label class="checkbox-label text--small" for="agree">
+              <input class="checkbox" type="checkbox" id="agree" name="agree" required />
+              <span class="checkbox-custom"></span>
+              Agree to process personal data
+            </label>
+          </div>
+          <p id="my-form-status"></p>
+          <div class="form-actions">
+            <button type="button" class="btn btn-cancel">Cancel</button>
+            <button type="submit" class="btn btn-submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="success-submit-block">
+        <h2 class="get-consultation__title">Congratulations!</h2>
+        <p class="get-consultation__subtitle text--medium">
+          <span> Your request is sent successfully. </span>
+          <span> Our manager will contact you shortly. </span>
+        </p>
+        <i class="icon two-ticks"></i>
+      </div>
+    </div>
+    <button class="close-popup-button"></button>
+  </div>
+  <div class="overlay"></div>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>

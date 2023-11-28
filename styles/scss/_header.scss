@@ -12,10 +12,6 @@
 	padding: 1.375rem 0rem 1.3125rem 0rem;
 }
 
-.header__inner .get-consultation-btn {
-	border: 1px solid $color-disable-grey;
-}
-
 .header__logo {
 	width: 13.125rem;
 	@include center;
@@ -38,7 +34,7 @@
 	@include linkEffects;
 }
 
-.header__nav-button {
+.header__contact-us-button {
 	background: inherit;
 	flex-basis: 11.75rem;
 	padding: 0.9063rem 0;
@@ -50,7 +46,7 @@
 		justify-content: flex-start;
 	}
 
-	.header__nav-button {
+	.header__contact-us-button {
 		@include center;
 		flex-basis: 6.25rem;
 		padding: 0.4063rem 0;
@@ -96,7 +92,7 @@
 		width: 9.125rem;
 	}
 
-	.header__nav-button {
+	.header__contact-us-button {
 		display: none;
 	}
 

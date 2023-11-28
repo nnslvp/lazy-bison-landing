@@ -6,6 +6,18 @@
 	box-sizing: border-box;
 }
 
+html,
+body {
+	height: 100%;
+	overflow: hidden;
+}
+
+html > body > .wrapper {
+	height: 100%;
+	position: relative;
+	overflow: auto;
+}
+
 html {
 	font-size: $root-font-size;
 	scroll-behavior: smooth;
@@ -255,7 +267,7 @@ img {
 		border-color: $color-primary-violet;
 	}
 
-	&.active {
+	&:active {
 		color: $color-black;
 		background-color: $color-disable-grey;
 		border-color: $color-disable-grey;
@@ -265,9 +277,6 @@ img {
 .button--primary {
 	background-color: $color-primary-violet;
 	color: $color-white;
-}
-
-.get-consultation-btn {
 	@include center;
 	border-color: $color-black;
 	transition: $transition-property $transition-duration $transition-easing;
@@ -278,7 +287,7 @@ img {
 		border-color: $color-black;
 	}
 
-	&.active {
+	&:active {
 		color: $color-black;
 		background-color: $color-light-green;
 	}

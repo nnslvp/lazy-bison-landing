@@ -13,14 +13,6 @@ export const animateLines = () => {
 		getComputedStyle(document.documentElement).fontSize
 	)
 
-	function pxToRem(pxValue) {
-		const rootFontSize = parseFloat(
-			getComputedStyle(document.documentElement).fontSize
-		)
-		const remValue = pxValue / rootFontSize
-		return remValue + 'rem'
-	}
-
 	const animationDuration = 1000
 
 	const animateLines = lines => {

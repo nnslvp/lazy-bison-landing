@@ -761,7 +761,7 @@ img {
 	color: #c4fc50;
 }
 
-.header__nav-button {
+.header__contact-us-button {
 	background: inherit;
 	flex-basis: 11.75rem;
 	padding: 0.9063rem 0;
@@ -772,7 +772,7 @@ img {
 		padding: 0.4375rem 0.75rem 0.5rem 0.75rem;
 		justify-content: flex-start;
 	}
-	.header__nav-button {
+	.header__contact-us-button {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -819,7 +819,7 @@ img {
 	.header__logo {
 		width: 9.125rem;
 	}
-	.header__nav-button {
+	.header__contact-us-button {
 		display: none;
 	}
 	.header__main-nav-list {

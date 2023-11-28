@@ -76,6 +76,11 @@
 		justify-content: end;
 	}
 
+	.spin-text-circle {
+		width: auto;
+		height: auto;
+	}
+
 	.spin-text-circle__circle {
 		width: 9.0625rem;
 		height: 9.0625rem;
@@ -83,7 +88,7 @@
 
 	.spin-text-circle__text {
 		position: absolute;
-
+		right: 4.5rem;
 		width: 10.6469rem;
 		height: 10.6425rem;
 	}
@@ -183,6 +188,11 @@
 			width: 8.9844rem;
 			height: 8.99rem;
 		}
+
+		.spin-text-circle__circle {
+			width: 7.625rem;
+			height: 7.625rem;
+		}
 	}
 
 	.lazy-bison-description__text {
@@ -233,15 +243,18 @@
 		.gray-line {
 			display: none;
 		}
+	}
 
+	.lazy-bison-description__info {
 		.spin-text-circle__circle {
 			width: 4.375rem;
 			height: 4.375rem;
 		}
 
 		.spin-text-circle__text {
-			width: 5.375rem;
-			height: 5.875rem;
+			width: 5rem;
+			height: 5rem;
+			right: 1.75rem;
 		}
 	}
 
@@ -309,7 +322,7 @@
 
 		.spin-text-circle {
 			display: flex;
-			bottom: -12px;
+			bottom: -0.75rem;
 			right: 0;
 		}
 
