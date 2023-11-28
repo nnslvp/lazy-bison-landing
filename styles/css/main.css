@@ -801,6 +801,10 @@ img {
   border: 0.125rem solid #e8eaf2;
 }
 
+.card-blog:hover {
+  box-shadow: 0.5rem 0.5rem 1.25rem 0rem rgba(67, 67, 67, 0.2);
+}
+
 .card-blog--bg-black {
   background-color: #212121;
   color: #ffffff;
@@ -2269,13 +2273,11 @@ img {
 }
 
 .workers-background {
-  position: relative;
   background-image: url("../../assets/images/sections/section-testimonials/workers-bg.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   background-color: transparent;
-  background-color: #e5ffaf;
 }
 
 .swiper.workers-swiper {
@@ -2320,9 +2322,10 @@ img {
 @media (max-width: 768px) {
   .workers-background {
     background-image: url("../../assets/images/sections/section-testimonials/workers-bg-768px.svg");
-  }
-  .workers-background .spin-text-circle__circle {
-    display: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
   }
   .swiper.workers-swiper {
     height: 43rem;
@@ -2384,11 +2387,9 @@ img {
 }
 @media (max-width: 425px) {
   .workers-background {
-    background-image: none;
-    background-color: #e5ffaf;
-    position: absolute;
-    height: 16.0625rem;
-    width: 100%;
+    background-repeat: no-repeat;
+    background-size: auto 16.0625rem;
+    background-position: 0 0;
   }
   .testimonials .spin-text-circle__circle {
     display: none;

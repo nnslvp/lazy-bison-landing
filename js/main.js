@@ -1,11 +1,3 @@
-// import './animateLines.js'
-// import './animateWorkers.js'
-// import './burgerMenu.js'
-// import './dropdown.js'
-// import './getConsultationForm.js'
-// import './popups.js'
-// import './sliders.js'
-
 const casesSlider = document.querySelector('.cases-slider')
 const blogSlider = document.querySelector('.blogs-slider')
 const workersSlider = document.querySelector('.workers-swiper')

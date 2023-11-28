@@ -1,6 +1,8 @@
+.section-testimonials {
+}
+
 .testimonials__container {
 	position: relative;
-
 	.spin-text-circle__circle {
 		width: 10rem;
 		height: 10rem;
@@ -8,6 +10,9 @@
 		top: -8.3125rem;
 		right: -4.0625rem;
 	}
+}
+
+.workers-background {
 }
 
 .testimonials__title,
@@ -59,14 +64,12 @@
 }
 
 .workers-background {
-	position: relative;
 	@include background(
 		'../../assets/images/sections/section-testimonials/workers-bg.svg',
 		center,
 		no-repeat,
 		contain
 	);
-	background-color: $color-light-green;
 }
 
 .swiper.workers-swiper {
@@ -115,11 +118,12 @@
 
 @media (max-width: $breakpoint-lg) {
 	.workers-background {
-		background-image: url('../../assets/images/sections/section-testimonials/workers-bg-768px.svg');
-
-		.spin-text-circle__circle {
-			display: none;
-		}
+		@include background(
+			'../../assets/images/sections/section-testimonials/workers-bg-768px.svg',
+			center center,
+			no-repeat,
+			cover
+		);
 	}
 
 	.swiper.workers-swiper {
@@ -193,11 +197,9 @@
 
 @media (max-width: $breakpoint-md) {
 	.workers-background {
-		background-image: none;
-		background-color: $color-light-green;
-		position: absolute;
-		height: 16.0625rem;
-		width: 100%;
+		background-repeat: no-repeat;
+		background-size: auto 16.0625rem;
+		background-position: 0 0;
 	}
 
 	.testimonials .spin-text-circle__circle {
