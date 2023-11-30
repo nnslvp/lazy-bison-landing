@@ -35,7 +35,11 @@ plugins:
   - jekyll-feed
 
 collections:
-  authors:
+  cases:
+    output: true
+  blogs:
+    output: true
+  testimonials:
     output: true
 
 defaults:

@@ -12,9 +12,6 @@
 	}
 }
 
-.workers-background {
-}
-
 .testimonials__title,
 .testimonials__subtitle {
 	position: relative;
@@ -63,34 +60,34 @@
 	right: 7.5rem;
 }
 
-.workers-background {
+.testimonials-background {
 	@include background(
-		'../../assets/images/sections/section-testimonials/workers-bg.svg',
+		'../../assets/images/sections/section-testimonials/testimonials-bg.svg',
 		center,
 		no-repeat,
-		contain
+		cover
 	);
 }
 
-.swiper.workers-swiper {
+.swiper.testimonials-swiper {
 	overflow: visible;
 	position: relative;
 	height: 40.3125rem;
 }
 
-.workers__list > *:nth-child(n + 5) {
+.testimonials__list > *:nth-child(n + 5) {
 	visibility: hidden;
 }
 
-.workers__list {
-	transition: opacity $duration-workers-opacity $transition-easing;
+.testimonials__list {
+	transition: opacity $duration-testimonials-opacity $transition-easing;
 }
 
-.workers__list.fade-out {
+.testimonials__list.fade-out {
 	opacity: 0;
 }
 
-.workers__item {
+.testimonials__item {
 	&:nth-child(1) {
 		bottom: -2.375rem;
 		left: 0.6875rem;
@@ -112,21 +109,21 @@
 	}
 }
 
-.workers__item {
+.testimonials__item {
 	position: absolute;
 }
 
 @media (max-width: $breakpoint-lg) {
-	.workers-background {
+	.testimonials-background {
 		@include background(
-			'../../assets/images/sections/section-testimonials/workers-bg-768px.svg',
+			'../../assets/images/sections/section-testimonials/testimonials-768px.svg',
 			center center,
 			no-repeat,
 			cover
 		);
 	}
 
-	.swiper.workers-swiper {
+	.swiper.testimonials-swiper {
 		height: 43rem;
 	}
 
@@ -170,33 +167,33 @@
 		height: 12.5rem;
 	}
 
-	.workers__list {
+	.testimonials__list {
 		height: 26.6875rem;
 	}
 
-	.workers__item:nth-child(1) {
+	.testimonials__item:nth-child(1) {
 		bottom: -17.875rem;
 		left: 0.625rem;
 	}
 
-	.workers__item:nth-child(2) {
+	.testimonials__item:nth-child(2) {
 		top: 2.4375rem;
 		left: 2.75rem;
 	}
 
-	.workers__item:nth-child(3) {
+	.testimonials__item:nth-child(3) {
 		top: -2.3125rem;
 		right: -0.125rem;
 	}
 
-	.workers__item:nth-child(4) {
+	.testimonials__item:nth-child(4) {
 		bottom: -12.375rem;
 		right: 3.75rem;
 	}
 }
 
 @media (max-width: $breakpoint-md) {
-	.workers-background {
+	.testimonials-background {
 		background-repeat: no-repeat;
 		background-size: auto 16.0625rem;
 		background-position: 0 0;
@@ -222,7 +219,7 @@
 		margin-bottom: 2.5rem;
 	}
 
-	.swiper.workers-swiper {
+	.swiper.testimonials-swiper {
 		width: 100%;
 		height: auto;
 		gap: 0;
@@ -230,11 +227,11 @@
 		top: -2.5rem;
 	}
 
-	.workers__list > *:nth-child(n + 5) {
+	.testimonials__list > *:nth-child(n + 5) {
 		visibility: visible;
 	}
 
-	.workers__item {
+	.testimonials__item {
 		position: initial;
 	}
 }

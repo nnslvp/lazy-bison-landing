@@ -1,6 +1,6 @@
 const casesSlider = document.querySelector('.cases-slider')
 const blogSlider = document.querySelector('.blogs-slider')
-const workersSlider = document.querySelector('.workers-swiper')
+const testimonialsSlider = document.querySelector('.testimonials-swiper')
 const sliderGallery = document.querySelector('.gallery-slider')
 const tabsTable = document.querySelectorAll('.table-th-tab')
 const homePageWrapper = document.querySelector('.home-page__wrapper')
@@ -19,21 +19,21 @@ const initSwiperSlider = (slider, settings) => {
 	})
 }
 
-let newWorkersSwiper
+let newtestimonialsSwiper
 
-function mobileSliderWorkers() {
+function mobileSlidertestimonials() {
 	const isMobile = document.documentElement.clientWidth <= 425
-	if (isMobile && workersSlider.dataset.mobile === 'false') {
-		newWorkersSwiper = initSwiperSlider(workersSlider, {
+	if (isMobile && testimonialsSlider.dataset.mobile === 'false') {
+		newtestimonialsSwiper = initSwiperSlider(testimonialsSlider, {
 			slidesPerView: 1,
 			spaceBetween: 0,
 		})
-		workersSlider.dataset.mobile = 'true'
+		testimonialsSlider.dataset.mobile = 'true'
 	}
 
-	if (!isMobile && workersSlider.dataset.mobile === 'true') {
-		newWorkersSwiper.destroy()
-		workersSlider.dataset.mobile = 'false'
+	if (!isMobile && testimonialsSlider.dataset.mobile === 'true') {
+		newtestimonialsSwiper.destroy()
+		testimonialsSlider.dataset.mobile = 'false'
 	}
 }
 
@@ -185,8 +185,8 @@ const animateLines = () => {
 	window.addEventListener('resize', handleResize)
 }
 
-const animateWorkers = () => {
-	const workers = document.querySelector('.workers__list')
+const animatetestimonials = () => {
+	const testimonials = document.querySelector('.testimonials__list')
 	const widthScreen = document.documentElement.clientWidth
 
 	function shuffleArray(array) {
@@ -197,23 +197,23 @@ const animateWorkers = () => {
 		return array
 	}
 
-	const cardArray = Array.from(workers.children)
+	const cardArray = Array.from(testimonials.children)
 
 	if (widthScreen > 425) {
 		setInterval(() => {
 			const shuffledCardArray = shuffleArray(cardArray)
-			workers.classList.add('fade-out')
+			testimonials.classList.add('fade-out')
 
 			setTimeout(() => {
-				while (workers.firstChild) {
-					workers.removeChild(workers.firstChild)
+				while (testimonials.firstChild) {
+					testimonials.removeChild(testimonials.firstChild)
 				}
 
 				shuffledCardArray.forEach(card => {
-					workers.appendChild(card)
+					testimonials.appendChild(card)
 				})
 
-				workers.classList.remove('fade-out')
+				testimonials.classList.remove('fade-out')
 			}, 250)
 		}, 3000)
 	}
@@ -461,14 +461,14 @@ burgerButton.addEventListener('click', toggleMenu)
 
 if (homePageWrapper) {
 	animateLines()
-	animateWorkers()
+	animatetestimonials()
 	dropdown()
 }
 
 popup()
 getConsultationForm()
 
-if (blogSlider && workersSlider && casesSlider) {
+if (blogSlider && testimonialsSlider && casesSlider) {
 	initSwiperSlider(casesSlider, {
 		slidesPerView: 'auto',
 		spaceBetween: 28,
@@ -532,8 +532,8 @@ if (blogSlider && workersSlider && casesSlider) {
 		},
 	})
 
-	mobileSliderWorkers()
-	window.addEventListener('resize', mobileSliderWorkers)
+	mobileSlidertestimonials()
+	window.addEventListener('resize', mobileSlidertestimonials)
 }
 
 if (sliderGallery) {
