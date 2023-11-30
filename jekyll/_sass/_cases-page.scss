@@ -16,11 +16,11 @@
 	margin-bottom: 1.5rem;
 }
 
-.case-page__wrapper .categories-list {
+.cases-page__wrapper .categories-list {
 	margin-bottom: 3.375rem;
 }
 
-.case-page__wrapper .cases-list {
+.cases-page__wrapper .cases-list {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(38.7188rem, 1fr));
 	gap: 1.75rem;
@@ -31,22 +31,22 @@
 		margin: 1.5rem 0 1.5rem 0;
 	}
 
-	.case-page__wrapper .categories-list {
+	.cases-page__wrapper .categories-list {
 		margin-bottom: 1.5rem;
 	}
 
-	.case-page__wrapper .cases-list {
+	.cases-page__wrapper .cases-list {
 		grid-template-columns: repeat(auto-fill, minmax(21.875rem, 1fr));
 		gap: 1rem;
 	}
 
-	.case-page__wrapper .case-card .case-card__title {
+	.cases-page__wrapper .case-card .case-card__title {
 		width: 14.6875rem;
 	}
 }
 
 @media (max-width: $breakpoint-md) {
-	.case-page__wrapper .cases-list {
+	.cases-page__wrapper .cases-list {
 		grid-template-columns: repeat(auto-fill, minmax(21.4375rem, 1fr));
 	}
 }
