@@ -23,7 +23,7 @@ layout: default
               <p class="author__name">{{page.author}}</p>
             </div>
             <span>|</span>
-            <div class="time">{{ page.date | date: "%B.%d.%Y" }}</div>
+            <div class="time">{{ page.date | date: "%b. %-d, %Y" }}</div>
           </div>
           <ul class="hashtag-list">
             {% assign hashtags = page.hashtags | split: '#' %}
@@ -410,7 +410,7 @@ layout: default
                 hands-on experience.
               </p>
               <span class="hashtag ">#eCommerce</span>
-              <spa class="card-blog__date">Jul 06, 2023</spa>
+              <span class="card-blog__date">{{ blog.date | date: "%b. %-d, %Y" }}</span>
             </div>
             <a href="{{blog.url}}" class="button button--primary card-blog__btn">
               Read More

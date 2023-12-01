@@ -353,7 +353,7 @@ title: Home
                   hands-on experience.
                 </p>
                 <span class="hashtag">#eCommerce</span>
-                <spa class="card-blog__date">Jul 06, 2023</spa>
+                <span class="card-blog__date">{{ blog.date | date: "%b. %-d, %Y" }}</span>
               </div>
               <a href="{{blog.url}}" class="button button--primary card-blog__btn">
                 Read More
