@@ -1,8 +1,6 @@
 ---
 layout: default
-title: Blog
 ---
-
 
 <section class="section-full-info-blog">
   <div class="container">
@@ -15,162 +13,159 @@ title: Blog
         <a class="navigation-path__link navigation-path__link--active" href>A set of the most necessary things on
           vacation</a>
       </nav>
+
       <article class="full-info-blog">
         <header class="full-info__header">
-          <h1 class="blog-page__title-h1 ">Effortless Deployment of Web
-            Applications with Kamal</h1>
+          <h1 class="blog-page__title-h1 ">{{page.title}}</h1>
           <div class="author-time-blog">
             <div class="author">
               <img src="./assets/images/author-blog.svg" class="author__avatar"></img>
-              <p class="author__name">Marie Caphlish</p>
+              <p class="author__name">{{page.author}}</p>
             </div>
             <span>|</span>
-            <div class="time">Jul 06, 2023</div>
+            <div class="time">{{ page.date | date: "%B.%d.%Y" }}</div>
           </div>
           <ul class="hashtag-list">
+            {% assign hashtags = page.hashtags | split: '#' %}
+            {% for hashtag in hashtags %}
+            {% if hashtag != '' %}
             <li class="hashtag-item">
-              <span class="hashtag hashtag--active">#eCommerce</span>
+              <span class="hashtag hashtag--active">#{{ hashtag }}</span>
             </li>
-            <li class="hashtag-item">
-              <span class="hashtag hashtag--active">#real
-                estate</span>
-            </li>
+            {% endif %}
+            {% endfor %}
           </ul>
           <div class="blog-post-image__wrapper">
-            <img class="blog-post-image" src="./assets/images/blog-img.png" alt>
+            <img class="blog-post-image" src="{{page.image}}" alt>
           </div>
         </header>
+
+
         <section class="full-info-blog__section">
-          <h2 class="blog-page__title-h2 ">Introduction</h2>
-          <p class="full-info-blog__text">Navigating the
-            intricacies of web application deployment can
-            be a daunting task. Enter Kamal—a deployment tool designed to
-            alleviate these complexities. In this article, we'll delve
-            into the key features of Kamal and share insights from our own
-            hands-on experience.</p>
+          {{content}}
         </section>
-        <section class="full-info-blog__section">
-          <h2 class="blog-page__title-h2 ">Key Advantages of Kamal</h2>
-          <p class="full-info-blog__text">Kamal brings a host of
-            features to the table, making it a
-            go-to solution for web application deployment:</p>
-          <ul class="full-info-blog-list full-info-blog-list--disc">
-            <li>
-              <p class="full-info-blog__text">Zero Downtime: Kamal
-                ensures uninterrupted service
-                during
-                the deployment process.</p>
-            </li>
-            <li>
-              <p class="full-info-blog__text">ncremental Rollouts:
-                Update your application seamlessly
-                without affecting the end-user experience.</p>
-            </li>
-            <li>
-              <p class="full-info-blog__text">Flexible
-                Configuration: Kamal provides extensive
-                options
-                for managing both environment variables and sensitive data
-                securely.</p>
-            </li>
-          </ul>
-        </section>
-        <section class="full-info-blog__section">
-          <h2 class="blog-page__title-h2 ">Why We Chose Kamal</h2>
-          <p class="full-info-blog__text">In our development
-            studio, Kamal has become an invaluable
-            asset. Its intuitive configuration interface and comprehensive
-            feature set have significantly reduced our deployment
-            overhead, allowing us to channel our energies into
-            development. The tool's robust handling of environment
-            variables and secrets is especially noteworthy.</p>
-        </section>
-        <section class="full-info-blog__section">
-          <h2 class="blog-page__title-h2 ">Installation Guide</h2>
-          <ol class="full-info-blog-list full-info-blog-list--number">
-            <p class="full-info-blog__text">Installing Kamal is
-              straightforward. Here are your options:</p>
-            <li>
-              <p class="full-info-blog__text">
-                To add the gem to your Ruby on Rails project, simply
-                execute <span class="highlight-text">bundle add kamal</span>.
-                Note that compatibility issues may arise with older Ruby
-                on Rails versions.
-              </p>
-            </li>
-            <li>
-              <p class="full-info-blog__text">
-                For Docker users, you can create an alias in your console
-                configuration to run Kamal as follows:
-              </p>
-              <div class="code-wrapper">
-                <button class="button copy-button">
-                  <i class="icon icon-copy"></i>
-                  Copy
-                </button>
-                <pre>
+        <!-- <section class="full-info-blog__section">
+        <h2 class="blog-page__title-h2 ">Key Advantages of Kamal</h2>
+        <p class="full-info-blog__text">Kamal brings a host of
+          features to the table, making it a
+          go-to solution for web application deployment:</p>
+        <ul class="full-info-blog-list full-info-blog-list--disc">
+          <li>
+            <p class="full-info-blog__text">Zero Downtime: Kamal
+              ensures uninterrupted service
+              during
+              the deployment process.</p>
+          </li>
+          <li>
+            <p class="full-info-blog__text">ncremental Rollouts:
+              Update your application seamlessly
+              without affecting the end-user experience.</p>
+          </li>
+          <li>
+            <p class="full-info-blog__text">Flexible
+              Configuration: Kamal provides extensive
+              options
+              for managing both environment variables and sensitive data
+              securely.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="full-info-blog__section">
+        <h2 class="blog-page__title-h2 ">Why We Chose Kamal</h2>
+        <p class="full-info-blog__text">In our development
+          studio, Kamal has become an invaluable
+          asset. Its intuitive configuration interface and comprehensive
+          feature set have significantly reduced our deployment
+          overhead, allowing us to channel our energies into
+          development. The tool's robust handling of environment
+          variables and secrets is especially noteworthy.</p>
+      </section>
+      <section class="full-info-blog__section">
+        <h2 class="blog-page__title-h2 ">Installation Guide</h2>
+        <ol class="full-info-blog-list full-info-blog-list--number">
+          <p class="full-info-blog__text">Installing Kamal is
+            straightforward. Here are your options:</p>
+          <li>
+            <p class="full-info-blog__text">
+              To add the gem to your Ruby on Rails project, simply
+              execute <span class="highlight-text">bundle add kamal</span>.
+              Note that compatibility issues may arise with older Ruby
+              on Rails versions.
+            </p>
+          </li>
+          <li>
+            <p class="full-info-blog__text">
+              For Docker users, you can create an alias in your console
+              configuration to run Kamal as follows:
+            </p>
+            <div class="code-wrapper">
+              <button class="button copy-button">
+                <i class="icon icon-copy"></i>
+                Copy
+              </button>
+              <pre>
                       <code class="code">
                         alias kamal="docker run -it --rm -v '${PWD}:/workdir' -v '/run/host-services/ssh-auth.sock:/run/host-services/ssh-auth.sock' -e SSH_AUTH_SOCK='/run/host-services/ssh-auth.sock' -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/basecamp/kamal:latest"
                       </code>
                     </pre>
-              </div>
-            </li>
-            <li>
-              <p class="full-info-blog__text">To avoid version
-                conflicts, you can set up a separate Gemfile as follows:
-              </p>
-              <ul class="full-info-blog-list full-info-blog-list--disc ">
-                <li>
-                  <p class="full-info-blog__text">
-                    Create a file named <span class="highlight-text">gemfiles/kamal.Gemfile</span>
-                    and populate it with:
-                  </p>
-                  <div class="code-wrapper">
-                    <button class="button copy-button">
-                      <i class="icon icon-copy"></i>
-                      Copy
-                    </button>
-                    <pre>
+            </div>
+          </li>
+          <li>
+            <p class="full-info-blog__text">To avoid version
+              conflicts, you can set up a separate Gemfile as follows:
+            </p>
+            <ul class="full-info-blog-list full-info-blog-list--disc ">
+              <li>
+                <p class="full-info-blog__text">
+                  Create a file named <span class="highlight-text">gemfiles/kamal.Gemfile</span>
+                  and populate it with:
+                </p>
+                <div class="code-wrapper">
+                  <button class="button copy-button">
+                    <i class="icon icon-copy"></i>
+                    Copy
+                  </button>
+                  <pre>
                             <code class="code">
                               <span class="code__command">source</span>'https://rubygems.org'
                         <span class="code__command">gem</span>'kamal', '~>1.0.0'
                             </code>
                           </pre>
-                  </div>
-                </li>
-                <li>
-                  <p class="full-info-blog__text">Run
-                    BUNDLE_GEMFILE=kamal/Gemfile bundle install to install
-                    the gem.</p>
-                </li>
-                <li>
-                  <p class="full-info-blog__text">Generate a runnable
-                    directory using BUNDLE_GEMFILE=kamal/Gemfile bundle
-                    binstub kamal --path ../bin. </p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p class="full-info-blog__text">After these steps, you can
-                run bin/kamal from the console. This is particularly
-                useful for GitHub Actions if adding the gem to your
-                project isn't an option.</p>
-            </li>
-          </ol>
-        </section>
-        <section class="full-info-blog__section">
-          <h2 class="blog-page__title-h2 ">Configuration Steps</h2>
-          <p class="full-info-blog__text">Configuring Kamal is a breeze.
-            Simply run kamal init to generate the necessary directories
-            and files. You can then proceed to configure your deployment
-            settings using the deploy.yml and deploy.<env name>.yml files.
-              Here's a sample deploy.yml file to get you started:</p>
-          <div class="code-wrapper">
-            <button class="button copy-button">
-              <i class="icon icon-copy"></i>
-              Copy
-            </button>
-            <pre>
+                </div>
+              </li>
+              <li>
+                <p class="full-info-blog__text">Run
+                  BUNDLE_GEMFILE=kamal/Gemfile bundle install to install
+                  the gem.</p>
+              </li>
+              <li>
+                <p class="full-info-blog__text">Generate a runnable
+                  directory using BUNDLE_GEMFILE=kamal/Gemfile bundle
+                  binstub kamal --path ../bin. </p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p class="full-info-blog__text">After these steps, you can
+              run bin/kamal from the console. This is particularly
+              useful for GitHub Actions if adding the gem to your
+              project isn't an option.</p>
+          </li>
+        </ol>
+      </section>
+      <section class="full-info-blog__section">
+        <h2 class="blog-page__title-h2 ">Configuration Steps</h2>
+        <p class="full-info-blog__text">Configuring Kamal is a breeze.
+          Simply run kamal init to generate the necessary directories
+          and files. You can then proceed to configure your deployment
+          settings using the deploy.yml and deploy.<env name>.yml files.
+            Here's a sample deploy.yml file to get you started:</p>
+        <div class="code-wrapper">
+          <button class="button copy-button">
+            <i class="icon icon-copy"></i>
+            Copy
+          </button>
+          <pre>
                       <code class="code">
                         # Name of your application. Used to uniquely configure containers.
                         service: <project_name>
@@ -265,15 +260,15 @@ title: Blog
                         #   wait: 2
                       </code>
                     </pre>
-          </div>
-          <p class="full-info-blog__text">And an example
-            deploy.staging.yml for staging environments:</p>
-          <div class="code-wrapper">
-            <button class="button copy-button">
-              <i class="icon icon-copy"></i>
-              Copy
-            </button>
-            <pre>
+        </div>
+        <p class="full-info-blog__text">And an example
+          deploy.staging.yml for staging environments:</p>
+        <div class="code-wrapper">
+          <button class="button copy-button">
+            <i class="icon icon-copy"></i>
+            Copy
+          </button>
+          <pre>
                       <code class="code">
                         ervers:
                         - <staging server ip>
@@ -304,88 +299,88 @@ title: Blog
                             - data:/data
                       </code>
                     </pre>
-          </div>
-        </section>
-        <section class="full-info-blog__section">
-          <h2 class="blog-page__title-h2 ">Usage Guide</h2>
-          <p class="full-info-blog__text">To set up your server, execute
-            the command kamal setup. In our specific case, the command
-            is:</p>
-          <div class="code-wrapper">
-            <button class="button copy-button">
-              <i class="icon icon-copy"></i>
-              Copy
-            </button>
-            <pre>
+        </div>
+      </section>
+      <section class="full-info-blog__section">
+        <h2 class="blog-page__title-h2 ">Usage Guide</h2>
+        <p class="full-info-blog__text">To set up your server, execute
+          the command kamal setup. In our specific case, the command
+          is:</p>
+        <div class="code-wrapper">
+          <button class="button copy-button">
+            <i class="icon icon-copy"></i>
+            Copy
+          </button>
+          <pre>
                     <code class="code">
                       kamal setup -d staging
                     </code>
                   </pre>
-          </div>
-          <p class="full-info-blog__text">To create a .env file, execute
-            the command kamal envify. In our specific case, the command
-            is:</p>
-          <div class="code-wrapper">
-            <button class="button copy-button">
-              <i class="icon icon-copy"></i>
-              Copy
-            </button>
-            <pre>
+        </div>
+        <p class="full-info-blog__text">To create a .env file, execute
+          the command kamal envify. In our specific case, the command
+          is:</p>
+        <div class="code-wrapper">
+          <button class="button copy-button">
+            <i class="icon icon-copy"></i>
+            Copy
+          </button>
+          <pre>
                     <code class="code">
                       kamal envify -d staging
                     </code>
                   </pre>
-          </div>
-          <p class="full-info-blog__text">To upload variables from .env
-            files to the server, execute the command kamal env push. In
-            our specific case, the command is:</p>
-          <div class="code-wrapper">
-            <button class="button copy-button">
-              <i class="icon icon-copy"></i>
-              Copy
-            </button>
-            <pre>
+        </div>
+        <p class="full-info-blog__text">To upload variables from .env
+          files to the server, execute the command kamal env push. In
+          our specific case, the command is:</p>
+        <div class="code-wrapper">
+          <button class="button copy-button">
+            <i class="icon icon-copy"></i>
+            Copy
+          </button>
+          <pre>
                     <code class="code">
                       kamal env push -d staging
                     </code>
                   </pre>
-          </div>
-          <p class="full-info-blog__text">To deploy your application,
-            use the command kamal deploy. For us, the command is:</p>
-          <div class="code-wrapper">
-            <button class="button copy-button">
-              <i class="icon icon-copy"></i>
-              Copy
-            </button>
-            <pre>
+        </div>
+        <p class="full-info-blog__text">To deploy your application,
+          use the command kamal deploy. For us, the command is:</p>
+        <div class="code-wrapper">
+          <button class="button copy-button">
+            <i class="icon icon-copy"></i>
+            Copy
+          </button>
+          <pre>
                     <code class="code">
                       kamal deploy -d staging
                     </code>
                   </pre>
-          </div>
-        </section>
-        <section class="full-info-blog__section">
-          <h2 class="blog-page__title-h2 ">Conclusion</h2>
-          <p class="full-info-blog__text">Kamal stands out as a
-            streamlined and efficient solution for web application
-            deployment. Its zero-downtime, incremental rollouts, and
-            flexible configuration options make it an essential tool for
-            any development team.</p>
-          <p class="full-info-blog__text">SEO:</p>
-          <div class="code-wrapper">
-            <button class="button copy-button">
-              <i class="icon icon-copy"></i>
-              Copy
-            </button>
-            <pre>
+        </div>
+      </section>
+      <section class="full-info-blog__section">
+        <h2 class="blog-page__title-h2 ">Conclusion</h2>
+        <p class="full-info-blog__text">Kamal stands out as a
+          streamlined and efficient solution for web application
+          deployment. Its zero-downtime, incremental rollouts, and
+          flexible configuration options make it an essential tool for
+          any development team.</p>
+        <p class="full-info-blog__text">SEO:</p>
+        <div class="code-wrapper">
+          <button class="button copy-button">
+            <i class="icon icon-copy"></i>
+            Copy
+          </button>
+          <pre>
                     <code class="code">
                       &lt;meta name="description" content="Learn how Kamal simplifies web app deployment with features like zero downtime, incremental rollouts, and flexible configuration. Ideal for developers."&gt;
                       &lt;meta name="keywords" content="Kamal, Web App Deployment, Zero Downtime, Incremental Rollouts, Flexible Configuration, Developers"&gt;
                       &lt;meta name="author" content="Lazy Bison"&gt;
                     </code>
                   </pre>
-          </div>
-        </section>
+        </div>
+      </section> -->
       </article>
     </div>
 </section>
@@ -399,6 +394,7 @@ title: Blog
     <div class="section-recommendations__inner">
       <h2 class="blog-page__title-h2 ">Recommendations</h2>
       <ul class="blogs-list">
+        {% for blog in site.blogs limit:3 %}
         <li class="blogs-item">
           <div class="card-blog ">
             <div class="card-blog__content">
@@ -416,57 +412,13 @@ title: Blog
               <span class="hashtag ">#eCommerce</span>
               <spa class="card-blog__date">Jul 06, 2023</spa>
             </div>
-            <a href="./blog-page.html" class="button button--primary card-blog__btn">
+            <a href="{{blog.url}}" class="button button--primary card-blog__btn">
               Read More
               <i class="icon arrow-right-top-angle-square-transparent-bg"></i>
             </a>
           </div>
         </li>
-        <li class="blogs-item">
-          <div class="card-blog">
-            <div class="card-blog__content">
-              <h3 class="card-blog__title">
-                Effortless Deployment of Web Applications with Kamal
-              </h3>
-              <p class="card-blog__description">
-                Navigating the intricacies of web application
-                deployment can be a daunting task. Enter Kamal—a
-                deployment tool designed to alleviate these
-                complexities. In this article, we'll delve into the
-                key features of Kamal and share insights from our own
-                hands-on experience.
-              </p>
-              <span class="hashtag">#eCommerce</span>
-              <spa class="card-blog__date">Jul 06, 2023</spa>
-            </div>
-            <a href="./blog-page.html" class="button button--primary card-blog__btn">
-              Read More
-              <i class="icon arrow-right-top-angle-square-transparent-bg"></i>
-            </a>
-          </div>
-        </li>
-        <li class="blogs-item">
-          <div class="card-blog">
-            <div class="card-blog__content">
-              <h3 class="card-blog__title">
-                Effortless Deployment of Web Applications with Kamal
-              </h3>
-              <p class="card-blog__description">
-                Navigating the intricacies of web application
-                deployment can be a daunting task. Enter Kamal—a
-                deployment tool designed to alleviate these
-                complexities. In this article, we'll delve into the
-                key features of Kamal and share insights from our own
-                hands-on experience.
-              </p>
-              <span class="hashtag">#eCommerce</span>
-              <spa class="card-blog__date">Jul 06, 2023</spa>
-            </div>
-            <a href="./blog-page.html" class="button button--primary card-blog__btn">
-              Read More
-              <i class="icon arrow-right-top-angle-square-transparent-bg"></i>
-            </a>
-          </div>
+        {% endfor %}
         </li>
       </ul>
     </div>

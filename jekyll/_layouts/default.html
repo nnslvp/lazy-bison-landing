@@ -58,26 +58,25 @@
       style="display: none; visibility: hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+
+  {% assign url_parts = page.url | split: '/' %}
+  {% assign last_part = url_parts | last %}
   {% assign wrapper_class = '' %}
 
-  {% case page.title %}
-  {% when 'Blog' %}
-  {% assign wrapper_class = 'wrapper blog-page__wrapper' %}
-  {% when 'Case' %}
-  {% assign wrapper_class = 'wrapper case-study-page__wrapper' %}
-  {% when 'Cases' %}
+  {% if last_part contains 'cases' %}
   {% assign wrapper_class = 'wrapper cases-page__wrapper' %}
-  {% when 'Home' %}
-  {% assign wrapper_class = 'wrapper home-page__wrapper' %}
-  {% when 'Blogs' %}
+  {% elsif last_part contains 'blogs' %}
   {% assign wrapper_class = 'wrapper blogs-page__wrapper' %}
+  {% elsif last_part contains 'blog' %}
+  {% assign wrapper_class = 'wrapper blog-page__wrapper' %}
   {% else %}
-  {% assign wrapper_class = 'wrapper' %}
-  {% endcase %}
+  {% assign wrapper_class = 'wrapper wrapper home-page__wrapper' %}
+  {% endif %}
 
   <div class="{{ wrapper_class }}">
     {% include header.html %}
     <main>
+      {{last_segment}}
       {{ content }}
     </main>
     {% include footer.html %}
