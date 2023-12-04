@@ -1,10 +1,10 @@
 - name: Services
-  link: /index.html#services
+  link: /#services
 - name: Explore
-  link: /index.html#explore
+  link: /#explore
 - name: Blogs
   link: /blogs.html
 - name: Cases
   link: /cases.html
 - name: Testimonials
-  link: /index.html#testimonials
+  link: /#testimonials

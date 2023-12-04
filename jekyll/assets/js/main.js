@@ -573,7 +573,9 @@ if (blogPageWrapper) {
 		)
 	})
 
-	const copyButton = document.querySelectorAll('.copy-button').forEach(btn => {
+	const copyButtons = document.querySelectorAll('.copy-button')
+
+	copyButtons.forEach(btn => {
 		btn.addEventListener('click', () => {
 			const copyText = btn
 				.closest('.code-wrapper')

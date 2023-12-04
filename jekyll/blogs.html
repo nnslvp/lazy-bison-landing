@@ -6,13 +6,9 @@ title: Blogs
 <div class="blogs-page__wrapper">
   <div class="container">
     <div class="section-blogs-page__inner">
-      <nav class="navigation-path blogs-page-navigation-path">
-        <a class="navigation-path__link" href>Home</a>
-        <span>/</span>
-        <a class="navigation-path__link navigation-path__link--active" href>Blog</a>
-      </nav>
+      {%include navigation-path.html%}
       <div class="section-title__inner">
-        <h1 class="section-title__heading">Blog</h1>
+        <h1 class="section-title__heading">Blogs</h1>
         <div class="section-title__arrow rectangle-arrow">
           <i class="icon arrow-right-down-angle-square"></i>
         </div>
@@ -35,7 +31,7 @@ title: Blogs
       <ul class="blogs-list">
         {% for blog in site.blogs %}
         <li class="blogs-item">
-          <div class="card-blog ">
+          <article class="card-blog {% if blog.theme == 'black' %}card-blog--bg-black{% endif %}">
             <div class="card-blog__content">
               <h3 class="card-blog__title">
                 Effortless Deployment of Web Applications with Kamal
@@ -49,13 +45,13 @@ title: Blogs
                 hands-on experience.
               </p>
               <span class="hashtag ">#eCommerce</span>
-              <span class="card-blog__date">{{ blog.date | date: "%B.%-d.%Y" }}</span>
+              <span class="card-blog__date">{{ blog.date | date: "%b. %-d, %Y" }}</span>
             </div>
             <a href="{{blog.url}}" class="button button--primary card-blog__btn">
               Read More
               <i class="icon arrow-right-top-angle-square-transparent-bg"></i>
             </a>
-          </div>
+          </article>
         </li>
         {% endfor %}
       </ul>

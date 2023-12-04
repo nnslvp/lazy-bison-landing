@@ -1,0 +1,17 @@
+   <nav class="navigation-path blog-page__navigation-path">
+     {% assign current_path = page.url | split: "/" %}
+     {% assign current_path_size = current_path | size %}
+     <a class="navigation-path__link" href="/">Home</a>
+     <span>/</span>
+     {% if current_path_size == 2 %}
+     {% assign filename = current_path[1] | remove: ".html" | capitalize %}
+     <a class="navigation-path__link navigation-path__link--active" href="{{page.url}}">{{ filename }}</a>
+     {% endif %}
+     {% if current_path_size == 3 %}
+     {% assign filename = current_path[1] | remove: ".html" | capitalize %}
+     {% assign trimmed_url = current_path[0..1] | join: "/" %}
+     <a class="navigation-path__link " href="{{ trimmed_url }}">{{ filename }}</a>
+     <span>/</span>
+     <a class="navigation-path__link navigation-path__link--active" href="{{page.url}}">{{page.title}}</a>
+     {% endif %}
+   </nav>

@@ -339,7 +339,7 @@ title: Home
         <ul class="swiper-wrapper">
           {% for blog in site.blogs %}
           <li class="swiper-slide">
-            <article class="card-blog ">
+            <article class="card-blog {% if blog.theme == 'black' %}card-blog--bg-black{% endif %}">
               <div class="card-blog__content">
                 <h3 class="card-blog__title">
                   Effortless Deployment of Web Applications with Kamal
