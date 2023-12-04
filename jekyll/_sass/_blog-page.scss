@@ -126,7 +126,7 @@
 	color: $color-dark-violet;
 }
 
-pre.highlight {
+div.highlight {
 	position: relative;
 	border-radius: 0.5rem;
 	padding: 2.5rem;
@@ -157,7 +157,11 @@ pre.highlight code {
 	border: none;
 }
 
-pre code .copy-button {
+.code-wrapper {
+	position: relative;
+}
+
+.code-wrapper .copy-button {
 	position: absolute;
 	top: 1rem;
 	right: 1.5rem;
@@ -217,7 +221,7 @@ pre code .copy-button {
 		height: 19rem;
 	}
 
-	pre.highlight {
+	div.highlight {
 		padding: 2.5rem 1.5rem;
 	}
 

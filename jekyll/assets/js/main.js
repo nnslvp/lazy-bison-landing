@@ -5,6 +5,7 @@ const sliderGallery = document.querySelector('.gallery-slider')
 const tabsTable = document.querySelectorAll('.table-th-tab')
 const homePageWrapper = document.querySelector('.home-page__wrapper')
 const caseStudyPageWrapper = document.querySelector('.case-study-page__wrapper')
+const blogPageWrapper = document.querySelector('.blog-page__wrapper')
 
 //sliders
 const initSwiperSlider = (slider, settings) => {
@@ -554,4 +555,30 @@ if (tabsTable) {
 			e.target.classList.toggle('table-th-tab-active')
 		})
 	)
+}
+
+if (blogPageWrapper) {
+	const highlightDivElements = document.querySelectorAll('div.highlight')
+
+	highlightDivElements.forEach(el => {
+		el.classList.add('code-wrapper')
+		el.insertAdjacentHTML(
+			'afterbegin',
+			`
+        <button class="button copy-button">
+            <i class="icon icon-copy"></i>
+            Copy
+        </button>
+    `
+		)
+	})
+
+	const copyButton = document.querySelectorAll('.copy-button').forEach(btn => {
+		btn.addEventListener('click', () => {
+			const copyText = btn
+				.closest('.code-wrapper')
+				.querySelector('code').textContent
+			navigator.clipboard.writeText(copyText)
+		})
+	})
 }
