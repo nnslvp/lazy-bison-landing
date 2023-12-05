@@ -1,4 +1,4 @@
-.case-page__navigation-path {
+.cases-page__wrapper .navigation-path {
 	margin: 3.75rem 0 2.5rem 0;
 }
 
@@ -27,7 +27,7 @@
 }
 
 @media (max-width: $breakpoint-lg) {
-	.case-page__navigation-path {
+	.cases-page__wrapper  .navigation-path {
 		margin: 1.5rem 0 1.5rem 0;
 	}
 

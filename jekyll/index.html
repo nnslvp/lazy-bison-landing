@@ -303,21 +303,7 @@ title: Home
         <ul class="swiper-wrapper">
           {% for case in site.cases %}
           <li class="swiper-slide">
-            <article class="case-card">
-              <a href="{{ case.url }}">
-                <div class="case-card__img-wrapper">
-                  <img src="{{ case.image }}" alt="Case Image" class="case-card-img" />
-                </div>
-                <footer class="case-card__footer">
-                  <h3 class="case-card__title">
-                    {{ case.title }}
-                  </h3>
-                  <div class="section-title__arrow rectangle-arrow">
-                    <i class="icon arrow-right-top-angle-square"></i>
-                  </div>
-                </footer>
-              </a>
-            </article>
+            {% include case-card.html blog=case %}
           </li>
           {% endfor %}
         </ul>

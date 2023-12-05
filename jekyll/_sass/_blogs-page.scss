@@ -1,4 +1,4 @@
-.blogs-page__wrapper .blogs-page-navigation-path {
+.blogs-page__wrapper .navigation-path {
 	margin-top: 3.75rem;
 	margin-bottom: 2.8125rem;
 }
@@ -39,7 +39,7 @@
 }
 
 @media (max-width: $breakpoint-lg) {
-	.blogs-page__wrapper .blogs-page-navigation-path {
+	.blogs-page__wrapper .navigation-path {
 		margin-top: 2rem;
 		margin-bottom: 1.5rem;
 	}
@@ -64,7 +64,7 @@
 }
 
 @media (max-width: $breakpoint-md) {
-	.blogs-page__wrapper .blogs-page-navigation-path {
+	.blogs-page__wrapper .navigation-path {
 		margin-top: 0.9375rem;
 	}
 

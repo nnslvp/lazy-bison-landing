@@ -2,24 +2,24 @@
 	background-color: $color-night-blue;
 }
 
-.case-study-page__wrapper section {
+.case-page__wrapper section {
 	margin-bottom: 0;
 }
 
-.case-study-page__wrapper {
+.case-page__wrapper {
 	background-color: $color-disable-grey;
 }
 
-.case-study-page__navigation-path {
+.case-page__wrapper .navigation-path {
 	padding: 3.75rem 0 2rem 0;
 	color: $color-disable-grey;
 }
 
-.case-study-page__navigation-path .navigation-path__link {
+.case-page__wrapper .navigation-path__link {
 	color: inherit;
 }
 
-.case-study-page__navigation-path .navigation-path__link--active {
+.case-page__wrapper .navigation-path__link--active {
 	color: $color-light-green;
 }
 
@@ -524,7 +524,7 @@ tbody tr:last-child td:last-child {
 }
 
 @media (max-width: $breakpoint-lg) {
-	.case-study-page__navigation-path {
+	.case-page__wrapper .navigation-path {
 		padding: 1.5rem 0 1.875rem 0;
 	}
 
@@ -856,7 +856,7 @@ tbody tr:last-child td:last-child {
 }
 
 @media (max-width: $breakpoint-md) {
-	.case-study-page__navigation-path {
+	.case-page__wrapper .navigation-path {
 		padding: 1rem 0;
 	}
 
