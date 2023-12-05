@@ -1,0 +1,17 @@
+<article class="card-blog {% if blog.theme == 'black' %}card-blog--bg-black{% endif %}">
+  <div class="card-blog__content">
+    <h3 class="card-blog__title">
+      {{ blog.title }}
+    </h3>
+    <p class="card-blog__description">
+      {{ blog.description }}
+    </p>
+    {% assign hashtagsArray = blog.hashtags | split: "#" %}
+    <span class="hashtag">#{{ hashtagsArray[1]] }}</span>
+    <span class="card-blog__date">{{ blog.date | date: "%b. %-d, %Y" }}</span>
+  </div>
+  <a href="{{ blog.url }}" class="button button--primary card-blog__btn">
+    Read More
+    <i class="icon arrow-right-top-angle-square-transparent-bg"></i>
+  </a>
+</article>
