@@ -89,7 +89,7 @@ title: Case
   <div class="container">
     <div class="section-challenge__inner">
       <h2 class="case-study-page__title-h2">Challenge</h2>
-      <p class="case-study-page__subtitle">{{page.challenge.client}}
+      <p class="case-study-page__subtitle">{{page.challenge.subtitle}}
         several critical challenges:</p>
       <ul class="challenge-list">
         {% for issue in page.challenge.issues %}
@@ -108,8 +108,7 @@ title: Case
   <div class="container">
     <div class="section-value-driven__inner">
       <h2 class="case-study-page__title-h2">Value-Driven Results</h2>
-      <p class="case-study-page__subtitle">Our comprehensive solution significantly improved the logistics
-        company's operations:</p>
+      <p class="case-study-page__subtitle">{{page.value_driven_results.subtitle}}</p>
       <div class="value-driven-lists__wrapper">
         <ul class="value-driven-list">
           <li class="value-driven-item">
@@ -186,92 +185,23 @@ title: Case
       <table class="solution-table">
         <thead>
           <tr>
-            <th class="table-th-tab">Service</th>
-            <th class="table-th-tab table-th-tab-active">Web Appl for Organization Staff</th>
-            <th class="table-th-tab">Mobile App for Drivers</th>
+            {% for item in page.solution_table.thead %}
+            {% if forloop.index == 2 %}
+            <th class="table-th-tab table-th-tab-active">{{ item.title }}</th>
+            {% else %}
+            <th class="table-th-tab">{{ item.title }}</th>
+            {% endif %}
+            {% endfor %}
           </tr>
         </thead>
         <tbody>
+          {% for row in page.solution_table.tbody  %}
           <tr>
-            <td>Login: </td>
-            <td>Password recovery mechanism.</td>
-            <td>Password recovery feature.</td>
+            {% for cell  in row  %}
+            <td>{{cell[1]}}</td>
+            {% endfor %}
           </tr>
-          <tr>
-            <td>Password Recovery:</td>
-            <td>Password recovery mechanism.</td>
-            <td>Secure login for drivers.</td>
-          </tr>
-          <tr>
-            <td>Logout:</td>
-            <td>Ensuring account security through logout.</td>
-            <td>Ensuring account security through logout.</td>
-          </tr>
-          <tr>
-            <td>Trips & Orders:</td>
-            <td>Comprehensive visibility of all trips and orders.</td>
-            <td>Access to assigned trips and orders.</td>
-          </tr>
-          <tr>
-            <td>Live Map:</td>
-            <td>Real-time location tracking.</td>
-            <td>Real-time location tracking.</td>
-          </tr>
-          <tr>
-            <td>Chat:</td>
-            <td>Communication hub.</td>
-            <td>Real-time communication.</td>
-          </tr>
-          <tr>
-            <td>Activities</td>
-            <td>Record of actions taken during trips.</td>
-            <td>Registering activities and updates.</td>
-          </tr>
-          <tr>
-            <td>Announcements</td>
-            <td>Enhanced communication through announcements.</td>
-            <td>Enhanced communication through announcements.</td>
-          </tr>
-          <tr>
-            <td>Profile</td>
-            <td>User profile management.</td>
-            <td>Functionality for changing drivers.</td>
-          </tr>
-          <tr>
-            <td>Driver Score:</td>
-            <td>Assessment of driving behavior.</td>
-            <td>Profile management.</td>
-          </tr>
-          <tr>
-            <td>Drivers:</td>
-            <td>Management of drivers.</td>
-            <td>Encouraging eco-friendly driving.</td>
-          </tr>
-          <tr>
-            <td>Question Path: </td>
-            <td>Guiding users through specific processes.</td>
-            <td>Tracking and managing driving time.</td>
-          </tr>
-          <tr>
-            <td>Change Log:</td>
-            <td>Recording all changes.</td>
-          </tr>
-          <tr>
-            <td>User Management:</td>
-            <td>Managing users efficiently.</td>
-          </tr>
-          <tr>
-            <td>Groups:</td>
-            <td>Managing groups of trucks or users.</td>
-          </tr>
-          <tr>
-            <td>Events: </td>
-            <td>Logging important events and activities.</td>
-          </tr>
-          <tr>
-            <td>Report: </td>
-            <td>Reporting capabilities.</td>
-          </tr>
+          {% endfor %}
         </tbody>
       </table>
     </div>
@@ -282,36 +212,14 @@ title: Case
     <div class="section-tools-technologies__inner">
       <h2 class="case-study-page__title-h2">Tools & Technologies </h2>
       <ul class="tools-technologies-list">
+        {% for item in page.tools_and_technologies %}
         <li class="tools-technologies-item">
-          <h3 class="tools-technologies-item__title-h3">Back-End</h3>
+          <h3 class="tools-technologies-item__title-h3">{{item.key}}</h3>
           <p class="tools-technologies-item__text">
-            Ruby on Rails, PostgreSQL, S3 Bucket
+            {{item.description}}
           </p>
         </li>
-        <li class="tools-technologies-item">
-          <h3 class="tools-technologies-item__title-h3">Front-End</h3>
-          <p class="tools-technologies-item__text">
-            React, TypeScript, GraphQL Apollo Client, Redux
-          </p>
-        </li>
-        <li class="tools-technologies-item">
-          <h3 class="tools-technologies-item__title-h3">Project Tools</h3>
-          <p class="tools-technologies-item__text">
-            JIRA, Jenkins, GitLab, TestRail
-          </p>
-        </li>
-        <li class="tools-technologies-item">
-          <h3 class="tools-technologies-item__title-h3">Wireframes & Mockups</h3>
-          <p class="tools-technologies-item__text">
-            Figma, Axure
-          </p>
-        </li>
-        <li class="tools-technologies-item">
-          <h3 class="tools-technologies-item__title-h3">Roadmap Tool</h3>
-          <p class="tools-technologies-item__text">
-            Miro
-          </p>
-        </li>
+        {% endfor %}
       </ul>
     </div>
   </div>
@@ -321,41 +229,23 @@ title: Case
     <div class="section-roadmap__inner">
       <h2 class="case-study-page__title-h2">Roadmap</h2>
       <ul class="roadmap-list">
+        {% for item in page.roadmap %}
         <li class="roadmap-item">
           <div class="roadmap-card">
-            <div class="roadmap-card__date">September-December 2021:</div>
+            <div class="roadmap-card__date">{{item.date}}</div>
             <ul class="roadmap-card__list">
-              <li class="roadmap-card__item">Designed the main modules for the Web Application;</li>
-              <li class="roadmap-card__item">Created a set of user roles and their permissions for the App;</li>
-              <li class="roadmap-card__item">Tested and received Stakeholder Approval.</li>
+              {% for activity in item.activities %}
+              <li class="roadmap-card__item">{{activity}}</li>
+              {% endfor %}
             </ul>
           </div>
-        </li>
+          {% unless forloop.last %}
         <li class="roadmap-item">
           <i class="icon icon-arrow-roadmap"></i>
         </li>
-        <li class="roadmap-item">
-          <div class="roadmap-card">
-            <div class="roadmap-card__date">January-July 2022:</div>
-            <ul class="roadmap-card__list">
-              <li class="roadmap-card__item">Released MVP versions of the Web Applicaion; </li>
-              <li class="roadmap-card__item">Designed the main modules for the Mobile Application;</li>
-            </ul>
-          </div>
+        {% endunless %}
         </li>
-        <li class="roadmap-item">
-          <i class="icon icon-arrow-roadmap"></i>
-        </li>
-        <li class="roadmap-item">
-          <div class="roadmap-card">
-            <div class="roadmap-card__date">August-October 2022:</div>
-            <ul class="roadmap-card__list">
-              <li class="roadmap-card__item">Released MVP versions of the Mobile Applicaion.</li>
-              <li class="roadmap-card__item">Created a plan for the future development of the Web Applicaion.
-              </li>
-            </ul>
-          </div>
-        </li>
+        {% endfor %}
       </ul>
     </div>
   </div>
@@ -366,18 +256,11 @@ title: Case
       <h2 class="case-study-page__title-h2">Gallery</h2>
       <div class="swiper gallery-slider" data-mobile="false">
         <ul class="swiper-wrapper">
+          {% for image in page.gallery_images %}
           <li class="swiper-slide">
-            <img src="./assets/images/gallery-slide-image.png" alt="">
+            <div class="image__wrapper"> <img src="{{image.image_path}}" alt="{{image.caption}}"></div>
           </li>
-          <li class="swiper-slide">
-            2
-          </li>
-          <li class="swiper-slide">
-            3
-          </li>
-          <li class="swiper-slide">
-            4
-          </li>
+          {% endfor %}
         </ul>
         <div class="swiper-pagination"></div>
       </div>

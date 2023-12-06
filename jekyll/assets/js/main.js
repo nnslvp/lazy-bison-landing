@@ -22,7 +22,7 @@ const initSwiperSlider = (slider, settings) => {
 
 let newtestimonialsSwiper
 
-function mobileSlidertestimonials() {
+function mobileSliderTestimonials() {
 	const isMobile = document.documentElement.clientWidth <= 425
 	if (isMobile && testimonialsSlider.dataset.mobile === 'false') {
 		newtestimonialsSwiper = initSwiperSlider(testimonialsSlider, {
@@ -186,7 +186,7 @@ const animateLines = () => {
 	window.addEventListener('resize', handleResize)
 }
 
-const animatetestimonials = () => {
+const animateTestimonials = () => {
 	const testimonials = document.querySelector('.testimonials__list')
 	const widthScreen = document.documentElement.clientWidth
 
@@ -462,7 +462,7 @@ burgerButton.addEventListener('click', toggleMenu)
 
 if (homePageWrapper) {
 	animateLines()
-	animatetestimonials()
+	animateTestimonials()
 	dropdown()
 }
 
@@ -533,8 +533,8 @@ if (blogSlider && testimonialsSlider && casesSlider) {
 		},
 	})
 
-	mobileSlidertestimonials()
-	window.addEventListener('resize', mobileSlidertestimonials)
+	mobileSliderTestimonials()
+	window.addEventListener('resize', mobileSliderTestimonials)
 }
 
 if (sliderGallery) {
@@ -548,13 +548,16 @@ if (sliderGallery) {
 	})
 }
 
-if (tabsTable) {
-	tabsTable.forEach(tab =>
+if (tabsTable && tabsTable.length >= 3) {
+	tabsTable.forEach((tab, index) => {
+		if (index === 0) {
+			return
+		}
 		tab.addEventListener('click', e => {
 			tabsTable.forEach(tab => tab.classList.remove('table-th-tab-active'))
 			e.target.classList.toggle('table-th-tab-active')
 		})
-	)
+	})
 }
 
 if (blogPageWrapper) {
