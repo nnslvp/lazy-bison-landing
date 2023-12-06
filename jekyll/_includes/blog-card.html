@@ -6,8 +6,8 @@
     <p class="card-blog__description">
       {{ blog.description }}
     </p>
-    {% assign hashtagsArray = blog.hashtags | split: "#" %}
-    <span class="hashtag">#{{ hashtagsArray[1]] }}</span>
+    {% assign categoriesArray = blog.category_tags | split: "#" %}
+    <span class="category">#{{ categoriesArray[1]] }}</span>
     <span class="card-blog__date">{{ blog.date | date: "%b. %-d, %Y" }}</span>
   </div>
   <a href="{{ blog.url }}" class="button button--primary card-blog__btn">

@@ -12,11 +12,11 @@ title: Case
       <div class="top-section__inner">
         <div class="categories-titile">
           <ul class="categories-list ">
-            {% assign hashtags = page.hashtags | split: '#' %}
-            {% for hashtag in hashtags %}
-            {% if hashtag != '' %}
-            <li class="hashtag-item">
-              <span class="hashtag hashtag--active">#{{ hashtag }}</span>
+            {% assign categories = page.category_tags | split: '#' %}
+            {% for category in categories  %}
+            {% if category != '' %}
+            <li class="category-item">
+              <span class="category category--active">#{{ category  }}</span>
             </li>
             {% endif %}
             {% endfor %}
