@@ -494,6 +494,11 @@ tbody tr:last-child td:last-child {
 	position: initial;
 }
 
+.gallery-slider .swiper-slide {
+	display: flex;
+	justify-content: center;
+}
+
 .section-gallery .swiper-btn-next {
 	cursor: pointer;
 	position: absolute;

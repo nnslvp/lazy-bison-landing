@@ -258,7 +258,7 @@ title: Case
         <ul class="swiper-wrapper">
           {% for image in page.gallery_images %}
           <li class="swiper-slide">
-            <div class="image__wrapper"> <img src="{{image.image_path}}" alt="{{image.caption}}"></div>
+            <img src="{{image.image_path}}" alt="{{image.caption}}">
           </li>
           {% endfor %}
         </ul>
