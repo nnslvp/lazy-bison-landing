@@ -1,6 +1,21 @@
 {{ define "main" }}
-<div class="blog-section">
-    <h1>Блог</h1>
+
+
+
+<div class="container">
+  {{ partial "navigation-path.html" .}}
+</div>
+
+<div class="cases">
+  <div class="container">
+    <div class="section-case__inner">
+      <div class="section-title__inner">
+        <h1 class="section-title__heading">Blogs</h1>
+        <div class="section-title__arrow rectangle-arrow">
+          <i class="icon arrow-right-down-angle-square"></i>
+        </div>
+      </div>
+    </div>
 
     {{/* Фильтрация по категориям */}}
     {{ $currentSection := .Section }}
@@ -14,23 +29,32 @@
     {{ end }}
     {{ end }}
 
-    <div class="categories">
-        <a href="/blog">Все</a>
+    <section class="categories">
+      <h2 class="case-page__title-h2 categories__title">Categories</h2>
+      <ul class="categories-list ">
+        <li class="categories-item ">
+          <a class="category category--active" href="/blogs">All</a>
+        </li>
         {{ range $categories }}
-        <a href="/categories/{{ . | urlize }}">{{ . }}</a>
+        <li class="categories-item ">
+          <a class="category category--active" href="/categories/{{ . | urlize }}">{{ . }}</a>
+        </li>
         {{ end }}
-    </div>
-
+      </ul>
+    </section>
 
     {{/* Список постов */}}
-    {{ range .Paginator.Pages }}
-    <article>
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <p>{{ .Summary }}</p>
-    </article>
-    {{ end }}
+    <ul class="blogs-list">
+      {{ range where .Site.RegularPages "Type" "blogs" }}
+      <li class="blog-item">
+        {{ partial "blog-card.html" . }}
+      </li>
+      {{ end }}
+    </ul>
 
     {{/* Пагинация */}}
     {{ template "partials/pagination.html" . }}
+  </div>
+
 </div>
 {{ end }}
