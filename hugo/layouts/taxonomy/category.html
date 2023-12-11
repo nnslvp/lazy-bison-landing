@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div>
+    <h1>Категория: {{ .Title }}</h1>
+    {{ range .Paginator.Pages }}
+    <article>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p>{{ .Summary }}</p>
+    </article>
+    {{ end }}
+    {{ template "partials/pagination.html" . }}
+</div>
+{{ end }}

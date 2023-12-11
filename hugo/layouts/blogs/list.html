@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="blog-section">
+    <h1>Блог</h1>
+
+    {{/* Фильтрация по категориям */}}
+    {{ $currentSection := .Section }}
+    {{ $categories := slice }}
+
+    {{ range .Site.RegularPages }}
+    {{ if eq .Type $currentSection }}
+    {{ range .Params.categories }}
+    {{ $categories = $categories | append . | uniq }}
+    {{ end }}
+    {{ end }}
+    {{ end }}
+
+    <div class="categories">
+        <a href="/blog">Все</a>
+        {{ range $categories }}
+        <a href="/categories/{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+    </div>
+
+
+    {{/* Список постов */}}
+    {{ range .Paginator.Pages }}
+    <article>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p>{{ .Summary }}</p>
+    </article>
+    {{ end }}
+
+    {{/* Пагинация */}}
+    {{ template "partials/pagination.html" . }}
+</div>
+{{ end }}

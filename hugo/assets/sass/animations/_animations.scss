@@ -1,0 +1,35 @@
+@keyframes circle-rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@mixin widthAnimation($duration, $height, $id) {
+	@keyframes widthAnimation-#{$id} {
+		100% {
+			width: $height;
+		}
+	}
+}
+
+@mixin heightAnimation($duration, $height, $id) {
+	animation: widthAnimation-#{$id} $duration $transition-easing forwards;
+
+	@keyframes widthAnimation-#{$id} {
+		100% {
+			height: $height;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Мой Блог</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in Blogs on Мой Блог</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Заголовок Поста 1hugo --ignoreCache</title>
+      <link>http://localhost:1313/blog/post_1/</link>
+      <pubDate>Sun, 10 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/post_1/</guid>
+      <description>Содержимое вашего поста начинается здесь&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Заголовок Поста 2</title>
+      <link>http://localhost:1313/blog/post_2/</link>
+      <pubDate>Sun, 10 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/post_2/</guid>
+      <description>Содержимое вашего поста начинается здесь&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

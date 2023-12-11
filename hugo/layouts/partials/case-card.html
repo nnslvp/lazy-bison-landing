@@ -1,0 +1,16 @@
+<!-- case-card.html -->
+<article class="case-card">
+  <a href="{{ .Permalink }}">
+    <div class="case-card__img-wrapper">
+      <img src="{{ .Params.image }}" alt="Case Image" class="case-card-img" />
+    </div>
+    <footer class="case-card__footer">
+      <h3 class="case-card__title">
+        {{ .Title }}
+      </h3>
+      <div class="section-title__arrow rectangle-arrow">
+        <i class="icon arrow-right-top-angle-square"></i>
+      </div>
+    </footer>
+  </a>
+</article>

@@ -1,0 +1,26 @@
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        {{ if .Paginator.HasPrev }}
+        <li class="page-item">
+            <a class="page-link" href="{{ .Paginator.Prev.URL }}" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        {{ end }}
+
+        {{ $currentPage := .Paginator.PageNumber }} <!-- Сохраняем текущую страницу -->
+        {{ range .Paginator.Pagers }}
+        <li class="page-item{{ if eq . $currentPage }} active{{ end }}">
+            <a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a>
+        </li>
+        {{ end }}
+
+        {{ if .Paginator.HasNext }}
+        <li class="page-item">
+            <a class="page-link" href="{{ .Paginator.Next.URL }}" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+</nav>

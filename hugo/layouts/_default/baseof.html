@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        "gtm.start": new Date().getTime(),
+        event: "gtm.js"
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-5DPTBV6Q");
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Lazy Bison - Expert Ruby on Rails Development for SMEs</title>
+
+  <meta name="description"
+    content="Specializing in Ruby on Rails development, The Lazy Bison offers fast, reliable, and scalable solutions for start-ups and SMEs in various industries." />
+  <meta name="keywords"
+    content="Ruby on Rails, Hotwire, ReactJS, Development, Start-ups, SMEs, Legal services, eCommerce, Healthcare, Real Estate, Fintech, Veterinary, Crowdfunding" />
+  <meta name="author" content="Lazy Bison" />
+
+  <meta property="og:title" content="Lazy Bison - Your Trusted Partner in Ruby on Rails Development" />
+  <meta property="og:description"
+    content="We provide top-notch Ruby on Rails development services tailored to meet the unique needs of start-ups and SMEs." />
+  <meta property="og:image" content="https://thelazybison.com/assets/images/logo_h.png" />
+  <meta property="og:url" content="https://thelazybison.com" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lazy Bison - Expert Ruby on Rails Development" />
+  <meta name="twitter:description"
+    content="Offering reliable and scalable Ruby on Rails development services for start-ups and SMEs." />
+  <meta name="twitter:image" content="https://thelazybison.com/assets/images/logo_h.png" />
+
+  <link rel="icon" type="image/png" href="/assets/icons/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  {{ $opts := dict
+  "transpiler" "dartsass"
+  "targetPath" "css/style.css"
+  "vars" site.Params.styles
+}}
+  {{ with resources.Get "sass/main.scss" | toCSS $opts | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+  {{ end }}
+
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DPTBV6Q" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  {{/* Ваш код для начала страницы */}}
+
+  {{/* Фрагмент для определения класса обертки на основе URL страницы */}}
+  {{ $url_parts :=  .Permalink  }}
+  {{ $last_part := path.BaseName $url_parts}}
+  {{ $wrapper_class := "" }}
+
+  {{ if strings.Contains $last_part "cases" }}
+  {{ $wrapper_class = "cases-page__wrapper" }}
+  {{ else if strings.Contains $last_part "case" }}
+  {{ $wrapper_class = "case-page__wrapper" }}
+  {{ else if strings.Contains $last_part "blogs" }}
+  {{ $wrapper_class = "blogs-page__wrapper" }}
+  {{ else if strings.Contains $last_part "blog" }}
+  {{ $wrapper_class = "blog-page__wrapper" }}
+  {{ else }}
+  {{ $wrapper_class = "home-page__wrapper" }}
+  {{ end }}
+
+  {{ partial "header.html" . }}
+  <div class="wrapper {{ $wrapper_class }}">
+    <main>
+      {{ block "main" . }}
+
+      {{ end }}
+
+    </main>
+  </div>
+
+  {{ partial "footer.html" . }}
+  {{ partial "popup-get-consultation.html" . }}
+  <div class="overlay"></div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  {{ $js := resources.Get "js/main.js" | resources.Minify }}
+  <script src="{{ $js.Permalink }}"></script>
+</body>
+
+</html>
