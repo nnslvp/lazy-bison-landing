@@ -159,7 +159,7 @@ const animateLines = () => {
 	animateLineWith(line)
 
 	if (widthScreen > 425) {
-		document.querySelector('.wrapper').addEventListener('scroll', handleScroll)
+		document.addEventListener('scroll', handleScroll)
 	}
 
 	function handleResize() {

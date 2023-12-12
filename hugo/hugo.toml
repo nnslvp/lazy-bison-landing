@@ -2,7 +2,7 @@ baseURL = "http://localhost:1313/"
 languageCode = "en-us"
 title = "Мой Блог"
 
-# paginate = 1 # раскоментируй для проверки пагинации, это сделает 1 пост на страницу
+paginate = 2
 
 [taxonomies]
   blog_category = "blog_categories"
