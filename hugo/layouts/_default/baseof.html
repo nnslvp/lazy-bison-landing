@@ -77,10 +77,14 @@
   {{ $wrapper_class = "cases-page__wrapper" }}
   {{ else if strings.Contains $last_part "case" }}
   {{ $wrapper_class = "case-page__wrapper" }}
+  {{ else if strings.Contains $url_parts "case_categories" }}
+  {{ $wrapper_class = "cases-page__wrapper" }}
   {{ else if strings.Contains $last_part "blogs" }}
   {{ $wrapper_class = "blogs-page__wrapper" }}
   {{ else if strings.Contains $last_part "blog" }}
   {{ $wrapper_class = "blog-page__wrapper" }}
+  {{ else if strings.Contains $url_parts "blog_categories" }}
+  {{ $wrapper_class = "blogs-page__wrapper" }}
   {{ else }}
   {{ $wrapper_class = "home-page__wrapper" }}
   {{ end }}

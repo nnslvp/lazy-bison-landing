@@ -3,7 +3,7 @@
   <nav class="navigation-path">
     <a class="navigation-path__link" href="{{ .Site.BaseURL }}">Home</a>
     <span>/</span>
-    <a class="navigation-path__link navigation-path__link--active" href="{{ .Permalink }}">Cases</a>
+    <a class="navigation-path__link navigation-path__link--active" href="{{ .Permalink }}">Blogs</a>
   </nav>
 </div>
 
@@ -11,7 +11,7 @@
   <div class="container">
     <div class="section-case__inner">
       <div class="section-title__inner">
-        <h1 class="section-title__heading">Cases</h1>
+        <h1 class="section-title__heading">Blogs</h1>
         <div class="section-title__arrow rectangle-arrow">
           <i class="icon arrow-right-down-angle-square"></i>
         </div>
@@ -24,7 +24,7 @@
         <li class="categories-item ">
           <a class="category category--active" href="/blogs">All</a>
         </li>
-        {{ range .Site.Taxonomies.case_categories }}
+        {{ range .Site.Taxonomies.blog_categories }}
         <li class="categories-item ">
           <a class="category category--active" href="{{ .Page.Permalink }}">#{{ .Page.Title  }}</a>
         </li>
@@ -36,7 +36,7 @@
     <ul class="blogs-list">
       {{ range .Paginator.Pages }}
       <li class="blog-item">
-        {{ partial "case-card.html" . }}
+        {{ partial "blog-card.html" . }}
       </li>
       {{ end }}
     </ul>

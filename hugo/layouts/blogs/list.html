@@ -1,7 +1,4 @@
 {{ define "main" }}
-
-
-
 <div class="container">
   <nav class="navigation-path">
     <a class="navigation-path__link" href="{{ .Site.BaseURL }}">Home</a>
@@ -21,27 +18,15 @@
       </div>
     </div>
 
-    {{/* Фильтрация по категориям */}}
-    {{ $currentSection := .Section }}
-    {{ $categories := slice }}
-
-    {{ range .Site.RegularPages }}
-    {{ if eq .Type $currentSection }}
-    {{ range .Params.categories }}
-    {{ $categories = $categories | append . | uniq }}
-    {{ end }}
-    {{ end }}
-    {{ end }}
-
     <section class="categories">
       <h2 class="case-page__title-h2 categories__title">Categories</h2>
       <ul class="categories-list ">
         <li class="categories-item ">
           <a class="category category--active" href="/blogs">All</a>
         </li>
-        {{ range $categories }}
+        {{ range .Site.Taxonomies.blog_categories }}
         <li class="categories-item ">
-          <a class="category category--active" href="/categories/{{ . | urlize }}">{{ . }}</a>
+          <a class="category category--active" href="{{ .Page.Permalink }}">#{{ .Page.Title  }}</a>
         </li>
         {{ end }}
       </ul>
@@ -49,7 +34,7 @@
 
     {{/* Список постов */}}
     <ul class="blogs-list">
-      {{ range where .Site.RegularPages "Type" "blogs" }}
+      {{ range .Paginator.Pages }}
       <li class="blog-item">
         {{ partial "blog-card.html" . }}
       </li>
