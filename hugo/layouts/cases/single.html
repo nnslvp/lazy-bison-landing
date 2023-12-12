@@ -1,8 +1,36 @@
 {{ define "main" }}
-<article>
-  <h1>{{ .Title }}</h1>
-  <div>
-    {{ .Content }}
+
+<div class="bg-wrapper">
+  <div class="container">
+    <nav class="navigation-path">
+      <a class="navigation-path__link" href="{{ .Site.BaseURL }}">Home</a>
+      <span>/</span>
+      <a class="navigation-path__link" href="/cases">Сases</a>
+      <span>/</span>
+      <a class="navigation-path__link navigation-path__link--active" href="{{ .Permalink }}">{{.Params.title}}</a>
+    </nav>
   </div>
-</article>
+  <section class="top-section">
+    <div class="container">
+      <div class="top-section__inner">
+        <div class="categories-titile">
+          <ul class="categories-list ">
+            {{ range .Params.blog_categories }}
+            <li class="categories-item ">
+              <a class="category category--active" href="{{ .Page.Permalink }}">#{{ .Page.Title  }}</a>
+            </li>
+            {{ end }}
+            </li>
+          </ul>
+          <h1 class="case-study-page__title-h1">{{.Params.title}}
+          </h1>
+        </div>
+        <div class="top-section-img__container">
+          <img class="case__img" src="{{.Params.image}}" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
 {{ end }}

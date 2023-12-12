@@ -127,16 +127,14 @@
 }
 
 div.highlight {
+	background-color: #272822;
 	position: relative;
 	border-radius: 0.5rem;
 	padding: 2.5rem;
-	background-color: $color-night-blue;
 	margin: 1.25rem 0;
 }
 
 div.highlight pre {
-	color: $color-light-green !important;
-	background-color: $color-night-blue !important;
 	font-size: 1.125rem;
 	font-weight: 400;
 	line-height: 1.75rem;
