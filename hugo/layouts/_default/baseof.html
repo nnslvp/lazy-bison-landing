@@ -90,15 +90,14 @@
   {{ end }}
 
   {{ partial "header.html" . }}
-  <div class="wrapper {{ $wrapper_class }}">
-    <main>
+
+  <main>
+    <div class="wrapper {{ $wrapper_class }}">
       {{ block "main" . }}
 
       {{ end }}
-
-    </main>
-  </div>
-
+    </div>
+  </main>
   {{ partial "footer.html" . }}
   {{ partial "popup-get-consultation.html" . }}
   <div class="overlay"></div>
