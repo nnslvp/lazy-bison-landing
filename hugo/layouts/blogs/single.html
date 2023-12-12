@@ -1,8 +1,56 @@
 {{ define "main" }}
-<article>
-  <h1>{{ .Title }}</h1>
-  <div>
-    {{ .Content }}
+<section class="section-full-info-blog">
+  <div class="container">
+    <div class="section-full-info-blog__inner">
+      <div class="container">
+        <nav class="navigation-path">
+          <a class="navigation-path__link" href="{{ .Site.BaseURL }}">Home</a>
+          <span>/</span>
+          <a class="navigation-path__link" href="/blogs">Blogs</a>
+          <span>/</span>
+          <a class="navigation-path__link navigation-path__link--active" href="{{ .Permalink }}">{{.Params.title}}</a>
+        </nav>
+      </div>
+      <article class="full-info-blog">
+        <header class="full-info__header">
+          <h1 class="blog-page__title-h1 ">{{.Params.title}}</h1>
+          <div class="author-time-blog">
+            <div class="author">
+              <img src="{{.Params.avatar}}" class="author__avatar"></img>
+              <p class="author__name">{{.Params.author}}</p>
+            </div>
+            <span>|</span>
+            <div class="time">{{.Params.date | time.Format ":date_medium"  }}</div>
+          </div>
+          <div class="blog-post-image__wrapper">
+            <img class="blog-post-image" src="{{.Params.Image}}" alt>
+          </div>
+        </header>
+        <section class="full-info-blog__section">
+          {{ .Content }}
+        </section>
+      </article>
+    </div>
+</section>
+<div class="container">
+  <div class="gray-line__container">
+    <hr class="gray-line">
   </div>
-</article>
+</div>
+<section class="section-recommendations">
+  <div class="container">
+    <div class="section-recommendations__inner">
+      <h2 class="blog-page__title-h2 ">Recommendations</h2>
+      <ul class="blogs-list">
+        {{ $blogs := where .Site.RegularPages "Type" "blogs" | first 3 }}
+        {{ range $blogs }}
+        <li class="blogs-item">
+          {{ partial "blog-card.html" . }}
+        </li>
+        {{ end }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 {{ end }}

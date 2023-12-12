@@ -3,7 +3,11 @@
 
 
 <div class="container">
-  {{ partial "navigation-path.html" .}}
+  <nav class="navigation-path">
+    <a class="navigation-path__link" href="{{ .Site.BaseURL }}">Home</a>
+    <span>/</span>
+    <a class="navigation-path__link navigation-path__link--active" href="{{ .Permalink }}">Сases</a>
+  </nav>
 </div>
 
 <div class="cases">

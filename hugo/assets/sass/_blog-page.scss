@@ -134,8 +134,9 @@ div.highlight {
 	margin: 1.25rem 0;
 }
 
-pre.highlight code {
-	color: $color-light-green;
+div.highlight pre {
+	color: $color-light-green !important;
+	background-color: $color-night-blue !important;
 	font-size: 1.125rem;
 	font-weight: 400;
 	line-height: 1.75rem;

@@ -1133,7 +1133,7 @@ img {
 }
 .lazy-bison-description__info {
 	display: flex;
-	background-image: url('../../assets/images/sections/section-lazy-bison/lazy-bison-bg-1440.svg');
+	background-image: url('/images/sections/section-lazy-bison/lazy-bison-bg-1440.svg');
 	background-position: bottom right;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -1193,7 +1193,7 @@ img {
 		background: none;
 	}
 	.lazy-bison {
-		background-image: url('../../assets/images/sections/section-lazy-bison/lazy-bison-bg-768.svg');
+		background-image: url('/images/sections/section-lazy-bison/lazy-bison-bg-768.svg');
 		background-position: 0 2rem;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -1270,7 +1270,7 @@ img {
 }
 @media (max-width: 425px) {
 	.lazy-bison {
-		background-image: url('../../assets/images/sections/section-lazy-bison/lazy-bison-bg-375.svg');
+		background-image: url('/images/sections/section-lazy-bison/lazy-bison-bg-375.svg');
 		background-position: 0 -4.4375rem;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -1333,7 +1333,7 @@ img {
 		margin: 0 auto;
 	}
 	.lazy-bison__stats {
-		background-image: url('../../assets/images/sections/section-lazy-bison/stats-bg-375.svg');
+		background-image: url('/images/sections/section-lazy-bison/stats-bg-375.svg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -1369,7 +1369,7 @@ img {
 	}
 }
 .services {
-	background-image: url('../../assets/images/sections/section-services/services-bg.svg');
+	background-image: url('/images/sections/section-services/services-bg.svg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -1382,7 +1382,7 @@ img {
 	margin-bottom: 5.1875rem;
 }
 .services-info__inner {
-	background-image: url('../../assets/images/sections/section-services/services-info-bg.svg');
+	background-image: url('/images/sections/section-services/services-info-bg.svg');
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -1468,7 +1468,7 @@ img {
 		margin-bottom: 3.625rem;
 	}
 	.services .services__inner {
-		background-image: url('../../assets/images/sections/section-services/services-bg-768.svg');
+		background-image: url('/images/sections/section-services/services-bg-768.svg');
 		background-position: bottom;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -1476,7 +1476,7 @@ img {
 		padding: 0;
 	}
 	.services-info__inner {
-		background-image: url('../../assets/images/sections/section-services/services-info-bg.svg');
+		background-image: url('/images/sections/section-services/services-info-bg.svg');
 		background-position: inherit;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -1528,7 +1528,7 @@ img {
 }
 @media (max-width: 425px) {
 	.services {
-		background-image: url('../../assets/images/sections/section-services/services-info-bg-375.svg');
+		background-image: url('/images/sections/section-services/services-info-bg-375.svg');
 		background-position: 0 4.9375rem;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -1603,7 +1603,7 @@ img {
 		padding: 0.875rem 4.2188rem;
 	}
 	.services-info__type-button:after {
-		content: url('../../assets/icons/shevronDown.svg');
+		content: url('/icons/shevronDown.svg');
 		display: block;
 	}
 	.services-info__type-button.active:after {
@@ -1726,7 +1726,7 @@ img {
 		line-height: 1.25rem;
 	}
 	.help {
-		background-image: url('../../assets/images/sections/section-explore/help-bg-768.svg');
+		background-image: url('/images/sections/section-explore/help-bg-768.svg');
 		background-position: 0rem 0rem;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -1795,7 +1795,7 @@ img {
 		max-width: 100%;
 	}
 	.help {
-		background-image: url('../../assets/images/sections/section-explore/help-bg-375.svg');
+		background-image: url('/images/sections/section-explore/help-bg-375.svg');
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -1841,7 +1841,7 @@ img {
 	width: 38.75rem;
 }
 .cases-slider {
-	background-image: url('../../assets/images/sections/section-cases/cases-bg.svg');
+	background-image: url('/images/sections/section-cases/cases-bg.svg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1849,7 +1849,7 @@ img {
 }
 @media (max-width: 768px) {
 	.cases__inner {
-		background-image: url('../../assets/images/sections/section-cases/cases-bg-768.svg');
+		background-image: url('/images/sections/section-cases/cases-bg-768.svg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -1887,7 +1887,7 @@ img {
 }
 @media (max-width: 425px) {
 	.cases__inner {
-		background-image: url('../../assets/images/sections/section-cases/cases-bg-375.svg');
+		background-image: url('/images/sections/section-cases/cases-bg-375.svg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -1953,7 +1953,7 @@ img {
 	right: 7.5rem;
 }
 .testimonials-background {
-	background-image: url('../../assets/images/sections/section-testimonials/testimonials-bg.svg');
+	background-image: url('/images/sections/section-testimonials/testimonials-bg.svg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1994,7 +1994,7 @@ img {
 }
 @media (max-width: 768px) {
 	.testimonials-background {
-		background-image: url('../../assets/images/sections/section-testimonials/testimonials-768px.svg');
+		background-image: url('/images/sections/section-testimonials/testimonials-768px.svg');
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -2095,7 +2095,7 @@ img {
 	}
 }
 .consultation {
-	background-image: url('../../assets/images/sections/section-cases/cases-bg.svg');
+	background-image: url('/images/sections/section-cases/cases-bg.svg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -2104,7 +2104,7 @@ img {
 }
 .consultation__inner {
 	position: relative;
-	background-image: url('../../assets/images/sections/section-testimonials/consultation-bg.svg');
+	background-image: url('/images/sections/section-testimonials/consultation-bg.svg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -2145,7 +2145,7 @@ img {
 }
 @media (max-width: 768px) {
 	.consultation {
-		background-image: url('../../assets/images/sections/section-cases/cases-bg-768.svg');
+		background-image: url('/images/sections/section-cases/cases-bg-768.svg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -2153,7 +2153,7 @@ img {
 		padding: 9.8125rem 0 5rem 0;
 	}
 	.consultation__inner {
-		background-image: url('../../assets/images/sections/section-testimonials/consultation-bg-768.svg');
+		background-image: url('/images/sections/section-testimonials/consultation-bg-768.svg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -2196,7 +2196,7 @@ img {
 		padding: 0;
 	}
 	.consultation__inner {
-		background-image: url('../../assets/images/sections/section-testimonials/consultation-bg-375.svg');
+		background-image: url('/images/sections/section-testimonials/consultation-bg-375.svg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -2421,7 +2421,7 @@ img {
 	}
 }
 .popup.popup__get-consultation {
-	background-image: url('../../assets/images/popup-bg.svg');
+	background-image: url('/images/popup-bg.svg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -2589,7 +2589,7 @@ img {
 	height: 1rem;
 	opacity: 0;
 	border-radius: 0.125rem;
-	background-image: url('../../assets/icons/checked-icon.svg');
+	background-image: url('/icons/checked-icon.svg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: auto;
@@ -3494,7 +3494,7 @@ pre.highlight code {
 	line-height: 1.9875rem;
 }
 .section-challenge {
-	background: url('./../../assets/images/chellenge-bg.png');
+	background: url('./images/chellenge-bg.png');
 }
 .section-challenge__inner {
 	padding: 4.5rem 0 6rem 0;
@@ -3541,7 +3541,7 @@ pre.highlight code {
 	line-height: 1.8125rem;
 }
 .section-value-driven {
-	background-image: url('../../assets/images/section-value-driven-bg-1440.svg');
+	background-image: url('/images/section-value-driven-bg-1440.svg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -3613,7 +3613,7 @@ pre.highlight code {
 	color: #fff;
 }
 .section-solution {
-	background-image: url('../../assets//images/section-solution-bg-1440.svg');
+	background-image: url('/images/section-solution-bg-1440.svg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -3731,7 +3731,7 @@ tbody tr:last-child td:last-child {
 	line-height: 1.5rem;
 }
 .section-roadmap {
-	background-image: url('../../assets//images/sections-roadmap-and-gallery-bg-1440.svg');
+	background-image: url('/images/sections-roadmap-and-gallery-bg-1440.svg');
 	background-position: center 12%;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -3792,7 +3792,7 @@ tbody tr:last-child td:last-child {
 	line-height: 1.5188rem;
 }
 .section-gallery {
-	background-image: url('../../assets//images/sections-roadmap-and-gallery-bg-1440.svg');
+	background-image: url('/images/sections-roadmap-and-gallery-bg-1440.svg');
 	background-position: center -40rem;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -3912,7 +3912,7 @@ tbody tr:last-child td:last-child {
 		line-height: 1.45rem;
 	}
 	.section-value-driven {
-		background-image: url('../../assets/images/section-value-deiven-bg-768.svg');
+		background-image: url('/images/section-value-deiven-bg-768.svg');
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -4035,7 +4035,7 @@ tbody tr:last-child td:last-child {
 		gap: 2rem 1.25rem;
 	}
 	.section-roadmap {
-		background-image: url('../../assets//images/sections-roadmap-and-gallery-bg-768.svg');
+		background-image: url('/images/sections-roadmap-and-gallery-bg-768.svg');
 		background-position: center 1rem;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -4082,7 +4082,7 @@ tbody tr:last-child td:last-child {
 		align-self: flex-start;
 	}
 	.section-gallery {
-		background-image: url('../../assets//images/sections-roadmap-and-gallery-bg-768.svg');
+		background-image: url('/images/sections-roadmap-and-gallery-bg-768.svg');
 		background-position: center -37.875rem;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -4165,7 +4165,7 @@ tbody tr:last-child td:last-child {
 		line-height: 1.2688rem;
 	}
 	.section-value-driven {
-		background-image: url('../../assets/images/section-value-driven-bg-375.svg');
+		background-image: url('/images/section-value-driven-bg-375.svg');
 		background-position: 0 34%;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -4229,7 +4229,7 @@ tbody tr:last-child td:last-child {
 		gap: 2rem 1.25rem;
 	}
 	.section-roadmap {
-		background-image: url('../../assets//images/sections-roadmap-and-gallery-bg-375.svg');
+		background-image: url('/images/sections-roadmap-and-gallery-bg-375.svg');
 		background-position: center 0;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -4254,7 +4254,7 @@ tbody tr:last-child td:last-child {
 		height: 1.5rem;
 	}
 	.section-gallery {
-		background-image: url('../../assets//images/sections-roadmap-and-gallery-bg-375.svg');
+		background-image: url('/images/sections-roadmap-and-gallery-bg-375.svg');
 		background-position: center bottom;
 		background-repeat: no-repeat;
 		background-size: cover;
