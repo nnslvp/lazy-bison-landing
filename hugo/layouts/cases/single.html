@@ -31,6 +31,58 @@
       </div>
     </div>
   </section>
-</div>
 
+</div>
+<section class="general-info">
+  <div class="container">
+    <div class="general-info__inner">
+      <h2 class="case-study-page__title-h2 ">general info</h2>
+      <ul class="general-info-list">
+        <li class="general-info-item">
+          <h3 class="general-info__title-h3">Client</h3>
+          <p class="general-info__text">{{ .Params.project_info.client }}</p>
+        </li>
+        <li class="general-info-item">
+          <h3 class="general-info__title-h3">Industry</h3>
+          <p class="general-info__text">
+            {{.Params.project_info.industry}}
+          </p>
+        </li>
+        <li class="general-info-item">
+          <h3 class="general-info__title-h3">Client Since</h3>
+          <p class="general-info__text">
+            {{.Params.project_info.client_since}}
+          </p>
+        </li>
+        <li class="general-info-item">
+          <h3 class="general-info__title-h3">Location</h3>
+          <p class="general-info__text">
+            {{.Params.project_info.location}}
+          </p>
+        </li>
+        <li class="general-info-item">
+          <h3 class="general-info__title-h3">Type</h3>
+          <p class="general-info__text"> {{.Params.project_info.type}}</p>
+        </li>
+        <li class="general-info-item">
+          <h3 class="general-info__title-h3">Engagement Model</h3>
+          <p class="general-info__text">
+            {{.Params.project_info.engagement_model}}
+          </p>
+        </li>
+        <li class="general-info-item">
+          <h3 class="general-info__title-h3">Duration</h3>
+          <p class="general-info__text">
+            {{.Params.project_info.duration}}
+          </p>
+        </li>
+        <li class="general-info-item">
+          <h3 class="general-info__title-h3">Staff</h3>
+          <p class="general-info__text"> {{.Params.project_info.staff}}
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 {{ end }}
