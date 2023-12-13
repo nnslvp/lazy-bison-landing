@@ -16,7 +16,7 @@
           <h1 class="blog-page__title-h1 ">{{.Params.title}}</h1>
           <div class="author-time-blog">
             <div class="author">
-              <img src="{{.Params.avatar}}" class="author__avatar"></img>
+              <img src="{{.Params.avatar}}" class="author__avatar" alt="author"></img>
               <p class="author__name">{{.Params.author}}</p>
             </div>
             <span>|</span>
@@ -30,7 +30,7 @@
             {{ end }}
           </ul>
           <div class="blog-post-image__wrapper">
-            <img class="blog-post-image" src="{{.Params.Image}}" alt>
+            <img class="blog-post-image" src="{{.Params.Image}}" alt="Blog Image">
           </div>
         </header>
         <section class="full-info-blog__section">
