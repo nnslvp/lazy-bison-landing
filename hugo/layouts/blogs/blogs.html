@@ -7,7 +7,7 @@
   </nav>
 </div>
 
-<div class="cases">
+<div class="blogs">
   <div class="container">
     <div class="section-case__inner">
       <div class="section-title__inner">
@@ -32,17 +32,19 @@
       </ul>
     </section>
 
-    {{/* Список постов */}}
+
+
+    {{/* Пагинация */}}
+
+    {{ $paginator := .Paginate (where .Pages "Type" "blogs") .Site.Params.blogs_paginate }}
     <ul class="blogs-list">
-      {{ range .Paginator.Pages }}
+      {{ range $paginator.Pages }}
       <li class="blog-item">
         {{ partial "blog-card.html" . }}
       </li>
       {{ end }}
     </ul>
-
-    {{/* Пагинация */}}
-    {{ partial "partials/pagination.html" . }}
+    {{ partial "pagination.html" . }}
   </div>
 
 </div>

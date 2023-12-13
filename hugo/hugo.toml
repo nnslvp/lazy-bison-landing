@@ -2,7 +2,11 @@ baseURL = "http://localhost:1313/"
 languageCode = "en-us"
 title = "Мой Блог"
 
-paginate = 2
+
+
+[params]
+  blogs_paginate = 6
+  cases_paginate = 4
 
 [taxonomies]
   blog_category = "blog_categories"

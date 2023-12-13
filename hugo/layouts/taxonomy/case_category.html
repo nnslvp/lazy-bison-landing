@@ -32,18 +32,16 @@
       </ul>
     </section>
 
-    {{/* Список постов */}}
-    <ul class="blogs-list">
-      {{ range .Paginator.Pages }}
-      <li class="blog-item">
+    {{ $paginator := .Paginate (where .Pages "Type" "cases") .Site.Params.cases_paginate }}
+    <ul class="cases-list">
+      {{ range $paginator.Pages }}
+      <li class="case-item">
         {{ partial "case-card.html" . }}
       </li>
       {{ end }}
     </ul>
+    {{ partial "pagination.html" . }}
 
-    {{/* Пагинация */}}
-    {{ template "partials/pagination.html" . }}
   </div>
 
-</div>
-{{ end }}
+  {{ end }}

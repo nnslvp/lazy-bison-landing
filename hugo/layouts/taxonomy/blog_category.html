@@ -32,17 +32,17 @@
       </ul>
     </section>
 
-    {{/* Список постов */}}
+    {{/* Пагинация */}}
+
+    {{ $paginator := .Paginate (where .Pages "Type" "blogs") .Site.Params.blogs_paginate }}
     <ul class="blogs-list">
-      {{ range .Paginator.Pages }}
+      {{ range $paginator.Pages }}
       <li class="blog-item">
         {{ partial "blog-card.html" . }}
       </li>
       {{ end }}
     </ul>
-
-    {{/* Пагинация */}}
-    {{ template "partials/pagination.html" . }}
+    {{ partial "pagination.html" . }}
   </div>
 
 </div>
