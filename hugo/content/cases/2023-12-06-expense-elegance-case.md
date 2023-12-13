@@ -3,7 +3,7 @@ layout: case
 title: 'Expense Elegance: The Art of  Spending with Balancer'
 image: /images/cases/2023-11-29-case/case-preview-img.png
 case_categories: ['eCommerce', 'Healthcare']
-date: 2023-11-29T09:30:00+02:00
+date: 2023-12-06T17:18:00
 SEO:
   description: 'A case study on overcoming logistics challenges in a European trucking and transportation company.'
   keywords: 'Logistics, Trucking, Transportation, Case Study, Europe, Web Application, Mobile Application'

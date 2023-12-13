@@ -3,7 +3,7 @@ layout: blog
 title: Automating Deployments with Kamal and GitHub Actions
 author: MARIE CAPHLISH
 theme: black
-date: 2023-11-29T12:45:00+00:00
+date: 2023-12-06T17:18:00
 SEO:
   description: 'Comprehensive guide to automating Ruby on Rails web app deployments using Kamal and GitHub Actions. Includes installation guide and sample GitHub Actions configuration.'
   keywords: 'Kamal, GitHub Actions, Web App Deployment, Automation, CI/CD Pipeline, Ruby, Ruby on Rails, Developers'

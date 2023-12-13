@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Effortless Deployment of Web Applications with Kamal
-date: 2023-11-28T12:45:00+00:00
+date: 2023-12-06T17:18:00
 SEO:
   description: 'Learn how Kamal simplifies web app deployment with features like zero downtime, incremental rollouts, and flexible configuration. Ideal for developers.'
   keywords: 'Kamal, Web App Deployment, Zero Downtime, Incremental Rollouts, Flexible Configuration, Developers'

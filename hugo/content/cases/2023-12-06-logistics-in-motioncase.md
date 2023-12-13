@@ -3,7 +3,7 @@ layout: case
 title: 'Logistics in Motion: Overcoming Challenges and Achieving Excellence'
 image: /images/cases/2023-11-28-case/case-preview-img.png
 case_categories: ['eCommerce', 'Healthcare']
-date: December 6, 2023 5:18 PM
+date:  2023-12-06T19:25:00
 SEO:
   description: 'A case study on overcoming logistics challenges in a European trucking and transportation company.'
   keywords: 'Logistics, Trucking, Transportation, Case Study, Europe, Web Application, Mobile Application'
