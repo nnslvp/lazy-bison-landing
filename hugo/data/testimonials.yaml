@@ -1,4 +1,4 @@
-- avatar: /images/sections/section-testimonials/avatar-four.png
+- avatar: /images/sections/section-testimonials/avatar-one.png
   name: Daniel Lee
   position: CFO of GreenHarvest Industries
   description: >
@@ -17,15 +17,11 @@
     needed. Their  talented team not only built a feature-rich app but also 
     guided us through the entire process. Thanks to them, we  were able to hit
     the market faster than we ever thought  possible."
-- avatar: /images/sections/section-testimonials/avatar-three.png
-  name: Emily Collins
-  position: CTO of HealthSync Innovations
+- avatar: /images/sections/section-testimonials/avatar-four.png
+  name: Jessica Martin
+  position: CEO of TechNova Solutions
   description: >
-    "The UI/UX design expertise of Lazy Bison truly set our  health tracking
-    platform apart. They didn't just create  a visually appealing design –
-    they meticulously crafted  an experience that resonates with our users.
-    Their  attention to detail and user-centric approach have been 
-    instrumental in driving user engagement and  satisfaction."
+    "Lazy Bison has been an absolute game-changer for us. Their expertise in Ruby on Rails combined with their dedicated development team model helped us launch our innovative SaaS platform in record time. Their commitment to quality and their seamless communication made them an invaluable extension of our team. We couldn't be happier with the results!"
 - avatar: /images/sections/section-testimonials/avatar-five.png
   name: Sarah Turner
   position: Founder of FitLife App
@@ -35,3 +31,8 @@
     a  high-performance app but also provided insights that  elevated our user
     experience. With Lazy Bison, we were  able to deliver a mobile solution
     that keeps our users  engaged and motivated."
+- avatar: /images/sections/section-testimonials/avatar-three.png
+  name: Emily Collins
+  position: CTO of HealthSync Innovations
+  description: >
+    "The UI/UX design expertise of Lazy Bison truly set our health tracking platform apart. They didn't just create a visually appealing design – they meticulously crafted an experience that resonates with our users. Their attention to detail and user-centric approach have been instrumental in driving user engagement and satisfaction."
