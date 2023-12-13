@@ -22,6 +22,13 @@
             <span>|</span>
             <div class="time">{{.Params.date | time.Format ":date_medium"  }}</div>
           </div>
+          <ul class="categories-list ">
+            {{ range .Params.blog_categories }}
+            <li class="categories-item ">
+              <span class="category category--active">#{{ . }}</span>
+            </li>
+            {{ end }}
+          </ul>
           <div class="blog-post-image__wrapper">
             <img class="blog-post-image" src="{{.Params.Image}}" alt>
           </div>

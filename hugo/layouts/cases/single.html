@@ -15,9 +15,9 @@
       <div class="top-section__inner">
         <div class="categories-titile">
           <ul class="categories-list ">
-            {{ range .Params.blog_categories }}
+            {{ range .Params.case_categories }}
             <li class="categories-item ">
-              <a class="category category--active" href="{{ .Page.Permalink }}">#{{ .Page.Title  }}</a>
+              <span class="category category--active">#{{ . }}</span>
             </li>
             {{ end }}
             </li>
