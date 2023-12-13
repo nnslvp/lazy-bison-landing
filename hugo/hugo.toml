@@ -8,6 +8,8 @@ title = "Мой Блог"
   blogs_paginate = 6
   cases_paginate = 4
 
+
+
 [taxonomies]
   blog_category = "blog_categories"
   case_category = "case_categories"

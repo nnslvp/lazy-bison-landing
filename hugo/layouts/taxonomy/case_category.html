@@ -24,9 +24,11 @@
         <li class="categories-item ">
           <a class="category category--active" href="/blogs">All</a>
         </li>
+        {{ $currentCategory := .Title }}
         {{ range .Site.Taxonomies.case_categories }}
-        <li class="categories-item ">
-          <a class="category category--active" href="{{ .Page.Permalink }}">#{{ .Page.Title  }}</a>
+        <li class="categories-item">
+          <a class="category {{ if eq $currentCategory .Page.Title  }}category--active{{ end }}"
+            href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>
         </li>
         {{ end }}
       </ul>

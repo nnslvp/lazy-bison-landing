@@ -26,7 +26,7 @@
         </li>
         {{ range .Site.Taxonomies.case_categories }}
         <li class="categories-item ">
-          <a class="category category--active" href="{{ .Page.Permalink }}">#{{ .Page.Title  }}</a>
+          <a class="category" href="{{ .Page.Permalink }}">#{{ .Page.Title  }}</a>
         </li>
         {{ end }}
       </ul>

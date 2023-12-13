@@ -19,14 +19,17 @@
     </div>
 
     <section class="categories">
+
       <h2 class="case-page__title-h2 categories__title">Categories</h2>
-      <ul class="categories-list ">
-        <li class="categories-item ">
-          <a class="category category--active" href="/blogs">All</a>
+      <ul class="categories-list">
+        <li class="categories-item">
+          <a class="category" href="/blogs">All</a>
         </li>
+        {{ $currentCategory := .Title }}
         {{ range .Site.Taxonomies.blog_categories }}
-        <li class="categories-item ">
-          <a class="category category--active" href="{{ .Page.Permalink }}">#{{ .Page.Title  }}</a>
+        <li class="categories-item">
+          <a class="category {{ if eq $currentCategory .Page.Title  }}category--active{{ end }}"
+            href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>
         </li>
         {{ end }}
       </ul>
