@@ -23,13 +23,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Lazy Bison - Expert Ruby on Rails Development for SMEs</title>
-
-  <meta name="description"
-    content="Specializing in Ruby on Rails development, The Lazy Bison offers fast, reliable, and scalable solutions for start-ups and SMEs in various industries." />
-  <meta name="keywords"
-    content="Ruby on Rails, Hotwire, ReactJS, Development, Start-ups, SMEs, Legal services, eCommerce, Healthcare, Real Estate, Fintech, Veterinary, Crowdfunding" />
-  <meta name="author" content="Lazy Bison" />
+  <title>{{.Params.title }}</title>
+  <meta name="description" content="{{ .Params.SEO.description }}">
+  <meta name="keywords" content="{{ .Params.SEO.keywords }}">
+  <meta name="author" content="{{ .Params.SEO.author }}">
 
   <meta property="og:title" content="Lazy Bison - Your Trusted Partner in Ruby on Rails Development" />
   <meta property="og:description"
@@ -78,12 +75,12 @@
   {{ else if strings.Contains $last_part "case" }}
   {{ $wrapper_class = "case-page__wrapper" }}
   {{ else if strings.Contains $url_parts "case_categories" }}
-  {{ $wrapper_class = "case-page__wrapper" }}
+  {{ $wrapper_class = "cases-page__wrapper" }}
   {{ else if strings.Contains $last_part "blogs" }}
   {{ $wrapper_class = "blogs-page__wrapper" }}
   {{ else if strings.Contains $last_part "blog" }}
   {{ $wrapper_class = "blog-page__wrapper" }}
-  {{ else if strings.Contains $url_parts "blog_categories" }}
+  {{ else if strings.Contains $url_parts "case_categories" }}
   {{ $wrapper_class = "blogs-page__wrapper" }}
   {{ else }}
   {{ $wrapper_class = "home-page__wrapper" }}
