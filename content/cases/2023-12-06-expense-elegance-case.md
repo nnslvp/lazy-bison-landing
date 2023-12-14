@@ -5,8 +5,8 @@ image: /images/cases/2023-11-29-case/case-preview-img.png
 case_categories: ['eCommerce', 'Healthcare']
 date: 2023-12-06T17:18:00
 SEO:
-  description: 'A case study on overcoming logistics challenges in a European trucking and transportation company.'
-  keywords: 'Logistics, Trucking, Transportation, Case Study, Europe, Web Application, Mobile Application'
+  description: "Revolutionizing personal finance management with our FinTech Startup's mobile app. Tailored for North American and European markets, our app offers user-friendly, secure, and efficient financial solutions."
+  keywords: 'FinTech, Personal Finance, Mobile App, Financial Technology, Expense Tracking, Secure Payments, Global Market'
   author: 'Lazy Bison'
 
 project_info:

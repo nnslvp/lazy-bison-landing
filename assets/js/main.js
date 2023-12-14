@@ -60,7 +60,7 @@ const animateLines = () => {
 			animateLineHeight(line)
 		})
 	}
-
+	unnecessary
 	const animateVerticalLines = line => {
 		if (line.classList.contains('testimonials__gray-line')) {
 			animateLines(testimonialsSectionVerticalLines)
