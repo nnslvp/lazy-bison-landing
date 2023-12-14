@@ -20,12 +20,12 @@ const initSwiperSlider = (slider, settings) => {
 	})
 }
 
-let newTestimonialsSwiper
+let newtestimonialsSwiper
 
 function mobileSliderTestimonials() {
 	const isMobile = document.documentElement.clientWidth <= 425
 	if (isMobile && testimonialsSlider.dataset.mobile === 'false') {
-		newTestimonialsSwiper = initSwiperSlider(testimonialsSlider, {
+		newtestimonialsSwiper = initSwiperSlider(testimonialsSlider, {
 			slidesPerView: 1,
 			spaceBetween: 0,
 		})
@@ -33,7 +33,7 @@ function mobileSliderTestimonials() {
 	}
 
 	if (!isMobile && testimonialsSlider.dataset.mobile === 'true') {
-		newTestimonialsSwiper.destroy()
+		newtestimonialsSwiper.destroy()
 		testimonialsSlider.dataset.mobile = 'false'
 	}
 }
@@ -60,7 +60,7 @@ const animateLines = () => {
 			animateLineHeight(line)
 		})
 	}
-	unnecessary
+
 	const animateVerticalLines = line => {
 		if (line.classList.contains('testimonials__gray-line')) {
 			animateLines(testimonialsSectionVerticalLines)
@@ -471,7 +471,7 @@ getConsultationForm()
 
 if (blogSlider && testimonialsSlider && casesSlider) {
 	initSwiperSlider(casesSlider, {
-		slidesPerView: 'auto',
+		slidesPerView: 2,
 		spaceBetween: 28,
 		breakpoints: {
 			425: {
@@ -492,7 +492,7 @@ if (blogSlider && testimonialsSlider && casesSlider) {
 	})
 
 	initSwiperSlider(blogSlider, {
-		slidesPerView: 'auto',
+		slidesPerView: 3,
 		spaceBetween: 8,
 		breakpoints: {
 			425: {

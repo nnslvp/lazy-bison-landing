@@ -241,7 +241,9 @@
         <ul class="swiper-wrapper">
           {{ range .Params.gallery_images }}
           <li class="swiper-slide">
-            <img src="{{ .image_path }}" alt="{{ .caption }}">
+            <div class="swiper-slide__img-container">
+              <img src="{{ .image_path }}" alt="{{ .caption }}">
+            </div>
           </li>
           {{ end }}
         </ul>
