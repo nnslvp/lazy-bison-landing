@@ -465,7 +465,7 @@ tbody tr:last-child td:last-child {
 .section-gallery {
 	@include background(
 		'/images/sections-roadmap-and-gallery-bg-1440.svg',
-		center -40rem,
+		center 75%,
 		no-repeat,
 		cover
 	);
