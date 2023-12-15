@@ -495,27 +495,6 @@ if (blogSlider && testimonialsSlider && casesSlider) {
 		slidesPerView: 3,
 		spaceBetween: 8,
 		breakpoints: {
-			425: {
-				slidesPerView: 'auto',
-				spaceBetween: 8,
-			},
-
-			768: {
-				slidesPerView: 'auto',
-				spaceBetween: 16,
-			},
-
-			1440: {
-				slidesPerView: 3,
-				spaceBetween: 28,
-			},
-		},
-	})
-
-	initSwiperSlider(blogSlider, {
-		slidesPerView: 'auto',
-		spaceBetween: 8,
-		breakpoints: {
 			0: {
 				slidesPerView: 'auto',
 				spaceBetween: 8,
