@@ -18,7 +18,7 @@ description: >
   key features of Kamal and share insights from our own
   hands-on experience.
 
-blog_categories: ['eCommerce','real estate', ]
+blog_categories: ['eCommerce', 'real estate']
 ---
 
 ### Introduction

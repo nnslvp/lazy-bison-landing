@@ -74,8 +74,8 @@
 	}
 
 	.blogs-list {
-		display: grid;
 		grid-template-columns: repeat(1, 21.4375rem);
 		gap: 1rem;
+		justify-content: center;
 	}
 }

@@ -20,12 +20,12 @@ const initSwiperSlider = (slider, settings) => {
 	})
 }
 
-let newtestimonialsSwiper
+let newTestimonialsSwiper
 
 function mobileSliderTestimonials() {
 	const isMobile = document.documentElement.clientWidth <= 425
 	if (isMobile && testimonialsSlider.dataset.mobile === 'false') {
-		newtestimonialsSwiper = initSwiperSlider(testimonialsSlider, {
+		newTestimonialsSwiper = initSwiperSlider(testimonialsSlider, {
 			slidesPerView: 1,
 			spaceBetween: 0,
 		})
@@ -33,7 +33,7 @@ function mobileSliderTestimonials() {
 	}
 
 	if (!isMobile && testimonialsSlider.dataset.mobile === 'true') {
-		newtestimonialsSwiper.destroy()
+		newTestimonialsSwiper.destroy()
 		testimonialsSlider.dataset.mobile = 'false'
 	}
 }
@@ -474,7 +474,7 @@ if (blogSlider && testimonialsSlider && casesSlider) {
 		slidesPerView: 2,
 		spaceBetween: 28,
 		breakpoints: {
-			425: {
+			0: {
 				slidesPerView: 'auto',
 				spaceBetween: 8,
 			},
@@ -516,7 +516,7 @@ if (blogSlider && testimonialsSlider && casesSlider) {
 		slidesPerView: 'auto',
 		spaceBetween: 8,
 		breakpoints: {
-			425: {
+			0: {
 				slidesPerView: 'auto',
 				spaceBetween: 8,
 			},

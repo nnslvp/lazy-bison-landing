@@ -369,7 +369,7 @@ tbody tr:last-child td:last-child {
 
 .tools-technologies-list {
 	display: grid;
-	grid-template-columns: repeat(5, auto);
+	grid-template-columns: repeat(5, 1fr);
 	gap: 2.5rem;
 }
 
@@ -780,7 +780,7 @@ tbody tr:last-child td:last-child {
 
 	.tools-technologies-list {
 		display: grid;
-		grid-template-columns: repeat(2, auto);
+		grid-template-columns: repeat(2, 1fr);
 		gap: 2rem 1.25rem;
 	}
 
@@ -953,6 +953,7 @@ tbody tr:last-child td:last-child {
 			no-repeat,
 			cover
 		);
+		overflow-x: hidden;
 	}
 
 	.section-value-driven__inner .case-study-page__subtitle {
@@ -995,11 +996,11 @@ tbody tr:last-child td:last-child {
 
 	.section-value-driven-footer .icon-elipse-gradient-pink {
 		top: -1.625rem;
-		right: -4rem;
+		right: -3rem;
 	}
 
 	table {
-		grid-template-columns: repeat(auto-fit, minmax(7.1875rem, auto));
+		grid-template-columns: repeat(3, minmax(7.1875rem, auto));
 		// minmax(7.1875rem, 1fr)
 		// minmax(6.875rem, 1.67fr)
 		// minmax(6.25rem, 1.67fr);
@@ -1023,7 +1024,7 @@ tbody tr:last-child td:last-child {
 	}
 
 	.tools-technologies-list {
-		grid-template-columns: repeat(1, auto);
+		grid-template-columns: repeat(1, 1fr);
 		gap: 2rem 1.25rem;
 	}
 

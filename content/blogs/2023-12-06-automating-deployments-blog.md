@@ -35,6 +35,7 @@ For a more in-depth look at installation and configuration, check out this [deta
    - **Compatibility Note**: May not work with older Ruby on Rails versions.
 2. **Avoiding Version Conflicts**: To avoid version conflicts in Ruby on Rails versions lower than 6, it is recommended to set up a separate Gemfile.
    - Create a file named `gemfiles/kamal.Gemfile` and populate it with:
+
    ```ruby
     source '<https://rubygems.org>'
     gem 'kamal', '~> 1.0.0'
@@ -74,7 +75,7 @@ jobs:
 deploy:
 runs-on: ubuntu-20.04
 
-    	# change it
+     # change it
     env:
       RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
       DOCKER_REGISTRY_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
@@ -90,7 +91,7 @@ runs-on: ubuntu-20.04
         with:
           ssh-private-key: ${{ secrets.STAGING_KEY }}
 
-    		# Need for registry cache
+      # Need for registry cache
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
 
@@ -104,11 +105,11 @@ runs-on: ubuntu-20.04
 
       - name: Update server envs
         run: kamal env push -d staging
-    			# run: ./bin/kamal env push -d staging
+       # run: ./bin/kamal env push -d staging
 
       - name: Deploy
         run: kamal deploy -d staging
-    			# run: ./bin/kamal deploy -d staging
+       # run: ./bin/kamal deploy -d staging
 
 
 
@@ -120,12 +121,12 @@ Automating deployments with Kamal and GitHub Actions significantly enhances your
 
 ```html
 <meta
-	name="description"
-	content="Comprehensive guide to automating Ruby on Rails web app deployments using Kamal and GitHub Actions. Includes installation guide and sample GitHub Actions configuration."
+ name="description"
+ content="Comprehensive guide to automating Ruby on Rails web app deployments using Kamal and GitHub Actions. Includes installation guide and sample GitHub Actions configuration."
 />
 <meta
-	name="keywords"
-	content="Kamal, GitHub Actions, Web App Deployment, Automation, CI/CD Pipeline, Ruby, Ruby on Rails, Developers"
+ name="keywords"
+ content="Kamal, GitHub Actions, Web App Deployment, Automation, CI/CD Pipeline, Ruby, Ruby on Rails, Developers"
 />
 <meta name="author" content="Lazy Bison" />
 ```

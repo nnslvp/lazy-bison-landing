@@ -26,23 +26,23 @@ challenge:
     The client, a burgeoning FinTech startup, aimed to address several issues
     faced by groups managing shared expenses:
   issues:
-    - key: Simplifying calculations
+    - title: Simplifying calculations
       description: Difficulty in splitting expenses accurately.
-    - key: Currency Conversion
+    - title: Currency Conversion
       description: Handling multiple currencies during international travel.
-    - key: Payment Integration
+    - title: Payment Integration
       description: Simplifying the reimbursement process.
-    - key: User-Friendly Interface
+    - title: User-Friendly Interface
       description: Creating an intuitive user experience.
-    - key: Group Management
+    - title: Group Management
       description: Organizing groups and expenses efficiently.
-    - key: Expense Tracking and Categorization
+    - title: Expense Tracking and Categorization
       description: Monitoring and categorizing group expenses.
-    - key: Settling Balances
+    - title: Settling Balances
       description: Ease of settling up owed amounts.
-    - key: Security and Privacy
+    - title: Security and Privacy
       description: Ensuring the security of financial data.
-    - key: Notifications and Reminders
+    - title: Notifications and Reminders
       description: Sending timely alerts for payments.
 
 value_driven_results:

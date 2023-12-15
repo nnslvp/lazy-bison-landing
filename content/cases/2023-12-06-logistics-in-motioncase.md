@@ -25,23 +25,23 @@ challenge:
   subtitle: >-
     Our client, a prominent logistics company operating in Europe, faced several critical challenges:
   issues:
-    - key: Communication Gaps
+    - title: Communication Gaps
       description: Struggles with communication between various roles.
-    - key: Safety and Compliance
+    - title: Safety and Compliance
       description: Ensuring driver safety and compliance.
-    - key: Efficiency and Record-Keeping
+    - title: Efficiency and Record-Keeping
       description: Need for a comprehensive system for records.
-    - key: Real-time Monitoring
+    - title: Real-time Monitoring
       description: Monitoring of drivers' vital signs and behavior.
-    - key: Translation and Multilingual Support
+    - title: Translation and Multilingual Support
       description: Offline Capabilities.
-    - key: Functionality in low-connectivity areas.
+    - title: Functionality in low-connectivity areas.
       description: Monitoring and categorizing group expenses.
-    - key: Integration with Third Parties
+    - title: Integration with Third Parties
       description: Coordination between various stakeholders.
-    - key: User Access Management
+    - title: User Access Management
       description: Managing access and permissions.
-    - key: Reporting and Analytics
+    - title: Reporting and Analytics
       description: Need for robust reporting tools.
 
 value_driven_results:

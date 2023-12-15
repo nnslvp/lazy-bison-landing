@@ -23,9 +23,9 @@ project_info:
 challenge:
   subtitle: 'Our client, a prominent logistics company operating in Europe, faced several critical challenges:'
   issues:
-    - key: 'Communication Gaps'
+    - tittle: 'Communication Gaps'
       description: 'Struggles with communication between various roles.'
-    - key: 'Safety and Compliance'
+    - tittle: 'Safety and Compliance'
       description: 'Ensuring driver safety and compliance.'
     # ... Other issues
 

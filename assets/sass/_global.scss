@@ -70,6 +70,7 @@ address {
 pre,
 code {
 	white-space: pre-line;
+	overflow-wrap: break-word;
 }
 
 hr {
@@ -163,7 +164,7 @@ img {
 	}
 
 	@media (max-width: $breakpoint-md) {
-		max-width: calc($container-width-375 + $container-padding * 2);
+		max-width: calc(22rem + $container-padding * 2);
 	}
 }
 

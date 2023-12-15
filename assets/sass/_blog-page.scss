@@ -183,7 +183,7 @@ div.highlight pre {
 }
 
 @media (max-width: $breakpoint-lg) {
-	.blog-page__wrapper main .container {
+	.blog-page__wrapper .container {
 		width: 44.75rem;
 	}
 
@@ -240,8 +240,8 @@ div.highlight pre {
 }
 
 @media (max-width: $breakpoint-md) {
-	.blog-page__wrapper main .container {
-		width: 21.4375rem;
+	.blog-page__wrapper .container {
+		max-width: 24rem;
 	}
 
 	.blog-page__wrapper .section-full-info-blog {
