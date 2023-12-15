@@ -207,6 +207,23 @@
     </div>
   </div>
 </section>
+<section class="section-tools-technologies">
+  <div class="container">
+    <div class="section-tools-technologies__inner">
+      <h2 class="case-study-page__title-h2">Tools & Technologies </h2>
+      <ul class="tools-technologies-list">
+        {{ range .Params.tools_and_technologies }}
+        <li class="tools-technologies-item">
+          <h3 class="tools-technologies-item__title-h3">{{ .tool }}</h3>
+          <p class="tools-technologies-item__text">
+            {{ .technologies }}
+          </p>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</section>
 <section class="section-roadmap">
   <div class="container">
     <div class="section-roadmap__inner">

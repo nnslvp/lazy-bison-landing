@@ -87,16 +87,16 @@ solution_table:
       cell_2: 'Personalized user profiles with spending habits'
 
 tools_and_technologies:
-  - key: Back-End
-    description: 'RoR, MongoDB'
-  - key: Front-End
-    description: 'Flutter, Dart'
-  - key: Security
-    description: 'OAuth, JWT, SSL encryption'
-  - key: Project Tools
-    description: 'Trello, Bitbucket, Confluence'
-  - key: Analytics
-    description: 'Google Analytics, Firebase'
+  - tool: Back-End
+    technologies: 'RoR, MongoDB'
+  - tool: Front-End
+    technologies: 'Flutter, Dart'
+  - tool: Security
+    technologies: 'OAuth, JWT, SSL encryption'
+  - tool: Project Tools
+    technologies: 'Trello, Bitbucket, Confluence'
+  - tool: Analytics
+    technologies: 'Google Analytics, Firebase'
 
 roadmap:
   - date: Q1 2021

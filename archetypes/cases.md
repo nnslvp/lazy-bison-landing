@@ -47,8 +47,8 @@ solution_table:
     # ... Other table cells
 
 tools_and_technologies:
-  - key: 'Back-End'
-    description: 'Ruby on Rails, PostgreSQL, S3 Bucket'
+  - tool: 'Back-End'
+    technologies: 'Ruby on Rails, PostgreSQL, S3 Bucket'
   # ... Other technologies
 
 roadmap:

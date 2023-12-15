@@ -120,16 +120,16 @@ solution_table:
       cell_2: 'Reporting capabilities.'
 
 tools_and_technologies:
-  - key: Back-End
-    description: 'Ruby on Rails, PostgreSQL, S3 Bucket'
-  - key: Front-End
-    description: 'React, TypeScript, GraphQL Apollo Client, Redux'
-  - key: Project Tools
-    description: 'JIRA, Jenkins, GitLab, TestRail'
-  - key: Wireframes & Mockups
-    description: 'Figma, Axure'
-  - key: Roadmap Tool
-    description: Miro
+  - tool: Back-End
+    technologies: 'Ruby on Rails, PostgreSQL, S3 Bucket'
+  - tool: Front-End
+    technologies: 'React, TypeScript, GraphQL Apollo Client, Redux'
+  - tool: Project Tools
+    technologies: 'JIRA, Jenkins, GitLab, TestRail'
+  - tool: Wireframes & Mockups
+    technologies: 'Figma, Axure'
+  - tool: Roadmap Tool
+    technologies: Miro
 
 roadmap:
   - date: September-December 2021
