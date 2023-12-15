@@ -94,7 +94,6 @@
 
 .general-info-list {
 	display: grid;
-	// grid-template-columns: 21.375rem 12.5rem 12.5rem 12.5rem;
 	grid-template-columns: repeat(4, auto);
 	gap: 2.3125rem 3.75rem;
 }
@@ -280,9 +279,6 @@ table {
 	border-radius: 0.75rem;
 	min-width: 100%;
 	grid-template-columns: repeat(auto-fit, minmax(12.5rem, auto));
-	// minmax(12.5rem, 1fr)
-	// minmax(33.375rem, 1.67fr)
-	// minmax(33.375rem, 1.67fr);
 }
 
 thead,
@@ -695,9 +691,6 @@ tbody tr:last-child td:last-child {
 
 	table {
 		grid-template-columns: repeat(auto-fit, minmax(11.9375rem, 1fr));
-		// minmax(11.9375rem, 1fr)
-		// minmax(18.25rem, 1.67fr)
-		// minmax(14.4375rem, 1.67fr);
 	}
 
 	th {
@@ -1001,9 +994,6 @@ tbody tr:last-child td:last-child {
 
 	table {
 		grid-template-columns: repeat(3, minmax(7.1875rem, auto));
-		// minmax(7.1875rem, 1fr)
-		// minmax(6.875rem, 1.67fr)
-		// minmax(6.25rem, 1.67fr);
 	}
 
 	td,
