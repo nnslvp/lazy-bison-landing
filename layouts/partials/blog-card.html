@@ -6,10 +6,7 @@
     <p class="card-blog__description">
       {{ .Params.description }}
     </p>
-    {{ $categoriesArray := split .Params.category_tags "#" }}
-    {{ if gt (len $categoriesArray) 1 }}
-    <span class="category">#{{ index $categoriesArray 1 }}</span>
-    {{ end }}
+    <span class="category">#{{ index .Params.blog_categories 0 }}</span>
     <span class="card-blog__date">{{ .Date | time.Format ":date_medium" }}</span>
   </div>
   <a href="{{ .Permalink }}" class="button button--primary card-blog__btn">

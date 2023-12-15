@@ -39,7 +39,7 @@
     {{ $paginator := .Paginate (where .Pages "Type" "blogs") .Site.Params.blogs_paginate }}
     <ul class="blogs-list">
       {{ range $paginator.Pages }}
-      <li class="blog-item">
+      <li class="blogs-item">
         {{ partial "blog-card.html" . }}
       </li>
       {{ end }}

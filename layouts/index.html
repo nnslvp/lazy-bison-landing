@@ -320,7 +320,8 @@
       </div>
       <div class="swiper blogs-slider" data-mobile="false">
         <ul class="swiper-wrapper">
-          {{ range where .Site.RegularPages "Type" "blogs" }}
+          {{ $recentBlogs := (where .Site.RegularPages "Type" "blogs").ByDate.Reverse | first 5   }}
+          {{ range $recentBlogs }}
           <li class="swiper-slide">
             {{ partial "blog-card.html" . }}
           </li>
