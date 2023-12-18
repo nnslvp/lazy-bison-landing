@@ -182,6 +182,14 @@ div.highlight pre {
 	gap: 1.25rem;
 }
 
+.section-recommendations__inner .blogs-list .card-blog__title {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+	text-align: left;
+}
+
 @media (max-width: $breakpoint-lg) {
 	.blog-page__wrapper .container {
 		width: 44.75rem;
