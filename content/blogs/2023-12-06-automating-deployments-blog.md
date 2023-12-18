@@ -18,7 +18,7 @@ description: >
   complexities. In this article, we'll delve into the
   key features of Kamal and share insights from our own
   hands-on experience.
-blog_categories: ['eCommerce', 'real estate']
+blog_categories: ['eCommerce', 'real estate', 'eCommerce', 'real estate']
 ---
 
 ## Introduction: Simplify Your Deployments
@@ -34,6 +34,7 @@ For a more in-depth look at installation and configuration, check out this [deta
 1. **Direct Installation**: Execute `bundle add kamal` to add the gem to your Ruby project.
    - **Compatibility Note**: May not work with older Ruby on Rails versions.
 2. **Avoiding Version Conflicts**: To avoid version conflicts in Ruby on Rails versions lower than 6, it is recommended to set up a separate Gemfile.
+
    - Create a file named `gemfiles/kamal.Gemfile` and populate it with:
 
    ```ruby
@@ -121,12 +122,12 @@ Automating deployments with Kamal and GitHub Actions significantly enhances your
 
 ```html
 <meta
- name="description"
- content="Comprehensive guide to automating Ruby on Rails web app deployments using Kamal and GitHub Actions. Includes installation guide and sample GitHub Actions configuration."
+	name="description"
+	content="Comprehensive guide to automating Ruby on Rails web app deployments using Kamal and GitHub Actions. Includes installation guide and sample GitHub Actions configuration."
 />
 <meta
- name="keywords"
- content="Kamal, GitHub Actions, Web App Deployment, Automation, CI/CD Pipeline, Ruby, Ruby on Rails, Developers"
+	name="keywords"
+	content="Kamal, GitHub Actions, Web App Deployment, Automation, CI/CD Pipeline, Ruby, Ruby on Rails, Developers"
 />
 <meta name="author" content="Lazy Bison" />
 ```

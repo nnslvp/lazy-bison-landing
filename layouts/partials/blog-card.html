@@ -6,7 +6,16 @@
     <p class="card-blog__description">
       {{ .Params.description }}
     </p>
-    <span class="category">#{{ index .Params.blog_categories 0 }}</span>
+    <div class="card-blog__category-container">
+      {{ $categories := .Params.blog_categories }}
+      {{ range first 2 $categories }}
+      <span class="category">#{{ . }}</span>
+      {{ end }}
+      {{ $remainingCategories := sub (len $categories) 2 }}
+      {{ if gt $remainingCategories 0 }}
+      <span class="category">+{{ $remainingCategories }}</span>
+      {{ end }}
+    </div>
     <span class="card-blog__date">{{ .Date | time.Format ":date_medium" }}</span>
   </div>
   <a href="{{ .Permalink }}" class="button button--primary card-blog__btn">

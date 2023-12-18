@@ -59,6 +59,11 @@
 	color: rgba(75, 75, 75, 1);
 }
 
+.card-blog__category-container {
+	display: flex;
+	gap: 0.3125rem;
+}
+
 .card-blog__btn {
 	display: inline-flex;
 	align-items: center;
