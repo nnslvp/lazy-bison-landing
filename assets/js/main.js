@@ -11,7 +11,7 @@ const blogPageWrapper = document.querySelector('.blog-page__wrapper')
 const initSwiperSlider = (slider, settings) => {
 	return new Swiper(slider, {
 		...settings,
-		loop: true,
+		loop: false,
 		init: true,
 		pagination: {
 			el: slider.querySelector('.swiper-pagination'),
