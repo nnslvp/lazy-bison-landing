@@ -2,6 +2,10 @@
 	background-color: $color-night-blue;
 }
 
+.section-gallery .swiper-button-disabled {
+	filter: opacity(0.5);
+}
+
 .case-page__wrapper section {
 	margin-bottom: 0;
 }
