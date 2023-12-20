@@ -29,7 +29,7 @@
 	background-color: inherit;
 	position: relative;
 	z-index: 1;
-
+	margin: 0 0.1875rem;
 	&::after {
 		content: '';
 		position: absolute;

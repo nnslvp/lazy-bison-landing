@@ -126,7 +126,7 @@ object {
 	width: 100%;
 }
 
-section:not(.categories, .full-info-blog__section) {
+section:not(.categories, .full-info-blog__section, .services) {
 	margin-bottom: 7.5rem;
 
 	@media (max-width: $breakpoint-lg) {
