@@ -289,14 +289,17 @@
         <i class="icon arrow-right-down-angle-square"></i>
       </div>
     </div>
-    <div class="cases__inner">
-      <div class="casess__gray-line gray-line"></div>
+  </div>
+  <div class="cases__inner">
+    <div class="container">
       <div class="spin-text-circle">
         <i class="icon spin-text-circle__text"></i>
         <i class="icon spin-text-circle__circle"></i>
       </div>
+    </div>
+    <div class="container container__cases-slider">
       <div class="swiper cases-slider" data-mobile="false">
-        <ul class="swiper-wrapper">
+        <ul class="swiper-wrapper cases-slider__swiper-wrapper">
           {{ range where .Site.RegularPages "Type" "cases" }}
           <li class="swiper-slide">
             {{ partial "case-card.html" . }}

@@ -157,7 +157,7 @@ img {
 	width: calc($container-width + $container-padding * 2);
 	padding: 0 $container-padding;
 	margin: 0 auto;
-
+	position: relative;
 	@media (max-width: $breakpoint-lg) {
 		max-width: calc($container-width-768 + $container-padding * 2);
 	}

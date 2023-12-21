@@ -1,12 +1,13 @@
 .cases__inner {
+	@include background(
+		'/images/sections/section-cases/cases-bg.svg',
+		center bottom,
+		no-repeat,
+		cover
+	);
 	position: relative;
 	display: flex;
 	flex-direction: column;
-
-	.spin-text-circle {
-		top: 5.875rem;
-		right: -1.0625rem;
-	}
 }
 
 .cases-slider .swiper-wrapper {
@@ -15,10 +16,15 @@
 
 .cases-slider {
 	position: relative;
-	padding-top: 8.05rem;
+	padding-top: 18px;
 	padding-bottom: 0.5rem;
 	overflow: hidden;
 	width: 100%;
+}
+
+.cases__inner .spin-text-circle {
+	top: -1.125rem;
+	right: -1.0625rem;
 }
 
 .cases-slider .case-card {
@@ -26,19 +32,13 @@
 }
 
 .cases-slider {
-	@include background(
-		'/images/sections/section-cases/cases-bg.svg',
-		center center,
-		no-repeat,
-		cover
-	);
 }
 
 @media (max-width: $breakpoint-lg) {
 	.cases__inner {
 		@include background(
 			'/images/sections/section-cases/cases-bg-768.svg',
-			center,
+			center bottom,
 			no-repeat,
 			contain
 		);
@@ -56,6 +56,11 @@
 		margin-bottom: 1.25rem;
 	}
 
+	.container__cases-slider {
+		max-width: 100%;
+		padding: 0;
+	}
+
 	.cases__inner .spin-text-circle__circle {
 		width: 4.75rem;
 		height: 4.7456rem;
@@ -71,8 +76,7 @@
 	}
 
 	.cases-slider {
-		padding-top: 4.75rem;
-		padding-bottom: 1.5rem;
+		padding: 4.75rem 1rem 1.5rem 1rem;
 	}
 
 	.cases-slider .case-card {
@@ -84,7 +88,7 @@
 	.cases__inner {
 		@include background(
 			'/images/sections/section-cases/cases-bg-375.svg',
-			center,
+			center bottom,
 			no-repeat,
 			contain
 		);
