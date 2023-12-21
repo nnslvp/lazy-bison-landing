@@ -21,6 +21,15 @@
 		gap: 2.75rem;
 	}
 
+	.container__blogs-slider {
+		max-width: 100%;
+		padding: 0;
+	}
+
+	.blogs-slider {
+		padding: 0 1rem;
+	}
+
 	.blogs-slider .card-blog {
 		width: 21.875rem;
 	}
@@ -29,6 +38,10 @@
 @media (max-width: $breakpoint-md) {
 	.section-blog__inner {
 		gap: 2.375rem;
+	}
+
+	.blogs-slider {
+		padding: 0 0.625rem;
 	}
 
 	.blogs-slider .card-blog {

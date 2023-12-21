@@ -1,7 +1,7 @@
 .cases__inner {
 	@include background(
 		'/images/sections/section-cases/cases-bg.svg',
-		center bottom,
+		center 99%,
 		no-repeat,
 		cover
 	);
@@ -38,9 +38,9 @@
 	.cases__inner {
 		@include background(
 			'/images/sections/section-cases/cases-bg-768.svg',
-			center bottom,
+			center 2.75rem,
 			no-repeat,
-			contain
+			100% 90%
 		);
 		display: flex;
 		flex-direction: column;
@@ -88,9 +88,9 @@
 	.cases__inner {
 		@include background(
 			'/images/sections/section-cases/cases-bg-375.svg',
-			center bottom,
+			center 151%,
 			no-repeat,
-			contain
+			100% 105%
 		);
 		display: flex;
 		flex-direction: column;
@@ -106,6 +106,8 @@
 
 		.cases-slider {
 			padding-top: 2.3125rem;
+			padding-left: 0.625rem;
+			padding-right: 0.625rem;
 		}
 	}
 }

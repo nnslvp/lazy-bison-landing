@@ -320,6 +320,8 @@
           <i class="icon arrow-right-down-angle-square"></i>
         </div>
       </div>
+    </div>
+    <div class="container container__blogs-slider">
       <div class="swiper blogs-slider" data-mobile="false">
         <ul class="swiper-wrapper">
           {{ $recentBlogs := (where .Site.RegularPages "Type" "blogs").ByDate.Reverse | first 5   }}
@@ -332,6 +334,7 @@
         <div class="swiper-pagination"></div>
       </div>
     </div>
+
   </div>
 </section>
 <section id="testimonials" class="testimonials">
