@@ -10,3 +10,34 @@ title = "Мой Блог"
   blog_category = "blog_categories"
   case_category = "case_categories"
 
+
+
+[[menu.main]]
+    identifier = "services"
+    name = "services"
+    url = "/#services"
+    weight = 1
+
+[[menu.main]]
+    identifier = "explore"
+    name = "explore"
+    url = "/#explore"
+    weight = 2
+
+[[menu.main]]
+    identifier = "blogs"
+    name = "blogs"
+    url = "/blogs"
+    weight = 3
+
+[[menu.main]]
+    identifier = "cases"
+    name = "cases"
+    url = "/cases"
+    weight = 4
+
+[[menu.main]]
+    identifier = "testimonials"
+    name = "testimonials"
+    url = "/#testimonials"
+    weight = 5
