@@ -8,8 +8,16 @@
 	);
 	border-radius: 0;
 	padding-top: 4.0625rem;
+	color: $color-text-black;
 
 	&.submit-success {
+		@include background(
+			'/images/popup-form-success-form.svg',
+			center,
+			no-repeat,
+			cover,
+			$color-white
+		);
 		@include center;
 		max-height: 42.6875rem;
 	}
@@ -325,6 +333,7 @@
 	}
 
 	@media (max-width: $breakpoint-md) {
+		background-position: 0 0;
 		padding-top: 1.5625rem;
 		&.submit-success .popup-content {
 			width: 100%;
