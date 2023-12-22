@@ -1,11 +1,11 @@
 .consultation {
 	@include background(
 		'/images/sections/section-cases/cases-bg.svg',
-		center,
+		right,
 		no-repeat,
-		cover
+		100% 169%
 	);
-	padding: 20.6875rem 0 7.5rem 0;
+	padding: 7.6875rem 0 7.5rem 0;
 }
 
 .consultation__inner {
@@ -62,7 +62,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-color: transparent;
-		padding: 9.8125rem 0 5rem 0;
+		padding: 6.8125rem 0 5rem 0;
 	}
 
 	.consultation__inner {
@@ -78,8 +78,8 @@
 		max-height: 12.375rem;
 
 		.spin-text-circle {
-			top: -2.0625rem;
-			left: -2.125rem;
+			top: -0.5rem;
+			left: -1.375rem;
 		}
 
 		.spin-text-circle__circle {
@@ -127,8 +127,8 @@
 
 		.spin-text-circle {
 			left: auto;
-			right: -2.75rem;
-			top: -1.375rem;
+			top: -1.25rem;
+			right: 0.0625rem;
 		}
 
 		.spin-text-circle__circle {

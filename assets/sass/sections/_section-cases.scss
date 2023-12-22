@@ -10,10 +10,6 @@
 	flex-direction: column;
 }
 
-.container__cases-slider {
-	width: 84rem;
-}
-
 .cases-slider__swiper-wrapper {
 	margin-bottom: 3.75rem;
 }
@@ -32,7 +28,7 @@
 }
 
 .cases-slider .case-card {
-	width: 38.75rem;
+	width: 36.75rem;
 }
 
 @media (max-width: $breakpoint-lg) {
@@ -45,7 +41,6 @@
 		);
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 4rem;
 	}
 
 	.cases__inner .spin-text-circle {
@@ -99,8 +94,6 @@
 		);
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 3.75rem;
-
 		.spin-text-circle {
 			visibility: hidden;
 		}

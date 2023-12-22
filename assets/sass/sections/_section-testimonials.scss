@@ -63,9 +63,10 @@
 .testimonials-background {
 	@include background(
 		'/images/sections/section-testimonials/testimonials-bg.svg',
-		center,
+		0 2.5rem,
 		no-repeat,
-		cover
+		cover,
+		$color-light-green
 	);
 }
 
@@ -117,9 +118,10 @@
 	.testimonials-background {
 		@include background(
 			'/images/sections/section-testimonials/testimonials-768px.svg',
-			center center,
+			0 0,
 			no-repeat,
-			cover
+			contain,
+			$color-light-green
 		);
 	}
 
@@ -194,9 +196,8 @@
 
 @media (max-width: $breakpoint-md) {
 	.testimonials-background {
-		background-repeat: no-repeat;
-		background-size: auto 16.0625rem;
-		background-position: 0 0;
+		background: none;
+		background-color: $color-light-green;
 	}
 
 	.testimonials .spin-text-circle__circle {

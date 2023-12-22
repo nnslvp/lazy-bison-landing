@@ -462,7 +462,7 @@ burgerButton.addEventListener('click', toggleMenu)
 
 if (homePageWrapper) {
 	animateLines()
-	animateTestimonials()
+	// animateTestimonials()
 	dropdown()
 }
 
@@ -471,7 +471,7 @@ getConsultationForm()
 
 if (blogSlider && testimonialsSlider && casesSlider) {
 	initSwiperSlider(casesSlider, {
-		slidesPerView: 2,
+		slidesPerView: 'auto',
 		spaceBetween: 28,
 		breakpoints: {
 			0: {
@@ -485,8 +485,8 @@ if (blogSlider && testimonialsSlider && casesSlider) {
 			},
 
 			1440: {
-				slidesPerView: 2,
-				spaceBetween: 0,
+				slidesPerView: 'auto',
+				spaceBetween: 28,
 			},
 		},
 	})
@@ -507,7 +507,7 @@ if (blogSlider && testimonialsSlider && casesSlider) {
 			},
 
 			1440: {
-				slidesPerView: 3,
+				slidesPerView: 'auto',
 				spaceBetween: 28,
 			},
 		},
