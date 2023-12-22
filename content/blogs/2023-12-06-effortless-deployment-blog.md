@@ -7,7 +7,6 @@ SEO:
   keywords: 'Kamal, Web App Deployment, Zero Downtime, Incremental Rollouts, Flexible Configuration, Developers'
   author: 'Lazy Bison'
 author: MARIE CAPHLISH
-theme: light
 avatar: '/images/blogs/2023-11-28-blog/author-blog.svg'
 image: '/images/blogs/2023-11-28-blog/blog-preview-img.png'
 description: >
