@@ -14,6 +14,7 @@ const initSwiperSlider = (slider, settings) => {
 		loop: false,
 		init: true,
 		pagination: {
+			clickable: true,
 			el: slider.querySelector('.swiper-pagination'),
 			clickable: true,
 		},
