@@ -164,6 +164,9 @@ const animateLines = () => {
 	}
 
 	function handleResize() {
+		console.log('====================================')
+		console.log('lskdfjlaskdjf')
+		console.log('====================================')
 		const widthScreen = document.documentElement.clientWidth
 
 		if (widthScreen <= 768) {
@@ -178,6 +181,7 @@ const animateLines = () => {
 				line.style.opacity = 1
 			})
 			verticalGrayLines.forEach(line => (line.style.opacity = 0))
+			grayLines.forEach(line => (line.style.opacity = 0))
 		} else {
 			grayLines.forEach(line => (line.style.opacity = 1))
 			verticalGrayLines.forEach(line => (line.style.opacity = 1))
@@ -463,7 +467,7 @@ burgerButton.addEventListener('click', toggleMenu)
 
 if (homePageWrapper) {
 	animateLines()
-	// animateTestimonials()
+	animateTestimonials()
 	dropdown()
 }
 

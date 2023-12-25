@@ -193,11 +193,15 @@
 	.services {
 		@include background(
 			'/images/sections/section-services/services-info-bg-375.svg',
-			0 4.9375rem,
+			50% 4.375rem,
 			no-repeat,
 			contain
 		);
-		height: 51.25rem;
+		height: 54.25rem;
+		@media (max-width: 390px) {
+			background-position: 50% 6.0625rem;
+			height: 51.25rem;
+		}
 		.section-title__inner {
 			margin-bottom: 1.875rem;
 		}
@@ -208,6 +212,7 @@
 	}
 
 	.services-info {
+		padding: 0;
 		background: none;
 	}
 

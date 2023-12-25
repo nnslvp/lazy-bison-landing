@@ -230,7 +230,7 @@
 			'/images/sections/section-lazy-bison/lazy-bison-bg-375.svg',
 			0 -4.4375rem,
 			no-repeat,
-			contain
+			100% 82%
 		);
 		margin-bottom: 4.625rem;
 		padding-top: 3.375rem;
@@ -246,7 +246,17 @@
 		}
 	}
 
+	.lazy-bison-title__text:last-child {
+		padding-right: 1.1875rem;
+	}
+
 	.lazy-bison-description__info {
+		.spin-text-circle {
+			position: relative;
+			left: 3.5625rem;
+			top: 2.1875rem;
+		}
+
 		.spin-text-circle__circle {
 			width: 4.375rem;
 			height: 4.375rem;
