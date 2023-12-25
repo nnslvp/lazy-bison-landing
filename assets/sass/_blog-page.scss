@@ -148,6 +148,7 @@ div.highlight pre {
 }
 
 .copy-button {
+	position: relative;
 	display: flex;
 	align-items: center;
 	gap: 0.25rem;
@@ -158,6 +159,52 @@ div.highlight pre {
 	background-color: transparent;
 	color: $color-grey;
 	border: none;
+}
+
+/* Анимация появления подсказки */
+@keyframes fadeInFadeOutTooltip {
+	0% {
+		opacity: 1;
+		visibility: visible;
+	}
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+/* Tooltip text */
+.tooltiptext {
+	visibility: hidden;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	padding: 5px;
+	border-radius: 6px;
+
+	/* Position the tooltip text */
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+}
+
+/* Tooltip arrow */
+.tooltiptext::after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+/* Показ подсказки при клике на кнопку */
+.copy-button.copied .tooltiptext {
+	animation: fadeInFadeOutTooltip 1s ease-in-out forwards;
 }
 
 .code-wrapper {

@@ -551,8 +551,12 @@ if (blogPageWrapper) {
 			`
         <button class="button copy-button">
             <i class="icon icon-copy"></i>
-            Copy
+            <span>Copy</span>
+            <span class="tooltiptext">
+             <i class="icon icon-tick-success"></i>
+            Copied!</span>
         </button>
+    
     `
 		)
 	})
@@ -560,11 +564,20 @@ if (blogPageWrapper) {
 	const copyButtons = document.querySelectorAll('.copy-button')
 
 	copyButtons.forEach(btn => {
-		btn.addEventListener('click', () => {
+		btn.addEventListener('click', event => {
+			const { currentTarget } = event
 			const copyText = btn
 				.closest('.code-wrapper')
 				.querySelector('code').textContent
-			navigator.clipboard.writeText(copyText)
+			try {
+				navigator.clipboard.writeText(copyText)
+				currentTarget.classList.add('copied')
+				setTimeout(() => {
+					currentTarget.classList.remove('copied')
+				}, 1000)
+			} catch (err) {
+				console.error('Ошибка копирования: ', err)
+			}
 		})
 	})
 }
