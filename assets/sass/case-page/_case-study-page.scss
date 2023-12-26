@@ -115,7 +115,13 @@
 }
 
 .section-challenge {
-	background: url('/images/case-page/chellenge-bg.png');
+	@include background(
+		'/images/case-page/chellenge-bg.svg',
+		95% -68px,
+		no-repeat,
+		cover,
+		$color-light-green
+	);
 }
 
 .section-challenge__inner {
@@ -127,7 +133,7 @@
 }
 
 .section-challenge .case-study-page__subtitle {
-	width: 80%;
+	width: 57%;
 	margin-bottom: 4.125rem;
 }
 
