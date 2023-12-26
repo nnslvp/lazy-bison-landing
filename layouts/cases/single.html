@@ -1,5 +1,4 @@
 {{ define "main" }}
-
 <div class="bg-wrapper">
   <div class="container">
     <nav class="navigation-path">
@@ -31,7 +30,6 @@
       </div>
     </div>
   </section>
-
 </div>
 <section class="general-info">
   <div class="container">
@@ -224,62 +222,63 @@
     </div>
   </div>
 </section>
-<section class="section-roadmap">
-  <div class="container">
-    <div class="section-roadmap__inner">
-      <h2 class="case-study-page__title-h2">Roadmap</h2>
-      <ul class="roadmap-list">
-        {{ range $index, $item := .Params.roadmap }}
-        <li class="roadmap-item">
-          <div class="roadmap-card">
-            <div class="roadmap-card__date">{{ $item.date }}</div>
-            <ul class="roadmap-card__list">
-              {{ range $item.activities }}
-              <li class="roadmap-card__item">{{ . }}</li>
-              {{ end }}
-            </ul>
-          </div>
-          {{ if ne $index (sub (len $.Params.roadmap) 1) }}
-        <li class="roadmap-item">
-          <i class="icon icon-arrow-roadmap"></i>
-        </li>
-        {{ end }}
-        </li>
-        {{ end }}
-      </ul>
-    </div>
-  </div>
-</section>
-<section class="section-gallery">
-  <div class="container">
-    <div class="section-gallery__inner">
-      <h2 class="case-study-page__title-h2">Gallery</h2>
-      <div class="swiper gallery-slider" data-mobile="false">
-        <ul class="swiper-wrapper">
-          {{ range .Params.gallery_images }}
-          <li class="swiper-slide">
-            <div class="swiper-slide__img-container">
-              <img src="{{ .image_path }}" alt="{{ .caption }}">
+<div class="background-sections-roadmap-gallery">
+  <section class="section-roadmap">
+    <div class="container">
+      <div class="section-roadmap__inner">
+        <h2 class="case-study-page__title-h2">Roadmap</h2>
+        <ul class="roadmap-list">
+          {{ range $index, $item := .Params.roadmap }}
+          <li class="roadmap-item">
+            <div class="roadmap-card">
+              <div class="roadmap-card__date">{{ $item.date }}</div>
+              <ul class="roadmap-card__list">
+                {{ range $item.activities }}
+                <li class="roadmap-card__item">{{ . }}</li>
+                {{ end }}
+              </ul>
             </div>
+            {{ if ne $index (sub (len $.Params.roadmap) 1) }}
+          <li class="roadmap-item">
+            <i class="icon icon-arrow-roadmap"></i>
+          </li>
+          {{ end }}
           </li>
           {{ end }}
         </ul>
-        <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-btn-prev">
-        <i class="icon icon-square-arrow-left"></i>
-      </div>
-      <div class="swiper-btn-next">
-        <i class="icon icon-square-arrow-right "></i>
-      </div>
-      <button class="button lazy-bison-description__btn button__text--large button--primary get-consultation-btn">
-        Get free consultation
-        <i class="icon icon-arrow-right-top"></i>
-      </button>
     </div>
-  </div>
-</section>
+  </section>
+  <section class="section-gallery">
+    <div class="container">
+      <div class="section-gallery__inner">
+        <h2 class="case-study-page__title-h2">Gallery</h2>
+        <div class="swiper gallery-slider" data-mobile="false">
+          <ul class="swiper-wrapper">
+            {{ range .Params.gallery_images }}
+            <li class="swiper-slide">
+              <div class="swiper-slide__img-container">
+                <img src="{{ .image_path }}" alt="{{ .caption }}">
+              </div>
+            </li>
+            {{ end }}
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-btn-prev">
+          <i class="icon icon-square-arrow-left"></i>
+        </div>
+        <div class="swiper-btn-next">
+          <i class="icon icon-square-arrow-right "></i>
+        </div>
+        <button class="button lazy-bison-description__btn button__text--large button--primary get-consultation-btn">
+          Get free consultation
+          <i class="icon icon-arrow-right-top"></i>
+        </button>
+      </div>
+    </div>
+  </section>
 
-
+</div>
 
 {{ end }}

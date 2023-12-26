@@ -1,0 +1,219 @@
+.section-solution {
+	@include background(
+		'/images/case-page/section-solution-bg-1440.svg',
+		center center,
+		no-repeat,
+		cover
+	);
+}
+
+.section-solution .case-study-page__title-h2 {
+	margin-bottom: 1.375rem;
+}
+
+.section-solution .case-study-page__subtitle {
+	margin-bottom: 1.5rem;
+}
+
+.section-solution__inner {
+	padding: 4.5rem 0 3.9375rem 0;
+}
+
+table {
+	display: grid;
+	border-collapse: collapse;
+	overflow: hidden;
+	border-radius: 0.75rem;
+	min-width: 100%;
+	grid-template-columns: repeat(auto-fit, minmax(12.5rem, auto));
+}
+
+thead,
+tbody,
+tr {
+	display: contents;
+	text-transform: capitalize;
+}
+
+th,
+td {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+th {
+	position: sticky;
+	top: 0;
+	background: $color-night-blue;
+	padding: 0.6875rem 1.25rem;
+	text-align: left;
+	font-size: 1.125rem;
+	font-weight: 600;
+	line-height: 1.35rem;
+	text-transform: capitalize;
+	color: white;
+}
+
+td {
+	padding: 0.5rem 1.25rem;
+	color: $color-black;
+	background-color: $color-white;
+	font-weight: 400;
+}
+
+tbody tr td:nth-child(1) {
+	font-weight: 300;
+	color: $color-dark-grey;
+}
+
+tbody tr td {
+	border-bottom: 0.0625rem solid $color-disable-grey;
+	border-right: 0.0625rem solid $color-disable-grey;
+}
+
+tbody tr td:first-child {
+	grid-column: 1;
+}
+
+tbody tr td:nth-child(2) {
+	grid-column: 2;
+}
+
+tbody tr td:nth-child(3) {
+	grid-column: 3;
+}
+
+thead th:first-child {
+	border-radius: 0.75rem 0 0 0;
+}
+
+thead th:last-child {
+	border-radius: 0 0.75rem 0 0;
+}
+
+tbody tr:last-child td:first-child {
+	border-radius: 0 0 0 0.75rem;
+}
+
+tbody tr:last-child td:last-child {
+	border-radius: 0 0 0.75rem 0;
+}
+
+@media (max-width: $breakpoint-lg) {
+	.section-value-driven-footer .case-study-page__subtitle {
+		width: 100%;
+	}
+
+	.section-solution {
+		background-color: #f1f2f7;
+	}
+
+	.section-solution .case-study-page__title-h2 {
+		margin-bottom: 1.25rem;
+	}
+
+	.section-solution .case-study-page__subtitle {
+		margin-bottom: 2rem;
+	}
+
+	.section-solution__inner {
+		padding: 2.5rem 0;
+	}
+
+	table {
+		grid-template-columns: repeat(auto-fit, minmax(11.9375rem, 1fr));
+	}
+
+	th {
+		border-top: 0.0625rem solid $color-disable-grey;
+		background: initial;
+		line-height: 1.2rem;
+		color: #212439;
+	}
+
+	td,
+	th {
+		font-size: 1rem;
+	}
+
+	.table-th-tab-active {
+		background-color: $color-night-blue;
+		color: $color-white;
+	}
+
+	thead th:nth-child(1) {
+		font-weight: 300;
+		color: $color-dark-grey;
+		border-radius: 0.75rem 0rem 0rem 0rem;
+		border-left: 0.0625rem solid $color-disable-grey;
+		border-bottom: 0.0625rem solid $color-disable-grey;
+	}
+
+	th:not(:first-of-type) {
+		border-radius: 0.75rem 0rem 0rem 0rem;
+		border: 0.0625rem solid #212439;
+	}
+
+	thead .table-th-tab.table-th-tab-active {
+		background-color: $color-night-blue;
+		color: $color-white;
+	}
+
+	tbody tr td {
+		border-bottom: 0.0625rem solid $color-disable-grey;
+		border-right: 0.0625rem solid $color-disable-grey;
+	}
+
+	tbody tr td:first-child {
+		grid-column: 1;
+	}
+
+	tbody tr td:nth-child(2) {
+		grid-column: 2;
+	}
+
+	tbody tr td:nth-child(3) {
+		grid-column: 3;
+	}
+
+	thead th:nth-child(2):last-child {
+		grid-column: span 2;
+	}
+
+	thead:has(th.table-th-tab-active:nth-child(2)) ~ tbody td:nth-child(2) {
+		display: block;
+		grid-column: span 2;
+	}
+
+	thead:has(th.table-th-tab-active:nth-child(3)) ~ tbody td:nth-child(3) {
+		display: block;
+		grid-column: span 2;
+	}
+
+	thead:has(th.table-th-tab-active:nth-child(2)) ~ tbody td:nth-child(3) {
+		display: none;
+	}
+
+	thead:has(th.table-th-tab-active:nth-child(3)) ~ tbody td:nth-child(2) {
+		display: none;
+	}
+}
+
+@media (max-width: $breakpoint-md) {
+	table {
+		grid-template-columns: repeat(3, minmax(7.1875rem, auto));
+	}
+
+	td,
+	th {
+		font-size: 0.6875rem;
+	}
+
+	th {
+		padding: 0.375rem;
+	}
+
+	td {
+		padding: 0.5rem 1rem;
+	}
+}

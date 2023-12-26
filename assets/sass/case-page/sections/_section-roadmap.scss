@@ -1,0 +1,136 @@
+.section-roadmap__inner {
+	display: flex;
+	flex-direction: column;
+	gap: 1.375rem;
+	padding: 4.9375rem 0 2.9375rem 0;
+}
+
+.roadmap-list {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 1rem;
+}
+
+.roadmap-item:not(.roadmap-item:has(.icon-arrow-roadmap)) {
+	width: 23.4375rem;
+	height: 18rem;
+}
+
+.roadmap-card {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 2.8125rem 1.125rem 2.8125rem 1.125rem;
+	border-radius: 1.5rem;
+	border: 0.0625rem solid #fff;
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0.16) 0%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	box-shadow: 0.25rem 0.25rem 0.6875rem 0rem rgba(19, 21, 71, 0.17);
+	backdrop-filter: blur(2.4063rem);
+}
+
+.roadmap-card__date {
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.6rem;
+}
+
+.roadmap-card__list {
+	width: 17.4375rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding-left: 1.125rem;
+}
+
+.roadmap-card__list li {
+	list-style-type: disc;
+}
+
+.roadmap-card__item {
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 1.5188rem;
+}
+
+@media (max-width: $breakpoint-lg) {
+	.section-roadmap__inner {
+		align-items: center;
+		gap: 1.375rem;
+		padding: 2.5rem 0;
+	}
+
+	.roadmap-list {
+		flex-direction: column;
+		gap: 0rem;
+	}
+
+	.roadmap-item {
+		position: relative;
+	}
+
+	.roadmap-item:not(.roadmap-item:has(.icon-arrow-roadmap)) {
+		width: 34.75rem;
+		height: 10rem;
+	}
+
+	.roadmap-card {
+		padding: 1.25rem;
+	}
+
+	.roadmap-card__list {
+		width: 100%;
+		gap: 0.5rem;
+		padding-left: 1.375rem;
+	}
+
+	.roadmap-card__item {
+		font-size: 1rem;
+		line-height: 1.35rem;
+	}
+
+	.roadmap-item .icon-arrow-roadmap {
+		position: absolute;
+		top: -0.9375rem;
+		left: -2.25rem;
+		width: 2.1875rem;
+		height: 2.1875rem;
+		transform: rotate(72deg);
+	}
+
+	.roadmap-item:has(.icon-arrow-roadmap) {
+		height: 1.375rem;
+		align-self: flex-start;
+	}
+}
+
+@media (max-width: $breakpoint-md) {
+	.section-roadmap__inner {
+		gap: 1.25rem;
+		padding: 2.5rem 0 1.875rem 0;
+	}
+
+	.roadmap-item:not(.roadmap-item:has(.icon-arrow-roadmap)) {
+		width: 20.4375rem;
+		height: 14.125rem;
+	}
+
+	.roadmap-card {
+		padding: 1.25rem 1.125rem;
+	}
+
+	.roadmap-item .icon-arrow-roadmap {
+		top: -0.75rem;
+		left: -1.1875rem;
+	}
+
+	.roadmap-item:has(.icon-arrow-roadmap) {
+		height: 1.5rem;
+	}
+}

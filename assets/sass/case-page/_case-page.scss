@@ -1,0 +1,119 @@
+.bg-wrapper {
+	background-color: $color-night-blue;
+}
+
+.background-sections-roadmap-gallery {
+	@include background(
+		'/images/case-page/sections-roadmap-and-gallery-bg-1440.svg',
+		center -2.9375rem,
+		no-repeat,
+		cover,
+		#e8eaf2
+	);
+}
+
+.case-page__wrapper section {
+	margin-bottom: 0;
+}
+
+.case-page__wrapper {
+	background-color: $color-disable-grey;
+}
+
+.case-page__wrapper .navigation-path {
+	padding: 3.75rem 0 2rem 0;
+	color: $color-disable-grey;
+}
+
+.case-page__wrapper .navigation-path__link {
+	color: inherit;
+}
+
+.case-page__wrapper .navigation-path__link--active {
+	color: $color-light-green;
+}
+
+.case-study-page__title-h1 {
+	width: 54.375rem;
+	color: $color-white;
+	font-size: 4.375rem;
+	font-weight: 500;
+	line-height: 5.25rem;
+	letter-spacing: 0.1313rem;
+}
+
+.case-study-page__title-h2 {
+	font-size: 2.625rem;
+	font-weight: 600;
+	line-height: 2.7169rem;
+	letter-spacing: 0.105rem;
+	text-transform: capitalize;
+}
+
+.case-study-page__subtitle {
+	font-size: 1.5rem;
+	font-weight: 300;
+	line-height: 1.9875rem;
+}
+
+@media (max-width: $breakpoint-lg) {
+	.case-page__wrapper .navigation-path {
+		padding: 1.5rem 0 1.875rem 0;
+	}
+
+	.case-study-page__title-h1 {
+		width: 30.5625rem;
+		font-size: 2.3125rem;
+		font-weight: 600;
+		line-height: 3.525rem;
+		letter-spacing: 0.075rem;
+	}
+
+	.case-study-page__subtitle {
+		font-size: 1.25rem;
+		line-height: 1.6563rem;
+	}
+
+	.case-study-page__title-h2 {
+		font-size: 1.625rem;
+		line-height: 1.6819rem;
+		letter-spacing: 0.065rem;
+	}
+	.background-sections-roadmap-gallery {
+		@include background(
+			'/images/case-page/sections-roadmap-and-gallery-bg-768.svg',
+			center 1.6375rem,
+			no-repeat,
+			cover,
+			#e8eaf2
+		);
+	}
+}
+
+@media (max-width: $breakpoint-md) {
+	.case-page__wrapper .navigation-path {
+		padding: 1rem 0;
+	}
+
+	.case-study-page__title-h1 {
+		width: 21.4375rem;
+		font-size: 1.9375rem;
+		line-height: 2.82rem;
+		letter-spacing: 0.06rem;
+	}
+
+	.case-study-page__subtitle {
+		font-size: 1rem;
+		line-height: 1.325rem;
+	}
+
+	.background-sections-roadmap-gallery {
+		@include background(
+			'/images/case-page/sections-roadmap-and-gallery-bg-375.svg',
+			center 1.6375rem,
+			no-repeat,
+			cover,
+			#e8eaf2
+		);
+	}
+}
