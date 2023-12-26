@@ -1,6 +1,6 @@
 .consultation {
 	@include background(
-		'/images/sections/section-cases/cases-bg.svg',
+		'/images/home-page/sections/section-cases/cases-bg.svg',
 		right,
 		no-repeat,
 		100% 169%
@@ -11,7 +11,7 @@
 .consultation__inner {
 	position: relative;
 	@include background(
-		'/images/sections/section-testimonials/consultation-bg.svg',
+		'/images/home-page/sections/section-consultations/consultation-bg.svg',
 		center,
 		no-repeat,
 		contain
@@ -57,7 +57,7 @@
 
 @media (max-width: $breakpoint-lg) {
 	.consultation {
-		background-image: url('/images/sections/section-cases/cases-bg-768.svg');
+		background-image: url('/images/home-page/sections/section-cases/cases-bg-768.svg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -67,7 +67,7 @@
 
 	.consultation__inner {
 		@include background(
-			'/images/sections/section-testimonials/consultation-bg-768.svg',
+			'/images/home-page/sections/section-consultations/consultation-bg-768.svg',
 			center,
 			no-repeat,
 			contain
@@ -111,13 +111,13 @@
 
 @media (max-width: $breakpoint-md) {
 	.consultation {
-		background-image: url('/images/sections/section-testimonials/consultation-section-bg-375.svg');
+		background-image: url('/images/home-page/sections/section-consultations/consultation-section-bg-375.svg');
 		background-position: 50% 25%;
 		padding: 0;
 	}
 
 	.consultation__inner {
-		background-image: url('/images/sections/section-testimonials/consultation-bg-375.svg');
+		background-image: url('/images/home-page/sections/section-consultations/consultation-bg-375.svg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;

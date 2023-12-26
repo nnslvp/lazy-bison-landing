@@ -115,7 +115,7 @@
 }
 
 .section-challenge {
-	background: url('/images/chellenge-bg.png');
+	background: url('/images/case-page/chellenge-bg.png');
 }
 
 .section-challenge__inner {
@@ -172,7 +172,7 @@
 
 .section-value-driven {
 	@include background(
-		'/images/section-value-driven-bg-1440.svg',
+		'/images/case-page/section-value-driven-bg-1440.svg',
 		center center,
 		no-repeat,
 		cover
@@ -257,7 +257,7 @@
 
 .section-solution {
 	@include background(
-		'/images/section-solution-bg-1440.svg',
+		'/images/case-page/section-solution-bg-1440.svg',
 		center center,
 		no-repeat,
 		cover
@@ -394,7 +394,7 @@ tbody tr:last-child td:last-child {
 
 .section-roadmap {
 	@include background(
-		'/images/sections-roadmap-and-gallery-bg-1440.svg',
+		'/images/case-page/sections-roadmap-and-gallery-bg-1440.svg',
 		center 12%,
 		no-repeat,
 		cover
@@ -464,7 +464,7 @@ tbody tr:last-child td:last-child {
 
 .section-gallery {
 	@include background(
-		'/images/sections-roadmap-and-gallery-bg-1440.svg',
+		'/images/case-page/sections-roadmap-and-gallery-bg-1440.svg',
 		center 75%,
 		no-repeat,
 		cover
@@ -618,7 +618,7 @@ tbody tr:last-child td:last-child {
 
 	.section-value-driven {
 		@include background(
-			'/images/section-value-deiven-bg-768.svg',
+			'/images/case-page/section-value-deiven-bg-768.svg',
 			center center,
 			no-repeat,
 			cover
@@ -783,7 +783,7 @@ tbody tr:last-child td:last-child {
 
 	.section-roadmap {
 		@include background(
-			'/images/sections-roadmap-and-gallery-bg-768.svg',
+			'/images/case-page/sections-roadmap-and-gallery-bg-768.svg',
 			center 1rem,
 			no-repeat,
 			cover
@@ -841,7 +841,7 @@ tbody tr:last-child td:last-child {
 
 	.section-gallery {
 		@include background(
-			'/images/sections-roadmap-and-gallery-bg-768.svg',
+			'/images/case-page/sections-roadmap-and-gallery-bg-768.svg',
 			center -37.875rem,
 			no-repeat,
 			cover
@@ -945,7 +945,7 @@ tbody tr:last-child td:last-child {
 
 	.section-value-driven {
 		@include background(
-			'/images/section-value-driven-bg-375.svg',
+			'/images/case-page/section-value-driven-bg-375.svg',
 			0 34%,
 			no-repeat,
 			cover
@@ -1024,7 +1024,7 @@ tbody tr:last-child td:last-child {
 
 	.section-roadmap {
 		@include background(
-			'/images/sections-roadmap-and-gallery-bg-375.svg',
+			'/images/case-page/sections-roadmap-and-gallery-bg-375.svg',
 			center 0,
 			no-repeat,
 			cover
@@ -1056,7 +1056,7 @@ tbody tr:last-child td:last-child {
 
 	.section-gallery {
 		@include background(
-			'/images/sections-roadmap-and-gallery-bg-375.svg',
+			'/images/case-page/sections-roadmap-and-gallery-bg-375.svg',
 			center bottom,
 			no-repeat,
 			cover

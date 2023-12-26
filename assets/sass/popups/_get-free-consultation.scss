@@ -1,6 +1,6 @@
 .popup.popup__get-consultation {
 	@include background(
-		'/images/popup-bg.svg',
+		'/images/popup/popup-bg.svg',
 		center,
 		no-repeat,
 		cover,
@@ -12,7 +12,7 @@
 
 	&.submit-success {
 		@include background(
-			'/images/popup-form-success-form.svg',
+			'/images/popup/popup-form-success-form.svg',
 			center,
 			no-repeat,
 			cover,

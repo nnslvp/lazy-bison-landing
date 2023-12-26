@@ -1,6 +1,6 @@
 .services {
-	background-image: url('/images/bg-section-one.svg'),
-		url('/images/sections/section-services/services-bg.svg');
+	background-image: url('/images/home-page/sections/section-services/bg-section-services.svg'),
+		url('/images/home-page/sections/section-services/services-bg.svg');
 	background-position: center 7.3125rem, center center;
 	background-repeat: no-repeat, no-repeat;
 	background-size: contain, contain;
@@ -18,7 +18,7 @@
 
 .services-info__inner {
 	@include background(
-		'/images/sections/section-services/services-info-bg.svg',
+		'/images/home-page/sections/section-services/services-info-bg.svg',
 		top,
 		no-repeat,
 		contain
@@ -109,7 +109,7 @@
 @media (max-width: $breakpoint-lg) {
 	.services {
 		background: none;
-		background-image: url('/images/sections/section-services/services-bg-768.svg');
+		background-image: url('/images/home-page/sections/section-services/services-bg-768.svg');
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -130,7 +130,7 @@
 
 	.services-info__inner {
 		@include background(
-			'/images/sections/section-services/services-info-bg.svg',
+			'/images/home-page/sections/section-services/services-info-bg.svg',
 			inherit,
 			no-repeat,
 			contain
@@ -192,7 +192,7 @@
 @media (max-width: $breakpoint-md) {
 	.services {
 		@include background(
-			'/images/sections/section-services/services-info-bg-375.svg',
+			'/images/home-page/sections/section-services/services-info-bg-375.svg',
 			50% 4.375rem,
 			no-repeat,
 			contain

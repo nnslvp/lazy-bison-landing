@@ -1,4 +1,4 @@
-- avatar: /images/sections/section-testimonials/avatar-one.png
+- avatar: /images/testimonials-avatars/avatar-one.png
   name: Daniel Lee
   position: CFO of GreenHarvest Industries
   description: >
@@ -8,7 +8,7 @@
     ensured that our requirements were met flawlessly. Their guidance
     streamlined our processes and significantly enhanced our operational
     efficiency."
-- avatar: /images/sections/section-testimonials/avatar-two.png
+- avatar: /images/testimonials-avatars/avatar-two.png
   name: Alex Ramirez
   position: Co-Founder of Wanderlust Adventures
   description: >
@@ -17,12 +17,12 @@
     needed. Their  talented team not only built a feature-rich app but also 
     guided us through the entire process. Thanks to them, we  were able to hit
     the market faster than we ever thought  possible."
-- avatar: /images/sections/section-testimonials/avatar-four.png
+- avatar: /images/testimonials-avatars/avatar-four.png
   name: Jessica Martin
   position: CEO of TechNova Solutions
   description: >
     "Lazy Bison has been an absolute game-changer for us. Their expertise in Ruby on Rails combined with their dedicated development team model helped us launch our innovative SaaS platform in record time. Their commitment to quality and their seamless communication made them an invaluable extension of our team. We couldn't be happier with the results!"
-- avatar: /images/sections/section-testimonials/avatar-five.png
+- avatar: /images/testimonials-avatars/avatar-five.png
   name: Sarah Turner
   position: Founder of FitLife App
   description: >
@@ -31,7 +31,7 @@
     a  high-performance app but also provided insights that  elevated our user
     experience. With Lazy Bison, we were  able to deliver a mobile solution
     that keeps our users  engaged and motivated."
-- avatar: /images/sections/section-testimonials/avatar-three.png
+- avatar: /images/testimonials-avatars/avatar-three.png
   name: Christoph Collins
   position: CTO of HealthSync Innovations
   description: >

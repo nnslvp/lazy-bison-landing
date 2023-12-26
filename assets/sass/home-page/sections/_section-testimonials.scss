@@ -62,7 +62,7 @@
 
 .testimonials-background {
 	@include background(
-		'/images/sections/section-testimonials/testimonials-bg.svg',
+		'/images/home-page/sections/section-testimonials/testimonials-bg.svg',
 		0 2.5rem,
 		no-repeat,
 		cover,
@@ -117,7 +117,7 @@
 @media (max-width: $breakpoint-lg) {
 	.testimonials-background {
 		@include background(
-			'/images/sections/section-testimonials/testimonials-768px.svg',
+			'/images/home-page/sections/section-testimonials/testimonials-768px.svg',
 			0 0,
 			no-repeat,
 			contain,
