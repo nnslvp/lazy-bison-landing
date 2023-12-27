@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  {{ with hugo.IsProduction }}
   <!-- Google Tag Manager -->
   <script>
     (function (w, d, s, l, i) {
@@ -19,6 +20,7 @@
     })(window, document, "script", "dataLayer", "GTM-5DPTBV6Q");
   </script>
   <!-- End Google Tag Manager -->
+  {{ end }}
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,10 +60,12 @@
 </head>
 
 <body>
+  {{ with hugo.IsProduction }}
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DPTBV6Q" height="0" width="0"
       style="display: none; visibility: hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  {{ end }}
 
   {{/* Ваш код для начала страницы */}}
 
