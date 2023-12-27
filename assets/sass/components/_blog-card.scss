@@ -4,6 +4,11 @@
 	padding: 1.5rem;
 	border: 0.125rem solid #e8eaf2;
 	height: 100%;
+	transition: box-shadow 0.3s ease-in;
+}
+
+.card-blog:hover {
+	box-shadow: 0.5rem 0.5rem 1.25rem 0rem rgba(67, 67, 67, 0.2);
 }
 
 // black theme card
@@ -32,10 +37,6 @@
 	.card-blog
 	.card-blog__date {
 	color: $color-light-grey;
-}
-
-.card-blog:hover {
-	box-shadow: 0.5rem 0.5rem 1.25rem 0rem rgba(67, 67, 67, 0.2);
 }
 
 .card-blog__content {
