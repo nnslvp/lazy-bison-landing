@@ -2,7 +2,7 @@
 layout: case
 title: 'Expense Elegance: The Art of  Spending with Balancer'
 image: /images/cases/2023-11-29-case/case-preview-img.png
-case_categories: ['eCommerce', 'Healthcare']
+case_categories: ['fintech']
 date: 2023-12-06T17:18:00
 SEO:
   description: "Revolutionizing personal finance management with our FinTech Startup's mobile app. Tailored for North American and European markets, our app offers user-friendly, secure, and efficient financial solutions."
