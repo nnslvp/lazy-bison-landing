@@ -497,9 +497,8 @@ if (blogSlider && testimonialsSlider && casesSlider) {
 	})
 
 	initSwiperSlider(blogSlider, {
-		slidesPerView: 3,
+		slidesPerView: 'auto',
 		spaceBetween: 8,
-		autoHeight: true,
 		breakpoints: {
 			0: {
 				slidesPerView: 'auto',
