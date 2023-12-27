@@ -1,9 +1,9 @@
 .consultation {
 	@include background(
-		'/images/home-page/sections/section-cases/cases-bg.svg',
-		right,
+		'/images/home-page/sections/section-consultations/consultation-section-bg.svg',
+		center,
 		no-repeat,
-		100% 169%
+		cover
 	);
 	padding: 7.6875rem 0 7.5rem 0;
 }
