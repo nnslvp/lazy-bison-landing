@@ -63,10 +63,9 @@
 .testimonials-background {
 	@include background(
 		'/images/home-page/sections/section-testimonials/testimonials-bg.svg',
-		0 2.5rem,
+		0 1.5rem,
 		no-repeat,
-		cover,
-		$color-light-green
+		cover
 	);
 }
 
