@@ -176,7 +176,9 @@
 		border-bottom: 0.125rem solid #dcdcdc;
 		border-right: none;
 	}
+
 	.explore__item:nth-child(1) {
+		border-top: 0.125rem solid #dcdcdc;
 		max-width: 100%;
 		flex-basis: auto;
 		padding-left: 2rem;

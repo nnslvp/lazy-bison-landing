@@ -161,11 +161,11 @@ img {
 	margin: 0 auto;
 	position: relative;
 	@media (max-width: $breakpoint-lg) {
-		max-width: calc($container-width-768 + $container-padding * 2);
+		width: calc($container-width-768 + $container-padding * 2);
 	}
 
 	@media (max-width: $breakpoint-md) {
-		max-width: calc(22rem + $container-padding * 2);
+		width: calc(22rem + $container-padding * 2);
 	}
 }
 

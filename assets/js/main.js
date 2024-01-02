@@ -181,7 +181,7 @@ const animateLines = () => {
 				line.style.opacity = 1
 			})
 			verticalGrayLines.forEach(line => (line.style.opacity = 0))
-			grayLines.forEach(line => (line.style.opacity = 0))
+			// grayLines.forEach(line => (line.style.opacity = 0))
 		} else {
 			grayLines.forEach(line => (line.style.opacity = 1))
 			verticalGrayLines.forEach(line => (line.style.opacity = 1))
