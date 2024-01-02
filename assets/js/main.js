@@ -503,7 +503,7 @@ if (blogSlider && testimonialsSlider && casesSlider) {
 			},
 
 			768: {
-				slidesPerView: 'auto',
+				slidesPerView: 2,
 				spaceBetween: 16,
 			},
 
