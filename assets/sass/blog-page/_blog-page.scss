@@ -283,6 +283,10 @@ div.highlight pre {
 		padding: 2.5rem 1.5rem;
 	}
 
+	div.highlight code span {
+		width: 100%;
+	}
+
 	.section-recommendations__inner .blogs-list {
 		grid-template-columns: repeat(2, 21.75rem);
 	}
@@ -322,5 +326,11 @@ div.highlight pre {
 		.blogs-list
 		.blogs-item:not(:nth-child(-n + 2)) {
 		display: block;
+	}
+}
+
+@media (max-width: $breakpoint-sm) {
+	.blog-page__wrapper .container {
+		max-width: 21.4375rem;
 	}
 }

@@ -20,14 +20,14 @@ html {
 	scroll-behavior: smooth;
 
 	@media (width: $breakpoint-xl) {
-		font-size: 16px;
+		font-size: 1.111vw;
 	}
 	@media (width < $breakpoint-xl) {
 		font-size: 1.111vw;
 	}
 
 	@media (width: $breakpoint-lg) {
-		font-size: 16px;
+		font-size: 2.083vw;
 	}
 
 	@media (width < $breakpoint-lg) {
@@ -35,20 +35,20 @@ html {
 	}
 
 	@media (max-width: $breakpoint-md) {
-		font-size: 16px;
+		font-size: 3.765vw;
 	}
 
 	@media (max-width: $breakpoint-md) {
-		font-size: 16px;
+		font-size: 3.765vw;
 	}
 
-	@media (width: $breakpoint-sm) {
-		font-size: 16px;
-	}
+	// @media (width: $breakpoint-sm) {
+	// 	font-size: 4.267vw;
+	// }
 
-	@media (width < $breakpoint-sm) {
-		font-size: 4.267vw;
-	}
+	// @media (width < $breakpoint-sm) {
+	// 	font-size: 4.267vw;
+	// }
 }
 
 body {
@@ -150,6 +150,10 @@ img {
 	object-fit: cover;
 }
 
+* {
+	outline: 1px solid red;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -167,6 +171,10 @@ img {
 	@media (max-width: $breakpoint-md) {
 		width: calc(22rem + $container-padding * 2);
 	}
+
+	// @media (max-width: $breakpoint-sm) {
+	// 	width: calc(343px + $container-padding * 2);
+	// }
 }
 
 .heading--large {
