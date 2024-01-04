@@ -31,7 +31,7 @@
 }
 
 @media (max-width: $breakpoint-lg) {
-	.cases-page__wrapper  .navigation-path {
+	.cases-page__wrapper .navigation-path {
 		margin: 1.5rem 0 1.5rem 0;
 	}
 
@@ -50,6 +50,10 @@
 }
 
 @media (max-width: $breakpoint-md) {
+	.cases-page__wrapper .navigation-path {
+		margin: 1rem 0 1.5rem 0;
+	}
+
 	.cases-page__wrapper .cases-list {
 		grid-template-columns: repeat(auto-fill, minmax(21.4375rem, 1fr));
 	}
