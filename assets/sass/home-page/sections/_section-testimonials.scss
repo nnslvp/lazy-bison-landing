@@ -75,6 +75,11 @@
 	height: 40.3125rem;
 }
 
+.swiper.testimonials-swiper .swiper-pagination {
+	visibility: hidden;
+	pointer-events: none;
+}
+
 .testimonials__list > *:nth-child(n + 5) {
 	visibility: hidden;
 }
@@ -225,6 +230,11 @@
 		gap: 0;
 		overflow-x: hidden;
 		top: -2.5rem;
+	}
+
+	.swiper.testimonials-swiper .swiper-pagination {
+		visibility: visible;
+		pointer-events: initial;
 	}
 
 	.testimonials__list > *:nth-child(n + 5) {
