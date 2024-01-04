@@ -1,9 +1,9 @@
 .consultation {
 	@include background(
 		'/images/home-page/sections/section-consultations/consultation-section-bg.svg',
-		center,
+		0 1.5rem,
 		no-repeat,
-		cover
+		100% 100%
 	);
 	padding: 7.6875rem 0 7.5rem 0;
 }
@@ -60,7 +60,6 @@
 		background-image: url('/images/home-page/sections/section-cases/cases-bg-768.svg');
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: cover;
 		background-color: transparent;
 		padding: 6.8125rem 0 5rem 0;
 	}
@@ -112,7 +111,8 @@
 @media (max-width: $breakpoint-md) {
 	.consultation {
 		background-image: url('/images/home-page/sections/section-consultations/consultation-section-bg-375.svg');
-		background-position: 50% 25%;
+		background-position: center -7.25rem;
+		background-size: cover;
 		padding: 0 0 3.75rem 0;
 	}
 

@@ -226,13 +226,13 @@
 
 @media (max-width: $breakpoint-md) {
 	.lazy-bison {
-		@include background(
-			'/images/home-page/sections/section-lazy-bison/lazy-bison-bg-375.svg',
-			0 -3.175rem,
-			no-repeat,
-			100% 82%
-		);
-		margin-bottom: 4.625rem;
+		background-image: url('/images/home-page/sections/section-lazy-bison/lazy-bison-bg-375.svg'),
+			url('/images/home-page/sections/section-lazy-bison/stats-bg-375.svg');
+		background-position: 0 -3.175rem, left top;
+		background-repeat: no-repeat, no-repeat;
+		background-size: 100% 77%, 100% 182%;
+		margin: 0;
+		padding-bottom: 3.75rem;
 		padding-top: 3.375rem;
 	}
 
@@ -318,12 +318,7 @@
 	}
 
 	.lazy-bison__stats {
-		@include background(
-			'/images/home-page/sections/section-lazy-bison/stats-bg-375.svg',
-			center,
-			no-repeat,
-			cover
-		);
+		@include background(center, no-repeat, cover);
 		display: flex;
 		justify-content: flex-start;
 		flex-wrap: wrap;
