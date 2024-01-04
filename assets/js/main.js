@@ -464,7 +464,7 @@ burgerButton.addEventListener('click', toggleMenu)
 
 if (homePageWrapper) {
 	animateLines()
-	// animateTestimonials()
+	animateTestimonials()
 	dropdown()
 }
 
