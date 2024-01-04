@@ -179,6 +179,12 @@ input {
 	overflow: visible;
 }
 
+textarea,
+input {
+	/* 1 */
+	color: inherit;
+}
+
 /**
    * Remove the inheritance of text transform in Edge, Firefox, and IE.
    * 1. Remove the inheritance of text transform in Firefox.
