@@ -25,7 +25,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>{{.Params.title }}</title>
+  <title>{{.Params.title }} {{ if not .IsHome }}| Lazy-Bison {{ end }}</title>
+
   <meta name="description" content="{{ .Params.SEO.description }}">
   <meta name="keywords" content="{{ .Params.SEO.keywords }}">
   <meta name="author" content="{{ .Params.SEO.author }}">
