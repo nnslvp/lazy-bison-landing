@@ -13,3 +13,4 @@
 *.bak
 Thumbs.db
 .hugo_build
+.hugo_build.lock
