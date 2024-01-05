@@ -20,6 +20,8 @@ jobs:
         with:
           hugo-version: 0.121.0
           extended: true
+      - name: Install Dart Sass
+        run: npm install -g sass
       - name: Build
         run: hugo --minify
       - name: Deploy
