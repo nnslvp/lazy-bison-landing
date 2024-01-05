@@ -27,9 +27,7 @@ jobs:
           extended: true
       # Rest of your workflow steps...
       - name: Build
-        run: |
-          sass --version  # Check Dart Sass version after installation
-          hugo --minify
+        run: hugo --minify
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/master'
