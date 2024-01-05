@@ -1,0 +1,50 @@
+{{ if gt .Paginator.TotalPages 1 }}
+<div class="pagination-container">
+  <div class="pagination">
+    <!-- Предыдущая страница -->
+    {{ if .Paginator.HasPrev }}
+    <a class="prev" href="{{ .Paginator.Prev.URL }}">&lt;</a>
+    {{ else }}
+    <span class="prev disabled">&lt;</span>
+    {{ end }}
+
+    <!-- Номера страниц -->
+    {{ $currentPage := .Paginator.PageNumber }}
+    {{ $totalPages := .Paginator.TotalPages }}
+
+    {{ if gt $totalPages 1 }}
+    <!-- Эллипсисы в начале (если требуется) -->
+    {{ if gt $currentPage 2 }}
+    <a class="page-number" href="{{ $.Paginator.First.URL }}">1</a>
+    <span class="ellipses">...</span>
+    {{ end }}
+
+    <!-- Показать предыдущую страницу, если она не первая -->
+    {{ if gt $currentPage 1 }}
+    <a class="page-number" href="{{ $.Paginator.Prev.URL }}">{{ sub $currentPage 1 }}</a>
+    {{ end }}
+
+    <!-- Текущая страница -->
+    <span class="page-number page-number--active">{{ $currentPage }}</span>
+
+    <!-- Показать следующую страницу, если она не последняя -->
+    {{ if lt $currentPage $totalPages }}
+    <a class="page-number" href="{{ $.Paginator.Next.URL }}">{{ add $currentPage 1 }}</a>
+    {{ end }}
+
+    <!-- Эллипсисы в конце (если требуется) -->
+    {{ if lt $currentPage (sub $totalPages 1) }}
+    <span class="ellipses">...</span>
+    <a class=" page-number" href="{{ $.Paginator.Last.URL }}">{{ $totalPages }}</a>
+    {{ end }}
+    {{ end }}
+
+    <!-- Следующая страница -->
+    {{ if .Paginator.HasNext }}
+    <a class="next" href="{{ .Paginator.Next.URL }}">&gt;</a>
+    {{ else }}
+    <span class="next disabled">&gt;</span>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

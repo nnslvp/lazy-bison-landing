@@ -1,0 +1,10 @@
+<nav class="navigation-path">
+  <a class="navigation-path__link" href="{{ .Site.BaseURL }}">Home</a>
+  <span>/</span>
+
+  {{ $currentPath := split .Page.RelPermalink "/" }}
+
+
+  <a class="navigation-path__link navigation-path__link--active" href="{{ . }}">{{ index $currentPath  1 | title }}</a>
+
+</nav>

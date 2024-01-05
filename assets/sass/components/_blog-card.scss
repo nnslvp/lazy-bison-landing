@@ -1,0 +1,136 @@
+.card-blog {
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+	border: 0.125rem solid #e8eaf2;
+	height: 100%;
+	transition: box-shadow 0.3s ease-in;
+}
+
+.card-blog:hover {
+	box-shadow: 0.5rem 0.5rem 1.25rem 0rem rgba(67, 67, 67, 0.2);
+}
+
+// black theme card
+:where(.swiper-wrapper, .blogs-list) li:first-child .card-blog {
+	background-color: $color-black;
+}
+
+:where(.swiper-wrapper, .blogs-list) li:first-child .category {
+	background-color: $color-disable-grey;
+}
+
+:where(.swiper-wrapper, .blogs-list) li:first-child .card-blog__title {
+	color: $color-white;
+}
+
+:where(.swiper-wrapper, .blogs-list) li:first-child .card-blog__description {
+	color: $color-white;
+}
+
+:where(.swiper-wrapper, .blogs-list) li:first-child .card-blog .category {
+	background-color: $color-disable-grey;
+}
+
+:where(.swiper-wrapper, .blogs-list)
+	li:first-child
+	.card-blog
+	.card-blog__date {
+	color: $color-light-grey;
+}
+
+.card-blog__content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	margin-bottom: 1.25rem;
+}
+
+.card-blog__title {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 1.8125rem;
+	letter-spacing: 0.03em;
+}
+
+.card-blog__description {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+	text-align: left;
+	font-weight: 300;
+	line-height: 1.5625rem;
+	letter-spacing: 0.03em;
+	color: $color-base-dark-grey;
+}
+
+.card-blog .category {
+	background-color: $color-light-green;
+}
+
+.card-blog__date {
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	font-weight: 400;
+	line-height: 1.1875rem;
+	letter-spacing: 0em;
+	color: rgba(75, 75, 75, 1);
+}
+
+.card-blog__category-container {
+	display: flex;
+	gap: 0.3125rem;
+}
+
+.card-blog__btn {
+	display: inline-flex;
+	align-items: center;
+	align-self: start;
+	gap: 1.5rem;
+	@include text--small;
+	padding: 0.75rem 1rem;
+}
+
+@media (max-width: $breakpoint-lg) {
+	.section-card-blog__inner {
+		gap: 2.75rem;
+	}
+
+	.card-blog {
+		padding: 1.25rem;
+	}
+
+	.card-blog__title {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+	}
+
+	.card-blog__description {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3;
+		overflow: hidden;
+		text-align: left;
+		font-weight: 300;
+		line-height: 1.5625rem;
+		letter-spacing: 0.03em;
+	}
+}
+
+@media (max-width: $breakpoint-md) {
+	.card-blog__inner {
+		gap: 2.375rem;
+	}
+
+	.card-blog {
+		padding: 1rem;
+	}
+}

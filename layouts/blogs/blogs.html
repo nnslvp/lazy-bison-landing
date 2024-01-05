@@ -1,0 +1,51 @@
+{{ define "main" }}
+<div class="container">
+  <nav class="navigation-path">
+    <a class="navigation-path__link" href="{{ .Site.BaseURL }}">Home</a>
+    <span>/</span>
+    <a class="navigation-path__link navigation-path__link--active" href="{{ .Permalink }}">Blogs</a>
+  </nav>
+</div>
+
+<div class="blogs">
+  <div class="container">
+    <div class="section-case__inner">
+      <div class="section-title__inner">
+        <h1 class="section-title__heading">Blogs</h1>
+        <div class="section-title__arrow rectangle-arrow">
+          <i class="icon arrow-right-down-angle-square"></i>
+        </div>
+      </div>
+    </div>
+
+    <section class="categories">
+      <h2 class="case-page__title-h2 categories__title">Categories</h2>
+      <ul class="categories-list ">
+        <li class="categories-item ">
+          <a class="category category--active" href="/blogs">All</a>
+        </li>
+        {{ range .Site.Taxonomies.blog_categories }}
+        <li class="categories-item ">
+          <a class="category " href="{{ .Page.Permalink }}">#{{ .Page.Title  }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </section>
+
+
+
+    {{/* Пагинация */}}
+
+    {{ $paginator := .Paginate (where .Pages "Type" "blogs") .Site.Params.blogs_paginate }}
+    <ul class="blogs-list">
+      {{ range $paginator.Pages }}
+      <li class="blogs-item">
+        {{ partial "blog-card.html" . }}
+      </li>
+      {{ end }}
+    </ul>
+    {{ partial "pagination.html" . }}
+  </div>
+
+</div>
+{{ end }}

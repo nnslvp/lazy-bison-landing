@@ -1,0 +1,356 @@
+.lazy-bison {
+	flex: 1 1 auto;
+}
+
+.lazy-bison__inner {
+	padding-top: 2.875rem;
+	background-color: #ffffff;
+}
+
+.lazy-bison__title {
+	max-width: 69.875rem;
+	margin: 0 0 0 6.75rem;
+}
+
+.lazy-bison__title span:nth-child(2) {
+	display: inline-block;
+	padding-left: 11%;
+}
+
+.lazy-bison-tittle__text {
+	display: flex;
+}
+
+.lazy-bison__title .lazy-bison-title__text:nth-child(2) {
+	position: relative;
+}
+
+.lazy-bison__text--highlight {
+	background-color: inherit;
+	position: relative;
+	z-index: 1;
+	margin: 0 0.1875rem;
+	color: $color-text-black;
+	&::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 0;
+		bottom: 0.6875rem;
+		width: 0;
+		height: 4.75rem;
+		background-color: $color-neon-green;
+		animation: width $duration-text--highlight $transition-easing forwards;
+
+		@keyframes width {
+			100% {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.lazy-bison-description__inner {
+	display: flex;
+	flex-direction: column;
+}
+
+.lazy-bison-description__info {
+	display: flex;
+	@include background(
+		'/images/home-page/sections/section-lazy-bison/lazy-bison-bg-1440.svg',
+		bottom right,
+		no-repeat,
+		contain
+	);
+	padding-top: 6.1875rem;
+	margin-bottom: 2.25rem;
+
+	.gray-line {
+		max-width: 32rem;
+	}
+
+	.planet-text__inner {
+		padding-top: 1.4375rem;
+		flex-basis: 28rem;
+		display: flex;
+		justify-content: end;
+	}
+
+	.spin-text-circle {
+		width: auto;
+		height: auto;
+	}
+
+	.spin-text-circle__circle {
+		width: 9.0625rem;
+		height: 9.0625rem;
+	}
+
+	.spin-text-circle__text {
+		position: absolute;
+		right: 4.5rem;
+		width: 10.6469rem;
+		height: 10.6425rem;
+	}
+}
+
+.lazy-bison-description__text {
+	max-width: 32rem;
+	margin: 1.5rem 0 4rem 0;
+}
+
+.lazy-bison__stats {
+	display: flex;
+	justify-content: end;
+	padding-right: 2.9375rem;
+
+	.spin-text-circle {
+		display: none;
+	}
+}
+
+.lazy-bison__stats {
+	gap: 6.3438rem;
+}
+
+.lazy-bison__stats-text {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 4.1875rem;
+	letter-spacing: 0.03em;
+}
+
+@media (max-width: $breakpoint-lg) {
+	.lazy-bison-description__info {
+		background: none;
+	}
+
+	.lazy-bison {
+		@include background(
+			'/images/home-page/sections/section-lazy-bison/lazy-bison-bg-768.svg',
+			0 2rem,
+			no-repeat,
+			contain
+		);
+	}
+
+	.lazy-bison__inner {
+		background: inherit;
+		padding-top: 1.75rem;
+
+		.gray-line {
+			display: none;
+		}
+	}
+
+	.lazy-bison__title {
+		font-size: 3.6516rem;
+		line-height: 4.375rem;
+		margin: 0;
+	}
+
+	.lazy-bison__text--highlight {
+		&::after {
+			height: 3.25rem;
+		}
+	}
+
+	.img-planets {
+		display: none;
+	}
+
+	.gray-line {
+		display: none;
+	}
+
+	.lazy-bison-description__info {
+		flex-direction: column-reverse;
+		flex-basis: 0;
+		padding-top: 0;
+		padding-bottom: 1.9375rem;
+
+		.planet-text__inner {
+			flex-basis: 0;
+			justify-content: flex-start;
+			padding: 2.4375rem 0 0 7.25rem;
+			margin-bottom: 3.125rem;
+		}
+
+		.spin-text-circle {
+			position: relative;
+		}
+
+		.spin-text-circle__text {
+			right: 3.75rem;
+			width: 8.9844rem;
+			height: 8.99rem;
+		}
+
+		.spin-text-circle__circle {
+			width: 7.625rem;
+			height: 7.625rem;
+		}
+	}
+
+	.lazy-bison-description__text {
+		max-width: 31.0625rem;
+		margin: 0 0 3.125rem 0;
+		font-size: 1.25rem;
+		font-weight: 425;
+		line-height: 1.75rem;
+		letter-spacing: 0em;
+	}
+
+	.lazy-bison__stats {
+		justify-content: space-around;
+		gap: 0;
+		padding: 0;
+		flex-wrap: wrap;
+	}
+
+	.lazy-bison__stats-text {
+		font-size: 2.75rem;
+		line-height: 3.85rem;
+		gap: 0;
+	}
+
+	.lazy-bison__stats-subtext {
+		font-size: 1rem;
+		line-height: 1.375rem;
+	}
+}
+
+@media (max-width: $breakpoint-md) {
+	.lazy-bison {
+		background-image: url('/images/home-page/sections/section-lazy-bison/lazy-bison-bg-375.svg'),
+			url('/images/home-page/sections/section-lazy-bison/stats-bg-375.svg');
+		background-position: 0 -3.175rem, left top;
+		background-repeat: no-repeat, no-repeat;
+		background-size: 100% 77%, 100% 182%;
+		margin: 0;
+		padding-bottom: 3.75rem;
+		padding-top: 3.375rem;
+	}
+
+	.lazy-bison__inner {
+		padding-top: 1.3125rem;
+		padding-bottom: 0;
+		background: none;
+
+		.gray-line {
+			display: none;
+		}
+	}
+
+	.lazy-bison-title__text:last-child {
+		padding-right: 1.1875rem;
+	}
+
+	.lazy-bison-description__info {
+		.spin-text-circle {
+			position: relative;
+			left: 3.5625rem;
+			top: 2.1875rem;
+		}
+
+		.spin-text-circle__circle {
+			width: 4.375rem;
+			height: 4.375rem;
+		}
+
+		.spin-text-circle__text {
+			width: 5rem;
+			height: 5rem;
+			right: 1.75rem;
+		}
+	}
+
+	.lazy-bison__title {
+		font-size: 2.625rem;
+		line-height: 3.125rem;
+		letter-spacing: 0.03em;
+
+		.lazy-bison-title__text:last-child {
+			display: block;
+			text-align: end;
+		}
+	}
+
+	.lazy-bison__text--highlight {
+		&::after {
+			height: 2.1875rem;
+			bottom: 0.5rem;
+		}
+	}
+
+	.img-planets {
+		display: none;
+	}
+
+	.gray-line {
+		display: none;
+	}
+
+	.lazy-bison-description__info {
+		padding-bottom: 5.375rem;
+
+		.planet-text__inner {
+			padding: 0;
+			margin-bottom: 3.5rem;
+		}
+	}
+
+	.lazy-bison-description__text {
+		max-width: 20.9375rem;
+		padding-top: 0;
+		margin: 0 0 3.125rem 0;
+		font-size: 1.125rem;
+		line-height: 1.5625rem;
+		letter-spacing: 0em;
+	}
+
+	.lazy-bison-description__btn {
+		margin: 0 auto;
+	}
+
+	.lazy-bison__stats {
+		@include background(center, no-repeat, cover);
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		gap: 2.8125rem 3.25rem;
+		flex-basis: auto;
+		position: relative;
+
+		.spin-text-circle {
+			display: flex;
+			bottom: 1.25rem;
+			right: 3.75rem;
+		}
+
+		.spin-text-circle__circle {
+			width: 4.25rem;
+			height: 4.25rem;
+		}
+
+		.spin-text-circle__text {
+			width: 5.9375rem;
+			height: 6.0675rem;
+		}
+	}
+
+	.lazy-bison__stats-text {
+		font-size: 2.625rem;
+		line-height: 3.125rem;
+	}
+
+	.lazy-bison__stats-subtext {
+		font-size: 1rem;
+		line-height: 1.375rem;
+		letter-spacing: 0.03em;
+	}
+}

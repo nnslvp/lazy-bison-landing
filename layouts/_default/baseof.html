@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{ with hugo.IsProduction }}
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        "gtm.start": new Date().getTime(),
+        event: "gtm.js"
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-5DPTBV6Q");
+  </script>
+  <!-- End Google Tag Manager -->
+  {{ end }}
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>{{.Params.title }} {{ if not .IsHome }}| Lazy-Bison {{ end }}</title>
+
+  <meta name="description" content="{{ .Params.SEO.description }}">
+  <meta name="keywords" content="{{ .Params.SEO.keywords }}">
+  <meta name="author" content="{{ .Params.SEO.author }}">
+
+  <meta property="og:title" content="Lazy Bison - Your Trusted Partner in Ruby on Rails Development" />
+  <meta property="og:description"
+    content="We provide top-notch Ruby on Rails development services tailored to meet the unique needs of start-ups and SMEs." />
+  <meta property="og:image" content="https://thelazybison.com/assets/images/logo_h.png" />
+  <meta property="og:url" content="https://thelazybison.com" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lazy Bison - Expert Ruby on Rails Development" />
+  <meta name="twitter:description"
+    content="Offering reliable and scalable Ruby on Rails development services for start-ups and SMEs." />
+  <meta name="twitter:image" content="https://thelazybison.com/assets/images/logo_h.png" />
+
+  <link rel="icon" type="image/png" href="/icons/favicon.svg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  {{ $opts := dict
+  "transpiler" "dartsass"
+  "targetPath" "css/style.css"
+  "vars" site.Params.styles
+}}
+  {{ with resources.Get "sass/main.scss" | toCSS $opts | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+  {{ end }}
+
+</head>
+
+<body>
+  {{ with hugo.IsProduction }}
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src=" https://www.googletagmanager.com/ns.html?id=GTM-5DPTBV6Q" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  {{ end }}
+
+  {{/* Ваш код для начала страницы */}}
+
+  {{/* Фрагмент для определения класса обертки на основе URL страницы */}}
+  {{ $url_parts :=  .Permalink  }}
+  {{ $last_part := path.BaseName $url_parts}}
+  {{ $wrapper_class := "" }}
+
+  {{ if strings.Contains $last_part "cases" }}
+  {{ $wrapper_class = "cases-page__wrapper" }}
+  {{ else if strings.Contains $last_part "case" }}
+  {{ $wrapper_class = "case-page__wrapper" }}
+  {{ else if strings.Contains $url_parts "case_categories" }}
+  {{ $wrapper_class = "cases-page__wrapper" }}
+  {{ else if strings.Contains $last_part "blogs" }}
+  {{ $wrapper_class = "blogs-page__wrapper" }}
+  {{ else if strings.Contains $last_part "blog" }}
+  {{ $wrapper_class = "blog-page__wrapper" }}
+  {{ else if strings.Contains $url_parts "blog_categories" }}
+  {{ $wrapper_class = "blogs-page__wrapper" }}
+  {{ else }}
+  {{ $wrapper_class = "home-page__wrapper" }}
+  {{ end }}
+
+  {{ partial "header.html" . }}
+
+  <main>
+    <div class="wrapper {{ $wrapper_class }}">
+      {{ block "main" . }}
+
+      {{ end }}
+    </div>
+  </main>
+  {{ partial "footer.html" . }}
+  {{ partial "popup-get-consultation.html" . }}
+  <div class="overlay"></div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  {{ $js := resources.Get "js/main.js" | resources.Minify }}
+  <script src="{{ $js.Permalink }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+.section-gallery__inner {
+	position: relative;
+	padding: 3.75rem 0 5.6875rem 0;
+}
+
+.section-gallery .case-study-page__title-h2 {
+	text-align: center;
+	margin-bottom: 1.5313rem;
+}
+
+.gallery-slider {
+	position: relative;
+	width: 52.0625rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	margin-bottom: 2.75rem;
+}
+
+.gallery-slider .swiper-pagination {
+	position: initial;
+}
+
+.gallery-slider .swiper-slide {
+	display: flex;
+	justify-content: center;
+}
+
+.section-gallery .swiper-btn-next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	right: 0;
+}
+
+.section-gallery .swiper-btn-prev {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	left: 0rem;
+}
+
+.section-gallery .get-consultation-btn {
+	width: 100%;
+	padding: 1.25rem 0;
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.section-gallery .swiper-button-disabled {
+	filter: opacity(0.5);
+}
+
+@media (max-width: $breakpoint-lg) {
+	.section-gallery__inner {
+		padding: 2.125rem 0 3.75rem 0;
+	}
+
+	.section-gallery .case-study-page__title-h2 {
+		margin-bottom: 1.4375rem;
+	}
+
+	.gallery-slider {
+		width: 36.6875rem;
+		gap: 1rem;
+		margin-bottom: 1.5rem;
+	}
+}
+
+@media (max-width: $breakpoint-md) {
+	.section-gallery__inner {
+		padding: 1.875rem 0 2.5rem 0;
+	}
+
+	.section-gallery .case-study-page__title-h2 {
+		margin-bottom: 1.25rem;
+	}
+
+	.gallery-slider {
+		width: 100%;
+		gap: 1rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.swiper-btn-next,
+	.swiper-btn-prev {
+		display: none;
+	}
+}

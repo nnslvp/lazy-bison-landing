@@ -1,0 +1,26 @@
+<section id="cases" class="cases">
+  <div class="container">
+    <div class="section-title__inner">
+      <h2 class="section-title__heading">Cases</h2>
+      <div class="section-title__arrow rectangle-arrow">
+        <i class="icon arrow-right-down-angle-square"></i>
+      </div>
+    </div>
+    <div class="cases__inner">
+      <div class="spin-text-circle">
+        <i class="icon spin-text-circle__text"></i>
+        <i class="icon spin-text-circle__circle"></i>
+      </div>
+      <div class="swiper cases-slider" data-mobile="false">
+        <ul class="swiper-wrapper">
+          {{ range where .Site.RegularPages "Type" "cases" }}
+          <li class="swiper-slide">
+            {{ partial "case-card.html" . }}
+          </li>
+          {{ end }}
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>

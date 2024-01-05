@@ -1,0 +1,52 @@
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-wrapper {
+	align-items: center;
+}
+
+.swiper-slide {
+	width: auto;
+	height: auto;
+}
+
+.slider-pagination {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	gap: 0.4375rem;
+}
+
+.swiper-pagination-bullet {
+	width: 1.25rem;
+	height: 1.25rem;
+	background-color: #dcdcdc;
+	margin: 0;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: $color-primary-violet;
+}
+
+.case-study-page__wrapper .slider-pagination {
+	gap: 0.75rem;
+}
+
+.case-study-page__wrapper .swiper-pagination-bullet {
+	width: 0.75rem;
+	height: 0.75rem;
+	background-color: #dcdcdc;
+}
+
+.case-study-page__wrapper .swiper-pagination-bullet-active {
+	background-color: $color-primary-violet;
+}
+
+@media (max-width: $breakpoint-lg) {
+	.swiper-pagination-bullet {
+		width: 0.75rem;
+		height: 0.75rem;
+	}
+}
