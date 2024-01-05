@@ -1,6 +1,5 @@
 baseURL = "https://thelazybison.com/"
 languageCode = "en-us"
-title = "Мой Блог"
 
 [params]
   blogs_paginate = 4
