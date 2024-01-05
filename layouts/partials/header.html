@@ -2,7 +2,7 @@
      <div class="container">
        <div class="header__inner">
          <div class="header__logo">
-           <object class="logo" title="Lazy Bison logo" type="image/svg+xml" data="/icons/logo.svg"></object>
+           {{ partial "logo.html" .}}
          </div>
          {{ partial "navigation.html" .}}
          <button class="button header__contact-us-button  button__text--medium button--secondary get-consultation-btn">

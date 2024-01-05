@@ -22,33 +22,14 @@ html {
 	@media (width: $breakpoint-xl) {
 		font-size: 1.111vw;
 	}
-	@media (width < $breakpoint-xl) {
-		font-size: 1.111vw;
-	}
 
 	@media (width: $breakpoint-lg) {
 		font-size: 2.083vw;
 	}
 
-	@media (width < $breakpoint-lg) {
-		font-size: 2.083vw;
-	}
-
 	@media (max-width: $breakpoint-md) {
 		font-size: 3.765vw;
 	}
-
-	@media (max-width: $breakpoint-md) {
-		font-size: 3.765vw;
-	}
-
-	// @media (width: $breakpoint-sm) {
-	// 	font-size: 4.267vw;
-	// }
-
-	// @media (width < $breakpoint-sm) {
-	// 	font-size: 4.267vw;
-	// }
 }
 
 body {
@@ -169,10 +150,10 @@ img {
 	@media (max-width: $breakpoint-md) {
 		width: calc(22rem + $container-padding * 2);
 	}
+}
 
-	// @media (max-width: $breakpoint-sm) {
-	// 	width: calc(343px + $container-padding * 2);
-	// }
+.logo-img {
+	object-fit: contain;
 }
 
 .heading--large {
