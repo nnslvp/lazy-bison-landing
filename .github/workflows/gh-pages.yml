@@ -1,5 +1,5 @@
 name: GitHub Pages
-'on':
+on:
   push:
     branches:
       - master
@@ -15,18 +15,21 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
+      - name: Install Dart Sass via Snap
+        run: snap install dart-sass-embedded
       - uses: actions/setup-node@v4
         with:
           node-version: 18
-      - name: Install Dart Sass
-        run: npm install -g sass
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 0.121.0
           extended: true
+      # Rest of your workflow steps...
       - name: Build
-        run: hugo --minify
+        run: |
+          sass --version  # Check Dart Sass version after installation
+          hugo --minify
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/master'
