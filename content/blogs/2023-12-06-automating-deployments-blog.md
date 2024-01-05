@@ -17,7 +17,7 @@ description: >
   complexities. In this article, we'll delve into the
   key features of Kamal and share insights from our own
   hands-on experience.
-blog_categories: ['eCommerce', 'real estate']
+blog_categories: ['DevOps']
 ---
 
 ## Introduction: Simplify Your Deployments
