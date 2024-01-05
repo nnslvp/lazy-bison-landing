@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://thelazybison.com/"
 languageCode = "en-us"
 title = "Мой Блог"
 
@@ -9,8 +9,6 @@ title = "Мой Блог"
 [taxonomies]
   blog_category = "blog_categories"
   case_category = "case_categories"
-
-
 
 [[menu.main]]
     identifier = "services"
