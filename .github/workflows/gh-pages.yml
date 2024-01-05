@@ -16,7 +16,7 @@ jobs:
           submodules: true
           fetch-depth: 0
       - name: Install Dart Sass via Snap
-        run: snap install dart-sass-embedded
+        run: sudo snap install dart-sass-embedded
       - uses: actions/setup-node@v4
         with:
           node-version: 18
