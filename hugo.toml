@@ -23,7 +23,7 @@ languageCode = "en-us"
 
 [[menu.main]]
     identifier = "blogs"
-    name = "blogs"
+    name = "blog"
     url = "/blogs"
     weight = 3
 
