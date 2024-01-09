@@ -1,12 +1,14 @@
 .section-value-driven {
 	@include background(
 		'/images/case-page/section-value-driven-bg-1440.svg',
-		center center,
+		center bottom,
 		no-repeat,
-		cover
+		contain,
+		#f0f2f7
 	);
 	@media (min-width: 1441px) {
-		background-position: 0 -3.875rem;
+		background-position: 0 0;
+		background-size: cover;
 	}
 }
 
@@ -15,6 +17,7 @@
 }
 
 .section-value-driven__inner .case-study-page__subtitle {
+	width: 56.5rem;
 	margin-bottom: 1.25rem;
 }
 
