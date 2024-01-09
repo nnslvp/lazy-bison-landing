@@ -19,11 +19,11 @@ html {
 	font-size: $root-font-size;
 	scroll-behavior: smooth;
 
-	@media (width: $breakpoint-xl) {
+	@media (max-width: $breakpoint-xl) {
 		font-size: 1.111vw;
 	}
 
-	@media (width: $breakpoint-lg) {
+	@media (max-width: $breakpoint-lg) {
 		font-size: 2.083vw;
 	}
 
