@@ -25,6 +25,10 @@
           </h1>
         </div>
         <div class="top-section-img__container">
+          {{ $image := resources.Get .Params.image }}
+          {{ $smallImage := $image.Resize "315x315" }}
+          {{ $mediumImage := $image.Resize "206x206" }}
+          {{ $largeImage := $image.Resize "346x346" }}
           <img class="case__img" src="{{.Params.image}}" alt="Case Image">
         </div>
       </div>
