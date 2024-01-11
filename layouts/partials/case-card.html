@@ -1,8 +1,15 @@
-<!-- case-card.html -->
-<article class="case-card">
-  <a href="{{ .Permalink }}">
+<a href="{{ .Permalink }}">
+  <article class="case-card">
     <div class="case-card__img-wrapper">
-      <img src="{{ .Params.image }}" class="case-card-img" alt="Case Image" />
+      {{ $image := resources.Get .Params.image }}
+      {{ $mediumImage := $image.Resize "320x300 webp" }}
+      {{ $largeImage := $image.Resize "620x405 webp" }}
+      <picture>
+        <source type="image/webp" media="(max-width:768px)" srcset="{{$mediumImage.RelPermalink}}">
+        <source type="image/webp" media="(max-width:1440px)" srcset="{{$largeImage.RelPermalink}}">
+        <source type="image/webp" media="(min-width:1441px)" srcset="{{$largeImage.RelPermalink}}">
+        <img loading="lazy" src="{{ $image.RelPermalink }}" alt="Case-Image">
+      </picture>
     </div>
     <footer class="case-card__footer">
       <h3 class="case-card__title">
@@ -12,5 +19,5 @@
         <i class="icon arrow-right-top-angle-square"></i>
       </div>
     </footer>
-  </a>
-</article>
+  </article>
+</a>

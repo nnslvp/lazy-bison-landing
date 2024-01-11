@@ -8,8 +8,8 @@ SEO:
   keywords: 'Kamal, GitHub Actions, Web App Deployment, Automation, CI/CD Pipeline, Ruby, Ruby on Rails, Developers'
   author: 'Lazy Bison'
 
-avatar: '/images/blogs/2023-11-29-blog/author-blog.svg'
-image: '/images/blogs/2023-11-29-blog/blog-preview-img.png'
+avatar: '/images/blogs/2023-12-06-automating-deployments-blog/author-blog.svg'
+image: '/images/blogs/2023-12-06-automating-deployments-blog/blog-preview-img.png'
 description: >
   Navigating the intricacies of web application
   deployment can be a daunting task. Enter Kamal—a

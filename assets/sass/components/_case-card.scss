@@ -7,17 +7,18 @@
 	background-color: $color-white;
 	transition: box-shadow 0.3s ease-in, border-radius 0.3s ease;
 
-	.case-card__img-wrapper {
-		flex: 1;
-	}
-
 	.case-card__footer {
 		display: flex;
 		gap: 1.25rem;
-		padding: 2.5rem;
+		padding: 1.875rem 2.5rem 2.5rem 40px;
 	}
 
 	.case-card__title {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+		height: 3.625rem;
 		width: 30rem;
 		font-size: 1.5rem;
 		font-weight: 600;
@@ -30,6 +31,10 @@
 		height: 4.5rem;
 		opacity: 0;
 		transition: opacity 0.3s ease-in;
+	}
+
+	.case-card__img-wrapper {
+		height: 25.3125rem;
 	}
 }
 
@@ -54,11 +59,8 @@
 		}
 
 		.case-card__title {
-			display: -webkit-box;
-			overflow: hidden;
-			-webkit-box-orient: vertical;
-			-webkit-line-clamp: 2;
 			width: 13.25rem;
+			height: 3rem;
 			font-size: 1.25rem;
 			line-height: 1.5rem;
 			letter-spacing: 0.03em;
@@ -68,6 +70,10 @@
 			width: 3rem;
 			height: 3rem;
 			opacity: 1;
+		}
+
+		.case-card__img-wrapper {
+			height: 18.75rem;
 		}
 	}
 

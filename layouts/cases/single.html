@@ -25,7 +25,17 @@
           </h1>
         </div>
         <div class="top-section-img__container">
-          <img class="case__img" src="{{.Params.image}}" alt="Case Image">
+          {{ $image := resources.Get .Params.image }}
+          {{ $smallImage := $image.Resize "206x206 webp" }}
+          {{ $mediumImage := $image.Resize "343x343 webp" }}
+          {{ $largeImage := $image.Resize "315x315 webp" }}
+          <picture>
+            <source type="image/webp" media="(max-width:425px)" srcset="{{$mediumImage.RelPermalink}}">
+            <source type="image/webp" media="(max-width:768px)" srcset="{{$smallImage.RelPermalink}}">
+            <source type="image/webp" media="(max-width:1440px)" srcset="{{$largeImage.RelPermalink}}">
+            <source type="image/webp" media="(min-width:1441px)" srcset="{{$largeImage.RelPermalink}}">
+            <img src="{{ $image.RelPermalink }}" alt="Case-Image">
+          </picture>
         </div>
       </div>
     </div>
@@ -108,6 +118,10 @@
       <h2 class="case-study-page__title-h2">Value-Driven Results</h2>
       <p class="case-study-page__subtitle">{{.Params.value_driven_results.subtitle}}</p>
       <div class="value-driven-lists__wrapper">
+        <div class="spin-text-circle">
+          <i class="icon spin-text-circle__text"></i>
+          <i class="icon spin-text-circle__circle spin-text-circle__circle--gradient-blue-two"></i>
+        </div>
         <ul class="value-driven-list">
           <li class="value-driven-item">
             <i class="icon arrow-right-down-angle-square"></i>
@@ -131,6 +145,7 @@
           </li>
         </ul>
         <ul class="value-driven-list">
+
           <li class="value-driven-item">
             <i class="icon arrow-right-down-angle-square"></i>
             <p class="value-driven-item__text">Language barriers were overcome with the auto-translate feature.
@@ -258,7 +273,9 @@
             {{ range .Params.gallery_images }}
             <li class="swiper-slide">
               <div class="swiper-slide__img-container">
-                <img src="{{ .image_path }}" alt="{{ .caption }}">
+                {{ $image := resources.Get .image_path  }}
+                {{ $WEBPImage := $image.Process "webp" }}
+                <img src="{{ $WEBPImage.RelPermalink }}" alt="{{ .caption }}">
               </div>
             </li>
             {{ end }}

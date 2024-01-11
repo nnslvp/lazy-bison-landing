@@ -30,7 +30,17 @@
             {{ end }}
           </ul>
           <div class="blog-post-image__wrapper">
-            <img class="blog-post-image" src="{{.Params.Image}}" alt="Blog Image">
+            {{ $image := resources.Get .Params.image }}
+            {{ $smallImage := $image.Resize "343x146 q100 webp" }}
+            {{ $mediumImage := $image.Resize "716x304 q100 webp" }}
+            {{ $largeImage := $image.Resize "940x400 webp" }}
+            <picture>
+              <source type="image/webp" media="(max-width:425px)" srcset="{{$smallImage.RelPermalink}}">
+              <source type="image/webp" media="(max-width:768px)" srcset="{{$mediumImage.RelPermalink}}">
+              <source type="image/webp" media="(max-width:1440px)" srcset="{{$largeImage.RelPermalink}}">
+              <source type="image/webp" media="(min-width:1441px)" srcset="{{$largeImage.RelPermalink}}">
+              <img class="blog-post-image" src="{{ $image.RelPermalink }}" alt="Blog Image">
+            </picture>
           </div>
         </header>
         <section class="full-info-blog__section">
