@@ -16,7 +16,12 @@
           <h1 class="blog-page__title-h1 ">{{.Params.title}}</h1>
           <div class="author-time-blog">
             <div class="author">
-              <img src="{{.Params.avatar}}" class="author__avatar" alt="author"></img>
+              {{ $imageAvatar := resources.Get .Params.avatar }}
+              {{ $imageAvatarWebp := $imageAvatar.Resize "20x20 q100  webp" }}
+              <picture>
+                <source type="image/webp" srcset="{{$imageAvatarWebp.RelPermalink}}">
+                <img src="{{$imageAvatar.RelPermalink}}" class="author__avatar" alt="author"></img>
+              </picture>
               <p class="author__name">{{.Params.author}}</p>
             </div>
             <span>|</span>
