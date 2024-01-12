@@ -27,10 +27,8 @@
 }
 
 .gallery-slider .swiper-slide__img-container {
-	width: 96%;
 	overflow: hidden;
 	border-radius: 0.75rem;
-	box-shadow: 5px 9px 12px 0px rgba(0, 0, 0, 0.13);
 }
 
 .section-gallery .swiper-btn-next {
@@ -91,10 +89,6 @@
 		width: 100%;
 		gap: 1rem;
 		margin-bottom: 1.5rem;
-	}
-
-	.gallery-slider .swiper-slide__img-container {
-		width: 92%;
 	}
 
 	.swiper-btn-next,
