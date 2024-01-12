@@ -66,16 +66,16 @@ Here's a sample `.github/workflows/staging_deploy.yml` based on your configurati
 name: "Staging deploy"
 
 on:
-push:
-branches: [ 'develop' ]
+  push:
+    branches: [ 'develop' ]
 
 concurrency: staging_environment
 
 jobs:
-deploy:
-runs-on: ubuntu-20.04
+  deploy:
+    runs-on: ubuntu-20.04
 
-     # change it
+    # change it
     env:
       RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
       DOCKER_REGISTRY_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
