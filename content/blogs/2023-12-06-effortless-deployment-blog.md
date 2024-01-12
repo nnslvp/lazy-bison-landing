@@ -53,7 +53,6 @@ alias kamal="docker run -it --rm -v '${PWD}:/workdir' -v '/run/host-services/ssh
 
 ```ruby
 source 'https://rubygems.org'
-
 gem 'kamal', '~> 1.0.0'
 ```
 

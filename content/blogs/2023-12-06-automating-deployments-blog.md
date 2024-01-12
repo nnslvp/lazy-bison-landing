@@ -63,11 +63,11 @@ Learn how to integrate Kamal into your GitHub Actions workflow for consistent an
 Here's a sample `.github/workflows/staging_deploy.yml` based on your configuration:
 
 ```yml
-name: "Staging deploy"
+name: 'Staging deploy'
 
 on:
   push:
-    branches: [ 'develop' ]
+    branches: ['develop']
 
 concurrency: staging_environment
 
@@ -105,14 +105,11 @@ jobs:
 
       - name: Update server envs
         run: kamal env push -d staging
-       # run: ./bin/kamal env push -d staging
+      # run: ./bin/kamal env push -d staging
 
       - name: Deploy
         run: kamal deploy -d staging
-       # run: ./bin/kamal deploy -d staging
-
-
-
+    # run: ./bin/kamal deploy -d staging
 ```
 
 ## Conclusion: Enhance Your CI/CD Pipeline with Kamal and GitHub Actions

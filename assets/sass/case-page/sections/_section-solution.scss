@@ -3,8 +3,13 @@
 		'/images/case-page/section-solution-bg-1440.svg',
 		center center,
 		no-repeat,
-		cover
+		cover,
+		#f0f2f7
 	);
+}
+
+.case-page__wrapper .section-solution {
+	padding-bottom: 3.75rem;
 }
 
 .section-solution .case-study-page__title-h2 {
@@ -100,6 +105,10 @@ tbody tr:last-child td:last-child {
 }
 
 @media (max-width: $breakpoint-lg) {
+	.case-page__wrapper .section-solution {
+		padding-bottom: 2.5rem;
+	}
+
 	.section-value-driven-footer .case-study-page__subtitle {
 		width: 100%;
 	}
@@ -200,6 +209,18 @@ tbody tr:last-child td:last-child {
 }
 
 @media (max-width: $breakpoint-md) {
+	.case-page__wrapper .section-solution {
+		padding-bottom: 2.5rem;
+	}
+
+	.section-solution .case-study-page__subtitle {
+		margin-bottom: 0;
+	}
+
+	.solution-table__container {
+		width: 100%;
+	}
+
 	table {
 		grid-template-columns: repeat(3, minmax(7.1875rem, auto));
 	}

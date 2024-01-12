@@ -18,9 +18,9 @@
             <div class="author">
               {{ $imageAvatar := resources.Get .Params.avatar }}
               {{ $imageAvatarWebp := $imageAvatar.Resize "20x20 q100  webp" }}
-              <picture>
+              <picture class="author__avatar">
                 <source type="image/webp" srcset="{{$imageAvatarWebp.RelPermalink}}">
-                <img src="{{$imageAvatar.RelPermalink}}" class="author__avatar" alt="author"></img>
+                <img src="{{$imageAvatar.RelPermalink}}" alt="author"></img>
               </picture>
               <p class="author__name">{{.Params.author}}</p>
             </div>
