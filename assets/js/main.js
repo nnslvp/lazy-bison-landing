@@ -512,7 +512,7 @@ if (blogSlider && testimonialsSlider && casesSlider) {
 
 			1440: {
 				slidesPerView: 3,
-				spaceBetween: 28,
+				spaceBetween: 0,
 			},
 		},
 	})

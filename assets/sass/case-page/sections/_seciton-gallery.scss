@@ -26,11 +26,17 @@
 	justify-content: center;
 }
 
+.gallery-slider .swiper-slide__img-container {
+	overflow: hidden;
+	border-radius: 0.75rem;
+}
+
 .section-gallery .swiper-btn-next {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
 	right: 0;
+	transform: translateY(-50%);
 }
 
 .section-gallery .swiper-btn-prev {
@@ -38,6 +44,7 @@
 	position: absolute;
 	top: 50%;
 	left: 0rem;
+	transform: translateY(-50%);
 }
 
 .section-gallery .get-consultation-btn {
