@@ -6,6 +6,10 @@
 	margin: 3.75rem 0 2.5rem 0;
 }
 
+.cases-list {
+	padding-bottom: 2.0625rem;
+}
+
 .section-case__inner .section-blog__inner {
 	margin-bottom: 2.8125rem;
 }
@@ -40,6 +44,7 @@
 	}
 
 	.cases-page__wrapper .cases-list {
+		padding-bottom: 0;
 		grid-template-columns: repeat(auto-fill, minmax(21.875rem, 1fr));
 		gap: 1rem;
 	}
