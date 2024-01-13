@@ -221,17 +221,3 @@ kamal deploy -d staging
 ### Conclusion
 
 Kamal stands out as a streamlined and efficient solution for web application deployment. Its zero-downtime, incremental rollouts, and flexible configuration options make it an essential tool for any development team.
-
-SEO:
-
-```html
-<meta
-	name="description"
-	content="Learn how Kamal simplifies web app deployment with features like zero downtime, incremental rollouts, and flexible configuration. Ideal for developers."
-/>
-<meta
-	name="keywords"
-	content="Kamal, Web App Deployment, Zero Downtime, Incremental Rollouts, Flexible Configuration, Developers"
-/>
-<meta name="author" content="Lazy Bison" />
-```
