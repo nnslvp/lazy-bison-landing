@@ -42,7 +42,7 @@ For a more in-depth look at installation and configuration, check out this [deta
    ```
 
 - Generate a runnable directory: `BUNDLE_GEMFILE=kamal/Gemfile bundle binstub kamal --path ../bin`.
-  - Run `BUNDLE_GEMFILE=kamal/Gemfile bundle install`.
+- Run `BUNDLE_GEMFILE=kamal/Gemfile bundle install`.
 
 After these steps, you can run `bin/kamal` from the console, which is particularly useful for GitHub Actions.
 
