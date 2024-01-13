@@ -115,15 +115,3 @@ jobs:
 ## Conclusion: Enhance Your CI/CD Pipeline with Kamal and GitHub Actions
 
 Automating deployments with Kamal and GitHub Actions significantly enhances your CI/CD pipeline, making it efficient, secure, and developer-friendly.
-
-```html
-<meta
-	name="description"
-	content="Comprehensive guide to automating Ruby on Rails web app deployments using Kamal and GitHub Actions. Includes installation guide and sample GitHub Actions configuration."
-/>
-<meta
-	name="keywords"
-	content="Kamal, GitHub Actions, Web App Deployment, Automation, CI/CD Pipeline, Ruby, Ruby on Rails, Developers"
-/>
-<meta name="author" content="Lazy Bison" />
-```
