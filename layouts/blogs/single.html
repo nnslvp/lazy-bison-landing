@@ -64,11 +64,14 @@
     <div class="section-recommendations__inner">
       <h2 class="blog-page__title-h2 ">Recommendations</h2>
       <ul class="blogs-list">
-        {{ $blogs := where .Site.RegularPages "Type" "blogs" | first 3 }}
+        {{ $blogs := where .Site.RegularPages "Type" "blogs" }}
+        {{ $excludedTitle := .Params.title }}
         {{ range $blogs }}
+        {{ if ne .Title $excludedTitle }}
         <li class="blogs-item">
           {{ partial "blog-card.html" . }}
         </li>
+        {{ end }}
         {{ end }}
         </li>
       </ul>

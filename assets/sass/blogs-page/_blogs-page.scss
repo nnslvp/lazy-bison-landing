@@ -26,6 +26,10 @@
 	margin: 1.5rem 0;
 }
 
+.blogs-list {
+	margin-bottom: 1.5rem;
+}
+
 .blogs-list:where(:has(.blogs-item:nth-child(3))) {
 	display: grid;
 	grid-template-columns: repeat(3, 25.25rem);
