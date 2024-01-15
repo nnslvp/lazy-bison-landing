@@ -46,6 +46,7 @@
 
   <link rel="icon" type="image/png" href="/icons/favicon.svg" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
   {{ $opts := dict
   "transpiler" "dartsass"
   "targetPath" "css/style.css"
@@ -54,7 +55,6 @@
   {{ with resources.Get "sass/main.scss" | toCSS $opts | minify | fingerprint }}
   <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
   {{ end }}
-
 </head>
 
 <body>
