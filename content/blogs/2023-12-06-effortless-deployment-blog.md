@@ -6,7 +6,7 @@ SEO:
   description: 'Learn how Kamal simplifies web app deployment with features like zero downtime, incremental rollouts, and flexible configuration. Ideal for developers.'
   keywords: 'Kamal, Web App Deployment, Zero Downtime, Incremental Rollouts, Flexible Configuration, Developers'
   author: 'Lazy Bison'
-  
+
 author: MARIE CAPHLISH
 avatar: './images/blogs/2023-12-06-effortless-deployment-blog/author-blog.jpeg'
 image: './images/blogs/2023-12-06-effortless-deployment-blog/blog-preview-img.png'
@@ -57,8 +57,17 @@ source 'https://rubygems.org'
 gem 'kamal', '~> 1.0.0'
 ```
 
-- Run **`BUNDLE_GEMFILE=kamal/Gemfile bundle install`** to install the gem.
-- Generate a runnable directory using **`BUNDLE_GEMFILE=kamal/Gemfile bundle binstub kamal --path ../bin`**.
+- Run
+
+```ruby
+BUNDLE_GEMFILE=kamal/Gemfile bundle install
+```
+
+- Generate a runnable directory using
+
+```ruby
+BUNDLE_GEMFILE=kamal/Gemfile bundle binstub kamal --path ../bin
+```
 
 After these steps, you can run **`bin/kamal`** from the console. This is particularly useful for GitHub Actions if adding the gem to your project isn't an option.
 
@@ -201,13 +210,13 @@ To set up your server, execute the command **`kamal setup`**. In our specific ca
 kamal setup -d staging
 ```
 
-To create a .env file, execute the command `**kamal envify**`. In our specific case, the command is:
+To create a .env file, execute the command **kamal envify**. In our specific case, the command is:
 
 ```bash
 kamal envify -d staging
 ```
 
-To upload variables from .env files to the server, execute the command `**kamal env push**`. In our specific case, the command is:
+To upload variables from .env files to the server, execute the command **kamal env push**. In our specific case, the command is:
 
 ```bash
 kamal env push -d staging

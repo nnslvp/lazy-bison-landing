@@ -34,9 +34,9 @@ challenge:
     - title: Real-time Monitoring
       description: Monitoring of drivers' vital signs and behavior.
     - title: Translation and Multilingual Support
-      description: Offline Capabilities.
-    - title: Functionality in low-connectivity areas.
-      description: Monitoring and categorizing group expenses.
+      description: Overcoming language barriers.
+    - title: Offline Capabilities.
+      description: Functionality in low-connectivity areas.
     - title: Integration with Third Parties
       description: Coordination between various stakeholders.
     - title: User Access Management
@@ -58,18 +58,26 @@ solution_table:
   tbody:
     - cell_1: 'Login'
       cell_2: 'Secure login for administrators, dispatchers, and driver supporters.'
-      cell_3: 'Password recovery feature.'
+      cell_3: 'Secure login for drivers.'
 
     - cell_1: 'Password Recovery'
       cell_2: 'Password recovery mechanism.'
-      cell_3: 'Secure login for drivers.'
+      cell_3: 'Password recovery feature.'
 
     - cell_1: 'Logout'
       cell_2: 'Ensuring account security through logout.'
       cell_3: 'Ensuring account security through logout.'
 
-    - cell_1: 'Trips & Orders'
+    - cell_1: 'User Management'
       cell_2: 'Managing users efficiently.'
+      cell_3: ''
+
+    - cell_1: 'Groups'
+      cell_2: 'Managing groups of trucks or users.'
+      cell_3: ''
+
+    - cell_1: 'Trips & Orders'
+      cell_2: 'Comprehensive visibility of all trips and orders.'
       cell_3: 'Access to assigned trips and orders.'
 
     - cell_1: 'Live Map'
@@ -84,40 +92,45 @@ solution_table:
       cell_2: 'Record of actions taken during trips.'
       cell_3: 'Registering activities and updates.'
 
-    - cell_1: 'Announcements'
-      cell_2: 'Enhanced communication through announcements.'
-      cell_3: 'Enhanced communication through announcements.'
-
-    - cell_1: 'Profile'
-      cell_2: 'User profile management.'
-      cell_3: 'Functionality for changing drivers.'
-
-    - cell_1: 'Driver Score'
-      cell_2: 'Assessment of driving behavior.'
-      cell_3: 'Profile management.'
-
-    - cell_1: 'Drivers'
-      cell_2: 'Management of drivers.'
-      cell_3: 'Encouraging eco-friendly driving.'
-
-    - cell_1: 'Question Path'
-      cell_2: 'Guiding users through specific processes.'
-      cell_3: 'Tracking and managing driving time.'
-
-    - cell_1: 'Change Log'
-      cell_2: 'Recording all changes.'
-
-    - cell_1: 'User Management'
-      cell_2: 'Managing users efficiently.'
-
-    - cell_1: 'Groups'
-      cell_2: 'Managing groups of trucks or users.'
-
     - cell_1: 'Events'
       cell_2: 'Logging important events and activities.'
+      cell_3: ''
 
     - cell_1: 'Report'
       cell_2: 'Reporting capabilities.'
+      cell_3: 'Keeping drivers informed.'
+
+    - cell_1: 'Announcements'
+      cell_2: 'Enhanced communication through announcements.'
+      cell_3: 'Keeping drivers informed.'
+
+    - cell_1: 'Driver Change'
+      cell_2: ''
+      cell_3: 'Functionality for changing drivers'
+
+    - cell_1: 'Profile'
+      cell_2: 'User profile management.'
+      cell_3: 'Profile management.'
+
+    - cell_1: 'Driver Score'
+      cell_2: 'Assessment of driving behavior.'
+      cell_3: 'Encouraging eco-friendly driving.'
+
+    - cell_1: 'Drivers'
+      cell_2: 'Management of drivers.'
+      cell_3: ''
+
+    - cell_1: 'Question Path'
+      cell_2: 'Guiding users through specific processes.'
+      cell_3: ''
+
+    - cell_1: 'Change Log'
+      cell_2: 'Recording all changes.'
+      cell_3: ''
+
+    - cell_1: 'Driver Time'
+      cell_2: ''
+      cell_3: 'Tracking and managing driving time'
 
 tools_and_technologies:
   - tool: Back-End

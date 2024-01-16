@@ -26,7 +26,7 @@ Learn how to automate your web app deployments using Kamal and GitHub Actions. T
 
 ## Detailed Guide to Installing Kamal
 
-For a more in-depth look at installation and configuration, check out this [detailed post](https://www.notion.so/Effortless-Deployment-of-Web-Applications-with-Kamal-394073d1007149aaad561f17dae7ff9a?pvs=21).
+For a more in-depth look at installation and configuration, check out this **_[detailed post]({{< relref "blogs/2023-12-06-effortless-deployment-blog" >}})_**.
 
 ### Easy Steps to Install Kamal
 
@@ -41,8 +41,17 @@ For a more in-depth look at installation and configuration, check out this [deta
     gem 'kamal', '~> 1.0.0'
    ```
 
-- Generate a runnable directory: `BUNDLE_GEMFILE=kamal/Gemfile bundle binstub kamal --path ../bin`.
-- Run `BUNDLE_GEMFILE=kamal/Gemfile bundle install`.
+- Generate a runnable directory:
+
+  ```ruby
+  BUNDLE_GEMFILE=kamal/Gemfile bundle binstub kamal --path ../bin
+  ```
+
+- Run
+
+  ```ruby
+  BUNDLE_GEMFILE=kamal/Gemfile bundle install
+  ```
 
 After these steps, you can run `bin/kamal` from the console, which is particularly useful for GitHub Actions.
 
