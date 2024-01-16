@@ -27,6 +27,7 @@
 }
 
 .gallery-slider .swiper-slide__img-container {
+	height: 41.25rem;
 	overflow: hidden;
 	border-radius: 0.75rem;
 }
@@ -34,7 +35,7 @@
 .section-gallery .swiper-btn-next {
 	cursor: pointer;
 	position: absolute;
-	top: 50%;
+	top: 47%;
 	right: 0;
 	transform: translateY(-50%);
 }
@@ -42,7 +43,7 @@
 .section-gallery .swiper-btn-prev {
 	cursor: pointer;
 	position: absolute;
-	top: 50%;
+	top: 47%;
 	left: 0rem;
 	transform: translateY(-50%);
 }
@@ -69,6 +70,10 @@
 		margin-bottom: 1.4375rem;
 	}
 
+	.gallery-slider .swiper-slide__img-container {
+		height: 29rem;
+	}
+
 	.gallery-slider {
 		width: 36.6875rem;
 		gap: 1rem;
@@ -89,6 +94,10 @@
 		width: 100%;
 		gap: 1rem;
 		margin-bottom: 1.5rem;
+	}
+
+	.gallery-slider .swiper-slide__img-container {
+		height: 17.0625rem;
 	}
 
 	.swiper-btn-next,
