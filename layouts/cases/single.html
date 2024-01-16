@@ -275,7 +275,7 @@
             <li class="swiper-slide">
               <div class="swiper-slide__img-container">
                 {{ $image := resources.Get .image_path  }}
-                {{ $WEBPImage := $image.Process "webp" }}
+                {{ $WEBPImage := $image.Process "q100 webp" }}
                 <img loading="lazy" src="{{ $WEBPImage.RelPermalink }}" alt="{{ .caption }}">
               </div>
             </li>
