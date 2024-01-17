@@ -31,21 +31,19 @@
   <meta name="keywords" content="{{ .Params.SEO.keywords }}">
   <meta name="author" content="{{ .Params.SEO.author }}">
 
-  <meta property="og:title" content="Lazy Bison - Your Trusted Partner in Ruby on Rails Development" />
-  <meta property="og:description"
-    content="We provide top-notch Ruby on Rails development services tailored to meet the unique needs of start-ups and SMEs." />
-  <meta property="og:image" content="https://thelazybison.com/assets/images/logo_h.png" />
+  <meta property="og:title" content="{{.Params.title }}" />
+  <meta property="og:description" content="{{ .Params.SEO.description }}" />
+  <meta property="og:image" content="{{ .Site.BaseURL }}/images/logo.png" />
   <meta property="og:url" content="https://thelazybison.com" />
   <meta property="og:type" content="website" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Lazy Bison - Expert Ruby on Rails Development" />
-  <meta name="twitter:description"
-    content="Offering reliable and scalable Ruby on Rails development services for start-ups and SMEs." />
-  <meta name="twitter:image" content="https://thelazybison.com/assets/images/logo_h.png" />
+  <meta name="twitter:title" content="{{.Params.title }}" />
+  <meta name="twitter:description" content="{{ .Params.SEO.description }}" />
+  <meta name="twitter:image" content="{{ .Site.BaseURL }}/images/logo.png" />
 
-  <link rel="icon" type="image/png" href="/icons/favicon.svg" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
+  <link rel="icon" type="image/png" href="/icons/favicon.png">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
