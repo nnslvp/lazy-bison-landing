@@ -22,13 +22,6 @@
 }
 @font-face {
   font-family: "Outfit";
-  src: url("/fonts/Outfit-ExtraLight.woff2") format("woff2"), url("/fonts/Outfit-ExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-  font-display: auto;
-}
-@font-face {
-  font-family: "Outfit";
   src: url("/fonts/Outfit-Medium.woff2") format("woff2"), url("/fonts/Outfit-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
@@ -1897,8 +1890,8 @@ img {
     margin: 0.625rem 0 0.3581rem 0;
   }
   .services-info__description {
-    flex-basis: 27.5625rem;
-    padding-top: 0.3125rem;
+    flex-basis: 26.5625rem;
+    padding-top: 0.875rem;
   }
   .services-info__description-text {
     width: 18rem;
@@ -1911,7 +1904,7 @@ img {
   }
   .services-info__types {
     width: 15.5rem;
-    padding-top: 1.5625rem;
+    padding-top: 1.25rem;
   }
   .services-info__type-button {
     height: 2.75rem;
@@ -3676,6 +3669,7 @@ div.highlight pre {
 }
 
 .code-wrapper {
+  color: wheat;
   position: relative;
 }
 
@@ -4344,7 +4338,6 @@ thead,
 tbody,
 tr {
   display: contents;
-  text-transform: capitalize;
 }
 
 th,
@@ -4817,6 +4810,7 @@ tbody tr:last-child td:last-child {
 }
 
 .gallery-slider .swiper-slide__img-container {
+  height: 41.25rem;
   overflow: hidden;
   border-radius: 0.75rem;
 }
@@ -4824,7 +4818,7 @@ tbody tr:last-child td:last-child {
 .section-gallery .swiper-btn-next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 47%;
   right: 0;
   transform: translateY(-50%);
 }
@@ -4832,7 +4826,7 @@ tbody tr:last-child td:last-child {
 .section-gallery .swiper-btn-prev {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 0rem;
   transform: translateY(-50%);
 }
@@ -4857,6 +4851,9 @@ tbody tr:last-child td:last-child {
   .section-gallery .case-study-page__title-h2 {
     margin-bottom: 1.4375rem;
   }
+  .gallery-slider .swiper-slide__img-container {
+    height: 29rem;
+  }
   .gallery-slider {
     width: 36.6875rem;
     gap: 1rem;
@@ -4874,6 +4871,9 @@ tbody tr:last-child td:last-child {
     width: 100%;
     gap: 1rem;
     margin-bottom: 1.5rem;
+  }
+  .gallery-slider .swiper-slide__img-container {
+    height: 17.0625rem;
   }
   .swiper-btn-next,
   .swiper-btn-prev {

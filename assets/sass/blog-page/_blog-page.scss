@@ -21,11 +21,11 @@
 }
 
 .blog-page__wrapper .section-full-info-blog {
-	margin: 0;
+	margin: 0 0 2.5rem 0;
 }
 
 .blog-page__wrapper .gray-line__container {
-	margin: 2.5rem 0 2.5rem 0;
+	margin: 0 0 2.5rem 0;
 }
 
 .blog-page__wrapper .gray-line {
@@ -160,7 +160,6 @@ div.highlight pre {
 	border: none;
 }
 
-/* Анимация появления подсказки */
 @keyframes fadeInFadeOutTooltip {
 	0% {
 		opacity: 1;
@@ -172,7 +171,6 @@ div.highlight pre {
 	}
 }
 
-/* Tooltip text */
 .tooltiptext {
 	visibility: hidden;
 	background-color: #555;
@@ -181,7 +179,6 @@ div.highlight pre {
 	padding: 5px;
 	border-radius: 6px;
 
-	/* Position the tooltip text */
 	position: absolute;
 	z-index: 1;
 	bottom: 125%;
@@ -189,7 +186,6 @@ div.highlight pre {
 	margin-left: -60px;
 }
 
-/* Tooltip arrow */
 .tooltiptext::after {
 	content: '';
 	position: absolute;
@@ -201,7 +197,6 @@ div.highlight pre {
 	border-color: #555 transparent transparent transparent;
 }
 
-/* Показ подсказки при клике на кнопку */
 .copy-button.copied .tooltiptext {
 	animation: fadeInFadeOutTooltip 1s ease-in-out forwards;
 }
