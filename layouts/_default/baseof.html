@@ -66,34 +66,36 @@
   {{ end }}
 
   {{/* Ваш код для начала страницы */}}
+  {{ $urlParts :=  .Permalink }}
+  {{ $lastPart := path.BaseName $urlParts }}
+  {{ $fileName := path.Base .File.BaseFileName  }}
+  {{ $isBlog := and (eq .Type "blogs") (eq $lastPart "blogs") }}
+  {{ $isPost := and (eq .Type "blogs") (strings.Contains .Permalink $fileName) }}
+  {{ $isCases := and (eq .Type "cases") (eq $lastPart "cases") }}
+  {{ $isCase := strings.Contains .Permalink (printf "/cases/%s" $fileName) }}
+  {{ $isLastPartBlogs := eq $lastPart "blogs" }}
 
-  {{/* Фрагмент для определения класса обертки на основе URL страницы */}}
-  {{ $url_parts :=  .Permalink  }}
-  {{ $last_part := path.BaseName $url_parts}}
+
   {{ $wrapper_class := "" }}
+  {{/* Фрагмент для определения класса обертки на основе URL страницы */}}
 
-  {{ if strings.Contains $last_part "cases" }}
+
+  {{ if $isCases  }}
   {{ $wrapper_class = "cases-page__wrapper" }}
-  {{ else if strings.Contains $last_part "case" }}
+  {{ else if $isCase }}
   {{ $wrapper_class = "case-page__wrapper" }}
-  {{ else if strings.Contains $url_parts "case_categories" }}
-  {{ $wrapper_class = "cases-page__wrapper" }}
-  {{ else if strings.Contains $last_part "blogs" }}
+  {{ else if $isBlog }}
   {{ $wrapper_class = "blogs-page__wrapper" }}
-  {{ else if strings.Contains $last_part "blog" }}
+  {{ else if $isPost }}
   {{ $wrapper_class = "blog-page__wrapper" }}
-  {{ else if strings.Contains $url_parts "blog_categories" }}
-  {{ $wrapper_class = "blogs-page__wrapper" }}
   {{ else }}
   {{ $wrapper_class = "home-page__wrapper" }}
   {{ end }}
 
   {{ partial "header.html" . }}
-
   <main>
     <div class="wrapper {{ $wrapper_class }}">
       {{ block "main" . }}
-
       {{ end }}
     </div>
   </main>
