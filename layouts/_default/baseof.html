@@ -38,7 +38,7 @@
   <meta property="og:type" content="website" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="{{.Params.title }}" />
+  <meta name="twitter:title" content="{{.Params.title }} {{ if not .IsHome }}| Lazy-Bison {{ end }}" />
   <meta name="twitter:description" content="{{ .Params.SEO.description }}" />
   <meta name="twitter:image" content="{{ .Site.BaseURL }}/images/logo.png" />
 
