@@ -59,13 +59,13 @@ gem 'kamal', '~> 1.0.0'
 
 - Run
 
-```ruby
+```bash
 BUNDLE_GEMFILE=kamal/Gemfile bundle install
 ```
 
 - Generate a runnable directory using
 
-```ruby
+```bash
 BUNDLE_GEMFILE=kamal/Gemfile bundle binstub kamal --path ../bin
 ```
 
