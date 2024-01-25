@@ -43,13 +43,13 @@ For a more in-depth look at installation and configuration, check out this **_[d
 
 - Generate a runnable directory:
 
-  ```ruby
+  ```bash
   BUNDLE_GEMFILE=kamal/Gemfile bundle binstub kamal --path ../bin
   ```
 
 - Run
 
-  ```ruby
+  ```bash
   BUNDLE_GEMFILE=kamal/Gemfile bundle install
   ```
 
