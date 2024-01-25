@@ -17,11 +17,13 @@
           <div class="author-time-blog">
             <div class="author">
               {{ $imageAvatar := resources.Get .Params.avatar }}
-              {{ $imageAvatarWebp := $imageAvatar.Resize "20x20 q100  webp" }}
+              {{ with $imageAvatar }}
+              {{ $imageAvatarWebp := $imageAvatar.Resize "20x20 q100 webp" }}
               <picture class="author__avatar">
-                <source type="image/webp" srcset="{{$imageAvatarWebp.RelPermalink}}">
-                <img src="{{$imageAvatar.RelPermalink}}" alt="author"></img>
+                <source type="image/webp" srcset="{{ $imageAvatarWebp.RelPermalink }}">
+                <img src="{{ $imageAvatar.RelPermalink }}" alt="author">
               </picture>
+              {{ end }}
               <p class="author__name">{{.Params.author}}</p>
             </div>
             <span>|</span>
