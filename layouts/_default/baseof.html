@@ -31,7 +31,7 @@
   <meta name="keywords" content="{{ .Params.SEO.keywords }}">
   <meta name="author" content="{{ .Params.SEO.author }}">
 
-  <meta property="og:title" content="{{.Params.title }}" />
+  <meta property="og:title" content="{{.Params.title }} {{ if not .IsHome }}| Lazy-Bison {{ end }}" />
   <meta property="og:description" content="{{ .Params.SEO.description }}" />
   <meta property="og:image" content="{{ .Site.BaseURL }}/images/logo.png" />
   <meta property="og:url" content="{{ .Permalink }}" />
