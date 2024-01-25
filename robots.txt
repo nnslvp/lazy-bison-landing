@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://thelazybison.com/sitemap.xml 
