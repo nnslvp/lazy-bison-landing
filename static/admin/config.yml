@@ -17,13 +17,22 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - {
+          label: 'Preview',
+          name: 'image',
+          widget: 'image',
+          media_folder: '/assets/images/blogs/{{fields.title}}/{{name}}',
+          public_folder: '/images/blogs/{{fields.title}}/{{name}}',
+        }
+      - {
           label: 'Avatar',
           name: 'avatar',
           widget: 'image',
           media_folder: '/assets/images/blogs/{{fields.title}}/{{name}}',
           public_folder: '/images/blogs/{{fields.title}}/{{name}}',
+          required: false,
         }
       - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Categories', name: 'blog_categories', widget: 'list' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: 'Cases'

@@ -1,5 +1,4 @@
 ---
-layout: blog
 title: Effortless Deployment of Web Applications with Kamal
 author: Yahor Bukhta
 avatar:

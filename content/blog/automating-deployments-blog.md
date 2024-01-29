@@ -1,5 +1,4 @@
 ---
-layout: blog
 title: Automating Deployments with Kamal and GitHub Actions
 author: Yahor Bukhta
 avatar:
