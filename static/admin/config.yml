@@ -45,5 +45,57 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Categories', name: 'case_categories', widget: 'list' }
+      - label: 'Section General Information'
+        name: 'project_info'
+        widget: 'object'
+        fields:
+          - { label: 'client', name: 'client', widget: 'string' }
+          - { label: 'location', name: 'location', widget: 'string' }
+          - { label: 'industry', name: 'industry', widget: 'string' }
+          - { label: 'client_since', name: 'client_since', widget: 'string' }
+          - { label: 'type', name: 'type', widget: 'string' }
+          - {
+              label: 'engagement_model',
+              name: 'engagement_model',
+              widget: 'string',
+            }
+          - { label: 'duration', name: 'duration', widget: 'string' }
+          - { label: 'staff', name: 'staff', widget: 'text' }
+      - label: 'Section Challenge'
+        name: 'challenge'
+        widget: 'object'
+        fields:
+          - { label: 'subtitle', name: 'subtitle', widget: 'string' }
+          - label: 'issues'
+            name: 'issue'
+            widget: 'list'
+            max: 9
+            fields:
+              - { label: 'Street Address', name: 'street', widget: 'string' }
+              - { label: 'City', name: 'city', widget: 'string' }
+              - { label: 'Postal Code', name: 'post-code', widget: 'string' }
+      - label: 'Section Tools Technologies'
+        name: 'tools_and_technologies'
+        widget: 'list'
+        max: 10
+        fields:
+          - { label: 'tool', name: 'tool', widget: 'string' }
+          - { label: 'technologies', name: 'technologies', widget: 'string' }
+      - label: 'Section Roadmap'
+        name: 'roadmap'
+        widget: 'list'
+        fields:
+          - { label: 'date', name: 'date', widget: 'string' }
+          - { label: 'activities', name: 'activities', widget: 'list' }
+      - label: 'Section Gallery'
+        name: 'gallery_images'
+        widget: 'list'
+        fields:
+          - {
+              label: 'image project',
+              name: 'image_path',
+              widget: 'image',
+              media_folder: '/assets/images/cases/{{fields.title}}/{{name}}',
+              public_folder: '/images/cases/{{fields.title}}/{{name}}',
+            }

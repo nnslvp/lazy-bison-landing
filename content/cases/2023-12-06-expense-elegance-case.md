@@ -1,5 +1,4 @@
 ---
-layout: case
 title: 'Expense Elegance: The Art of  Spending with Balancer'
 image: images/cases/2023-12-06-expense-elegance-case/case-preview-img.png
 case_categories: ['finTech']
@@ -112,9 +111,6 @@ roadmap:
 
 gallery_images:
   - image_path: 'images/cases/2023-12-06-expense-elegance-case/balancer-img-one.png'
-    caption: 'chat'
   - image_path: 'images/cases/2023-12-06-expense-elegance-case/balancer-img-two.png'
-    caption: 'chat'
   - image_path: 'images/cases/2023-12-06-expense-elegance-case/balancer-img-three.png'
-    caption: 'chat'
 ---

@@ -1,5 +1,4 @@
 ---
-layout: case
 title: 'Logistics in Motion: Overcoming Challenges and Achieving Excellence'
 image: /images/cases/2023-12-06-logistics-in-motioncase/case-preview-img.png
 case_categories: ['logistic']
@@ -157,9 +156,6 @@ roadmap:
 
 gallery_images:
   - image_path: '/images/cases/2023-12-06-logistics-in-motioncase/Support chat.png'
-    caption: 'chat'
   - image_path: '/images/cases/2023-12-06-logistics-in-motioncase/Support chat-2.png'
-    caption: 'chat'
   - image_path: '/images/cases/2023-12-06-logistics-in-motioncase/Support chat-3.png'
-    caption: 'chat'
 ---
