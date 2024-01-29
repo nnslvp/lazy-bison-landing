@@ -1,14 +1,13 @@
 ---
 layout: blog
 title: Effortless Deployment of Web Applications with Kamal
+author: Yahor Bukhta
+avatar:
 date: 2023-12-06T17:18:00
 SEO:
   description: 'Learn how Kamal simplifies web app deployment with features like zero downtime, incremental rollouts, and flexible configuration. Ideal for developers.'
   keywords: 'Kamal, Web App Deployment, Zero Downtime, Incremental Rollouts, Flexible Configuration, Developers'
-  author: 'Lazy Bison'
-
-author: MARIE CAPHLISH
-avatar: './images/blogs/2023-12-06-effortless-deployment-blog/author-blog.jpeg'
+  author: 'Yahor Bukhta'
 image: './images/blogs/2023-12-06-effortless-deployment-blog/blog-preview-img.png'
 blog_categories: ['DevOps']
 ---

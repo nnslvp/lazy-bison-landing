@@ -1,13 +1,13 @@
 ---
 layout: blog
 title: 'Getting Started with Hugo: Installation and Basic Setup without Theme'
+author: Yahor Bukhta
+avatar:
 date: 2023-11-28T12:45:00+00:00
 SEO:
   description: 'Explore our comprehensive guide on getting started with Hugo - the swift and modern static site generator. Learn step-by-step how to install Hugo, set up a CSS compiler, create a new project, and manage posts.'
   keywords: 'Hugo static site generator, Install Hugo, Hugo setup guide, Hugo for beginners, Creating a Hugo project, Hugo blog setup, Hugo templates and layouts, SASS with Hugo, Hugo installation guide, Hugo site development, Manage posts in Hugo, Hugo CSS compiler setup, Static site generation, Web development with Hugo, Hugo site configuration'
-  author: 'MARIE CAPHLISH'
-author: MARIE CAPHLISH
-avatar: ''
+  author: 'Yahor Bukhta'
 image: './images/blogs/hugo-installation-basic-setup/hugo.png'
 description: >
   DESCRIPTION TEXT HERE
