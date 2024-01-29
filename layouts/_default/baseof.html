@@ -71,25 +71,32 @@
   <!-- End Google Tag Manager (noscript) -->
   {{ end }}
 
-  {{/* Ваш код для начала страницы */}}
+  {{ $urlParts :=  .Permalink }}
+  {{ $lastPart := path.BaseName $urlParts }}
+  {{ $fileName := path.Base .File.BaseFileName  }}
+  {{ $isPageBlog := and (eq .Type "blogs") (eq $lastPart "blogs") }}
+  {{ $isPageBlogCategory := strings.Contains .Permalink "blog_categories" }}
+  {{ $isPagePost := and (eq .Type "blogs") (strings.Contains .Permalink $fileName) }}
+  {{ $isPageCases := and (eq .Type "cases") (eq $lastPart "cases") }}
+  {{ $isPageCasesCategory :=  strings.Contains .Permalink "case_categories" }}
+  {{ $isPageCase := strings.Contains .Permalink (printf "/cases/%s" $fileName) }}
+  {{ $isLastPartBlogs := eq $lastPart "blogs" }}
 
-  {{/* Фрагмент для определения класса обертки на основе URL страницы */}}
-  {{ $url_parts :=  .Permalink  }}
-  {{ $last_part := path.BaseName $url_parts}}
+
   {{ $wrapper_class := "" }}
 
-  {{ if strings.Contains $last_part "cases" }}
+  {{ if $isPageCases  }}
   {{ $wrapper_class = "cases-page__wrapper" }}
-  {{ else if strings.Contains $last_part "case" }}
+  {{ else if  $isPageCasesCategory }}
+  {{ $wrapper_class = "cases-page__wrapper" }}
+  {{ else if $isPageCase }}
   {{ $wrapper_class = "case-page__wrapper" }}
-  {{ else if strings.Contains $url_parts "case_categories" }}
-  {{ $wrapper_class = "cases-page__wrapper" }}
-  {{ else if strings.Contains $last_part "blogs" }}
+  {{ else if $isPageBlog }}
   {{ $wrapper_class = "blogs-page__wrapper" }}
-  {{ else if strings.Contains $last_part "blog" }}
+  {{ else if  $isPageBlogCategory }}
+  {{ $wrapper_class = "blogs-page__wrapper" }}
+  {{ else if $isPagePost }}
   {{ $wrapper_class = "blog-page__wrapper" }}
-  {{ else if strings.Contains $url_parts "blog_categories" }}
-  {{ $wrapper_class = "blogs-page__wrapper" }}
   {{ else }}
   {{ $wrapper_class = "home-page__wrapper" }}
   {{ end }}

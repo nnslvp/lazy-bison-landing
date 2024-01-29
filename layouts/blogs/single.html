@@ -38,6 +38,7 @@
           </ul>
           <div class="blog-post-image__wrapper">
             {{ $image := resources.Get .Params.image }}
+            {{ if $image }}
             {{ $smallImage := $image.Resize "343x146 q100 webp" }}
             {{ $mediumImage := $image.Resize "716x304 q100 webp" }}
             {{ $largeImage := $image.Resize "940x400 webp" }}
@@ -48,6 +49,7 @@
               <source type="image/webp" media="(min-width:1441px)" srcset="{{$largeImage.RelPermalink}}">
               <img class="blog-post-image" src="{{ $image.RelPermalink }}" alt="Blog Image">
             </picture>
+            {{ end }}
           </div>
         </header>
         <section class="full-info-blog__section">

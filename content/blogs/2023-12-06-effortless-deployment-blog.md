@@ -10,17 +10,10 @@ SEO:
 author: MARIE CAPHLISH
 avatar: './images/blogs/2023-12-06-effortless-deployment-blog/author-blog.jpeg'
 image: './images/blogs/2023-12-06-effortless-deployment-blog/blog-preview-img.png'
-description: >
-  Navigating the intricacies of web application
-  deployment can be a daunting task. Enter Kamal—a
-  deployment tool designed to alleviate these
-  complexities. In this article, we'll delve into the
-  key features of Kamal and share insights from our own
-  hands-on experience.
 blog_categories: ['DevOps']
 ---
 
-### Introduction
+### Introduction:
 
 Navigating the intricacies of web application deployment can be a daunting task. Enter Kamal—a deployment tool designed to alleviate these complexities. In this article, we'll delve into the key features of Kamal and share insights from our own hands-on experience.
 

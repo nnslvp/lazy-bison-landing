@@ -4,6 +4,7 @@ languageCode = "en-us"
 [params]
   blogs_paginate = 4
   cases_paginate = 4
+  summaryLength = 50 
 
 [taxonomies]
   blog_category = "blog_categories"
