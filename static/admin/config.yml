@@ -60,7 +60,7 @@ collections:
           - { label: 'client', name: 'client', widget: 'string' }
           - { label: 'location', name: 'location', widget: 'string' }
           - { label: 'industry', name: 'industry', widget: 'string' }
-          - { label: 'client_since', name: 'client_since', widget: 'string' }
+          - { label: 'client_since', name: 'client_since', widget: 'number' }
           - { label: 'type', name: 'type', widget: 'string' }
           - {
               label: 'engagement_model',
@@ -82,7 +82,7 @@ collections:
               - { label: 'Street Address', name: 'street', widget: 'string' }
               - { label: 'City', name: 'city', widget: 'string' }
               - { label: 'Postal Code', name: 'post-code', widget: 'string' }
-      - label: 'Section Solution'
+      - label: 'Section Solution Table'
         name: 'body'
         widget: 'markdown'
         mode: 'raw'
