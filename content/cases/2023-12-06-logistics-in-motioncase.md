@@ -49,88 +49,6 @@ value_driven_results:
     various ways, such as minimizing communication gaps, enhancing driver
     safety, and improving efficiency.
 
-solution_table:
-  thead:
-    - title: 'Service'
-    - title: 'Web Application for Organization Staff'
-    - title: 'Mobile Application for Drivers'
-  tbody:
-    - cell_1: 'Login'
-      cell_2: 'Secure login for administrators, dispatchers, and driver supporters.'
-      cell_3: 'Secure login for drivers.'
-
-    - cell_1: 'Password Recovery'
-      cell_2: 'Password recovery mechanism.'
-      cell_3: 'Password recovery feature.'
-
-    - cell_1: 'Logout'
-      cell_2: 'Ensuring account security through logout.'
-      cell_3: 'Ensuring account security through logout.'
-
-    - cell_1: 'User Management'
-      cell_2: 'Managing users efficiently.'
-      cell_3: ''
-
-    - cell_1: 'Groups'
-      cell_2: 'Managing groups of trucks or users.'
-      cell_3: ''
-
-    - cell_1: 'Trips & Orders'
-      cell_2: 'Comprehensive visibility of all trips and orders.'
-      cell_3: 'Access to assigned trips and orders.'
-
-    - cell_1: 'Live Map'
-      cell_2: 'Real-time location tracking.'
-      cell_3: 'Real-time location tracking.'
-
-    - cell_1: 'Chat'
-      cell_2: 'Communication hub.'
-      cell_3: 'Real-time communication.'
-
-    - cell_1: 'Activities'
-      cell_2: 'Record of actions taken during trips.'
-      cell_3: 'Registering activities and updates.'
-
-    - cell_1: 'Events'
-      cell_2: 'Logging important events and activities.'
-      cell_3: ''
-
-    - cell_1: 'Report'
-      cell_2: 'Reporting capabilities.'
-      cell_3: 'Keeping drivers informed.'
-
-    - cell_1: 'Announcements'
-      cell_2: 'Enhanced communication through announcements.'
-      cell_3: 'Keeping drivers informed.'
-
-    - cell_1: 'Driver Change'
-      cell_2: ''
-      cell_3: 'Functionality for changing drivers'
-
-    - cell_1: 'Profile'
-      cell_2: 'User profile management.'
-      cell_3: 'Profile management.'
-
-    - cell_1: 'Driver Score'
-      cell_2: 'Assessment of driving behavior.'
-      cell_3: 'Encouraging eco-friendly driving.'
-
-    - cell_1: 'Drivers'
-      cell_2: 'Management of drivers.'
-      cell_3: ''
-
-    - cell_1: 'Question Path'
-      cell_2: 'Guiding users through specific processes.'
-      cell_3: ''
-
-    - cell_1: 'Change Log'
-      cell_2: 'Recording all changes.'
-      cell_3: ''
-
-    - cell_1: 'Driver Time'
-      cell_2: ''
-      cell_3: 'Tracking and managing driving time'
-
 tools_and_technologies:
   - tool: Back-End
     technologies: 'Ruby on Rails, PostgreSQL, S3 Bucket'
@@ -159,3 +77,25 @@ gallery_images:
   - image_path: '/images/cases/2023-12-06-logistics-in-motioncase/Support chat-2.png'
   - image_path: '/images/cases/2023-12-06-logistics-in-motioncase/Support chat-3.png'
 ---
+
+| Service               | Web Application for Organization Staff                               | Mobile Application for Drivers            |
+| --------------------- | -------------------------------------------------------------------- | ----------------------------------------- |
+| **Login**             | Secure login for administrators, dispatchers, and driver supporters. | Secure login for drivers.                 |
+| **Password Recovery** | Password recovery mechanism.                                         | Password recovery feature.                |
+| **Logout**            | Ensuring account security through logout.                            | Ensuring account security through logout. |
+| **User Management**   | Managing users efficiently.                                          |                                           |
+| **Groups**            | Managing groups of trucks or users.                                  |                                           |
+| **Trips & Orders**    | Comprehensive visibility of all trips and orders.                    | Access to assigned trips and orders.      |
+| **Live Map**          | Real-time location tracking.                                         | Real-time location tracking.              |
+| **Chat**              | Communication hub.                                                   | Real-time communication.                  |
+| **Activities**        | Record of actions taken during trips.                                | Registering activities and updates.       |
+| **Events**            | Logging important events and activities.                             |                                           |
+| **Report**            | Reporting capabilities.                                              | Keeping drivers informed.                 |
+| **Announcements**     | Enhanced communication through announcements.                        | Keeping drivers informed.                 |
+| **Driver Change**     |                                                                      | Functionality for changing drivers.       |
+| **Profile**           | User profile management.                                             | Profile management.                       |
+| **Driver Score**      | Assessment of driving behavior.                                      | Encouraging eco-friendly driving.         |
+| **Drivers**           | Management of drivers.                                               |                                           |
+| **Question Path**     | Guiding users through specific processes.                            |                                           |
+| **Change Log**        | Recording all changes.                                               |                                           |
+| **Driver Time**       |                                                                      | Tracking and managing driving time.       |

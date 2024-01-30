@@ -45,6 +45,13 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - {
+          label: 'Preview',
+          name: 'image',
+          widget: 'image',
+          media_folder: '/assets/images/cases/{{fields.title}}/{{name}}',
+          public_folder: '/images/cases/{{fields.title}}/{{name}}',
+        }
       - { label: 'Categories', name: 'case_categories', widget: 'list' }
       - label: 'Section General Information'
         name: 'project_info'
@@ -75,6 +82,15 @@ collections:
               - { label: 'Street Address', name: 'street', widget: 'string' }
               - { label: 'City', name: 'city', widget: 'string' }
               - { label: 'Postal Code', name: 'post-code', widget: 'string' }
+      - label: 'Section Solution'
+        name: 'body'
+        widget: 'markdown'
+        mode: 'raw'
+      - label: 'Section Solution'
+        name: 'value_driven_results'
+        widget: 'object'
+        fields:
+          - { label: 'subtitle', name: 'subtitle', widget: 'string' }
       - label: 'Section Tools Technologies'
         name: 'tools_and_technologies'
         widget: 'list'
