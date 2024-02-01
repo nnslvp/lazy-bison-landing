@@ -30,21 +30,39 @@
   <meta name="description" content="{{ .Params.SEO.description }}">
   <meta name="keywords" content="{{ .Params.SEO.keywords }}">
   <meta name="author" content="{{ .Params.SEO.author }}">
+  {{ $imagePath := .Params.image }}
+  {{ $widthImage := 1200 }}
+  {{ $heightImage := 672 }}
+
+  {{ if not $imagePath }}
+  {{ $imagePath = "images/logo_black.png" }}
+  {{ end }}
+
+  {{ if eq .Type "cases" }}
+  {{ $widthImage = 620 }}
+  {{ $heightImage = 405 }}
+  {{ end }}
+
+  {{ if eq .Type "blogs" }}
+  {{ $widthImage = 900 }}
+  {{ $heightImage = 400 }}
+  {{ end }}
+
 
   <meta property="og:site_name" content="Lazy Bison">
   <meta property="og:title" content="{{.Params.title }} {{ if not .IsHome }}| Lazy-Bison {{ end }}" />
   <meta property="og:description" content="{{ .Params.SEO.description }}" />
-  <meta property="og:image" content="{{ .Site.BaseURL }}images/logo_black.png" />
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="672">
+  <meta property="og:image" content="{{ .Site.BaseURL }}{{ $imagePath }}" />
+  <meta name="twitter:image:width" content="{{ $widthImage }}">
+  <meta name="twitter:image:height" content="{{ $heightImage }}">
   <meta property="og:url" content="{{ .Permalink }}" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{{.Params.title }} {{ if not .IsHome }}| Lazy-Bison {{ end }}" />
   <meta name="twitter:description" content="{{ .Params.SEO.description }}" />
-  <meta name="twitter:image" content="{{ .Site.BaseURL }}images/logo_black.png" />
-  <meta name="twitter:image:width" content="1200">
-  <meta name="twitter:image:height" content="672">
+  <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ $imagePath }}">
+  <meta name="twitter:image:width" content="{{ $widthImage }}">
+  <meta name="twitter:image:height" content="{{ $heightImage }}">
 
   <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}favicons/favicon-32x32.png">
@@ -102,7 +120,6 @@
   {{ end }}
 
   {{ partial "header.html" . }}
-
   <main>
     <div class="wrapper {{ $wrapper_class }}">
       {{ block "main" . }}
