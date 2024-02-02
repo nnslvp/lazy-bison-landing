@@ -1,3 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: https://thelazybison.com/case_categories/
+Disallow: https://thelazybison.com/blog_categories/
 Sitemap: https://thelazybison.com/sitemap.xml 
