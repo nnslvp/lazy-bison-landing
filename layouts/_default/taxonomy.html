@@ -4,7 +4,7 @@
 {{ range .Pages }}
 <article>
   <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-  <p>{{ .Date.Format "January 2, 2006" }}</p>
+  <p>{{ .Date | time.Format ":date_medium" }}</p>
   {{ .Content }}
 </article>
 {{ end }}
