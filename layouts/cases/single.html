@@ -19,7 +19,6 @@
               <span class="category category--active">#{{ . }}</span>
             </li>
             {{ end }}
-            </li>
           </ul>
           <h1 class="case-study-page__title-h1">{{.Params.title}}
           </h1>
@@ -254,12 +253,12 @@
                 {{ end }}
               </ul>
             </div>
-            {{ if ne $index (sub (len $.Params.roadmap) 1) }}
+          </li>
+          {{ if ne $index (sub (len $.Params.roadmap) 1) }}
           <li class="roadmap-item">
             <i class="icon icon-arrow-roadmap"></i>
           </li>
           {{ end }}
-          </li>
           {{ end }}
         </ul>
       </div>

@@ -13,25 +13,27 @@
       </div>
       <article class="full-info-blog">
         <header class="full-info__header">
-          <h1 class="blog-page__title-h1 ">{{.Params.title}}</h1>
+          <h1 class="blog-page__title-h1">{{.Params.title}}</h1>
           <div class="author-time-blog">
             <div class="author">
               {{ $imageAvatar := resources.Get .Params.avatar }}
               {{ with $imageAvatar }}
               {{ $imageAvatarWebp := $imageAvatar.Resize "20x20 q100 webp" }}
               <picture class="author__avatar">
-                <source type="image/webp" srcset="{{ $imageAvatarWebp.RelPermalink }}">
-                <img src="{{ $imageAvatar.RelPermalink }}" alt="author">
+                <source type="image/webp" srcset="{{ $imageAvatarWebp.RelPermalink }}" />
+                <img src="{{ $imageAvatar.RelPermalink }}" alt="author" />
               </picture>
               {{ end }}
               <p class="author__name">{{.Params.author}}</p>
             </div>
             <span>|</span>
-            <div class="time">{{.Params.date | time.Format ":date_medium"  }}</div>
+            <div class="time">
+              {{.Params.date | time.Format ":date_medium" }}
+            </div>
           </div>
-          <ul class="categories-list ">
+          <ul class="categories-list">
             {{ range .Params.blog_categories }}
-            <li class="categories-item ">
+            <li class="categories-item">
               <span class="category category--active">#{{ . }}</span>
             </li>
             {{ end }}
@@ -51,19 +53,17 @@
             {{ end }}
           </div>
         </header>
-        <section class="full-info-blog__section">
-          {{ .Content }}
-        </section>
+        <section class="full-info-blog__section">{{ .Content }}</section>
       </article>
     </div>
+  </div>
 </section>
-{{ $currentBlog := . }}
-{{ $excludedTitle := .Params.title }}
-{{ $related := .Site.RegularPages.Related $currentBlog  | first 3 }}
-{{ if gt (len $related) 0 }}
+{{ $currentBlog := . }} {{ $excludedTitle := .Params.title }} {{ $related :=
+.Site.RegularPages.Related $currentBlog | first 3 }} {{ if gt (len $related) 0
+}}
 <div class="container">
   <div class="gray-line__container">
-    <hr class="gray-line">
+    <hr class="gray-line" />
   </div>
 </div>
 <section class="section-recommendations">
@@ -71,17 +71,12 @@
     <div class="section-recommendations__inner">
       <h2 class="blog-page__title-h2">Recommendations</h2>
       <ul class="blogs-list">
-        {{ range $related }}
-        {{ if eq .Type "blogs" }}
-        {{ if ne .Title $excludedTitle }}
-        <li class="blogs-item">
-          {{ partial "blog-card.html" . }}
-        </li>
-        {{ end }}
-        {{ end }}
-        {{ end }}
+        {{ range $related }} {{ if eq .Type "blogs" }} {{ if ne .Title
+        $excludedTitle }}
+        <li class="blogs-item">{{ partial "blog-card.html" . }}</li>
+        {{ end }} {{ end }} {{ end }}
       </ul>
     </div>
+  </div>
 </section>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }}
