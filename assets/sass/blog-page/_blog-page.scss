@@ -45,13 +45,13 @@
 }
 
 .full-info-blog a {
-	color: #a4df2d;
+	color: #4139be;
 	transition: all 0.3s ease-in-out;
 	position: relative;
 }
 
 .full-info-blog a:hover {
-	color: #4139be;
+	color: #a4df2d;
 }
 
 .full-info-blog a::before {
@@ -60,7 +60,7 @@
 	width: 100%;
 	height: 2px;
 	border-radius: 2px;
-	background-color: #4139be;
+	background-color: #a4df2d;
 	bottom: 0;
 	left: 0;
 	transform-origin: right;
