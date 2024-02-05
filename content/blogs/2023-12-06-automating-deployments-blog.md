@@ -18,7 +18,7 @@ Learn how to automate your web app deployments using Kamal and GitHub Actions. T
 
 ## Detailed Guide to Installing Kamal
 
-For a more in-depth look at installation and configuration, check out this **_[detailed post]({{< relref "blogs/2023-12-06-effortless-deployment-blog" >}})_**.
+For a more in-depth look at installation and configuration, check out this [detailed post]({{< relref "blogs/2023-12-06-effortless-deployment-blog" >}}).
 
 ### Easy Steps to Install Kamal
 

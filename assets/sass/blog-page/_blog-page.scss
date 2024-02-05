@@ -44,6 +44,35 @@
 	gap: 1.25rem;
 }
 
+.full-info-blog a {
+	color: #4139be;
+	transition: all 0.3s ease-in-out;
+	position: relative;
+}
+
+.full-info-blog a:hover {
+	color: #a4df2d;
+}
+
+.full-info-blog a::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	border-radius: 2px;
+	background-color: #a4df2d;
+	bottom: 0;
+	left: 0;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform 0.3s ease-in-out;
+}
+
+.full-info-blog a:hover::before {
+	transform-origin: left;
+	transform: scaleX(1);
+}
+
 .full-info__header {
 	display: flex;
 	flex-direction: column;
