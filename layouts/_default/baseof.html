@@ -93,10 +93,10 @@
   {{ $lastPart := path.BaseName $urlParts }}
   {{ $fileName := path.Base .File.BaseFileName  }}
   {{ $isPageBlog := and (eq .Type "blogs") (eq $lastPart "blogs") }}
-  {{ $isPageBlogCategory := strings.Contains .Permalink "blog_categories" }}
+  {{ $isPageBlogCategory := strings.Contains .Permalink "blogs" }}
   {{ $isPagePost := and (eq .Type "blogs") (strings.Contains .Permalink $fileName) }}
   {{ $isPageCases := and (eq .Type "cases") (eq $lastPart "cases") }}
-  {{ $isPageCasesCategory :=  strings.Contains .Permalink "case_categories" }}
+  {{ $isPageCasesCategory :=  strings.Contains .Permalink "cases" }}
   {{ $isPageCase := strings.Contains .Permalink (printf "/cases/%s" $fileName) }}
   {{ $isLastPartBlogs := eq $lastPart "blogs" }}
 

@@ -6,6 +6,10 @@ languageCode = "en-us"
   cases_paginate = 4
   summaryLength = 50 
 
+[permalinks]
+  case_categories = "/cases/:slug"
+  blog_categories = "/blogs/:slug"
+
 [taxonomies]
   blog_category = "blog_categories"
   case_category = "case_categories"
