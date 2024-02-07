@@ -3,12 +3,12 @@ layout: blog
 title: Automating Deployments with Kamal and GitHub Actions
 author: Yahor Bukhta
 avatar:
-date: 2023-12-06T17:18:00
+date: 2023-12-08T17:18:00
 SEO:
   description: 'Comprehensive guide to automating Ruby on Rails web app deployments using Kamal and GitHub Actions. Includes installation guide and sample GitHub Actions configuration.'
   keywords: 'Kamal, GitHub Actions, Web App Deployment, Automation, CI/CD Pipeline, Ruby, Ruby on Rails, Developers'
   author: 'Yahor Bukhta'
-image: '/images/blogs/2023-12-06-automating-deployments-blog/blog-preview-img.png'
+image: '/images/blog/automating-deployments-blog/kamal-in-github-actions.png'
 blog_categories: ['DevOps']
 ---
 
@@ -18,7 +18,7 @@ Learn how to automate your web app deployments using Kamal and GitHub Actions. T
 
 ## Detailed Guide to Installing Kamal
 
-For a more in-depth look at installation and configuration, check out this [detailed post]({{< relref "blog/2023-12-06-effortless-deployment-blog" >}}).
+For a more in-depth look at installation and configuration, check out this [detailed post]({{< relref "blog/effortless-deployment-blog" >}}).
 
 ### Easy Steps to Install Kamal
 

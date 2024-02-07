@@ -8,7 +8,7 @@ SEO:
   description: 'Learn how Kamal simplifies web app deployment with features like zero downtime, incremental rollouts, and flexible configuration. Ideal for developers.'
   keywords: 'Kamal, Web App Deployment, Zero Downtime, Incremental Rollouts, Flexible Configuration, Developers'
   author: 'Yahor Bukhta'
-image: './images/blogs/2023-12-06-effortless-deployment-blog/blog-preview-img.png'
+image: './images/blog/effortless-deployment-blog/kamal.png'
 blog_categories: ['DevOps']
 ---
 
