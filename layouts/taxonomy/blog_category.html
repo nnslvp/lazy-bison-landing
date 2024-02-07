@@ -23,7 +23,7 @@
       <h2 class="case-page__title-h2 categories__title">Categories</h2>
       <ul class="categories-list">
         <li class="categories-item">
-          <a class="category" href="/blogs">All</a>
+          <a class="category" href="/blog">All</a>
         </li>
         {{ $currentCategory := .Title }}
         {{ range .Site.Taxonomies.blog_categories }}
@@ -37,7 +37,7 @@
 
     {{/* Пагинация */}}
 
-    {{ $paginator := .Paginate (where .Pages "Type" "blogs") .Site.Params.blogs_paginate }}
+    {{ $paginator := .Paginate (where .Pages "Type" "blog") .Site.Params.blogs_paginate }}
     <ul class="blogs-list">
       {{ range $paginator.Pages }}
       <li class="blogs-item">

@@ -6,6 +6,10 @@ languageCode = "en-us"
   cases_paginate = 4
   summaryLength = 50 
 
+[permalinks]
+  case_categories = "/cases/:slug"
+  blog_categories = "/blog/:slug"
+
 [taxonomies]
   blog_category = "blog_categories"
   case_category = "case_categories"
@@ -23,9 +27,9 @@ languageCode = "en-us"
     weight = 2
 
 [[menu.main]]
-    identifier = "blogs"
+    identifier = "blog"
     name = "blog"
-    url = "/blogs"
+    url = "/blog"
     weight = 3
 
 [[menu.main]]

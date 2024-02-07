@@ -92,13 +92,13 @@
   {{ $urlParts :=  .Permalink }}
   {{ $lastPart := path.BaseName $urlParts }}
   {{ $fileName := path.Base .File.BaseFileName  }}
-  {{ $isPageBlog := and (eq .Type "blogs") (eq $lastPart "blogs") }}
-  {{ $isPageBlogCategory := strings.Contains .Permalink "blog_categories" }}
-  {{ $isPagePost := and (eq .Type "blogs") (strings.Contains .Permalink $fileName) }}
+  {{ $isPageBlog := and (eq .Type "blog") (eq $lastPart "blog") }}
+  {{ $isPageBlogCategory := strings.Contains .Permalink "blog" }}
+  {{ $isPagePost := strings.Contains .Permalink (printf "/blog/%s" $fileName) }}
   {{ $isPageCases := and (eq .Type "cases") (eq $lastPart "cases") }}
-  {{ $isPageCasesCategory :=  strings.Contains .Permalink "case_categories" }}
+  {{ $isPageCasesCategory :=  strings.Contains .Permalink "cases" }}
   {{ $isPageCase := strings.Contains .Permalink (printf "/cases/%s" $fileName) }}
-  {{ $isLastPartBlogs := eq $lastPart "blogs" }}
+  {{ $isLastPartBlogs := eq $lastPart "blog" }}
 
 
   {{ $wrapper_class := "" }}
@@ -109,12 +109,12 @@
   {{ $wrapper_class = "cases-page__wrapper" }}
   {{ else if $isPageCase }}
   {{ $wrapper_class = "case-page__wrapper" }}
+  {{ else if $isPagePost }}
+  {{ $wrapper_class = "blog-page__wrapper" }}
   {{ else if $isPageBlog }}
   {{ $wrapper_class = "blogs-page__wrapper" }}
   {{ else if  $isPageBlogCategory }}
   {{ $wrapper_class = "blogs-page__wrapper" }}
-  {{ else if $isPagePost }}
-  {{ $wrapper_class = "blog-page__wrapper" }}
   {{ else }}
   {{ $wrapper_class = "home-page__wrapper" }}
   {{ end }}
