@@ -38,20 +38,18 @@
             </li>
             {{ end }}
           </ul>
-          <div class="blog-post-image__wrapper">
-            {{ $image := resources.Get .Params.image }}
-            {{ if $image }}
-            {{ $smallImage := $image.Resize "343x146 q100 webp" }}
-            {{ $mediumImage := $image.Resize "716x304 q100 webp" }}
-            {{ $largeImage := $image.Resize "940x400 q100 webp" }}
-            <picture>
-              <source type="image/webp" media="(max-width:425px)" srcset="{{$smallImage.RelPermalink}}">
-              <source type="image/webp" media="(max-width:768px)" srcset="{{$mediumImage.RelPermalink}}">
-              <source type="image/webp" media="(max-width:1440px)" srcset="{{$largeImage.RelPermalink}}">
-              <img class="blog-post-image" src="{{ $image.RelPermalink }}" alt="Blog Image">
-            </picture>
-            {{ end }}
-          </div>
+          {{ $image := resources.Get .Params.image }}
+          {{ if $image }}
+          {{ $smallImage := $image.Resize "425x q100 webp" }}
+          {{ $mediumImage := $image.Resize "768x q100 webp" }}
+          {{ $largeImage := $image.Resize "1440x q100 webp" }}
+          <picture>
+            <source type="image/webp" media="(max-width:425px)" srcset="{{$smallImage.RelPermalink}}">
+            <source type="image/webp" media="(max-width:768px)" srcset="{{$mediumImage.RelPermalink}}">
+            <source type="image/webp" media="(max-width:1440px)" srcset="{{$largeImage.RelPermalink}}">
+            <img class="blog-post-image" src="{{ $image.RelPermalink }}" alt="Blog Image">
+          </picture>
+          {{ end }}
         </header>
         <section class="full-info-blog__section">{{ .Content }}</section>
       </article>
