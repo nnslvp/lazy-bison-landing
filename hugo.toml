@@ -68,14 +68,6 @@ languageCode = "en-us"
 [[related.indices]]
     applyFilter = false
     cardinalityThreshold = 0
-    name = 'tags'
-    pattern = ''
-    toLower = false
-    type = 'basic'
-    weight = 80
-[[related.indices]]
-    applyFilter = false
-    cardinalityThreshold = 0
     name = 'blog_categories'
     pattern = ''
     toLower = false

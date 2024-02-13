@@ -56,9 +56,9 @@
     </div>
   </div>
 </section>
-{{ $currentBlog := . }} {{ $excludedTitle := .Params.title }} {{ $related :=
-.Site.RegularPages.Related $currentBlog | first 3 }} {{ if gt (len $related) 0
-}}
+{{ $currentBlog := . }} 
+{{ $excludedTitle := .Params.title }} 
+{{ $related := .Site.RegularPages.Related $currentBlog | first 3 }} {{ if gt (len $related) 0}}
 <div class="container">
   <div class="gray-line__container">
     <hr class="gray-line" />
@@ -69,10 +69,13 @@
     <div class="section-recommendations__inner">
       <h2 class="blog-page__title-h2">Recommendations</h2>
       <ul class="blogs-list">
-        {{ range $related }} {{ if eq .Type "blogs" }} {{ if ne .Title
-        $excludedTitle }}
-        <li class="blogs-item">{{ partial "blog-card.html" . }}</li>
-        {{ end }} {{ end }} {{ end }}
+      {{ range $related }}
+          {{ if eq .Type "blog" }}
+            {{ if ne .Title $excludedTitle }}
+              <li class="blogs-item">{{ partial "blog-card.html" . }}</li>
+            {{ end }}
+          {{ end }}
+        {{ end }}
       </ul>
     </div>
   </div>
