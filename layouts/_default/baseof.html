@@ -101,23 +101,22 @@
   {{ $isLastPartBlogs := eq $lastPart "blog" }}
 
 
-  {{ $wrapper_class := "" }}
-
-  {{ if $isPageCases  }}
-  {{ $wrapper_class = "cases-page__wrapper" }}
-  {{ else if  $isPageCasesCategory }}
-  {{ $wrapper_class = "cases-page__wrapper" }}
-  {{ else if $isPageCase }}
-  {{ $wrapper_class = "case-page__wrapper" }}
-  {{ else if $isPagePost }}
-  {{ $wrapper_class = "blog-page__wrapper" }}
-  {{ else if $isPageBlog }}
-  {{ $wrapper_class = "blogs-page__wrapper" }}
-  {{ else if  $isPageBlogCategory }}
-  {{ $wrapper_class = "blogs-page__wrapper" }}
-  {{ else }}
-  {{ $wrapper_class = "home-page__wrapper" }}
-  {{ end }}
+{{ $wrapper_class := "" }}
+{{if $isPageCase }}
+    {{ $wrapper_class = "case-page__wrapper" }}
+{{else if $isPageCases }}
+    {{ $wrapper_class = "cases-page__wrapper" }}
+{{ else if $isPageCasesCategory }}
+    {{ $wrapper_class := "cases-page__wrapper" }}
+{{ else if $isPagePost }}
+    {{ $wrapper_class = "blog-page__wrapper" }}
+{{ else if $isPageBlog }}
+    {{ $wrapper_class = "blogs-page__wrapper" }}
+{{ else if $isPageBlogCategory }}
+    {{ $wrapper_class = "blogs-page__wrapper" }}
+{{ else }}
+    {{ $wrapper_class = "home-page__wrapper" }}
+{{ end }}
 
   {{ partial "header.html" . }}
   <main>
