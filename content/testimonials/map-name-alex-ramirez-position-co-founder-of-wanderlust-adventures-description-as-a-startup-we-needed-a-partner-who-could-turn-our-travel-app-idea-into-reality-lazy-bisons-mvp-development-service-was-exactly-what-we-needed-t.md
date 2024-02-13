@@ -1,5 +1,5 @@
 ---
-avatar: /images/testimonials/alex-ramirez/avatar-two.png
+avatar: /images/avatar-two.png
 name: Alex Ramirez
 position: Co-Founder of Wanderlust Adventures
 description: As a startup, we needed a partner who could turn our  travel app

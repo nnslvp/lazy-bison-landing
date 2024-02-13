@@ -1,5 +1,4 @@
 ---
-layout: blog
 title: 'Getting Started with Hugo: Installation and Basic Setup without Theme'
 author: Yahor Bukhta
 avatar:

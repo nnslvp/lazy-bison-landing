@@ -1,5 +1,5 @@
 ---
-avatar: /images/testimonials/sarah-turner/avatar-five.png
+avatar: /images/avatar-five.png
 name: Sarah Turner
 position: Founder of FitLife App
 description: |-

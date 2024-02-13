@@ -1,5 +1,5 @@
 ---
-avatar: /images/testimonials/christoph-collins/avatar-three.png
+avatar: /images/avatar-three.png
 name: Christoph Collins
 position: CTO of HealthSync Innovations
 description: The UI/UX design expertise of Lazy Bison truly set our health

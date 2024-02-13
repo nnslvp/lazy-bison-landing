@@ -1,6 +1,6 @@
 ---
 title: 'Logistics in Motion: Overcoming Challenges and Achieving Excellence'
-image: /images/cases/2023-12-06-logistics-in-motioncase/case-preview-img.png
+image: /images/case-preview-img-two.png
 case_categories: ['logistic']
 date: 2023-12-06T19:25:00
 SEO:
@@ -73,9 +73,12 @@ roadmap:
       - Mobile Application Release
 
 gallery_images:
-  - image_path: '/images/cases/2023-12-06-logistics-in-motioncase/Support chat.png'
-  - image_path: '/images/cases/2023-12-06-logistics-in-motioncase/Support chat-2.png'
-  - image_path: '/images/cases/2023-12-06-logistics-in-motioncase/Support chat-3.png'
+  - image_path: '/images/Support chat.png'
+    caption: 'chat'
+  - image_path: '/images/Support chat-2.png'
+    caption: 'chat'
+  - image_path: '/images/Support chat-3.png'
+    caption: 'chat'
 ---
 
 | Service               | Web Application for Organization Staff                               | Mobile Application for Drivers            |

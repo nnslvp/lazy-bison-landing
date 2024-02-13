@@ -1,5 +1,5 @@
 ---
-avatar: /images/testimonials/daniel-lee/avatar-one.png
+avatar: /images/avatar-one.png
 name: Daniel Lee
 position: CFO of GreenHarvest Industries
 description: Lazy Bison's Dedicated Business Analysts turned our complex supply
