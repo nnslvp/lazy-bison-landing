@@ -1,11 +1,11 @@
 const casesSlider = document.querySelector('.cases-slider')
-const blogSlider = document.querySelector('.blogs-slider')
+const blogSlider = document.querySelector('.blog-slider')
 const testimonialsSlider = document.querySelector('.testimonials-swiper')
 const sliderGallery = document.querySelector('.gallery-slider')
-const tabsTable = document.querySelectorAll('.table-th-tab')
-const homePageWrapper = document.querySelector('.home-page__wrapper')
+const isCasePage = document.querySelector('.case-page__wrapper')
+const isHomePage = document.querySelector('.home-page__wrapper')
+const isBlogPage = document.querySelector('.blog-page__wrapper')
 const caseStudyPageWrapper = document.querySelector('.case-study-page__wrapper')
-const blogPageWrapper = document.querySelector('.blog-page__wrapper')
 
 //sliders
 const initSwiperSlider = (slider, settings) => {
@@ -462,7 +462,7 @@ navMenuLinks.forEach(link => {
 })
 burgerButton.addEventListener('click', toggleMenu)
 
-if (homePageWrapper) {
+if (isHomePage) {
 	animateLines()
 	animateTestimonials()
 	dropdown()
@@ -521,7 +521,7 @@ if (blogSlider && testimonialsSlider && casesSlider) {
 	window.addEventListener('resize', mobileSliderTestimonials)
 }
 
-if (sliderGallery) {
+if (isCasePage && sliderGallery) {
 	initSwiperSlider(sliderGallery, {
 		slidesPerView: 1,
 		spaceBetween: 10,
@@ -532,19 +532,26 @@ if (sliderGallery) {
 	})
 }
 
-if (tabsTable && tabsTable.length >= 3) {
-	tabsTable.forEach((tab, index) => {
-		if (index === 0) {
-			return
-		}
-		tab.addEventListener('click', e => {
-			tabsTable.forEach(tab => tab.classList.remove('table-th-tab-active'))
-			e.target.classList.toggle('table-th-tab-active')
+if (isCasePage) {
+	const tableSolutions = document.querySelector('table')
+	const thTableSolutions = tableSolutions.querySelectorAll('th')
+	const tabsTable = Array.from(thTableSolutions).splice(1)
+
+	tableSolutions.classList.add('solution-table')
+	tabsTable[0].classList.add('table-th-tab-active')
+
+	if (tabsTable && tabsTable.length >= 2) {
+		tabsTable.forEach(tab => {
+			tab.classList.add('table-th-tab')
+			tab.addEventListener('click', e => {
+				tabsTable.forEach(tab => tab.classList.remove('table-th-tab-active'))
+				e.target.classList.toggle('table-th-tab-active')
+			})
 		})
-	})
+	}
 }
 
-if (blogPageWrapper) {
+if (isBlogPage) {
 	const highlightDivElements = document.querySelectorAll('div.highlight')
 
 	highlightDivElements.forEach(el => {

@@ -1,5 +1,4 @@
 ---
-layout: blog
 title: Automating Deployments with Kamal and GitHub Actions
 author: Yahor Bukhta
 avatar:
@@ -8,7 +7,7 @@ SEO:
   description: 'Comprehensive guide to automating Ruby on Rails web app deployments using Kamal and GitHub Actions. Includes installation guide and sample GitHub Actions configuration.'
   keywords: 'Kamal, GitHub Actions, Web App Deployment, Automation, CI/CD Pipeline, Ruby, Ruby on Rails, Developers'
   author: 'Yahor Bukhta'
-image: '/images/blog/automating-deployments-blog/kamal-in-github-actions.png'
+image: '/images/kamal-in-github-actions.png'
 blog_categories: ['DevOps']
 ---
 

@@ -1,6 +1,6 @@
  <article class="card testimonial-1">
    <div class="avatar">
-     {{ $image := resources.Get .avatar  }}
+     {{ $image := resources.Get .Params.avatar  }}
      {{ $smallImage := $image.Resize "92x92 q100 webp" }}
      {{ $largeImage := $image.Resize "145x145 q100 webp" }}
      <picture>
@@ -8,11 +8,10 @@
        <source type="image/webp" media="(min-width:769px)" srcset="{{$largeImage.RelPermalink}}">
        <img loading="lazy" src="{{ $image.RelPermalink }}" alt="avatar" />
      </picture>
-
    </div>
    <div class="card__content">
-     <h2 class="name">{{ .name }}</h2>
-     <p class="position text--medium">{{ .position }}</p>
-     <p class="description">{{ .description }}</p>
+     <h2 class="name">{{ .Params.name }}</h2>
+     <p class="position text--medium">{{ .Params.position }}</p>
+     <p class="description">{{ .Params.description }}</p>
    </div>
  </article>

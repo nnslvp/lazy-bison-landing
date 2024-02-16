@@ -1,7 +1,6 @@
 ---
-layout: case
 title: 'Expense Elegance: The Art of  Spending with Balancer'
-image: images/cases/2023-12-06-expense-elegance-case/case-preview-img.png
+image: images/case-preview-img.png
 case_categories: ['finTech']
 date: 2023-12-06T17:18:00
 SEO:
@@ -51,41 +50,6 @@ value_driven_results:
     various ways, such as minimizing communication gaps, enhancing driver
     safety, and improving efficiency.
 
-solution_table:
-  thead:
-    - title: 'Service'
-    - title: 'Mobile Application Features'
-  tbody:
-    - cell-1: 'Login'
-      cell-2: 'Biometric and multi-factor authentication'
-
-    - cell_1: 'Expenses'
-      cell_2: 'Easy entry of expenses and automatic splitting'
-
-    - cell_1: 'Currency'
-      cell_2: 'Real-time conversion rates for international travels'
-
-    - cell_1: 'Groups'
-      cell_2: 'Effortless setup of groups for shared expenses.'
-
-    - cell_1: 'Expenses'
-      cell_2: 'Intuitive categorization for better tracking'
-
-    - cell_1: 'Balance'
-      cell_2: 'One-tap functionality to settle up balances'
-
-    - cell_1: 'Notifications'
-      cell_2: 'Automated reminders for due payments'
-
-    - cell_1: 'Settings'
-      cell_2: 'Customizable privacy controls for shared expenses'
-
-    - cell_1: 'Reporting'
-      cell_2: 'Assessment of driving behavior.'
-
-    - cell_1: 'User Profiles'
-      cell_2: 'Personalized user profiles with spending habits'
-
 tools_and_technologies:
   - tool: Back-End
     technologies: 'RoR, MongoDB'
@@ -111,10 +75,23 @@ roadmap:
       - Marketing Campaign
 
 gallery_images:
-  - image_path: 'images/cases/2023-12-06-expense-elegance-case/balancer-img-one.png'
+  - image_path: 'images/balancer-img-one.png'
     caption: 'chat'
-  - image_path: 'images/cases/2023-12-06-expense-elegance-case/balancer-img-two.png'
+  - image_path: 'images/balancer-img-two.png'
     caption: 'chat'
-  - image_path: 'images/cases/2023-12-06-expense-elegance-case/balancer-img-three.png'
+  - image_path: 'images/balancer-img-three.png'
     caption: 'chat'
 ---
+
+| Service       | Mobile Application Features                          |
+| ------------- | ---------------------------------------------------- |
+| Login         | Biometric and multi-factor authentication            |
+| Expenses      | Easy entry of expenses and automatic splitting       |
+| Currency      | Real-time conversion rates for international travels |
+| Groups        | Effortless setup of groups for shared expenses       |
+| Expenses      | Intuitive categorization for better tracking         |
+| Balance       | One-tap functionality to settle up balances          |
+| Notifications | Automated reminders for due payments                 |
+| Settings      | Customizable privacy controls for shared expenses    |
+| Reporting     | Assessment of driving behavior.                      |
+| User Profiles | Personalized user profiles with spending habits      |

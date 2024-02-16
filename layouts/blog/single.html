@@ -1,20 +1,20 @@
 {{ define "main" }}
-<section class="section-full-info-blog">
+<section class="section-full-info-post">
   <div class="container">
     <div class="section-full-info-blog__inner">
       <div class="container__navigation-path">
         <nav class="navigation-path">
           <a class="navigation-path__link" href="{{ .Site.BaseURL }}">Home</a>
           <span>/</span>
-          <a class="navigation-path__link" href="/blog">Blog</a>
+          <a class="navigation-path__link" href="/post">post</a>
           <span>/</span>
           <a class="navigation-path__link navigation-path__link--active" href="{{ .Permalink }}">{{.Params.title}}</a>
         </nav>
       </div>
-      <article class="full-info-blog">
+      <article class="full-info-post">
         <header class="full-info__header">
-          <h1 class="blog-page__title-h1">{{.Params.title}}</h1>
-          <div class="author-time-blog">
+          <h1 class="post-page__title-h1">{{.Params.title}}</h1>
+          <div class="author-time-post">
             <div class="author">
               {{ $imageAvatar := resources.Get .Params.avatar }}
               {{ with $imageAvatar }}
@@ -47,7 +47,7 @@
             <source type="image/webp" media="(max-width:425px)" srcset="{{$smallImage.RelPermalink}}">
             <source type="image/webp" media="(max-width:768px)" srcset="{{$mediumImage.RelPermalink}}">
             <source type="image/webp" media="(max-width:1440px)" srcset="{{$largeImage.RelPermalink}}">
-            <img class="blog-post-image" src="{{ $image.RelPermalink }}" alt="Blog Image">
+            <img class="post-post-image" src="{{ $image.RelPermalink }}" alt="post Image">
           </picture>
           {{ end }}
         </header>
@@ -67,12 +67,12 @@
 <section class="section-recommendations">
   <div class="container">
     <div class="section-recommendations__inner">
-      <h2 class="blog-page__title-h2">Recommendations</h2>
-      <ul class="blogs-list">
+      <h2 class="post-page__title-h2">Recommendations</h2>
+      <ul class="blog-list">
       {{ range $related }}
           {{ if eq .Type "blog" }}
             {{ if ne .Title $excludedTitle }}
-              <li class="blogs-item">{{ partial "blog-card.html" . }}</li>
+              <li class="blog-item">{{ partial "blog-card.html" . }}</li>
             {{ end }}
           {{ end }}
         {{ end }}

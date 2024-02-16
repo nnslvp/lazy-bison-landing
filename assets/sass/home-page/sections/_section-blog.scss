@@ -4,15 +4,15 @@
 	gap: 3.75rem;
 }
 
-.blogs-slider .swiper-wrapper {
+.blog-slider .swiper-wrapper {
 	margin-bottom: 2.75rem;
 }
 
-.blogs-slider .swiper-slide {
+.blog-slider .swiper-slide {
 	align-self: stretch;
 }
 
-.blogs-slider .card-blog {
+.blog-slider .card-blog {
 	width: 25rem;
 }
 
@@ -26,11 +26,11 @@
 		padding: 0;
 	}
 
-	.blogs-slider {
+	.blog-slider {
 		padding: 0 1rem;
 	}
 
-	.blogs-slider .card-blog {
+	.blog-slider .card-blog {
 		width: 100%;
 	}
 }
@@ -40,11 +40,11 @@
 		gap: 2.375rem;
 	}
 
-	.blogs-slider {
+	.blog-slider {
 		padding: 0 0.625rem;
 	}
 
-	.blogs-slider .card-blog {
+	.blog-slider .card-blog {
 		width: 20rem;
 	}
 }

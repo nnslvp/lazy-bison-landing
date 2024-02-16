@@ -1,5 +1,4 @@
 ---
-layout: blog
 title: 'Getting Started with Hugo: Installation and Basic Setup without Theme'
 author: Yahor Bukhta
 avatar:
@@ -8,7 +7,7 @@ SEO:
   description: 'Explore our comprehensive guide on getting started with Hugo - the swift and modern static site generator. Learn step-by-step how to install Hugo, set up a CSS compiler, create a new project, and manage posts.'
   keywords: 'Hugo static site generator, Install Hugo, Hugo setup guide, Hugo for beginners, Creating a Hugo project, Hugo blog setup, Hugo templates and layouts, SASS with Hugo, Hugo installation guide, Hugo site development, Manage posts in Hugo, Hugo CSS compiler setup, Static site generation, Web development with Hugo, Hugo site configuration'
   author: 'Yahor Bukhta'
-image: './images/blog/hugo-installation-basic-setup/hugo.png'
+image: './images/hugo.png'
 description: >
   DESCRIPTION TEXT HERE
 blog_categories: ['WebDevelopment', 'Frontend']

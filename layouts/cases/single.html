@@ -196,28 +196,7 @@
     </div>
   </div>
   <div class="container solution-table__container">
-    <table class="solution-table">
-      <thead>
-        <tr>
-          {{ range $index, $item := .Params.solution_table.thead }}
-          {{ if eq $index 1 }}
-          <th class="table-th-tab table-th-tab-active">{{ $item.title }}</th>
-          {{ else }}
-          <th class="table-th-tab">{{ $item.title }}</th>
-          {{ end }}
-          {{ end }}
-        </tr>
-      </thead>
-      <tbody>
-        {{ range .Params.solution_table.tbody }}
-        <tr>
-          {{ range . }}
-          <td>{{ . }}</td>
-          {{ end }}
-        </tr>
-        {{ end }}
-      </tbody>
-    </table>
+    {{ .Content}}
   </div>
 </section>
 <section class="section-tools-technologies">
@@ -275,7 +254,7 @@
               <div class="swiper-slide__img-container">
                 {{ $image := resources.Get .image_path  }}
                 {{ $WEBPImage := $image.Process "q100 webp" }}
-                <img loading="lazy" src="{{ $WEBPImage.RelPermalink }}" alt="{{ .caption }}">
+                <img loading="lazy" src="{{ $WEBPImage.RelPermalink }}" alt="image project">
               </div>
             </li>
             {{ end }}

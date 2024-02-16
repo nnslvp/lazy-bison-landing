@@ -293,7 +293,7 @@
     </div>
   </div>
 </section>
-<section id="blogs" class="section-blog">
+<section id="blog" class="section-blog">
   <div class="section-blog__inner">
     <div class="container">
       <div class="section-title__inner">
@@ -304,7 +304,7 @@
       </div>
     </div>
     <div class="container container__blogs-slider">
-      <div class="swiper blogs-slider" data-mobile="false">
+      <div class="swiper blog-slider" data-mobile="false">
         <ul class="swiper-wrapper">
           {{ $recentBlogs := (where .Site.RegularPages "Type"
 					"blog").ByDate.Reverse | first 5 }} {{ range $recentBlogs }}
@@ -327,15 +327,15 @@
   </div>
   <div class="testimonials__inner">
     <div class="container testimonials__container">
-      <hr class="testimonials__gray-line gray-line" />
+      <hr class="testimonials__gray-line gray-line">
       <div class="vertical-gray-line vertical-gray-line-1"></div>
       <div class="vertical-gray-line vertical-gray-line-2"></div>
       <div class="vertical-gray-line vertical-gray-line-3"></div>
       <div class="vertical-gray-line vertical-gray-line-4"></div>
       <h4 class="testimonials__title">What people say?</h4>
       <p class="testimonials__subtitle text--large">
-        Our main belief in success is connected with the achievements of our
-        clients.
+        Our main belief in success is connected with the achievements of
+        our clients.
       </p>
     </div>
   </div>
@@ -344,7 +344,7 @@
       <i class="icon spin-text-circle__circle spin-text-circle__circle--gradient-blue-three"></i>
       <div class="swiper testimonials-swiper" data-mobile="false">
         <ul class="swiper-wrapper testimonials__list">
-          {{ range .Site.Data.testimonials }}
+          {{ range where .Site.RegularPages "Type" "testimonials"  }}
           <li class="swiper-slide testimonials__item">
             {{ partial "testimonial-card.html" . }}
           </li>

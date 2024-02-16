@@ -8,7 +8,7 @@ SEO:
   author: 'AUTHOR HERE'
 author: ''
 theme: light
-avatar: '/images/blogs/2023-11-28-blog/author-blog.svg'
-image: '/images/blogs/2023-11-28-blog/blog-preview-img.png'
+avatar: '/images/blog/2023-11-28-blog/author-blog.svg'
+image: '/images/blog/2023-11-28-blog/blog-preview-img.png'
 blog_categories: ['category1', 'category2']
 ---
