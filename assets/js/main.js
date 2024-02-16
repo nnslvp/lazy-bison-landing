@@ -1,5 +1,5 @@
 const casesSlider = document.querySelector('.cases-slider')
-const blogSlider = document.querySelector('.blogs-slider')
+const blogSlider = document.querySelector('.blog-slider')
 const testimonialsSlider = document.querySelector('.testimonials-swiper')
 const sliderGallery = document.querySelector('.gallery-slider')
 const isCasePage = document.querySelector('.case-page__wrapper')

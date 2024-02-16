@@ -12,30 +12,27 @@
 }
 
 // black theme card
-:where(.swiper-wrapper, .blogs-list) li:first-child .card-blog {
+:where(.swiper-wrapper, .blog-list) li:first-child .card-blog {
 	background-color: $color-black;
 }
 
-:where(.swiper-wrapper, .blogs-list) li:first-child .category {
+:where(.swiper-wrapper, .blog-list) li:first-child .category {
 	background-color: $color-disable-grey;
 }
 
-:where(.swiper-wrapper, .blogs-list) li:first-child .card-blog__title {
+:where(.swiper-wrapper, .blog-list) li:first-child .card-blog__title {
 	color: $color-white;
 }
 
-:where(.swiper-wrapper, .blogs-list) li:first-child .card-blog__description {
+:where(.swiper-wrapper, .blog-list) li:first-child .card-blog__description {
 	color: $color-white;
 }
 
-:where(.swiper-wrapper, .blogs-list) li:first-child .card-blog .category {
+:where(.swiper-wrapper, .blog-list) li:first-child .card-blog .category {
 	background-color: $color-disable-grey;
 }
 
-:where(.swiper-wrapper, .blogs-list)
-	li:first-child
-	.card-blog
-	.card-blog__date {
+:where(.swiper-wrapper, .blog-list) li:first-child .card-blog .card-blog__date {
 	color: $color-light-grey;
 }
 

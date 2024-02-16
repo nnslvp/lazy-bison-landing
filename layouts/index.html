@@ -293,7 +293,7 @@
     </div>
   </div>
 </section>
-<section id="blogs" class="section-blog">
+<section id="blog" class="section-blog">
   <div class="section-blog__inner">
     <div class="container">
       <div class="section-title__inner">
@@ -304,7 +304,7 @@
       </div>
     </div>
     <div class="container container__blogs-slider">
-      <div class="swiper blogs-slider" data-mobile="false">
+      <div class="swiper blog-slider" data-mobile="false">
         <ul class="swiper-wrapper">
           {{ $recentBlogs := (where .Site.RegularPages "Type"
 					"blog").ByDate.Reverse | first 5 }} {{ range $recentBlogs }}
