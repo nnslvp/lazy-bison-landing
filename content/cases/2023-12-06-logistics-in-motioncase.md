@@ -48,7 +48,7 @@ value_driven_results:
     Our solution significantly improved the logistics company's operations in
     various ways, such as minimizing communication gaps, enhancing driver
     safety, and improving efficiency.
-  logisticsImprovements:
+  results:
     - description: Communication gaps were minimized, ensuring drivers received crucial     updates and safety instructions promptly.
     - description: Driver safety and compliance were enhanced through real-time
         monitoring and communication of safety protocols.

@@ -49,7 +49,7 @@ value_driven_results:
     The application stands to revolutionize personal finance management in
     shared contexts by combining ease of use with comprehensive financial
     management tools.
-  logisticsImprovements:
+  results:
     - description: Simplifies the process of managing shared expenses, making it
         accessible and stress-free for users.
     - description: Reduces errors in expense splitting and currency conversion,
