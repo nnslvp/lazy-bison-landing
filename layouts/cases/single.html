@@ -120,56 +120,29 @@
           <i class="icon spin-text-circle__text"></i>
           <i class="icon spin-text-circle__circle spin-text-circle__circle--gradient-blue-two"></i>
         </div>
+        {{ $results := .Params.value_driven_results.results }}
+        {{ $resultsLength := $results | len }}
+        {{ $halfLength := div $resultsLength 2 }}
+        {{ $firstLength := $halfLength }}
+        {{ $lastLength := $halfLength }}
+        {{ if ne (mod $resultsLength 2) 0 }}
+        {{ $firstLength = add $firstLength 1 }}
+        {{ end }}
         <ul class="value-driven-list">
+          {{ range $results | first $firstLength }}
           <li class="value-driven-item">
             <i class="icon arrow-right-down-angle-square"></i>
-            <p class="value-driven-item__text">Communication gaps were minimized, ensuring drivers received
-              crucial updates and safety instructions promptly.</p>
+            <p class="value-driven-item__text">{{.description}}</p>
           </li>
-          <li class="value-driven-item">
-            <i class="icon arrow-right-down-angle-square"></i>
-            <p class="value-driven-item__text">Driver safety and compliance were enhanced through real-time
-              monitoring and communication of safety protocols.</p>
-          </li>
-          <li class="value-driven-item">
-            <i class="icon arrow-right-down-angle-square"></i>
-            <p class="value-driven-item__text">Efficiency and record-keeping improved, with comprehensive data
-              capture and retrieval.</p>
-          </li>
-          <li class="value-driven-item">
-            <i class="icon arrow-right-down-angle-square"></i>
-            <p class="value-driven-item__text">Real-time monitoring of vital signs contributed to both safety and
-              performance evaluation.</p>
-          </li>
+          {{ end }}
         </ul>
         <ul class="value-driven-list">
-
+          {{ range $results | last $lastLength }}
           <li class="value-driven-item">
             <i class="icon arrow-right-down-angle-square"></i>
-            <p class="value-driven-item__text">Language barriers were overcome with the auto-translate feature.
-            </p>
+            <p class="value-driven-item__text">{{.description}}</p>
           </li>
-          <li class="value-driven-item">
-            <i class="icon arrow-right-down-angle-square"></i>
-            <p class="value-driven-item__text">Offline capabilities ensured functionality in remote areas.
-            </p>
-          </li>
-          <li class="value-driven-item">
-            <i class="icon arrow-right-down-angle-square"></i>
-            <p class="value-driven-item__text">Integration with third-party platforms improved coordination.
-            </p>
-          </li>
-          <li class="value-driven-item">
-            <i class="icon arrow-right-down-angle-square"></i>
-            <p class="value-driven-item__text">User access management became user-friendly and efficient.
-            </p>
-          </li>
-          <li class="value-driven-item">
-            <i class="icon arrow-right-down-angle-square"></i>
-            <p class="value-driven-item__text">Robust reporting and analytics tools provided valuable insights for
-              optimization.
-            </p>
-          </li>
+          {{ end }}
         </ul>
       </div>
     </div>

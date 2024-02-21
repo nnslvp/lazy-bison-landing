@@ -45,11 +45,22 @@ challenge:
       description: Sending timely alerts for payments.
 
 value_driven_results:
-  subtitle: >
-    Our solution significantly improved the logistics company's operations in
-    various ways, such as minimizing communication gaps, enhancing driver
-    safety, and improving efficiency.
-
+  subtitle:
+    The application stands to revolutionize personal finance management in
+    shared contexts by combining ease of use with comprehensive financial
+    management tools.
+  results:
+    - description: Simplifies the process of managing shared expenses, making it
+        accessible and stress-free for users.
+    - description: Reduces errors in expense splitting and currency conversion,
+        ensuring fairness and transparency among users.
+    - description: Automates calculations and settlements, saving users time and
+        effort in managing group finances.
+    - description:
+        Robust security measures protect user data, fostering trust in the
+        application for handling sensitive financial information.
+    - description: Detailed reporting and analytics help users understand their
+        spending patterns, aiding in better financial decisions.
 tools_and_technologies:
   - tool: Back-End
     technologies: 'RoR, MongoDB'
