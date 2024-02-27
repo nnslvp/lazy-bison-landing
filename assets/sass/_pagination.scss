@@ -1,7 +1,7 @@
 .pagination-container {
 	display: flex;
 	justify-content: center;
-	margin-top: 40px;
+	margin-top: 2.5rem;
 }
 
 .pagination:not(:has(.page-number)) {
@@ -15,8 +15,8 @@
 .pagination {
 	display: flex;
 	align-items: center;
-	gap: 5px;
-	font-size: 13px;
+	gap: .3125rem;
+	font-size: .8125rem;
 	font-style: normal;
 	font-weight: 600;
 	line-height: normal;
@@ -24,12 +24,12 @@
 }
 
 .page-number {
-	padding: 4px 8px;
-	border-radius: 32px;
-	border: 1px solid #f1f1f1;
+	padding: .25rem .5rem;
+	border-radius: 2rem;
+	border: .0625rem solid #f1f1f1;
 	background: #fff;
-	width: 32px;
-	height: 32px;
+	width: 2rem;
+	height: 2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -38,12 +38,12 @@
 
 .prev,
 .next {
-	padding: 4px 8px;
-	border-radius: 32px;
-	border: 1px solid #e8eaf2;
+	padding: .25rem .5rem;
+	border-radius: 2rem;
+	border: .0625rem solid #e8eaf2;
 	background: #fff;
-	width: 32px;
-	height: 32px;
+	width: 2rem;
+	height: 2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
