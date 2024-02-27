@@ -4,16 +4,16 @@
 
 .post-page__wrapper .full-info-blog__section ul {
 	list-style: disc;
-	padding-left: 23px;
+	padding-left: 1.4375rem;
 }
 
 .post-page__wrapper .full-info-blog__section ol {
-	padding-left: 15px;
+	padding-left: .9375rem;
 	list-style: decimal;
 }
 
 .post-page__wrapper .full-info-blog__section ol ul {
-	padding-left: 23px;
+	padding-left: 1.4375rem;
 }
 
 .post-page__wrapper .full-info-blog__section li {
@@ -58,8 +58,8 @@
 	content: '';
 	position: absolute;
 	width: 100%;
-	height: 2px;
-	border-radius: 2px;
+	height: .125rem;
+	border-radius: .125rem;
 	background-color: #a4df2d;
 	bottom: 0;
 	left: 0;
@@ -201,14 +201,14 @@ div.highlight pre {
 	background-color: #555;
 	color: #fff;
 	text-align: center;
-	padding: 5px;
-	border-radius: 6px;
+	padding: .3125rem;
+	border-radius: .375rem;
 
 	position: absolute;
 	z-index: 1;
 	bottom: 125%;
 	left: 50%;
-	margin-left: -60px;
+	margin-left: -3.75rem;
 }
 
 .tooltiptext::after {
@@ -216,8 +216,8 @@ div.highlight pre {
 	position: absolute;
 	top: 100%;
 	left: 50%;
-	margin-left: -5px;
-	border-width: 5px;
+	margin-left: -0.3125rem;
+	border-width: .3125rem;
 	border-style: solid;
 	border-color: #555 transparent transparent transparent;
 }

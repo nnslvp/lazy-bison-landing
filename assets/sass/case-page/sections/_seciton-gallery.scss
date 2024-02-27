@@ -21,6 +21,10 @@
 	position: initial;
 }
 
+.gallery-slider img {
+	object-fit: contain;
+}
+
 .gallery-slider .swiper-slide {
 	display: flex;
 	justify-content: center;
