@@ -4,7 +4,10 @@ languageCode = "en-us"
 [params]
   blogs_paginate = 4
   cases_paginate = 4
-  summaryLength = 50 
+  summaryLength = 50
+  description = 'Specializing in Ruby on Rails development, The Lazy Bison offers fast, reliable, and scalable solutions for start-ups and SMEs in various industries.'
+  keywords = 'Ruby on Rails, Hotwire, ReactJS, Development, Start-ups, SMEs, Legal services, eCommerce, Healthcare, Real Estate, Fintech, Veterinary, Crowdfunding'
+  author = 'Lazy Bison'
 
 [permalinks]
   case_categories = "/cases/:slug"

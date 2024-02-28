@@ -27,9 +27,9 @@
 
   <title>{{.Params.title }} {{ if not .IsHome }}| Lazy-Bison {{ end }}</title>
 
-  <meta name="description" content="{{ .Params.SEO.description }}">
-  <meta name="keywords" content="{{ .Params.SEO.keywords }}">
-  <meta name="author" content="{{ .Params.SEO.author }}">
+  <meta name="description" content="{{ .Params.SEO.description | default .Site.Params.description }}">
+  <meta name="keywords" content="{{ .Params.SEO.keywords | default .Site.Params.keywords }}">
+  <meta name="author" content="{{ .Params.SEO.author | default .Site.Params.author}}">
   {{ $imagePath := .Params.image }}
   {{ $widthImage := 1200 }}
   {{ $heightImage := 672 }}
@@ -51,7 +51,7 @@
 
   <meta property="og:site_name" content="Lazy Bison">
   <meta property="og:title" content="{{.Params.title }} {{ if not .IsHome }}| Lazy-Bison {{ end }}" />
-  <meta property="og:description" content="{{ .Params.SEO.description }}" />
+  <meta property="og:description" content="{{ .Params.SEO.description | default .Site.Params.description  }}" />
   <meta property="og:image" content="{{ .Site.BaseURL }}{{ $imagePath }}" />
   <meta name="twitter:image:width" content="{{ $widthImage }}">
   <meta name="twitter:image:height" content="{{ $heightImage }}">
@@ -59,7 +59,7 @@
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{{.Params.title }} {{ if not .IsHome }}| Lazy-Bison {{ end }}" />
-  <meta name="twitter:description" content="{{ .Params.SEO.description }}" />
+  <meta name="twitter:description" content="{{ .Params.SEO.description | default .Site.Params.description  }}" />
   <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ $imagePath }}">
   <meta name="twitter:image:width" content="{{ $widthImage }}">
   <meta name="twitter:image:height" content="{{ $heightImage }}">
