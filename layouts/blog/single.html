@@ -58,7 +58,9 @@
 </section>
 {{ $currentBlog := . }} 
 {{ $excludedTitle := .Params.title }} 
-{{ $related := .Site.RegularPages.Related $currentBlog | first 3 }} {{ if gt (len $related) 0}}
+{{ $related := .Site.RegularPages.Related $currentBlog | first 3 }} 
+{{$relatedBlog := where $related "Type" "blog"}}
+{{ if gt (len $relatedBlog) 0}}
 <div class="container">
   <div class="gray-line__container">
     <hr class="gray-line" />
@@ -69,11 +71,9 @@
     <div class="section-recommendations__inner">
       <h2 class="post-page__title-h2">Recommendations</h2>
       <ul class="blog-list">
-      {{ range $related }}
-          {{ if eq .Type "blog" }}
+      {{ range $relatedBlog}}
             {{ if ne .Title $excludedTitle }}
               <li class="blog-item">{{ partial "blog-card.html" . }}</li>
-            {{ end }}
           {{ end }}
         {{ end }}
       </ul>
