@@ -49,7 +49,7 @@ languageCode = "en-us"
 
 
 [related]
-  includeNewer = false
+  includeNewer = true
   threshold = 80
   toLower = false
 [[related.indices]]
