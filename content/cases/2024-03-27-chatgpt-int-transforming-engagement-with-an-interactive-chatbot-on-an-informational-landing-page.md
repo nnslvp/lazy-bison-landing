@@ -2,12 +2,12 @@
 SEO:
   description: "ChatGPT INT: Transforming Engagement with an Interactive Chatbot
     on an Informational Landing Page"
-  keywords: chatbot, ai
+  keywords: AI
   author: Lazy Bison
 title: "ChatGPT INT: Transforming Engagement with an Interactive Chatbot on an
   Informational Landing Page"
 date: 2024-03-27T16:18:49.596Z
-image: images/screenshot-2024-03-27-at-17.35.28.png
+image: images/screenshot-2024-03-27-at-17.33.56.png
 case_categories:
   - ai
 project_info:
