@@ -62,18 +62,19 @@ tools_and_technologies:
 roadmap:
   - date: November 2022 - January 2023
     activities:
-      - "- Requirement Gathering and Analysis - Initial months were dedicated to
-        understanding client needs and planning the project scope. - Prototype
-        Development - A working prototype was developed to gather feedback and
-        refine requirements."
+      - Requirement Gathering and Analysis
+      - Initial months were dedicated to understanding client needs and planning
+        the project scope
+      - Prototype Development - A working prototype was developed to gather
+        feedback and refine requirements.
   - date: February - July 2023
     activities:
       - Core Development - The main development phase focused on building key
         functionalities.
   - activities:
       - Testing and Deployment - Rigorous testing was conducted to ensure
-        reliability
-      - followed by deployment and continuous monitoring for improvements.
+        reliability followed by deployment and continuous monitoring for
+        improvements.
     date: July - September 2023
 gallery_images:
   - image_path: images/add-assignment.png
