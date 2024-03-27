@@ -7,19 +7,23 @@
 
 .roadmap-list {
 	display: flex;
-	align-items: center;
 	justify-content: flex-start;
 	gap: 1rem;
 }
 
-.roadmap-item:not(.roadmap-item:has(.icon-arrow-roadmap)) {
+.roadmap-item:not(:has(.icon-arrow-roadmap)) {
+  display: flex;
 	width: 23.4375rem;
-	height: 18rem;
+  min-height: 18rem;
+}
+
+.roadmap-item:has(.icon-arrow-roadmap) {
+	align-content: center;
 }
 
 .roadmap-card {
+  flex-grow: 1;
 	width: 100%;
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
@@ -77,7 +81,7 @@
 
 	.roadmap-item:not(.roadmap-item:has(.icon-arrow-roadmap)) {
 		width: 34.75rem;
-		height: 10rem;
+		min-height: 10rem;
 	}
 
 	.roadmap-card {
@@ -118,7 +122,7 @@
 
 	.roadmap-item:not(.roadmap-item:has(.icon-arrow-roadmap)) {
 		width: 20.4375rem;
-		height: 14.125rem;
+		min-height: 14.125rem;
 	}
 
 	.roadmap-card {
