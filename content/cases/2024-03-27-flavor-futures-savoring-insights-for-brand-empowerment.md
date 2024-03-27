@@ -7,7 +7,7 @@ title: "Flavor Futures: Savoring Insights for Brand Empowerment"
 date: 2024-03-27T14:37:28.259Z
 image: images/dall·e-2024-03-27-15.55.24-visualize-a-close-up-view-of-vibrant-detailed-diagrams-and-charts-related-to-food-market-research-and-product-development.-these-diagrams-are-in-the-.webp
 case_categories:
-  - Marketing
+  - marketing
 project_info:
   client: Marketing Agency
   location: Netherlands
