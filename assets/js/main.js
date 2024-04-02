@@ -6,7 +6,7 @@ const isCasePage = document.querySelector('.case-page__wrapper')
 const isHomePage = document.querySelector('.home-page__wrapper')
 const isBlogPage = document.querySelector('.blog-page__wrapper')
 const caseStudyPageWrapper = document.querySelector('.case-study-page__wrapper')
-
+const mobileWidthScreen = 435
 //sliders
 const initSwiperSlider = (slider, settings) => {
 	return new Swiper(slider, {
@@ -24,7 +24,7 @@ const initSwiperSlider = (slider, settings) => {
 let newTestimonialsSwiper
 
 function mobileSliderTestimonials() {
-	const isMobile = document.documentElement.clientWidth <= 425
+	const isMobile = document.documentElement.clientWidth <= mobileWidthScreen
 	if (isMobile && testimonialsSlider.dataset.mobile === 'false') {
 		newTestimonialsSwiper = initSwiperSlider(testimonialsSlider, {
 			slidesPerView: 1,
@@ -159,7 +159,7 @@ const animateLines = () => {
 
 	animateLineWith(line)
 
-	if (widthScreen > 425) {
+	if (widthScreen > mobileWidthScreen) {
 		document.addEventListener('scroll', handleScroll)
 	}
 
@@ -173,7 +173,7 @@ const animateLines = () => {
 			verticalGrayLines.forEach(line => (line.style = null))
 		}
 
-		if (widthScreen <= 425) {
+		if (widthScreen <= mobileWidthScreen) {
 			grayLines.forEach(line => {
 				line.style.opacity = 1
 			})
@@ -202,7 +202,7 @@ const animateTestimonials = () => {
 
 	const cardArray = Array.from(testimonials.children)
 
-	if (widthScreen > 425) {
+	if (widthScreen > mobileWidthScreen) {
 		setInterval(() => {
 			const shuffledCardArray = shuffleArray(cardArray)
 			testimonials.classList.add('fade-out')
@@ -273,7 +273,7 @@ const dropdown = () => {
 
 	let hasExecuted = false
 
-	if (widthScreen <= 425) {
+	if (widthScreen <= mobileWidthScreen) {
 		addDescriptionsTextForSmallScreens()
 		hasExecuted = true
 	}
@@ -281,7 +281,7 @@ const dropdown = () => {
 	window.addEventListener('resize', e => {
 		const widthScreen = document.documentElement.clientWidth
 
-		if (widthScreen <= 425 && !hasExecuted) {
+		if (widthScreen <= mobileWidthScreen && !hasExecuted) {
 			addDescriptionsTextForSmallScreens()
 			hasExecuted = true
 		}
