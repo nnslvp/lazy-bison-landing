@@ -18,7 +18,7 @@
             <div class="author">
               {{ $imageAvatar := resources.Get .Params.avatar }}
               {{ with $imageAvatar }}
-              {{ $imageAvatarWebp := $imageAvatar.Resize "20x20 q100 webp" }}
+              {{ $imageAvatarWebp := $imageAvatar.Resize "20x20 q80 webp" }}
               <picture class="author__avatar">
                 <source type="image/webp" srcset="{{ $imageAvatarWebp.RelPermalink }}" />
                 <img src="{{ $imageAvatar.RelPermalink }}" alt="author" />
@@ -40,9 +40,9 @@
           </ul>
           {{ $image := resources.Get .Params.image }}
           {{ if $image }}
-          {{ $smallImage := $image.Resize "425x q100 webp" }}
-          {{ $mediumImage := $image.Resize "768x q100 webp" }}
-          {{ $largeImage := $image.Resize "1440x q100 webp" }}
+          {{ $smallImage := $image.Resize "425x q80 webp" }}
+          {{ $mediumImage := $image.Resize "768x q80 webp" }}
+          {{ $largeImage := $image.Resize "1440x q80 webp" }}
           <picture>
             <source type="image/webp" media="(max-width:425px)" srcset="{{$smallImage.RelPermalink}}">
             <source type="image/webp" media="(max-width:768px)" srcset="{{$mediumImage.RelPermalink}}">
