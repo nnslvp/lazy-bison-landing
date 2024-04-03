@@ -25,8 +25,8 @@
         </div>
         <div class="top-section-img__container">
           {{ $image := resources.Get .Params.image }}
-          {{ $mediumImage := $image.Resize "315x webp q100" }}
-          {{ $largeImage := $image.Resize "400x webp q100" }}
+          {{ $mediumImage := $image.Resize "315x webp q80" }}
+          {{ $largeImage := $image.Resize "400x webp q80" }}
           <picture>
             <source type="image/webp" media="(max-width:768px)" srcset="{{$largeImage.RelPermalink}}">
             <source type="image/webp" media="(max-width:1440px)" srcset="{{$mediumImage.RelPermalink}}">
@@ -223,7 +223,7 @@
             <li class="swiper-slide">
               <div class="swiper-slide__img-container">
                 {{ $image := resources.Get .image_path  }}
-                {{ $WEBPImage := $image.Process "q100 webp" }}
+                {{ $WEBPImage := $image.Process "q80 webp" }}
                 <img loading="lazy" src="{{ $WEBPImage.RelPermalink }}" alt="image project">
               </div>
             </li>

@@ -1,8 +1,8 @@
  <article class="card testimonial-1">
    <div class="avatar">
      {{ $image := resources.Get .Params.avatar  }}
-     {{ $smallImage := $image.Resize "92x q100 webp" }}
-     {{ $largeImage := $image.Resize "145x q100 webp" }}
+     {{ $smallImage := $image.Resize "92x q80 webp" }}
+     {{ $largeImage := $image.Resize "145x q80 webp" }}
      <picture>
        <source type="image/webp" media="(max-width:768px)" srcset="{{$smallImage.RelPermalink}}">
        <source type="image/webp" media="(min-width:769px)" srcset="{{$largeImage.RelPermalink}}">
