@@ -26,7 +26,7 @@
         <div class="top-section-img__container">
           {{ $image := resources.Get .Params.image }}
           {{ $mediumImage := $image.Resize "315x webp q100" }}
-          {{ $largeImage := $image.Resize "355x webp q100" }}
+          {{ $largeImage := $image.Resize "400x webp q100" }}
           <picture>
             <source type="image/webp" media="(max-width:768px)" srcset="{{$largeImage.RelPermalink}}">
             <source type="image/webp" media="(max-width:1440px)" srcset="{{$mediumImage.RelPermalink}}">
