@@ -2,13 +2,12 @@
   <article class="case-card">
     <div class="case-card__img-wrapper">
       {{ $image := resources.Get .Params.image }}
-      {{ $mediumImage := $image.Resize "320x300 webp" }}
-      {{ $largeImage := $image.Resize "620x405 webp" }}
+      {{ $mediumImage := $image.Resize "317x webp q100" }}
+      {{ $largeImage := $image.Resize "586x webp q100" }}
       <picture>
         <source type="image/webp" media="(max-width:768px)" srcset="{{$mediumImage.RelPermalink}}">
         <source type="image/webp" media="(max-width:1440px)" srcset="{{$largeImage.RelPermalink}}">
-        <source type="image/webp" media="(min-width:1441px)" srcset="{{$largeImage.RelPermalink}}">
-        <img loading="lazy" src="{{ $image.RelPermalink }}" alt="Case-Image">
+        <img loading="lazy" src="{{ $largeImage.RelPermalink }}" alt="Case-Image">
       </picture>
     </div>
     <footer class="case-card__footer">

@@ -25,15 +25,12 @@
         </div>
         <div class="top-section-img__container">
           {{ $image := resources.Get .Params.image }}
-          {{ $smallImage := $image.Resize "206x206 webp" }}
-          {{ $mediumImage := $image.Resize "343x343 webp" }}
-          {{ $largeImage := $image.Resize "315x315 webp" }}
+          {{ $mediumImage := $image.Resize "315x webp q100" }}
+          {{ $largeImage := $image.Resize "355x webp q100" }}
           <picture>
-            <source type="image/webp" media="(max-width:425px)" srcset="{{$mediumImage.RelPermalink}}">
-            <source type="image/webp" media="(max-width:768px)" srcset="{{$smallImage.RelPermalink}}">
-            <source type="image/webp" media="(max-width:1440px)" srcset="{{$largeImage.RelPermalink}}">
-            <source type="image/webp" media="(min-width:1441px)" srcset="{{$largeImage.RelPermalink}}">
-            <img src="{{ $image.RelPermalink }}" alt="Case-Image">
+            <source type="image/webp" media="(max-width:768px)" srcset="{{$largeImage.RelPermalink}}">
+            <source type="image/webp" media="(max-width:1440px)" srcset="{{$mediumImage.RelPermalink}}">
+            <img class="img-project" src="{{ $largeImage.RelPermalink }}" alt="Case-Image">
           </picture>
         </div>
       </div>
