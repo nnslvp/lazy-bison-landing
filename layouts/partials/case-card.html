@@ -2,10 +2,8 @@
   <article class="case-card">
     <div class="case-card__img-wrapper">
       {{ $image := resources.Get .Params.image }}
-      {{ $mediumImage := $image.Resize "400x webp q80" }}
       {{ $largeImage := $image.Resize "586x webp q80" }}
       <picture>
-        <source type="image/webp" media="(max-width:768px)" srcset="{{$mediumImage.RelPermalink}}">
         <source type="image/webp" media="(max-width:1440px)" srcset="{{$largeImage.RelPermalink}}">
         <img loading="lazy" src="{{ $largeImage.RelPermalink }}" alt="Case-Image">
       </picture>
