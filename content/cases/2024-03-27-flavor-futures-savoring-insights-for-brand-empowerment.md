@@ -25,31 +25,43 @@ challenge:
     - title: Tools for market research
       description: Lack of efficient and easily managed tools for conducting market
         research and analyzing consumer opinions.
-    - title: Insights of real-time data
-      description: Difficulty in gathering real-time data and generating actionable
-        insights from consumer feedback.
+    - title: Dependency on Third-Party Services
+      description: Technical problems with third-party services (Azure) that supply
+        respondents could interrupt the platform's ability to operate
+        effectively across various regions.
     - description: The need for a collaborative platform that allows team members to
         work on projects simultaneously.
       title: Simultaneous collaboration of several users
+    - description: Risk of incorrect data due to respondents providing false
+        information about critical demographics such as age and gender.
+      title: Respondent recruitment and verification
+    - title: Cybersecurity and Data Integrity Challenge
+      description: Vulnerability to cyber-attacks that could disable the InsightMe
+        service temporarily and compromise sensitive internal data, leading to
+        potential reputational damage and financial losses.
 value_driven_results:
   subtitle: Platform significantly improved ability to offer a cutting-edge market
     research solution to the food production industry, enhancing efficiency,
     collaborative efforts, and data-driven decision-making.
   results:
-    - description: "Increased Research Efficiency: It streamlines survey processes,
-        allowing for quicker setup and faster insights. "
-    - description: "Enhanced Data Accuracy: Precise respondent targeting and real-time
-        data ensure reliable insights for informed decisions. "
-    - description: "Improved Product Development: In-depth reports enable businesses
-        to align products more closely with consumer needs, boosting
-        satisfaction. "
-    - description: "Strengthened Collaborative Efforts: Team features enhance
-        collaboration, improving project productivity and creativity. "
-    - description: "Cost-Effectiveness: Consolidating research tools into one platform
-        reduces operational costs and increases ROI. "
-    - description: "Scalability and Flexibility: The platform's cloud-based setup
-        supports projects of any size, adaptable to businesses from startups to
-        large enterprises."
+    - description: By providing real-time feedback and comprehensive analytics,
+        InsightMe helps food production businesses make informed decisions
+        swiftly, aligning closely with market dynamics.
+    - description: The platform reduces the time spent by marketers in collecting and
+        analyzing data, thus speeding up the marketing strategy refinement
+        process.
+    - description: With advanced respondent filtering and real-time data verification,
+        the platform ensures the accuracy and reliability of the market data
+        collected.
+    - description: Features such as data security, backup solutions, and robust
+        infrastructure help mitigate operational risks like data loss, hacking,
+        and service downtime.
+    - description: By automating and streamlining market research processes, InsightMe
+        reduces operational costs associated with traditional market research
+        methods and personnel.
+    - description: The cloud-based solution ensures that the platform can scale
+        according to user demand and adapt to various operational sizes, from
+        small enterprises to large corporations.
 tools_and_technologies:
   - tool: Back-End
     technologies: Ruby on Rails
@@ -83,5 +95,7 @@ gallery_images:
 | ------------------- | ------------------------------------------------------------------------------------------------------------ |
 | Test Creation       | Users can create customized tests with various question types, catering to specific research needs.          |
 | Real-Time Analytics | The platform allows users to view and analyzes test responses as they come in, providing immediate insights. |
-| Team Collaboration  | Platform supports team functionalities, enabling multiple users to work on a project concurrently.           |
+| Team Collaboration  | The platform supports team functionalities, enabling multiple users to work on a project concurrently.       |
 | Report Generation   | Users can generate and export detailed reports based on test responses, aiding in decision-making.           |
+| Multilingual Support      | Offers the platform in multiple languages to cater to a global audience, making it easier for businesses to conduct international market research.                   |
+| Predictive Analytics Tool | Integrates predictive models that help forecast future trends based on the collected data, providing businesses with a proactive tool for planning their strategies. |
