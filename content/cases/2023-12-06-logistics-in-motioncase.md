@@ -61,6 +61,12 @@ value_driven_results:
     - description: User access management became user-friendly and efficient.
     - description: Robust reporting and analytics tools provided valuable insights for
         optimization.
+  conclusion:
+    By addressing these challenges, our solution enabled the logistics company to operate more efficiently,
+    ensure driver
+    safety and compliance, and enhance communication across the organization. This resulted in improved
+    overall performance
+    and customer satisfaction.
 tools_and_technologies:
   - tool: Back-End
     technologies: Ruby on Rails, PostgreSQL, S3 Bucket
