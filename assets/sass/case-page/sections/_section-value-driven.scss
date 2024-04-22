@@ -43,23 +43,19 @@
 	height: 6.5625rem;
 }
 
-.value-driven-list:nth-of-type(1) {
-	width: 35.3125rem;
+.value-driven-list {
+	width: 50%;
 }
 
-.value-driven-list:nth-of-type(2) {
-	width: 30.75rem;
-	padding-left: 3.3125rem;
-}
 
 .value-driven-list:nth-of-type(2)::before {
 	position: absolute;
-	width: 200%;
+	width: 60vw;
 	height: 100%;
 	background: #fefefe;
 	content: '';
 	top: 0;
-	left: 0;
+	left: -3.3125rem;
 }
 
 .value-driven-list {
@@ -102,7 +98,7 @@
 .section-value-driven-footer .icon-elipse-gradient-pink {
 	position: absolute;
 	top: -3.625rem;
-	right: 46%;
+	right: 47.8%;
 	transform: translate(-50%, -50%);
 }
 
@@ -140,21 +136,12 @@
 		margin-bottom: 0.5rem;
 	}
 
-	.value-driven-lists__wrapper .value-driven-list:nth-of-type(1) {
-		width: 20.375rem;
-		padding-right: 1.625rem;
-	}
-
-	.value-driven-lists__wrapper .value-driven-list:nth-of-type(2) {
-		width: 21.5rem;
-	}
-
 	.value-driven-lists__wrapper {
-		gap: 0rem;
+		gap: 6%;
 	}
 
-	.value-driven-lists__wrapper .value-driven-list:nth-of-type(2) {
-		padding-left: 1.75rem;
+	.value-driven-list:nth-of-type(2)::before {
+		left: -2.125rem;
 	}
 
 	.value-driven-list {
@@ -173,7 +160,7 @@
 
 	.section-value-driven-footer .icon-elipse-gradient-pink {
 		top: -1.625rem;
-		right: 48%;
+		right: 45.5%;
 	}
 
 	.section-value-driven-footer .case-study-page__subtitle {
@@ -193,21 +180,21 @@
 	}
 
 	.section-value-driven__inner .case-study-page__subtitle {
+    width: 95%;
 		margin-bottom: 1.25rem;
-	}
-
-	.value-driven-lists__wrapper .value-driven-list:nth-of-type(1) {
-		width: 20.375rem;
-	}
-
-	.value-driven-lists__wrapper .value-driven-list:nth-of-type(2) {
-		width: 21.5rem;
 	}
 
 	.value-driven-lists__wrapper {
 		flex-direction: column;
 		gap: 0rem;
 		padding-bottom: 0.75rem;
+	}
+
+	.value-driven-list {
+    width: 100%;
+		height: auto;
+		flex-direction: column;
+		padding-top: 0rem;
 	}
 
 	.value-driven-lists__wrapper .value-driven-list:nth-of-type(1) {
@@ -219,11 +206,9 @@
 		padding-top: 1.5rem;
 	}
 
-	.value-driven-list {
-		height: auto;
-		flex-direction: column;
-		padding-top: 0rem;
-	}
+  .value-driven-list:nth-of-type(2)::before{
+    width: 200%;
+  }
 
 	.value-driven-item__text {
 		font-size: 0.875rem;
@@ -238,5 +223,10 @@
 	.value-driven-list:nth-of-type(2)::before {
 		height: 103%;
 		left: -6.25rem;
+	}
+}
+@media (max-width: $breakpoint-sm) {
+	.section-value-driven__inner .case-study-page__subtitle {
+    width: 90%;
 	}
 }
