@@ -55,6 +55,12 @@ value_driven_results:
         instant, relevant information provided by the chatbot led to higher
         conversion rates, as visitors were more likely to take desired actions.
         "
+  conclusion:
+    By addressing these challenges, our solution enabled the logistics company to operate more efficiently,
+    ensure driver
+    safety and compliance, and enhance communication across the organization. This resulted in improved
+    overall performance
+    and customer satisfaction.
 tools_and_technologies:
   - tool: Back-End
     technologies: Ruby on Rails
@@ -86,6 +92,7 @@ gallery_images:
   - image_path: images/frame-1-2.png
   - image_path: images/frame-1-3.png
 ---
+
 | Service                    | Web Application                                                                 | Chatbot Integration                                                                  |
 | -------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
 | **User Experience Design** | Developed an intuitive and engaging UI for the landing page.                    | Integrated a user-friendly chat interface.                                           |
