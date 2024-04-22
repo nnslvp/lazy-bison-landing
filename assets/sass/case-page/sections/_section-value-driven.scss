@@ -47,7 +47,6 @@
 	width: 50%;
 }
 
-
 .value-driven-list:nth-of-type(2)::before {
 	position: absolute;
 	width: 60vw;
@@ -179,7 +178,7 @@
 	}
 
 	.section-value-driven__inner .case-study-page__subtitle {
-    width: 95%;
+		width: 95%;
 		margin-bottom: 1.25rem;
 	}
 
@@ -190,7 +189,7 @@
 	}
 
 	.value-driven-list {
-    width: 100%;
+		width: 100%;
 		flex-direction: column;
 		padding-top: 0rem;
 	}
@@ -204,9 +203,9 @@
 		padding-top: 1.5rem;
 	}
 
-  .value-driven-list:nth-of-type(2)::before{
-    width: 200%;
-  }
+	.value-driven-list:nth-of-type(2)::before {
+		width: 200%;
+	}
 
 	.value-driven-item__text {
 		font-size: 0.875rem;
@@ -223,8 +222,9 @@
 		left: -6.25rem;
 	}
 }
+
 @media (max-width: $breakpoint-sm) {
 	.section-value-driven__inner .case-study-page__subtitle {
-    width: 90%;
+		width: 90%;
 	}
 }
