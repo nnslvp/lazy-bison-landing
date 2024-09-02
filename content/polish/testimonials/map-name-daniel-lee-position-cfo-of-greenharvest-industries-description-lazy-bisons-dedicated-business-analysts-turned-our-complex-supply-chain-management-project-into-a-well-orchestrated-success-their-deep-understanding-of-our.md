@@ -2,10 +2,5 @@
 avatar: /images/avatar-one.png
 name: Daniel Lee
 position: CFO of GreenHarvest Industries
-description: Lazy Bison's Dedicated Business Analysts turned our complex supply
-  chain     management project into a well-orchestrated success. Their
-  deep     understanding of our industry, coupled with their technical
-  prowess,     ensured that our requirements were met flawlessly. Their
-  guidance     streamlined our processes and significantly enhanced our
-  operational     efficiency.
+description: Dedykowani analitycy biznesowi Lazy Bison przekształcili nasz skomplikowany projekt zarządzania łańcuchem dostaw w doskonale zorganizowany sukces. Ich głęboka znajomość naszej branży, w połączeniu z ich umiejętnościami technicznymi, zapewniła perfekcyjną realizację naszych wymagań. Ich wskazówki usprawniły nasze procesy i znacznie zwiększyły naszą efektywność operacyjną.
 ---

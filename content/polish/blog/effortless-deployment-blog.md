@@ -1,47 +1,47 @@
 ---
-title: Effortless Deployment of Web Applications with Kamal
+title: Bezproblemowe wdrażanie aplikacji webowych z Kamal
 author: Yahor Bukhta
 avatar:
 date: 2023-12-06T17:18:00
 SEO:
-  description: 'Learn how Kamal simplifies web app deployment with features like zero downtime, incremental rollouts, and flexible configuration. Ideal for developers.'
-  keywords: 'Kamal, Web App Deployment, Zero Downtime, Incremental Rollouts, Flexible Configuration, Developers'
+  description: 'Dowiedz się, jak Kamal upraszcza wdrażanie aplikacji webowych dzięki funkcjom takim jak zero przestojów, stopniowe wdrażanie i elastyczna konfiguracja. Idealne dla programistów.'
+  keywords: 'Kamal, Wdrażanie Aplikacji Webowych, Zero Przestojów, Stopniowe Wdrażanie, Elastyczna Konfiguracja, Programiści'
   author: 'Yahor Bukhta'
 image: './images/kamal.png'
 blog_categories: ['DevOps']
 ---
 
-### Introduction:
+### Wprowadzenie:
 
-Navigating the intricacies of web application deployment can be a daunting task. Enter Kamal—a deployment tool designed to alleviate these complexities. In this article, we'll delve into the key features of Kamal and share insights from our own hands-on experience.
+Poruszanie się po zawirowaniach wdrażania aplikacji webowych może być przytłaczające. Oto Kamal – narzędzie do wdrażania zaprojektowane, aby uprościć te złożoności. W tym artykule przyjrzymy się kluczowym funkcjom Kamala i podzielimy się spostrzeżeniami z naszego własnego doświadczenia.
 
-### Key Advantages of Kamal
+### Kluczowe Zalety Kamala
 
-Kamal brings a host of features to the table, making it a go-to solution for web application deployment:
+Kamal oferuje szereg funkcji, które czynią go idealnym rozwiązaniem do wdrażania aplikacji webowych:
 
-- **Zero Downtime**: Kamal ensures uninterrupted service during the deployment process.
-- **Incremental Rollouts**: Update your application seamlessly without affecting the end-user experience.
-- **Flexible Configuration**: Kamal provides extensive options for managing both environment variables and sensitive data securely.
+- **Zero Przestojów**: Kamal zapewnia nieprzerwaną usługę podczas procesu wdrażania.
+- **Stopniowe Wdrażanie**: Aktualizuj swoją aplikację płynnie, bez wpływu na doświadczenie końcowego użytkownika.
+- **Elastyczna Konfiguracja**: Kamal oferuje rozbudowane opcje zarządzania zmiennymi środowiskowymi i danymi wrażliwymi w sposób bezpieczny.
 
-### Why We Chose Kamal
+### Dlaczego Wybraliśmy Kamal
 
-In our development studio, Kamal has become an invaluable asset. Its intuitive configuration interface and comprehensive feature set have significantly reduced our deployment overhead, allowing us to channel our energies into development. The tool's robust handling of environment variables and secrets is especially noteworthy.
+W naszej studiu deweloperskim Kamal stał się nieocenionym narzędziem. Jego intuicyjny interfejs konfiguracyjny i kompleksowy zestaw funkcji znacznie zmniejszyły nasze obciążenie związane z wdrażaniem, pozwalając nam skoncentrować się na rozwoju. Szczególnie godne uwagi jest solidne zarządzanie zmiennymi środowiskowymi i sekretami.
 
-### Installation Guide
+### Przewodnik Instalacji
 
-Installing Kamal is straightforward. Here are your options:
+Instalacja Kamala jest prosta. Oto Twoje opcje:
 
-1. To add the gem to your Ruby on Rails project, simply execute **`bundle add kamal`**. Note that compatibility issues may arise with older Ruby on Rails versions.
+1. Aby dodać gem do projektu Ruby on Rails, po prostu wykonaj **`bundle add kamal`**. Należy pamiętać, że mogą wystąpić problemy z kompatybilnością z starszymi wersjami Ruby on Rails.
 
-2. For Docker users, you can create an alias in your console configuration to run Kamal as follows:
+2. Dla użytkowników Dockera, możesz stworzyć alias w konfiguracji konsoli, aby uruchomić Kamala w następujący sposób:
 
 ```bash
 alias kamal="docker run -it --rm -v '${PWD}:/workdir' -v '/run/host-services/ssh-auth.sock:/run/host-services/ssh-auth.sock' -e SSH_AUTH_SOCK='/run/host-services/ssh-auth.sock' -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/basecamp/kamal:latest"
 ```
 
-3. To avoid version conflicts, you can set up a separate Gemfile as follows:
+1. To avoid version conflicts, you can set up a separate Gemfile as follows:
 
-- Create a file named **`gemfiles/kamal.Gemfile`** and populate it with:
+- Utwórz plik o nazwie **`gemfiles/kamal.Gemfile`** i wypełnij go następującą zawartością:
 
 ```ruby
 source 'https://rubygems.org'
@@ -54,19 +54,19 @@ gem 'kamal', '~> 1.0.0'
 BUNDLE_GEMFILE=kamal/Gemfile bundle install
 ```
 
-- Generate a runnable directory using
+- Wygeneruj katalog do uruchamiania za pomocą
 
 ```bash
 BUNDLE_GEMFILE=kamal/Gemfile bundle binstub kamal --path ../bin
 ```
 
-After these steps, you can run **`bin/kamal`** from the console. This is particularly useful for GitHub Actions if adding the gem to your project isn't an option.
+Po wykonaniu tych kroków, możesz uruchomić **`bin/kamal`** z konsoli. Jest to szczególnie przydatne w przypadku GitHub Actions, jeśli dodanie gema do projektu nie jest możliwe.
 
-### Configuration Steps
+### Kroki konfiguracyjne
 
-Configuring Kamal is a breeze. Simply run **`kamal init`** to generate the necessary directories and files. You can then proceed to configure your deployment settings using the **`deploy.yml`** and **`deploy.<env name>.yml`** files.
+Konfiguracja Kamala jest prosta. Wystarczy uruchomić **`kamal init`**, aby wygenerować niezbędne katalogi i pliki. Następnie możesz przystąpić do konfiguracji ustawień wdrożenia za pomocą plików **`deploy.yml`** oraz **`deploy.<nazwa środowiska>.yml`**.
 
-Here's a sample **`deploy.yml`** file to get you started:
+Oto przykładowy plik **`deploy.yml`**, który pomoże Ci zacząć:
 
 ```yaml
 # Name of your application. Used to uniquely configure containers.
@@ -161,7 +161,7 @@ healthcheck:
 #   wait: 2
 ```
 
-And an example **`deploy.staging.yml`** for staging environments:
+A oto przykładowy plik **`deploy.staging.yml`** dla środowisk stagingowych:
 
 ```yaml
 servers:
@@ -193,32 +193,32 @@ accessories:
       - data:/data
 ```
 
-### Usage Guide
+### Przewodnik po użyciu
 
-To set up your server, execute the command **`kamal setup`**. In our specific case, the command is:
+Aby skonfigurować swój serwer, wykonaj polecenie **`kamal setup`**. W naszym przypadku polecenie to wygląda następująco:
 
 ```bash
 kamal setup -d staging
 ```
 
-To create a .env file, execute the command **kamal envify**. In our specific case, the command is:
+Aby stworzyć plik `.env`, wykonaj polecenie **`kamal envify`**. W naszym przypadku polecenie to wygląda następująco:
 
 ```bash
 kamal envify -d staging
 ```
 
-To upload variables from .env files to the server, execute the command **kamal env push**. In our specific case, the command is:
+Aby przesłać zmienne z plików `.env` na serwer, wykonaj polecenie **`kamal env push`**. W naszym przypadku polecenie to wygląda następująco:
 
 ```bash
 kamal env push -d staging
 ```
 
-To **deploy** your application, use the command **`kamal deploy`**. For us, the command is:
+Aby **wdrożyć** swoją aplikację, użyj polecenia **`kamal deploy`**. W naszym przypadku polecenie to wygląda następująco:
 
 ```bash
 kamal deploy -d staging
 ```
 
-### Conclusion
+### Podsumowanie
 
-Kamal stands out as a streamlined and efficient solution for web application deployment. Its zero-downtime, incremental rollouts, and flexible configuration options make it an essential tool for any development team.
+Kamal wyróżnia się jako uproszczone i efektywne rozwiązanie do wdrażania aplikacji webowych. Jego funkcje zapewniające brak przestojów, stopniowe wdrożenia i elastyczne opcje konfiguracji czynią go niezbędnym narzędziem dla każdego zespołu deweloperskiego.

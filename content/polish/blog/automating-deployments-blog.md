@@ -1,66 +1,66 @@
 ---
-title: Automating Deployments with Kamal and GitHub Actions
+title: Automatyzacja wdrożeń za pomocą Kamal i GitHub Actions
 author: Yahor Bukhta
 avatar:
 date: 2023-12-08T17:18:00
 SEO:
-  description: 'Comprehensive guide to automating Ruby on Rails web app deployments using Kamal and GitHub Actions. Includes installation guide and sample GitHub Actions configuration.'
-  keywords: 'Kamal, GitHub Actions, Web App Deployment, Automation, CI/CD Pipeline, Ruby, Ruby on Rails, Developers'
+  description: 'Kompleksowy przewodnik po automatyzacji wdrożeń aplikacji webowych Ruby on Rails za pomocą Kamal i GitHub Actions. Zawiera przewodnik instalacji oraz przykładową konfigurację GitHub Actions.'
+  keywords: 'Kamal, GitHub Actions, Wdrożenie Aplikacji Webowych, Automatyzacja, CI/CD Pipeline, Ruby, Ruby on Rails, Programiści'
   author: 'Yahor Bukhta'
 image: '/images/kamal-in-github-actions.png'
 blog_categories: ['DevOps']
 ---
 
-## Introduction: Simplify Your Deployments
+## Wprowadzenie: Uprość swoje wdrożenia
 
-Learn how to automate your web app deployments using Kamal and GitHub Actions. This comprehensive guide covers installation, setup, and includes a sample configuration for seamless deployments.
+Dowiedz się, jak zautomatyzować wdrożenia aplikacji webowych za pomocą Kamal i GitHub Actions. Ten kompleksowy przewodnik obejmuje instalację, konfigurację oraz przykładową konfigurację dla bezproblemowych wdrożeń.
 
-## Detailed Guide to Installing Kamal
+## Szczegółowy przewodnik instalacji Kamal
 
-For a more in-depth look at installation and configuration, check out this [detailed post]({{< relref "blog/effortless-deployment-blog" >}}).
+Aby uzyskać bardziej szczegółowe informacje na temat instalacji i konfiguracji, zapoznaj się z tym [szczegółowym wpisem]({{< relref "blog/effortless-deployment-blog" >}}).
 
-### Easy Steps to Install Kamal
+### Proste kroki do zainstalowania Kamal
 
-1. **Direct Installation**: Execute `bundle add kamal` to add the gem to your Ruby project.
-   - **Compatibility Note**: May not work with older Ruby on Rails versions.
-2. **Avoiding Version Conflicts**: To avoid version conflicts in Ruby on Rails versions lower than 6, it is recommended to set up a separate Gemfile.
+1. **Bezpośrednia instalacja**: Wykonaj `bundle add kamal`, aby dodać gem do swojego projektu Ruby.
+   - **Uwaga dotycząca kompatybilności**: Może nie działać ze starszymi wersjami Ruby on Rails.
+2. **Unikanie konfliktów wersji**: Aby uniknąć konfliktów wersji w starszych wersjach Ruby on Rails poniżej 6, zaleca się utworzenie osobnego pliku Gemfile.
 
-   - Create a file named `gemfiles/kamal.Gemfile` and populate it with:
+   - Utwórz plik o nazwie `gemfiles/kamal.Gemfile` i wypełnij go:
 
    ```ruby
     source '<https://rubygems.org>'
     gem 'kamal', '~> 1.0.0'
    ```
 
-- Generate a runnable directory:
+- Wygeneruj uruchamialny katalog:
 
   ```bash
   BUNDLE_GEMFILE=kamal/Gemfile bundle binstub kamal --path ../bin
   ```
 
-- Run
+- Uruchom
 
   ```bash
   BUNDLE_GEMFILE=kamal/Gemfile bundle install
   ```
 
-After these steps, you can run `bin/kamal` from the console, which is particularly useful for GitHub Actions.
+Po wykonaniu tych kroków możesz uruchomić `bin/kamal` z konsoli, co jest szczególnie przydatne dla GitHub Actions.
 
-## The Importance of Automation in Web Development
+## Znaczenie automatyzacji w rozwoju aplikacji webowych
 
-Automation not only streamlines your workflow but also reduces errors and saves valuable time. Learn why Kamal combined with GitHub Actions is the ultimate solution for a robust, automated deployment pipeline.
+Automatyzacja nie tylko usprawnia przepływ pracy, ale także zmniejsza liczbę błędów i oszczędza cenny czas. Dowiedz się, dlaczego Kamal w połączeniu z GitHub Actions to idealne rozwiązanie dla solidnego, zautomatyzowanego pipeline’u wdrożeniowego.
 
-## How to Set Up GitHub Actions
+## Jak skonfigurować GitHub Actions
 
-Create a `.github/workflows/` directory in your repository. Add a YAML file for your workflow and securely store sensitive data like passwords and keys using GitHub Secrets.
+Utwórz katalog `.github/workflows/` w swoim repozytorium. Dodaj plik YAML dla swojego workflow i bezpiecznie przechowuj wrażliwe dane, takie jak hasła i klucze, za pomocą GitHub Secrets.
 
-## Integrating Kamal with GitHub Actions for Seamless Deployments
+## Integracja Kamal z GitHub Actions dla bezproblemowych wdrożeń
 
-Learn how to integrate Kamal into your GitHub Actions workflow for consistent and secure deployments.
+Dowiedz się, jak zintegrować Kamal z workflow GitHub Actions, aby zapewnić spójne i bezpieczne wdrożenia.
 
-## Sample GitHub Actions Configuration for Ruby on Rails
+## Przykładowa konfiguracja GitHub Actions dla Ruby on Rails
 
-Here's a sample `.github/workflows/staging_deploy.yml` based on your configuration:
+Oto przykładowa konfiguracja `.github/workflows/staging_deploy.yml` oparta na Twojej konfiguracji:
 
 ```yml
 name: 'Staging deploy'
@@ -112,6 +112,6 @@ jobs:
     # run: ./bin/kamal deploy -d staging
 ```
 
-## Conclusion: Enhance Your CI/CD Pipeline with Kamal and GitHub Actions
+## Podsumowanie: Udoskonal swój pipeline CI/CD za pomocą Kamal i GitHub Actions
 
-Automating deployments with Kamal and GitHub Actions significantly enhances your CI/CD pipeline, making it efficient, secure, and developer-friendly.
+Automatyzacja wdrożeń z Kamal i GitHub Actions znacznie udoskonala Twój pipeline CI/CD, czyniąc go wydajnym, bezpiecznym i przyjaznym dla deweloperów.

@@ -2,9 +2,5 @@
 avatar: /images/avatar-four.png
 name: Jessica Martin
 position: CEO of TechNova Solutions
-description: Lazy Bison has been an absolute game-changer for us. Their
-  expertise in Ruby on Rails combined with their dedicated development team
-  model helped us launch our innovative SaaS platform in record time. Their
-  commitment to quality and their seamless communication made them an invaluable
-  extension of our team. We couldn't be happier with the results!
+description: Lazy Bison całkowicie zmieniło dla nas zasady gry. Ich wiedza w zakresie Ruby on Rails w połączeniu z modelem dedykowanego zespołu programistów pomogły nam uruchomić naszą innowacyjną platformę SaaS w rekordowym czasie. Ich zaangażowanie w jakość oraz płynna komunikacja uczyniły ich nieocenionym przedłużeniem naszego zespołu. Jesteśmy niezwykle zadowoleni z wyników!
 ---

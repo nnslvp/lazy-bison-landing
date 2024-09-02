@@ -17,6 +17,7 @@ stats_years_in_business_subtext: "na rynku"
 stats_clients_worldwide: "100+"
 stats_clients_worldwide_subtext: "klientów na całym świecie"
 
+services_title: "Najlepsze funkcje usług"
 web_development_title: "Rozwój stron internetowych"
 web_development_description: "Rozwój stron internetowych to fundament Lazy Bison. Wierzymy, że dobrze zaprojektowana strona jest kluczem do sukcesu marki w sieci. Nasz zespół doświadczonych programistów Ruby on Rails tworzy cyfrowe doświadczenia, które przyciągają, angażują i konwertują. Niezależnie od tego, czy zaczynasz od zera, czy modernizujesz istniejącą platformę, nasze rozwiązania są dostosowane do unikalnych celów Twojej marki."
 
@@ -54,6 +55,6 @@ testimonials_title: "Referencje"
 testimonials_subtitle: "Co mówią ludzie?"
 testimonials_description: "Nasza główna wiara w sukces wiąże się z osiągnięciami naszych klientów."
 
-consultation_title: "Chcesz przekształcić swoją wizję produktu w rzeczywistość dzięki naszemu podejściu opartemu na danych?"
+consultation_title: "Chcesz zrealizować swoją wizję produktu dzięki naszemu podejściu opartemu na danych?"
 consultation_button_text: "Bezpłatną konsultację"
 ---

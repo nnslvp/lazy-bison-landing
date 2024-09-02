@@ -1,43 +1,41 @@
 ---
-title: 'Getting Started with Hugo: Installation and Basic Setup without Theme'
+title: 'Rozpoczęcie pracy z Hugo: Instalacja i podstawowa konfiguracja bez użycia motywu'
 author: Yahor Bukhta
 avatar:
 date: 2024-01-02T12:45:00+00:00
 SEO:
-  description: 'Explore our comprehensive guide on getting started with Hugo - the swift and modern static site generator. Learn step-by-step how to install Hugo, set up a CSS compiler, create a new project, and manage posts.'
-  keywords: 'Hugo static site generator, Install Hugo, Hugo setup guide, Hugo for beginners, Creating a Hugo project, Hugo blog setup, Hugo templates and layouts, SASS with Hugo, Hugo installation guide, Hugo site development, Manage posts in Hugo, Hugo CSS compiler setup, Static site generation, Web development with Hugo, Hugo site configuration'
-  author: 'Yahor Bukhta'
-image: './images/hugo.png'
-description: >
-  DESCRIPTION TEXT HERE
+description: ‘Zapoznaj się z naszym kompleksowym przewodnikiem dotyczącym rozpoczęcia pracy z Hugo – szybkim i nowoczesnym generatorem stron statycznych. Naucz się krok po kroku, jak zainstalować Hugo, skonfigurować kompilator CSS, utworzyć nowy projekt i zarządzać postami.’
+keywords: ‘Hugo generator stron statycznych, Instalacja Hugo, Przewodnik konfiguracji Hugo, Hugo dla początkujących, Tworzenie projektu Hugo, Konfiguracja bloga Hugo, Szablony i układy Hugo, SASS z Hugo, Przewodnik instalacji Hugo, Tworzenie stron z Hugo, Konfiguracja witryny Hugo, Zarządzanie postami w Hugo, Konfiguracja kompilatora CSS w Hugo, Generowanie stron statycznych, Tworzenie stron internetowych z Hugo, Konfiguracja witryny Hugo’
+author: ‘Yahor Bukhta’
+image: ‘./images/hugo.png’
+description: ''
 blog_categories: ['WebDevelopment', 'Frontend']
 ---
 
-**Introduction:**
+**Wprowadzenie:**
 
-Welcome to the world of Hugo, the fastest static site generator that's transforming web development. Whether you're a seasoned coder or just starting, Hugo offers unparalleled speed and flexibility for your web projects. Let's dive into how you can set up Hugo effortlessly and why it's the go-to choice for developers around the globe.
+Witamy w świecie Hugo, najszybszego generatora stron statycznych, który rewolucjonizuje rozwój stron internetowych. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, Hugo oferuje niezrównaną szybkość i elastyczność dla Twoich projektów internetowych. Zanurzmy się w to, jak łatwo możesz skonfigurować Hugo i dlaczego jest to preferowany wybór dla programistów na całym świecie.
 
----
 
-**Installing Hugo**
+**Instalacja Hugo**
 
-Begin your journey with Hugo by following the easy steps outlined in the [official Hugo installation guide](https://gohugo.io/installation/).
+Rozpocznij swoją podróż z Hugo, postępując zgodnie z łatwymi krokami opisanymi w [oficjalnym przewodniku instalacji Hugo](https://gohugo.io/installation/).
 
-**Step-by-Step Installation Guide:**
+**Krok po kroku: Przewodnik instalacji:**
 
-- **For macOS (using Homebrew):**
+- **Dla macOS (za pomocą Homebrew):**
 
   ```bash
   brew install hugo
   ```
 
-- **For Windows (using Chocolatey):**
+- **Dla Windows (za pomocą Chocolatey):**
 
   ```bash
   choco install hugo -confirm
   ```
 
-- **For Linux (using Snap):**
+- **Dla Linux (za pomocą Snap):**
 
   ```bash
   sudo snap install hugo
@@ -45,9 +43,9 @@ Begin your journey with Hugo by following the easy steps outlined in the [offici
 
 ---
 
-**Setting Up a CSS Compiler**
+**Konfiguracja kompilatora CSS**
 
-To seamlessly compile CSS from SASS/SCSS, choose a tool that best fits your OS:
+Aby bezproblemowo kompilować CSS z SASS/SCSS
 
 - **macOS:**
 
@@ -55,13 +53,13 @@ To seamlessly compile CSS from SASS/SCSS, choose a tool that best fits your OS:
   brew install sass/sass/sass
   ```
 
-- **Linux (using Snap):**
+- **Dla Linux (za pomocą Snap):**
 
   ```bash
   sudo snap install dart-sass
   ```
 
-- **Linux (using apt-get):**
+- **Linux (za pomocą apt-get):**
 
   ```bash
   sudo apt-get install dart-sass
@@ -69,61 +67,62 @@ To seamlessly compile CSS from SASS/SCSS, choose a tool that best fits your OS:
 
 ---
 
-**Creating a New Project: "MyBlog"**
+**Tworzenie nowego projektu: "MyBlog"**
 
-Start your Hugo journey by initializing a new project:
+Rozpocznij swoją podróż z Hugo, inicjując nowy projekt:
 
 ```bash
 hugo new site MyBlog
 ```
 
-This command crafts a new directory named "MyBlog," prepping you with the essential Hugo structure.
+Ta komenda tworzy nowy katalog o nazwie "MyBlog," przygotowując Cię do pracy z podstawową strukturą Hugo.
 
 ---
 
-**Managing Posts in Hugo**
+**Zarządzanie postami w Hugo**
 
-Hugo's straightforward process makes creating, editing, and managing posts a breeze:
+Hugo sprawia, że tworzenie, edytowanie i zarządzanie postami jest dziecinnie proste:
 
-- **Creating a new tech post:**
+- **Tworzenie nowego posta technologicznego:**
 
   ```bash
   hugo new posts/my-first-tech-post.md
   ```
 
-  This command generates a markdown file pre-populated with:
+Ta komenda generuje plik markdown z wstępnie wypełnioną treścią:
 
   ```markdown
   ---
-  title: 'My First Tech Post'
+  title: 'Mój pierwszy post technologiczny'
   date: '2024-01-19'
   categories: ['Tech']
   ---
 
-  Dive into my first tech post.
+Zanurz się w moim pierwszym poście technologicznym.
   ```
 
-- **Similarly, for a web-related post:**
+- **Podobnie, dla posta związanego z web developmencie:**
 
   ```markdown
   ---
-  title: 'My First Web Post'
+  title: 'Mój pierwszy post o web developmencie'
   date: '2024-01-19'
   categories: ['Web']
   ---
 
-  Explore my insights on web development.
+ Odkryj moje spostrzeżenia na temat web developmentu.
+
   ```
 
 ---
 
-**Hugo Layouts and Templates**
+**Układy i szablony w Hugo**
 
-Hugo uses layouts and templates to sculpt your website's structure, providing flexibility and control over your content's presentation.
+Hugo korzysta z układów i szablonów do kształtowania struktury Twojej witryny, zapewniając elastyczność i kontrolę nad prezentacją treści.
 
-- **Base Layout (layouts/\_default/baseof.html):**
+- **Podstawowy układ (layouts/_default/baseof.html):**
 
-  This foundational layout forms the HTML structure of your site, incorporating the head section and main content area.
+  Ten podstawowy układ tworzy strukturę HTML Twojej witryny, zawierając sekcję head i główny obszar treści.
 
   ```html
   <!DOCTYPE html>
@@ -149,9 +148,9 @@ Hugo uses layouts and templates to sculpt your website's structure, providing fl
   </html>
   ```
 
-- **Main Page (layouts/index.html):**
+- **Strona główna (layouts/index.html):**
 
-  Showcases a list of all posts and categories, a crucial feature for easy navigation.
+  Wyświetla listę wszystkich postów i kategorii, co jest kluczowe dla łatwej nawigacji.
 
   ```html
   {{ define "main" }}
@@ -164,9 +163,9 @@ Hugo uses layouts and templates to sculpt your website's structure, providing fl
   {{ end }}
   ```
 
-- **Category Page (layouts/taxonomy/category.html):**
+- **Strona kategorii (layouts/taxonomy/category.html):**
 
-  Displays posts within a specific category, enhancing user experience.
+  Wyświetla posty w konkretnej kategorii, poprawiając doświadczenie użytkownika.
 
   ```html
   {{ define "main" }}
@@ -189,9 +188,9 @@ Hugo uses layouts and templates to sculpt your website's structure, providing fl
   {{ end }}
   ```
 
-- **Single Post Page (layouts/posts/single.html):**
+- **Strona pojedynczego posta (layouts/posts/single.html):**
 
-  A template designed for individual post display, focusing on readability and engagement.
+  Szablon zaprojektowany do wyświetlania pojedynczego posta, skupiający się na czytelności i zaangażowaniu.
 
   ```html
   {{ define "main" }}
@@ -204,9 +203,9 @@ Hugo uses layouts and templates to sculpt your website's structure, providing fl
 
 ---
 
-**SASS Styles (sass/styles.scss):**
+**Style SASS (sass/styles.scss):**
 
-Improve your site's aesthetics with simple yet elegant SASS styles:
+Popraw estetykę swojej witryny za pomocą prostych, ale eleganckich stylów SASS:
 
 ```scss
 body {
@@ -242,18 +241,18 @@ body {
 
 ---
 
-**Running Hugo Server**
+**Uruchomienie serwera Hugo**
 
-Preview your Hugo site locally and witness the magic:
+Podglądaj swoją stronę Hugo lokalnie i zobacz efekty:
 
 ```bash
 hugo server
 ```
 
-Access your site at [http://localhost:1313](http://localhost:1313/), a stepping stone to building a professional blog or a sophisticated company website. Hugo isn’t just a static site generator; it's a powerful tool that empowers you to create high-performance websites with ease.
+Uzyskaj dostęp do swojej witryny pod adresem [http://localhost:1313](http://localhost:1313/), co jest krokiem milowym w budowie profesjonalnego bloga lub zaawansowanej strony firmowej. Hugo to nie tylko generator stron statycznych; to potężne narzędzie, które umożliwia tworzenie wysokowydajnych witryn z łatwością.
 
 ---
 
-**Conclusion:**
+**Zakończenie:**
 
-Thank you for joining this introductory journey into Hugo. Stay tuned for more in our Hugo series, where we'll dive deeper into advanced features and customization. Happy coding!
+Dziękujemy za udział w tej wprowadzeniowej podróży do świata Hugo. Śledź naszą serię o Hugo, gdzie zagłębimy się w bardziej zaawansowane funkcje i personalizację. Szczęśliwego kodowania!
