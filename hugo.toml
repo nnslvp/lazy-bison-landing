@@ -9,6 +9,20 @@ languageCode = "en-us"
   keywords = 'Ruby on Rails, Hotwire, ReactJS, Development, Start-ups, SMEs, Legal services, eCommerce, Healthcare, Real Estate, Fintech, Veterinary, Crowdfunding'
   author = 'Lazy Bison'
 
+defaultContentLanguage = 'en'
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    contentDir = "content/english"
+
+  [languages.pl]
+    languageName = "Polish"
+    weight = 2
+    contentDir = "content/polish"
+
+
 [permalinks]
   case_categories = "/cases/:slug"
   blog_categories = "/blog/:slug"
