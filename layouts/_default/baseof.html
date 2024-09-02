@@ -124,6 +124,37 @@
 
   {{ partial "header.html" . }}
   <main>
+    <div class="language-switcher">
+      {{ $iconFlag := "" }} {{ if eq .Language.LanguageName "Russian" }} {{
+      $iconFlag = "russian-flag-icon" }} {{else }} {{ $iconFlag = "usa-flag-icon" }}
+      {{ end }}
+      <div class="language-switcher__lang">
+        <i class="icon  {{$iconFlag}}"></i>
+        <span class="language-name"></span>
+        <i class="icon chevron-icon-bottom"></i>
+      </div>
+    
+      <div class="dropdown">
+        {{ range .Page.AllTranslations }}
+          {{ $iconFlag := "" }}
+          {{ $languageName := "" }}
+          {{ if eq .Language.Lang "pl" }} 
+            {{ $languageName = i18n "polish" }}
+            {{ $iconFlag = "polish-flag-icon" }} 
+          {{ else if eq .Language.Lang "en" }} 
+            {{ $iconFlag = "usa-flag-icon" }}
+            {{ $languageName = i18n "english" }}
+          {{ end }}    
+          <a
+            class="dropdown__item set-lang-{{ strings.ToLower .Language.Lang }} {{ if eq .Language.Lang $.Site.Language.Lang }}active{{ end }}"
+            href="{{ .Permalink | absLangURL }}"
+          >
+            <i class="icon {{ $iconFlag }}"></i>
+            <span>{{ title $languageName }}</span>
+          </a>
+        {{ end }}
+      </div>
+    </div>
     <div class="wrapper {{ $wrapper_class }}">
       {{ block "main" . }}
       {{ end }}
