@@ -1,4 +1,4 @@
 ---
-title: Cases categories
+title: "Kategorie spraw"
 sitemapExclude: true
 ---

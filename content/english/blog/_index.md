@@ -1,8 +1,7 @@
 ---
-title: "Cases"
 breadcrumb_home: "Home"
-breadcrumb_cases: "Cases"
-section_heading: "Cases"
+breadcrumb_blog: "Blog"
+section_heading: "Blog"
 categories_title: "Categories"
 category_all: "All"
 ---

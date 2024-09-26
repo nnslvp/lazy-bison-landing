@@ -1,0 +1,15 @@
+---
+get_consultation_title: "Get free consultation"
+get_consultation_subtitle: "Please, fill out the form"
+email_label: "E-mail"
+email_placeholder: "example@gmail.com"
+email_error: "Invalid e-mail"
+comments_label: "Your comments"
+comments_placeholder: "Write your comments (optional)"
+agree_text: "Agree to process personal data"
+cancel_button: "Cancel"
+submit_button: "Submit"
+success_title: "Congratulations!"
+success_message_1: "Your request is sent successfully."
+success_message_2: "Our manager will contact you shortly."
+---

@@ -1,12 +1,29 @@
+{{ $header := .Site.GetPage "header" }}
 <header class="header">
 	<div class="container">
 		<div class="header__inner">
 			<div class="header__logo">{{ partial "logo.html" .}}</div>
-			{{ partial "navigation.html" .}}
+			<nav class="header__main-nav">
+				<ul class="header__main-nav-list text--medium">
+				  <li class="header__main-nav-item">
+					<a href="/#services" class="header__main-nav-link">{{ $header.Params.services }}</a>
+				  </li>
+				  <li class="header__main-nav-item">
+					<a href="/#explore" class="header__main-nav-link">{{ $header.Params.explore }}</a>
+				  </li>
+				  <li class="header__main-nav-item">
+					<a href="/blog" class="header__main-nav-link">{{ $header.Params.blog }}</a>
+				  </li>
+				  <li class="header__main-nav-item">
+					<a href="/cases" class="header__main-nav-link">{{ $header.Params.cases }}</a>
+				  </li>
+				  <li class="header__main-nav-item">
+					<a href="/#testimonials" class="header__main-nav-link">{{ $header.Params.testimonials }}</a>
+				  </li>
+				</ul>
+			  </nav>
 			<button
-				class="button header__contact-us-button button__text--medium button--secondary get-consultation-btn"
-			>
-				Contact us
+				class="button header__contact-us-button button__text--medium button--secondary get-consultation-btn">{{ $header.Params.contact_us }}</button>
 			</button>
 			<button class="burger-menu-button" aria-label="Toggle menu">
 				<span class="line"></span>

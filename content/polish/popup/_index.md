@@ -1,0 +1,15 @@
+---
+get_consultation_title: "Bezpłatna konsultacja"
+get_consultation_subtitle: "Proszę, wypełnij formularz"
+email_label: "E-mail"
+email_placeholder: "example@gmail.com"
+email_error: "Nieprawidłowy e-mail"
+comments_label: "Twoje komentarze"
+comments_placeholder: "Napisz swoje komentarze (opcjonalnie)"
+agree_text: "Zgadzam się na przetwarzanie danych osobowych"
+cancel_button: "Anuluj"
+submit_button: "Wyślij"
+success_title: "Gratulacje!"
+success_message_1: "Twoje zgłoszenie zostało pomyślnie wysłane."
+success_message_2: "Nasz menedżer skontaktuje się z Tobą wkrótce."
+---

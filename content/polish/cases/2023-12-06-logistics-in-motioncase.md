@@ -1,93 +1,78 @@
 ---
 SEO:
-  description: A case study on overcoming logistics challenges in a European
-    trucking and transportation company.
-  keywords: Logistics, Trucking, Transportation, Case Study, Europe, Web
-    Application, Mobile Application
+  description: Studium przypadku przezwyciężenia wyzwań logistycznych w europejskiej firmie transportowej i przewozowej.
+  keywords: Logistyka, Transport, Przewóz, Studium Przypadku, Europa, Aplikacja Webowa, Aplikacja Mobilna
   author: Lazy Bison
-title: "Logistics in Motion: Overcoming Challenges and Achieving Excellence"
+title: "Logistyka w ruchu: Przezwyciężanie wyzwań i osiąganie doskonałości"
 date: 2023-12-06T19:25:00
 image: images/adobestock_294514639_logistik_1900x1400-1.jpg
 case_categories:
-  - logistic
+  - logistyka
 project_info:
-  client: Logistics Company specializing in trucking and transportation services.
-  location: Europe
-  industry: Logistics and Transportation
+  client: Firma logistyczna specjalizująca się w usługach transportowych i przewozowych
+  location: Europa
+  industry: Logistyka i Transport
   client_since: 2021
-  type: Web and Mobile
-  engagement_model: Dedicated Team
-  duration: 13 Months
-  staff: 6-8 People (2 Frontend Developers, 3 Backend Developers, 1 Business
-    Analytic, 1 Project Manager, 2 Quality Assurance Engineers)
+  type: Aplikacja Webowa i Mobilna
+  engagement_model: Dedykowany Zespół
+  duration: 13 Miesięcy
+  staff: 6-8 osób (2 Frontend Deweloperów, 3 Backend Deweloperów, 1 Analityk Biznesowy, 1 Kierownik Projektu, 2 Inżynierów ds. Jakości)
 challenge:
-  subtitle: "Our client, a prominent logistics company operating in Europe, faced
-    several critical challenges:"
+  subtitle: "Nasz klient, znana europejska firma logistyczna, stanęła przed kilkoma kluczowymi wyzwaniami:"
   issues:
-    - title: Communication Gaps
-      description: Struggles with communication between various roles.
-    - title: Safety and Compliance
-      description: Ensuring driver safety and compliance.
-    - title: Efficiency and Record-Keeping
-      description: Need for a comprehensive system for records.
-    - title: Real-time Monitoring
-      description: Monitoring of drivers' vital signs and behavior.
-    - title: Translation and Multilingual Support
-      description: Overcoming language barriers.
-    - title: Offline Capabilities.
-      description: Functionality in low-connectivity areas.
-    - title: Integration with Third Parties
-      description: Coordination between various stakeholders.
-    - title: User Access Management
-      description: Managing access and permissions.
-    - title: Reporting and Analytics
-      description: Need for robust reporting tools.
+    - title: Luki w komunikacji
+      description: Problemy z komunikacją między różnymi rolami.
+    - title: Bezpieczeństwo i zgodność z przepisami
+      description: Zapewnienie bezpieczeństwa kierowców i zgodności z przepisami.
+    - title: Efektywność i prowadzenie dokumentacji
+      description: Potrzeba kompleksowego systemu do zarządzania dokumentacją.
+    - title: Monitorowanie w czasie rzeczywistym
+      description: Monitorowanie oznak życiowych i zachowania kierowców.
+    - title: Tłumaczenie i wsparcie wielojęzyczne
+      description: Przezwyciężenie barier językowych.
+    - title: Funkcje offline
+      description: Funkcjonalność w obszarach o niskiej łączności.
+    - title: Integracja z zewnętrznymi partnerami
+      description: Koordynacja między różnymi interesariuszami.
+    - title: Zarządzanie dostępem użytkowników
+      description: Zarządzanie dostępem i uprawnieniami.
+    - title: Raportowanie i analiza
+      description: Potrzeba solidnych narzędzi do raportowania.
 value_driven_results:
   subtitle: >
-    Our solution significantly improved the logistics company's operations in
-    various ways, such as minimizing communication gaps, enhancing driver
-    safety, and improving efficiency.
+    Nasze rozwiązanie znacząco poprawiło działalność firmy logistycznej, minimalizując luki w komunikacji, zwiększając bezpieczeństwo kierowców i poprawiając efektywność.
   results:
-    - description: Communication gaps were minimized, ensuring drivers received
-        crucial     updates and safety instructions promptly.
-    - description: Driver safety and compliance were enhanced through real-time
-        monitoring and communication of safety protocols.
-    - description: Efficiency and record-keeping improved, with comprehensive data
-        capture and retrieval.
-    - description: Real-time monitoring of vital signs contributed to both safety and
-        performance evaluation
-    - description: Offline capabilities ensured functionality in remote areas.
-    - description: Integration with third-party platforms improved coordination.
-    - description: User access management became user-friendly and efficient.
-    - description: Robust reporting and analytics tools provided valuable insights for
-        optimization.
+    - description: Zmniejszono luki w komunikacji, zapewniając, że kierowcy otrzymują kluczowe aktualizacje i instrukcje dotyczące bezpieczeństwa na czas.
+    - description: Zwiększono bezpieczeństwo kierowców i zgodność z przepisami poprzez monitorowanie w czasie rzeczywistym i komunikację procedur bezpieczeństwa.
+    - description: Poprawiono efektywność i prowadzenie dokumentacji dzięki kompleksowemu przechwytywaniu i odzyskiwaniu danych.
+    - description: Monitorowanie w czasie rzeczywistym oznak życiowych przyczyniło się zarówno do bezpieczeństwa, jak i oceny wydajności.
+    - description: Funkcjonalność offline zapewniała działanie w obszarach o ograniczonej łączności.
+    - description: Integracja z zewnętrznymi platformami poprawiła koordynację.
+    - description: Zarządzanie dostępem użytkowników stało się bardziej przyjazne i efektywne.
+    - description: Solidne narzędzia do raportowania i analizy dostarczyły cennych informacji do optymalizacji.
   conclusion:
-    By addressing these challenges, our solution enabled the logistics company to operate more efficiently,
-    ensure driver
-    safety and compliance, and enhance communication across the organization. This resulted in improved
-    overall performance
-    and customer satisfaction.
+    Rozwiązując te wyzwania, nasze rozwiązanie umożliwiło firmie logistycznej bardziej efektywne funkcjonowanie, zapewnienie bezpieczeństwa kierowców i zgodności z przepisami oraz poprawę komunikacji w całej organizacji. To zaowocowało poprawą ogólnej wydajności i zadowolenia klientów.
 tools_and_technologies:
   - tool: Back-End
     technologies: Ruby on Rails, PostgreSQL, S3 Bucket
   - tool: Front-End
     technologies: React, TypeScript, GraphQL Apollo Client, Redux
-  - tool: Project Tools
+  - tool: Narzędzia Projektowe
     technologies: JIRA, Jenkins, GitLab, TestRail
   - tool: Wireframes & Mockups
     technologies: Figma, Axure
-  - tool: Roadmap Tool
+  - tool: Narzędzie Roadmap
     technologies: Miro
 roadmap:
-  - date: September-December 2021
+  - date: Wrzesień-Grudzień 2021
     activities:
-      - Web Application Active Development
-  - date: January-July 2022
+      - Aktywny rozwój aplikacji webowej
+  - date: Styczeń-Lipiec 2022
     activities:
-      - Web Application Release and Mobile Application Active Development
-  - date: August-October 2022
+      - Wydanie aplikacji webowej i aktywny rozwój aplikacji mobilnej
+  - date: Sierpień-Październik 2022
     activities:
-      - Mobile Application Release
+      - Wydanie aplikacji mobilnej
 gallery_images:
   - image_path: /images/Support chat.png
     caption: chat
@@ -97,24 +82,24 @@ gallery_images:
     caption: chat
 ---
 
-| Service               | Web Application for Organization Staff                               | Mobile Application for Drivers            |
-| --------------------- | -------------------------------------------------------------------- | ----------------------------------------- |
-| **Login**             | Secure login for administrators, dispatchers, and driver supporters. | Secure login for drivers.                 |
-| **Password Recovery** | Password recovery mechanism.                                         | Password recovery feature.                |
-| **Logout**            | Ensuring account security through logout.                            | Ensuring account security through logout. |
-| **User Management**   | Managing users efficiently.                                          |                                           |
-| **Groups**            | Managing groups of trucks or users.                                  |                                           |
-| **Trips & Orders**    | Comprehensive visibility of all trips and orders.                    | Access to assigned trips and orders.      |
-| **Live Map**          | Real-time location tracking.                                         | Real-time location tracking.              |
-| **Chat**              | Communication hub.                                                   | Real-time communication.                  |
-| **Activities**        | Record of actions taken during trips.                                | Registering activities and updates.       |
-| **Events**            | Logging important events and activities.                             |                                           |
-| **Report**            | Reporting capabilities.                                              | Keeping drivers informed.                 |
-| **Announcements**     | Enhanced communication through announcements.                        | Keeping drivers informed.                 |
-| **Driver Change**     |                                                                      | Functionality for changing drivers.       |
-| **Profile**           | User profile management.                                             | Profile management.                       |
-| **Driver Score**      | Assessment of driving behavior.                                      | Encouraging eco-friendly driving.         |
-| **Drivers**           | Management of drivers.                                               |                                           |
-| **Question Path**     | Guiding users through specific processes.                            |                                           |
-| **Change Log**        | Recording all changes.                                               |                                           |
-| **Driver Time**       |                                                                      | Tracking and managing driving time.       |
+| Usługa               | Aplikacja Webowa dla Pracowników Organizacji                     | Aplikacja Mobilna dla Kierowców            |
+| -------------------- | ---------------------------------------------------------------- | ------------------------------------------ |
+| **Logowanie**        | Bezpieczne logowanie dla administratorów, dyspozytorów i wsparcia. | Bezpieczne logowanie dla kierowców.        |
+| **Odzyskiwanie hasła** | Mechanizm odzyskiwania hasła.                                   | Funkcja odzyskiwania hasła.                |
+| **Wylogowanie**      | Zapewnienie bezpieczeństwa konta poprzez wylogowanie.             | Zapewnienie bezpieczeństwa konta poprzez wylogowanie. |
+| **Zarządzanie użytkownikami** | Efektywne zarządzanie użytkownikami.                     |                                            |
+| **Grupy**            | Zarządzanie grupami ciężarówek lub użytkowników.                 |                                            |
+| **Trasy i zamówienia** | Kompleksowa widoczność wszystkich tras i zamówień.             | Dostęp do przypisanych tras i zamówień.    |
+| **Mapa na żywo**     | Śledzenie lokalizacji w czasie rzeczywistym.                      | Śledzenie lokalizacji w czasie rzeczywistym. |
+| **Czat**             | Centrum komunikacji.                                             | Komunikacja w czasie rzeczywistym.         |
+| **Aktywności**       | Rejestr działań podjętych podczas tras.                          | Rejestrowanie aktywności i aktualizacji.   |
+| **Wydarzenia**       | Rejestrowanie ważnych wydarzeń i działań.                         |                                            |
+| **Raportowanie**     | Możliwości raportowania.                                         | Informowanie kierowców.                    |
+| **Ogłoszenia**       | Ulepszona komunikacja przez ogłoszenia.                          | Informowanie kierowców.                    |
+| **Zmiana kierowcy**  |                                                                  | Funkcjonalność zmiany kierowców.           |
+| **Profil**           | Zarządzanie profilem użytkownika.                                | Zarządzanie profilem.                      |
+| **Ocena kierowcy**   | Ocena zachowań kierowców.                                        | Zachęcanie do ekologicznej jazdy.          |
+| **Kierowcy**         | Zarządzanie kierowcami.                                          |                                            |
+| **Ścieżka pytań**    | Prowadzenie użytkowników przez konkretne procesy.                |                                            |
+| **Dziennik zmian**   | Rejestrowanie wszystkich zmian.                                  |                                            |
+| **Czas kierowcy**    |                                                                  | Śledzenie i zarządzanie czasem jazdy.      |

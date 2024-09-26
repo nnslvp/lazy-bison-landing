@@ -1,94 +1,77 @@
 ---
 SEO:
-  description: Revolutionizing personal finance management with our FinTech
-    Startup's mobile app. Tailored for North American and European markets, our
-    app offers user-friendly, secure, and efficient financial solutions.
-  keywords: FinTech, Personal Finance, Mobile App, Financial Technology, Expense
-    Tracking, Secure Payments, Global Market
+  description: Rewolucjonizujemy zarządzanie finansami osobistymi za pomocą naszej aplikacji mobilnej FinTech. Skierowana na rynki Ameryki Północnej i Europy, nasza aplikacja oferuje przyjazne dla użytkownika, bezpieczne i efektywne rozwiązania finansowe.
+  keywords: FinTech, Finanse Osobiste, Aplikacja Mobilna, Technologia Finansowa, Śledzenie Wydatków, Bezpieczne Płatności, Globalny Rynek
   author: Lazy Bison
-title: 'Expense Elegance: The Art of  Spending with Balancer'
+title: "Expense Elegance: Sztuka wydatków z Balancer"
 date: 2023-12-06T17:18:00
 image: images/19708.jpg
 case_categories:
   - finTech
 project_info:
-  client: FinTech Startup specializing in personal finance management
-  location: Global with a focus on North American and European markets
-  industry: Financial Technology
+  client: Startup FinTech specjalizujący się w zarządzaniu finansami osobistymi
+  location: Globalny z naciskiem na rynki Ameryki Północnej i Europy
+  industry: Technologia Finansowa
   client_since: 2021
-  type: Mobile Application
-  engagement_model: Dedicated Team, Agile Development
-  duration: 3 Months
+  type: Aplikacja Mobilna
+  engagement_model: Dedykowany Zespół, Rozwój Zwinny
+  duration: 3 Miesiące
   staff:
-    5-7 People (1 UX/UI Designer, 2 Mobile Developers, 1 Backend Developer, 1
-    Business Analyst, 1 Project Manager, 1 Quality Assurance Engineer)
+    5-7 osób (1 UX/UI Projektant, 2 Deweloperzy Mobilni, 1 Deweloper Backend, 1 Analityk Biznesowy, 1 Kierownik Projektu, 1 Inżynier Jakości)
 challenge:
-  subtitle: 'The client, a burgeoning FinTech startup, aimed to address several
-    issues faced by groups managing shared expenses:'
+  subtitle: "Klient, rozwijający się startup FinTech, chciał rozwiązać kilka problemów napotykanych przez grupy zarządzające wspólnymi wydatkami:"
   issues:
-    - title: Simplifying calculations
-      description: Difficulty in splitting expenses accurately.
-    - title: Currency Conversion
-      description: Handling multiple currencies during international travel.
-    - title: Payment Integration
-      description: Simplifying the reimbursement process.
-    - title: User-Friendly Interface
-      description: Creating an intuitive user experience.
-    - title: Group Management
-      description: Organizing groups and expenses efficiently.
-    - title: Expense Tracking and Categorization
-      description: Monitoring and categorizing group expenses.
-    - title: Settling Balances
-      description: Ease of settling up owed amounts.
-    - title: Security and Privacy
-      description: Ensuring the security of financial data.
-    - title: Notifications and Reminders
-      description: Sending timely alerts for payments.
+    - title: Uproszczenie obliczeń
+      description: Trudność w dokładnym dzieleniu wydatków.
+    - title: Konwersja walut
+      description: Obsługa wielu walut podczas międzynarodowych podróży.
+    - title: Integracja płatności
+      description: Uproszczenie procesu zwrotu pieniędzy.
+    - title: Przyjazny interfejs użytkownika
+      description: Tworzenie intuicyjnego doświadczenia użytkownika.
+    - title: Zarządzanie grupami
+      description: Skuteczna organizacja grup i wydatków.
+    - title: Śledzenie i kategoryzacja wydatków
+      description: Monitorowanie i kategoryzowanie wydatków grupowych.
+    - title: Rozliczanie sald
+      description: Ułatwienie rozliczania należnych kwot.
+    - title: Bezpieczeństwo i prywatność
+      description: Zapewnienie bezpieczeństwa danych finansowych.
+    - title: Powiadomienia i przypomnienia
+      description: Wysyłanie terminowych powiadomień o płatnościach.
 value_driven_results:
   subtitle:
-    The application stands to revolutionize personal finance management in
-    shared contexts by combining ease of use with comprehensive financial
-    management tools.
+    Aplikacja zrewolucjonizuje zarządzanie finansami osobistymi w kontekście wspólnych wydatków, łącząc łatwość użytkowania z kompleksowymi narzędziami do zarządzania finansami.
   results:
-    - description: Simplifies the process of managing shared expenses, making it
-        accessible and stress-free for users.
-    - description: Reduces errors in expense splitting and currency conversion,
-        ensuring fairness and transparency among users.
-    - description: Automates calculations and settlements, saving users time and
-        effort in managing group finances.
-    - description:
-        Robust security measures protect user data, fostering trust in the
-        application for handling sensitive financial information.
-    - description: Detailed reporting and analytics help users understand their
-        spending patterns, aiding in better financial decisions.
+    - description: Upraszcza proces zarządzania wspólnymi wydatkami, czyniąc go dostępnym i bezstresowym dla użytkowników.
+    - description: Redukuje błędy w dzieleniu wydatków i konwersji walut, zapewniając sprawiedliwość i przejrzystość wśród użytkowników.
+    - description: Automatyzuje obliczenia i rozliczenia, oszczędzając użytkownikom czas i wysiłek w zarządzaniu finansami grupowymi.
+    - description: Solidne środki bezpieczeństwa chronią dane użytkowników, budując zaufanie do aplikacji w zakresie obsługi wrażliwych informacji finansowych.
+    - description: Szczegółowe raportowanie i analizy pomagają użytkownikom zrozumieć ich wzorce wydatków, co wspiera podejmowanie lepszych decyzji finansowych.
   conclusion:
-    By addressing these challenges, our solution enabled the logistics company to operate more efficiently,
-    ensure driver
-    safety and compliance, and enhance communication across the organization. This resulted in improved
-    overall performance
-    and customer satisfaction.
+    Rozwiązanie to umożliwiło firmie logistycznej bardziej efektywne działanie, zapewniając bezpieczeństwo kierowców i zgodność z przepisami oraz poprawę komunikacji w całej organizacji, co przyczyniło się do poprawy ogólnej wydajności i zadowolenia klientów.
 tools_and_technologies:
   - tool: Back-End
     technologies: RoR, MongoDB
   - tool: Front-End
     technologies: Flutter, Dart
-  - tool: Security
-    technologies: OAuth, JWT, SSL encryption
-  - tool: Project Tools
+  - tool: Bezpieczeństwo
+    technologies: OAuth, JWT, SSL szyfrowanie
+  - tool: Narzędzia Projektowe
     technologies: Trello, Bitbucket, Confluence
-  - tool: Analytics
+  - tool: Analityka
     technologies: Google Analytics, Firebase
 roadmap:
   - date: Q1 2021
     activities:
-      - Conceptualization and Design Prototyping
-      - MVP Development and Beta Testing
-      - Full-scale Development and Feature Enhancement
+      - Konceptualizacja i prototypowanie projektu
+      - Rozwój MVP i testy beta
+      - Pełnoskalowy rozwój i ulepszanie funkcji
   - date: Q2 2021
     activities:
-      - Official Launch
-      - User Acceptance Testing
-      - Marketing Campaign
+      - Oficjalna premiera
+      - Testy akceptacji użytkowników
+      - Kampania marketingowa
 gallery_images:
   - image_path: images/balancer-img-one.png
     caption: chat
@@ -98,15 +81,15 @@ gallery_images:
     caption: chat
 ---
 
-| Service       | Mobile Application Features                          |
+| Usługa        | Funkcje aplikacji mobilnej                           |
 | ------------- | ---------------------------------------------------- |
-| Login         | Biometric and multi-factor authentication            |
-| Expenses      | Easy entry of expenses and automatic splitting       |
-| Currency      | Real-time conversion rates for international travels |
-| Groups        | Effortless setup of groups for shared expenses       |
-| Expenses      | Intuitive categorization for better tracking         |
-| Balance       | One-tap functionality to settle up balances          |
-| Notifications | Automated reminders for due payments                 |
-| Settings      | Customizable privacy controls for shared expenses    |
-| Reporting     | Assessment of driving behavior.                      |
-| User Profiles | Personalized user profiles with spending habits      |
+| Logowanie     | Uwierzytelnianie biometryczne i wieloskładnikowe      |
+| Wydatki       | Łatwe dodawanie wydatków i automatyczne dzielenie    |
+| Waluty        | Kursy walut w czasie rzeczywistym na podróże międzynarodowe |
+| Grupy         | Bezproblemowe zakładanie grup do wspólnych wydatków   |
+| Wydatki       | Intuicyjna kategoryzacja dla lepszego śledzenia      |
+| Salda         | Funkcja "jeden klik" do rozliczania sald             |
+| Powiadomienia | Automatyczne przypomnienia o płatnościach            |
+| Ustawienia    | Konfigurowalne opcje prywatności dla wspólnych wydatków |
+| Raportowanie  | Ocena zachowań użytkowników                         |
+| Profile użytkowników | Spersonalizowane profile użytkowników z nawykami wydatkowymi |
