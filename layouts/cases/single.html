@@ -1,12 +1,18 @@
 {{ define "main" }}
 <div class="bg-wrapper">
   <div class="container">
+    {{ $homeURL := relLangURL "/" }}
+    {{ $casesURL := relLangURL "/cases" }}
+    {{ $casesPage := .Site.GetPage "cases" }}
     <nav class="navigation-path">
-      <a class="navigation-path__link" href="{{ .Site.BaseURL }}">Home</a>
+      <a class="navigation-path__link"
+        href="{{ $homeURL  }}">{{$casesPage.Params.breadcrumb_home}}</a>
       <span>/</span>
-      <a class="navigation-path__link" href="/cases">Сases</a>
+      <a class="navigation-path__link"
+        href="{{$casesURL}}">{{$casesPage.Params.breadcrumb_cases }}</a>
       <span>/</span>
-      <a class="navigation-path__link navigation-path__link--active" href="{{ .Permalink }}">{{.Params.title}}</a>
+      <a class="navigation-path__link navigation-path__link--active"
+        href="{{ .Permalink }}">{{.Params.title}}</a>
     </nav>
   </div>
   <section class="top-section">
@@ -28,9 +34,12 @@
           {{ $mediumImage := $image.Resize "315x webp q80" }}
           {{ $largeImage := $image.Resize "400x webp q80" }}
           <picture>
-            <source type="image/webp" media="(max-width:768px)" srcset="{{$largeImage.RelPermalink}}">
-            <source type="image/webp" media="(max-width:1440px)" srcset="{{$mediumImage.RelPermalink}}">
-            <img class="img-project" src="{{ $largeImage.RelPermalink }}" alt="Case-Image">
+            <source type="image/webp" media="(max-width:768px)"
+              srcset="{{$largeImage.RelPermalink}}">
+            <source type="image/webp" media="(max-width:1440px)"
+              srcset="{{$mediumImage.RelPermalink}}">
+            <img class="img-project" src="{{ $largeImage.RelPermalink }}"
+              alt="Case-Image">
           </picture>
         </div>
       </div>
@@ -111,11 +120,13 @@
   <div class="container">
     <div class="section-value-driven__inner">
       <h2 class="case-study-page__title-h2">Value-Driven Results</h2>
-      <p class="case-study-page__subtitle">{{.Params.value_driven_results.subtitle}}</p>
+      <p
+        class="case-study-page__subtitle">{{.Params.value_driven_results.subtitle}}</p>
       <div class="value-driven-lists__wrapper">
         <div class="spin-text-circle">
           <i class="icon spin-text-circle__text"></i>
-          <i class="icon spin-text-circle__circle spin-text-circle__circle--gradient-blue-two"></i>
+          <i
+            class="icon spin-text-circle__circle spin-text-circle__circle--gradient-blue-two"></i>
         </div>
         {{ $results := .Params.value_driven_results.results }}
         {{ $resultsLength := $results | len }}
@@ -148,7 +159,7 @@
     <div class="container">
       <i class="icon icon-elipse-gradient-pink"></i>
       <p class="case-study-page__subtitle">
-      {{.Params.value_driven_results.conclusion}}
+        {{.Params.value_driven_results.conclusion}}
       </p>
     </div>
   </footer>
@@ -157,7 +168,8 @@
   <div class="container">
     <div class="section-solution__inner">
       <h2 class="case-study-page__title-h2">Solution</h2>
-      <p class="case-study-page__subtitle">In response to these challenges, we developed a comprehensive solution that
+      <p class="case-study-page__subtitle">In response to these challenges, we
+        developed a comprehensive solution that
         addressed the logistics company's needs</p>
     </div>
   </div>
@@ -218,9 +230,10 @@
             {{ range .Params.gallery_images }}
             <li class="swiper-slide">
               <div class="swiper-slide__img-container">
-                {{ $image := resources.Get .image_path  }}
+                {{ $image := resources.Get .image_path }}
                 {{ $WEBPImage := $image.Process "q80 webp" }}
-                <img loading="lazy" src="{{ $WEBPImage.RelPermalink }}" alt="image project">
+                <img loading="lazy" src="{{ $WEBPImage.RelPermalink }}"
+                  alt="image project">
               </div>
             </li>
             {{ end }}
@@ -233,7 +246,8 @@
         <div class="swiper-btn-next">
           <i class="icon icon-square-arrow-right "></i>
         </div>
-        <button class="button lazy-bison-description__btn button__text--large button--primary get-consultation-btn">
+        <button
+          class="button lazy-bison-description__btn button__text--large button--primary get-consultation-btn">
           Get free consultation
           <i class="icon icon-arrow-right-top"></i>
         </button>

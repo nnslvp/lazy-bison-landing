@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{.Language.Lang}}">
 
 <head>
   {{ with hugo.IsProduction }}
@@ -90,16 +90,20 @@
 
   {{ $urlParts :=  .Permalink }}
   {{ $lastPart := path.BaseName $urlParts }}
-  {{ $fileName := path.Base .File.BaseFileName  }}
-  {{ $isPageBlog := and (eq .Type "blog") (eq $lastPart "blog") }}
+  {{ $fileName := "" }} 
+  {{ with .File }}
+  {{ $fileName = path.Base .BaseFileName }}
+  {{ end }}
+  {{ $isTaxonomy := eq .Kind "taxonomy" }}
+  {{ $isTerm := eq .Kind "term" }}
+  {{ $isPageBlog := or (eq .Type "blog") $isTerm }} 
   {{ $isPageBlogCategory := strings.Contains .Permalink "blog" }}
-  {{ $isPagePost := strings.Contains .Permalink (printf "/blog/%s" $fileName) }}
+  {{ $isPagePost := and (eq .Type "blog") (ne $fileName "") (strings.Contains .Permalink $fileName) }}
   {{ $isPageCases := and (eq .Type "cases") (eq $lastPart "cases") }}
   {{ $isPageCasesCategory :=  strings.Contains .Permalink "cases" }}
-  {{ $isPageCase := strings.Contains .Permalink (printf "/cases/%s" $fileName) }}
+  {{ $isPageCase := and (ne $fileName "") (strings.Contains .Permalink (printf "/cases/%s" $fileName)) }}
   {{ $isLastPartBlogs := eq $lastPart "blog" }}
-
-
+  
 {{ $wrapper_class := "" }}
 {{if $isPageCase }}
     {{ $wrapper_class = "case-page__wrapper" }}
@@ -121,7 +125,6 @@
   <main>
     <div class="wrapper {{ $wrapper_class }}">
       {{ block "main" . }}
-
       {{ end }}
     </div>
   </main>

@@ -1,13 +1,63 @@
+{{ $header := .Site.GetPage "header" }}
 <header class="header">
 	<div class="container">
 		<div class="header__inner">
 			<div class="header__logo">{{ partial "logo.html" .}}</div>
-			{{ partial "navigation.html" .}}
-			<button
-				class="button header__contact-us-button button__text--medium button--secondary get-consultation-btn"
-			>
-				Contact us
-			</button>
+			<nav class="header__main-nav">
+				{{ $servicesURL := relLangURL "/#services" }}
+				{{ $exploreURL := relLangURL "/#explore" }}
+				{{ $blogURL := relLangURL "/blog" }}
+				{{ $casesURL := relLangURL "/cases" }}
+				{{ $testimonialsURL := relLangURL "/#testimonials" }}
+				
+				<ul class="header__main-nav-list text--medium">
+				  <li class="header__main-nav-item">
+					<a href="{{ $servicesURL }}" class="header__main-nav-link">{{ $header.Params.services }}</a>
+				  </li>
+				  <li class="header__main-nav-item">
+					<a href="{{ $exploreURL }}" class="header__main-nav-link">{{ $header.Params.explore }}</a>
+				  </li>
+				  <li class="header__main-nav-item">
+					<a href="{{ $blogURL }}" class="header__main-nav-link">{{ $header.Params.blog }}</a>
+				  </li>
+				  <li class="header__main-nav-item">
+					<a href="{{ $casesURL }}" class="header__main-nav-link">{{ $header.Params.cases }}</a>
+				  </li>
+				  <li class="header__main-nav-item">
+					<a href="{{ $testimonialsURL }}" class="header__main-nav-link">{{ $header.Params.testimonials }}</a>
+				  </li>
+				</ul>
+			  </nav>
+			  <div class="header__content-left">
+				<div class="language-switcher">
+			
+					<div class="language-switcher__lang">
+					  <span class="language-name">{{.Language.Lang}}</span>
+					  <i class="icon arrow-right-top-angle-square-transparent-bg"></i>
+					</div>
+				  
+					<div class="dropdown">
+					  {{ range .Page.AllTranslations }}
+						{{ $languageName := "" }}
+						{{ if eq .Language.Lang "pl" }} 
+						  {{ $languageName = i18n "polish" }}
+						{{ else if eq .Language.Lang "en" }} 
+						  {{ $languageName = i18n "english" }}
+						{{ end }}    
+						<a
+						  class="dropdown__item set-lang-{{ strings.ToLower .Language.Lang }} {{ if eq .Language.Lang $.Site.Language.Lang }}active{{ end }}"
+						  href="{{ .Permalink | absLangURL }}"
+						>
+						  <span>{{ $languageName }}</span>	
+						</a>
+					  {{ end }}
+					</div>
+				  </div>
+				<button
+					class="button header__contact-us-button button__text--medium button--secondary get-consultation-btn">{{ $header.Params.contact_us }}</button>
+				</button>
+			  </div>
+			
 			<button class="burger-menu-button" aria-label="Toggle menu">
 				<span class="line"></span>
 				<span class="line"></span>

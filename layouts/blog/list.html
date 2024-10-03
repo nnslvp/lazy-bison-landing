@@ -1,9 +1,13 @@
 {{ define "main" }}
 <div class="container">
+  {{ $homeURL := relLangURL "/" }}
+  {{ $blogUrl := relLangURL "/blog" }}
   <nav class="navigation-path">
-    <a class="navigation-path__link" href="{{ .Site.BaseURL }}">Home</a>
+    <a class="navigation-path__link" href="{{ $homeURL }}">{{
+      .Params.breadcrumb_home }}</a>
     <span>/</span>
-    <a class="navigation-path__link navigation-path__link--active" href="{{ .Permalink }}">Blog</a>
+    <a class="navigation-path__link navigation-path__link--active"
+      href="{{ .Permalink }}">{{ .Params.breadcrumb_blog }}</a>
   </nav>
 </div>
 
@@ -11,7 +15,7 @@
   <div class="container">
     <div class="section-case__inner">
       <div class="section-title__inner">
-        <h1 class="section-title__heading">Blog</h1>
+        <h1 class="section-title__heading">{{ .Params.section_heading }}</h1>
         <div class="section-title__arrow rectangle-arrow">
           <i class="icon arrow-right-down-angle-square"></i>
         </div>
@@ -19,24 +23,25 @@
     </div>
 
     <section class="categories">
-      <h2 class="case-page__title-h2 categories__title">Categories</h2>
+      <h2 class="case-page__title-h2 categories__title">{{
+        .Params.categories_title }}</h2>
       <ul class="categories-list ">
         <li class="categories-item ">
-          <a class="category category--active" href="/blog">All</a>
+          <a class="category category--active" href="{{$blogUrl}}">{{
+            .Params.category_all }}</a>
         </li>
         {{ range .Site.Taxonomies.blog_categories }}
         <li class="categories-item ">
-          <a class="category " href="{{ .Page.Permalink }}">#{{ .Page.Title  }}</a>
+          <a class="category" href="{{ .Page.Permalink }}">#{{
+            .Page.Title
+            }}</a>
         </li>
         {{ end }}
       </ul>
     </section>
 
-
-
-    {{/* Пагинация */}}
-
-    {{ $paginator := .Paginate (where .Pages "Type" "blog") .Site.Params.blogs_paginate }}
+    {{ $paginator := .Paginate (where .Pages "Type" "blog")
+    .Site.Params.blogs_paginate }}
     <ul class="blog-list">
       {{ range $paginator.Pages }}
       <li class="blog-item">
@@ -46,6 +51,5 @@
     </ul>
     {{ partial "pagination.html" . }}
   </div>
-
 </div>
 {{ end }}

@@ -1,0 +1,12 @@
+[discord]
+other = "discord"
+
+
+[telegram]
+other = "telegram"
+
+[english]
+other = "en"
+
+[polish]
+other = "pl"
