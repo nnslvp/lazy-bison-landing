@@ -3,12 +3,18 @@
   <div class="container">
     <div class="section-full-info-blog__inner">
       <div class="container__navigation-path">
+        {{ $homeURL := relLangURL "/" }}
+        {{ $blogURL := relLangURL "/blog" }}
+        {{ $blogPage := .Site.GetPage "blog" }}
         <nav class="navigation-path">
-          <a class="navigation-path__link" href="{{ .Site.BaseURL }}">Home</a>
+          <a class="navigation-path__link" href="{{ $homeURL }}">{{
+            $blogPage.Params.breadcrumb_home }}</a>
           <span>/</span>
-          <a class="navigation-path__link" href="/blog">Blog</a>
+          <a class="navigation-path__link" href="{{ $blogURL }}">{{
+            $blogPage.Params.breadcrumb_blog }}</a>
           <span>/</span>
-          <a class="navigation-path__link navigation-path__link--active" href="{{ .Permalink }}">{{.Params.title}}</a>
+          <a class="navigation-path__link navigation-path__link--active"
+            href="{{ .Permalink }}">{{ .Params.title }}</a>
         </nav>
       </div>
       <article class="full-info-post">
@@ -56,9 +62,9 @@
     </div>
   </div>
 </section>
-{{ $currentBlog := . }} 
-{{ $excludedTitle := .Params.title }} 
-{{ $related := .Site.RegularPages.Related $currentBlog | first 3 }} 
+{{ $currentBlog := . }}
+{{ $excludedTitle := .Params.title }}
+{{ $related := .Site.RegularPages.Related $currentBlog | first 3 }}
 {{$relatedBlog := where $related "Type" "blog"}}
 {{ if gt (len $relatedBlog) 0}}
 <div class="container">

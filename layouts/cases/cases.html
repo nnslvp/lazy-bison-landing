@@ -1,7 +1,9 @@
 {{ define "main" }}
 <div class="container">
 	<nav class="navigation-path">
-		<a class="navigation-path__link" href="{{ .Site.BaseURL }}">{{
+		{{ $homeURL := relLangURL "/" }}
+		{{ $casesURL := relLangURL "/cases" }}
+		<a class="navigation-path__link" href="{{ $homeURL }}">{{
 			.Params.breadcrumb_home }}</a>
 		<span>/</span>
 		<a class="navigation-path__link navigation-path__link--active"
@@ -27,12 +29,14 @@
 				}}</h2>
 			<ul class="categories-list">
 				<li class="categories-item">
-					<a class="category category--active" href="/cases">{{ .Params.category_all
+					<a class="category category--active" href="{{$casesURL}}">{{
+						.Params.category_all
 						}}</a>
 				</li>
 				{{ range .Site.Taxonomies.case_categories }}
 				<li class="categories-item">
-					<a class="category" href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>
+					<a class="category" href="{{.Page.Permalink }}">#{{ .Page.Title
+						}}</a>
 				</li>
 				{{ end }}
 			</ul>

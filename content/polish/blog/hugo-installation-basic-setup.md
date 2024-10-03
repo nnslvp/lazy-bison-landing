@@ -7,7 +7,7 @@ SEO:
 description: ‘Zapoznaj się z naszym kompleksowym przewodnikiem dotyczącym rozpoczęcia pracy z Hugo – szybkim i nowoczesnym generatorem stron statycznych. Naucz się krok po kroku, jak zainstalować Hugo, skonfigurować kompilator CSS, utworzyć nowy projekt i zarządzać postami.’
 keywords: ‘Hugo generator stron statycznych, Instalacja Hugo, Przewodnik konfiguracji Hugo, Hugo dla początkujących, Tworzenie projektu Hugo, Konfiguracja bloga Hugo, Szablony i układy Hugo, SASS z Hugo, Przewodnik instalacji Hugo, Tworzenie stron z Hugo, Konfiguracja witryny Hugo, Zarządzanie postami w Hugo, Konfiguracja kompilatora CSS w Hugo, Generowanie stron statycznych, Tworzenie stron internetowych z Hugo, Konfiguracja witryny Hugo’
 author: ‘Yahor Bukhta’
-image: ‘./images/hugo.png’
+image: './images/hugo.png'
 description: ''
 blog_categories: ['WebDevelopment', 'Frontend']
 ---
@@ -77,8 +77,6 @@ hugo new site MyBlog
 
 Ta komenda tworzy nowy katalog o nazwie "MyBlog," przygotowując Cię do pracy z podstawową strukturą Hugo.
 
----
-
 **Zarządzanie postami w Hugo**
 
 Hugo sprawia, że tworzenie, edytowanie i zarządzanie postami jest dziecinnie proste:
@@ -110,11 +108,9 @@ Zanurz się w moim pierwszym poście technologicznym.
   categories: ['Web']
   ---
 
- Odkryj moje spostrzeżenia na temat web developmentu.
-
+  Odkryj moje spostrzeżenia na temat web developmentu.
   ```
 
----
 
 **Układy i szablony w Hugo**
 
